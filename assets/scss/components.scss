@@ -1,0 +1,101 @@
+#site-header,
+#site-footer {
+  background-color: transparent;
+}
+
+#segment-slider-card {
+  position: relative;
+  .slider-card {
+    @include oceanBorderGradient;
+  }
+  .view-all {
+    background-color: $jaguar;
+    @include tripleLayer;
+    top: 10px;
+    &:after {
+      @include oceanBlueGradient;
+    }
+  }
+  h3 {
+    color: $blackSapphire;
+  }
+}
+
+// #segment-slider-chart {
+//   .block-segment {
+//     @include tripleLayer;
+//     &:after {
+//       background: unset;
+//       background-color: $daytonaBlue !important;
+//     }
+//   }
+// }
+
+#slider-line {
+  .dummy-thumb {
+    width: 62px;
+    height: 12px;
+    z-index: unset;
+    @include tripleLayer;
+    @include oceanBlueGradient;
+    &:before {
+      top: -8px;
+      left: -8px;
+    }
+    &:after {
+      top: -5px;
+      left: -5px;
+      background-color: $daytonaBlue;
+    }
+    svg {
+      display: none;
+    }
+  }
+}
+
+.project-card {
+  @include oceanBorderGradient;
+  padding: 0 !important;
+  margin: 0 0.5rem 1rem;
+  .card-inner-wrapper,
+  .thumbnail {
+    border-radius: 0 !important;
+  }
+  .title {
+    font-family: 'SuisseIntl-Regular';
+    font-weight: 400;
+    letter-spacing: 1px;
+    @include fontSize_Regular;
+    @include leading_Regular;
+  }
+  .description {
+    font-family: 'Suisse Intl Mono';
+    @include fontSize_Small;
+    @include leading_Small;
+  }
+  &.list-view {
+    .title,
+    .description {
+      color: $blackSapphire;
+    }
+  }
+  &.block-view {
+    .title,
+    .description {
+      padding: 0 1rem;
+      color: $white;
+    }
+  }
+}
+
+#section-toolbar {
+  button {
+    z-index: unset;
+    transform: unset;
+    position: relative;
+    @include tripleLayer;
+    &:after {
+      @include oceanBlueGradient;
+    }
+  }
+}
