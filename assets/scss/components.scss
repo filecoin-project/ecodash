@@ -1,0 +1,158 @@
+#site-header,
+#site-footer {
+  background-color: transparent;
+}
+
+#header-hero {
+  &.index-view,
+  &.filters-view,
+  &.filters-applied,
+  &.hero-header {
+    background-color: unset !important;
+  }
+}
+
+#segment-slider-card {
+  position: relative;
+  .slider-card {
+    @include oceanBorderGradient;
+  }
+  .view-all {
+    background-color: $jaguar;
+    @include tripleLayer;
+    top: 10px;
+    &:after {
+      @include oceanBlueGradient;
+    }
+  }
+  h3 {
+    color: $blackSapphire;
+  }
+}
+
+// #segment-slider-chart {
+//   .block-segment {
+//     @include tripleLayer;
+//     &:after {
+//       background: unset;
+//       background-color: $daytonaBlue !important;
+//     }
+//   }
+// }
+
+// ///////////////////////////////////////////////////////////// Featured Slider
+// -----------------------------------------------------------------------------
+
+#featured-projects-slider {
+  .click-wrapper {
+    align-self: stretch;
+    .project-card {
+      height: 100%;
+    }
+  }
+  #slider-line {
+    .dummy-thumb {
+      width: 62px;
+      height: 12px;
+      z-index: unset;
+      @include tripleLayer;
+      @include oceanBlueGradient;
+      &:before {
+        top: -8px;
+        left: -8px;
+      }
+      &:after {
+        top: -5px;
+        left: -5px;
+        background-color: $daytonaBlue;
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+// //////////////////////////////////////////////////////////////// Filter Panel
+// -----------------------------------------------------------------------------
+
+#filter-panel-wrapper {
+  background: unset !important;
+  background-color: unset !important;
+  @include oceanBorderGradient;
+  border-left: unset;
+  &:before {
+    background: unset !important;
+    background-color: unset !important;
+    @include oceanBorderGradient;
+    border-right: unset;
+    top: -3px !important;
+  }
+}
+
+// //////////////////////////////////////////////////////////////////// Chiclets
+// -----------------------------------------------------------------------------
+.chiclet-list {
+  .chiclet {
+    @include borderRadius_Medium;
+    color: $blackSapphire;
+    &:hover,
+    &.active-button {
+      color: white;
+    }
+  }
+}
+
+// /////////////////////////////////////////////////////////////// Project Cards
+// -----------------------------------------------------------------------------
+
+.project-card {
+  .card-inner-wrapper {
+    @include oceanBorderGradient;
+    border-radius: 0 !important;
+    height: 100%;
+  }
+  .thumbnail {
+    border-radius: 0 !important;
+  }
+  .title {
+    font-family: 'SuisseIntl-Regular';
+    font-weight: 400;
+    letter-spacing: 1px;
+    @include fontSize_Regular;
+    @include leading_Regular;
+  }
+  .description {
+    font-family: 'Suisse Intl Mono';
+    @include fontSize_Small;
+    @include leading_Small;
+  }
+  &.list-view {
+    .title,
+    .description {
+      color: $blackSapphire;
+    }
+  }
+  &.block-view {
+    .title,
+    .description {
+      padding: 0 1rem;
+      color: $white;
+    }
+  }
+}
+
+// //////////////////////////////////////////////////// Project Explorer Toolbar
+// -----------------------------------------------------------------------------
+
+#section-toolbar {
+  button {
+    z-index: unset;
+    transform: unset;
+    position: relative;
+    @include tripleLayer;
+    &:after {
+      @include oceanBlueGradient;
+    }
+  }
+}
