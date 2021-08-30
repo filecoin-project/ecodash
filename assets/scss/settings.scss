@@ -48,6 +48,10 @@ $leading_Large: 2;
 $leading_ExtraLarge: 2.2;
 $leading_ExtraExtraLarge: 2.4;
 
+// ////////////////////////////////////////////////////////////////// Components
+// -----------------------------------------------------------------------------
+$navigationHeight: 8.25rem;
+
 // --------------------------------------------------------------- Border Radius
 $borderRadius_Small: 0;
 $borderRadius_Medium: 1px;
@@ -61,6 +65,8 @@ $middleLayerOffsetTop: -5px;
 
 // ///////////////////////////////////////////////////////////////////// General
 // -----------------------------------------------------------------------------
+$underlineSpacing: 0.1875rem;
+
 // -------------------------------------------------------------------- Coloring
 $site_backgroundColor: $blackSapphire;
 $font_Color_Primary: $white;
