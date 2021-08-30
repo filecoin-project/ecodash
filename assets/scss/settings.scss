@@ -1,8 +1,7 @@
 // ////////////////////////////////////////////////////////////////// Typography
 // -----------------------------------------------------------------------------
 // -------------------------------------------------------------------- Families
-$font_Primary: 'SuisseIntl-Regular', sans-serif;
-$font_Primary_Bold: 'SuisseIntl-Bold', sans-serif;
+$font_Primary: 'SuisseIntl', sans-serif;
 $font_Secondary: 'SuisseIntl-Mono', sans-serif, monospace;
 
 // --------------------------------------------------------------------- General
@@ -49,6 +48,11 @@ $leading_Large: 2;
 $leading_ExtraLarge: 2.2;
 $leading_ExtraExtraLarge: 2.4;
 
+// --------------------------------------------------------------- Border Radius
+$borderRadius_Small: 0;
+$borderRadius_Medium: 1px;
+// $borderRadius_Large:;
+
 // //////////////////////////////////////////////////////// Button Layer Spacing
 $bottomLayerOffsetLeft: -10px;
 $bottomLayerOffsetTop: -10px;
@@ -68,6 +72,6 @@ $fill_Light: $white;
 $fill_Active: $jaguar;
 
 $highlight_Light: $dodgerBlue;
-$highlight_Medium: $caribbeanBlue;
+$highlight_Medium: $dodgerBlue;
 
 $border_Color: $white;

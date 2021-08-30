@@ -3,6 +3,15 @@
   background-color: transparent;
 }
 
+#header-hero {
+  &.index-view,
+  &.filters-view,
+  &.filters-applied,
+  &.hero-header {
+    background-color: unset !important;
+  }
+}
+
 #segment-slider-card {
   position: relative;
   .slider-card {
@@ -31,33 +40,78 @@
 //   }
 // }
 
-#slider-line {
-  .dummy-thumb {
-    width: 62px;
-    height: 12px;
-    z-index: unset;
-    @include tripleLayer;
-    @include oceanBlueGradient;
-    &:before {
-      top: -8px;
-      left: -8px;
+// ///////////////////////////////////////////////////////////// Featured Slider
+// -----------------------------------------------------------------------------
+
+#featured-projects-slider {
+  .click-wrapper {
+    align-self: stretch;
+    .project-card {
+      height: 100%;
     }
-    &:after {
-      top: -5px;
-      left: -5px;
-      background-color: $daytonaBlue;
-    }
-    svg {
-      display: none;
+  }
+  #slider-line {
+    .dummy-thumb {
+      width: 62px;
+      height: 12px;
+      z-index: unset;
+      @include tripleLayer;
+      @include oceanBlueGradient;
+      &:before {
+        top: -8px;
+        left: -8px;
+      }
+      &:after {
+        top: -5px;
+        left: -5px;
+        background-color: $daytonaBlue;
+      }
+      svg {
+        display: none;
+      }
     }
   }
 }
 
-.project-card {
+// //////////////////////////////////////////////////////////////// Filter Panel
+// -----------------------------------------------------------------------------
+
+#filter-panel-wrapper {
+  background: unset !important;
+  background-color: unset !important;
   @include oceanBorderGradient;
-  padding: 0 !important;
-  margin: 0 0.5rem 1rem;
-  .card-inner-wrapper,
+  border-left: unset;
+  &:before {
+    background: unset !important;
+    background-color: unset !important;
+    @include oceanBorderGradient;
+    border-right: unset;
+    top: -3px !important;
+  }
+}
+
+// //////////////////////////////////////////////////////////////////// Chiclets
+// -----------------------------------------------------------------------------
+.chiclet-list {
+  .chiclet {
+    @include borderRadius_Medium;
+    color: $blackSapphire;
+    &:hover,
+    &.active-button {
+      color: white;
+    }
+  }
+}
+
+// /////////////////////////////////////////////////////////////// Project Cards
+// -----------------------------------------------------------------------------
+
+.project-card {
+  .card-inner-wrapper {
+    @include oceanBorderGradient;
+    border-radius: 0 !important;
+    height: 100%;
+  }
   .thumbnail {
     border-radius: 0 !important;
   }
@@ -87,6 +141,9 @@
     }
   }
 }
+
+// //////////////////////////////////////////////////// Project Explorer Toolbar
+// -----------------------------------------------------------------------------
 
 #section-toolbar {
   button {
