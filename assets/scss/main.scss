@@ -26,6 +26,18 @@ $fontAssetPath: '~assets/fonts';
 
 @font-face {
   font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
   src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Bold.ttf') format('opentype');
   font-weight: 700;
 }

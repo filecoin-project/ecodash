@@ -11,7 +11,7 @@
       :target="link.target"
       :class="[link.type === 'div' ? 'breadcrumb-button' : 'breadcrumb-link', 'focus-visible']">
       <span class="label">{{ link.label }}</span>
-      <span class="divider">|</span>
+      <span class="divider">/</span>
     </component>
 
   </section>

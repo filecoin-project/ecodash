@@ -106,6 +106,7 @@
 @mixin fontSize_Regular { font-size: $fontSize_Regular; }
 @mixin fontSize_Medium { font-size: $fontSize_Medium; }
 @mixin fontSize_Large { font-size: $fontSize_Large; }
+@mixin fontSize_Larger { font-size: $fontSize_Larger; }
 @mixin fontSize_ExtraLarge { font-size: $fontSize_ExtraLarge; }
 @mixin fontSize_ExtraMediumLarge { font-size: $fontSize_ExtraMediumLarge; }
 @mixin fontSize_ExtraExtraLarge { font-size: $fontSize_ExtraExtraLarge; }
@@ -185,7 +186,7 @@
 }
 
 @mixin lightBlueGradient {
-  background: linear-gradient(90deg, $frostbite, $morningSky);
+  background: linear-gradient(75deg, $morningSky, $frostbite);
 }
 
 // --------------------------------------------------------------------- Borders
