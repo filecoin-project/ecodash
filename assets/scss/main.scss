@@ -5,53 +5,52 @@ $fontAssetPath: '~assets/fonts';
 //////////////////////////////////////////////////////////////////// Suisse Intl
 @font-face {
   font-family: 'SuisseIntl';
-  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Regular.ttf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Light.otf') format('opentype');
+  font-weight: 300;
 }
-
-// @font-face {
-//   font-family: 'SuisseIntl';
-//   src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Regular.ttf') format('opentype');
-//   font-weight: 500;
-//   font-style: bold;
-// }
-
-// @font-face {
-//   font-family: 'SuisseIntl';
-//   src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Bold.ttf') format('opentype');
-//   font-weight: 600;
-//   font-style: bold;
-// }
 
 @font-face {
   font-family: 'SuisseIntl';
-  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Bold.ttf') format('opentype');
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-SemiBold.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 /////////////////////////////////////////////////////////////// Suisse Intl Mono
 @font-face {
   font-family: 'Suisse Intl Mono';
-  src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Mono.ttf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+  src: url('#{$fontAssetPath}/SuisseIntlMono/SuisseIntlMono-Thin.otf') format('opentype');
+  font-weight: 300;
 }
 
-// @font-face {
-//   font-family: 'Suisse Intl Mono';
-//   src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Mono.ttf') format('opentype');
-//   font-weight: 500;
-//   font-style: bold;
-// }
-//
-// @font-face {
-//   font-family: 'Suisse Intl Mono';
-//   src: url('#{$fontAssetPath}/SuisseIntl/SuisseIntl-Mono.ttf') format('opentype');
-//   font-weight: 600;
-//   font-style: bold;
-// }
+@font-face {
+  font-family: 'Suisse Intl Mono';
+  src: url('#{$fontAssetPath}/SuisseIntlMono/SuisseIntlMono-Regular.otf') format('opentype');
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: 'Suisse Intl Mono';
+  src: url('#{$fontAssetPath}/SuisseIntlMono/SuisseIntlMono-Bold.otf') format('opentype');
+  font-weight: 700;
+}
 
 // ///////////////////////////////////////////////////////////////////// General
 // -----------------------------------------------------------------------------
