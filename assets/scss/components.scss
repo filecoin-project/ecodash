@@ -1,5 +1,4 @@
-#site-header,
-#site-footer {
+#site-header {
   background-color: transparent;
 }
 
@@ -102,16 +101,6 @@
   }
 }
 
-// #segment-slider-chart {
-//   .block-segment {
-//     @include tripleLayer;
-//     &:after {
-//       background: unset;
-//       background-color: $daytonaBlue !important;
-//     }
-//   }
-// }
-
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
 
@@ -145,6 +134,162 @@
   }
 }
 
+// //////////////////////////////////////////////////// Project Explorer Toolbar
+// -----------------------------------------------------------------------------
+
+#project-explorer-toolbar {
+  .button-wrapper {
+    position: relative;
+    transition: all 250ms linear;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      @include whiteBorderBack;
+      background-color: $jaguar;
+      transition: inherit;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      @include whiteBorderBack;
+      @include oceanBlueGradient;
+      transition: inherit;
+    }
+    button {
+      z-index: 1;
+      top: 10px;
+      left: 10px;
+      @include whiteBorderFront;
+      border-radius: 0 !important;
+      background-color: $jaguar;
+      transition: inherit;
+      .button-content {
+        color: $white;
+        transition: all 250ms linear;
+        svg {
+          path {
+            transition: inherit;
+            stroke: $white;
+          }
+        }
+      }
+    }
+    &.button-active {
+      &:before {
+        top: 0px;
+        left: 0px;
+      }
+      &:after {
+        top: 0px;
+        left: 0px;
+      }
+      button {
+        top: 0px;
+        left: 0px;
+        @include oceanBlueGradient;
+        .button-content {
+          color: $blackSapphire;
+          transition: all 250ms linear;
+          svg {
+            path {
+              transition: inherit;
+              stroke: $blackSapphire;
+            }
+          }
+        }
+      }
+    }
+  }
+  .relative-wrapper {
+    position: relative;
+    left: -14px;
+    z-index: 100;
+  }
+  .sort-by-wrapper {
+    position: absolute;
+    right: 0;
+    &.open {
+      &:after {
+        background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
+      }
+    }
+  }
+  .dropdown-root {
+    position: relative;
+    padding-top: 0;
+    color: $blackSapphire;
+  }
+  .dropdown-item {
+    &.highlighted {
+      background-color: unset;
+      color: $blackSapphire;
+      @include lightBlueGradient;
+    }
+  }
+
+  #sort-by-selector {
+    .button-inner {
+      transition: all 250ms linear;
+      background-color: $jaguar;
+    }
+    .dropdown-button {
+      .dropdown-toggle {
+        svg {
+          path {
+            stroke: $white;
+          }
+        }
+      }
+    }
+    &:not(.closed) {
+      .shadow {
+        transition: opacity 250ms ease-in, height 0ms;
+        opacity: 1;
+      }
+      .dropdown-toggle {
+        transition: 250ms ease-in;
+        transform: rotate(-180deg);
+        svg {
+          path {
+            stroke: $blackSapphire;
+          }
+        }
+      }
+      .button-inner {
+        @include oceanBlueGradient;
+        color: $blackSapphire;
+      }
+    }
+  }
+
+  #list-block-toggle-button {
+    top: 10px;
+    height: calc(2.5rem - 1px);
+    @include whiteBorderBack;
+    overflow: hidden;
+    &:before {
+      width: 52%;
+      background-color: unset;
+      @include oceanBlueGradient;
+    }
+    svg {
+      path,
+      line,
+      g {
+        stroke: $blackSapphire;
+      }
+    }
+  }
+}
+
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
 
@@ -159,6 +304,16 @@
     @include oceanBorderGradient;
     border-right: unset;
     top: -3px !important;
+  }
+  #filter-panel-controls {
+    .done-button {
+      left: 1rem;
+      @include tripleLayer;
+      @include whiteBorderBack;
+      &:after {
+        @include oceanBlueGradient;
+      }
+    }
   }
 }
 
@@ -223,17 +378,40 @@
   }
 }
 
-// //////////////////////////////////////////////////// Project Explorer Toolbar
+// ////////////////////////////////////////////////////////////////// Pagination
 // -----------------------------------------------------------------------------
-
-#section-toolbar {
+#paginated-list-navigation-controls {
+  svg {
+    path,
+    line {
+      stroke: $white;
+    }
+  }
+  div,
   button {
-    z-index: unset;
-    transform: unset;
-    position: relative;
-    @include tripleLayer;
-    &:after {
-      @include oceanBlueGradient;
+    font-family: $font_Secondary;
+  }
+}
+
+#results-per-page-selector {
+  @include lightBluePurpleGradient;
+  @include whiteBorderBack;
+  border-radius: $borderRadius_Medium;
+  color: $blackSapphire;
+  .dropdown-list {
+    color: inherit;
+    .dropdown-item {
+      &.highlighted {
+        background-color: unset;
+        color: $blackSapphire;
+        @include lightBlueGradient;
+      }
+    }
+  }
+  svg {
+    path,
+    line {
+      stroke: $blackSapphire;
     }
   }
 }
