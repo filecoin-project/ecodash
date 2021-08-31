@@ -8,38 +8,41 @@
     @keyup.enter="toggleDropDown()">
 
     <div
-      ref="dropdownButton"
       class="dropdown-button"
       @click="toggleDropDown()">
 
-      <label>
-        {{ label }}
-      </label>
+      <div
+        ref="dropdownInner"
+        class="button-inner">
+        <label>
+          {{ label }}
+        </label>
 
-      <span>
-        {{ selected }}
-      </span>
+        <span>
+          {{ selected }}
+        </span>
 
-      <div class="dropdown-toggle">
-        <slot name="dropdown-icon"></slot>
+        <div class="dropdown-toggle">
+          <slot name="dropdown-icon"></slot>
+        </div>
       </div>
 
-    </div>
+      <div class="dropdown-root" :style="{ height: `${height}px` }">
 
-    <div class="dropdown-root" :style="{ paddingTop: `${dropdownButtonHeight}px`, height: `${height}px` }">
+        <div ref="dropdownList" class="dropdown-list">
+          <template v-for="option in options">
+            <div
+              :key="`div-option-${option.label}`"
+              :value="option.label"
+              :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
+              :tabindex="closed ? -1 : 0"
+              @click="optionSelected(option)"
+              @keyup.enter.self="optionSelected(option)">
+              {{ option.label }}
+            </div>
+          </template>
+        </div>
 
-      <div ref="dropdownList" class="dropdown-list">
-        <template v-for="option in options">
-          <div
-            :key="`div-option-${option.label}`"
-            :value="option.label"
-            :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
-            :tabindex="closed ? -1 : 0"
-            @click="optionSelected(option)"
-            @keyup.enter.self="optionSelected(option)">
-            {{ option.label }}
-          </div>
-        </template>
       </div>
 
     </div>
@@ -141,18 +144,15 @@ export default {
       setCollection: 'core/setCollection'
     }),
     setHeights () {
-      this.dropdownButtonHeight = this.$refs.dropdownButton.clientHeight
       this.dropdownListHeight = this.$refs.dropdownList.clientHeight
-      this.height = this.$refs.dropdownButton.clientHeight
     },
     toggleDropDown () {
-      const dropdownButtonHeight = this.dropdownButtonHeight
-      if (this.closed) {
-        this.height = dropdownButtonHeight + this.dropdownListHeight
-      } else {
-        this.height = dropdownButtonHeight
-      }
       this.closed = !this.closed
+      if (this.closed) {
+        this.height = 0
+      } else {
+        this.height = this.dropdownListHeight
+      }
       this.$emit('changed', {
         event: 'toggleDropdown',
         data: {
@@ -161,7 +161,7 @@ export default {
       })
     },
     closeAllSelect () {
-      this.height = this.dropdownButtonHeight
+      this.height = 0
       if (!this.closed) {
         this.$emit('changed', {
           event: 'toggleDropdown',
@@ -240,26 +240,19 @@ export default {
   cursor: pointer;
   z-index: 1000;
   transition: 250ms ease-out;
-  &:not(.closed) {
-    .shadow {
-      transition: opacity 250ms ease-in, height 0ms;
-      opacity: 1;
-    }
-    .dropdown-toggle {
-      transition: 250ms ease-in;
-      transform: rotate(-180deg);
-    }
-  }
 }
 
 .dropdown-button {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.25rem 1.0rem;
-  z-index: 20;
-  label {
-    margin-right: 0.25rem;
+  display: block;
+  .button-inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1.0rem;
+    z-index: 20;
+    label {
+      margin-right: 0.25rem;
+    }
   }
 }
 
