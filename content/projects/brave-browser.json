@@ -57,22 +57,22 @@
   "video": "//youtube.com/watch?v=hpwh_zLpnCE",
   "stats": [
     {
-      "label": "",
-      "value": ""
+      "label": "Web3 wallet and gateway to the decentralized web",
+      "value": "100K+"
     },
     {
-      "label": "",
-      "value": ""
+      "label": "Developer tools and APIs to build on IPFS and Filecoin",
+      "value": "1M+"
     },
     {
-      "label": "",
-      "value": ""
+      "label": "Web3 wallet and gateway to the decentralized web",
+      "value": "100K+"
     }
   ],
   "ctaCard": {
     "title": "Brave + IPFS",
-    "description": "Get a technical overview of how Brave integrates IPFS",
-    "buttonText": "More details",
+    "description": "Developer tools and APIs to build on IPFS and Filecoin",
+    "buttonText": "Case Study",
     "url": "//blog.ipfs.io/2021-01-21-how-we-put-ipfs-in-brave"
   },
   "taxonomies": [

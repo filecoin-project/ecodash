@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // -------------------------------------------------------------------- Families
 $font_Primary: 'SuisseIntl', sans-serif;
-$font_Secondary: 'SuisseIntl-Mono', sans-serif, monospace;
+$font_Secondary: 'Suisse Intl Mono', sans-serif, monospace;
 
 // --------------------------------------------------------------------- General
 $containerWidth: 75rem;
@@ -25,6 +25,7 @@ $breakpoint_UltraLarge: 140.625rem; // 2250px
 // fontSize_Regular | 16pt
 // fontSize_Medium | 18pt
 // fontSize_Large | 20pt
+// fontSize_Larger | 22pt
 // fontSize_ExtraLarge | 24pt
 // fontSize_ExtraMediumLarge | 28pt
 // fontSize_ExtraExtraLarge | 40pt
@@ -34,9 +35,16 @@ $fontSize_Small: 0.8125rem;
 $fontSize_Regular: 1rem;
 $fontSize_Medium: 1.125rem;
 $fontSize_Large: 1.25rem;
+$fontSize_Larger: 1.375rem;
 $fontSize_ExtraLarge: 1.5rem;
 $fontSize_ExtraMediumLarge: 1.75rem;
 $fontSize_ExtraExtraLarge: 2.5rem;
+
+// --------------------------------------------------------------------- Weight
+
+$fontWeight_Regular: 400;
+$fontWeight_Medium: 500;
+$fontWeight_SemiBold: 600;
 
 // --------------------------------------------------------------------- Leading
 $leading_Tiny: 1;
