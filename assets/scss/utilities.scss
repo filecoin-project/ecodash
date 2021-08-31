@@ -185,7 +185,7 @@
 }
 
 @mixin lightBlueGradient {
-  background: linear-gradient(90deg, $frostbite, $morningSky);
+  background: linear-gradient(90deg, $morningSky, $frostbite);
 }
 
 // --------------------------------------------------------------------- Borders
