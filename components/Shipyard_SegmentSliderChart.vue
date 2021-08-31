@@ -53,6 +53,8 @@
 
           </template>
 
+          <div v-if="selectedSeg === index" class="dots"></div>
+
         </div>
       </div>
 
@@ -375,7 +377,7 @@ export default {
 .segment-foreground {
   font-weight: bold;
   &:after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'><defs><pattern id='bg' patternUnits='userSpaceOnUse' width='4' height='4'><g><circle cx='1' cy='1' r='1.0' fill='%23fff'/></g></pattern></defs><rect transform='translate(2 2)' width='99%25' height='98%25' fill='url(%23bg)'/></svg>"), linear-gradient(75deg, $azure, $ocean) !important;
+    background-position: 100% 0% !important;
   }
 }
 
@@ -401,10 +403,10 @@ export default {
   &:after {
     top: 6px;
     left: 6px;
-    background: linear-gradient(90deg, $paleCornflower, $blizzard);
-    // background-size: 400% 400%;
-    // background-position: 0% 0%;
-    transition: inherit;
+    background: linear-gradient(90deg, $paleCornflower, $blizzard, $azure, $ocean);
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    transition: all 0.3s linear;
     z-index: 1;
   }
   &:hover {
@@ -418,12 +420,26 @@ export default {
       top: 0px;
       left: 0px;
     }
+    .dots {
+      top: 0px;
+      left: 0px;
+    }
   }
   &.displaced-down {
     transform: translateY(25%);
   }
   &.displaced-up {
     transform: translateY(-25%);
+  }
+  .dots {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'><defs><pattern id='bg' patternUnits='userSpaceOnUse' width='4' height='4'><g><circle cx='1' cy='1' r='1.0' fill='%23fff'/></g></pattern></defs><rect transform='translate(2 2)' width='99%25' height='98%25' fill='url(%23bg)'/></svg>");
+    z-index: 10;
+    transition: inherit;
   }
 }
 
