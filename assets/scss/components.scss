@@ -1,3 +1,5 @@
+// ////////////////////////////////////////////////////////////////////// Header
+// -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
 }
@@ -9,8 +11,16 @@
   &.hero-header {
     background-color: unset !important;
   }
+  .breadcrumbs {
+    margin-top: 0;
+  }
+  h1 {
+    margin-top: 4.75rem;
+    margin-bottom: 2rem;
+  }
 }
 
+<<<<<<< HEAD
 // ///////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
 
@@ -83,10 +93,17 @@
 // -----------------------------------------------------------------------------
 
 
+=======
+// //////////////////////////////////////////////////////// Segment Slider Chart
+// -----------------------------------------------------------------------------
+>>>>>>> feat-segment-slider-styling
 #segment-slider-card {
   position: relative;
   .slider-card {
     @include oceanBorderGradient;
+    @include small {
+      border: none;
+    }
   }
   .view-all {
     background-color: $jaguar;
@@ -101,9 +118,56 @@
   }
 }
 
+#segment-slider-chart {
+  @include medium {
+    .segments-container {
+      background-color: inherit;
+      .chart-title {
+        color: $blackSapphire;
+      }
+    }
+    .chart-container {
+      margin-bottom: 4rem;
+    }
+  }
+  @include small{
+    background-color: $white;
+    .main-container {
+      @include oceanBorderGradient;
+    }
+    .chart-container {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .block-segment {
+    @include whiteBorderBack;
+  }
+  .segment-line {
+    background-color: $white;
+    width: 1px;
+    z-index: -1;
+  }
+  .segments-container {
+    &:before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $white;
+      left: 0%;
+      top: calc(50% + 1.5rem);
+    }
+    @include medium {
+      &:before {
+        top: 50%;
+      }
+    }
+  }
+}
+
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
-
 #featured-projects-slider {
   .click-wrapper {
     align-self: stretch;
@@ -136,7 +200,6 @@
 
 // //////////////////////////////////////////////////// Project Explorer Toolbar
 // -----------------------------------------------------------------------------
-
 #project-explorer-toolbar {
   .button-wrapper {
     position: relative;
@@ -292,7 +355,6 @@
 
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
-
 #filter-panel-wrapper {
   background: unset !important;
   background-color: unset !important;
@@ -341,7 +403,6 @@
 
 // /////////////////////////////////////////////////////////////// Project Cards
 // -----------------------------------------------------------------------------
-
 .project-card {
   .card-inner-wrapper {
     @include oceanBorderGradient;
