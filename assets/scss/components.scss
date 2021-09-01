@@ -1,5 +1,17 @@
+// ////////////////////////////////////////////////////////////////////// Header
+// -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
+}
+
+#header-navigation {
+  .navigation-content {
+    margin-top: 0.5rem;
+  }
+  .navigation-link {
+    font-family: $font_Primary;
+    letter-spacing: $letter_SpacingRegular;
+  }
 }
 
 #header-hero {
@@ -11,6 +23,8 @@
   }
   .index-heading,
   h1 {
+    margin-top: 4.75rem;
+    margin-bottom: 2rem;
     font-family: $font_Primary;
     font-size: $fontSize_ExtraExtraLarge;
     font-weight: $fontWeight_SemiBold;
@@ -24,6 +38,9 @@
     font-weight: $fontWeight_Regular;
     letter-spacing: $letter_SpacingRegular;
     line-height: $leading_Medium;
+  }
+  .breadcrumbs {
+    margin-top: 0;
   }
 }
 
@@ -103,6 +120,9 @@
   position: relative;
   .slider-card {
     @include oceanBorderGradient;
+    @include small {
+      border: none;
+    }
   }
   .view-all {
     background-color: $jaguar;
@@ -117,9 +137,56 @@
   }
 }
 
+#segment-slider-chart {
+  @include medium {
+    .segments-container {
+      background-color: inherit;
+      .chart-title {
+        color: $blackSapphire;
+      }
+    }
+    .chart-container {
+      margin-bottom: 4rem;
+    }
+  }
+  @include small{
+    background-color: $white;
+    .main-container {
+      @include oceanBorderGradient;
+    }
+    .chart-container {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .block-segment {
+    @include whiteBorderBack;
+  }
+  .segment-line {
+    background-color: $white;
+    width: 1px;
+    z-index: -1;
+  }
+  .segments-container {
+    &:before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $white;
+      left: 0%;
+      top: calc(50% + 1.5rem);
+    }
+    @include medium {
+      &:before {
+        top: 50%;
+      }
+    }
+  }
+}
+
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
-
 #featured-projects-slider {
   .click-wrapper {
     align-self: stretch;
@@ -152,7 +219,6 @@
 
 // //////////////////////////////////////////////////// Project Explorer Toolbar
 // -----------------------------------------------------------------------------
-
 #project-explorer-toolbar {
   .button-wrapper {
     position: relative;
@@ -308,7 +374,6 @@
 
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
-
 #filter-panel-wrapper {
   background: unset !important;
   background-color: unset !important;
@@ -357,7 +422,6 @@
 
 // /////////////////////////////////////////////////////////////// Project Cards
 // -----------------------------------------------------------------------------
-
 .project-card {
   .card-inner-wrapper {
     @include oceanBorderGradient;
