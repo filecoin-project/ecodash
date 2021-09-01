@@ -187,7 +187,7 @@
 
 @mixin lightBlueGradient {
   background: linear-gradient(75deg, $morningSky, $frostbite);
-} 
+}
 
 // --------------------------------------------------------------------- Borders
 
@@ -234,4 +234,22 @@
     border: 1px solid $white;
     z-index: -1;
   }
+}
+
+// ------------------------------------------------------------------------ Text
+
+@mixin nonCardText {
+  font-family: $font_Primary;
+  font-size: $fontSize_Medium;
+  font-weight: $fontWeight_Regular;
+  letter-spacing: $letter_SpacingRegular;
+  line-height: $leading_Medium;
+}
+
+@mixin secondaryHeader {
+  font-family: $font_Primary;
+  font-size: $fontSize_ExtraLarge;
+  font-weight: $fontWeight_SemiBold;
+  letter-spacing: $letter_SpacingRegular;
+  line-height: $leading_Regular;
 }
