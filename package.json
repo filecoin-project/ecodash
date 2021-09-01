@@ -8,10 +8,10 @@
   },
   "private": true,
   "scripts": {
-    "dev": "./node_modules/nuxt/bin/nuxt.js",
-    "start": "./node_modules/nuxt/bin/nuxt.js start",
-    "build": "./node_modules/nuxt/bin/nuxt.js build",
-    "generate": "./node_modules/nuxt/bin/nuxt.js generate --fail-on-error"
+    "dev": "nuxt",
+    "start": "nuxt start",
+    "build": "nuxt build",
+    "generate": "nuxt generate --fail-on-error"
   },
   "engines": {
     "node": ">=14.17.6"
