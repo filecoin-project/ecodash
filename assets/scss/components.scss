@@ -9,6 +9,22 @@
   &.hero-header {
     background-color: unset !important;
   }
+  .index-heading,
+  h1 {
+    font-family: $font_Primary;
+    font-size: $fontSize_ExtraExtraLarge;
+    font-weight: $fontWeight_SemiBold;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Small;
+  }
+  .index-subheading {
+    width: 75%;
+    font-family: $font_Primary;
+    font-size: $fontSize_Medium;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Medium;
+  }
 }
 
 // ///////////////////////////////////////////////////////////// Footer Form
@@ -61,7 +77,7 @@
 
       .email {
         background: $midnight;
-        
+
         input {
           color: $white;
         }
@@ -69,7 +85,7 @@
 
       .submit {
         @include oceanBlueGradient;
-        
+
         input {
           color: $blackSapphire;
           margin-left: 0;
@@ -535,7 +551,7 @@
   width: 495px;
 }
 
-// /////////////////////////////////////////////////////////////// Project Featured Slider 
+// /////////////////////////////////////////////////////////////// Project Featured Slider
 // -----------------------------------------------------------------------------
 #section-featured-slider {
   .heading {
@@ -551,7 +567,7 @@
   }
 
   .project-card {
-    .title, 
+    .title,
     .description {
       color: $darkGrey;
     }
@@ -584,7 +600,7 @@
       font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
     }
-  
+
     .description {
       font-family: $font_Secondary;
       @include fontSize_Small;
