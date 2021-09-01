@@ -254,6 +254,19 @@
         padding: 0 1rem;
         color: $white;
       }
+      .title {
+        font-family: $font_Primary;
+        font-weight: $fontWeight_SemiBold;
+        letter-spacing: $letter_SpacingRegular;
+        @include fontSize_Medium;
+        @include leading_Regular;
+      }
+      .description {
+        font-family: $font_Secondary;
+        font-weight: $fontWeight_Regular;
+        @include fontSize_Small;
+        @include leading_Small;
+      }
     }
   }
   #slider {
@@ -309,9 +322,35 @@
 
 // //////////////////////////////////////////////////// Project Explorer Toolbar
 // -----------------------------------------------------------------------------
+#section-filter {
+  padding-bottom: 3rem !important;
+  h3 {
+    @include secondaryHeader;
+  }
+  .description {
+    @include nonCardText;
+  }
+}
+
+#section-toolbar {
+  margin-bottom: 2rem !important;
+}
+
+#project-explorer-container {
+  padding-top: 2rem;
+}
+
 #project-explorer-toolbar {
+  .filter-panel-controls {
+    display: flex;
+    margin-bottom: 1.5rem;
+    #clear-selected-filters-button {
+      margin-left: 0;
+    }
+  }
   .button-wrapper {
     position: relative;
+    margin-right: 1.5rem;
     transition: all 250ms linear;
     &:before {
       content: '';
@@ -339,6 +378,8 @@
       z-index: 1;
       top: 10px;
       left: 10px;
+      height: 2.5rem;
+      @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
       background-color: $jaguar;
@@ -387,7 +428,6 @@
   }
   .sort-by-wrapper {
     position: absolute;
-    right: 0;
     &.open {
       &:after {
         background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
@@ -405,6 +445,10 @@
       color: $blackSapphire;
       @include lightBlueGradient;
     }
+  }
+
+  #filter-panel-toggle-button {
+    position: relative;
   }
 
   #sort-by-selector {
@@ -464,6 +508,14 @@
 
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
+#filter-panel-project-list-container {
+  &:not(.filter-panel-open) {
+    #filter-panel-wrapper {
+      left: -3px;
+    }
+  }
+}
+
 #filter-panel-wrapper {
   background: unset !important;
   background-color: unset !important;
@@ -471,6 +523,7 @@
   border-left: unset;
   @include small {
     background-color: $blackSapphire !important;
+    border: none;
   }
   &:before {
     background: unset !important;
@@ -479,9 +532,57 @@
     border-right: unset;
     top: -3px !important;
   }
+
+  #filter-panel-close-icon {
+    svg {
+      path {
+        stroke: $ocean;
+      }
+    }
+  }
+
+  .filter-category {
+    .heading-wrapper {
+      svg {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1.0;
+        }
+        path {
+          stroke: $white;
+        }
+      }
+    }
+    .heading {
+      font-family: $font_Primary;
+      font-size: $fontSize_Regular;
+      font-weight: $fontWeight_Medium;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Mini;
+      margin-left: 0;
+      .number-active: {
+        font-size: $fontSize_Small;
+        font-weight: $fontWeight_Regular;
+      }
+      .subheading {
+        font-family: $font_Primary;
+        font-size: $fontSize_Small;
+        line-height: $leading_Mini;
+      }
+    }
+    .chiclet-list {
+      margin: 0;
+    }
+  }
   #filter-panel-controls {
+    .clear-selected-button {
+      color: $white;
+      @include cardText;
+      @include oceanBlueGradient;
+    }
     .done-button {
       left: 1rem;
+      @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
       &:after {
@@ -600,6 +701,30 @@
     color: $azure;
   }
 
+  // //////////////////////////////////// Project Featured Slider [Page Project]
+  // ---------------------------------------------------------------------------
+  #section-featured-slider {
+    .heading {
+      @include fontSize_ExtraLarge;
+      font-family: $font_Primary;
+      font-weight: $fontWeight_SemiBold;
+      margin-bottom: 13px;
+    }
+
+    .description {
+      @include fontSize_Regular;
+      margin-bottom: 35px;
+    }
+
+    .project-card {
+      .title,
+      .description {
+        color: $darkGrey;
+      }
+    }
+
+  }
+
 }
 // //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
@@ -707,30 +832,6 @@
 // -----------------------------------------------------------------------------
 #section-video {
   width: 495px;
-}
-
-// ///////////////////////////////////////////////////// Project Featured Slider
-// -----------------------------------------------------------------------------
-#section-featured-slider {
-  .heading {
-    @include fontSize_ExtraLarge;
-    font-family: $font_Primary;
-    font-weight: $fontWeight_SemiBold;
-    margin-bottom: 13px;
-  }
-
-  .description {
-    @include fontSize_Regular;
-    margin-bottom: 35px;
-  }
-
-  .project-card {
-    .title,
-    .description {
-      color: $darkGrey;
-    }
-  }
-
 }
 
 // ///////////////////////////////////////////////////////////// Statistic Cards

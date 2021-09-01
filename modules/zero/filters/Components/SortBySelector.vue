@@ -145,6 +145,7 @@ export default {
     }),
     setHeights () {
       this.dropdownListHeight = this.$refs.dropdownList.clientHeight
+      this.$emit('setwidth', this.$refs.dropdownInner.clientWidth)
     },
     toggleDropDown () {
       this.closed = !this.closed
