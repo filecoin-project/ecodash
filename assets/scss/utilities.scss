@@ -253,3 +253,11 @@
   letter-spacing: $letter_SpacingRegular;
   line-height: $leading_Regular;
 }
+
+@mixin cardText {
+  font-family: $font_Secondary;
+  font-size: $fontSize_Small;
+  font-weight: $fontWeight_Regular;
+  letter-spacing: 0;
+  line-height: $leading_Small;
+}
