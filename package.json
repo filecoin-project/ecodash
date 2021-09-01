@@ -14,7 +14,7 @@
     "generate": "./node_modules/nuxt/bin/nuxt.js generate --fail-on-error"
   },
   "engines": {
-    "node": "12.21.0"
+    "node": "16.4.2"
   },
   "dependencies": {
     "@lifeomic/axios-fetch": "^1.5.2",
