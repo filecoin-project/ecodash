@@ -3,12 +3,12 @@
 
     <div class="filter-panel-controls">
 
-      <div :class="['button-wrapper', { 'button-active': filterPanelOpen }]">
+      <div :class="['button-wrapper', filterButtonFloating, { 'button-active': filterPanelOpen }]">
         <Button
           id="filter-panel-toggle-button"
           type="C"
           :text="filterPanelToggleButtonLabel"
-          :class="['focus-visible', filterButtonFloating, { 'active': filterPanelOpen }]"
+          :class="['focus-visible', { 'active': filterPanelOpen }]"
           @clicked="toggleFilterPanel">
           <template #icon-before>
             <FiltersToggleIcon />
@@ -35,7 +35,7 @@
 
     <div class="radio-sort-wrapper">
 
-      <div class="relative-wrapper">
+      <div class="relative-wrapper sort-by" :style="`min-width: ${sortByWidth};`">
         <div
           v-if="showSortBySelector"
           :class="['button-wrapper', 'sort-by-wrapper', sortByState]">
@@ -44,7 +44,8 @@
             :label="sortDropdownLabel"
             :sort-options="sortOptions"
             :default-sort="defaultSort"
-            @changed="sortBySelectorChanged">
+            @changed="sortBySelectorChanged"
+            @setwidth="setSortByMinWidth">
             <template #dropdown-icon>
               <SelectorToggleIcon />
             </template>
@@ -103,7 +104,8 @@ export default {
 
   data () {
     return {
-      sortByState: 'closed'
+      sortByState: 'closed',
+      sortByWidth: 'unset'
     }
   },
 
@@ -174,6 +176,9 @@ export default {
           this.$Countly.trackEvent('Sort-By Option Selected', data)
         }
       }
+    },
+    setSortByMinWidth (val) {
+      this.sortByWidth = val + 'px'
     }
   }
 }
@@ -230,12 +235,19 @@ export default {
   }
 }
 
+.button-wrapper {
+  &.middle {
+    @include small {
+      position: fixed !important;
+      bottom: 4.1665vw;
+      z-index: 10;
+    }
+  }
+}
+
 // ///////////////////////////////////////////// [Button] Clear selected filters
 #clear-selected-filters-button {
   margin-left: 0.5rem;
-  @include mini {
-    margin-bottom: 1rem;
-  }
 }
 
 // ///////////////////////////////////////////////////////////// [Dropdown] Sort
@@ -243,6 +255,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
   @include mini {
     flex-direction: column;
     justify-content: center;
@@ -250,8 +263,14 @@ export default {
   }
   .sort-by-selector {
     position: relative;
+  }
+}
+
+.relative-wrapper {
+  &.sort-by {
+    margin: 0 1.5rem;
     @include mini {
-      margin-bottom: 1rem;
+      margin-bottom: 3.5rem;
     }
   }
 }
