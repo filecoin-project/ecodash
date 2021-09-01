@@ -154,17 +154,30 @@
     @include small {
       border: none;
     }
+    h3 {
+      font-family: $font_Primary;
+      font-size: $fontSize_Medium;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+      color: $blackSapphire;
+    }
+    .description {
+      font-family: $font_Secondary;
+      font-size: $fontSize_Small;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: 0;
+      line-height: $leading_Small;
+    }
   }
   .view-all {
     background-color: $jaguar;
+    @include cardText;
     @include tripleLayer;
     top: 10px;
     &:after {
       @include oceanBlueGradient;
     }
-  }
-  h3 {
-    color: $blackSapphire;
   }
 }
 
@@ -199,7 +212,12 @@
     width: 1px;
     z-index: -1;
   }
-  .segments-container {
+  .segment-label {
+    @include cardText;
+    letter-spacing: 0.015em;
+    line-height: $leading_Tiny;
+  }
+  .segments-row {
     &:before {
       content: '';
       position: absolute;
@@ -207,12 +225,6 @@
       width: 100%;
       background-color: $white;
       left: 0%;
-      top: calc(50% + 1.5rem);
-    }
-    @include medium {
-      &:before {
-        top: 50%;
-      }
     }
   }
 }
