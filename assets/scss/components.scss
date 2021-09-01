@@ -378,7 +378,7 @@
       z-index: 1;
       top: 10px;
       left: 10px;
-      height: 2.5rem;
+      min-height: 2.5rem;
       @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
@@ -452,9 +452,14 @@
   }
 
   #sort-by-selector {
+    @include shadow1;
     .button-inner {
       transition: all 250ms linear;
       background-color: $jaguar;
+    }
+    .button-inner,
+    .dropdown-item {
+      line-height: 1.8;
     }
     .dropdown-button {
       .dropdown-toggle {
