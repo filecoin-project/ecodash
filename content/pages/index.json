@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "IPFS Ecosystem Directory",
+    "title": "Filecoin Ecosystem",
     "description": "Interactive IPFS ecosystem directory and showcase"
   },
   "og": {
-    "site_name": "IPFS Ecosystem Directory",
+    "site_name": "Filecoin Ecosystem",
     "url": "https://ecosystem.ipfs.io/",
     "type": "website",
     "image": "https://ecosystem.ipfs.io/images/open-graph.png"
@@ -20,7 +20,7 @@
         },
         {
           "type": "div",
-          "label": "Ecosystem directory"
+          "label": "Filecoin Ecosystem"
         }
       ],
       "filters_view": [
@@ -32,7 +32,7 @@
         {
           "type": "a",
           "href": "/",
-          "label": "Ecosystem directory"
+          "label": "Filecoin Ecosystem"
         },
         {
           "type": "div",
@@ -48,7 +48,7 @@
         {
           "type": "a",
           "href": "/",
-          "label": "Ecosystem directory"
+          "label": "Filecoin Ecosystem"
         },
         {
           "type": "div",
@@ -58,12 +58,12 @@
     },
     "hero": {
       "heading": {
-        "index_view": "Ecosystem directory",
+        "index_view": "The Filecoin Ecosystem",
         "filters_view": "All entityTermPlural",
         "filters_applied_view": "Filtered results"
       },
       "subheading": {
-        "index_view": "Explore the world of entityTermPlural and products built on IPFS in this interactive showcase filterable by industry, tooling, and more.",
+        "index_view": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua.",
         "filters_view": {
           "show_all": "Showing all entityTermPlural, no filters selected",
           "show_search": "Showing entityTermPlural matching"

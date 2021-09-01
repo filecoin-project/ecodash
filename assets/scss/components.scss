@@ -6,7 +6,7 @@
 
 #header-navigation {
   .navigation-content {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
   .navigation-link {
     font-family: $font_Primary;
@@ -15,18 +15,65 @@
 }
 
 #header-hero {
+  margin-bottom: 1.25rem;
+  .breadcrumbs {
+    margin-top: 0;
+    font-family: $font_Primary;
+    font-size: $fontSize_Small;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Small;
+    .breadcrumb-link {
+      font-weight: $fontWeight_SemiBold;
+      .divider {
+        font-weight: inherit;
+      }
+    }
+  }
+
+  .index-subheading {
+    font-family: $font_Primary;
+    font-size: $fontSize_Medium;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Medium;
+    width: 75%;
+    @include medium {
+      width: 100%;
+    }
+  }
   &.index-view,
   &.filters-view,
   &.filters-applied,
   &.hero-header {
     background-color: unset !important;
+    h1 {
+      font-family: $font_Primary;
+      font-size: $fontSize_ExtraExtraLarge;
+      font-weight: $fontWeight_SemiBold;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+    }
+    .display-total {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
   }
-  .breadcrumbs {
-    margin-top: 0;
+  &.index-view {
+    h1 {
+      margin-top: 4.25rem;
+      margin-bottom: 1.5rem;
+    }
   }
-  h1 {
-    margin-top: 4.75rem;
-    margin-bottom: 2rem;
+  &.filters-view,
+  &.filters-applied {
+    h1 {
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+    }
   }
 }
 
@@ -411,6 +458,9 @@
   background-color: unset !important;
   @include oceanBorderGradient;
   border-left: unset;
+  @include small {
+    background-color: $blackSapphire !important;
+  }
   &:before {
     background: unset !important;
     background-color: unset !important;
