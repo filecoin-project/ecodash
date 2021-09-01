@@ -4,6 +4,16 @@
   background-color: transparent;
 }
 
+#header-navigation {
+  .navigation-content {
+    margin-top: 0.5rem;
+  }
+  .navigation-link {
+    font-family: $font_Primary;
+    letter-spacing: $letter_SpacingRegular;
+  }
+}
+
 #header-hero {
   &.index-view,
   &.filters-view,
