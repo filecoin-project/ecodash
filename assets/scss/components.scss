@@ -61,7 +61,7 @@
 
       .email {
         background: $midnight;
-        
+
         input {
           color: $white;
         }
@@ -69,7 +69,7 @@
 
       .submit {
         @include oceanBlueGradient;
-        
+
         input {
           color: $blackSapphire;
           margin-left: 0;
@@ -103,33 +103,78 @@
 
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
+#section-featured-slider {
+  margin-bottom: 6rem;
+  h3 {
+    @include secondaryHeader;
+  }
+  .description {
+    margin-bottom: 1.5rem !important;
+    @include nonCardText;
+  }
+}
+
 
 #featured-projects-slider {
   .click-wrapper {
     align-self: stretch;
     .project-card {
+      padding: 0;
       height: 100%;
+      .title,
+      .description {
+        padding: 0 1rem;
+        color: $white;
+      }
+    }
+  }
+  #slider {
+    margin: 0;
+    #card-row {
+      .click-wrapper {
+        margin: 0 0.5rem;
+      }
+      :first-child {
+        margin-left: 0;
+      }
+      :last-child {
+        margin-right: 0;
+      }
     }
   }
   #slider-line {
+    width: calc(50% - 1rem);
     .dummy-thumb {
+      position: absolute;
+      top: 2rem;
       width: 62px;
       height: 12px;
       z-index: unset;
       @include tripleLayer;
       @include oceanBlueGradient;
+      @include whiteBorderBack;
       &:before {
-        top: -8px;
-        left: -8px;
-      }
-      &:after {
         top: -5px;
         left: -5px;
+      }
+      &:after {
+        top: -3px;
+        left: -3px;
         background-color: $daytonaBlue;
       }
       svg {
         display: none;
       }
+    }
+    &:after {
+      top: 2.25rem;
+      @include whiteBorderBack;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
     }
   }
 }
@@ -352,14 +397,15 @@
     border-radius: 0 !important;
   }
   .title {
-    font-family: 'SuisseIntl-Regular';
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: $font_Primary;
+    font-weight: $fontWeight_Medium;
+    letter-spacing: $letter_SpacingRegular;
     @include fontSize_Regular;
     @include leading_Regular;
   }
   .description {
-    font-family: 'Suisse Intl Mono';
+    font-family: $font_Secondary;
+    font-weight: $fontWeight_Regular;
     @include fontSize_Small;
     @include leading_Small;
   }
@@ -535,7 +581,7 @@
   width: 495px;
 }
 
-// /////////////////////////////////////////////////////////////// Project Featured Slider 
+// ///////////////////////////////////////////////////// Project Featured Slider
 // -----------------------------------------------------------------------------
 #section-featured-slider {
   .heading {
@@ -551,7 +597,7 @@
   }
 
   .project-card {
-    .title, 
+    .title,
     .description {
       color: $darkGrey;
     }
@@ -584,7 +630,7 @@
       font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
     }
-  
+
     .description {
       font-family: $font_Secondary;
       @include fontSize_Small;
