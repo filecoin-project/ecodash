@@ -1,17 +1,83 @@
+// ////////////////////////////////////////////////////////////////////// Header
+// -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
 }
 
+#header-navigation {
+  .navigation-content {
+    margin-top: 0.25rem;
+  }
+  .navigation-link {
+    font-family: $font_Primary;
+    letter-spacing: $letter_SpacingRegular;
+  }
+}
+
 #header-hero {
+  margin-bottom: 1.25rem;
+  .breadcrumbs {
+    margin-top: 0;
+    font-family: $font_Primary;
+    font-size: $fontSize_Small;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Small;
+    .breadcrumb-link {
+      font-weight: $fontWeight_SemiBold;
+      .divider {
+        font-weight: inherit;
+      }
+    }
+  }
+
+  .index-subheading {
+    font-family: $font_Primary;
+    font-size: $fontSize_Medium;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Medium;
+    width: 75%;
+    @include medium {
+      width: 100%;
+    }
+  }
   &.index-view,
   &.filters-view,
   &.filters-applied,
   &.hero-header {
     background-color: unset !important;
+    h1 {
+      font-family: $font_Primary;
+      font-size: $fontSize_ExtraExtraLarge;
+      font-weight: $fontWeight_SemiBold;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+    }
+    .display-total {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
+  }
+  &.index-view {
+    h1 {
+      margin-top: 4.25rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &.filters-view,
+  &.filters-applied {
+    h1 {
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+    }
   }
 }
 
-// ///////////////////////////////////////////////////////////// Footer Form
+// ///////////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
 
 .mailchimp-form {
@@ -61,7 +127,7 @@
 
       .email {
         background: $midnight;
-        
+
         input {
           color: $white;
         }
@@ -69,7 +135,7 @@
 
       .submit {
         @include oceanBlueGradient;
-        
+
         input {
           color: $blackSapphire;
           margin-left: 0;
@@ -79,64 +145,170 @@
   }
 }
 
-// ///////////////////////////////////////////////////////////// Segment Slider
+// ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
-
-
 #segment-slider-card {
   position: relative;
   .slider-card {
     @include oceanBorderGradient;
+    @include small {
+      border: none;
+    }
+    h3 {
+      font-family: $font_Primary;
+      font-size: $fontSize_Medium;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+      color: $blackSapphire;
+    }
+    .description {
+      font-family: $font_Secondary;
+      font-size: $fontSize_Small;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: 0;
+      line-height: $leading_Small;
+    }
   }
   .view-all {
     background-color: $jaguar;
+    @include cardText;
     @include tripleLayer;
     top: 10px;
     &:after {
       @include oceanBlueGradient;
     }
   }
-  h3 {
-    color: $blackSapphire;
+}
+
+#segment-slider-chart {
+  margin-bottom: 5rem;
+  @include medium {
+    .segments-container {
+      background-color: inherit;
+      .chart-title {
+        color: $blackSapphire;
+      }
+    }
+    .chart-container {
+      margin-bottom: 4rem;
+    }
+  }
+  @include small{
+    background-color: $white;
+    .main-container {
+      @include oceanBorderGradient;
+    }
+    .chart-container {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .block-segment {
+    @include whiteBorderBack;
+  }
+  .segment-line {
+    background-color: $white;
+    width: 1px;
+    z-index: -1;
+  }
+  .segment-label {
+    @include cardText;
+    letter-spacing: 0.015em;
+    line-height: $leading_Tiny;
+  }
+  .segments-row {
+    &:before {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background-color: $white;
+      left: 0%;
+    }
   }
 }
 
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
+#section-featured-slider {
+  margin-bottom: 6rem;
+  h3 {
+    @include secondaryHeader;
+  }
+  .description {
+    margin-bottom: 1.5rem !important;
+    @include nonCardText;
+  }
+}
+
 
 #featured-projects-slider {
   .click-wrapper {
     align-self: stretch;
     .project-card {
+      padding: 0;
       height: 100%;
+      .title,
+      .description {
+        padding: 0 1rem;
+        color: $white;
+      }
+    }
+  }
+  #slider {
+    margin: 0;
+    #card-row {
+      .click-wrapper {
+        margin: 0 0.5rem;
+      }
+      :first-child {
+        margin-left: 0;
+      }
+      :last-child {
+        margin-right: 0;
+      }
     }
   }
   #slider-line {
+    width: calc(50% - 1rem);
     .dummy-thumb {
+      position: absolute;
+      top: 2rem;
       width: 62px;
       height: 12px;
       z-index: unset;
       @include tripleLayer;
       @include oceanBlueGradient;
+      @include whiteBorderBack;
       &:before {
-        top: -8px;
-        left: -8px;
-      }
-      &:after {
         top: -5px;
         left: -5px;
+      }
+      &:after {
+        top: -3px;
+        left: -3px;
         background-color: $daytonaBlue;
       }
       svg {
         display: none;
       }
     }
+    &:after {
+      top: 2.25rem;
+      @include whiteBorderBack;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
+    }
   }
 }
 
 // //////////////////////////////////////////////////// Project Explorer Toolbar
 // -----------------------------------------------------------------------------
-
 #project-explorer-toolbar {
   .button-wrapper {
     position: relative;
@@ -292,12 +464,14 @@
 
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
-
 #filter-panel-wrapper {
   background: unset !important;
   background-color: unset !important;
   @include oceanBorderGradient;
   border-left: unset;
+  @include small {
+    background-color: $blackSapphire !important;
+  }
   &:before {
     background: unset !important;
     background-color: unset !important;
@@ -341,7 +515,6 @@
 
 // /////////////////////////////////////////////////////////////// Project Cards
 // -----------------------------------------------------------------------------
-
 .project-card {
   .card-inner-wrapper {
     @include oceanBorderGradient;
@@ -352,14 +525,15 @@
     border-radius: 0 !important;
   }
   .title {
-    font-family: 'SuisseIntl-Regular';
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: $font_Primary;
+    font-weight: $fontWeight_Medium;
+    letter-spacing: $letter_SpacingRegular;
     @include fontSize_Regular;
     @include leading_Regular;
   }
   .description {
-    font-family: 'Suisse Intl Mono';
+    font-family: $font_Secondary;
+    font-weight: $fontWeight_Regular;
     @include fontSize_Small;
     @include leading_Small;
   }
@@ -416,7 +590,7 @@
   }
 }
 
-// //////////////////////////////////////////////////////////////////// Page Project
+// //////////////////////////////////////////////////////////////// Page Project
 // -----------------------------------------------------------------------------
 .page-project {
   font-family: $font_Primary;
@@ -427,7 +601,7 @@
   }
 
 }
-// /////////////////////////////////////////////////////////////// Project Info
+// //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
   .logo {
     max-height: 6rem;
@@ -495,7 +669,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Key Info
+// //////////////////////////////////////////////////////////////////// Key Info
 // -----------------------------------------------------------------------------
 
 #section-key-info {
@@ -519,7 +693,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Filters
+// ///////////////////////////////////////////////////////////////////// Filters
 // -----------------------------------------------------------------------------
 #section-filters {
   h3.heading {
@@ -529,13 +703,13 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Video
+// /////////////////////////////////////////////////////////////////////// Video
 // -----------------------------------------------------------------------------
 #section-video {
   width: 495px;
 }
 
-// /////////////////////////////////////////////////////////////// Project Featured Slider 
+// ///////////////////////////////////////////////////// Project Featured Slider
 // -----------------------------------------------------------------------------
 #section-featured-slider {
   .heading {
@@ -551,7 +725,7 @@
   }
 
   .project-card {
-    .title, 
+    .title,
     .description {
       color: $darkGrey;
     }
@@ -559,7 +733,7 @@
 
 }
 
-// /////////////////////////////////////////////////////////////// Statistic Cards
+// ///////////////////////////////////////////////////////////// Statistic Cards
 // -----------------------------------------------------------------------------
 #section-statistics {
   flex-direction: column;
@@ -584,7 +758,7 @@
       font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
     }
-  
+
     .description {
       font-family: $font_Secondary;
       @include fontSize_Small;
@@ -629,8 +803,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Filters
-
+// ///////////////////////////////////////////////////////////////////// Filters
 #section-filters {
   .chiclet {
     @include lightBlueGradient;
