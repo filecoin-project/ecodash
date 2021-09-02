@@ -25,13 +25,38 @@ const append2URL = (state, settings, router) => {
   }
 }
 
+const initTaxonomyLabels = (taxonomy) => {
+  const obj = {}
+  taxonomy.categories.forEach((item) => {
+    const tags = item.tags
+    for (let i = 0; i < tags.length; i++) {
+      obj[tags[i].slug] = tags[i].label
+    }
+  })
+  return obj
+}
+
+const initCategoryLookUp = (taxonomy) => {
+  const obj = {}
+  taxonomy.categories.forEach((item) => {
+    const tagSlugs = []
+    for (let i = 0; i < item.tags.length; i++) {
+      tagSlugs.push(item.tags[i].slug)
+    }
+    obj[item.slug] = { label: item.label, tags: tagSlugs }
+  })
+  return obj
+}
+
 // /////////////////////////////////////////////////////////////////////// State
 // -----------------------------------------------------------------------------
 const state = {
   filterPanelOpen: false,
   routeQuery: params,
   totalPages: 0,
-  displayOptions: false
+  displayOptions: false,
+  taxonomyLabels: false,
+  categoryLookUp: false
 }
 
 // ///////////////////////////////////////////////////////////////////// Getters
@@ -41,29 +66,8 @@ const getters = {
   routeQuery: state => state.routeQuery,
   totalPages: state => state.totalPages,
   displayOptions: state => state.displayOptions,
-  taxonomyLabels: (state) => {
-    const obj = {}
-    const taxonomy = this.getters['global/siteContent'].taxonomy
-    taxonomy.categories.forEach((item) => {
-      const tags = item.tags
-      for (let i = 0; i < tags.length; i++) {
-        obj[tags[i].slug] = tags[i].label
-      }
-    })
-    return obj
-  },
-  categoryLookUp: (state) => {
-    const obj = {}
-    const taxonomy = this.getters['global/siteContent'].taxonomy
-    taxonomy.categories.forEach((item) => {
-      const tagSlugs = []
-      for (let i = 0; i < item.tags.length; i++) {
-        tagSlugs.push(item.tags[i].slug)
-      }
-      obj[item.slug] = { label: item.label, tags: tagSlugs }
-    })
-    return obj
-  }
+  taxonomyLabels: state => state.taxonomyLabels,
+  categoryLookUp: state => state.categoryLookUp
 }
 
 // ///////////////////////////////////////////////////////////////////// Actions
@@ -136,6 +140,8 @@ const mutations = {
       }
     })
     const router = this.$router
+    state.taxonomyLabels = initTaxonomyLabels(this.getters['global/siteContent'].taxonomy)
+    state.categoryLookUp = initCategoryLookUp(this.getters['global/siteContent'].taxonomy)
     append2URL(state, this.getters['global/siteContent'].settings, router)
   },
   SET_ROUTE_QUERY (state, payload) {

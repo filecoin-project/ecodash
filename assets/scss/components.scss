@@ -6,6 +6,7 @@
 
 #header-navigation {
   .navigation-content {
+    margin-top: 0.25rem;
     justify-content: unset;
     .language-selector {
       display: flex;
@@ -22,7 +23,8 @@
     .links-container {
       .navigation-link {
         margin: 0 0.5rem;
-        font-family: 'SuisseIntl';
+        font-family: $font_Primary;
+        letter-spacing: $letter_SpacingRegular;
         font-size: $fontSize_Regular;
       }
     }
@@ -169,22 +171,69 @@
 }
 
 #header-hero {
+  margin-bottom: 1.25rem;
+  .breadcrumbs {
+    margin-top: 0;
+    font-family: $font_Primary;
+    font-size: $fontSize_Small;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Small;
+    .breadcrumb-link {
+      font-weight: $fontWeight_SemiBold;
+      .divider {
+        font-weight: inherit;
+      }
+    }
+  }
+
+  .index-subheading {
+    font-family: $font_Primary;
+    font-size: $fontSize_Medium;
+    font-weight: $fontWeight_Regular;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Medium;
+    width: 75%;
+    @include medium {
+      width: 100%;
+    }
+  }
   &.index-view,
   &.filters-view,
   &.filters-applied,
   &.hero-header {
     background-color: unset !important;
+    h1 {
+      font-family: $font_Primary;
+      font-size: $fontSize_ExtraExtraLarge;
+      font-weight: $fontWeight_SemiBold;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+    }
+    .display-total {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
   }
-  .breadcrumbs {
-    margin-top: 0;
+  &.index-view {
+    h1 {
+      margin-top: 4.25rem;
+      margin-bottom: 1.5rem;
+    }
   }
-  h1 {
-    margin-top: 4.75rem;
-    margin-bottom: 2rem;
+  &.filters-view,
+  &.filters-applied {
+    h1 {
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+    }
   }
 }
 
-// ///////////////////////////////////////////////////////////// Footer Form
+// ///////////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
 
 .mailchimp-form {
@@ -252,9 +301,8 @@
   }
 }
 
-// ///////////////////////////////////////////////////////////// Segment Slider
+// ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
-
 
 #segment-slider-card {
   position: relative;
@@ -263,21 +311,35 @@
     @include small {
       border: none;
     }
+    h3 {
+      font-family: $font_Primary;
+      font-size: $fontSize_Medium;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Small;
+      color: $blackSapphire;
+    }
+    .description {
+      font-family: $font_Secondary;
+      font-size: $fontSize_Small;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: 0;
+      line-height: $leading_Small;
+    }
   }
   .view-all {
     background-color: $jaguar;
+    @include cardText;
     @include tripleLayer;
     top: 10px;
     &:after {
       @include oceanBlueGradient;
     }
   }
-  h3 {
-    color: $blackSapphire;
-  }
 }
 
 #segment-slider-chart {
+  margin-bottom: 5rem;
   @include medium {
     .segments-container {
       background-color: inherit;
@@ -307,7 +369,12 @@
     width: 1px;
     z-index: -1;
   }
-  .segments-container {
+  .segment-label {
+    @include cardText;
+    letter-spacing: 0.015em;
+    line-height: $leading_Tiny;
+  }
+  .segments-row {
     &:before {
       content: '';
       position: absolute;
@@ -315,53 +382,135 @@
       width: 100%;
       background-color: $white;
       left: 0%;
-      top: calc(50% + 1.5rem);
-    }
-    @include medium {
-      &:before {
-        top: 50%;
-      }
     }
   }
 }
 
 // ///////////////////////////////////////////////////////////// Featured Slider
 // -----------------------------------------------------------------------------
+#section-featured-slider {
+  margin-bottom: 6rem;
+  h3 {
+    @include secondaryHeader;
+  }
+  .description {
+    margin-bottom: 1.5rem !important;
+    @include nonCardText;
+  }
+}
+
+
 #featured-projects-slider {
   .click-wrapper {
     align-self: stretch;
     .project-card {
+      padding: 0;
       height: 100%;
+      .title,
+      .description {
+        padding: 0 1rem;
+        color: $white;
+      }
+      .title {
+        font-family: $font_Primary;
+        font-weight: $fontWeight_SemiBold;
+        letter-spacing: $letter_SpacingRegular;
+        @include fontSize_Medium;
+        @include leading_Regular;
+      }
+      .description {
+        font-family: $font_Secondary;
+        font-weight: $fontWeight_Regular;
+        @include fontSize_Small;
+        @include leading_Small;
+      }
     }
   }
+  #slider {
+    margin: 0;
+    #card-row {
+      .click-wrapper {
+        margin: 0 0.5rem;
+      }
+      :first-child {
+        margin-left: 0;
+      }
+      :last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.page-home {
   #slider-line {
+    width: calc(50% - 1rem) !important;
     .dummy-thumb {
+      position: absolute;
+      top: 2rem;
       width: 62px;
       height: 12px;
       z-index: unset;
       @include tripleLayer;
       @include oceanBlueGradient;
+      @include whiteBorderBack;
       &:before {
-        top: -8px;
-        left: -8px;
-      }
-      &:after {
         top: -5px;
         left: -5px;
+      }
+      &:after {
+        top: -3px;
+        left: -3px;
         background-color: $daytonaBlue;
       }
       svg {
         display: none;
       }
     }
+    &:after {
+      top: 2.25rem !important;
+      border: 1px solid $white !important;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
+    }
   }
 }
 
 // //////////////////////////////////////////////////// Project Explorer Toolbar
 // -----------------------------------------------------------------------------
+#section-filter {
+  padding-bottom: 3rem !important;
+  h3 {
+    @include secondaryHeader;
+  }
+  .description {
+    @include nonCardText;
+  }
+}
+
+#section-toolbar {
+  margin-bottom: 2rem !important;
+}
+
+#project-explorer-container {
+  padding-top: 2rem;
+}
+
 #project-explorer-toolbar {
+  .filter-panel-controls {
+    display: flex;
+    margin-bottom: 1.5rem;
+    #clear-selected-filters-button {
+      margin-left: 0;
+    }
+  }
   .button-wrapper {
     position: relative;
+    margin-right: 1.5rem;
     transition: all 250ms linear;
     &:before {
       content: '';
@@ -389,6 +538,8 @@
       z-index: 1;
       top: 10px;
       left: 10px;
+      min-height: 2.5rem;
+      @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
       background-color: $jaguar;
@@ -437,7 +588,6 @@
   }
   .sort-by-wrapper {
     position: absolute;
-    right: 0;
     &.open {
       &:after {
         background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
@@ -457,10 +607,19 @@
     }
   }
 
+  #filter-panel-toggle-button {
+    position: relative;
+  }
+
   #sort-by-selector {
+    @include shadow1;
     .button-inner {
       transition: all 250ms linear;
       background-color: $jaguar;
+    }
+    .button-inner,
+    .dropdown-item {
+      line-height: 1.8;
     }
     .dropdown-button {
       .dropdown-toggle {
@@ -514,11 +673,23 @@
 
 // //////////////////////////////////////////////////////////////// Filter Panel
 // -----------------------------------------------------------------------------
+#filter-panel-project-list-container {
+  &:not(.filter-panel-open) {
+    #filter-panel-wrapper {
+      left: -3px;
+    }
+  }
+}
+
 #filter-panel-wrapper {
   background: unset !important;
   background-color: unset !important;
   @include oceanBorderGradient;
   border-left: unset;
+  @include small {
+    background-color: $blackSapphire !important;
+    border: none;
+  }
   &:before {
     background: unset !important;
     background-color: unset !important;
@@ -526,9 +697,96 @@
     border-right: unset;
     top: -3px !important;
   }
+
+  #filter-panel-toolbar {
+    #filter-panel-close-icon {
+      svg {
+        path {
+          stroke: $ocean;
+        }
+      }
+    }
+    #filter-bar {
+      height: 1.875rem;
+      .icon-container {
+        width: 1.875rem;
+        height: 1.875rem;
+        svg {
+          height: 1rem;
+          width: 1rem;
+          line,
+          circle {
+            stroke: #BFBFBF;
+          }
+        }
+      }
+      input {
+        font-family: $font_Primary;
+        font-weight: $fontWeight_Regular;
+        letter-spacing: $letter_SpacingRegular;
+        color: $tundora;
+        @mixin placeholder {
+          font-family: $font_Primary;
+          color: $tundora;
+          opacity: 0.75;
+          z-index: 100;
+        }
+        ::-webkit-input-placeholder { @include placeholder; }
+        ::-moz-placeholder { @include placeholder; }
+        :-ms-input-placeholder { @include placeholder; }
+        :-moz-placeholder { @include placeholder; }
+        &:hover {
+          background-color: $white;
+        }
+        &:focus {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .filter-category {
+    .heading-wrapper {
+      svg {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1.0;
+        }
+        path {
+          stroke: $white;
+        }
+      }
+    }
+    .heading {
+      font-family: $font_Primary;
+      font-size: $fontSize_Regular;
+      font-weight: $fontWeight_Medium;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Mini;
+      margin-left: 0;
+      .number-active: {
+        font-size: $fontSize_Small;
+        font-weight: $fontWeight_Regular;
+      }
+      .subheading {
+        font-family: $font_Primary;
+        font-size: $fontSize_Small;
+        line-height: $leading_Mini;
+      }
+    }
+    .chiclet-list {
+      margin: 0;
+    }
+  }
   #filter-panel-controls {
+    .clear-selected-button {
+      color: $white;
+      @include cardText;
+      @include oceanBlueGradient;
+    }
     .done-button {
       left: 1rem;
+      @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
       &:after {
@@ -572,14 +830,15 @@
     border-radius: 0 !important;
   }
   .title {
-    font-family: 'SuisseIntl-Regular';
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-family: $font_Primary;
+    font-weight: $fontWeight_Medium;
+    letter-spacing: $letter_SpacingRegular;
     @include fontSize_Regular;
     @include leading_Regular;
   }
   .description {
-    font-family: 'Suisse Intl Mono';
+    font-family: $font_Secondary;
+    font-weight: $fontWeight_Regular;
     @include fontSize_Small;
     @include leading_Small;
   }
@@ -636,7 +895,7 @@
   }
 }
 
-// //////////////////////////////////////////////////////////////////// Page Project
+// //////////////////////////////////////////////////////////////// Page Project
 // -----------------------------------------------------------------------------
 .page-project {
   font-family: $font_Primary;
@@ -646,8 +905,86 @@
     color: $azure;
   }
 
+  // //////////////////////////////////// Project Featured Slider [Page Project]
+  // ---------------------------------------------------------------------------
+  .featured-box {
+    border: none !important;
+  }
+
+  #section-featured-slider {
+    .heading {
+      @include fontSize_ExtraLarge;
+      font-family: $font_Primary;
+      font-weight: $fontWeight_SemiBold;
+      margin-bottom: 13px;
+    }
+
+    .description {
+      @include fontSize_Regular;
+      margin-bottom: 35px;
+    }
+
+    .project-card {
+      .title,
+      .description {
+        color: $darkGrey;
+      }
+    }
+
+  }
+
+  #slider-line {
+    width: calc(50% - 1rem) !important;
+    .dummy-thumb {
+      position: relative;
+      top: 1.875rem;
+      width: 60px;
+      height: 10px;
+      z-index: 2;
+      @include oceanBorderGradient;
+      border-width: 1px;
+      background-color: transparent;
+      transform: unset;
+      border-radius: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 1px;
+        left: 1px;
+        // @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 2px;
+        left: 2px;
+        @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      svg {
+        display: none;
+      }
+    }
+    &:after {
+      z-index: 1 !important;
+      top: 2.25rem !important;
+      border: 1px solid $greyBlue !important;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
+    }
+  }
+
 }
-// /////////////////////////////////////////////////////////////// Project Info
+// //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
   .logo {
     max-height: 6rem;
@@ -715,7 +1052,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Key Info
+// //////////////////////////////////////////////////////////////////// Key Info
 // -----------------------------------------------------------------------------
 
 #section-key-info {
@@ -739,7 +1076,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Filters
+// ///////////////////////////////////////////////////////////////////// Filters
 // -----------------------------------------------------------------------------
 #section-filters {
   h3.heading {
@@ -749,37 +1086,13 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Video
+// /////////////////////////////////////////////////////////////////////// Video
 // -----------------------------------------------------------------------------
 #section-video {
   width: 495px;
 }
 
-// /////////////////////////////////////////////////////////////// Project Featured Slider
-// -----------------------------------------------------------------------------
-#section-featured-slider {
-  .heading {
-    @include fontSize_ExtraLarge;
-    font-family: $font_Primary;
-    font-weight: $fontWeight_SemiBold;
-    margin-bottom: 13px;
-  }
-
-  .description {
-    @include fontSize_Regular;
-    margin-bottom: 35px;
-  }
-
-  .project-card {
-    .title,
-    .description {
-      color: $darkGrey;
-    }
-  }
-
-}
-
-// /////////////////////////////////////////////////////////////// Statistic Cards
+// ///////////////////////////////////////////////////////////// Statistic Cards
 // -----------------------------------------------------------------------------
 #section-statistics {
   flex-direction: column;
@@ -849,8 +1162,7 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Filters
-
+// ///////////////////////////////////////////////////////////////////// Filters
 #section-filters {
   .chiclet {
     @include lightBlueGradient;
