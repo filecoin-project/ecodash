@@ -607,6 +607,7 @@
       letter-spacing: $letter_SpacingRegular;
       line-height: $leading_Mini;
       margin-left: 0;
+      
       .number-active: {
         font-size: $fontSize_Small;
         font-weight: $fontWeight_Regular;
@@ -887,6 +888,17 @@
         left: -11px;
         z-index: -2;
       }
+
+      span {
+        position: relative;
+
+        &[data-tooltip] {
+          &::after {
+            top: -1.5rem;
+            left: 2rem;
+          }
+        }
+      }
     }
 
     .secondary-cta {
@@ -914,6 +926,14 @@
       a {
         @include fontSize_Medium;
         font-weight: $fontWeight_Regular;
+        position: relative;
+
+        &[data-tooltip] {
+          &::after {
+            top: -1.25rem;
+            left: 11rem;
+          }
+        }
       }
     }
   }
@@ -1016,5 +1036,19 @@
       @include oceanBlueGradient;
       color: $blackSapphire;
     }
+  }
+}
+
+// ///////////////////////////////////////////////////////////////////// Filters
+[data-tooltip] {
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    background: $white !important;
+    color: $tooltipBlue !important;
+    box-shadow: 0px 3px 6px 0px rgba($tooltipShadow, 0.31);
+    padding: 0.25rem 0.5rem;
   }
 }
