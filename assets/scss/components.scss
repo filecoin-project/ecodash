@@ -541,10 +541,49 @@
     top: -3px !important;
   }
 
-  #filter-panel-close-icon {
-    svg {
-      path {
-        stroke: $ocean;
+  #filter-panel-toolbar {
+    #filter-panel-close-icon {
+      svg {
+        path {
+          stroke: $ocean;
+        }
+      }
+    }
+    #filter-bar {
+      height: 1.875rem;
+      .icon-container {
+        width: 1.875rem;
+        height: 1.875rem;
+        svg {
+          height: 1rem;
+          width: 1rem;
+          line,
+          circle {
+            stroke: #BFBFBF;
+          }
+        }
+      }
+      input {
+        font-family: $font_Primary;
+        font-weight: $fontWeight_Regular;
+        letter-spacing: $letter_SpacingRegular;
+        color: $tundora;
+        @mixin placeholder {
+          font-family: $font_Primary;
+          color: $tundora;
+          opacity: 0.75;
+          z-index: 100;
+        }
+        ::-webkit-input-placeholder { @include placeholder; }
+        ::-moz-placeholder { @include placeholder; }
+        :-ms-input-placeholder { @include placeholder; }
+        :-moz-placeholder { @include placeholder; }
+        &:hover {
+          background-color: $white;
+        }
+        &:focus {
+          background-color: $white;
+        }
       }
     }
   }
