@@ -53,7 +53,9 @@
               </div>
             </div>
 
-            <div class="language-selector">
+            <div
+              v-if="languageSelector"
+              class="language-selector">
                 <a class="option">EN</a>
                 <a class="option">中文</a>
             </div>
@@ -79,7 +81,7 @@ import SelectorToggleIcon from '@/modules/zero/core/Components/Icons/SelectorTog
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
-  if (!window.matchMedia('(max-width: 768px)').matches && instance.navOpen) { // ← 768px requested interim solution
+  if (!window.matchMedia('(max-width: 53.125rem)').matches && instance.navOpen) { // ← 768px requested interim solution
     instance.toggleNav()
   }
 }
@@ -103,7 +105,8 @@ export default {
       showBackground: false,
       forceNavigationVisible: true,
       dropdownState: 'closed',
-      dropdownWidth: 0
+      dropdownWidth: 0,
+      languageSelector: false
     }
   },
 
@@ -264,8 +267,7 @@ export default {
 
 .navigation {
   width: 100%;
-  max-width: 32rem; // ← requested interim solution
-  @include customMaxMQ (768px) { // ← requested interim solution
+  @include small {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -289,7 +291,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-left: 2rem;
-  @include customMaxMQ (768px) { // ← requested interim solution
+  @include small {
     flex-direction: column;
     justify-content: center;
     margin-left: 5rem;
@@ -298,7 +300,7 @@ export default {
 
 .navigation-link {
   @include borderRadius_Medium;
-  @include customMaxMQ (768px) { // ← requested interim solution
+  @include small {
     align-self: start;
     margin-bottom: 0.75rem;
     font-size: 2.1875rem;
@@ -310,7 +312,7 @@ export default {
 // ////////////////////////////////////////////////////// Modal + Hamburger icon
 .modal-background {
   display: none;
-  @include customMaxMQ (768px) { // ← requested interim solution
+  @include small {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -327,7 +329,7 @@ export default {
 .social-icon-container {
   display: none;
   &.visible {
-    @include customMaxMQ (768px) { // ← requested interim solution
+    @include small {
       display: inline;
       align-self: start;
       margin: 2rem 0;
@@ -342,7 +344,7 @@ export default {
   z-index: 1000;
   height: 14px;
   width: 2rem;
-  @include customMaxMQ (768px) { // ← requested interim solution
+  @include small {
     display: inline;
   }
   &:before {
