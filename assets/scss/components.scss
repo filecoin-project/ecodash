@@ -8,9 +8,33 @@
   .navigation-content {
     margin-top: 0.25rem;
   }
-  .navigation-link {
-    font-family: $font_Primary;
-    letter-spacing: $letter_SpacingRegular;
+  .navigation {
+    @include small {
+      height: calc(100vh - $navigationHeight);
+    }
+    .links-container {
+      @include small {
+        justify-content: flex-start;
+        &:before {
+          content: '';
+          position: relative;
+          width: 100%;
+          height: 2rem;
+        }
+      }
+      .navigation-link {
+        font-family: $font_Primary;
+        letter-spacing: $letter_SpacingRegular;
+        @include small {
+          font-size: $fontSize_Large;
+          line-height: $leading_Mini;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .social-icon-container {
+      display: none;
+    }
   }
 }
 
