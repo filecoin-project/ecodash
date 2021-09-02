@@ -12,6 +12,83 @@
     font-family: $font_Primary;
     letter-spacing: $letter_SpacingRegular;
   }
+
+  .navigation-dropdown {
+    .dropdown-wrapper {
+      position: relative;
+      margin-right: 1.5rem;
+      transition: all 250ms linear;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        @include whiteBorderBack;
+        background-color: $jaguar;
+        transition: inherit;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        @include whiteBorderBack;
+        @include oceanBlueGradient;
+        transition: inherit;
+      }
+      button {
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        min-height: 2.5rem;
+        @include cardText;
+        @include whiteBorderFront;
+        border-radius: 0 !important;
+        background-color: $jaguar;
+        transition: inherit;
+        .button-inner {
+          background: $blackSapphire;
+          color: $white;
+          transition: all 250ms linear;
+          svg {
+            path {
+              transition: inherit;
+              stroke: $white;
+            }
+          }
+        }
+      }
+      &.button-active {
+        &:before {
+          top: 0px;
+          left: 0px;
+        }
+        &:after {
+          top: 0px;
+          left: 0px;
+        }
+        button {
+          top: 0px;
+          left: 0px;
+          @include oceanBlueGradient;
+          .button-content {
+            color: $blackSapphire;
+            transition: all 250ms linear;
+            svg {
+              path {
+                transition: inherit;
+                stroke: $blackSapphire;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #header-hero {
@@ -607,6 +684,7 @@
     background-color: $lightGrey;
     border: 1px solid $tundora;
     font-family: $font_Primary;
+    font-weight: $fontWeight_Regular;
     color: $blackSapphire;
     box-shadow: none;
     padding: 7.5px 10.5px;
@@ -699,6 +777,7 @@
 // //////////////////////////////////////////////////////////////// Page Project
 // -----------------------------------------------------------------------------
 .page-project {
+  background: $projectDetailsGrey;
   font-family: $font_Primary;
   color: $darkGrey;
 
@@ -709,16 +788,28 @@
   // //////////////////////////////////// Project Featured Slider [Page Project]
   // ---------------------------------------------------------------------------
   #section-featured-slider {
+    margin-top: 0 !important;
+
+    h3.heading,
+    div.description {
+      padding-left: 0.5rem;
+    }
+
     .heading {
       @include fontSize_ExtraLarge;
       font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
-      margin-bottom: 13px;
+      margin-bottom: 0.5rem;
     }
 
     .description {
       @include fontSize_Regular;
-      margin-bottom: 35px;
+      margin-bottom: 2.2rem !important;
+    }
+
+    .featured-box {
+      border: none;
+      padding-top: 3.2rem;
     }
 
     .project-card {
@@ -733,29 +824,33 @@
 }
 // //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
+  margin-bottom: 4.3rem !important;
+  
   .logo {
     max-height: 6rem;
+    margin-bottom: 1.5rem;
   }
 
-  .name {
+  h1.name {
     @include fontSize_ExtraExtraLarge;
     font-family: $font_Primary;
-    font-weight: $fontWeight_SemiBold;
+    font-weight: $fontWeight_SemiBold !important;
   }
 
-  .company {
+  h2.company {
     @include fontSize_ExtraLarge;
     @include leading_Regular;
-    font-weight: $fontWeight_SemiBold;
+    font-weight: $fontWeight_SemiBold !important;
     color: $darkGrey;
     opacity: 1;
-    margin-bottom: 39px;
+    margin-bottom: 1.9rem;
   }
 
   .description {
     @include fontSize_Medium;
+    @include leading_Medium;
     color: $darkGrey;
-    margin-bottom: 56px;
+    margin-bottom: 2.125rem !important;
   }
 
   .ctas {
@@ -765,8 +860,12 @@
     .primary-cta {
       @include whiteBorderBack;
       @include oceanBlueGradient;
+      @include fontSize_Small;
+      font-family: $font_Secondary;
+      font-weight: $fontWeight_Regular;
       box-shadow: none;
       position: relative;
+      padding: 0.35rem 1.25rem 0.275rem;
       margin-left: 12px;
 
       &:before,
@@ -803,15 +902,16 @@
 // -----------------------------------------------------------------------------
 
 #section-key-info {
-  .heading {
-    @include fontSize_ExtraLarge;
+  h3.heading {
+    font-size: $fontSize_ExtraLarge !important;
     font-family: $font_Primary;
+    font-weight: $fontWeight_SemiBold;
   }
 
   .values {
     .name {
       @include fontSize_Regular;
-      font-weight: $fontWeight_Regular;
+      font-weight: $fontWeight_Medium;
     }
 
     .links {
@@ -827,7 +927,7 @@
 // -----------------------------------------------------------------------------
 #section-filters {
   h3.heading {
-    @include fontSize_Regular;
+    font-size: $fontSize_Regular !important;
     font-family: $font_Primary;
     font-weight: $fontWeight_Medium;
   }
@@ -836,17 +936,27 @@
 // /////////////////////////////////////////////////////////////////////// Video
 // -----------------------------------------------------------------------------
 #section-video {
-  width: 495px;
+  width: 500px;
+  margin-top: 2.75rem;
+  margin-left: -1.375rem;
+
+  .video-wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+  }
 }
 
 // ///////////////////////////////////////////////////////////// Statistic Cards
 // -----------------------------------------------------------------------------
 #section-statistics {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 0 !important;
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 20px;
-  margin-bottom: 3.75rem;
-
+  
   .card {
     @include oceanBorderGradient;
     width: 360px;
@@ -922,3 +1032,67 @@
     }
   }
 }
+
+// ///////////////////////////////////////////////////////////////////// Tooltip
+// -----------------------------------------------------------------------------
+// Companion mixin: tooltipMobilePosition | found in @/assets/core/utilities.scss
+[data-tooltip] {
+  &:before,
+  &:after {
+    background: red !important;
+  }
+}
+// [data-tooltip] {
+//   position: relative;
+//   &:hover {
+//     &:before,
+//     &:after {
+//       transition: 250ms ease-in;
+//       transform: translate(-50%, 0);
+//       opacity: 1;
+//     }
+//   }
+//   &:before,
+//   &:after {
+//     position: absolute;
+//     left: 50%;
+//     transform: translate(-50%, 0.5rem);
+//     pointer-events: none;
+//     opacity: 0;
+//     transition: 250ms ease-out;
+//   }
+//   &:before {
+//     content: '';
+//     top: calc(100% + 2px);
+//     border-left: 0.5rem solid transparent;
+//     border-right: 0.5rem solid transparent;
+//     border-bottom: 0.375rem solid $fill_Dark_Primary;
+//   }
+//   &:after {
+//     @include fontSize_Mini;
+//     content: attr(data-tooltip);
+//     top: calc(100% + 0.5rem);
+//     background-color: $fill_Dark_Primary;
+//     white-space: nowrap;
+//     padding: 0.5rem 0.75rem;
+//     border-radius: 0.125rem;
+//   }
+//   &[data-tooltip-theme="light"] {
+//     &:before {
+//       border-bottom-color: $fill_Light;
+//     }
+//     &:after {
+//       color: $fill_Dark_Primary;
+//       background-color: $fill_Light;
+//     }
+//   }
+//   &[data-tooltip-theme="dark"] {
+//     &:before {
+//       border-bottom-color: $fill_Dark_Primary;
+//     }
+//     &:after {
+//       color: $fill_Light;
+//       background-color: $fill_Dark_Primary;
+//     }
+//   }
+// }

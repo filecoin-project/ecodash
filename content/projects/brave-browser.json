@@ -14,23 +14,23 @@
   ],
   "description": {
     "short": "Privacy-focused web browser",
-    "long": "Privacy-focused web browser that allows seamless browsing for IPFS sites using a built-in node, opening easy use of the decentralized web to everyone."
+    "long": "Making Filecoin easy for enterprises and consumers alike, offering scalable plug-and-play to APIs used by some of the most trusted names in blockchain. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua."
   },
   "primaryCta": {
     "url": "//brave.com",
-    "text": "Project website"
+    "text": "Website"
   },
   "links": [
     {
       "label": "Website",
       "links": [
         {
-          "url": "//brave.com",
-          "text": "brave.com"
+          "url": "www.longprojectwithalongname.com",
+          "text": "www.longprojectwithalongname.com"
         },
         {
-          "url": "//brave.com",
-          "text": "brave.com"
+          "url": "www.temporal.com",
+          "text": "www.temporal.com"
         }
       ]
     },
@@ -38,20 +38,32 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/brave/brave-browser",
-          "text": "github.com/brave/brave-browser"
+          "url": "github.com/filecoin/projectname",
+          "text": "github.com/filecoin/projectname"
         },
         {
-          "url": "//github.com/brave/brave-browser",
-          "text": "github.com/brave/brave-browser"
+          "url": "github.com/filecoin/temporal",
+          "text": "github.com/filecoin/temporal"
+        },
+        {
+          "url": "github.com/filecoin/RTrade",
+          "text": "github.com/filecoin/RTrade"
         }
       ]
     }
   ],
   "keyInfo": [
     {
-      "label": "Using IPFS since",
-      "value": "2018"
+      "label": "Using Filecoin since",
+      "value": "2016"
+    },
+    {
+      "label": "No. of nodes",
+      "value": "25"
+    },
+    {
+      "label": "End users",
+      "value": "134"
     }
   ],
   "video": "//youtube.com/watch?v=hpwh_zLpnCE",
