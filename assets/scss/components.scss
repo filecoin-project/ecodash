@@ -77,6 +77,50 @@
   }
 }
 
+// ////////////////////////////////////////////////////////////////////// Footer
+// -----------------------------------------------------------------------------
+#site-footer {
+  background-color: transparent;
+  .panel-top {
+    .heading,
+    .links-heading {
+      font-family: $font_Primary;
+      font-size: $fontSize_Large;
+      font-weight: $fontWeight_SemiBold;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Large;
+    }
+    .links-heading {
+      margin-bottom: 0.25rem;
+    }
+    .subheading,
+    .navigation-link {
+      font-family: $font_Primary;
+      font-size: $fontSize_Large;
+      font-weight: $fontWeight_Regular;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Regular;
+    }
+    .navigation-link {
+      padding: 0.125rem 0;
+      color: #b3b3b3;
+    }
+  }
+  .content-wrapper {
+    margin: 0 2rem;
+    @include medium {
+      margin: 0;
+      margin-left: 2rem;
+    }
+    @include small {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+
 // ///////////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
 
