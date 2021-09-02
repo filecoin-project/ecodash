@@ -283,8 +283,11 @@
       }
     }
   }
+}
+
+.page-home {
   #slider-line {
-    width: calc(50% - 1rem);
+    width: calc(50% - 1rem) !important;
     .dummy-thumb {
       position: absolute;
       top: 2rem;
@@ -308,8 +311,8 @@
       }
     }
     &:after {
-      top: 2.25rem;
-      @include whiteBorderBack;
+      top: 2.25rem !important;
+      border: 1px solid $white !important;
     }
     #feature-range-slider {
       position: absolute;
@@ -538,10 +541,49 @@
     top: -3px !important;
   }
 
-  #filter-panel-close-icon {
-    svg {
-      path {
-        stroke: $ocean;
+  #filter-panel-toolbar {
+    #filter-panel-close-icon {
+      svg {
+        path {
+          stroke: $ocean;
+        }
+      }
+    }
+    #filter-bar {
+      height: 1.875rem;
+      .icon-container {
+        width: 1.875rem;
+        height: 1.875rem;
+        svg {
+          height: 1rem;
+          width: 1rem;
+          line,
+          circle {
+            stroke: #BFBFBF;
+          }
+        }
+      }
+      input {
+        font-family: $font_Primary;
+        font-weight: $fontWeight_Regular;
+        letter-spacing: $letter_SpacingRegular;
+        color: $tundora;
+        @mixin placeholder {
+          font-family: $font_Primary;
+          color: $tundora;
+          opacity: 0.75;
+          z-index: 100;
+        }
+        ::-webkit-input-placeholder { @include placeholder; }
+        ::-moz-placeholder { @include placeholder; }
+        :-ms-input-placeholder { @include placeholder; }
+        :-moz-placeholder { @include placeholder; }
+        &:hover {
+          background-color: $white;
+        }
+        &:focus {
+          background-color: $white;
+        }
       }
     }
   }
@@ -708,6 +750,10 @@
 
   // //////////////////////////////////// Project Featured Slider [Page Project]
   // ---------------------------------------------------------------------------
+  .featured-box {
+    border: none !important;
+  }
+
   #section-featured-slider {
     .heading {
       @include fontSize_ExtraLarge;
@@ -728,6 +774,56 @@
       }
     }
 
+  }
+
+  #slider-line {
+    width: calc(50% - 1rem) !important;
+    .dummy-thumb {
+      position: relative;
+      top: 1.875rem;
+      width: 60px;
+      height: 10px;
+      z-index: 2;
+      @include oceanBorderGradient;
+      border-width: 1px;
+      background-color: transparent;
+      transform: unset;
+      border-radius: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 1px;
+        left: 1px;
+        // @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 2px;
+        left: 2px;
+        @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      svg {
+        display: none;
+      }
+    }
+    &:after {
+      z-index: 1 !important;
+      top: 2.25rem !important;
+      border: 1px solid $greyBlue !important;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
+    }
   }
 
 }
