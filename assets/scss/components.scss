@@ -283,8 +283,11 @@
       }
     }
   }
+}
+
+.page-home {
   #slider-line {
-    width: calc(50% - 1rem);
+    width: calc(50% - 1rem) !important;
     .dummy-thumb {
       position: absolute;
       top: 2rem;
@@ -308,8 +311,8 @@
       }
     }
     &:after {
-      top: 2.25rem;
-      @include whiteBorderBack;
+      top: 2.25rem !important;
+      border: 1px solid $white !important;
     }
     #feature-range-slider {
       position: absolute;
@@ -708,6 +711,10 @@
 
   // //////////////////////////////////// Project Featured Slider [Page Project]
   // ---------------------------------------------------------------------------
+  .featured-box {
+    border: none !important;
+  }
+
   #section-featured-slider {
     .heading {
       @include fontSize_ExtraLarge;
@@ -728,6 +735,56 @@
       }
     }
 
+  }
+
+  #slider-line {
+    width: calc(50% - 1rem) !important;
+    .dummy-thumb {
+      position: relative;
+      top: 1.875rem;
+      width: 60px;
+      height: 10px;
+      z-index: 2;
+      @include oceanBorderGradient;
+      border-width: 1px;
+      background-color: transparent;
+      transform: unset;
+      border-radius: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 1px;
+        left: 1px;
+        // @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        top: 2px;
+        left: 2px;
+        @include whiteBorderBack;
+        @include oceanBlueGradient;
+      }
+      svg {
+        display: none;
+      }
+    }
+    &:after {
+      z-index: 1 !important;
+      top: 2.25rem !important;
+      border: 1px solid $greyBlue !important;
+    }
+    #feature-range-slider {
+      position: absolute;
+      &::-webkit-slider-thumb { width: 62px; }
+      &::-moz-range-thumb { width: 62px; }
+      &::-ms-thumb { width: 62px; }
+    }
   }
 
 }
