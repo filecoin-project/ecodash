@@ -20,7 +20,7 @@
           v-for="(item, index) in segments"
           :key="index"
           :class="[setForegrounded(index), { 'displaced-down': (item.size > 40) && item.above }, { 'displaced-up': (item.size > 40) && !item.above }]"
-          :style="`width: ${item.size}%; height: ${segH * (item.size > 40 ? 2 : 1)}px; z-index: ${segments.length - index};`"
+          :style="segmentStyling (item.size, item.above, index)"
           @click="updateParent(index)">
 
           <template v-if="measured && item.display">
@@ -42,7 +42,7 @@
             <div
               v-if="item.above"
               class="segment-line avoid-me"
-              :style="`height: ${Math.abs(item.pos - 56) - item.labelHeight - 12}px; transform: rotate(180deg);`">
+              :style="`height: ${Math.abs(item.pos - 56) - item.labelHeight - 18}px; transform: rotate(180deg);`">
             </div>
 
             <div
@@ -302,6 +302,11 @@ export default {
         this.dropOverLappingLabels()
         this.$nextTick(() => { this.$emit('chart-mounted') })
       })
+    },
+    segmentStyling (size, above, index) {
+      let top = 0
+      if (size > 40) { top = this.segH / 2 * (above ? 1 : -1) }
+      return `width: ${size}%; height: ${this.segH * (size > 40 ? 2 : 1)}px; top: ${top}px; z-index: ${this.segments.length - index};`
     }
   }
 }
@@ -425,12 +430,14 @@ export default {
       left: 0px;
     }
   }
-  &.displaced-down {
-    transform: translateY(25%);
-  }
-  &.displaced-up {
-    transform: translateY(-25%);
-  }
+  // &.displaced-down {
+  //   // transform: translateY(25%);
+  //   top: 25%;
+  // }
+  // &.displaced-up {
+  //   // transform: translateY(-25%);
+  //   top: -25%;
+  // }
   .dots {
     position: absolute;
     top: 7px;
