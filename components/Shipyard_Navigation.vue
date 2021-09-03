@@ -153,7 +153,7 @@ export default {
       } else if (newVal > 0 && !showBackground) {
         this.showBackground = true
       }
-      // console.log(scrollSpeed)
+      
       if (newVal === 0) {
         this.forceNavigationVisible = true
       } else if (newVal < oldVal && !forceVisible) {
@@ -199,7 +199,6 @@ export default {
     },
     setDropdownWidth (val) {
       this.dropdownWidth = val
-      console.log(this.dropdownWidth)
     }
   }
 }
