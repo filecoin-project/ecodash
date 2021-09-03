@@ -57,8 +57,12 @@
             <div
               v-if="languageSelector"
               class="language-selector">
-                <a class="option">EN</a>
-                <a class="option">中文</a>
+              <a class="option">
+                EN
+              </a>
+              <a class="option">
+                中文
+              </a>
             </div>
 
             <div :class="['social-icon-container', { 'visible': navOpen }]">
