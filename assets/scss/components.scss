@@ -1413,6 +1413,7 @@
     &.big-number {
       padding: 30px 20px;
       flex-direction: row;
+      justify-content: flex-start;
       column-gap: 14px;
 
       .description {
