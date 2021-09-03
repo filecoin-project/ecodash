@@ -949,6 +949,7 @@
       letter-spacing: $letter_SpacingRegular;
       line-height: $leading_Mini;
       margin-left: 0;
+
       .number-active: {
         font-size: $fontSize_Small;
         font-weight: $fontWeight_Regular;
@@ -1288,6 +1289,17 @@
         left: -11px;
         z-index: -2;
       }
+
+      span {
+        position: relative;
+
+        &[data-tooltip] {
+          &::after {
+            top: -1.5rem;
+            left: 2rem;
+          }
+        }
+      }
     }
 
     .secondary-cta {
@@ -1316,6 +1328,14 @@
       a {
         @include fontSize_Medium;
         font-weight: $fontWeight_Regular;
+        position: relative;
+
+        &[data-tooltip] {
+          &::after {
+            top: -1.25rem;
+            left: 11rem;
+          }
+        }
       }
     }
   }
@@ -1432,66 +1452,16 @@
   }
 }
 
-// ///////////////////////////////////////////////////////////////////// Tooltip
-// -----------------------------------------------------------------------------
-// Companion mixin: tooltipMobilePosition | found in @/assets/core/utilities.scss
+// ///////////////////////////////////////////////////////////////////// Filters
 [data-tooltip] {
-  &:before,
-  &:after {
-    background: red !important;
+  &::before {
+    content: none;
+  }
+
+  &::after {
+    background: $white !important;
+    color: $tooltipBlue !important;
+    box-shadow: 0px 3px 6px 0px rgba($tooltipShadow, 0.31);
+    padding: 0.25rem 0.5rem;
   }
 }
-// [data-tooltip] {
-//   position: relative;
-//   &:hover {
-//     &:before,
-//     &:after {
-//       transition: 250ms ease-in;
-//       transform: translate(-50%, 0);
-//       opacity: 1;
-//     }
-//   }
-//   &:before,
-//   &:after {
-//     position: absolute;
-//     left: 50%;
-//     transform: translate(-50%, 0.5rem);
-//     pointer-events: none;
-//     opacity: 0;
-//     transition: 250ms ease-out;
-//   }
-//   &:before {
-//     content: '';
-//     top: calc(100% + 2px);
-//     border-left: 0.5rem solid transparent;
-//     border-right: 0.5rem solid transparent;
-//     border-bottom: 0.375rem solid $fill_Dark_Primary;
-//   }
-//   &:after {
-//     @include fontSize_Mini;
-//     content: attr(data-tooltip);
-//     top: calc(100% + 0.5rem);
-//     background-color: $fill_Dark_Primary;
-//     white-space: nowrap;
-//     padding: 0.5rem 0.75rem;
-//     border-radius: 0.125rem;
-//   }
-//   &[data-tooltip-theme="light"] {
-//     &:before {
-//       border-bottom-color: $fill_Light;
-//     }
-//     &:after {
-//       color: $fill_Dark_Primary;
-//       background-color: $fill_Light;
-//     }
-//   }
-//   &[data-tooltip-theme="dark"] {
-//     &:before {
-//       border-bottom-color: $fill_Dark_Primary;
-//     }
-//     &:after {
-//       color: $fill_Light;
-//       background-color: $fill_Dark_Primary;
-//     }
-//   }
-// }
