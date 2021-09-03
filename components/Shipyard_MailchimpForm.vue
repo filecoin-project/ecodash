@@ -24,7 +24,7 @@
       </span>
     </div>
 
-    <div class="panel-bottom">
+    <!-- <div class="panel-bottom">
       <input
         type="checkbox"
         required=""
@@ -34,7 +34,7 @@
       <span>
         {{ checkboxText }}
       </span>
-    </div>
+    </div> -->
 
     <div aria-hidden="true" style="position: absolute; left: -5000px">
       <input
