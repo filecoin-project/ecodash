@@ -193,7 +193,7 @@
 
 @mixin oceanBorderGradient {
   border: 10px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 3px;
   border-image-source: linear-gradient(25deg, $azure, $ocean);
 }
