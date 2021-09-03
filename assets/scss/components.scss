@@ -1264,7 +1264,7 @@
       font-weight: $fontWeight_Regular;
       box-shadow: none;
       position: relative;
-      padding: 0.35rem 1.25rem 0.275rem;
+      padding: 0;
       margin-left: 12px;
 
       &:before,
@@ -1292,10 +1292,12 @@
 
       span {
         position: relative;
+        padding: 0.35rem 1.25rem 0.275rem;
 
         &[data-tooltip] {
           &::after {
             top: -1.5rem;
+            left: 4rem;
           }
         }
       }
