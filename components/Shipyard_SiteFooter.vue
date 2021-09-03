@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section class="panel-bottom">
+    <!-- <section class="panel-bottom">
       <div class="grid-centered-noGutter">
 
         <div class="col-10_sm-12">
@@ -87,7 +87,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
   </footer>
 </template>
@@ -132,10 +132,16 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 #site-footer {
-  padding: 4rem 0;
+  padding: 5.25rem 0;
   @include small {
     padding: 2rem 0;
   }
+}
+
+[class~="grid"],
+[class*="grid-"],
+[class*="grid_"] {
+  padding: 0;
 }
 
 ::v-deep .subheading,
@@ -153,7 +159,6 @@ export default {
 
 // ///////////////////////////////////////////////////////////////// [Panel] Top
 .panel-top {
-  margin-bottom: 4rem;
   @include small {
     margin-bottom: 1rem;
   }
