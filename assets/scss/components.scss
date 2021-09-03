@@ -156,7 +156,6 @@
 
 // ///////////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
-
 .mailchimp-form {
   #mailchimp-form {
     .panel-top {
@@ -228,13 +227,15 @@
   position: relative;
   .slider-card {
     @include oceanBorderGradient;
+    padding: 0.5rem;
+    min-width: 14rem;
     @include small {
       border: none;
     }
     h3 {
       font-family: $font_Primary;
-      font-size: $fontSize_Medium;
-      font-weight: $fontWeight_Regular;
+      font-size: $fontSize_Small;
+      font-weight: $fontWeight_SemiBold;
       letter-spacing: $letter_SpacingRegular;
       line-height: $leading_Small;
       color: $blackSapphire;
@@ -245,13 +246,17 @@
       font-weight: $fontWeight_Regular;
       letter-spacing: 0;
       line-height: $leading_Small;
+      color: $darkGrey;
+    }
+    .logo-wrapper {
+      margin-bottom: 0;
     }
   }
   .view-all {
-    background-color: $jaguar;
     @include cardText;
     @include tripleLayer;
-    top: 10px;
+    background-color: $jaguar;
+    top: 3.625rem;
     &:after {
       @include oceanBlueGradient;
     }
@@ -259,7 +264,6 @@
 }
 
 #segment-slider-chart {
-  margin-bottom: 5rem;
   @include medium {
     .segments-container {
       background-color: inherit;
@@ -280,7 +284,6 @@
       margin-bottom: 2rem;
     }
   }
-
   .block-segment {
     @include whiteBorderBack;
   }
@@ -314,8 +317,8 @@
     @include secondaryHeader;
   }
   .description {
-    margin-bottom: 1.5rem !important;
     @include nonCardText;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -332,17 +335,18 @@
         color: $white;
       }
       .title {
+        @include fontSize_Medium;
+        @include leading_Regular;
         font-family: $font_Primary;
         font-weight: $fontWeight_SemiBold;
         letter-spacing: $letter_SpacingRegular;
-        @include fontSize_Medium;
-        @include leading_Regular;
       }
       .description {
-        font-family: $font_Secondary;
-        font-weight: $fontWeight_Regular;
         @include fontSize_Small;
         @include leading_Small;
+        font-family: $font_Secondary;
+        font-weight: $fontWeight_Regular;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -406,6 +410,10 @@
   }
   .description {
     @include nonCardText;
+    padding-right: 25%;
+    @include containerMaxMQ {
+      padding-right: 0;
+    }
   }
 }
 
@@ -455,7 +463,7 @@
       z-index: 1;
       top: 10px;
       left: 10px;
-      min-height: 2.5rem;
+      min-height: 2rem;
       @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
@@ -530,13 +538,15 @@
 
   #sort-by-selector {
     @include shadow1;
-    .button-inner {
-      transition: all 250ms linear;
-      background-color: $jaguar;
-    }
     .button-inner,
     .dropdown-item {
-      line-height: 1.8;
+      @include fontSize_Small;
+      line-height: 1.5;
+    }
+    .button-inner {
+      align-items: center;
+      background-color: $jaguar;
+      transition: all 250ms linear;
     }
     .dropdown-button {
       .dropdown-toggle {
@@ -700,6 +710,11 @@
 // /////////////////////////////////////////////////////////////// Project Cards
 // -----------------------------------------------------------------------------
 .project-card {
+  &:not(.list-view) {
+    .content {
+      margin-bottom: 1rem !important;
+    }
+  }
   .card-inner-wrapper {
     @include oceanBorderGradient;
     border-radius: 0 !important;
@@ -709,17 +724,17 @@
     border-radius: 0 !important;
   }
   .title {
+    @include leading_Regular;
     font-family: $font_Primary;
     font-weight: $fontWeight_Medium;
     letter-spacing: $letter_SpacingRegular;
-    @include fontSize_Regular;
-    @include leading_Regular;
+    font-size: $fontSize_Regular !important;
+    margin-bottom: 0.5rem !important;
   }
   .description {
+    @include leading_Small;
     font-family: $font_Secondary;
     font-weight: $fontWeight_Regular;
-    @include fontSize_Small;
-    @include leading_Small;
   }
   &.list-view {
     .title,
@@ -749,6 +764,24 @@
   button {
     font-family: $font_Secondary;
   }
+  .page-button,
+  .control-button {
+    @include fontSize_Small;
+  }
+  .control-button {
+    &.first,
+    &.last {
+      svg {
+        width: 14px;
+      }
+    }
+    &.next,
+    &.prev {
+      svg {
+        width: 7px;
+      }
+    }
+  }
 }
 
 #results-per-page-selector {
@@ -756,9 +789,18 @@
   @include whiteBorderBack;
   border-radius: $borderRadius_Medium;
   color: $blackSapphire;
+  .dropdown {
+    &.dropdown-button {
+      align-items: center;
+    }
+    label {
+      @include fontSize_Small;
+    }
+  }
   .dropdown-list {
     color: inherit;
     .dropdown-item {
+      @include fontSize_Small;
       &.highlighted {
         background-color: unset;
         color: $blackSapphire;
@@ -825,7 +867,7 @@
 // //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
   margin-bottom: 4.3rem !important;
-  
+
   .logo {
     max-height: 6rem;
     margin-bottom: 1.5rem;
@@ -956,7 +998,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 20px;
-  
+
   .card {
     @include oceanBorderGradient;
     width: 360px;

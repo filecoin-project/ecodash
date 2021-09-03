@@ -71,7 +71,7 @@
       }
     },
     "segment_slider": {
-      "filter_toggle_button_text": "View All",
+      "filter_toggle_button_text": "View Category",
       "mobile_chart_title": "Explore IPFS"
     },
     "section_filter": {
