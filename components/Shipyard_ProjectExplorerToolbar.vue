@@ -191,6 +191,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0.5rem;
   @include containerMaxMQ {
     padding: 0;
   }
@@ -205,6 +206,12 @@ export default {
   transition: bottom 0ms;
   @include small {
     left: 4.1665vw;
+  }
+  .button-content {
+    padding: 0;
+  }
+  .item-after {
+    @include fontSize_Small;
   }
   &.top {
     @include small {
