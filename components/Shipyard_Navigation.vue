@@ -199,7 +199,6 @@ export default {
     },
     setDropdownWidth (val) {
       this.dropdownWidth = val
-      console.log(this.dropdownWidth)
     }
   }
 }

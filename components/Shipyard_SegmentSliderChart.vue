@@ -242,7 +242,7 @@ export default {
     },
     setMinOffsets (next) {
       for (let ind = 0; ind < this.segments.length; ind++) {
-        this.segments[ind].pos = Math.min(-50, this.segments[ind].pos)
+        this.segments[ind].pos = Math.min(-80, this.segments[ind].pos)
       }
       return next()
     },

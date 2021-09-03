@@ -487,6 +487,9 @@
     @include small {
       border: none;
     }
+    .slide-nav {
+      margin-top: 1rem;
+    }
     h3 {
       font-family: $font_Primary;
       font-size: $fontSize_Small;
@@ -496,6 +499,7 @@
       color: $blackSapphire;
     }
     .description {
+      padding: 0 0.25rem;
       font-family: $font_Secondary;
       font-size: $fontSize_Small;
       font-weight: $fontWeight_Regular;
@@ -508,10 +512,12 @@
     }
   }
   .view-all {
+    position: relative;
     @include cardText;
     @include tripleLayer;
     background-color: $jaguar;
-    top: 3.625rem;
+    bottom: -2.25rem;
+    left: 3px;
     &:after {
       @include oceanBlueGradient;
     }
@@ -557,9 +563,14 @@
       content: '';
       position: absolute;
       height: 4px;
-      width: 100%;
+      width: calc(100% - 1rem);
       background-color: $white;
       left: 0%;
+    }
+    @include medium {
+      &:before {
+        width: 100%;
+      }
     }
   }
 }
