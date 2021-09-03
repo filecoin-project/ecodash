@@ -1128,6 +1128,7 @@
 // //////////////////////////////////////////////////////////////// Page Project
 // -----------------------------------------------------------------------------
 .page-project {
+  position: relative;
   background-color: $projectDetailsGrey !important;
   font-family: $font_Primary;
   color: $darkGrey;
