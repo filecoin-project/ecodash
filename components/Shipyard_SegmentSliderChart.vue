@@ -223,6 +223,7 @@ export default {
     calculateSegmentAndLabelPositions(this)
     this.resize = () => { initResize(this) }
     window.addEventListener('resize', this.resize)
+    initResize(this)
   },
 
   beforeDestroy () {
