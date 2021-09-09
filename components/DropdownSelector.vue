@@ -32,10 +32,11 @@
 
         <div ref="dropdownList" class="dropdown-list">
           <template v-for="option in options">
-            <div class="dropdown-item-wrap">
+            <div
+              :key="`dropdown-option-${option.label}`"
+              class="dropdown-item-wrap">
               <component
                 :is="option.type"
-                :key="`dropdown-option-${option.label}`"
                 :to="option.disabled ? '' : option.href"
                 :href="option.disabled ? '' : option.href"
                 :disabled="option.disabled"
@@ -103,7 +104,6 @@ export default {
       collection: 'core/collection'
     }),
     options () {
-      console.log(this.dropdownOptions)
       return this.dropdownOptions
     },
     maxLength () {
@@ -299,7 +299,6 @@ export default {
   text-align: right;
   box-sizing: border-box;
 }
-
 
 .dropdown-item-wrap {
   background-color: $white;
