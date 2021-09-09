@@ -67,20 +67,24 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/style-resources-module/
     '@nuxtjs/style-resources',
-    // Collection of helper modules, plugins and functions
-    '~/modules/zero/core',
-    '~/modules/zero/pagination',
-    '~/modules/zero/filters',
     // Doc: https://github.com/agency-undone/nuxt-module-ipfs
     'nuxt-module-ipfs'
   ],
   // ///////////////////////////////////////////////////////////// [Module] Zero
   // ---------------------------------------------------------------------------
   zero: {
-    // -------------------------------------------------------- [Plugin] Toaster
-    toaster: {
-      display: 10,
-      timeout: 5000
+    core: {
+      include: true,
+      toaster: {
+        display: 10,
+        timeout: 5000
+      }
+    },
+    filters: {
+      include: true
+    },
+    pagination: {
+      include: true
     }
   },
   // //////////////////////////////////////////////////////////// [Module] Axios
@@ -97,11 +101,7 @@ export default {
   },
   // /////////////////////////////////// Plugins to load before mounting the App
   // ---------------------------------------------------------------------------
-  plugins: [
-    '~/modules/zero/core/Plugins/click-outside',
-    '~/modules/zero/core/Plugins/scroll-to',
-    '~/modules/zero/core/Plugins/nuxt-hammer'
-  ],
+  plugins: [],
   // /////////////////////////////////////////////////////// Router + Middleware
   // ---------------------------------------------------------------------------
   router: {
