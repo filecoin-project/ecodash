@@ -48,7 +48,7 @@
                   @changed="changeDropdownState"
                   @setwidth="setDropdownWidth">
                   <template #dropdown-icon>
-                    <SelectorToggleIcon />
+                    <Zero_Core__Icon_SelectorToggle />
                   </template>
                 </DropdownSelector>
               </div>
@@ -80,9 +80,9 @@
 <script>
 // ===================================================================== Imports
 import { mapGetters } from 'vuex'
+import Throttle from 'lodash/throttle'
 
 import DropdownSelector from '@/components/DropdownSelector'
-import SelectorToggleIcon from '@/modules/zero/core/Components/Icons/SelectorToggle'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -96,8 +96,7 @@ export default {
   name: 'ShipyardNavigation',
 
   components: {
-    DropdownSelector,
-    SelectorToggleIcon
+    DropdownSelector
   },
 
   data () {
@@ -153,7 +152,7 @@ export default {
       } else if (newVal > 0 && !showBackground) {
         this.showBackground = true
       }
-      
+
       if (newVal === 0) {
         this.forceNavigationVisible = true
       } else if (newVal < oldVal && !forceVisible) {
@@ -165,7 +164,7 @@ export default {
   },
 
   mounted () {
-    this.resize = this.$throttle(() => { checkScreenWidth(this) }, 310)
+    this.resize = Throttle(() => { checkScreenWidth(this) }, 310)
     this.scroll = () => { this.updateScrollPosition() }
     window.addEventListener('resize', this.resize)
     window.addEventListener('scroll', this.scroll)

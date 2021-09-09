@@ -4,22 +4,22 @@
     <div class="filter-panel-controls">
 
       <div :class="['button-wrapper', filterButtonFloating, { 'button-active': filterPanelOpen }]">
-        <Button
+        <Zero_Core__Button
           id="filter-panel-toggle-button"
           type="C"
           :text="filterPanelToggleButtonLabel"
           :class="['focus-visible', { 'active': filterPanelOpen }]"
           @clicked="toggleFilterPanel">
           <template #icon-before>
-            <FiltersToggleIcon />
+            <Zero_Core__Icon_FiltersToggle />
           </template>
-        </Button>
+        </Zero_Core__Button>
       </div>
 
       <div
         v-if="selectedFiltersCount"
         class="button-wrapper">
-        <Button
+        <Zero_Core__Button
           id="clear-selected-filters-button"
           class="focus-visible"
           type="C"
@@ -28,7 +28,7 @@
           <template #icon-after>
             <Shipyard_CloseIcon />
           </template>
-        </Button>
+        </Zero_Core__Button>
       </div>
 
     </div>
@@ -39,7 +39,7 @@
         <div
           v-if="showSortBySelector"
           :class="['button-wrapper', 'sort-by-wrapper', sortByState]">
-          <SortBySelector
+          <Zero_Filters__SortBySelector
             class="sort-by-selector"
             :label="sortDropdownLabel"
             :sort-options="sortOptions"
@@ -47,9 +47,9 @@
             @changed="sortBySelectorChanged"
             @setwidth="setSortByMinWidth">
             <template #dropdown-icon>
-              <SelectorToggleIcon />
+              <Zero_Core__Icon_SelectorToggle />
             </template>
-          </SortBySelector>
+          </Zero_Filters__SortBySelector>
         </div>
       </div>
 
@@ -73,21 +73,9 @@
 // ===================================================================== Imports
 import { mapGetters } from 'vuex'
 
-import Button from '@/modules/zero/core/Components/Button'
-import SortBySelector from '@/modules/zero/filters/Components/SortBySelector'
-import FiltersToggleIcon from '@/modules/zero/core/Components/Icons/FiltersToggle'
-import SelectorToggleIcon from '@/modules/zero/core/Components/Icons/SelectorToggle'
-
 // ====================================================================== Export
 export default {
   name: 'ShipyardProjectExplorerToolbar',
-
-  components: {
-    Button,
-    SortBySelector,
-    FiltersToggleIcon,
-    SelectorToggleIcon
-  },
 
   props: {
     filterPanelOpen: {
@@ -253,8 +241,11 @@ export default {
 }
 
 // ///////////////////////////////////////////// [Button] Clear selected filters
-#clear-selected-filters-button {
+::v-deep #clear-selected-filters-button {
   margin-left: 0.5rem;
+  p {
+    @include fontSize_Small;
+  }
 }
 
 // ///////////////////////////////////////////////////////////// [Dropdown] Sort

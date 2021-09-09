@@ -131,7 +131,6 @@ const createLabels = (instance, projects) => {
 const getLongestWord = (label) => {
   const arr = []
   label.split(' ').forEach((word) => { arr.push(word.split('').length) })
-  console.log(Math.max(...arr))
   return Math.max(...arr)
 }
 
