@@ -1145,6 +1145,14 @@
     z-index: 0;
   }
 
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"],
+  section {
+    position: relative;
+    z-index: 5;
+  }
+
   a {
     color: $azure;
   }
