@@ -1,38 +1,38 @@
 {
   "seo": {
-    "title": "IPFS Ecosystem Directory",
-    "description": "Interactive IPFS ecosystem directory and showcase."
+    "title": "Filecoin Ecosystem",
+    "description": "Filecoin interactive ecosystem and showcase."
   },
   "og": {
-    "site_name": "IPFS Ecosystem Directory",
-    "url": "https://ecosystem.ipfs.io/",
+    "site_name": "Filecoin Ecosystem",
+    "url": "https://example.com",
     "type": "website",
-    "image": "https://ecosystem.ipfs.io/images/open-graph.png"
+    "image": "https://example.com"
   },
   "navigation": {
     "index": {
       "type": "a",
-      "href": "https://ipfs.io"
+      "href": "https://example.com"
     },
     "header": [
       {
         "type": "a",
-        "href": "https://ipfs.io/#why",
+        "href": "https://example.com",
         "label": "Store"
       },
       {
         "type": "a",
-        "href": "https://ipfs.io/#install",
+        "href": "https://example.com",
         "label": "Mine"
       },
       {
         "type": "a",
-        "href": "https://docs.ipfs.io",
+        "href": "https://example.com",
         "label": "Build"
       },
       {
         "type": "a",
-        "href": "https://ipfs.io/team",
+        "href": "https://example.com",
         "label": "Blog"
       },
       {

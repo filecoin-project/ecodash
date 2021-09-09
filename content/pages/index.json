@@ -1,13 +1,13 @@
 {
   "seo": {
     "title": "Filecoin Ecosystem",
-    "description": "Interactive IPFS ecosystem directory and showcase"
+    "description": "Filecoin interactive ecosystem and showcase."
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://ecosystem.ipfs.io/",
+    "url": "https://example.com",
     "type": "website",
-    "image": "https://ecosystem.ipfs.io/images/open-graph.png"
+    "image": "https://example.com"
   },
   "404_error_message": "Not Found",
   "page_content": {
@@ -15,7 +15,7 @@
       "index_view": [
         {
           "type": "a",
-          "href": "https://ipfs.io",
+          "href": "https://example.com",
           "label": "Home"
         },
         {
@@ -26,7 +26,7 @@
       "filters_view": [
         {
           "type": "a",
-          "href": "https://ipfs.io",
+          "href": "https://example.com",
           "label": "Home"
         },
         {
@@ -42,7 +42,7 @@
       "filters_applied_view": [
         {
           "type": "a",
-          "href": "https://ipfs.io",
+          "href": "https://example.com",
           "label": "Home"
         },
         {
@@ -76,7 +76,7 @@
     },
     "section_filter": {
       "heading": "All entityTermPlural",
-      "description": "Explore the entire IPFS ecosystem, or use the filters to drill down by factors like industry, focus area, and tooling.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua.",
       "results_empty_placeholder": "No results found that match the selected filters.",
       "filter_panel_toggle_button_label": "Filters",
       "sort_dropdown_label": "Sort by:",
