@@ -732,13 +732,14 @@
       z-index: 1;
       top: 10px;
       left: 10px;
-      min-height: 2rem;
+      min-height: 2.25rem !important;
       @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
       background-color: $jaguar;
       transition: inherit;
       .button-content {
+        line-height: $leading_Regular;
         color: $white;
         transition: all 250ms linear;
         svg {
@@ -794,6 +795,8 @@
     color: $blackSapphire;
   }
   .dropdown-item {
+    line-height: $leading_Medium;
+    padding: 0.375rem 1rem;
     &.highlighted {
       background-color: unset;
       color: $blackSapphire;
@@ -818,12 +821,19 @@
       transition: all 250ms linear;
     }
     .dropdown-button {
+      min-height: 2rem;
+      font-size: $fontSize_Small;
+      line-height: $leading_Medium;
       .dropdown-toggle {
         svg {
           path {
             stroke: $white;
           }
         }
+      }
+      label,
+      span {
+        padding-top: 0.125rem;
       }
     }
     &:not(.closed) {
@@ -849,7 +859,7 @@
 
   #list-block-toggle-button {
     top: 10px;
-    height: calc(2.5rem - 1px);
+    height: calc(2.5rem - 2px);
     @include whiteBorderBack;
     overflow: hidden;
     &:before {
@@ -1143,6 +1153,14 @@
     background: radial-gradient(#ffffff 0%, transparent 50%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='684' height='684' viewBox='0 0 684 684'><defs><linearGradient id='linear-gradient' x1='0.985' y1='0.018' x2='0.017' y2='0.862' gradientUnits='objectBoundingBox'><stop offset='0' stop-color='%2339c0cc'/><stop offset='1' stop-color='%23178ffd'/></linearGradient></defs><pattern id='bg' patternUnits='userSpaceOnUse' width='684' height='684'><g id='Rectangle_1597' data-name='Rectangle 1597' transform='translate(354 13)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g><g id='Rectangle_1601' data-name='Rectangle 1601' transform='translate(11 353)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g></pattern><pattern id='bb' patternUnits='userSpaceOnUse' width='171' height='171'><path id='Rectangle_1509' data-name='Rectangle 1509' d='M1,1V170H170V1H1M0,0H171V171H0Z' fill='url(%23linear-gradient)' opacity='0.2' /></pattern><rect width='100%25' height='100%25' fill='url(%23bg)'/><rect width='100%25' height='100%25' fill='url(%23bb)'/></svg>");
     opacity: 0.5;
     z-index: 0;
+  }
+
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"],
+  section {
+    position: relative;
+    z-index: 5;
   }
 
   a {
