@@ -8,79 +8,79 @@
         {
           "label": "Browsers",
           "slug": "browsers",
-          "description": "Projects bringing IPFS into the browser, or melding browser-like capabilities with IPFS."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Content delivery",
           "slug": "content-delivery",
-          "description": "Projects enabling the future of content delivery using IPFS, from websites to streaming media to CDN-style delivery.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
           "position": "first"
         },
         {
           "label": "Data & machine learning",
           "slug": "data-machine-learning",
-          "description": "Projects using IPFS to improve availability, reliability, and more for datasets of all sizes."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Data governance",
           "slug": "data-governance",
-          "description": "Projects using IPFS to ensure data integrity and other matters of data governance."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Data persistence",
           "slug": "data-persistence",
-          "description": "Projects focused on data persistence for material on the IPFS network, including pinning services."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "DeFi",
           "slug": "defi",
-          "description": "Projects using IPFS to help remove intermediaries and decentralize finance."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Games & VR/AR",
           "slug": "games-vr-ar",
-          "description": "Projects using IPFS to make advances in games, virtual reality, and augmented reality."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Identity",
           "slug": "identity",
-          "description": "Projects using IPFS to help solve problems in the decentralized identity space."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Integrations",
           "slug": "integrations",
-          "description": "Projects integrating IPFS into other core internet and dweb technologies."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "IoT",
           "slug": "iot",
-          "description": "Projects using IPFS to make advances in the Internet of Things."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Marketplaces & ecommerce",
           "slug": "marketplaces-ecommerce",
-          "description": "Projects using IPFS to facilitate buying and selling among internet end users."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "NFTs",
           "slug": "nfts",
-          "description": "Projects using IPFS as a best-practices standard in the world of nonfungible tokens."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Other",
           "slug": "other",
-          "description": "Notable projects built using IPFS that don't quite fit into another category.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
           "position": "last"
         },
         {
           "label": "Prediction",
           "slug": "prediction",
-          "description": "Projects using IPFS to improve the prediction, betting, and oracle space."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         },
         {
           "label": "Social media",
           "slug": "social-media",
-          "description": "Projects using IPFS to help decentralize messaging and other types of social media."
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
         }
       ]
     },

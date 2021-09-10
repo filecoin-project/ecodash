@@ -23,7 +23,7 @@
           {{ selected }}
         </span>
 
-        <div class="dropdown-toggle">
+        <div :class="['dropdown-toggle', { closed }]">
           <slot name="dropdown-icon"></slot>
         </div>
       </div>
@@ -33,13 +33,18 @@
         <div ref="dropdownList" class="dropdown-list">
           <template v-for="option in options">
             <div
-              :key="`div-option-${option.label}`"
-              :value="option.label"
-              :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
-              :tabindex="closed ? -1 : 0"
-              @click="optionSelected(option)"
-              @keyup.enter.self="optionSelected(option)">
-              {{ option.label }}
+              :key="`dropdown-option-${option.label}`"
+              class="dropdown-item-wrap">
+              <component
+                :is="option.type"
+                :to="option.disabled ? '' : option.href"
+                :href="option.disabled ? '' : option.href"
+                :disabled="option.disabled"
+                :target="option.target"
+                :tabindex="closed ? -1 : 0"
+                :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]">
+                {{ option.label }}
+              </component>
             </div>
           </template>
         </div>
@@ -68,7 +73,7 @@ export default {
       default: 'Sort by: '
     },
     dropdownOptions: {
-      type: Object,
+      type: Array,
       required: true
     },
     displaySelected: {
@@ -86,7 +91,7 @@ export default {
   data () {
     return {
       closed: true,
-      selected: 'Alphabetical (A-Z)',
+      selected: false,
       dropdownButtonHeight: 0,
       dropdownListHeight: 0,
       height: 0,
@@ -99,7 +104,7 @@ export default {
       collection: 'core/collection'
     }),
     options () {
-      return Object.values(this.dropdownOptions)
+      return this.dropdownOptions
     },
     maxLength () {
       return this.options.reduce((a, b) => a.label.length > b.label.length ? a : b).label.length
@@ -183,6 +188,32 @@ export default {
   background: none;
 }
 
+#dropdown-selector {
+  font-family: $font_Secondary;
+  .button-inner {
+    font-size: $fontSize_Small;
+    transition: all 250ms linear;
+    background-color: $jaguar;
+    @include small {
+      font-size: $fontSize_Regular;
+    }
+    label, span {
+      padding-top: 0.125rem;
+      @include leading_Medium;
+    }
+  }
+  &:not(.closed) {
+    .shadow {
+      transition: opacity 250ms ease-in, height 0ms;
+      opacity: 1;
+    }
+    .button-inner {
+      @include oceanBlueGradient;
+      color: $blackSapphire;
+    }
+  }
+}
+
 .dropdown-wrapper {
   @include borderRadius_Medium;
   position: relative;
@@ -208,26 +239,45 @@ export default {
   }
 }
 
-.dropdown-toggle {
+::v-deep .dropdown-toggle {
   transform: translateY(-5%);
-  opacity: 0.5;
+  opacity: 0.75;
   margin-left: 0.5rem;
   transition: 250ms ease-out;
   &:hover {
     cursor: pointer;
     opacity: 1.0;
   }
+  &.closed {
+    .svg-dropdown {
+      path {
+        stroke: $white;
+      }
+    }
+  }
+  &:not(.closed) {
+    transition: 250ms ease-in;
+    transform: rotate(-180deg);
+    .svg-dropdown {
+      path {
+        stroke: $blackSapphire;
+      }
+    }
+  }
 }
 
 .dropdown-root {
   @include borderRadius_Medium;
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   z-index: 10;
   transition: height 250ms ease-in-out;
+  position: relative;
+  padding-top: 0;
+  color: $blackSapphire;
 }
 
 .shadow {
@@ -250,18 +300,30 @@ export default {
   box-sizing: border-box;
 }
 
-.dropdown-item {
-  padding: 0.25rem 1.0rem;
-  width: 100%;
-  white-space: normal;
-  &:not(.highlighted) {
-    text-decoration: underline transparent;
-    text-underline-offset: $underlineSpacing;
-    cursor: pointer;
-    transition: text-decoration-color 250ms ease-out;
-    &:hover {
-      transition: text-decoration-color 250ms ease-in;
-      text-decoration-color: currentColor;
+.dropdown-item-wrap {
+  background-color: $white;
+  padding: 0.5rem 1rem;
+  .dropdown-item {
+    font-size: $fontSize_Small;
+    width: 100%;
+    white-space: normal;
+    @include small {
+      font-size: $fontSize_Regular;
+    }
+    &:not(.highlighted) {
+      text-decoration: underline transparent;
+      text-underline-offset: $underlineSpacing;
+      cursor: pointer;
+      transition: text-decoration-color 250ms ease-out;
+      &:hover {
+        transition: text-decoration-color 250ms ease-in;
+        text-decoration-color: currentColor;
+      }
+    }
+    &.highlighted {
+      background-color: unset;
+      color: $blackSapphire;
+      @include lightBlueGradient;
     }
   }
 }
