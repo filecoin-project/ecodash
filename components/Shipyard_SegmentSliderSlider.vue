@@ -54,11 +54,13 @@
         </div>
       </div>
 
-      <button
-        class="view-all button noselect focus-visible"
-        @click="jump2Filters">
-        {{ filterToggleButtonText }}
-      </button>
+      <div class="view-all-wrapper">
+        <button
+          class="view-all button noselect focus-visible"
+          @click="jump2Filters">
+          {{ filterToggleButtonText }}
+        </button>
+      </div>
 
     </div>
   </div>
@@ -185,6 +187,10 @@ export default {
 
 <style lang="scss" scoped>
 // ////////////////////////////////////////////////////////////////////// Slider
+#segment-slider-card {
+  position: relative;
+}
+
 .slider-container {
   min-width: 16rem;
   flex: 1 1 10rem;
@@ -192,13 +198,24 @@ export default {
   align-items: center;
 }
 .slider-card {
-  @include borderRadius_Medium;
-  width: 100%;
-  padding: 2rem;
   position: relative;
+  padding: 0.5rem;
+  width: 100%;
+  min-width: 14rem;
   align-items: center;
   transition: height ease 200ms;
+  @include borderRadius_Medium;
+  @include oceanBorderGradient;
+  @include small {
+    border: none;
+  }
   h3 {
+    font-family: $font_Primary;
+    font-size: $fontSize_Small;
+    font-weight: $fontWeight_SemiBold;
+    letter-spacing: $letter_SpacingRegular;
+    line-height: $leading_Small;
+    color: $blackSapphire;
     @include leading_Regular;
     font-weight: 500;
     @include small {
@@ -227,10 +244,14 @@ export default {
   }
 }
 .description {
-  @include fontSize_Small;
-  font-weight: 400;
+  padding: 0 0.25rem;
   margin-bottom: 2rem;
-  line-height: 1.4;
+  font-family: $font_Secondary;
+  font-size: $fontSize_Small;
+  font-weight: $fontWeight_Regular;
+  letter-spacing: 0;
+  line-height: $leading_Small;
+  color: $darkGrey;
   @include small {
     max-width: 50%;
     margin-left: auto;
@@ -247,6 +268,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
   margin-bottom: 0.75rem;
   @include small {
     justify-content: space-between;
@@ -284,7 +306,7 @@ export default {
   width: 80%;
   max-width: 300px;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   img {
     &:first-child {
       margin-left: 0;
@@ -302,29 +324,43 @@ export default {
     max-height: 2.5rem;
   }
 }
-.view-all {
-  @include borderRadius_Medium;
+.view-all-wrapper {
   position: absolute;
-  margin: 0 auto;
-  padding: 0.25rem 0;
-  width: 10rem;
-  left: 0;
+  left: 3px;
   right: 0;
-  bottom: 0px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  transform: translateY(50%);
-  transition: 250ms ease-out;
-  @include medium {
-    transform: translateY(-75%);
-  }
-  &:hover {
-    transition: 250ms ease-in;
-  }
-  &:focus {
-    outline: none;
+  bottom: -1.375rem;
+  z-index: 1;
+  .view-all {
+    position: relative;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+    width: 10rem;
+    font-weight: $fontWeight_Medium !important;
+    text-align: center;
+    transform: translateY(50%);
+    transition: 250ms ease-out;
+    @include cardText;
+    @include tripleLayer;
+    background-color: $jaguar !important;
+    &:before {
+      top: -12px;
+      left: -12px;
+      background-color: transparent;
+    }
+    &:after {
+      top: -7px;
+      left: -7px;
+      @include oceanBlueGradient;
+    }
+    @include medium {
+      transform: translateY(-75%);
+    }
+    &:hover {
+      transition: 250ms ease-in;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
 .noselect {
