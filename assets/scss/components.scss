@@ -732,13 +732,14 @@
       z-index: 1;
       top: 10px;
       left: 10px;
-      min-height: 2rem;
+      min-height: 2.25rem !important;
       @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
       background-color: $jaguar;
       transition: inherit;
       .button-content {
+        line-height: $leading_Regular;
         color: $white;
         transition: all 250ms linear;
         svg {
@@ -794,6 +795,8 @@
     color: $blackSapphire;
   }
   .dropdown-item {
+    line-height: $leading_Medium;
+    padding: 0.375rem 1rem;
     &.highlighted {
       background-color: unset;
       color: $blackSapphire;
@@ -818,12 +821,19 @@
       transition: all 250ms linear;
     }
     .dropdown-button {
+      min-height: 2rem;
+      font-size: $fontSize_Small;
+      line-height: $leading_Medium;
       .dropdown-toggle {
         svg {
           path {
             stroke: $white;
           }
         }
+      }
+      label,
+      span {
+        padding-top: 0.125rem;
       }
     }
     &:not(.closed) {
@@ -849,7 +859,7 @@
 
   #list-block-toggle-button {
     top: 10px;
-    height: calc(2.5rem - 1px);
+    height: calc(2.5rem - 2px);
     @include whiteBorderBack;
     overflow: hidden;
     &:before {
