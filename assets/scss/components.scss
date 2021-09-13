@@ -684,18 +684,26 @@
     @include borderRadius_Medium;
     @include fontSize_Small;
     @include leading_Small;
-    background-color: $lightGrey;
+    // background-color: $lightGrey;
     border: 1px solid $tundora;
     font-family: $font_Primary;
     font-weight: $fontWeight_Regular;
     color: $blackSapphire;
     box-shadow: none;
     padding: 7.5px 10.5px;
-
-    &:hover,
+    border: 1px solid $lightGrey;
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background-size: 500% 100%;
+    background-position: 0% 0%;
+    transition: 250ms ease-in-out;
+    &:hover {
+      border: 1px solid $white;
+      background-position: 50% 0%;
+    }
     &.active-button {
-      @include oceanBlueGradient;
-      color: $blackSapphire;
+      border: 1px solid transparent;
+      background-position: 98% 0%;
+      color: $white;
     }
   }
 }
@@ -1162,11 +1170,15 @@
   .chiclet {
     @include lightBlueGradient;
     @include whiteBorderBack;
-
-    &:hover,
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background-size: 500% 100%;
+    background-position: 50% 0%;
+    &:hover {
+      background-position: 98% 0%;
+    }
     &.active-button {
       @include oceanBlueGradient;
-      color: $blackSapphire;
+      color: $white;
     }
   }
 }
