@@ -575,6 +575,15 @@
   }
 
   #filter-panel-toolbar {
+    margin-bottom: 3.375rem;
+    .title {
+      margin-bottom: 1.25rem;
+      font-family: $font_Primary;
+      font-size: $fontSize_Regular;
+      font-weight: $fontWeight_Medium;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Mini;
+    }
     #filter-panel-close-icon {
       svg {
         path {
