@@ -308,8 +308,8 @@
     .dummy-thumb {
       position: absolute;
       top: 2rem;
-      width: 62px;
-      height: 12px;
+      width: 74px;
+      height: 14px;
       z-index: unset;
       @include tripleLayer;
       @include oceanBlueGradient;
@@ -333,9 +333,9 @@
     }
     #feature-range-slider {
       position: absolute;
-      &::-webkit-slider-thumb { width: 62px; }
-      &::-moz-range-thumb { width: 62px; }
-      &::-ms-thumb { width: 62px; }
+      &::-webkit-slider-thumb { width: 74px; }
+      &::-moz-range-thumb { width: 74px; }
+      &::-ms-thumb { width: 74px; }
     }
   }
 }
@@ -575,6 +575,15 @@
   }
 
   #filter-panel-toolbar {
+    margin-bottom: 3.375rem;
+    .title {
+      margin-bottom: 1.25rem;
+      font-family: $font_Primary;
+      font-size: $fontSize_Regular;
+      font-weight: $fontWeight_Medium;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Mini;
+    }
     #filter-panel-close-icon {
       svg {
         path {
@@ -723,6 +732,9 @@
   }
   .thumbnail {
     border-radius: 0 !important;
+    img {
+      height: 75px;
+    }
   }
   .title {
     @include leading_Regular;
@@ -863,17 +875,21 @@
     h3.heading,
     div.description {
       padding-left: 0.5rem;
+      font-family: $font_Primary;
+      letter-spacing: $letter_SpacingRegular;
     }
 
     .heading {
       @include fontSize_ExtraLarge;
-      font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
+      line-height: $leading_Regular;
       margin-bottom: 0.5rem;
     }
 
     .description {
       @include fontSize_Regular;
+      font-weight: $fontWeight_Regular;
+      line-height: $leading_Small;
       margin-bottom: 2.2rem !important;
     }
 
@@ -886,6 +902,9 @@
       .thumbnail {
         border: 0;
         background-color: white;
+        img {
+          height: 75px;
+        }
       }
       .title,
       .description {
@@ -899,9 +918,9 @@
     width: calc(50% - 1rem) !important;
     .dummy-thumb {
       position: relative;
-      top: 1.875rem;
-      width: 60px;
-      height: 10px;
+      top: 1.75rem;
+      width: 74px;
+      height: 14px;
       z-index: 2;
       @include oceanBorderGradient;
       border-width: 1px;
@@ -939,9 +958,9 @@
     }
     #feature-range-slider {
       position: absolute;
-      &::-webkit-slider-thumb { width: 62px; }
-      &::-moz-range-thumb { width: 62px; }
-      &::-ms-thumb { width: 62px; }
+      &::-webkit-slider-thumb { width: 74px; }
+      &::-moz-range-thumb { width: 74px; }
+      &::-ms-thumb { width: 74px; }
     }
   }
 
@@ -972,7 +991,8 @@
 
   .description {
     @include fontSize_Medium;
-    @include leading_Medium;
+    line-height: 1.7;
+    letter-spacing: $letter_SpacingRegular;
     color: $darkGrey;
     margin-bottom: 2.125rem !important;
   }
@@ -1105,6 +1125,9 @@
     background-color: $white;
     width: 360px;
     margin: 0;
+    @include tiny {
+      margin: 0 0.5rem;
+    }
 
     .statistic {
       @include fontSize_Larger;
@@ -1122,6 +1145,7 @@
     .description {
       @include fontSize_Small;
       font-family: $font_Secondary;
+      letter-spacing: 0;
       color: $tundora;
     }
 
@@ -1144,9 +1168,21 @@
       justify-content: flex-start;
       column-gap: 14px;
 
+      .statistic {
+        width: 25%;
+      }
+
+      .description {
+        width: 75%;
+        @include leading_Small;
+      }
+
+      .statistic,
       .description {
         text-align: left;
-        @include leading_Small;
+        @include tiny {
+          width: unset;
+        }
       }
     }
 
