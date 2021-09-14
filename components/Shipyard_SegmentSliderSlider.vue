@@ -352,9 +352,6 @@ export default {
       left: -7px;
       @include oceanBlueGradient;
     }
-    @include medium {
-      transform: translateY(-75%);
-    }
     &:hover {
       transition: 250ms ease-in;
     }

@@ -357,7 +357,6 @@ export default {
 .segments-row {
   width: 100%;
   display: flex;
-  // flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
   > div {
@@ -431,14 +430,6 @@ export default {
       left: 0px;
     }
   }
-  // &.displaced-down {
-  //   // transform: translateY(25%);
-  //   top: 25%;
-  // }
-  // &.displaced-up {
-  //   // transform: translateY(-25%);
-  //   top: -25%;
-  // }
   .dots {
     position: absolute;
     top: 7px;

@@ -18,7 +18,7 @@
 
       <div
         v-if="selectedFiltersCount"
-        class="button-wrapper">
+        class="button-wrapper clear-selected">
         <Zero_Core__Button
           id="clear-selected-filters-button"
           class="focus-visible"
@@ -188,18 +188,136 @@ export default {
   }
 }
 
+.button-wrapper {
+  position: relative;
+  margin-right: 1.5rem;
+  transition: all 250ms linear;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    @include whiteBorderBack;
+    background-color: $jaguar;
+    transition: inherit;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    @include whiteBorderBack;
+    @include oceanBlueGradient;
+    transition: inherit;
+  }
+  button {
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    min-height: 2.25rem !important;
+    @include cardText;
+    @include whiteBorderFront;
+    border-radius: 0 !important;
+    background-color: $jaguar;
+    transition: inherit !important;
+    .button-content {
+      line-height: $leading_Regular;
+      color: $white;
+      transition: all 250ms linear;
+      svg {
+        path {
+          transition: inherit;
+          stroke: $white;
+        }
+      }
+    }
+  }
+  &.middle {
+    &:hover {
+      #filter-panel-toggle-button {
+        top: 0;
+        left: 0;
+      }
+      &:after {
+        top: 0px;
+        left: 0px;
+      }
+    }
+    @include small {
+      position: fixed !important;
+      bottom: 4.1665vw;
+      left: 4.1665vw;
+      z-index: 10;
+    }
+  }
+  &.clear-selected {
+    &:hover {
+      #clear-selected-filters-button {
+        top: 0;
+        left: 0;
+      }
+      &:after {
+        top: 0px;
+        left: 0px;
+      }
+    }
+  }
+  &.button-active {
+    &:before {
+      top: 0px;
+      left: 0px;
+    }
+    &:after {
+      top: 0px;
+      left: 0px;
+    }
+    button {
+      top: 0px;
+      left: 0px;
+      @include oceanBlueGradient;
+    }
+  }
+}
+
+.button-content {
+  color: $white;
+  transition: all 250ms linear !important;
+}
+
+.relative-wrapper {
+  position: relative;
+  left: -14px;
+  z-index: 100;
+}
+
 // //////////////////////////////////////////////// [Button] Filter panel toggle
 ::v-deep #filter-panel-toggle-button {
+  position: relative;
   filter: drop-shadow(0 0 0.3rem rgba(73, 73, 73, 0.2));
   transition: bottom 0ms;
-  @include small {
-    left: 4.1665vw;
-  }
   .button-content {
     padding: 0;
   }
-  .item-after {
+  .item-after, {
     @include fontSize_Small;
+  }
+  .svg-icon {
+    transition: all 250ms linear;
+    path {
+      stroke: $white;
+    }
+  }
+  &.active {
+    color: $blackSapphire;
+    .svg-icon {
+      path {
+        stroke: $blackSapphire;
+      }
+    }
   }
   &.top {
     @include small {
@@ -219,23 +337,6 @@ export default {
     }
     @include mini {
       bottom: calc(4.1665vw + 84px + 0.5rem);
-    }
-  }
-  &.middle {
-    @include small {
-      position: fixed;
-      bottom: 4.1665vw;
-      z-index: 10;
-    }
-  }
-}
-
-.button-wrapper {
-  &.middle {
-    @include small {
-      position: fixed !important;
-      bottom: 4.1665vw;
-      z-index: 10;
     }
   }
 }
@@ -273,6 +374,15 @@ export default {
   }
 }
 
+.sort-by-wrapper {
+  position: absolute;
+  &.open {
+    &:after {
+      background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
+    }
+  }
+}
+
 ::v-deep #list-block-toggle-button {
   @include borderRadius_Medium;
   display: flex;
@@ -280,19 +390,24 @@ export default {
   align-items: center;
   margin-left: 1rem;
   position: relative;
-  height: 2.25rem;
+  top: 10px;
+  height: calc(2.5rem - 2px);
   background-color: white;
   cursor: pointer;
+  @include whiteBorderBack;
+  overflow: hidden;
   &:before {
     @include borderRadius_Medium;
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
-    width: 50%;
+    width: 52%;
     height: 100%;
     transition: 300ms cubic-bezier(0.61, 1.6, 0.64, 0.88);
     z-index: 5;
+    background-color: unset;
+    @include oceanBlueGradient;
   }
   &:not(.list-view-active) {
     .block-view-icon {
@@ -320,4 +435,5 @@ export default {
   padding: 0 1rem;
   z-index: 10;
 }
+
 </style>

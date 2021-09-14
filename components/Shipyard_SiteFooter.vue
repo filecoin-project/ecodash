@@ -4,7 +4,7 @@
     <section class="panel-top">
       <div class="grid-centered-noGutter">
 
-        <div class="col-5_md-6_sm-12 ">
+        <div class="col-5_md-6_sm-10 ">
           <div class="content-wrapper">
             <h2 class="heading">
               {{ pageData.heading }}
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div v-if="navigation" class="col-5_sm-12">
+        <div v-if="navigation" class="col-5_sm-10">
           <div class="content-wrapper">
             <nav id="footer-navigation">
               <div class="left-column">
