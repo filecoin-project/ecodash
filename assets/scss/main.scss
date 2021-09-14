@@ -52,6 +52,14 @@ $fontAssetPath: '~assets/fonts';
   font-weight: 700;
 }
 
+/////////////////////////////////////////////////////////////// Suisse Intl Book
+@font-face {
+  font-family: 'Suisse Intl Book';
+  src: url('#{$fontAssetPath}/SuisseIntlBook/SuisseIntl-Book.otf') format('opentype');
+  font-weight: 400;
+}
+
+
 // ///////////////////////////////////////////////////////////////////// General
 // -----------------------------------------------------------------------------
 html, body {

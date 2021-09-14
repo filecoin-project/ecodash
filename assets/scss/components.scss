@@ -1,7 +1,7 @@
 // ///////////////////////////////////////////////////////////////////// General
 // -----------------------------------------------------------------------------
 .breadcrumbs {
-  font-family: $font_Primary;
+  font-family: 'Suisse Intl Book';
   font-size: $fontSize_Small;
   font-weight: $fontWeight_Regular;
   letter-spacing: $letter_SpacingRegular;
@@ -17,297 +17,6 @@
 // -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
-}
-
-#header-navigation {
-  .navigation-content {
-    margin-top: 0.25rem;
-    .language-selector {
-      display: flex;
-      .option {
-        color: $white;
-        &:active {
-          color: $caribbeanBlue;
-        }
-      }
-    }
-  }
-  .navigation {
-    display: flex;
-    max-width: unset;
-    @include small {
-      height: calc(100vh - 8.25rem);
-      &:not(.modal-open) {
-        display: none;
-      }
-      &.modal-open {
-        display: block;
-      }
-    }
-    .links-container {
-      margin: 0 2rem;
-      @include medium {
-        margin: 0 1rem;
-      }
-      &:before {
-        content: '';
-        position: relative;
-        width: 6rem;
-        height: 100%;
-        flex-grow: 1;
-      }
-      @include small {
-        margin: 0 5rem;
-        justify-content: flex-start;
-        &:before {
-          content: '';
-          position: relative;
-          width: 100%;
-          height: 2rem;
-          flex-grow: 0;
-        }
-      }
-      .navigation-link {
-        font-family: $font_Primary;
-        letter-spacing: $letter_SpacingRegular;
-        font-size: $fontSize_Regular;
-        margin: 0 1.0rem;
-        @include medium {
-          margin: 0 0.5rem;
-        }
-        @include small {
-          font-size: $fontSize_Large;
-          line-height: $leading_Mini;
-          margin: 0 0 2rem 0;
-        }
-      }
-    }
-
-    .social-icon-container {
-      display: none;
-    }
-
-    .relative-wrapper {
-      content: '';
-      position: relative;
-      width: 100px;
-      z-index: 100;
-      @include small {
-        margin: 0 5rem;
-      }
-    }
-
-    .button-wrapper {
-      position: relative;
-      transition: all 250ms linear;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-        @include whiteBorderBack;
-        background-color: $jaguar;
-        transition: inherit;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-        @include whiteBorderBack;
-        @include oceanBlueGradient;
-        transition: inherit;
-      }
-      button {
-        z-index: 1;
-        top: 10px;
-        left: 10px;
-        @include whiteBorderFront;
-        border-radius: 0 !important;
-        background-color: $jaguar;
-        transition: inherit;
-        .button-content {
-          color: $white;
-          transition: all 250ms linear;
-          svg {
-            path {
-              transition: inherit;
-              stroke: $white;
-            }
-          }
-        }
-      }
-      &.button-active {
-        &:before {
-          top: 0px;
-          left: 0px;
-        }
-        &:after {
-          top: 0px;
-          left: 0px;
-        }
-        button {
-          top: 0px;
-          left: 0px;
-          @include oceanBlueGradient;
-          .button-content {
-            color: $blackSapphire;
-            transition: all 250ms linear;
-            svg {
-              path {
-                transition: inherit;
-                stroke: $blackSapphire;
-              }
-            }
-          }
-        }
-      }
-    }
-    .sort-by-wrapper {
-      position: absolute;
-      top: -50%;
-      &.open {
-        &:after {
-          background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
-        }
-      }
-    }
-    .dropdown-root {
-      position: relative;
-      padding-top: 0;
-      color: $blackSapphire;
-    }
-    .dropdown-item {
-      background-color: $white;
-      font-size: $fontSize_Small !important;
-      padding: 0.5rem 1rem;
-      &.highlighted {
-        background-color: unset;
-        color: $blackSapphire;
-        @include lightBlueGradient;
-      }
-    }
-
-    #dropdown-selector {
-      font-family: $font_Secondary;
-      .button-inner {
-        font-size: $fontSize_Small !important;
-        transition: all 250ms linear;
-        background-color: $jaguar;
-        label, span {
-          @include leading_Large;
-        }
-      }
-      .dropdown-button {
-        .dropdown-toggle {
-          svg {
-            path {
-              stroke: $white;
-            }
-          }
-        }
-      }
-      &:not(.closed) {
-        .shadow {
-          transition: opacity 250ms ease-in, height 0ms;
-          opacity: 1;
-        }
-        .dropdown-toggle {
-          transition: 250ms ease-in;
-          transform: rotate(-180deg);
-          svg {
-            path {
-              stroke: $blackSapphire;
-            }
-          }
-        }
-        .button-inner {
-          @include oceanBlueGradient;
-          color: $blackSapphire;
-        }
-      }
-    }
-  }
-  .navigation-dropdown {
-    .dropdown-wrapper {
-      position: relative;
-      margin-right: 1.5rem;
-      transition: all 250ms linear;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-        @include whiteBorderBack;
-        background-color: $jaguar;
-        transition: inherit;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
-        @include whiteBorderBack;
-        @include oceanBlueGradient;
-        transition: inherit;
-      }
-      button {
-        z-index: 1;
-        top: 10px;
-        left: 10px;
-        min-height: 2.5rem;
-        @include cardText;
-        @include whiteBorderFront;
-        border-radius: 0 !important;
-        background-color: $jaguar;
-        transition: inherit;
-        .button-inner {
-          background: $blackSapphire;
-          color: $white;
-          transition: all 250ms linear;
-          svg {
-            path {
-              transition: inherit;
-              stroke: $white;
-            }
-          }
-        }
-      }
-      &.button-active {
-        &:before {
-          top: 0px;
-          left: 0px;
-        }
-        &:after {
-          top: 0px;
-          left: 0px;
-        }
-        button {
-          top: 0px;
-          left: 0px;
-          @include oceanBlueGradient;
-          .button-content {
-            color: $blackSapphire;
-            transition: all 250ms linear;
-            svg {
-              path {
-                transition: inherit;
-                stroke: $blackSapphire;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 #header-hero {
@@ -383,14 +92,18 @@
     .subheading,
     .navigation-link {
       font-family: $font_Primary;
-      font-size: $fontSize_Large;
+      font-size: $fontSize_Medium;
       font-weight: $fontWeight_Regular;
       letter-spacing: $letter_SpacingRegular;
       line-height: $leading_Regular;
     }
     .navigation-link {
       padding: 0.125rem 0;
-      color: #b3b3b3;
+      color: #B5B5B6;
+      &:hover {
+        opacity: 1 !important;
+        color: $dodgerBlue;
+      }
     }
   }
   .content-wrapper {
@@ -405,8 +118,6 @@
     }
   }
 }
-
-
 
 // ///////////////////////////////////////////////////////////////// Footer Form
 // -----------------------------------------------------------------------------
@@ -460,7 +171,12 @@
 
         input {
           color: $white;
+          &::placeholder {
+            color: $white;
+            opacity: 1;
+          }
         }
+
       }
 
       .submit {
@@ -477,52 +193,6 @@
 
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
-
-#segment-slider-card {
-  position: relative;
-  .slider-card {
-    @include oceanBorderGradient;
-    padding: 0.5rem;
-    min-width: 14rem;
-    @include small {
-      border: none;
-    }
-    .slide-nav {
-      margin-top: 1rem;
-    }
-    h3 {
-      font-family: $font_Primary;
-      font-size: $fontSize_Small;
-      font-weight: $fontWeight_SemiBold;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Small;
-      color: $blackSapphire;
-    }
-    .description {
-      padding: 0 0.25rem;
-      font-family: $font_Secondary;
-      font-size: $fontSize_Small;
-      font-weight: $fontWeight_Regular;
-      letter-spacing: 0;
-      line-height: $leading_Small;
-      color: $darkGrey;
-    }
-    .logo-wrapper {
-      margin-bottom: 0;
-    }
-  }
-  .view-all {
-    position: relative;
-    @include cardText;
-    @include tripleLayer;
-    background-color: $jaguar;
-    bottom: -2.25rem;
-    left: 3px;
-    &:after {
-      @include oceanBlueGradient;
-    }
-  }
-}
 
 #segment-slider-chart {
   @include medium {
@@ -638,8 +308,8 @@
     .dummy-thumb {
       position: absolute;
       top: 2rem;
-      width: 62px;
-      height: 12px;
+      width: 74px;
+      height: 14px;
       z-index: unset;
       @include tripleLayer;
       @include oceanBlueGradient;
@@ -663,9 +333,9 @@
     }
     #feature-range-slider {
       position: absolute;
-      &::-webkit-slider-thumb { width: 62px; }
-      &::-moz-range-thumb { width: 62px; }
-      &::-ms-thumb { width: 62px; }
+      &::-webkit-slider-thumb { width: 74px; }
+      &::-moz-range-thumb { width: 74px; }
+      &::-ms-thumb { width: 74px; }
     }
   }
 }
@@ -732,13 +402,14 @@
       z-index: 1;
       top: 10px;
       left: 10px;
-      min-height: 2rem;
+      min-height: 2.25rem !important;
       @include cardText;
       @include whiteBorderFront;
       border-radius: 0 !important;
       background-color: $jaguar;
       transition: inherit;
       .button-content {
+        line-height: $leading_Regular;
         color: $white;
         transition: all 250ms linear;
         svg {
@@ -794,6 +465,8 @@
     color: $blackSapphire;
   }
   .dropdown-item {
+    line-height: $leading_Medium;
+    padding: 0.375rem 1rem;
     &.highlighted {
       background-color: unset;
       color: $blackSapphire;
@@ -818,12 +491,19 @@
       transition: all 250ms linear;
     }
     .dropdown-button {
+      min-height: 2rem;
+      font-size: $fontSize_Small;
+      line-height: $leading_Medium;
       .dropdown-toggle {
         svg {
           path {
             stroke: $white;
           }
         }
+      }
+      label,
+      span {
+        padding-top: 0.125rem;
       }
     }
     &:not(.closed) {
@@ -849,7 +529,7 @@
 
   #list-block-toggle-button {
     top: 10px;
-    height: calc(2.5rem - 1px);
+    height: calc(2.5rem - 2px);
     @include whiteBorderBack;
     overflow: hidden;
     &:before {
@@ -895,6 +575,15 @@
   }
 
   #filter-panel-toolbar {
+    margin-bottom: 3.375rem;
+    .title {
+      margin-bottom: 1.25rem;
+      font-family: $font_Primary;
+      font-size: $fontSize_Regular;
+      font-weight: $fontWeight_Medium;
+      letter-spacing: $letter_SpacingRegular;
+      line-height: $leading_Mini;
+    }
     #filter-panel-close-icon {
       svg {
         path {
@@ -905,8 +594,11 @@
     #filter-bar {
       height: 1.875rem;
       .icon-container {
-        width: 1.875rem;
-        height: 1.875rem;
+        width: fit-content;
+        height: fit-content;
+        left: 10.5px;
+        top: 50%;
+        transform: translateY(-50%);
         svg {
           height: 1rem;
           width: 1rem;
@@ -917,20 +609,20 @@
         }
       }
       input {
+        padding: 8.5px 10.5px;
+        padding-left: calc(1rem + 21px);
         font-family: $font_Primary;
         font-weight: $fontWeight_Regular;
         letter-spacing: $letter_SpacingRegular;
         color: $tundora;
-        @mixin placeholder {
+        &::placeholder {
           font-family: $font_Primary;
+          font-weight: $fontWeight_Medium;
+          font-size: $fontSize_Small;
           color: $tundora;
-          opacity: 0.75;
+          opacity: 1;
           z-index: 100;
         }
-        ::-webkit-input-placeholder { @include placeholder; }
-        ::-moz-placeholder { @include placeholder; }
-        :-ms-input-placeholder { @include placeholder; }
-        :-moz-placeholder { @include placeholder; }
         &:hover {
           background-color: $white;
         }
@@ -942,7 +634,7 @@
   }
 
   .filter-category {
-    .heading-wrapper {
+    &.heading-wrapper {
       svg {
         opacity: 0.5;
         &:hover {
@@ -953,25 +645,26 @@
         }
       }
     }
-    .heading {
+    &.heading {
       font-family: $font_Primary;
       font-size: $fontSize_Regular;
       font-weight: $fontWeight_Medium;
       letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Mini;
+      line-height: 1.25;
       margin-left: 0;
-
-      .number-active: {
-        font-size: $fontSize_Small;
-        font-weight: $fontWeight_Regular;
-      }
-      .subheading {
-        font-family: $font_Primary;
-        font-size: $fontSize_Small;
-        line-height: $leading_Mini;
-      }
     }
-    .chiclet-list {
+    &.number-active {
+      font-size: $fontSize_Small;
+      font-weight: $fontWeight_Regular;
+      line-height: 1.25;
+    }
+    &.sub-heading {
+      margin-top: 0.5rem;
+      font-family: $font_Primary;
+      font-size: $fontSize_Small;
+      line-height: 1.15;
+    }
+    &.chiclet-list {
       margin: 0;
     }
   }
@@ -999,19 +692,27 @@
   .chiclet {
     @include borderRadius_Medium;
     @include fontSize_Small;
-    @include leading_Tiny;
-    background-color: $lightGrey;
+    @include leading_Small;
+    // background-color: $lightGrey;
     border: 1px solid $tundora;
     font-family: $font_Primary;
     font-weight: $fontWeight_Regular;
     color: $blackSapphire;
     box-shadow: none;
     padding: 7.5px 10.5px;
-
-    &:hover,
+    border: 1px solid $lightGrey;
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background-size: 500% 100%;
+    background-position: 0% 0%;
+    transition: 250ms ease-in-out;
+    &:hover {
+      border: 1px solid $white;
+      background-position: 50% 0%;
+    }
     &.active-button {
-      @include oceanBlueGradient;
-      color: $blackSapphire;
+      border: 1px solid transparent;
+      background-position: 98% 0%;
+      color: $white;
     }
   }
 }
@@ -1031,6 +732,9 @@
   }
   .thumbnail {
     border-radius: 0 !important;
+    img {
+      height: 75px;
+    }
   }
   .title {
     @include leading_Regular;
@@ -1063,6 +767,7 @@
 // ////////////////////////////////////////////////////////////////// Pagination
 // -----------------------------------------------------------------------------
 #paginated-list-navigation-controls {
+  margin-top: 6rem !important;
   svg {
     path,
     line {
@@ -1141,8 +846,16 @@
     width: 100%;
     height: 100%;
     background: radial-gradient(#ffffff 0%, transparent 50%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='684' height='684' viewBox='0 0 684 684'><defs><linearGradient id='linear-gradient' x1='0.985' y1='0.018' x2='0.017' y2='0.862' gradientUnits='objectBoundingBox'><stop offset='0' stop-color='%2339c0cc'/><stop offset='1' stop-color='%23178ffd'/></linearGradient></defs><pattern id='bg' patternUnits='userSpaceOnUse' width='684' height='684'><g id='Rectangle_1597' data-name='Rectangle 1597' transform='translate(354 13)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g><g id='Rectangle_1601' data-name='Rectangle 1601' transform='translate(11 353)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g></pattern><pattern id='bb' patternUnits='userSpaceOnUse' width='171' height='171'><path id='Rectangle_1509' data-name='Rectangle 1509' d='M1,1V170H170V1H1M0,0H171V171H0Z' fill='url(%23linear-gradient)' opacity='0.2' /></pattern><rect width='100%25' height='100%25' fill='url(%23bg)'/><rect width='100%25' height='100%25' fill='url(%23bb)'/></svg>");
-    opacity: 0.5;
+    opacity: 0.75;
     z-index: 0;
+  }
+
+  [class~="grid"],
+  [class*="grid-"],
+  [class*="grid_"],
+  section {
+    position: relative;
+    z-index: 5;
   }
 
   a {
@@ -1162,17 +875,21 @@
     h3.heading,
     div.description {
       padding-left: 0.5rem;
+      font-family: $font_Primary;
+      letter-spacing: $letter_SpacingRegular;
     }
 
     .heading {
       @include fontSize_ExtraLarge;
-      font-family: $font_Primary;
       font-weight: $fontWeight_SemiBold;
+      line-height: $leading_Regular;
       margin-bottom: 0.5rem;
     }
 
     .description {
       @include fontSize_Regular;
+      font-weight: $fontWeight_Regular;
+      line-height: $leading_Small;
       margin-bottom: 2.2rem !important;
     }
 
@@ -1185,6 +902,9 @@
       .thumbnail {
         border: 0;
         background-color: white;
+        img {
+          height: 75px;
+        }
       }
       .title,
       .description {
@@ -1198,9 +918,9 @@
     width: calc(50% - 1rem) !important;
     .dummy-thumb {
       position: relative;
-      top: 1.875rem;
-      width: 60px;
-      height: 10px;
+      top: 1.75rem;
+      width: 74px;
+      height: 14px;
       z-index: 2;
       @include oceanBorderGradient;
       border-width: 1px;
@@ -1238,9 +958,9 @@
     }
     #feature-range-slider {
       position: absolute;
-      &::-webkit-slider-thumb { width: 62px; }
-      &::-moz-range-thumb { width: 62px; }
-      &::-ms-thumb { width: 62px; }
+      &::-webkit-slider-thumb { width: 74px; }
+      &::-moz-range-thumb { width: 74px; }
+      &::-ms-thumb { width: 74px; }
     }
   }
 
@@ -1271,7 +991,8 @@
 
   .description {
     @include fontSize_Medium;
-    @include leading_Medium;
+    line-height: 1.7;
+    letter-spacing: $letter_SpacingRegular;
     color: $darkGrey;
     margin-bottom: 2.125rem !important;
   }
@@ -1378,12 +1099,11 @@
 // /////////////////////////////////////////////////////////////////////// Video
 // -----------------------------------------------------------------------------
 #section-video {
-  width: 500px;
   margin-top: 2.75rem;
-  margin-left: -1.375rem;
-
   .video-wrapper {
-    border-radius: 5px;
+    @include borderRadius_Large;
+    width: calc(100% + 3rem);
+    padding-bottom: calc((100% + 3rem) * 0.5625);
     overflow: hidden;
   }
 }
@@ -1401,8 +1121,12 @@
 
   .card {
     @include oceanBorderGradient;
+    background-color: $white;
     width: 360px;
     margin: 0;
+    @include tiny {
+      margin: 0 0.5rem;
+    }
 
     .statistic {
       @include fontSize_Larger;
@@ -1420,6 +1144,7 @@
     .description {
       @include fontSize_Small;
       font-family: $font_Secondary;
+      letter-spacing: 0;
       color: $tundora;
     }
 
@@ -1442,9 +1167,21 @@
       justify-content: flex-start;
       column-gap: 14px;
 
+      .statistic {
+        width: 25%;
+      }
+
+      .description {
+        width: 75%;
+        @include leading_Small;
+      }
+
+      .statistic,
       .description {
         text-align: left;
-        @include leading_Small;
+        @include tiny {
+          width: unset;
+        }
       }
     }
 
@@ -1468,11 +1205,15 @@
   .chiclet {
     @include lightBlueGradient;
     @include whiteBorderBack;
-
-    &:hover,
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background-size: 500% 100%;
+    background-position: 50% 0%;
+    &:hover {
+      background-position: 98% 0%;
+    }
     &.active-button {
       @include oceanBlueGradient;
-      color: $blackSapphire;
+      color: $white;
     }
   }
 }

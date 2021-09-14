@@ -24,34 +24,39 @@
 
           <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
             <div class="links-container">
-              <component
-                :is="link.type"
-                v-for="(link, index) in navigation.header"
-                :key="index"
-                :to="link.disabled ? '' : link.href"
-                :href="link.disabled ? '' : link.href"
-                :disabled="link.disabled"
-                :target="link.target"
-                class="navigation-link onhover-line focus-visible">
-                {{ link.label }}
-              </component>
-            </div>
-            <div class="relative-wrapper" :style="{ minWidth: `${dropdownWidth}px` }">
-              <div
-                :class="['button-wrapper', 'sort-by-wrapper', dropdownState]">
-                <DropdownSelector
-                  class="sort-by-selector"
-                  label="Explore Network"
-                  :dropdown-options="dropdownOptions"
-                  :display-selected="false"
-                  :modal="navOpen"
-                  @changed="changeDropdownState"
-                  @setwidth="setDropdownWidth">
-                  <template #dropdown-icon>
-                    <SelectorToggleIcon />
-                  </template>
-                </DropdownSelector>
-              </div>
+              <template v-for="(link, index) in navigation.header">
+                <template v-if="link.hasOwnProperty('links')">
+                  <div :key="index" class="relative-wrapper" :style="{ minWidth: `${dropdownWidth}px` }">
+                    <div
+                      :class="['button-wrapper', 'sort-by-wrapper', dropdownState]">
+                      <DropdownSelector
+                        class="sort-by-selector"
+                        label="Explore Network"
+                        :dropdown-options="link.links"
+                        :display-selected="false"
+                        :modal="navOpen"
+                        @changed="changeDropdownState"
+                        @setwidth="setDropdownWidth">
+                        <template #dropdown-icon>
+                          <Zero_Core__Icon_SelectorToggle />
+                        </template>
+                      </DropdownSelector>
+                    </div>
+                  </div>
+                </template>
+                <template v-else>
+                  <component
+                    :is="link.type"
+                    :key="index"
+                    :to="link.disabled ? '' : link.href"
+                    :href="link.disabled ? '' : link.href"
+                    :disabled="link.disabled"
+                    :target="link.target"
+                    class="navigation-link onhover-line focus-visible">
+                    {{ link.label }}
+                  </component>
+                </template>
+              </template>
             </div>
 
             <div
@@ -80,9 +85,9 @@
 <script>
 // ===================================================================== Imports
 import { mapGetters } from 'vuex'
+import Throttle from 'lodash/throttle'
 
 import DropdownSelector from '@/components/DropdownSelector'
-import SelectorToggleIcon from '@/modules/zero/core/Components/Icons/SelectorToggle'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -96,8 +101,7 @@ export default {
   name: 'ShipyardNavigation',
 
   components: {
-    DropdownSelector,
-    SelectorToggleIcon
+    DropdownSelector
   },
 
   data () {
@@ -118,6 +122,7 @@ export default {
   computed: {
     ...mapGetters({
       navigation: 'global/navigation',
+      siteContent: 'global/siteContent',
       filterPanelOpen: 'filters/filterPanelOpen'
     }),
     headerNavigationClasses () {
@@ -153,7 +158,7 @@ export default {
       } else if (newVal > 0 && !showBackground) {
         this.showBackground = true
       }
-      
+
       if (newVal === 0) {
         this.forceNavigationVisible = true
       } else if (newVal < oldVal && !forceVisible) {
@@ -165,7 +170,7 @@ export default {
   },
 
   mounted () {
-    this.resize = this.$throttle(() => { checkScreenWidth(this) }, 310)
+    this.resize = Throttle(() => { checkScreenWidth(this) }, 310)
     this.scroll = () => { this.updateScrollPosition() }
     window.addEventListener('resize', this.resize)
     window.addEventListener('scroll', this.scroll)
@@ -246,6 +251,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0.25rem;
 }
 
 #site-logo,
@@ -270,6 +276,8 @@ export default {
 }
 
 .navigation {
+  display: flex;
+  max-width: unset;
   width: 100%;
   @include small {
     display: none;
@@ -278,8 +286,15 @@ export default {
     top: $navigationHeight;
     left: 0;
     width: 100vw;
+    height: calc(100vh - 8.25rem);
     max-width: none;
     z-index: 100;
+    &:not(.modal-open) {
+      display: none;
+    }
+    &.modal-open {
+      display: block;
+    }
   }
   &.modal-open {
     display: flex;
@@ -293,22 +308,71 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 2rem;
+  // margin-left: 2rem;
+  margin: 0 2rem;
+  &:before {
+    content: '';
+    position: relative;
+    width: 6rem;
+    height: 100%;
+    flex-grow: 1;
+  }
+  @include medium {
+    margin: 0 1rem;
+  }
   @include small {
     flex-direction: column;
     justify-content: center;
-    margin-left: 5rem;
+    // margin-left: 5rem;
+    margin: 0 5rem;
+    justify-content: flex-start;
+    &:before {
+      content: '';
+      position: relative;
+      width: 100%;
+      height: 2rem;
+      flex-grow: 0;
+    }
   }
 }
 
 .navigation-link {
+  font-family: $font_Primary;
+  letter-spacing: $letter_SpacingRegular;
+  font-size: $fontSize_Regular;
+  margin: 0 1.0rem;
+  @include medium {
+    margin: 0 0.5rem;
+  }
   @include borderRadius_Medium;
   @include small {
     align-self: start;
-    margin-bottom: 0.75rem;
-    font-size: 2.1875rem;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: $fontSize_Large;
+    line-height: $leading_Mini;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.relative-wrapper {
+  height: 100%;
+  margin-left: 1rem;
+  content: '';
+  position: relative;
+  width: 100px;
+  z-index: 100;
+  @include small {
+    margin: 0;
+    align-self: start;
+  }
+}
+
+.language-selector {
+  display: flex;
+  .option {
+    color: $white;
+    &:active {
+      color: $caribbeanBlue;
+    }
   }
 }
 
@@ -326,18 +390,6 @@ export default {
   &.show-background {
     display: inline;
     animation: landing 300ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
-  }
-}
-
-.social-icon-container {
-  display: none;
-  &.visible {
-    @include small {
-      display: inline;
-      align-self: start;
-      margin: 2rem 0;
-      margin-left: 5rem;
-    }
   }
 }
 
@@ -379,6 +431,10 @@ export default {
   }
 }
 
+.social-icon-container {
+  display: none;
+}
+
 // ////////////////////////////////////////////////////////////////// Animations
 @keyframes landing {
   from {
@@ -396,4 +452,67 @@ export default {
   transform: scale(1.1);
   opacity: 0.0;
 }
+
+// /////////////////////////////////////////////////////////// Dropdown Selector
+.button-wrapper {
+  position: relative;
+  transition: all 250ms linear;
+  position: absolute;
+  top: calc(-50% - 0.25rem);
+  @include small {
+    top: 0;
+  }
+  &.open {
+    &:after {
+      background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    @include whiteBorderBack;
+    background-color: $jaguar;
+    transition: inherit;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    @include whiteBorderBack;
+    @include oceanBlueGradient;
+    transition: inherit;
+  }
+  button {
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    @include whiteBorderFront;
+    border-radius: 0 !important;
+    background-color: $jaguar;
+    transition: inherit;
+  }
+  &.button-active {
+    &:before {
+      top: 0px;
+      left: 0px;
+    }
+    &:after {
+      top: 0px;
+      left: 0px;
+    }
+    button {
+      top: 0px;
+      left: 0px;
+      @include oceanBlueGradient;
+    }
+  }
+}
+
 </style>

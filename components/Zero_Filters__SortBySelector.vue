@@ -2,47 +2,44 @@
   <button
     v-if="options.length > 0"
     id="sort-by-selector"
+    ref="dropdownButton"
     v-click-outside="closeAllSelect"
     :class="['dropdown-wrapper', 'focus-visible', { closed }]"
     :style="{ minWidth: `${maxLength * 10}px` }"
     @keyup.enter="toggleDropDown()">
 
     <div
-      class="dropdown-button"
+      :class="['dropdown-button', { 'gradient': !closed }]"
       @click="toggleDropDown()">
 
-      <div
-        ref="dropdownInner"
-        class="button-inner">
-        <label>
-          {{ label }}
-        </label>
+      <label>
+        {{ label }}
+      </label>
 
-        <span>
-          {{ selected }}
-        </span>
+      <span>
+        {{ selected }}
+      </span>
 
-        <div class="dropdown-toggle">
-          <slot name="dropdown-icon"></slot>
-        </div>
+      <div class="dropdown-toggle">
+        <slot name="dropdown-icon"></slot>
       </div>
 
-      <div class="dropdown-root" :style="{ height: `${height}px` }">
+    </div>
 
-        <div ref="dropdownList" class="dropdown-list">
-          <template v-for="option in options">
-            <div
-              :key="`div-option-${option.label}`"
-              :value="option.label"
-              :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
-              :tabindex="closed ? -1 : 0"
-              @click="optionSelected(option)"
-              @keyup.enter.self="optionSelected(option)">
-              {{ option.label }}
-            </div>
-          </template>
-        </div>
+    <div class="dropdown-root" :style="{ height: `${height}px` }">
 
+      <div ref="dropdownList" class="dropdown-list">
+        <template v-for="option in options">
+          <div
+            :key="`div-option-${option.label}`"
+            :value="option.label"
+            :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
+            :tabindex="closed ? -1 : 0"
+            @click="optionSelected(option)"
+            @keyup.enter.self="optionSelected(option)">
+            {{ option.label }}
+          </div>
+        </template>
       </div>
 
     </div>
@@ -145,7 +142,7 @@ export default {
     }),
     setHeights () {
       this.dropdownListHeight = this.$refs.dropdownList.clientHeight
-      this.$emit('setwidth', this.$refs.dropdownInner.clientWidth)
+      this.$emit('setwidth', this.$refs.dropdownButton.clientWidth)
     },
     toggleDropDown () {
       this.closed = !this.closed
@@ -241,19 +238,32 @@ export default {
   cursor: pointer;
   z-index: 1000;
   transition: 250ms ease-out;
+  &:not(.closed) {
+    .shadow {
+      transition: opacity 250ms ease-in, height 0ms;
+      opacity: 1;
+    }
+    .dropdown-toggle {
+      transition: 250ms ease-in;
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 .dropdown-button {
-  display: block;
-  .button-inner {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 1.0rem;
-    z-index: 20;
-    label {
-      margin-right: 0.25rem;
-    }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1.0rem;
+  z-index: 20;
+  background: linear-gradient(75deg, #030307, #030307);
+  transition: 250ms ease-in-out;
+  &.gradient {
+    color: $blackSapphire;
+    background: linear-gradient(75deg, #178FFD, #39C0CC);
+  }
+  label {
+    margin-right: 0.25rem;
   }
 }
 
