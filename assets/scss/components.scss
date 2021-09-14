@@ -1099,12 +1099,11 @@
 // /////////////////////////////////////////////////////////////////////// Video
 // -----------------------------------------------------------------------------
 #section-video {
-  width: 500px;
   margin-top: 2.75rem;
-  margin-left: -1.375rem;
-
   .video-wrapper {
-    border-radius: 5px;
+    @include borderRadius_Large;
+    width: calc(100% + 3rem);
+    padding-bottom: calc((100% + 3rem) * 0.5625);
     overflow: hidden;
   }
 }
