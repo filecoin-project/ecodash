@@ -12,53 +12,53 @@
   "navigation": {
     "index": {
       "type": "a",
-      "href": "https://example.com"
+      "href": "https://filecoin.io"
     },
     "header": [
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/store/",
         "label": "Store"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/mine/",
         "label": "Mine"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/build/",
         "label": "Build"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/blog/",
         "label": "Blog"
       },
       {
         "type": "a",
-        "href": "https://blog.ipfs.io",
+        "href": "#",
         "label": "Explore Network",
         "links": [
           {
             "type": "a",
-            "href": "https://ipfs.io/#why",
-            "label": "Filfox.info"
+            "href": "https://filfox.info/en",
+            "label": "Filfox"
           },
           {
             "type": "a",
-            "href": "https://ipfs.io/#install",
-            "label": "Filescan.io"
+            "href": "https://filescan.io/scan",
+            "label": "Filescan"
           },
           {
             "type": "a",
-            "href": "https://docs.ipfs.io",
-            "label": "Filscout.io"
+            "href": "https://filscout.io/en/",
+            "label": "Filscout"
           },
           {
             "type": "a",
-            "href": "https://ipfs.io/team",
-            "label": "Spacegap.io"
+            "href": "https://spacegap.github.io/#/",
+            "label": "Spacegap"
           }
         ]
       }
