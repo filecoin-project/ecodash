@@ -5,9 +5,9 @@
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://example.com",
+    "url": "https://ecosystem.filecoin.io",
     "type": "website",
-    "image": "https://example.com"
+    "image": ""
   },
   "404_error_message": "Not Found",
   "page_content": {
@@ -63,7 +63,7 @@
         "filters_applied_view": "Filtered results"
       },
       "subheading": {
-        "index_view": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua.",
+        "index_view": "Discover the diverse landscape of applications and projects that are part of the Filecoin ecosystem in this interactive showcase.",
         "filters_view": {
           "show_all": "Showing all entityTermPlural, no filters selected",
           "show_search": "Showing entityTermPlural matching"
@@ -76,7 +76,7 @@
     },
     "section_filter": {
       "heading": "All entityTermPlural",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Incididunt ut labore et dolore magna aliqua.",
+      "description": "Explre the entire Filecoin Ecosystem, or use the filters to narrow your search to a more specific set of proejcts.",
       "results_empty_placeholder": "No results found that match the selected filters.",
       "filter_panel_toggle_button_label": "Filters",
       "sort_dropdown_label": "Sort by:",
