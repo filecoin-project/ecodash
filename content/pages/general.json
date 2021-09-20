@@ -68,29 +68,31 @@
       "left_links": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io/slack",
+          "target": "_blank",
           "label": "Slack"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF",
+          "target": "_blank",
           "label": "WeChat"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://twitter.com/Filecoin",
           "target": "_blank",
           "label": "Twitter"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://github.com/filecoin-project/community#forums",
           "target": "_blank",
           "label": "Forum"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://riot.im/app/#/group/+filecoin:matrix.org",
           "target": "_blank",
           "label": "Matrix"
         }
@@ -99,30 +101,29 @@
       "right_links": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://research.filecoin.io/",
           "label": "Research"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io/blog/",
           "label": "Blog"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://github.com/filecoin-project",
           "target": "_blank",
           "label": "Github"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://proto.school/course/filecoin",
           "target": "_blank",
           "label": "Protoschool"
         },
         {
           "type": "a",
-          "href": "https://example.com",
-          "target": "_blank",
+          "href": "https://security.filecoin.io/",
           "label": "Security"
         }
       ]
