@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Filecoin Ecosystem",
-    "description": "Filecoin interactive ecosystem and showcase."
+    "description": "Filecoin interactive ecosystem and dashboard."
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
@@ -15,7 +15,7 @@
       "index_view": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io",
           "label": "Home"
         },
         {
@@ -26,7 +26,7 @@
       "filters_view": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io",
           "label": "Home"
         },
         {
@@ -42,7 +42,7 @@
       "filters_applied_view": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io",
           "label": "Home"
         },
         {
@@ -72,11 +72,11 @@
     },
     "segment_slider": {
       "filter_toggle_button_text": "View Category",
-      "mobile_chart_title": "Explore IPFS"
+      "mobile_chart_title": "Explore Filecoin"
     },
     "section_filter": {
       "heading": "All entityTermPlural",
-      "description": "Explre the entire Filecoin Ecosystem, or use the filters to narrow your search to a more specific set of proejcts.",
+      "description": "Explore the entire Filecoin Ecosystem, or use the filters to narrow your search to a more specific set of proejcts.",
       "results_empty_placeholder": "No results found that match the selected filters.",
       "filter_panel_toggle_button_label": "Filters",
       "sort_dropdown_label": "Sort by:",
