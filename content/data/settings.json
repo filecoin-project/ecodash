@@ -7,7 +7,7 @@
     "showcaseBaseRoute": "/showcase",
     "primaryCategorySlug": "industry",
     "firstTag": "",
-    "lastTag": "other",
+    "lastTag": "",
     "externalLinksTargetBlank": true,
     "tagMatchType": "or",
     "excludeFilterAllTag": true,
@@ -17,7 +17,7 @@
     "excludeSingulars": false,
     "breadcrumbs": true,
     "segmentChart": true,
-    "featuredSlider": true,
+    "featuredSlider": false,
     "embeddableObject": true,
     "showcase": true,
     "defaultView": "grid",
@@ -35,7 +35,7 @@
     "singularTagLinks": true
   },
   "embeddable_view": {
-    "host": "https://bafybeibjasmf2bvswm3ejg4shppxtw5l36bfn7uouypjm6teqwpcpxi4pi.on.fleek.co/",
+    "host": "https://develop.ecosystem.filecoin.io",
     "target": ".filecoin-ecosystem-embed",
     "copy": {
       "heading": "Who's using Filecoin?",
