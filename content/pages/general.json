@@ -1,13 +1,13 @@
 {
   "seo": {
     "title": "Filecoin Ecosystem",
-    "description": "Filecoin interactive ecosystem and showcase."
+    "description": "Filecoin interactive ecosystem dashboard."
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://example.com",
+    "url": "https://ecosystem.filecoin.io",
     "type": "website",
-    "image": "https://example.com"
+    "image": ""
   },
   "navigation": {
     "index": {
@@ -130,7 +130,7 @@
   },
   "section_featured_slider": {
     "heading": "Related entityTermPlural",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    "description": "Take a look at some projects that are similar to this one."
   },
   "footer_content": {
     "heading": "Stay informed",
@@ -147,7 +147,7 @@
     "breadcrumbs": [
       {
         "type": "a",
-        "href": "https://ipfs.io",
+        "href": "https://filecoin.io",
         "label": "Home"
       },
       {
@@ -165,7 +165,7 @@
     "message": "It looks like you're lost, let's",
     "link": {
       "href": "/",
-      "prompt": "go home"
+      "prompt": "start over"
     }
   }
 }
