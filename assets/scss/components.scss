@@ -1231,3 +1231,26 @@
     padding: 0.25rem 0.5rem;
   }
 }
+
+
+// /////////////////////////////////////////////////////////////// Showcase View
+// -----------------------------------------------------------------------------
+
+.page-showcase {
+  .logo-wrapper {
+    text#Filecoin {
+      fill: $darkGrey;
+    }
+  }
+  #taxonomy-grid {
+    .taxonomy {
+      @include shadow1;
+      border: 1px solid $lightGrey;
+    }
+    .taxonomy-label {
+      @include shadow1;
+      border: 1px solid $lightGrey;
+      color: $darkGrey; 
+    }
+  }
+}
