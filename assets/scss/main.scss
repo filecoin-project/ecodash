@@ -66,6 +66,8 @@ html, body {
   background-color: $blackSapphire;
   color: $white;
   letter-spacing: $letter_SpacingRegular;
+  ::-moz-selection { background: $turquoise; color: white; }
+  ::selection { background: $turquoise; color: white; }
 }
 
 #__nuxt {
