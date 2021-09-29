@@ -258,8 +258,10 @@ export default {
   z-index: 20;
   background: linear-gradient(75deg, #030307, #030307);
   transition: 250ms ease-in-out;
+  &:hover {
+    background: $turquoise;
+  }
   &.gradient {
-    color: $blackSapphire;
     background: linear-gradient(75deg, #178FFD, #39C0CC);
   }
   label {

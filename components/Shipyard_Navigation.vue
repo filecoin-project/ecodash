@@ -269,9 +269,9 @@ export default {
   width: 8rem;
   opacity: 1.0;
   z-index: 100;
-  transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1.0);
+  transition: all 0.3s ease;
   &:hover {
-    opacity: 0.75;
+    transform: scale(1.05);
   }
 }
 
