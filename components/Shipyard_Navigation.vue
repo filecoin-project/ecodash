@@ -504,13 +504,23 @@ export default {
       left: 0px;
     }
     &:after {
-      top: 0px;
-      left: 0px;
+      top: 1px;
+      left: 1px;
     }
+    button {
+      top: 2px;
+      left: 2px;
+      @include oceanBlueGradient;
+    }
+  }
+  &:hover {
     button {
       top: 0px;
       left: 0px;
-      @include oceanBlueGradient;
+    }
+    &:after {
+      top: 0px;
+      left: 0px;
     }
   }
 }
