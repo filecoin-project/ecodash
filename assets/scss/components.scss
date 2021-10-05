@@ -191,13 +191,13 @@
           width: calc(100% - 2px);
         }
         &:hover {
-          &:after {
-            top: -8px;
-            left: -7px;
+          &:before {
+            top: -12px;
+            left: -10px;
           }
           input {
-            top: -6px;
-            left: -5px;
+            top: -11px;
+            left: -9px;
           }
         }
 

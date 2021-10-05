@@ -329,7 +329,7 @@ export default {
   left: 8px;
   right: 0;
   width: 10rem;
-  bottom: -0.5rem;
+  bottom: -1.75rem;
   z-index: 1;
   @include tripleLayer;
   border: 0px;
