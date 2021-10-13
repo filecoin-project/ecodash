@@ -710,6 +710,13 @@
       @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
+      background: linear-gradient(90deg, #07070d 0%, #07070d 40%,#178FFD 60%, #39C0CC 90%);
+      background-size: 500% 100%;
+      background-position: 0% 0%;
+      transition: 250ms ease-in-out;
+      &:hover {
+        background-position: 87% 0%;
+      }
       &:after {
         @include oceanBlueGradient;
       }
