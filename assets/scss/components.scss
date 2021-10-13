@@ -701,6 +701,7 @@
   #filter-panel-controls {
     .clear-selected-button {
       color: $white;
+      padding-top: 0.5rem;
       @include cardText;
       @include oceanBlueGradient;
     }
@@ -834,7 +835,6 @@
   border-radius: $borderRadius_Medium;
   color: $blackSapphire;
   transition: all 0.3s ease;
-  overflow: hidden;
   position: relative;
   background: linear-gradient(90deg, $paleCornflower 0%, $blizzard 33%, $blizzard 66%, $paleCornflower 100%);
   background-size: 500% 100%;
