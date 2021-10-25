@@ -222,6 +222,7 @@
 
 #segment-slider-chart {
   @include medium {
+    background-color: transparent;
     .segments-container {
       background-color: inherit;
       .chart-title {
@@ -1322,7 +1323,7 @@
     .taxonomy-label {
       @include shadow1;
       border: 1px solid $lightGrey;
-      color: $darkGrey; 
+      color: $darkGrey;
     }
   }
 }

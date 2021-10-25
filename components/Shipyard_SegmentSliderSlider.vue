@@ -333,6 +333,11 @@ export default {
   z-index: 1;
   @include tripleLayer;
   border: 0px;
+  @include medium {
+    left: calc(50% - 1.75rem);
+    bottom: -3rem;
+    transform: translateX(-50%);
+  }
   &:before {
     margin: 0 auto;
     width: calc(100% - 2px);
@@ -364,9 +369,9 @@ export default {
     @include cardText;
     background-color: $jaguar !important;
     border: 2px solid white;
-    @include medium {
-      transform: translateY(-75%);
-    }
+    // @include medium {
+    //   transform: translateY(-75%);
+    // }
     &:hover {
       transition: 250ms ease-in;
     }
