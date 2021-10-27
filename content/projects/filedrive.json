@@ -1,2 +1,80 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2019    }  ],  "logo": {    "icon": "filedrive-logo.png",    "full": "filedrive-logo.png"  },  "name": "FileDrive",  "org": [    "FileDrive"  ],  "description": {    "short": "Distributed storage solutions based on IPFS and Filecoin Network.",    "long": ""  },  "primaryCta": {    "url": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit",          "text": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/filedrive-team",          "text": "github.com/filedrive-team"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2019    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "filedrive.png",    "full": "filedrive.png"  },  "name": "FileDrive",  "org": [    null  ],  "description": {    "short": "FileDrive is a simple IPFS & Filecoin search engine working off of CIDs and keywords.",    "long": ""  },  "primaryCta": {    "url": "//filedrive.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//filedrive.io",          "text": "filedrive.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "archival", "public-data", "web-publishing"      ]    },    {      "slug": "software-type",      "tags": [        "hosted-service", "web-app"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{
+    "since": 2019
+  }],
+  "logo": {
+    "icon": "filedrive-logo.png",
+    "full": "filedrive-logo.png"
+  },
+  "name": "FileDrive",
+  "org": ["FileDrive"],
+  "description": {
+    "short": "Distributed storage solutions based on IPFS and Filecoin Network.",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit",
+    "text": "Project Website"
+  },
+  "links": [{
+    "label": "Website",
+    "links": [{
+      "url": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit",
+      "text": "filplus.info\nhttps://github.com/filedrive-team/go-graphsplit"
+    }]
+  }, {
+    "label": "Repo",
+    "links": [{
+      "url": "//github.com/filedrive-team",
+      "text": "github.com/filedrive-team"
+    }]
+  }, {
+    "label": "Docs",
+    "links": [{
+      "url": "",
+      "text": ""
+    }]
+  }],
+  "keyInfo": [{
+    "label": "Using Filecoin since",
+    "value": 2019
+  }],
+  "video": "",
+  "stats": [{
+    "label": "",
+    "value": ""
+  }, {
+    "label": "",
+    "value": ""
+  }, {
+    "label": "",
+    "value": ""
+  }],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [{
+    "slug": "project-category",
+    "tags": ["storage-apps-clients"]
+  }, {
+    "slug": "storage-type",
+    "tags": ["none"]
+  }, {
+    "slug": "software-type",
+    "tags": ["library-sdk"]
+  }, {
+    "slug": "tooling",
+    "tags": ["none"]
+  }, {
+    "slug": "pipeline",
+    "tags": [""]
+  }, {
+    "slug": "project-status",
+    "tags": [""]
+  }]
+}
