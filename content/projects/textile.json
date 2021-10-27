@@ -1,0 +1,58 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "textile.png", "full": "textile.png" },
+  "name": "Textile",
+  "org": [null],
+  "description": {
+    "short": "Textile is a set of open source tools that provide a decentralized database, IPFS-based storage, content hosting, and more over Libp2p, IPFS, and Filecoin.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//textile.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//textile.io", "text": "textile.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/textileio", "text": "github.com/textileio" }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//docs.textile.io", "text": "docs.textile.io" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    {
+      "slug": "software-type",
+      "tags": [
+        "api",
+        "library-sdk",
+        "hosted-service",
+        "infrastructure",
+        "backend-app",
+        "web-app"
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": ["ipfs-http-client", "textile-buckets", "textile-powergate"]
+    },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

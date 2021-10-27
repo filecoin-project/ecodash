@@ -1,0 +1,42 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "livepee.png", "full": "livepeer.png" },
+  "name": "Livepeer",
+  "org": ["Livepeer, Inc."],
+  "description": {
+    "short": "Decentralized video streaming network",
+    "long": "The Livepeer project aims to deliver a live video streaming network protocol that is fully decentralized, highly scalable, crypto token incentivized and results in a solution that is cheaper to an app developer or broadcaster than using traditional centralized live video solutions."
+  },
+  "primaryCta": { "url": "//livepeer.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//livepeer.org", "text": "livepeer.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/livepeer", "text": "github.com/livepeer" }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=WSituDcunzA",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["video"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

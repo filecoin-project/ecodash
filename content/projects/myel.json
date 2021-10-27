@@ -1,0 +1,40 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "icon-myel.png", "full": "Group 684.png" },
+  "name": "Myel",
+  "org": ["Myel"],
+  "description": {
+    "short": "Community Powered Content Delivery Network.",
+    "long": "Myel helps developers deploy and scale new experiences to the entire world without relying on expensive server-side infrastructure. It allows developers to publish and retrieve content from a network of cache providers."
+  },
+  "primaryCta": { "url": "//myel.network", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//myel.network", "text": "myel.network" }]
+    },
+    {
+      "label": "Repo",
+      "links": [{ "url": "//github.com/myelnet", "text": "github.com/myelnet" }]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtube.com/watch?v=3vFXeUiAWL4",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

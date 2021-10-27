@@ -1,0 +1,48 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": {
+    "icon": "Ethereum_Foundation__LinkedIn",
+    "full": "Ethereum_Foundation__ethereum.org.org"
+  },
+  "name": "Ethereum Foundation",
+  "org": ["Ethereum Foundation"],
+  "description": {
+    "short": "The Ethereum Foundation (EF) is a non-profit organization dedicated to supporting Ethereum and related technologies.",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "//ethereum.org/en/foundation",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//ethereum.org/en/foundation",
+          "text": "ethereum.org/en/foundation"
+        }
+      ]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

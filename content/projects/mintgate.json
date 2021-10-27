@@ -1,0 +1,37 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "mintgate.jpeg", "full": "mintGate logo.svg" },
+  "name": "MintGate",
+  "org": ["MintKudos Inc."],
+  "description": {
+    "short": "Content NFTs & Token Gates",
+    "long": "A fundamentally new paradigm for digital content. Create NFT access passes and generate secret links to your for events, videos, music, websites, blogs...."
+  },
+  "primaryCta": { "url": "//mintgate.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//mintgate.io", "text": "mintgate.io" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=QxJ5-nuY1NA",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}
