@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Protofire is a consulting service for decentralised protocols."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "protofire.io",
+                    "url": "//protofire.io"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "protofire-full.svg",
+        "icon": "icon-protofire.png"
+    },
+    "name": "Protofire",
+    "org": [
+        null
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//protofire.io"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "decentralized-identity"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

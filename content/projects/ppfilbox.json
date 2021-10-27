@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "An open source file storage encryption application that is designed to enable users to easily encrypt their files and upload to the network.",
+        "short": "A decentralized file storage solution"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "filbox.biz/#",
+                    "url": "//filbox.biz/#"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/filecoin-project/slingshot/blob/26a79787a78c3ae8d5462d54d13855744f2320b2/participants/Filbox.md",
+                    "url": "//github.com/filecoin-project/slingshot/blob/26a79787a78c3ae8d5462d54d13855744f2320b2/participants/Filbox.md"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "filbox-logo.png",
+        "icon": "filbox-square.png"
+    },
+    "name": "Filbox",
+    "org": [
+        "Filbox"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//filbox.biz/#"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "network-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

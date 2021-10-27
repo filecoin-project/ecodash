@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "File.video is an open source, decentralized and censorship-resistant video hosting solution powered by the Livepeer and Filecoin networks. It's the easiest way to upload and share video. It\u2019s free to use and there\u2019s no signup required.",
+        "short": "Decentralized Video hosting"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "file.video",
+                    "url": "//file.video"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/livepeer/file-video",
+                    "url": "//github.com/livepeer/file-video"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "file.video.png",
+        "icon": "icon-fil-video.svg"
+    },
+    "name": "file.video",
+    "org": [
+        "Basement.studio & Buidl Labs"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//file.video"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "video"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

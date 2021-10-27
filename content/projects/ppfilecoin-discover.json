@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Filecoin Discover helps support the storage of open source datasets on the Filecoin Network. The Discover store is a catalog of PB of public datasets.",
+        "short": "The home for humanity's most important datasets"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "store.filecoin-discover.com",
+                    "url": "//store.filecoin-discover.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "filecoindiscover-logo.png",
+        "icon": "icon-filecoin-discover.png"
+    },
+    "name": "Filecoin Discover",
+    "org": [
+        "Filecoin Discover"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//store.filecoin-discover.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "public-data"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "ConsenSys is building Ethereum blockchain infrastructure and applications for new economic systems that are more open, efficient, and secure."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "consensys.net",
+                    "url": "//consensys.net"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "ConsenSys_Acquires_Truffle_Suite__Financial_IT",
+        "icon": "icon-consensys.png"
+    },
+    "name": "ConsenSys ",
+    "org": [
+        "ConsenSys"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//consensys.net"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

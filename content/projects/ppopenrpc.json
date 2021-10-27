@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "open-rpc.org",
+                    "url": "//open-rpc.org"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/open-rpc",
+                    "url": "//github.com/open-rpc"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "jsonrpc.org/specification",
+                    "url": "//jsonrpc.org/specification"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "openrpc-square.png",
+        "icon": "openrpc-square.png"
+    },
+    "name": "OpenRPC",
+    "org": [
+        null
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//open-rpc.org"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": "//open-rpc.org/webinar"
+}

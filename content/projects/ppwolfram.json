@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Wolfram Blockchain Labs (WBL) provides solutions and services powered by the Wolfram Language, Mathematica, Wolfram|Alpha and assorted Wolfram technologies. The foundational technologies behind WBL have been forged and proven over three decades of Wolfram's cutting-edge R&D. WBL is now injecting that sophisticated computation and knowledge into visionary solutions for distributed ledger technologies.",
+        "short": "Ultimate computational intelligence for your DLT"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "wolframblockchainlabs.com",
+                    "url": "//wolframblockchainlabs.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/WolframResearch",
+                    "url": "//github.com/WolframResearch"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "wolfram-corporate-logo-stacked-med 1.png",
+        "icon": "spikey-wolfram-logo.png"
+    },
+    "name": "Wolfram",
+    "org": [
+        "Wolfram Blockchain Labs "
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//wolframblockchainlabs.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "general-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

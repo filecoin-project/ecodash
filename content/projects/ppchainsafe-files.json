@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Encrypted File Storage"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "files.chainsafe.io",
+                    "url": "//files.chainsafe.io"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/chainsafe/ui-monorepo",
+                    "url": "//github.com/chainsafe/ui-monorepo"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "WeChat4284245da1c66b74775722192f454ef5.png",
+        "icon": "Group 720.png"
+    },
+    "name": "Chainsafe Files",
+    "org": [
+        "Chainsafe"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//files.chainsafe.io"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "consumer-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "web-app"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

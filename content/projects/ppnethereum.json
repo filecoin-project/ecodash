@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Nethereum makes it easy for .NET applications to use Ethereum, and for Ethereum applications to leverage .NET."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "nethereum.com",
+                    "url": "//nethereum.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/Nethereum/Nethereum",
+                    "url": "//github.com/Nethereum/Nethereum"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "docs.nethereum.com/en/latest",
+                    "url": "//docs.nethereum.com/en/latest"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "nethereum-square.png",
+        "icon": "nethereum-square.png"
+    },
+    "name": "Nethereum",
+    "org": [
+        "ConsenSys."
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//nethereum.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "library-sdk"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

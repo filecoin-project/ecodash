@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Financial Metrics for Blockchain Protocols"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "tokenterminal.com/terminal/projects/filecoin",
+                    "url": "//tokenterminal.com/terminal/projects/filecoin"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "docs.tokenterminal.com",
+                    "url": "//docs.tokenterminal.com"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "token terminal.svg",
+        "icon": "Group 734.png"
+    },
+    "name": "Token Terminal",
+    "org": [
+        null
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//tokenterminal.com/terminal/projects/filecoin"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "token-finance"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "web-app"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

@@ -1,0 +1,121 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Stable and reliable IPFS decentralized storage services. Matrix Storage provide Easy-to-Use PaaS Services, OpenAPI Services and Storage Toolset Suites."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "storage.anmaicloud.com",
+                    "url": "//storage.anmaicloud.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "matrixstorage-cn.png, matrixstorage-en.png",
+        "icon": "matrixstorage-square.png"
+    },
+    "name": "Matrix Storage / \u77e9\u9635\u5b58\u50a8",
+    "org": [
+        "Anmai Cloud"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//storage.anmaicloud.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "archival",
+                "public-data"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "api",
+                "infrastructure"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

@@ -1,0 +1,120 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Estuary makes it easy to make Filecoin storage deals and retrieve files, through a curl API or a web interface."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "estuary.tech\ndocs.estuary.tech",
+                    "url": "estuary.tech\ndocs.estuary.tech"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/application-research/estuary",
+                    "url": "//github.com/application-research/estuary"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "docs.estuary.tech",
+                    "url": "//docs.estuary.tech"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "icon-estuary.png",
+        "icon": "icon-estuary.png"
+    },
+    "name": "Estuary",
+    "org": [
+        "Applications Research Group"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "estuary.tech\ndocs.estuary.tech"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "general-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "api",
+                "web-app"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

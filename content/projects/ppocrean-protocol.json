@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Data owners and consumers use Ocean Market app to publish, discover, and consume data in a secure, privacy-preserving fashion. OCEAN holders stake liquidity to data pools.\n\nDevelopers use Ocean libraries to build their own data wallets, data marketplaces, and more.",
+        "short": "Tools for the Web3 Data Economy"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2019
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "oceanprotocol.com",
+                    "url": "//oceanprotocol.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/oceanprotocol",
+                    "url": "//github.com/oceanprotocol"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "Subtract.png",
+        "icon": "Subtract.png"
+    },
+    "name": "Ocrean Protocol",
+    "org": [
+        "Ocean Protocol Foundation Ltd."
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//oceanprotocol.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2019
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "consumer-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

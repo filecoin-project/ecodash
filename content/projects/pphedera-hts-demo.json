@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "Demonstration app that integrates Hedera and IPFS/Filecoin. Metadata from Hedera Token Service is stored via nft.storage, which then seamlessly writes to IPFS and Filecoin. Written in JavaScript and Vue.JS"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "hedera.com",
+                    "url": "//hedera.com"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/hashgraph/hedera-hts-demo",
+                    "url": "//github.com/hashgraph/hedera-hts-demo"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "github.com/hashgraph/hedera-hts-demo",
+                    "url": "//github.com/hashgraph/hedera-hts-demo"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "hedera-hashgraph-hbar-logo.png",
+        "icon": "hedera-hashgraph-hbar-logo.png"
+    },
+    "name": "Hedera HTS Demo",
+    "org": [
+        "Hedera"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//hedera.com"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "nfts"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "web-app"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "nft-storage"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

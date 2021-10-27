@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Kanon was founded to establish new protocols for the art of the next 100 years. NFTs introduce not only a new market but a new artistic medium. The technology isn\u2019t new, but the attention of the current moment is unique: what gets established now will dictate the norms for decades to come.",
+        "short": "ART FOR THE NEXT 100 YEARS"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "k21.kanon.art/\nhttps://docs.kanon.art/k21",
+                    "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/kanonart",
+                    "url": "//github.com/kanonart"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "Group 717.png",
+        "icon": "Karon.png"
+    },
+    "name": "Kanon",
+    "org": [
+        "Kanon"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "nfts"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

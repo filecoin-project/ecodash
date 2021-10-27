@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "This is a non-profit library of millions of free books, movies, software, music, websites, and other cultural artifacts in digital form available to researchers, historians, scholars, the print disabled, and the general public.",
+        "short": "A digital library of the internet"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "archive.org/index.php",
+                    "url": "//archive.org/index.php"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/internetarchive",
+                    "url": "//github.com/internetarchive"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "InternetArchive-logo.png",
+        "icon": "internetarchive-square.png"
+    },
+    "name": "Internet Archive",
+    "org": [
+        "Internet Archive"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//archive.org/index.php"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "collaborations"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "archival"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": "//youtube.com/channel/UCFa_X02QhJnP0FNpFAKyRRg"
+}

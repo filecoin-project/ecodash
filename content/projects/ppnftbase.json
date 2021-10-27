@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "",
+        "short": "NFTbase is the DAO based the metaverse NFT marketplace and community run on IPFS. We will make the world where human creativity is fully respected."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "nftbase.ai (https://nftbase.eth.link)",
+                    "url": "//nftbase.ai (https://nftbase.eth.link)"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/nftbase",
+                    "url": "//github.com/nftbase"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "github.com/nftbase",
+                    "url": "//github.com/nftbase"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "1920x1080-LOGO.png",
+        "icon": "1920x1080-LOGO.png"
+    },
+    "name": "NFTBase",
+    "org": [
+        "NFTBase (It's not a legal entitiy yet)"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//nftbase.ai (https://nftbase.eth.link)"
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "nfts"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": "//youtube.com/watch?v=KvsBDVwtn5k"
+}

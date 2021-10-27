@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Enables NFT developers easily connect to IPFS and Filecoin network.",
+        "short": "NFT middleware to support saving NFTs into Filecoin & IPFS."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2021
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/MatrixStorageTech2021/easynft",
+                    "url": "//github.com/MatrixStorageTech2021/easynft"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "124301058-dda12b00-db91-11eb-9486-fff2a8971d1b.png",
+        "icon": "icon-easy-nft.png"
+    },
+    "name": "Easy NFT",
+    "org": [
+        "Matrix Storage"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": ""
+    },
+    "sortNumbers": [
+        {
+            "since": 2021
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "nfts"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "library-sdk"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "ipfs-http-client"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                "early"
+            ]
+        }
+    ],
+    "video": "//youtube.com/watch?v=ZXlxYo-wF0E"
+}

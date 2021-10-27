@@ -1,0 +1,119 @@
+{
+    "ctaCard": {
+        "buttonText": "",
+        "description": "",
+        "title": "",
+        "url": ""
+    },
+    "description": {
+        "long": "Space is an open-source, encrypted, user-controlled file storage and sharing platform built on open-web protocols including IPFS, Textile, Filecoin, GunDB, and more.",
+        "short": "Space is an open-source, user-controlled, encrypted file storage and sharing platform."
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "space.storage",
+                    "url": "//space.storage"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/FleekHQ/space-web",
+                    "url": "//github.com/FleekHQ/space-web"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "Page 1.png",
+        "icon": "WeChat5ae8f64079ea48f7ef4797415893d64b.png"
+    },
+    "name": "Space",
+    "org": [
+        "Fleek"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//space.storage"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "consumer-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": ""
+}

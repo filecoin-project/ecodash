@@ -1,0 +1,120 @@
+{
+    "ctaCard": {
+        "buttonText": "Case study",
+        "description": "Learn how Fleek relies on IPFS for its suite of developer tools and services.",
+        "title": "Fleek case study",
+        "url": "//docs.ipfs.io/concepts/case-study-fleek"
+    },
+    "description": {
+        "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more.",
+        "short": "Developer platform for building sites and apps on the dweb"
+    },
+    "display": true,
+    "featured": false,
+    "keyInfo": [
+        {
+            "label": "Using Filecoin since",
+            "value": 2020
+        }
+    ],
+    "links": [
+        {
+            "label": "Website",
+            "links": [
+                {
+                    "text": "fleek.co",
+                    "url": "//fleek.co"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links": [
+                {
+                    "text": "github.com/FleekHQ",
+                    "url": "//github.com/FleekHQ"
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links": [
+                {
+                    "text": "docs.fleek.co",
+                    "url": "//docs.fleek.co"
+                }
+            ]
+        }
+    ],
+    "logo": {
+        "full": "FleekForLight.png",
+        "icon": "fleek.png"
+    },
+    "name": "Fleek",
+    "org": [
+        "Fleek"
+    ],
+    "primaryCta": {
+        "text": "Project Website",
+        "url": "//fleek.co"
+    },
+    "sortNumbers": [
+        {
+            "since": 2020
+        }
+    ],
+    "stats": [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "taxonomies": [
+        {
+            "slug": "project-category",
+            "tags": [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "web-publishing"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "ipfs-http-client",
+                "fleek-space-daemon"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        },
+        {
+            "slug": "project-status",
+            "tags": [
+                ""
+            ]
+        }
+    ],
+    "video": "//youtube.com/watch?v=mCvYpl6wqB0"
+}
