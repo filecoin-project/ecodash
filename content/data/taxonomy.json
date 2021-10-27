@@ -198,7 +198,7 @@
     },
     {
       "label": "Institutional Support",
-      "sublabel": "Filter by support recieved by the entityName",
+      "sublabel": "Filter by support recieved by the entityTerm",
       "slug": "pipeline",
       "tags": [
         {
@@ -225,7 +225,7 @@
     },
     {
       "label": "Project Status",
-      "sublabel": "Filter by where the entityName is in its lifecycle",
+      "sublabel": "Filter by where the entityTerm is in its lifecycle",
       "slug": "project-status",
       "tags": [
         {
