@@ -1,1 +1,42 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "cloudflare-square.jpeg",    "full": "cloudflare-full.svg"  },  "name": "Cloudflare",  "org": [    "Cloudflare"  ],  "description": {    "short": "Cloudflare offers a layer of protection for your websites and services, helping speed up access, and stop DDoS attacks in their tracks.",    "long": ""  },  "primaryCta": {    "url": "//cloudflare.com",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//cloudflare.com",          "text": "cloudflare.com"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/cloudflare",          "text": "github.com/cloudflare"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "network-tools"      ]    },    {      "slug": "storage-type",      "tags": [        "public-data"      ]    },    {      "slug": "software-type",      "tags": [        "api", "hosted-service"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "cloudflare-square.jpeg", "full": "cloudflare-full.svg" },
+  "name": "Cloudflare",
+  "org": ["Cloudflare"],
+  "description": {
+    "short": "Cloudflare offers a layer of protection for your websites and services, helping speed up access, and stop DDoS attacks in their tracks.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//cloudflare.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//cloudflare.com", "text": "cloudflare.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/cloudflare", "text": "github.com/cloudflare" }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["network-tools"] },
+    { "slug": "storage-type", "tags": ["public-data"] },
+    { "slug": "software-type", "tags": ["api", "hosted-service"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

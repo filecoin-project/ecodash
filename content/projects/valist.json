@@ -1,1 +1,37 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "ValistLogo-square.png",    "full": "ValistLogo-square.png"  },  "name": "Valist",  "org": [    null  ],  "description": {    "short": "?",    "long": ""  },  "primaryCta": {    "url": "//valist.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//valist.io",          "text": "valist.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//docs.valist.io",          "text": "docs.valist.io"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "verifiable-storage"      ]    },    {      "slug": "software-type",      "tags": [        "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "ValistLogo-square.png", "full": "ValistLogo-square.png" },
+  "name": "Valist",
+  "org": [null],
+  "description": { "short": "?", "long": "" },
+  "primaryCta": { "url": "//valist.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//valist.io", "text": "valist.io" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//docs.valist.io", "text": "docs.valist.io" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["verifiable-storage"] },
+    { "slug": "software-type", "tags": ["library-sdk"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

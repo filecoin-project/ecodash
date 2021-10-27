@@ -1,1 +1,48 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "thegraph-square.png",    "full": "thegraph-square.png"  },  "name": "The Graph",  "org": [    "Graph Foundation"  ],  "description": {    "short": "The Graph is an indexing protocol for querying networks like Ethereum and IPFS. Anyone can build and publish open APIs, called subgraphs, making data easily accessible.",    "long": ""  },  "primaryCta": {    "url": "//thegraph.com",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//thegraph.com",          "text": "thegraph.com"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/graphprotocol",          "text": "github.com/graphprotocol"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//thegraph.com/docs",          "text": "thegraph.com/docs"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "general-storage"      ]    },    {      "slug": "software-type",      "tags": [        "api", "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "thegraph-square.png", "full": "thegraph-square.png" },
+  "name": "The Graph",
+  "org": ["Graph Foundation"],
+  "description": {
+    "short": "The Graph is an indexing protocol for querying networks like Ethereum and IPFS. Anyone can build and publish open APIs, called subgraphs, making data easily accessible.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//thegraph.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//thegraph.com", "text": "thegraph.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/graphprotocol",
+          "text": "github.com/graphprotocol"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//thegraph.com/docs", "text": "thegraph.com/docs" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": ["api", "library-sdk"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

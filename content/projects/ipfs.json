@@ -1,1 +1,43 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2019    }  ],  "logo": {    "icon": "InterPlanetary_File_System_-_Wikipedia",    "full": "InterPlanetary_File_System_-_Wikipedia"  },  "name": "IPFS",  "org": [    null  ],  "description": {    "short": "A peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.",    "long": ""  },  "primaryCta": {    "url": "//ipfs.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//ipfs.io",          "text": "ipfs.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//docs.ipfs.io",          "text": "docs.ipfs.io"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2019    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "general-storage"      ]    },    {      "slug": "software-type",      "tags": [        "api", "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "ipfs-http-client"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": {
+    "icon": "InterPlanetary_File_System_-_Wikipedia",
+    "full": "InterPlanetary_File_System_-_Wikipedia"
+  },
+  "name": "IPFS",
+  "org": [null],
+  "description": {
+    "short": "A peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//ipfs.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//ipfs.io", "text": "ipfs.io" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//docs.ipfs.io", "text": "docs.ipfs.io" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": ["api", "library-sdk"] },
+    { "slug": "tooling", "tags": ["ipfs-http-client"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

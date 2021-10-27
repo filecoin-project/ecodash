@@ -1,1 +1,45 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "icon-fil-video.svg",    "full": "file.video.png"  },  "name": "file.video",  "org": [    "Basement.studio & Buidl Labs"  ],  "description": {    "short": "Decentralized Video hosting",    "long": "File.video is an open source, decentralized and censorship-resistant video hosting solution powered by the Livepeer and Filecoin networks. It's the easiest way to upload and share video. It’s free to use and there’s no signup required."  },  "primaryCta": {    "url": "//file.video",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//file.video",          "text": "file.video"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/livepeer/file-video",          "text": "github.com/livepeer/file-video"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "video"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        ""      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "icon-fil-video.svg", "full": "file.video.png" },
+  "name": "file.video",
+  "org": ["Basement.studio & Buidl Labs"],
+  "description": {
+    "short": "Decentralized Video hosting",
+    "long": "File.video is an open source, decentralized and censorship-resistant video hosting solution powered by the Livepeer and Filecoin networks. It's the easiest way to upload and share video. It’s free to use and there’s no signup required."
+  },
+  "primaryCta": { "url": "//file.video", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//file.video", "text": "file.video" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/livepeer/file-video",
+          "text": "github.com/livepeer/file-video"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["video"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

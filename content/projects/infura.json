@@ -1,1 +1,43 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "infura.png",    "full": "infura.png"  },  "name": "Infura",  "org": [    "consensys"  ],  "description": {    "short": "Infura offers gateways and nodes for Ethereum and IPFS allowing developers to develop without running their own nodes.",    "long": ""  },  "primaryCta": {    "url": "//infura.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//infura.io",          "text": "infura.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/INFURA",          "text": "github.com/INFURA"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//infura.io/docs",          "text": "infura.io/docs"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "//youtube.com/watch?v=3L5qpWNZdRQ",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "developer-tools"      ]    },    {      "slug": "storage-type",      "tags": [        "general-storage"      ]    },    {      "slug": "software-type",      "tags": [        "api"      ]    },    {      "slug": "tooling",      "tags": [        "ipfs-http-client"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "infura.png", "full": "infura.png" },
+  "name": "Infura",
+  "org": ["consensys"],
+  "description": {
+    "short": "Infura offers gateways and nodes for Ethereum and IPFS allowing developers to develop without running their own nodes.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//infura.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//infura.io", "text": "infura.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [{ "url": "//github.com/INFURA", "text": "github.com/INFURA" }]
+    },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//infura.io/docs", "text": "infura.io/docs" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtube.com/watch?v=3L5qpWNZdRQ",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": ["api"] },
+    { "slug": "tooling", "tags": ["ipfs-http-client"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

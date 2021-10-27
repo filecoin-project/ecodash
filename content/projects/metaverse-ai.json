@@ -1,1 +1,37 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "metaverse AI.jpeg",    "full": "metaverse.jpg"  },  "name": "Metaverse AI",  "org": [    "Metaverse AI"  ],  "description": {    "short": "Open Metaverse, VR/AR & Web3.0",    "long": "Advanced blockchain and 3D Virtual Reality tech collectively enabled the true Metaverse – a persistent, high-fidelity virtual realm where people can play, build and monetize their experiences on the blockchain."  },  "primaryCta": {    "url": "//metaverseai.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//metaverseai.org",          "text": "metaverseai.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "developer-tools"      ]    },    {      "slug": "storage-type",      "tags": [        "nfts", "decentralized-identity"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "metaverse AI.jpeg", "full": "metaverse.jpg" },
+  "name": "Metaverse AI",
+  "org": ["Metaverse AI"],
+  "description": {
+    "short": "Open Metaverse, VR/AR & Web3.0",
+    "long": "Advanced blockchain and 3D Virtual Reality tech collectively enabled the true Metaverse – a persistent, high-fidelity virtual realm where people can play, build and monetize their experiences on the blockchain."
+  },
+  "primaryCta": { "url": "//metaverseai.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//metaverseai.org", "text": "metaverseai.org" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["nfts", "decentralized-identity"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

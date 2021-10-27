@@ -1,1 +1,53 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "opera-square.png",    "full": "opera-logo.png"  },  "name": "Opera",  "org": [    "Opera for Android"  ],  "description": {    "short": "Opera adds built-in support for IPFS sites",    "long": ""  },  "primaryCta": {    "url": "//play.google.com/store/apps/details?id=com.opera.browser",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//play.google.com/store/apps/details?id=com.opera.browser",          "text": "play.google.com/store/apps/details?id=com.opera.browser"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/ipfs/in-web-browsers#opera",          "text": "github.com/ipfs/in-web-browsers#opera"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "//youtube.com/watch?v=OgzQAZj3Y-E",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        "hosted-service"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        "none"      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "opera-square.png", "full": "opera-logo.png" },
+  "name": "Opera",
+  "org": ["Opera for Android"],
+  "description": {
+    "short": "Opera adds built-in support for IPFS sites",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "//play.google.com/store/apps/details?id=com.opera.browser",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//play.google.com/store/apps/details?id=com.opera.browser",
+          "text": "play.google.com/store/apps/details?id=com.opera.browser"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/ipfs/in-web-browsers#opera",
+          "text": "github.com/ipfs/in-web-browsers#opera"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=OgzQAZj3Y-E",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["hosted-service"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["none"] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

@@ -1,1 +1,45 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "matrixstorage-square.png",    "full": "matrixstorage-cn.png, matrixstorage-en.png"  },  "name": "Matrix Storage / 矩阵存储",  "org": [    "Anmai Cloud"  ],  "description": {    "short": "Stable and reliable IPFS decentralized storage services. Matrix Storage provide Easy-to-Use PaaS Services, OpenAPI Services and Storage Toolset Suites.",    "long": ""  },  "primaryCta": {    "url": "//storage.anmaicloud.com",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//storage.anmaicloud.com",          "text": "storage.anmaicloud.com"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "archival", "public-data"      ]    },    {      "slug": "software-type",      "tags": [        "api", "infrastructure"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": {
+    "icon": "matrixstorage-square.png",
+    "full": "matrixstorage-cn.png, matrixstorage-en.png"
+  },
+  "name": "Matrix Storage / 矩阵存储",
+  "org": ["Anmai Cloud"],
+  "description": {
+    "short": "Stable and reliable IPFS decentralized storage services. Matrix Storage provide Easy-to-Use PaaS Services, OpenAPI Services and Storage Toolset Suites.",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "//storage.anmaicloud.com",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        { "url": "//storage.anmaicloud.com", "text": "storage.anmaicloud.com" }
+      ]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["archival", "public-data"] },
+    { "slug": "software-type", "tags": ["api", "infrastructure"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

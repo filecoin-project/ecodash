@@ -1,1 +1,42 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "Group 721.png",    "full": "Group 721.png"  },  "name": "Jigstack",  "org": [    "Jigstack"  ],  "description": {    "short": "Trusted DeFi protocols",    "long": ""  },  "primaryCta": {    "url": "//jigstack.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//jigstack.org",          "text": "jigstack.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/jigstack-dev",          "text": "github.com/jigstack-dev"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "token-finance"      ]    },    {      "slug": "storage-type",      "tags": [        "nfts"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "nft-storage"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "Group 721.png", "full": "Group 721.png" },
+  "name": "Jigstack",
+  "org": ["Jigstack"],
+  "description": { "short": "Trusted DeFi protocols", "long": "" },
+  "primaryCta": { "url": "//jigstack.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//jigstack.org", "text": "jigstack.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/jigstack-dev",
+          "text": "github.com/jigstack-dev"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["token-finance"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["nft-storage"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

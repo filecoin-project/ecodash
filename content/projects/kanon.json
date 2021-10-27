@@ -1,1 +1,50 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "Karon.png",    "full": "Group 717.png"  },  "name": "Kanon",  "org": [    "Kanon"  ],  "description": {    "short": "ART FOR THE NEXT 100 YEARS",    "long": "Kanon was founded to establish new protocols for the art of the next 100 years. NFTs introduce not only a new market but a new artistic medium. The technology isn’t new, but the attention of the current moment is unique: what gets established now will dictate the norms for decades to come."  },  "primaryCta": {    "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",          "text": "k21.kanon.art/\nhttps://docs.kanon.art/k21"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/kanonart",          "text": "github.com/kanonart"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "nfts"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "Karon.png", "full": "Group 717.png" },
+  "name": "Kanon",
+  "org": ["Kanon"],
+  "description": {
+    "short": "ART FOR THE NEXT 100 YEARS",
+    "long": "Kanon was founded to establish new protocols for the art of the next 100 years. NFTs introduce not only a new market but a new artistic medium. The technology isn’t new, but the attention of the current moment is unique: what gets established now will dictate the norms for decades to come."
+  },
+  "primaryCta": {
+    "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
+          "text": "k21.kanon.art/\nhttps://docs.kanon.art/k21"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/kanonart", "text": "github.com/kanonart" }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

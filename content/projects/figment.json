@@ -1,1 +1,45 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "icon-figment.jpg",    "full": "Figment-logo.png"  },  "name": "Figment",  "org": [    "Figment Networks"  ],  "description": {    "short": "Blockchain simplified",    "long": "Figment provides a series of solutions for simplified token staking, application development, and participation in governance"  },  "primaryCta": {    "url": "//figment.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//figment.io",          "text": "figment.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/figment-networks",          "text": "github.com/figment-networks"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "//youtube.com/channel/UCW8jHuPqYLE6bYFR30aGg9Q",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "icon-figment.jpg", "full": "Figment-logo.png" },
+  "name": "Figment",
+  "org": ["Figment Networks"],
+  "description": {
+    "short": "Blockchain simplified",
+    "long": "Figment provides a series of solutions for simplified token staking, application development, and participation in governance"
+  },
+  "primaryCta": { "url": "//figment.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//figment.io", "text": "figment.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/figment-networks",
+          "text": "github.com/figment-networks"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtube.com/channel/UCW8jHuPqYLE6bYFR30aGg9Q",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

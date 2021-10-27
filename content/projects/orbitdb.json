@@ -1,1 +1,56 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2019    }  ],  "logo": {    "icon": "orbitdb-square.png",    "full": "orbit-full-logopng.png"  },  "name": "OrbitDB",  "org": [    null  ],  "description": {    "short": "OrbitDB is a serverless, distributed, peer-to-peer database. OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers.",    "long": ""  },  "primaryCta": {    "url": "//orbitdb.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//orbitdb.org",          "text": "orbitdb.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/orbitdb/orbit-db",          "text": "github.com/orbitdb/orbit-db"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//github.com/orbitdb/field-manual",          "text": "github.com/orbitdb/field-manual"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2019    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "developer-tools"      ]    },    {      "slug": "storage-type",      "tags": [        "data-markets", "verifiable-storage", "public-data"      ]    },    {      "slug": "software-type",      "tags": [        "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "ipfs-http-client"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "orbitdb-square.png", "full": "orbit-full-logopng.png" },
+  "name": "OrbitDB",
+  "org": [null],
+  "description": {
+    "short": "OrbitDB is a serverless, distributed, peer-to-peer database. OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//orbitdb.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//orbitdb.org", "text": "orbitdb.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/orbitdb/orbit-db",
+          "text": "github.com/orbitdb/orbit-db"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//github.com/orbitdb/field-manual",
+          "text": "github.com/orbitdb/field-manual"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    {
+      "slug": "storage-type",
+      "tags": ["data-markets", "verifiable-storage", "public-data"]
+    },
+    { "slug": "software-type", "tags": ["library-sdk"] },
+    { "slug": "tooling", "tags": ["ipfs-http-client"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

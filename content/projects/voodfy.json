@@ -1,1 +1,48 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "Voodfy.png",    "full": "Vector-3.png"  },  "name": "Voodfy",  "org": [    "Voodfy"  ],  "description": {    "short": "Decentralized video hosting platform",    "long": "Decentralized Video Platform for Creators to host and monetize content their way.decentralized video hosting platform"  },  "primaryCta": {    "url": "//voodfy.com/\nhttps://app.voodfy.com/#",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//voodfy.com/\nhttps://app.voodfy.com/#",          "text": "voodfy.com/\nhttps://app.voodfy.com/#"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/Voodfy",          "text": "github.com/Voodfy"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "//youtube.com/watch?v=oCgASk9WF5o",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "video"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        ""      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "Voodfy.png", "full": "Vector-3.png" },
+  "name": "Voodfy",
+  "org": ["Voodfy"],
+  "description": {
+    "short": "Decentralized video hosting platform",
+    "long": "Decentralized Video Platform for Creators to host and monetize content their way.decentralized video hosting platform"
+  },
+  "primaryCta": {
+    "url": "//voodfy.com/\nhttps://app.voodfy.com/#",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//voodfy.com/\nhttps://app.voodfy.com/#",
+          "text": "voodfy.com/\nhttps://app.voodfy.com/#"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [{ "url": "//github.com/Voodfy", "text": "github.com/Voodfy" }]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=oCgASk9WF5o",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["video"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

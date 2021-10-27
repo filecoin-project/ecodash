@@ -1,9 +1,11 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": [{
-    "since": 2020
-  }],
+  "sortNumbers": [
+    {
+      "since": 2020
+    }
+  ],
   "logo": {
     "icon": "Block Rocket.png",
     "full": "image 80.png"
@@ -18,63 +20,86 @@
     "url": "//blockrocket.tech",
     "text": "Project Website"
   },
-  "links": [{
-    "label": "Website",
-    "links": [{
-      "url": "//blockrocket.tech",
-      "text": "blockrocket.tech"
-    }]
-  }, {
-    "label": "Repo",
-    "links": [{
-      "url": "//github.com/blockrockettech",
-      "text": "github.com/blockrockettech"
-    }]
-  }, {
-    "label": "Docs",
-    "links": [{
-      "url": "",
-      "text": ""
-    }]
-  }],
-  "keyInfo": [{
-    "label": "Using Filecoin since",
-    "value": 2020
-  }],
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//blockrocket.tech",
+          "text": "blockrocket.tech"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/blockrockettech",
+          "text": "github.com/blockrockettech"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": 2020
+    }
+  ],
   "video": "",
-  "stats": [{
-    "label": "",
-    "value": ""
-  }, {
-    "label": "",
-    "value": ""
-  }, {
-    "label": "",
-    "value": ""
-  }],
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
   "ctaCard": {
     "title": "",
     "description": "",
     "buttonText": "",
     "url": ""
   },
-  "taxonomies": [{
-    "slug": "project-category",
-    "tags": ["developer-tools"]
-  }, {
-    "slug": "storage-type",
-    "tags": ["nfts"]
-  }, {
-    "slug": "software-type",
-    "tags": ["none"]
-  }, {
-    "slug": "tooling",
-    "tags": [""]
-  }, {
-    "slug": "pipeline",
-    "tags": [""]
-  }, {
-    "slug": "project-status",
-    "tags": [""]
-  }]
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": ["developer-tools"]
+    },
+    {
+      "slug": "storage-type",
+      "tags": ["nfts"]
+    },
+    {
+      "slug": "software-type",
+      "tags": ["none"]
+    },
+    {
+      "slug": "tooling",
+      "tags": [""]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [""]
+    },
+    {
+      "slug": "project-status",
+      "tags": [""]
+    }
+  ]
 }

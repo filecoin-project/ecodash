@@ -1,1 +1,53 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "mona-lisa.svg",    "full": "mona-lisa.svg"  },  "name": "Monaliza",  "org": [    null  ],  "description": {    "short": "Mint NFTs directly from your Instagram content.",    "long": "Connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their instagram, as well as Opensea, and persist this to IPFS. This would hopefully get the average person to be able to adopt blockchain without having to leave the comfort of their favourite platform and make some monetary value on instagram posts/pictures/videos."  },  "primaryCta": {    "url": "//monaliza.app",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//monaliza.app",          "text": "monaliza.app"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/monalisanft/nfthack",          "text": "github.com/monalisanft/nfthack"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//github.com/monalisanft/nfthack",          "text": "github.com/monalisanft/nfthack"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "nfts"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        ""      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "mona-lisa.svg", "full": "mona-lisa.svg" },
+  "name": "Monaliza",
+  "org": [null],
+  "description": {
+    "short": "Mint NFTs directly from your Instagram content.",
+    "long": "Connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their instagram, as well as Opensea, and persist this to IPFS. This would hopefully get the average person to be able to adopt blockchain without having to leave the comfort of their favourite platform and make some monetary value on instagram posts/pictures/videos."
+  },
+  "primaryCta": { "url": "//monaliza.app", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//monaliza.app", "text": "monaliza.app" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/monalisanft/nfthack",
+          "text": "github.com/monalisanft/nfthack"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//github.com/monalisanft/nfthack",
+          "text": "github.com/monalisanft/nfthack"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

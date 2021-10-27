@@ -1,1 +1,56 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "spikey-wolfram-logo.png",    "full": "wolfram-corporate-logo-stacked-med 1.png"  },  "name": "Wolfram",  "org": [    "Wolfram Blockchain Labs "  ],  "description": {    "short": "Ultimate computational intelligence for your DLT",    "long": "Wolfram Blockchain Labs (WBL) provides solutions and services powered by the Wolfram Language, Mathematica, Wolfram|Alpha and assorted Wolfram technologies. The foundational technologies behind WBL have been forged and proven over three decades of Wolfram's cutting-edge R&D. WBL is now injecting that sophisticated computation and knowledge into visionary solutions for distributed ledger technologies."  },  "primaryCta": {    "url": "//wolframblockchainlabs.com",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//wolframblockchainlabs.com",          "text": "wolframblockchainlabs.com"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/WolframResearch",          "text": "github.com/WolframResearch"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "general-storage"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": {
+    "icon": "spikey-wolfram-logo.png",
+    "full": "wolfram-corporate-logo-stacked-med 1.png"
+  },
+  "name": "Wolfram",
+  "org": ["Wolfram Blockchain Labs "],
+  "description": {
+    "short": "Ultimate computational intelligence for your DLT",
+    "long": "Wolfram Blockchain Labs (WBL) provides solutions and services powered by the Wolfram Language, Mathematica, Wolfram|Alpha and assorted Wolfram technologies. The foundational technologies behind WBL have been forged and proven over three decades of Wolfram's cutting-edge R&D. WBL is now injecting that sophisticated computation and knowledge into visionary solutions for distributed ledger technologies."
+  },
+  "primaryCta": {
+    "url": "//wolframblockchainlabs.com",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//wolframblockchainlabs.com",
+          "text": "wolframblockchainlabs.com"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/WolframResearch",
+          "text": "github.com/WolframResearch"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

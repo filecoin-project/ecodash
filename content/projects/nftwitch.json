@@ -1,1 +1,53 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "icon-nftwitch.png",    "full": "icon-nftwitch.png"  },  "name": "NFTwitch",  "org": [    null  ],  "description": {    "short": "NFTwitch allows Twitch streamers to mint NFTs as they grow their follower count, verified via Chainlink calls to the Twitch API. These exclusive collectibles can be given away or sold to fans.",    "long": ""  },  "primaryCta": {    "url": "//nftwitch.link",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//nftwitch.link",          "text": "nftwitch.link"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/AntonStrickland/nftwitch",          "text": "github.com/AntonStrickland/nftwitch"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//github.com/AntonStrickland/nftwitch",          "text": "github.com/AntonStrickland/nftwitch"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "//youtube.com/watch?v=JD89t2GYlRM",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "storage-apps-clients"      ]    },    {      "slug": "storage-type",      "tags": [        "nfts"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        ""      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "icon-nftwitch.png", "full": "icon-nftwitch.png" },
+  "name": "NFTwitch",
+  "org": [null],
+  "description": {
+    "short": "NFTwitch allows Twitch streamers to mint NFTs as they grow their follower count, verified via Chainlink calls to the Twitch API. These exclusive collectibles can be given away or sold to fans.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//nftwitch.link", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//nftwitch.link", "text": "nftwitch.link" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/AntonStrickland/nftwitch",
+          "text": "github.com/AntonStrickland/nftwitch"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//github.com/AntonStrickland/nftwitch",
+          "text": "github.com/AntonStrickland/nftwitch"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtube.com/watch?v=JD89t2GYlRM",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

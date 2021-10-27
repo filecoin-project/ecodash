@@ -1,1 +1,47 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2019    }  ],  "logo": {    "icon": "metamask.png",    "full": "metamask-logo.svg"  },  "name": "MetaMask",  "org": [    "ConsenSys"  ],  "description": {    "short": "Web3 wallet and gateway to the decentralized web",    "long": "A web3 wallet designed to facilitate access to blockchain-based apps."  },  "primaryCta": {    "url": "//metamask.io",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//metamask.io",          "text": "metamask.io"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/MetaMask",          "text": "github.com/MetaMask"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//github.com/MetaMask",          "text": "github.com/MetaMask"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2019    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "token-finance"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        ""      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "metamask.png", "full": "metamask-logo.svg" },
+  "name": "MetaMask",
+  "org": ["ConsenSys"],
+  "description": {
+    "short": "Web3 wallet and gateway to the decentralized web",
+    "long": "A web3 wallet designed to facilitate access to blockchain-based apps."
+  },
+  "primaryCta": { "url": "//metamask.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//metamask.io", "text": "metamask.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/MetaMask", "text": "github.com/MetaMask" }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        { "url": "//github.com/MetaMask", "text": "github.com/MetaMask" }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["token-finance"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

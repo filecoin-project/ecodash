@@ -1,1 +1,50 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2019    }  ],  "logo": {    "icon": "icon-starling-lab.png",    "full": "starling-logo.png"  },  "name": "Starling",  "org": [    "The Starling Lab"  ],  "description": {    "short": "A framework for data integrity",    "long": ""  },  "primaryCta": {    "url": "//starlinglab.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//starlinglab.org",          "text": "starlinglab.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/filecoin-project/starling",          "text": "github.com/filecoin-project/starling"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//starlingstorage.io/getting-started.html",          "text": "starlingstorage.io/getting-started.html"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2019    }  ],  "video": "//youtube.com/watch?v=rSTAPvPfsW0",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "archival", "verifiable-storage"      ]    },    {      "slug": "software-type",      "tags": [        "hosted-service"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        "none"      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "icon-starling-lab.png", "full": "starling-logo.png" },
+  "name": "Starling",
+  "org": ["The Starling Lab"],
+  "description": { "short": "A framework for data integrity", "long": "" },
+  "primaryCta": { "url": "//starlinglab.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//starlinglab.org", "text": "starlinglab.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/filecoin-project/starling",
+          "text": "github.com/filecoin-project/starling"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//starlingstorage.io/getting-started.html",
+          "text": "starlingstorage.io/getting-started.html"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "//youtube.com/watch?v=rSTAPvPfsW0",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["archival", "verifiable-storage"] },
+    { "slug": "software-type", "tags": ["hosted-service"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["none"] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

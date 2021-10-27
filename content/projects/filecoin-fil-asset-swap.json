@@ -1,1 +1,37 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "icon-darma-capital.svg",    "full": "logo-darma.png"  },  "name": "Filecoin FIL asset swap",  "org": [    "DARMA Capital"  ],  "description": {    "short": "Filecoin FIL asset swap. Our goal is to enable miners - both large and small - to gain access to the FIL token and avoid some of the very high lending rates present in the borrowing market.",    "long": ""  },  "primaryCta": {    "url": "//darma.capital",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//darma.capital",          "text": "darma.capital"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "",          "text": ""        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        "none"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "icon-darma-capital.svg", "full": "logo-darma.png" },
+  "name": "Filecoin FIL asset swap",
+  "org": ["DARMA Capital"],
+  "description": {
+    "short": "Filecoin FIL asset swap. Our goal is to enable miners - both large and small - to gain access to the FIL token and avoid some of the very high lending rates present in the borrowing market.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//darma.capital", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//darma.capital", "text": "darma.capital" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

@@ -1,1 +1,53 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "nethereum-square.png",    "full": "nethereum-square.png"  },  "name": "Nethereum",  "org": [    "ConsenSys."  ],  "description": {    "short": "Nethereum makes it easy for .NET applications to use Ethereum, and for Ethereum applications to leverage .NET.",    "long": ""  },  "primaryCta": {    "url": "//nethereum.com",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//nethereum.com",          "text": "nethereum.com"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/Nethereum/Nethereum",          "text": "github.com/Nethereum/Nethereum"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//docs.nethereum.com/en/latest",          "text": "docs.nethereum.com/en/latest"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "developer-tools"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        "library-sdk"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "nethereum-square.png", "full": "nethereum-square.png" },
+  "name": "Nethereum",
+  "org": ["ConsenSys."],
+  "description": {
+    "short": "Nethereum makes it easy for .NET applications to use Ethereum, and for Ethereum applications to leverage .NET.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//nethereum.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//nethereum.com", "text": "nethereum.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/Nethereum/Nethereum",
+          "text": "github.com/Nethereum/Nethereum"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//docs.nethereum.com/en/latest",
+          "text": "docs.nethereum.com/en/latest"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["library-sdk"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

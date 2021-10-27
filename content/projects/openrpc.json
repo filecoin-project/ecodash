@@ -1,1 +1,50 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2021    }  ],  "logo": {    "icon": "openrpc-square.png",    "full": "openrpc-square.png"  },  "name": "OpenRPC",  "org": [    null  ],  "description": {    "short": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs.",    "long": ""  },  "primaryCta": {    "url": "//open-rpc.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//open-rpc.org",          "text": "open-rpc.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/open-rpc",          "text": "github.com/open-rpc"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "//jsonrpc.org/specification",          "text": "jsonrpc.org/specification"        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2021    }  ],  "video": "//open-rpc.org/webinar",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "none"      ]    },    {      "slug": "software-type",      "tags": [        "none"      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "openrpc-square.png", "full": "openrpc-square.png" },
+  "name": "OpenRPC",
+  "org": [null],
+  "description": {
+    "short": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//open-rpc.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//open-rpc.org", "text": "open-rpc.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/open-rpc", "text": "github.com/open-rpc" }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//jsonrpc.org/specification",
+          "text": "jsonrpc.org/specification"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//open-rpc.org/webinar",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

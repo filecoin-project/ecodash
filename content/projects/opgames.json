@@ -1,1 +1,45 @@
-{  "display": true,  "featured": false,  "sortNumbers": [    {      "since": 2020    }  ],  "logo": {    "icon": "opgames-square.jpg",    "full": "opgames-logo.png"  },  "name": "OPgames",  "org": [    "Outplay Games"  ],  "description": {    "short": "A platform and protocol for turning games into NFTs",    "long": "OPGames aims to be the center of Web 3 gaming, with a vibrant and growing community of developers, players and game owners. "  },  "primaryCta": {    "url": "//opgames.org",    "text": "Project Website"  },  "links": [    {      "label": "Website",      "links": [        {          "url": "//opgames.org",          "text": "opgames.org"        }      ]    },    {      "label": "Repo",      "links": [        {          "url": "//github.com/alto-io/game3.js",          "text": "github.com/alto-io/game3.js"        }      ]    },    {      "label": "Docs",      "links": [        {          "url": "",          "text": ""        }      ]    }  ],  "keyInfo": [    {      "label": "Using Filecoin since",      "value": 2020    }  ],  "video": "",  "stats": [    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    },    {      "label": "",      "value": ""    }  ],  "ctaCard": {    "title": "",    "description": "",    "buttonText": "",    "url": ""  },  "taxonomies": [    {      "slug": "project-category",      "tags": [        "collaborations"      ]    },    {      "slug": "storage-type",      "tags": [        "games", "nfts"      ]    },    {      "slug": "software-type",      "tags": [        ""      ]    },    {      "slug": "tooling",      "tags": [        "none"      ]    },    {      "slug": "pipeline",      "tags": [        ""      ]    },    {      "slug": "project-status",      "tags": [        ""      ]    }  ]}
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "opgames-square.jpg", "full": "opgames-logo.png" },
+  "name": "OPgames",
+  "org": ["Outplay Games"],
+  "description": {
+    "short": "A platform and protocol for turning games into NFTs",
+    "long": "OPGames aims to be the center of Web 3 gaming, with a vibrant and growing community of developers, players and game owners. "
+  },
+  "primaryCta": { "url": "//opgames.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//opgames.org", "text": "opgames.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/alto-io/game3.js",
+          "text": "github.com/alto-io/game3.js"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["games", "nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

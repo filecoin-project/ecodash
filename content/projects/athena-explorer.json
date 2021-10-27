@@ -1,9 +1,11 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": [{
-    "since": 2021
-  }],
+  "sortNumbers": [
+    {
+      "since": 2021
+    }
+  ],
   "logo": {
     "icon": "athena-square.png",
     "full": "athena-logo.png"
@@ -18,63 +20,86 @@
     "url": "//atpool.com/en-US",
     "text": "Project Website"
   },
-  "links": [{
-    "label": "Website",
-    "links": [{
-      "url": "//atpool.com/en-US",
-      "text": "atpool.com/en-US"
-    }]
-  }, {
-    "label": "Repo",
-    "links": [{
-      "url": "//github.com/AthenaExplorer",
-      "text": "github.com/AthenaExplorer"
-    }]
-  }, {
-    "label": "Docs",
-    "links": [{
-      "url": "",
-      "text": ""
-    }]
-  }],
-  "keyInfo": [{
-    "label": "Using Filecoin since",
-    "value": 2021
-  }],
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//atpool.com/en-US",
+          "text": "atpool.com/en-US"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/AthenaExplorer",
+          "text": "github.com/AthenaExplorer"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": 2021
+    }
+  ],
   "video": "",
-  "stats": [{
-    "label": "",
-    "value": ""
-  }, {
-    "label": "",
-    "value": ""
-  }, {
-    "label": "",
-    "value": ""
-  }],
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
   "ctaCard": {
     "title": "",
     "description": "",
     "buttonText": "",
     "url": ""
   },
-  "taxonomies": [{
-    "slug": "project-category",
-    "tags": ["network-tools"]
-  }, {
-    "slug": "storage-type",
-    "tags": ["consumer-storage"]
-  }, {
-    "slug": "software-type",
-    "tags": ["web-app"]
-  }, {
-    "slug": "tooling",
-    "tags": ["none"]
-  }, {
-    "slug": "pipeline",
-    "tags": [""]
-  }, {
-    "slug": "project-status",
-    "tags": [""]
-  }]
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": ["network-tools"]
+    },
+    {
+      "slug": "storage-type",
+      "tags": ["consumer-storage"]
+    },
+    {
+      "slug": "software-type",
+      "tags": ["web-app"]
+    },
+    {
+      "slug": "tooling",
+      "tags": ["none"]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [""]
+    },
+    {
+      "slug": "project-status",
+      "tags": [""]
+    }
+  ]
 }
