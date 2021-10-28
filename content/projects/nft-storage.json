@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft.storage.svg" },
+  "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft-storage.svg" },
   "name": "NFT.storage",
   "org": ["Protocol Labs"],
   "description": {

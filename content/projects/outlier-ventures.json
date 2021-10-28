@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Group 735.png", "full": "Outlier-logo-202021-NEW.png" },
+  "logo": { "icon": "Group735.png", "full": "Outlier-logo-202021-NEW.png" },
   "name": "Outlier Ventures",
   "org": ["Outlier Ventures"],
   "description": { "short": "//outlierventures.io", "long": "" },
