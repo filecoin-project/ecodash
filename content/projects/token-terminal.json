@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Group 734.png", "full": "token terminal.svg" },
+  "logo": { "icon": "Group734.png", "full": "tokenterminal.svg" },
   "name": "Token Terminal",
   "org": [null],
   "description": {

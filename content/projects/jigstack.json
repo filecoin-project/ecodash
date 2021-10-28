@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Group 721.png", "full": "Group 721.png" },
+  "logo": { "icon": "Group721.png", "full": "Group721.png" },
   "name": "Jigstack",
   "org": ["Jigstack"],
   "description": { "short": "Trusted DeFi protocols", "long": "" },

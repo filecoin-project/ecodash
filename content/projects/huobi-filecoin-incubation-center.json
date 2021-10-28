@@ -3,7 +3,7 @@
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
   "logo": {
-    "icon": "Huobi_Token_(HT)_Logo_.SVG_and_.PNG_Files_Download.PNG Files Download",
+    "icon": "huobi-token-icon.png",
     "full": "Huobi.png"
   },
   "name": "Huobi Filecoin Incubation Center",

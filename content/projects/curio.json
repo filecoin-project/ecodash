@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "curio - icon.jpeg", "full": "curio - logo.png" },
+  "logo": { "icon": "curio-icon.jpeg", "full": "curio-logo.png" },
   "name": "Curio",
   "org": ["Curio Digital Inc"],
   "description": {
