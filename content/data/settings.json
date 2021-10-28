@@ -5,9 +5,9 @@
   },
   "behavior": {
     "showcaseBaseRoute": "/showcase",
-    "primaryCategorySlug": "project-category",
+    "primaryCategorySlug": "storage-type",
     "firstTag": "",
-    "lastTag": "",
+    "lastTag": "none",
     "externalLinksTargetBlank": true,
     "tagMatchType": "or",
     "excludeFilterAllTag": true,
