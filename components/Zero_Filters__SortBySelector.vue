@@ -256,10 +256,14 @@ export default {
   justify-content: space-between;
   padding: 0.25rem 1.0rem;
   z-index: 20;
-  background: linear-gradient(75deg, #030307, #030307);
-  transition: 250ms ease-in-out;
+  background: linear-gradient(75deg, #030307, #030307, #31B4D8 75%);
+  background-size: 500% 100%;
+  background-position: 0% 0%;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-position: 90% 0%;
+  }
   &.gradient {
-    color: $blackSapphire;
     background: linear-gradient(75deg, #178FFD, #39C0CC);
   }
   label {

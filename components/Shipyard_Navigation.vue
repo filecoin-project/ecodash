@@ -269,9 +269,9 @@ export default {
   width: 8rem;
   opacity: 1.0;
   z-index: 100;
-  transition: opacity 0.3s cubic-bezier(0.4, 0.0, 0.2, 1.0);
+  transition: all 0.3s ease;
   &:hover {
-    opacity: 0.75;
+    transform: scale(1.05);
   }
 }
 
@@ -504,13 +504,23 @@ export default {
       left: 0px;
     }
     &:after {
-      top: 0px;
-      left: 0px;
+      top: 1px;
+      left: 1px;
     }
+    button {
+      top: 2px;
+      left: 2px;
+      @include oceanBlueGradient;
+    }
+  }
+  &:hover {
     button {
       top: 0px;
       left: 0px;
-      @include oceanBlueGradient;
+    }
+    &:after {
+      top: 0px;
+      left: 0px;
     }
   }
 }

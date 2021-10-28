@@ -194,11 +194,15 @@ export default {
     font-size: $fontSize_Small;
     transition: all 250ms linear;
     background-color: $jaguar;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $turquoise;
+    }
     @include small {
       font-size: $fontSize_Regular;
     }
     label, span {
-      padding-top: 0.125rem;
+      padding-top: 0.25rem;
       @include leading_Medium;
     }
   }
@@ -306,6 +310,7 @@ export default {
   .dropdown-item {
     font-size: $fontSize_Small;
     width: 100%;
+    padding-left: 6rem;
     white-space: normal;
     @include small {
       font-size: $fontSize_Regular;
