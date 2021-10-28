@@ -1,0 +1,45 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "icon-filscan.png", "full": "filscan-logo.png" },
+  "name": "Filscan",
+  "org": ["Filscan"],
+  "description": {
+    "short": "A block and message explorer",
+    "long": "A blockchain browser for Filecoin, for viewing blockchain data, including querying addresses, messages, block heights, miners, and more. "
+  },
+  "primaryCta": { "url": "//filscan.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//filscan.io", "text": "filscan.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/filecoin-shipyard/filscan-block-explorer",
+          "text": "github.com/filecoin-shipyard/filscan-block-explorer"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=f2sk2WqrIjs",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["network-tools"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

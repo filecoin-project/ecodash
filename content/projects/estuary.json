@@ -1,0 +1,56 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "icon-estuary.png", "full": "icon-estuary.png" },
+  "name": "Estuary",
+  "org": ["Applications Research Group"],
+  "description": {
+    "short": "Estuary makes it easy to make Filecoin storage deals and retrieve files, through a curl API or a web interface.",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "estuary.tech\ndocs.estuary.tech",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "estuary.tech\ndocs.estuary.tech",
+          "text": "estuary.tech\ndocs.estuary.tech"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/application-research/estuary",
+          "text": "github.com/application-research/estuary"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [{ "url": "//docs.estuary.tech", "text": "docs.estuary.tech" }]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": ["api", "web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

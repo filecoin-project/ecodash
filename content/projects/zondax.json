@@ -1,0 +1,40 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "Zondaxlogo.png", "full": "image142.png" },
+  "name": "Zondax",
+  "org": ["Zondax"],
+  "description": {
+    "short": "Engineering partner for Blockchain and Deep Tech solutions.",
+    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets. \n\n"
+  },
+  "primaryCta": { "url": "//zondax.ch", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//zondax.ch", "text": "zondax.ch" }]
+    },
+    {
+      "label": "Repo",
+      "links": [{ "url": "//github.com/Zondax", "text": "github.com/Zondax" }]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["library-sdk"] },
+    { "slug": "tooling", "tags": ["zondax-signing-tools"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}
