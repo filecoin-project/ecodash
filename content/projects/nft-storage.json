@@ -3,7 +3,7 @@
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft-storage.svg" },
-  "name": "NFT-storage",
+  "name": "NFT.storage",
   "org": ["Protocol Labs"],
   "description": {
     "short": "Decentralized storage for NFTs on IPFS and Filecoin, via the JS client library or HTTP API.",
