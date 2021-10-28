@@ -1,0 +1,105 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2021
+    }
+  ],
+  "logo": {
+    "icon": "dlabs-logo.png",
+    "full": "dlabs-logo.png"
+  },
+  "name": "_Dlabs",
+  "org": ["Underscored Labs"],
+  "description": {
+    "short": "Building decentralized tools in gaming, VR and AR",
+    "long": "_dlabs bridges the creative ecosystem of games, VR and AR with the decentralized world of cryptocurrency"
+  },
+  "primaryCta": {
+    "url": "//underscoredlabs.com",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//underscoredlabs.com",
+          "text": "underscoredlabs.com"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/underscoredLabs",
+          "text": "github.com/underscoredLabs"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": 2021
+    }
+  ],
+  "video": "",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": ["developer-tools"]
+    },
+    {
+      "slug": "storage-type",
+      "tags": ["games"]
+    },
+    {
+      "slug": "software-type",
+      "tags": [""]
+    },
+    {
+      "slug": "tooling",
+      "tags": ["fleek-space-daemon"]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [""]
+    },
+    {
+      "slug": "project-status",
+      "tags": [""]
+    }
+  ]
+}

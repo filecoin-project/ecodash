@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+<style type="text/css">
+	.fill { fill: #262262; }
+</style>
+	<g id="holon-icon" transform="translate(7.000000, 24.000000)">
+		<polygon class="fill" points="20.7 ,10.3 48.2,10.3 48.2,-14.3 59.9,-14.3 59.9,46.5 48.2,46.5 48.2,20.6 20.7,20.6"/>
+		<polygon class="fill" points="6.4, 0 20.7,0 20.7,-14.3 6.4,-14.3"/>
+		<polygon class="fill" points="6.4, 46.5 20.7,46.5 20.7,32.2 6.4,32.2"/>
+	</g>
+</svg>

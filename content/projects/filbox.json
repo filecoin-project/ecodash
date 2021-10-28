@@ -1,0 +1,45 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "filbox-square.png", "full": "filbox-logo.png" },
+  "name": "Filbox",
+  "org": ["Filbox"],
+  "description": {
+    "short": "A decentralized file storage solution",
+    "long": "An open source file storage encryption application that is designed to enable users to easily encrypt their files and upload to the network."
+  },
+  "primaryCta": { "url": "//filbox.biz/#", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//filbox.biz/#", "text": "filbox.biz/#" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/filecoin-project/slingshot/blob/26a79787a78c3ae8d5462d54d13855744f2320b2/participants/Filbox.md",
+          "text": "github.com/filecoin-project/slingshot/blob/26a79787a78c3ae8d5462d54d13855744f2320b2/participants/Filbox.md"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["network-tools"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

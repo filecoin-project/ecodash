@@ -1,0 +1,45 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "1628149169831.png", "full": "slate1.png" },
+  "name": "Slate",
+  "org": ["Applications Research Group"],
+  "description": {
+    "short": "Decentralized file sharing network",
+    "long": "An open source storage system for your data that makes it easy to collect, organize, and share them anywhere on the web."
+  },
+  "primaryCta": { "url": "//slate.host", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//slate.host", "text": "slate.host" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/filecoin-project/slate",
+          "text": "github.com/filecoin-project/slate"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "//youtube.com/watch?v=xh-UVt9UBEo",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["consumer-storage", "public-data"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["textile-powergate"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

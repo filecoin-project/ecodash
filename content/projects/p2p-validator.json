@@ -1,0 +1,43 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": {
+    "icon": "icon-p2p-validator.svg",
+    "full": "p2p-validator-logo-vector.svg"
+  },
+  "name": "P2P Validator",
+  "org": ["P2P Validator"],
+  "description": {
+    "short": " P2P Validator provides access to secure, non-custodial staking and network validation.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//p2p.org", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//p2p.org", "text": "p2p.org" }]
+    },
+    {
+      "label": "Repo",
+      "links": [{ "url": "//github.com/p2p-org", "text": "github.com/p2p-org" }]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

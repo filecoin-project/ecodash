@@ -1,24 +1,24 @@
 {
   "display": true,
-  "featured": true,
-  "sortNumbers": {
-    "since": 2019
-  },
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2020
+    }
+  ],
   "logo": {
-    "icon": "ion-logo.png",
-    "full": "ion-logo.png"
+    "icon": "icon-ion.svg",
+    "full": "ion_logo 1.png"
   },
   "name": "ION",
-  "org": [
-    "Microsoft"
-  ],
+  "org": ["Microsoft"],
   "description": {
     "short": "Public decentralized identifier network using Sidetree",
-    "long": "ION is a public, permissionless, decentralized Identifier (DID) network that implements the blockchain-agnostic Sidetree protocol on top of Bitcoin (as a \"Layer 2\" overlay) to support DIDs/DPKI (Decentralized Public Key Infrastructure) at scale."
+    "long": "ION is a public, permissionless, decentralized Identifier (DID) network that implements the blockchain-agnostic Sidetree protocol on top of Bitcoin (as a Layer 2 overlay) to support DIDs/DPKI (Decentralized Public Key Infrastructure) at scale."
   },
   "primaryCta": {
     "url": "//identity.foundation",
-    "text": "Project website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -38,15 +38,24 @@
           "text": "github.com/decentralized-identity/ion"
         }
       ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
     }
   ],
   "keyInfo": [
     {
-      "label": "Using IPFS since",
-      "value": "2019"
+      "label": "Using Filecoin since",
+      "value": 2020
     }
   ],
-  "video": "//youtube.com/watch?v=lGVtj4RC7Bs",
+  "video": "//youtu.be/lGVtj4RC7Bs",
   "stats": [
     {
       "label": "",
@@ -62,37 +71,35 @@
     }
   ],
   "ctaCard": {
-    "title": "Own your identity",
-    "description": "Learn how ION brings decentralized identity to maturity.",
-    "buttonText": "Read more",
-    "url": "//blog.ipfs.io/2021-03-24-own-your-identity-with-ion"
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
   },
   "taxonomies": [
     {
-      "slug": "industry",
-      "tags": [
-        "identity"
-      ]
+      "slug": "project-category",
+      "tags": ["developer-tools"]
     },
     {
-      "slug": "focus",
-      "tags": [
-        "dev-tools"
-      ]
+      "slug": "storage-type",
+      "tags": ["decentralized-identity"]
     },
     {
-      "slug": "benefits",
-      "tags": [
-        "data-integrity",
-        "interoperability",
-        "self-sovereign-data"
-      ]
+      "slug": "software-type",
+      "tags": [""]
     },
     {
       "slug": "tooling",
-      "tags": [
-        "go-ipfs"
-      ]
+      "tags": ["none"]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [""]
+    },
+    {
+      "slug": "project-status",
+      "tags": [""]
     }
   ]
 }

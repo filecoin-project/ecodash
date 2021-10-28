@@ -1,0 +1,37 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": {
+    "icon": "fenbushi_capital.png",
+    "full": "fenbushi_capital.png"
+  },
+  "name": "Fenbushi Capital ",
+  "org": ["Fenbushi Capital "],
+  "description": {
+    "short": "23$M Filecoin Ecosystem Fund closed in March 2021, with the mandate to invest in all projects related to IPFS and Filecoin ecosystem except FIL mining service providers",
+    "long": ""
+  },
+  "primaryCta": { "url": "", "text": "Project Website" },
+  "links": [
+    { "label": "Website", "links": [{ "url": "", "text": "" }] },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

@@ -5,9 +5,9 @@
   },
   "behavior": {
     "showcaseBaseRoute": "/showcase",
-    "primaryCategorySlug": "industry",
+    "primaryCategorySlug": "storage-type",
     "firstTag": "",
-    "lastTag": "",
+    "lastTag": "none",
     "externalLinksTargetBlank": true,
     "tagMatchType": "or",
     "excludeFilterAllTag": true,
@@ -35,7 +35,7 @@
     "singularTagLinks": true
   },
   "embeddable_view": {
-    "host": "https://develop.ecosystem.filecoin.io",
+    "host": "https://ecosystem.filecoin.io",
     "target": ".filecoin-ecosystem-embed",
     "copy": {
       "heading": "Who's using Filecoin?",
