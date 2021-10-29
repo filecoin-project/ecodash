@@ -397,79 +397,8 @@
     margin-bottom: 1.5rem;
     #clear-selected-filters-button {
       margin-left: 0;
-    }
-  }
-  .button-wrapper {
-    position: relative;
-    margin-right: 1.5rem;
-    transition: all 250ms linear;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      @include whiteBorderBack;
-      background-color: $jaguar;
-      transition: inherit;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      @include whiteBorderBack;
-      @include oceanBlueGradient;
-      transition: inherit;
-    }
-    button {
-      z-index: 1;
-      top: 10px;
-      left: 10px;
-      min-height: 2.25rem !important;
-      @include cardText;
-      @include whiteBorderFront;
-      border-radius: 0 !important;
-      background-color: $jaguar;
-      transition: inherit;
-      .button-content {
-        line-height: $leading_Regular;
-        color: $white;
-        transition: all 250ms linear;
-        svg {
-          path {
-            transition: inherit;
-            stroke: $white;
-          }
-        }
-      }
-    }
-    &.button-active {
-      &:before {
-        top: 0px;
-        left: 0px;
-      }
-      &:after {
-        top: 0px;
-        left: 0px;
-      }
-      button {
-        top: 0px;
-        left: 0px;
-        @include oceanBlueGradient;
-        .button-content {
-          color: $blackSapphire;
-          transition: all 250ms linear;
-          svg {
-            path {
-              transition: inherit;
-              stroke: $blackSapphire;
-            }
-          }
-        }
+      path {
+        stroke: $white;
       }
     }
   }
@@ -510,26 +439,10 @@
   }
 
   #sort-by-selector {
-    @include shadow1;
-    .button-inner,
-    .dropdown-item {
-      @include fontSize_Small;
-      line-height: 1.5;
-    }
-    .button-inner {
-      align-items: center;
-      background-color: $jaguar;
-      transition: all 250ms linear;
-    }
-    .dropdown-button {
-      min-height: 2rem;
-      font-size: $fontSize_Small;
-      line-height: $leading_Medium;
+    &.closed {
       .dropdown-toggle {
-        svg {
-          path {
-            stroke: $white;
-          }
+        path {
+          stroke: $white;
         }
       }
       label,
@@ -545,10 +458,8 @@
       .dropdown-toggle {
         transition: 250ms ease-in;
         transform: rotate(-180deg);
-        svg {
-          path {
-            stroke: $blackSapphire;
-          }
+        path {
+          stroke: $blackSapphire;
         }
       }
       .button-inner {
@@ -559,23 +470,13 @@
   }
 
   #list-block-toggle-button {
-    top: 10px;
-    height: calc(2.5rem - 2px);
-    @include whiteBorderBack;
-    overflow: hidden;
-    &:before {
-      width: 52%;
-      background-color: unset;
-      @include oceanBlueGradient;
-    }
-    svg {
-      path,
-      line,
-      g {
-        stroke: $blackSapphire;
-      }
+    path,
+    line,
+    g {
+      stroke: $blackSapphire;
     }
   }
+
 }
 
 // //////////////////////////////////////////////////////////////// Filter Panel
@@ -707,7 +608,8 @@
       @include oceanBlueGradient;
     }
     .done-button {
-      left: 1rem;
+      top: 10px;
+      left: 10px;
       @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
@@ -720,6 +622,23 @@
       }
       &:after {
         @include oceanBlueGradient;
+        transition: inherit;
+      }
+      &:before {
+        transition: inherit;
+      }
+      &:hover {
+        top: 0;
+        left: 0;
+        background-color: $jaguar;
+        &:after {
+          top: 0px;
+          left: 0px;
+        }
+        &:before {
+          top: 0px;
+          left: 0px;
+        }
       }
     }
   }
@@ -807,6 +726,9 @@
 // -----------------------------------------------------------------------------
 #paginated-list-navigation-controls {
   margin-top: 6rem !important;
+  @include small {
+    align-items: center !important;
+  }
   svg {
     path,
     line {

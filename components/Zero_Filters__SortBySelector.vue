@@ -20,7 +20,7 @@
         {{ selected }}
       </span>
 
-      <div class="dropdown-toggle">
+      <div :class="['dropdown-toggle', { closed }]">
         <slot name="dropdown-icon"></slot>
       </div>
 
@@ -126,7 +126,7 @@ export default {
     } else {
       this.optionSelected(this.sortOptions[this.defaultSort])
     }
-    this.setHeights()
+    this.$nextTick(() => { this.setHeights() })
     this.resize = () => { this.setHeights() }
     window.addEventListener('resize', this.resize)
   },
@@ -229,6 +229,17 @@ export default {
   background: none;
 }
 
+#sort-by-selector {
+  @include shadow1;
+  .button-inner {
+    @include fontSize_Small;
+    line-height: 1.5;
+    align-items: center;
+    background-color: $jaguar;
+    transition: all 250ms linear;
+  }
+}
+
 .dropdown-wrapper {
   @include borderRadius_Medium;
   position: relative;
@@ -238,16 +249,6 @@ export default {
   cursor: pointer;
   z-index: 1000;
   transition: 250ms ease-out;
-  &:not(.closed) {
-    .shadow {
-      transition: opacity 250ms ease-in, height 0ms;
-      opacity: 1;
-    }
-    .dropdown-toggle {
-      transition: 250ms ease-in;
-      transform: rotate(-180deg);
-    }
-  }
 }
 
 .dropdown-button {
@@ -269,6 +270,10 @@ export default {
   label {
     margin-right: 0.25rem;
   }
+  label,
+  span {
+    padding-top: 0.125rem;
+  }
 }
 
 .dropdown-toggle {
@@ -284,13 +289,15 @@ export default {
 
 .dropdown-root {
   @include borderRadius_Medium;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   z-index: 10;
   transition: height 250ms ease-in-out;
+  padding-top: 0;
+  color: $blackSapphire;
 }
 
 .shadow {
@@ -314,9 +321,16 @@ export default {
 }
 
 .dropdown-item {
-  padding: 0.25rem 1.0rem;
+  padding: 0.375rem 1rem;
   width: 100%;
   white-space: normal;
+  @include fontSize_Small;
+  line-height: $leading_Medium;
+  &.highlighted {
+    background-color: unset;
+    color: $blackSapphire !important;
+    @include lightBlueGradient;
+  }
   &:not(.highlighted) {
     text-decoration: underline transparent;
     text-underline-offset: $underlineSpacing;
@@ -332,4 +346,5 @@ export default {
 .highlighted {
   cursor: default;
 }
+
 </style>
