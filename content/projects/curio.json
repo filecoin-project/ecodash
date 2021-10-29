@@ -1,0 +1,37 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "curio-icon.jpeg", "full": "curio-logo.png" },
+  "name": "Curio",
+  "org": ["Curio Digital Inc"],
+  "description": {
+    "short": "NFT marketplace",
+    "long": "Curio is a curated NFT marketplace focused on helping brands monetize their intellectual property through non-fungible tokens.Built on the Ethereum blockchain, these NFTs are verifiable and create opportunities for fans to engage with brands that they love in new and different ways with digital fan clubs, memorabilia, and more."
+  },
+  "primaryCta": { "url": "//oncurio.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//oncurio.com", "text": "oncurio.com" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtu.be/QC90YKBSCt4",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": [""] },
+    { "slug": "tooling", "tags": [""] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
+  ]
+}

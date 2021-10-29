@@ -1,64 +1,64 @@
 {
   "seo": {
     "title": "Filecoin Ecosystem",
-    "description": "Filecoin interactive ecosystem and showcase."
+    "description": "Filecoin interactive ecosystem dashboard."
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://example.com",
+    "url": "https://ecosystem.filecoin.io",
     "type": "website",
-    "image": "https://example.com"
+    "image": ""
   },
   "navigation": {
     "index": {
       "type": "a",
-      "href": "https://example.com"
+      "href": "https://filecoin.io"
     },
     "header": [
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/store/",
         "label": "Store"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/mine/",
         "label": "Mine"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/build/",
         "label": "Build"
       },
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io/blog/",
         "label": "Blog"
       },
       {
         "type": "a",
-        "href": "https://blog.ipfs.io",
+        "href": "#",
         "label": "Explore Network",
         "links": [
           {
             "type": "a",
-            "href": "https://ipfs.io/#why",
-            "label": "Filfox.info"
+            "href": "https://filfox.info/en",
+            "label": "Filfox"
           },
           {
             "type": "a",
-            "href": "https://ipfs.io/#install",
-            "label": "Filescan.io"
+            "href": "https://filescan.io/scan",
+            "label": "Filescan"
           },
           {
             "type": "a",
-            "href": "https://docs.ipfs.io",
-            "label": "Filscout.io"
+            "href": "https://filscout.io/en/",
+            "label": "Filscout"
           },
           {
             "type": "a",
-            "href": "https://ipfs.io/team",
-            "label": "Spacegap.io"
+            "href": "https://spacegap.github.io/#/",
+            "label": "Spacegap"
           }
         ]
       }
@@ -68,29 +68,31 @@
       "left_links": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io/slack",
+          "target": "_blank",
           "label": "Slack"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF",
+          "target": "_blank",
           "label": "WeChat"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://twitter.com/Filecoin",
           "target": "_blank",
           "label": "Twitter"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://github.com/filecoin-project/community#forums",
           "target": "_blank",
           "label": "Forum"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://riot.im/app/#/group/+filecoin:matrix.org",
           "target": "_blank",
           "label": "Matrix"
         }
@@ -99,30 +101,29 @@
       "right_links": [
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://research.filecoin.io/",
           "label": "Research"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://filecoin.io/blog/",
           "label": "Blog"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://github.com/filecoin-project",
           "target": "_blank",
           "label": "Github"
         },
         {
           "type": "a",
-          "href": "https://example.com",
+          "href": "https://proto.school/course/filecoin",
           "target": "_blank",
           "label": "Protoschool"
         },
         {
           "type": "a",
-          "href": "https://example.com",
-          "target": "_blank",
+          "href": "https://security.filecoin.io/",
           "label": "Security"
         }
       ]
@@ -130,7 +131,7 @@
   },
   "section_featured_slider": {
     "heading": "Related entityTermPlural",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    "description": "Take a look at some projects that are similar to this one."
   },
   "footer_content": {
     "heading": "Stay informed",
@@ -147,7 +148,7 @@
     "breadcrumbs": [
       {
         "type": "a",
-        "href": "https://ipfs.io",
+        "href": "https://filecoin.io",
         "label": "Home"
       },
       {
@@ -165,7 +166,7 @@
     "message": "It looks like you're lost, let's",
     "link": {
       "href": "/",
-      "prompt": "go home"
+      "prompt": "start over"
     }
   }
 }

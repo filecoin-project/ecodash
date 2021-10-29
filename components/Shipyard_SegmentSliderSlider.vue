@@ -326,37 +326,67 @@ export default {
 }
 .view-all-wrapper {
   position: absolute;
-  left: 3px;
+  left: 8px;
   right: 0;
-  bottom: -1.375rem;
+  width: 10rem;
+  bottom: -1.75rem;
   z-index: 1;
+  @include tripleLayer;
+  border: 0px;
+  @include medium {
+    left: calc(50% - 1.75rem);
+    bottom: -3rem;
+    transform: translateX(-50%);
+  }
+  &:before {
+    margin: 0 auto;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 5px;
+    left: 27px;
+    background-color: $jaguar;
+  }
+  &:after {
+    margin: 0 auto;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    top: 10px;
+    left: 32px;
+    transition: 250ms ease-out;
+    @include oceanBlueGradient;
+  }
   .view-all {
-    position: relative;
     margin: 0 auto;
     padding: 0.25rem 0;
     width: 10rem;
+    height: 30px;
+    top: 0px;
+    left: 36px;
     font-weight: $fontWeight_Medium !important;
     text-align: center;
     transform: translateY(50%);
     transition: 250ms ease-out;
     @include cardText;
-    @include tripleLayer;
     background-color: $jaguar !important;
-    &:before {
-      top: -12px;
-      left: -12px;
-      background-color: transparent;
-    }
-    &:after {
-      top: -7px;
-      left: -7px;
-      @include oceanBlueGradient;
-    }
+    border: 2px solid white;
+    // @include medium {
+    //   transform: translateY(-75%);
+    // }
     &:hover {
       transition: 250ms ease-in;
     }
     &:focus {
       outline: none;
+    }
+  }
+  &:hover {
+    &:after {
+      top: 6px;
+      left: 28px;
+    }
+    button {
+      top: -9px;
+      left: 28px;
     }
   }
 }

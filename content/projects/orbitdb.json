@@ -1,106 +1,56 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": {
-    "since": 2015
-  },
-  "logo": {
-    "icon": "orbitdb.png",
-    "full": "orbit_db_logo_color.png"
-  },
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "orbitdb-square.png", "full": "orbit-full-logopng.png" },
   "name": "OrbitDB",
-  "org": [
-    "Equilibrium"
-  ],
+  "org": [null],
   "description": {
-    "short": "Peer-to-peer decentralized database built on IPFS",
-    "long": "OrbitDB is a serverless, distributed, peer-to-peer database built on IPFS for data storage and IPFS pubsub for automatically syncing databases with peers."
+    "short": "OrbitDB is a serverless, distributed, peer-to-peer database. OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers.",
+    "long": ""
   },
-  "primaryCta": {
-    "url": "//orbitdb.org",
-    "text": "Project website"
-  },
+  "primaryCta": { "url": "//orbitdb.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [
-        {
-          "url": "//orbitdb.org",
-          "text": "orbitdb.org"
-        }
-      ]
+      "links": [{ "url": "//orbitdb.org", "text": "orbitdb.org" }]
     },
     {
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/orbitdb",
-          "text": "github.com/orbitdb"
+          "url": "//github.com/orbitdb/orbit-db",
+          "text": "github.com/orbitdb/orbit-db"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//github.com/orbitdb/field-manual",
+          "text": "github.com/orbitdb/field-manual"
         }
       ]
     }
   ],
-  "keyInfo": [
-    {
-      "label": "Using IPFS since",
-      "value": "2015"
-    }
-  ],
-  "video": "//youtube.com/watch?v=x3yy_609rmM",
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
   "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
   ],
-  "ctaCard": {
-    "title": "OrbitDB Field Manual",
-    "description": "The official user's guide to OrbitDB.",
-    "buttonText": "Learn more",
-    "url": "//github.com/orbitdb/field-manual"
-  },
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
     {
-      "slug": "industry",
-      "tags": [
-        "data-machine-learning"
-      ]
+      "slug": "storage-type",
+      "tags": ["data-markets", "verifiable-storage", "public-data"]
     },
-    {
-      "slug": "focus",
-      "tags": [
-        "dev-tools",
-        "research-data",
-        "public-data",
-        "storage-pinning"
-      ]
-    },
-    {
-      "slug": "benefits",
-      "tags": [
-        "corporate-government-independence",
-        "self-sovereign-data",
-        "local-first-model"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "bitswap",
-        "go-ipfs",
-        "go-libp2p",
-        "js-ipfs",
-        "js-ipfs-https-client",
-        "js-libp2p"
-      ]
-    }
+    { "slug": "software-type", "tags": ["library-sdk"] },
+    { "slug": "tooling", "tags": ["ipfs-http-client"] },
+    { "slug": "pipeline", "tags": [""] },
+    { "slug": "project-status", "tags": [""] }
   ]
 }

@@ -119,12 +119,110 @@
   }
 }
 
+// ///////////////////////////////////////////////////////////////// Footer Form
+// -----------------------------------------------------------------------------
+.mailchimp-form {
+  #mailchimp-form {
+    .panel-top {
+      .email,
+      .submit {
+        box-shadow: none;
+        position: relative;
+        margin-left: 9px;
+
+        input {
+          @include fontSize_Small;
+          font-family: $font_Secondary;
+          font-weight: $fontWeight_Regular;
+          background: none;
+          box-shadow: none;
+          height: 30px;
+          padding: 0 20px;
+        }
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:before {
+          @include whiteBorderBack;
+          background: $cadmiumBlue;
+          top: -7px;
+          left: -6px;
+          z-index: -1;
+        }
+
+        &:after {
+          @include whiteBorderBack;
+          top: -13px;
+          left: -11px;
+          z-index: -2;
+        }
+
+      }
+
+      .email {
+        @include whiteBorderBack;
+        background: $midnight;
+
+        input {
+          color: $white;
+          transition: background-color 0.3s ease;
+          &::placeholder {
+            color: $white;
+            opacity: 1;
+          }
+          &:hover, &:focus {
+            background-color: $azure;
+          }
+        }
+      }
+
+      .submit {
+        height: 30px;
+        &:before,
+        &:after {
+          transition: 250ms ease-out;
+          width: calc(100% - 2px);
+        }
+        &:hover {
+          &:before {
+            top: -12px;
+            left: -10px;
+          }
+          input {
+            top: -11px;
+            left: -9px;
+          }
+        }
+
+        input {
+          @include oceanBlueGradient;
+          @include whiteBorderBack;
+          height: 32px;
+          position: relative;
+          color: $blackSapphire;
+          margin-left: 0;
+          top: 0px;
+          left: 0px;
+          transition: 250ms ease-out;
+        }
+      }
+    }
+  }
+}
+
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
 
 #segment-slider-chart {
   @include medium {
-    background-color: unset;
+    background-color: transparent;
     .segments-container {
       background-color: inherit;
       .chart-title {
@@ -304,6 +402,41 @@
       }
     }
   }
+  .relative-wrapper {
+    position: relative;
+    left: -14px;
+    z-index: 100;
+  }
+  .sort-by-wrapper {
+    position: absolute;
+    &.open {
+      &:after {
+        background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
+      }
+    }
+  }
+  .dropdown-root {
+    position: relative;
+    padding-top: 0;
+    color: $blackSapphire;
+  }
+  .dropdown-item {
+    line-height: $leading_Medium;
+    padding: 0.375rem 1rem;
+    &.highlighted {
+      background-color: unset;
+      color: $blackSapphire;
+      @include lightBlueGradient;
+    }
+  }
+
+  #filter-panel-toggle-button {
+    position: relative;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $turquoise;
+    }
+  }
 
   #sort-by-selector {
     &.closed {
@@ -311,6 +444,10 @@
         path {
           stroke: $white;
         }
+      }
+      label,
+      span {
+        padding-top: 0.25rem;
       }
     }
     &:not(.closed) {
@@ -466,6 +603,7 @@
   #filter-panel-controls {
     .clear-selected-button {
       color: $white;
+      padding-top: 0.5rem;
       @include cardText;
       @include oceanBlueGradient;
     }
@@ -475,6 +613,13 @@
       @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
+      background: linear-gradient(90deg, #07070d 0%, #07070d 40%,#178FFD 60%, #39C0CC 90%);
+      background-size: 500% 100%;
+      background-position: 0% 0%;
+      transition: 250ms ease-in-out;
+      &:hover {
+        background-position: 87% 0%;
+      }
       &:after {
         @include oceanBlueGradient;
         transition: inherit;
@@ -514,7 +659,7 @@
     box-shadow: none;
     padding: 7.5px 10.5px;
     border: 1px solid $lightGrey;
-    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #B0F0FF 40%, #ADD0FE 60%, #178FFD 80%, #39C0CC 100%);
     background-size: 500% 100%;
     background-position: 0% 0%;
     transition: 250ms ease-in-out;
@@ -615,10 +760,20 @@
 }
 
 #results-per-page-selector {
-  @include lightBluePurpleGradient;
+  // @include lightBluePurpleGradient;
   @include whiteBorderBack;
   border-radius: $borderRadius_Medium;
   color: $blackSapphire;
+  transition: all 0.3s ease;
+  position: relative;
+  background: linear-gradient(90deg, $paleCornflower 0%, $blizzard 33%, $blizzard 66%, $paleCornflower 100%);
+  background-size: 500% 100%;
+  background-position: 0% 0%;
+  transition: 0.35s ease-in-out;
+  &:hover {
+    border: 1px solid $white;
+    background-position: 92% 0%;
+  }
   .dropdown {
     &.dropdown-button {
       align-items: center;
@@ -816,6 +971,31 @@
   .ctas {
     position: relative;
     z-index: 3;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      transition: 250ms ease-out;
+    }
+
+    &:before {
+      @include whiteBorderBack;
+      background: $cadmiumBlue;
+      width: calc(100% - 38px);
+      height: calc(100% - 2px);
+      top: -10px;
+      left: 1px;
+      z-index: -1;
+    }
+    &:after {
+      border: 2px solid $caribbeanBlue;
+      width: calc(100% - 42px);
+      height: calc(100% - 4px);
+      top: -13px;
+      left: -2px;
+      z-index: -2;
+    }
 
     .primary-cta {
       @include whiteBorderBack;
@@ -825,47 +1005,11 @@
       font-weight: $fontWeight_Regular;
       box-shadow: none;
       position: relative;
+      top: -5px;
+      left: -7px;
       padding: 0;
       margin-left: 12px;
-      top: 0;
-      left: 0;
-      transition: 250ms ease-out;
-
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        transition: inherit;
-      }
-
-      &:before {
-        @include whiteBorderBack;
-        background: $cadmiumBlue;
-        top: -7px;
-        left: -6px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-      }
-      &:after {
-        border: 2px solid $caribbeanBlue;
-        top: -13px;
-        left: -11px;
-        z-index: -2;
-        width: calc(100% - 3px);
-        height: calc(100% - 3px);
-      }
-
-      &:hover {
-        top: -13px;
-        left: -11px;
-        &:before,
-        &:after {
-          top: 0px;
-          left: 0px;
-        }
-      }
+      transition: 250ms ease;
 
       span {
         position: relative;
@@ -873,7 +1017,7 @@
 
         &[data-tooltip] {
           &::after {
-            top: -1.5rem;
+            top: -1.75rem;
             left: 4rem;
           }
         }
@@ -882,6 +1026,16 @@
 
     .secondary-cta {
       display: none;
+    }
+    &:hover {
+      &:before {
+        top: -12px;
+        left: -1px;
+      }
+      .primary-cta {
+        top: -12px;
+        left: -12px;
+      }
     }
   }
 }
@@ -981,9 +1135,10 @@
     }
 
     .cta {
-      @include oceanBlueGradient;
+      // @include oceanBlueGradient;
       @include whiteBorderBack;
       @include fontSize_Small;
+      // background: linear-gradient($azure, $ocean, $ocean, $azure);
       font-family: $font_Secondary;
       font-weight: $fontWeight_Regular;
       color: $white;
@@ -991,6 +1146,14 @@
       bottom: -20px;
       padding: 6px 29px;
       margin: 0;
+      background: linear-gradient(75deg, $azure 0%, $ocean 33%, $ocean 66%, $azure 100%);
+      background-size: 500% 100%;
+      background-position: 0% 0%;
+      transition: 0.35s ease-in-out;
+      &:hover {
+        border: 1px solid $white;
+        background-position: 95% 0%;
+      }
     }
 
     &.big-number {
@@ -1037,11 +1200,11 @@
   .chiclet {
     @include lightBlueGradient;
     @include whiteBorderBack;
-    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%,  #B0F0FF 40%, #ADD0FE 60%, #178FFD 80%, #39C0CC 100%);
     background-size: 500% 100%;
-    background-position: 50% 0%;
+    background-position: 0% 0%;
     &:hover {
-      background-position: 98% 0%;
+      background-position: 50% 0%;
     }
     &.active-button {
       @include oceanBlueGradient;
@@ -1061,5 +1224,28 @@
     color: $tooltipBlue !important;
     box-shadow: 0px 3px 6px 0px rgba($tooltipShadow, 0.31);
     padding: 0.25rem 0.5rem;
+  }
+}
+
+
+// /////////////////////////////////////////////////////////////// Showcase View
+// -----------------------------------------------------------------------------
+
+.page-showcase {
+  .logo-wrapper {
+    text#Filecoin {
+      fill: $darkGrey;
+    }
+  }
+  #taxonomy-grid {
+    .taxonomy {
+      @include shadow1;
+      border: 1px solid $lightGrey;
+    }
+    .taxonomy-label {
+      @include shadow1;
+      border: 1px solid $lightGrey;
+      color: $darkGrey;
+    }
   }
 }

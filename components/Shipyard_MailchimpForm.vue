@@ -56,7 +56,7 @@ export default {
     action: {
       type: String,
       required: false,
-      default: 'https://example.com'
+      default: 'https://protocol.us16.list-manage.com/subscribe/post-json?u=a1dfb670c4f1fb042e82a1f1d&id=ff0bee3cae'
     },
     buttonText: {
       type: String,
