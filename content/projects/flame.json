@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-flame.png", "full": "Flame 1.png" },
+  "logo": { "icon": "icon-flame.png", "full": "Flame1.png" },
   "name": "Flame",
   "org": ["Keystore Group"],
   "description": {

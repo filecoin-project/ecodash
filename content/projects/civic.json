@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2019 }],
-  "logo": { "icon": "Civic.png", "full": "image 76.png" },
+  "logo": { "icon": "Civic.png", "full": "image76.png" },
   "name": "Civic",
   "org": ["Civic Technologies, Inc."],
   "description": {

@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-filehive.png", "full": "filehive 1.png" },
+  "logo": { "icon": "icon-filehive.png", "full": "filehive1.png" },
   "name": "Filehive",
   "org": ["OB1"],
   "description": {
