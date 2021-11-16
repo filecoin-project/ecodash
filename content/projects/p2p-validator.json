@@ -12,7 +12,7 @@
     "short": " P2P Validator provides access to secure, non-custodial staking and network validation.",
     "long": ""
   },
-  "primaryCta": { "url": "//p2p.org", "text": "Project Website" },
+  "primaryCta": { "url": "//p2p.org", "text": "Website" },
   "links": [
     {
       "label": "Website",

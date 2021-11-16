@@ -6,7 +6,7 @@
   "name": "Outlier Ventures",
   "org": ["Outlier Ventures"],
   "description": { "short": "//outlierventures.io", "long": "" },
-  "primaryCta": { "url": "//outlierventures.io", "text": "Project Website" },
+  "primaryCta": { "url": "//outlierventures.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

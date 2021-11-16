@@ -9,7 +9,7 @@
     "short": "A Filecoin data services platform",
     "long": "Filfox is a Filecoin blockchain explorer and data service platform, providing one-stop data services based on Filecoin including mining rankings, blockchain data queries, and visualization charts."
   },
-  "primaryCta": { "url": "//filfox.info/en", "text": "Project Website" },
+  "primaryCta": { "url": "//filfox.info/en", "text": "Website" },
   "links": [
     {
       "label": "Website",

@@ -6,7 +6,7 @@
   "name": "Zora",
   "org": ["Zora Labs. Decentralized Auction House"],
   "description": { "short": "NFT Marketplace", "long": "" },
-  "primaryCta": { "url": "//zora.co", "text": "Project Website" },
+  "primaryCta": { "url": "//zora.co", "text": "Website" },
   "links": [
     {
       "label": "Website",

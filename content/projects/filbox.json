@@ -9,7 +9,7 @@
     "short": "A decentralized file storage solution",
     "long": "An open source file storage encryption application that is designed to enable users to easily encrypt their files and upload to the network."
   },
-  "primaryCta": { "url": "//filbox.biz/#", "text": "Project Website" },
+  "primaryCta": { "url": "//filbox.biz/#", "text": "Website" },
   "links": [
     {
       "label": "Website",

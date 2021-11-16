@@ -9,7 +9,7 @@
     "short": "Community Powered Content Delivery Network.",
     "long": "Myel helps developers deploy and scale new experiences to the entire world without relying on expensive server-side infrastructure. It allows developers to publish and retrieve content from a network of cache providers."
   },
-  "primaryCta": { "url": "//myel.network", "text": "Project Website" },
+  "primaryCta": { "url": "//myel.network", "text": "Website" },
   "links": [
     {
       "label": "Website",

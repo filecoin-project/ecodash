@@ -9,7 +9,7 @@
     "short": "A Filecoin-backed marketplace for datasets.",
     "long": ""
   },
-  "primaryCta": { "url": "//filehive.app", "text": "Project Website" },
+  "primaryCta": { "url": "//filehive.app", "text": "Website" },
   "links": [
     {
       "label": "Website",

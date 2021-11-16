@@ -9,7 +9,7 @@
     "short": "NFTwitch allows Twitch streamers to mint NFTs as they grow their follower count, verified via Chainlink calls to the Twitch API. These exclusive collectibles can be given away or sold to fans.",
     "long": ""
   },
-  "primaryCta": { "url": "//nftwitch.link", "text": "Project Website" },
+  "primaryCta": { "url": "//nftwitch.link", "text": "Website" },
   "links": [
     {
       "label": "Website",

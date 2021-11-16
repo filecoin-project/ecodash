@@ -6,7 +6,7 @@
   "name": "Jigstack",
   "org": ["Jigstack"],
   "description": { "short": "Trusted DeFi protocols", "long": "" },
-  "primaryCta": { "url": "//jigstack.org", "text": "Project Website" },
+  "primaryCta": { "url": "//jigstack.org", "text": "Website" },
   "links": [
     {
       "label": "Website",
