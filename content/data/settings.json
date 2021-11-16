@@ -9,10 +9,10 @@
     "firstTag": "",
     "lastTag": "none",
     "externalLinksTargetBlank": true,
-    "tagMatchType": "or",
+    "tagMatchType": "and",
     "targetCategoryMatch": {
       "categorySlug": "project-category",
-      "tagMatchType": "and"
+      "tagMatchType": "or"
     },
     "excludeFilterAllTag": true,
     "includeGranularFilterClearButton": true
