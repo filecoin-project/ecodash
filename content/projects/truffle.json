@@ -9,7 +9,7 @@
     "short": "Truffle is a collection of tools for working with blockchains. This ranges from tools to create smart contracts, to tools for working directly with chains.",
     "long": ""
   },
-  "primaryCta": { "url": "//trufflesuite.com", "text": "Project Website" },
+  "primaryCta": { "url": "//trufflesuite.com", "text": "Website" },
   "links": [
     {
       "label": "Website",

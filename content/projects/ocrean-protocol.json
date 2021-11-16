@@ -9,7 +9,7 @@
     "short": "Tools for the Web3 Data Economy",
     "long": "Data owners and consumers use Ocean Market app to publish, discover, and consume data in a secure, privacy-preserving fashion. OCEAN holders stake liquidity to data pools.\n\nDevelopers use Ocean libraries to build their own data wallets, data marketplaces, and more."
   },
-  "primaryCta": { "url": "//oceanprotocol.com", "text": "Project Website" },
+  "primaryCta": { "url": "//oceanprotocol.com", "text": "Website" },
   "links": [
     {
       "label": "Website",

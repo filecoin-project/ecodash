@@ -9,7 +9,7 @@
     "short": "Pinata is a pinning service and gateway for IPFS.",
     "long": ""
   },
-  "primaryCta": { "url": "//pinata.cloud", "text": "Project Website" },
+  "primaryCta": { "url": "//pinata.cloud", "text": "Website" },
   "links": [
     {
       "label": "Website",

@@ -12,7 +12,7 @@
     "short": "NFT middleware to support saving NFTs into Filecoin & IPFS.",
     "long": "Enables NFT developers easily connect to IPFS and Filecoin network."
   },
-  "primaryCta": { "url": "", "text": "Project Website" },
+  "primaryCta": { "url": "", "text": "Website" },
   "links": [
     { "label": "Website", "links": [{ "url": "", "text": "" }] },
     {

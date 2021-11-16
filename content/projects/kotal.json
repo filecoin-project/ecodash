@@ -9,7 +9,7 @@
     "short": "Kotal builds open-source tools and frameworks that makes it easy to deploy self-managing self-healing blockchain infrastructure.",
     "long": ""
   },
-  "primaryCta": { "url": "//kotal.co", "text": "Project Website" },
+  "primaryCta": { "url": "//kotal.co", "text": "Website" },
   "links": [
     {
       "label": "Website",

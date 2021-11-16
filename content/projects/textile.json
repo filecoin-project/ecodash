@@ -9,7 +9,7 @@
     "short": "Textile is a set of open source tools that provide a decentralized database, IPFS-based storage, content hosting, and more over Libp2p, IPFS, and Filecoin.",
     "long": ""
   },
-  "primaryCta": { "url": "//textile.io", "text": "Project Website" },
+  "primaryCta": { "url": "//textile.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

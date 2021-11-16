@@ -9,7 +9,7 @@
     "short": "ENS is a decentralised name service for creating domain names on the Ethereum blockchain.",
     "long": ""
   },
-  "primaryCta": { "url": "//ens.domains", "text": "Project Website" },
+  "primaryCta": { "url": "//ens.domains", "text": "Website" },
   "links": [
     {
       "label": "Website",

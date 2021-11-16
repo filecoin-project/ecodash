@@ -12,7 +12,7 @@
     "short": "Protocol Labs is building the next generation of the internet, team behind several protocols like libp2p, drand, ipfs, filecoin. ",
     "long": ""
   },
-  "primaryCta": { "url": "//protocol.ai", "text": "Project Website" },
+  "primaryCta": { "url": "//protocol.ai", "text": "Website" },
   "links": [
     {
       "label": "Website",
