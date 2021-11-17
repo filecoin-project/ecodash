@@ -9,7 +9,7 @@
     "firstTag": "",
     "lastTag": "none",
     "externalLinksTargetBlank": true,
-    "tagMatchType": "and",
+    "tagMatchType": "or",
     "targetCategoryMatch": [
       { "categorySlug": "project-category", "tagMatchType": "and" },
       { "categorySlug": "storage-type", "tagMatchType": "or" },
