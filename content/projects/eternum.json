@@ -9,7 +9,7 @@
     "short": "Eternum is a simple and easy-to-use IPFS pinning service. It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your applications.",
     "long": ""
   },
-  "primaryCta": { "url": "//eternum.io", "text": "Project Website" },
+  "primaryCta": { "url": "//eternum.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

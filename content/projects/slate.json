@@ -9,7 +9,7 @@
     "short": "Decentralized file sharing network",
     "long": "An open source storage system for your data that makes it easy to collect, organize, and share them anywhere on the web."
   },
-  "primaryCta": { "url": "//slate.host", "text": "Project Website" },
+  "primaryCta": { "url": "//slate.host", "text": "Website" },
   "links": [
     {
       "label": "Website",

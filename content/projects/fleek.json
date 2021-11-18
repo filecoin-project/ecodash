@@ -9,7 +9,7 @@
     "short": "Developer platform for building sites and apps on the dweb",
     "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more."
   },
-  "primaryCta": { "url": "//fleek.co", "text": "Project Website" },
+  "primaryCta": { "url": "//fleek.co", "text": "Website" },
   "links": [
     {
       "label": "Website",

@@ -9,7 +9,7 @@
     "short": "A Filecoin network browser",
     "long": "Filscout provides users with all kinds of data, info and visual chart including information of miners, blocks, messages and common tools. "
   },
-  "primaryCta": { "url": "//filscout.com/en", "text": "Project Website" },
+  "primaryCta": { "url": "//filscout.com/en", "text": "Website" },
   "links": [
     {
       "label": "Website",

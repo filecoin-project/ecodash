@@ -12,7 +12,7 @@
     "short": "Universal Crypto Wallet",
     "long": "MathWallet is a powerful universal crypto wallet which support multi-chain tokens and dApps on both mobile / browser extension / web / hardware wallet."
   },
-  "primaryCta": { "url": "//mathwallet.org/en-us", "text": "Project Website" },
+  "primaryCta": { "url": "//mathwallet.org/en-us", "text": "Website" },
   "links": [
     {
       "label": "Website",

@@ -9,7 +9,7 @@
     "short": "A block and message explorer",
     "long": "A blockchain browser for Filecoin, for viewing blockchain data, including querying addresses, messages, block heights, miners, and more. "
   },
-  "primaryCta": { "url": "//filscan.io", "text": "Project Website" },
+  "primaryCta": { "url": "//filscan.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

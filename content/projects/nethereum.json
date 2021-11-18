@@ -9,7 +9,7 @@
     "short": "Nethereum makes it easy for .NET applications to use Ethereum, and for Ethereum applications to leverage .NET.",
     "long": ""
   },
-  "primaryCta": { "url": "//nethereum.com", "text": "Project Website" },
+  "primaryCta": { "url": "//nethereum.com", "text": "Website" },
   "links": [
     {
       "label": "Website",

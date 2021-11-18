@@ -12,7 +12,7 @@
     "short": "Space is an open-source, user-controlled, encrypted file storage and sharing platform.",
     "long": "Space is an open-source, encrypted, user-controlled file storage and sharing platform built on open-web protocols including IPFS, Textile, Filecoin, GunDB, and more."
   },
-  "primaryCta": { "url": "//space.storage", "text": "Project Website" },
+  "primaryCta": { "url": "//space.storage", "text": "Website" },
   "links": [
     {
       "label": "Website",

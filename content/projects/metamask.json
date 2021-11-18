@@ -9,7 +9,7 @@
     "short": "Web3 wallet and gateway to the decentralized web",
     "long": "A web3 wallet designed to facilitate access to blockchain-based apps."
   },
-  "primaryCta": { "url": "//metamask.io", "text": "Project Website" },
+  "primaryCta": { "url": "//metamask.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

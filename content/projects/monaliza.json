@@ -9,7 +9,7 @@
     "short": "Mint NFTs directly from your Instagram content.",
     "long": "Connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their instagram, as well as Opensea, and persist this to IPFS. This would hopefully get the average person to be able to adopt blockchain without having to leave the comfort of their favourite platform and make some monetary value on instagram posts/pictures/videos."
   },
-  "primaryCta": { "url": "//monaliza.app", "text": "Project Website" },
+  "primaryCta": { "url": "//monaliza.app", "text": "Website" },
   "links": [
     {
       "label": "Website",
