@@ -9,7 +9,7 @@
     "short": "Decentralized Video hosting",
     "long": "File.video is an open source, decentralized and censorship-resistant video hosting solution powered by the Livepeer and Filecoin networks. It's the easiest way to upload and share video. It’s free to use and there’s no signup required."
   },
-  "primaryCta": { "url": "//file.video", "text": "Project Website" },
+  "primaryCta": { "url": "//file.video", "text": "Website" },
   "links": [
     {
       "label": "Website",

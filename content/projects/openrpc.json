@@ -9,7 +9,7 @@
     "short": "The OpenRPC Specification defines a standard, programming language-agnostic interface description for JSON-RPC 2.0 APIs.",
     "long": ""
   },
-  "primaryCta": { "url": "//open-rpc.org", "text": "Project Website" },
+  "primaryCta": { "url": "//open-rpc.org", "text": "Website" },
   "links": [
     {
       "label": "Website",

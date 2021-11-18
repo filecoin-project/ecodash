@@ -12,7 +12,7 @@
     "short": "23$M Filecoin Ecosystem Fund closed in March 2021, with the mandate to invest in all projects related to IPFS and Filecoin ecosystem except FIL mining service providers",
     "long": ""
   },
-  "primaryCta": { "url": "", "text": "Project Website" },
+  "primaryCta": { "url": "", "text": "Website" },
   "links": [
     { "label": "Website", "links": [{ "url": "", "text": "" }] },
     { "label": "Repo", "links": [{ "url": "", "text": "" }] },

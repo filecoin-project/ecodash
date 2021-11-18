@@ -9,7 +9,7 @@
     "short": "Cloudflare offers a layer of protection for your websites and services, helping speed up access, and stop DDoS attacks in their tracks.",
     "long": ""
   },
-  "primaryCta": { "url": "//cloudflare.com", "text": "Project Website" },
+  "primaryCta": { "url": "//cloudflare.com", "text": "Website" },
   "links": [
     {
       "label": "Website",

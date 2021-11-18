@@ -12,7 +12,7 @@
     "short": "Techstars provides accelerator programs for Filecoin startups.",
     "long": ""
   },
-  "primaryCta": { "url": "//techstars.com", "text": "Project Website" },
+  "primaryCta": { "url": "//techstars.com", "text": "Website" },
   "links": [
     {
       "label": "Website",

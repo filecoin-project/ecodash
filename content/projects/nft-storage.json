@@ -9,7 +9,7 @@
     "short": "Decentralized storage for NFTs on IPFS and Filecoin, via the JS client library or HTTP API.",
     "long": "Store off-chain NFT data, decentralized on IPFS and Filecoin, and receive an IPFS hash of your content simply by uploading it."
   },
-  "primaryCta": { "url": "//nft.storage", "text": "Project Website" },
+  "primaryCta": { "url": "//nft.storage", "text": "Website" },
   "links": [
     {
       "label": "Website",

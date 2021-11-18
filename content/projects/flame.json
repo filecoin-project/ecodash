@@ -9,7 +9,7 @@
     "short": "A decentralized NFT minting solution.",
     "long": "Flame is a decentralized NFT meeting platform that allows creators to convert and mint assets like podcasts, writing, and art into NFTs with 1 click. The NFTs are then stored with IPFS and Filecoin, and can be monetized in different ways that give creators more control over their work."
   },
-  "primaryCta": { "url": "", "text": "Project Website" },
+  "primaryCta": { "url": "", "text": "Website" },
   "links": [
     { "label": "Website", "links": [{ "url": "", "text": "" }] },
     { "label": "Repo", "links": [{ "url": "", "text": "" }] },

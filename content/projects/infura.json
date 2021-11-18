@@ -9,7 +9,7 @@
     "short": "Infura offers gateways and nodes for Ethereum and IPFS allowing developers to develop without running their own nodes.",
     "long": ""
   },
-  "primaryCta": { "url": "//infura.io", "text": "Project Website" },
+  "primaryCta": { "url": "//infura.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

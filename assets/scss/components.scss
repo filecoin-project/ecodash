@@ -439,6 +439,11 @@
   }
 
   #sort-by-selector {
+    label,
+    span {
+      @include fontSize_Small;
+      @include leading_Small;
+    }    
     &.closed {
       .dropdown-toggle {
         path {

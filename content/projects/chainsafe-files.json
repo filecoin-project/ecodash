@@ -9,7 +9,7 @@
   "name": "Chainsafe Files",
   "org": ["Chainsafe"],
   "description": { "short": "Encrypted File Storage", "long": "" },
-  "primaryCta": { "url": "//files.chainsafe.io", "text": "Project Website" },
+  "primaryCta": { "url": "//files.chainsafe.io", "text": "Website" },
   "links": [
     {
       "label": "Website",

@@ -9,7 +9,7 @@
     "short": "A cryptographic based infrastructure for Privacy-Preserving application.",
     "long": "NuCypher provides tools for secret management, dynamic access control, and secure computation.  "
   },
-  "primaryCta": { "url": "//nucypher.com", "text": "Project Website" },
+  "primaryCta": { "url": "//nucypher.com", "text": "Website" },
   "links": [
     {
       "label": "Website",
