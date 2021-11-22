@@ -9,7 +9,15 @@
     "firstTag": "",
     "lastTag": "none",
     "externalLinksTargetBlank": true,
-    "tagMatchType": "or",
+    "tagMatchType": "and",
+    "targetCategoryMatch": [
+      { "categorySlug": "project-category", "tagMatchType": "or" },
+      { "categorySlug": "storage-type", "tagMatchType": "or" },
+      { "categorySlug": "software-type", "tagMatchType": "or" },
+      { "categorySlug": "tooling", "tagMatchType": "or" },
+      { "categorySlug": "pipeline", "tagMatchType": "or" },
+      { "categorySlug": "project-status", "tagMatchType": "or" }
+    ],
     "excludeFilterAllTag": true,
     "includeGranularFilterClearButton": true
   },
