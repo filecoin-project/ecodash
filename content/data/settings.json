@@ -14,6 +14,9 @@
       { "categorySlug": "project-category", "tagMatchType": "and" },
       { "categorySlug": "storage-type", "tagMatchType": "or" },
       { "categorySlug": "software-type", "tagMatchType": "or" }
+      { "categorySlug": "tooling", "tagMatchType": "or" }
+      { "categorySlug": "pipeline", "tagMatchType": "or" }
+      { "categorySlug": "project-status", "tagMatchType": "or" }
     ],
     "excludeFilterAllTag": true,
     "includeGranularFilterClearButton": true
