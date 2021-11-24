@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Explore the Ecosystem | Filecoin",
+    "title": "Filecoin Ecosystem",
     "description": "Filecoin interactive ecosystem dashboard."
   },
   "og": {
@@ -134,8 +134,10 @@
     "description": "Take a look at some projects that are similar to this one."
   },
   "footer_content": {
-    "heading": "Stay informed",
-    "subheading": [
+    "cta_heading": "Add your project",
+    "cta_text": "Don't see your project here? <a class=\"focus-visible footer-link\" target=\"_blank\" href=\"//airtable.com/shrurjLTEsPeNW2Db\">Send it our way</a>",
+    "form_heading": "Stay informed",
+    "form_subheading": [
       {
         "content": "Filecoin is an open-source cloud storage marketplace, protocol and cryptocurrency. Sign up for Filecoin updates."
       }
