@@ -36,6 +36,7 @@
     "hideSort": false,
     "hideNumResults": false,
     "setSort": "a_z",
+    "truncateCharacters": [10, 12],
     "setPageSize": 20,
     "disableSingulars": 2,
     "truncateLinks": true,
