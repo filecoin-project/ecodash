@@ -63,8 +63,6 @@ export default {
   modules: [
     // Doc: https://github.com/ipfs-shipyard/nuxt-module-ecosystem-directory
     '@agency-undone/nuxt-module-ecosystem-directory',
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/style-resources-module/
     '@nuxtjs/style-resources',
     // Doc: https://github.com/agency-undone/nuxt-module-ipfs
@@ -87,9 +85,6 @@ export default {
       include: true
     }
   },
-  // //////////////////////////////////////////////////////////// [Module] Axios
-  // -------------------------------------- See https://axios.nuxtjs.org/options
-  axios: {},
   // ////////////////////////////////////////////////////////// [Module] Countly
   // ---------------------------------------------------------------------------
   // Doc: https://support.count.ly/hc/en-us/articles/360037441932-Web-analytics-JavaScript
