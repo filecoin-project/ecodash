@@ -222,33 +222,6 @@
           "slug": "none"
         }
       ]
-    },
-    {
-      "label": "Project Status",
-      "sublabel": "Filter by where the entityTerm is in its lifecycle",
-      "slug": "project-status",
-      "tags": [
-        {
-          "label": "Hack",
-          "slug": "hack"
-        },
-        {
-          "label": "Alpha",
-          "slug": "alpha"
-        },
-        {
-          "label": "Beta",
-          "slug": "beta"
-        },
-        {
-          "label": "Early",
-          "slug": "early"
-        },
-        {
-          "label": "Production",
-          "slug": "production"
-        }   
-      ]
     }
   ],
   "sort": {
