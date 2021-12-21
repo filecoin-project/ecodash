@@ -7,7 +7,7 @@
     "full": "filecoindiscover-logo.png"
   },
   "name": "Filecoin Discover",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "The home for humanity's most important datasets",
     "long": "Filecoin Discover helps support the storage of open source datasets on the Filecoin Network. The Discover store is a catalog of PB of public datasets."

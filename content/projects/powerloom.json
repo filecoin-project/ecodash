@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "powerloom-square.png", "full": "powerloom-logo.png" },
   "name": "PowerLoom",
-  "org": [null],
+  "org": "",
   "description": {
     "short": " Snapshots for on-chain and off-chain data.",
     "long": "PowerLoom protocol aggregates on-chain and off-chain data to generate snapshots with cryptographic proofs in a decentralized manner. "

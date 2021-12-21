@@ -7,7 +7,7 @@
     "full": "PL-logo-symbol-black.png"
   },
   "name": "Protocol Labs",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Research, design, & development for next-generation web protocols.",
     "long": "Protocol Labs is an open-source R&D lab. We build protocols, tools, and services to radically improve the internet. Our projects include IPFS, libp2p, DRAND, and Filecoin."

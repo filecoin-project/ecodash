@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "nucypher-square.png", "full": "nucypher-logo.png" },
   "name": "NuCypher",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Cryptographic based infrastructure for Privacy-Preserving application.",
     "long": "NuCypher provides tools for secret management, dynamic access control, and secure computation.  "

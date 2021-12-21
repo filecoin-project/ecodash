@@ -7,7 +7,7 @@
     "full": "p2p-validator-logo-vector.svg"
   },
   "name": "P2P Validator",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Secure, non-custodial staking & network validation.",
     "long": ""

@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "clam.png", "full": "clam.png" },
   "name": "Clam Island",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Gamified NFT Marketplace.",
     "long": "Clam Island gamifiies crypto investments by providing an integrated, pleasurable gaming UI around Yield Farming and NFTs."

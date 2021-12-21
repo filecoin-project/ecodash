@@ -7,7 +7,7 @@
     "full": "InterPlanetary_File_System_-_Wikipedia"
   },
   "name": "IPFS",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Peer-to-peer hypermedia protocol",
     "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."

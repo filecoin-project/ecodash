@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "icon-chestr.png", "full": "chestr-logo.png" },
   "name": "Chestr",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Open collaboration and tooling for the next Web3 cultural classics.",
     "long": "With Chestr, you can join forces with like-minded creators to create and promote together. Chester's platform tools include opportunity feeds, revenue share pools via smart contracts, social rewards to earn Street Cred and $COLLAB for participation, and remixing & attribution. Backed by Consensys and Protocol Labs."

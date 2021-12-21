@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "fleek.png", "full": "FleekForLight.png" },
   "name": "Fleek",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "A platform for building sites and apps on the Dweb.",
     "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on Web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more."

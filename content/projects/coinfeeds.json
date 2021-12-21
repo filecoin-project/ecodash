@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "YnffrUSQ_400x400.png", "full": "YnffrUSQ_400x400.png" },
   "name": "CoinFeeds",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "API for real-time news & social on any cryptocurrency.",
     "long": "Coinfeed provides the best data by applying the same machine learning technologies we used when leading the data teams at Uber and Robinhood. Our long term vision is to become the Bloomberg for crypto."

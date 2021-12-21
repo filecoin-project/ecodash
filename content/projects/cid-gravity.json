@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "CID.png", "full": "CID.png" },
   "name": "CID Gravity",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Pricing & client management for Filecoin miners.",
     "long": "CID Gravity is a pricing and client management solution for Filecoin miners, deployed in less than 30 minutes, where you are able to manage everything through a user friendly interface, and has been built by the miner community as lightweight, secure, and natively integrated with Lotus and the Filecoin miner environment."

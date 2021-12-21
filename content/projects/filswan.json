@@ -7,7 +7,7 @@
     "full": "WeChat3a6f11de72b557117c07c1ca71bc2eee.png"
   },
   "name": "FilSwan",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Distributed data and computing platform.",
     "long": "FilSwan offers a decentralized edge infrastructure with a marketplace and software that moves data storage and analysis onto Web3."

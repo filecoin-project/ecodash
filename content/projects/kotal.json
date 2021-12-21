@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "kotal.jpeg", "full": "kotal.jpeg" },
   "name": "Kotal",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "All-in-one platform to deploy Blockchain infrastructure.",
     "long": "Kotal is developing open-source tools and frameworks that makes it easy to deploy self-managing self-healing Blockchain infrastructure."

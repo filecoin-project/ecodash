@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "-MevsySX_400x400.jpg", "full": "-MevsySX_400x400.jpg" },
   "name": "Chingari",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "Unique and fun short video app.",
     "long": "Chingari is a unique and fun short video app where you can create interesting videos and share them with the world."

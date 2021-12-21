@@ -7,7 +7,7 @@
     "full": "InternetArchive-logo.png"
   },
   "name": "Internet Archive",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "A digital library of the internet.",
     "long": "Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and other cultural artifacts in digital form available to researchers, historians, scholars, the print disabled, and the general public."

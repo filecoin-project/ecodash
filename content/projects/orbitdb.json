@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2019 }],
   "logo": { "icon": "orbitdb-square.png", "full": "orbit-full-logopng.png" },
   "name": "OrbitDB",
-  "org": [null],
+  "org": "",
   "description": {
     "short": "A serverless, distributed, peer-to-peer database.",
     "long": "OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers"
