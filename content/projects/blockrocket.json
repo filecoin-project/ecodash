@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Block Rocket.png", "full": "image 80.png" },
+  "logo": { "icon": "BlockRocket.png", "full": "image80.png" },
   "name": "BlockRocket",
   "org": "",
   "description": {

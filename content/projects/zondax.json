@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Zondax logo.png", "full": "image 142.png" },
+  "logo": { "icon": "Zondaxlogo.png", "full": "image142.png" },
   "name": "Zondax",
   "org": ["Zondax"],
   "description": {

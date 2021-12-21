@@ -3,8 +3,8 @@
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
   "logo": {
-    "icon": "TrustWallet - icon.png",
-    "full": "TrustWallet - logo.png"
+    "icon": "TrustWallet-icon.png",
+    "full": "TrustWallet-logo.png"
   },
   "name": "Trust Wallet",
   "org": ["Trust Wallet"],

@@ -10,7 +10,7 @@
     "long": "Decentralized video platform for creators to host and monetize content their way."
   },
   "primaryCta": {
-    "url": "//voodfy.com/\nhttps://app.voodfy.com/#",
+    "url": "//voodfy.com/",
     "text": "Project Website"
   },
   "links": [
@@ -18,8 +18,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//voodfy.com/\nhttps://app.voodfy.com/#",
-          "text": "voodfy.com/\nhttps://app.voodfy.com/#"
+          "url": "//voodfy.com",
+          "text": "voodfy.com"
         }
       ]
     },

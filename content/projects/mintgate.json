@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "mintgate.jpeg", "full": "mintGate logo.svg" },
+  "logo": { "icon": "mintgate.jpeg", "full": "mintGatelogo.svg" },
   "name": "MintGate",
   "org": ["MintKudos Inc."],
   "description": {

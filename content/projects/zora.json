@@ -2,7 +2,7 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "zora-icon.png", "full": "Zora 2 1.png" },
+  "logo": { "icon": "zora-icon.png", "full": "Zora21.png" },
   "name": "Zora",
   "org": ["Zora Labs. Decentralized Auction House"],
   "description": {
