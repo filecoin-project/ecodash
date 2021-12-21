@@ -3,13 +3,13 @@
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "chainsafe-square.jpeg", "full": "chainsafe-square.jpeg" },
-  "name": "Chainsafe",
+  "name": "ChainSafe",
   "org": [null],
   "description": {
-    "short": "R&D firm for building on blockchains.",
-    "long": ""
+    "short": "R&D firm with multi-chain perspective.",
+    "long": "ChainSafe is multi-disciplinary team offering R&D, consulting, and product development. ChainSafe's Filecoin projects include the Forest (Rust) implementation of Filecoin and Chainsafe Files (web application & API for encrypted storage)."
   },
-  "primaryCta": { "url": "//chainsafe.io", "text": "Website" },
+  "primaryCta": { "url": "//chainsafe.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -36,7 +36,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

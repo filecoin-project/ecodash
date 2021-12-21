@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2019 }],
   "logo": { "icon": "ledger-icon.png", "full": "ledger-logo.png" },
   "name": "Ledger",
-  "org": ["Ledger"],
+  "org": [null],
   "description": {
     "short": "Trusted hardware wallet for blockchain applications.",
     "long": "Ledger hardware wallets combined with Ledger Live app give you access to all our smart services: buy, exchange, trade your crypto, manage your NFTs and more - 100% securely and in one powerful app."
   },
-  "primaryCta": { "url": "//ledger.com", "text": "Website" },
+  "primaryCta": { "url": "//ledger.com", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -44,7 +44,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["none"] }
   ]
 }

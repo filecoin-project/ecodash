@@ -3,16 +3,16 @@
   "featured": false,
   "sortNumbers": [{ "since": 2020 }],
   "logo": {
-    "icon": "Filecoin_Foundation",
-    "full": "Filecoin_Foundation_Announces_50000_FIL_donation_to_the_Internet_..."
+    "icon": "Screen Shot 2021-12-07 at 1_36_39 PM.png",
+    "full": "Screen Shot 2021-12-07 at 1_36_29 PM.png"
   },
   "name": "Filecoin Foundation",
-  "org": ["Filecoin Foundation"],
+  "org": [null],
   "description": {
-    "short": "The Filecoin Foundation (FF) is an independent organization dedicated to developing Filecoin and related technologies. The Foundation does this by coordinating and supporting the creation and improvement of open source software and open protocols for decentralized data storage and retrieval networks.",
-    "long": ""
+    "short": "Independent organization dedicated to developing Filecoin.",
+    "long": "The Filecoin Foundation (FF) is an independent organization dedicated to developing Filecoin and related technologies. The Foundation does this by coordinating and supporting the creation and improvement of open source software and open protocols for decentralized data storage and retrieval networks."
   },
-  "primaryCta": { "url": "//fil.org", "text": "Website" },
+  "primaryCta": { "url": "//fil.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -22,7 +22,7 @@
     { "label": "Docs", "links": [{ "url": "", "text": "" }] }
   ],
   "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
+  "video": "//youtu.be/Sakannch1Dw",
   "stats": [
     { "label": "", "value": "" },
     { "label": "", "value": "" },
@@ -34,7 +34,6 @@
     { "slug": "storage-type", "tags": ["archival", "public-data"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["starling"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

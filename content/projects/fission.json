@@ -6,10 +6,10 @@
   "name": "Fission",
   "org": [null],
   "description": {
-    "short": "TODO (website doesn't really explain what it does :S)",
-    "long": ""
+    "short": "Powering the next generation of app publishing.",
+    "long": "Fission offers developers the opportunity to design a user app using only front end and design skills. The web native app can be installed by 10 or 10,000 users, just like mobile or desktop software. Because the app is running on the user's computer, you can focus on finding new users and adding new features, rather than having to learn DevOps or server scaling.\nPeople using apps create a secure identity in their browsers. Every Fission account is linked to a file system, available in any browser. Much like an open source iCloud, users give permissions to apps, and can access their files from anywhere. Users can browse their file system, both public and private, and mix and match which apps they use, just like they're used to with mobile and desktop apps."
   },
-  "primaryCta": { "url": "//fission.codes", "text": "Website" },
+  "primaryCta": { "url": "//fission.codes", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["web-publishing"] },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

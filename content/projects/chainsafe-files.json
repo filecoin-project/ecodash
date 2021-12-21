@@ -3,13 +3,16 @@
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
   "logo": {
-    "icon": "Group720.png",
+    "icon": "Group 720.png",
     "full": "WeChat4284245da1c66b74775722192f454ef5.png"
   },
-  "name": "Chainsafe Files",
+  "name": "ChainSafe Files",
   "org": ["Chainsafe"],
-  "description": { "short": "Encrypted File Storage", "long": "" },
-  "primaryCta": { "url": "//files.chainsafe.io", "text": "Website" },
+  "description": {
+    "short": "Encrypted file storage on Filecoin, via a clean web interface.",
+    "long": "ChainSafe Files offers encrypted file storage on the Filecoin network, including sharing. ChainSafe Files is built on the principle that your digital home should be like your physical one. Peaceful, private, and all yours."
+  },
+  "primaryCta": { "url": "//files.chainsafe.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +42,6 @@
     { "slug": "storage-type", "tags": ["consumer-storage"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["none"] }
   ]
 }

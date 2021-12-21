@@ -6,10 +6,10 @@
   "name": "Filscout",
   "org": ["IPFS Union"],
   "description": {
-    "short": "A Filecoin network browser",
+    "short": "A Filecoin network browser.",
     "long": "Filscout provides users with all kinds of data, info and visual chart including information of miners, blocks, messages and common tools. "
   },
-  "primaryCta": { "url": "//filscout.com/en", "text": "Website" },
+  "primaryCta": { "url": "//filscout.com/en", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,9 +37,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["network-tools"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

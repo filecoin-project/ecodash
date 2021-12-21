@@ -6,12 +6,12 @@
   "name": "iamToken",
   "org": ["imToken"],
   "description": {
-    "short": "imToken is an easy and secure digital wallet trusted by millions.",
-    "long": "imToken is a decentralized mobile light digital asset management tool. imToken experienced an exponential user growth since it's inauguration on May 2016, currently serving millions of high net-worth users from more than 150 countries."
+    "short": "A decentralized mobile light digital asset management tool.",
+    "long": "imToken is an easy and secure digital wallet trusted by millions. They provide secure and trusted digital asset management services to millions of users in more than 150 countries and regions around the world"
   },
   "primaryCta": {
     "url": "//token.im/\nhttps://docs.token.im",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -42,7 +42,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["api", "mobile-app", "library-sdk"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["series-n"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["series-n"] }
   ]
 }

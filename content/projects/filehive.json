@@ -2,14 +2,14 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-filehive.png", "full": "filehive1.png" },
+  "logo": { "icon": "icon-filehive.png", "full": "filehive 1.png" },
   "name": "Filehive",
   "org": ["OB1"],
   "description": {
     "short": "A Filecoin-backed marketplace for datasets.",
-    "long": ""
+    "long": "Filehive is a dataset marketplace for Filecoin that makes it easy to buy and sell curated datasets."
   },
-  "primaryCta": { "url": "//filehive.app", "text": "Website" },
+  "primaryCta": { "url": "//filehive.app", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,9 +37,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["data-markets"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["textile-powergate"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

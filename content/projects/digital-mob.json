@@ -9,12 +9,12 @@
   "name": "Digital MOB",
   "org": [null],
   "description": {
-    "short": "Digital MOB is a multidisciplinary software development company based in Bucharest, Romania, but distributed worldwide, partnering with international clients that value quality of outcome above all else, to create memorable and meaningful experiences.",
-    "long": ""
+    "short": "Multidisciplinary software development company.",
+    "long": "Digital MOB is a multidisciplinary software development company distributed worldwide, partnering with international clients that value quality of outcome above all else, to create memorable and meaningful experiences."
   },
   "primaryCta": {
     "url": "//github.com/Digital-Mob",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -44,7 +44,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["library-sdk", "web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["grant-sponsorship"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["grant-sponsorship"] }
   ]
 }

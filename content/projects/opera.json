@@ -11,7 +11,7 @@
   },
   "primaryCta": {
     "url": "//play.google.com/store/apps/details?id=com.opera.browser",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -47,7 +47,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["hosted-service"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["none"] }
   ]
 }

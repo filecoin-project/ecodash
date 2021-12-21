@@ -9,7 +9,7 @@
     "short": "A platform and protocol for turning games into NFTs",
     "long": "OPGames aims to be the center of Web 3 gaming, with a vibrant and growing community of developers, players and game owners. "
   },
-  "primaryCta": { "url": "//opgames.org", "text": "Website" },
+  "primaryCta": { "url": "//opgames.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,9 +37,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["games", "nfts"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -7,12 +7,12 @@
     "full": "p2p-validator-logo-vector.svg"
   },
   "name": "P2P Validator",
-  "org": ["P2P Validator"],
+  "org": [null],
   "description": {
-    "short": " P2P Validator provides access to secure, non-custodial staking and network validation.",
+    "short": "Secure, non-custodial staking & network validation.",
     "long": ""
   },
-  "primaryCta": { "url": "//p2p.org", "text": "Website" },
+  "primaryCta": { "url": "//p2p.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,7 +37,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -6,10 +6,10 @@
   "name": "Truffle",
   "org": ["ConsenSys Software Inc."],
   "description": {
-    "short": "Truffle is a collection of tools for working with blockchains. This ranges from tools to create smart contracts, to tools for working directly with chains.",
-    "long": ""
+    "short": "Truffle is a collection of tools for working with blockchains. ",
+    "long": "Truffle is a collection of tools for working with blockchains. This ranges from tools to create smart contracts, to tools for working directly with chains."
   },
-  "primaryCta": { "url": "//trufflesuite.com", "text": "Website" },
+  "primaryCta": { "url": "//trufflesuite.com", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -44,7 +44,6 @@
     { "slug": "storage-type", "tags": ["public-data"] },
     { "slug": "software-type", "tags": ["api", "library-sdk", "backend-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -6,10 +6,10 @@
   "name": "OrbitDB",
   "org": [null],
   "description": {
-    "short": "OrbitDB is a serverless, distributed, peer-to-peer database. OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers.",
-    "long": ""
+    "short": "A serverless, distributed, peer-to-peer database.",
+    "long": "OrbitDB uses IPFS as its data storage and IPFS Pubsub to automatically sync databases with peers"
   },
-  "primaryCta": { "url": "//orbitdb.org", "text": "Website" },
+  "primaryCta": { "url": "//orbitdb.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -50,7 +50,6 @@
     },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["ipfs-http-client"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

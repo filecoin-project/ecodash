@@ -1,0 +1,47 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "CID.png", "full": "CID.png" },
+  "name": "CID Gravity",
+  "org": [null],
+  "description": {
+    "short": "Pricing & client management for Filecoin miners.",
+    "long": "CID Gravity is a pricing and client management solution for Filecoin miners, deployed in less than 30 minutes, where you are able to manage everything through a user friendly interface, and has been built by the miner community as lightweight, secure, and natively integrated with Lotus and the Filecoin miner environment."
+  },
+  "primaryCta": { "url": "//cidgravity.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//cidgravity.com", "text": "cidgravity.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/CIDgravity/CIDgravity-X",
+          "text": "github.com/CIDgravity/CIDgravity-X"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": ["storage-apps-clients", "collaborations"]
+    },
+    { "slug": "storage-type", "tags": ["data-markets", "consumer-storage"] },
+    { "slug": "software-type", "tags": ["infrastructure"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["accelerator"] }
+  ]
+}

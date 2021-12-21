@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "Coinomi-logo.png", "full": "Coinomi-logo-typography.png" },
   "name": "Coinomi",
-  "org": ["Coinomi"],
+  "org": [null],
   "description": {
     "short": "The blockchain wallet trusted by millions.",
     "long": "Coinomi is a security-first, multi-chain wallet for both mobile & desktop that provides native support and true ownership for more than 125 blockchains and thousands of tokens."
   },
-  "primaryCta": { "url": "//coinomi.com/en", "text": "Website" },
+  "primaryCta": { "url": "//coinomi.com/en", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -34,7 +34,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["mobile-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

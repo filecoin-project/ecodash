@@ -2,14 +2,14 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-myel.png", "full": "Group684.png" },
+  "logo": { "icon": "icon-myel.png", "full": "Group 684.png" },
   "name": "Myel",
-  "org": ["Myel"],
+  "org": [null],
   "description": {
     "short": "Community Powered Content Delivery Network.",
     "long": "Myel helps developers deploy and scale new experiences to the entire world without relying on expensive server-side infrastructure. It allows developers to publish and retrieve content from a network of cache providers."
   },
-  "primaryCta": { "url": "//myel.network", "text": "Website" },
+  "primaryCta": { "url": "//myel.network", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -32,9 +32,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["developer-tools"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["network"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

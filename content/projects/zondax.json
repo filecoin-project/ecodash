@@ -2,14 +2,14 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Zondaxlogo.png", "full": "image142.png" },
+  "logo": { "icon": "Zondax logo.png", "full": "image 142.png" },
   "name": "Zondax",
   "org": ["Zondax"],
   "description": {
-    "short": "Engineering partner for Blockchain and Deep Tech solutions.",
+    "short": "An engineering partner for blockchain and deep tech solutions.",
     "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets. \n\n"
   },
-  "primaryCta": { "url": "//zondax.ch", "text": "Website" },
+  "primaryCta": { "url": "//zondax.ch", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -34,7 +34,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["zondax-signing-tools"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -1,34 +1,19 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2020
-    }
-  ],
-  "logo": {
-    "icon": "BlockRocket.png",
-    "full": "image80.png"
-  },
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "Block Rocket.png", "full": "image 80.png" },
   "name": "BlockRocket",
-  "org": ["BlockRocket limited"],
+  "org": [null],
   "description": {
-    "short": "Blockchain Engineering & Consultancy",
-    "long": "BlockRocket builds products and help companies understand blockchain technology, smart contracts and cryptocurrencies"
+    "short": "Blockchain engineering & consultancy for smart contracts + dApps.",
+    "long": "BlockRocket builds products and help companies understand blockchain technology, smart contracts and cryptocurrencies. Products include the KnownOrigin NFT marketplace and CryptoKaiju trackable physical toys."
   },
-  "primaryCta": {
-    "url": "//blockrocket.tech",
-    "text": "Website"
-  },
+  "primaryCta": { "url": "//blockrocket.tech", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [
-        {
-          "url": "//blockrocket.tech",
-          "text": "blockrocket.tech"
-        }
-      ]
+      "links": [{ "url": "//blockrocket.tech", "text": "blockrocket.tech" }]
     },
     {
       "label": "Repo",
@@ -39,67 +24,21 @@
         }
       ]
     },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
-    }
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
   ],
-  "keyInfo": [
-    {
-      "label": "Using Filecoin since",
-      "value": 2020
-    }
-  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
   "video": "",
   "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
   ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": ["developer-tools"]
-    },
-    {
-      "slug": "storage-type",
-      "tags": ["nfts"]
-    },
-    {
-      "slug": "software-type",
-      "tags": ["none"]
-    },
-    {
-      "slug": "tooling",
-      "tags": [""]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [""]
-    },
-    {
-      "slug": "project-status",
-      "tags": [""]
-    }
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

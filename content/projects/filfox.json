@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "filfox-square.png", "full": "filfox-logo.png" },
   "name": "Filfox",
-  "org": ["Filfox"],
+  "org": [null],
   "description": {
-    "short": "A Filecoin data services platform",
+    "short": "A Filecoin data services platform.",
     "long": "Filfox is a Filecoin blockchain explorer and data service platform, providing one-stop data services based on Filecoin including mining rankings, blockchain data queries, and visualization charts."
   },
-  "primaryCta": { "url": "//filfox.info/en", "text": "Website" },
+  "primaryCta": { "url": "//filfox.info/en", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -32,9 +32,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["network-tools"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

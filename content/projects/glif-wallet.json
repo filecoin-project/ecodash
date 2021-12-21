@@ -6,10 +6,10 @@
   "name": "Glif Wallet",
   "org": ["Glif"],
   "description": {
-    "short": "A lightweight web interface to send and receive Filecoin via your Ledger device.",
-    "long": ""
+    "short": "Web wallet for FIL",
+    "long": "Glif offers a lightweight web interface to send and receive Filecoin via your Ledger device."
   },
-  "primaryCta": { "url": "//wallet.glif.io", "text": "Website" },
+  "primaryCta": { "url": "//wallet.glif.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["zondax-signing-tools"] },
-    { "slug": "pipeline", "tags": ["series-n"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["series-n"] }
   ]
 }

@@ -6,10 +6,10 @@
   "name": "Filecoin FIL asset swap",
   "org": ["DARMA Capital"],
   "description": {
-    "short": "Filecoin FIL asset swap. Our goal is to enable miners - both large and small - to gain access to the FIL token and avoid some of the very high lending rates present in the borrowing market.",
+    "short": "Enabling miners to access to the FIL token & avoid high lending rates.",
     "long": ""
   },
-  "primaryCta": { "url": "//darma.capital", "text": "Website" },
+  "primaryCta": { "url": "//darma.capital", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -31,7 +31,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

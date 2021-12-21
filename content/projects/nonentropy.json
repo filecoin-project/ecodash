@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "icon-nonentropy.png", "full": "Nonentropy-logo.png" },
   "name": "NonEntropy",
-  "org": ["NonEntropy Japan"],
+  "org": [null],
   "description": {
     "short": "A Web 3 storage infrastructure platform",
     "long": ""
   },
-  "primaryCta": { "url": "//nonentropy.jp", "text": "Website" },
+  "primaryCta": { "url": "//nonentropy.jp", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,9 +37,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["infrastructure"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

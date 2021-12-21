@@ -9,10 +9,10 @@
   "name": "IPFS",
   "org": [null],
   "description": {
-    "short": "A peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open.",
-    "long": ""
+    "short": "Peer-to-peer hypermedia protocol",
+    "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
   },
-  "primaryCta": { "url": "//ipfs.io", "text": "Website" },
+  "primaryCta": { "url": "//ipfs.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,7 +37,6 @@
     { "slug": "storage-type", "tags": ["general-storage"] },
     { "slug": "software-type", "tags": ["api", "library-sdk"] },
     { "slug": "tooling", "tags": ["ipfs-http-client"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

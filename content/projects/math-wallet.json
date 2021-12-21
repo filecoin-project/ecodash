@@ -7,12 +7,12 @@
     "full": "MathWallet_Logo_Black.png"
   },
   "name": "Math Wallet",
-  "org": ["Math Wallet"],
+  "org": [null],
   "description": {
-    "short": "Universal Crypto Wallet",
+    "short": "A universal Crypto Wallet.",
     "long": "MathWallet is a powerful universal crypto wallet which support multi-chain tokens and dApps on both mobile / browser extension / web / hardware wallet."
   },
-  "primaryCta": { "url": "//mathwallet.org/en-us", "text": "Website" },
+  "primaryCta": { "url": "//mathwallet.org/en-us", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -41,7 +41,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["web-app", "mobile-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["series-n"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["series-n"] }
   ]
 }

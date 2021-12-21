@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "kotal.jpeg", "full": "kotal.jpeg" },
   "name": "Kotal",
-  "org": ["Kotal"],
+  "org": [null],
   "description": {
-    "short": "Kotal builds open-source tools and frameworks that makes it easy to deploy self-managing self-healing blockchain infrastructure.",
-    "long": ""
+    "short": "All-in-one platform to deploy Blockchain infrastructure.",
+    "long": "Kotal is developing open-source tools and frameworks that makes it easy to deploy self-managing self-healing Blockchain infrastructure."
   },
-  "primaryCta": { "url": "//kotal.co", "text": "Website" },
+  "primaryCta": { "url": "//kotal.co", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -40,7 +40,6 @@
       "tags": ["infrastructure", "library-sdk", "hosted-service"]
     },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

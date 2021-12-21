@@ -8,8 +8,11 @@
   },
   "name": "InfiniteScroll",
   "org": [null],
-  "description": { "short": "?", "long": "" },
-  "primaryCta": { "url": "//infinitescroll.org", "text": "Website" },
+  "description": {
+    "short": "Interoperable tools for the Filecoin network.",
+    "long": "InfiniteScroll is a subversive software for optimistic internets."
+  },
+  "primaryCta": { "url": "//infinitescroll.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +42,6 @@
     { "slug": "storage-type", "tags": ["general-storage"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["ipfs-http-client"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

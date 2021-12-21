@@ -7,14 +7,14 @@
     "full": "WeChat3a6f11de72b557117c07c1ca71bc2eee.png"
   },
   "name": "FilSwan",
-  "org": ["FilSwan"],
+  "org": [null],
   "description": {
-    "short": "Distributed data and computing platform",
-    "long": "Decentralized edge infrastructure marketplace and software that moves data storage and analysis on Web 3.0"
+    "short": "Distributed data and computing platform.",
+    "long": "FilSwan offers a decentralized edge infrastructure with a marketplace and software that moves data storage and analysis onto Web3."
   },
   "primaryCta": {
     "url": "//filswan.com/#/dashboard\nhttps://docs.filswan.com",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -43,9 +43,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["consumer-storage", "data-markets"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["infrastructure"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

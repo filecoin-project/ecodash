@@ -6,10 +6,10 @@
   "name": "The Graph",
   "org": ["Graph Foundation"],
   "description": {
-    "short": "The Graph is an indexing protocol for querying networks like Ethereum and IPFS. Anyone can build and publish open APIs, called subgraphs, making data easily accessible.",
-    "long": ""
+    "short": "Indexing protocol for querying networks like Ethereum and IPFS.",
+    "long": "Anyone can build and publish open APIs, called subgraphs, making data easily accessible."
   },
-  "primaryCta": { "url": "//thegraph.com", "text": "Website" },
+  "primaryCta": { "url": "//thegraph.com", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -42,7 +42,6 @@
     { "slug": "storage-type", "tags": ["general-storage"] },
     { "slug": "software-type", "tags": ["api", "library-sdk"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

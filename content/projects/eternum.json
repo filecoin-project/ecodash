@@ -6,10 +6,10 @@
   "name": "Eternum",
   "org": ["Stochastic Technologies"],
   "description": {
-    "short": "Eternum is a simple and easy-to-use IPFS pinning service. It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your applications.",
-    "long": ""
+    "short": "Simple & easy-to-use IPFS pinning service. ",
+    "long": "It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your apps."
   },
-  "primaryCta": { "url": "//eternum.io", "text": "Website" },
+  "primaryCta": { "url": "//eternum.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -36,7 +36,6 @@
     { "slug": "storage-type", "tags": ["consumer-storage"] },
     { "slug": "software-type", "tags": ["api", "web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

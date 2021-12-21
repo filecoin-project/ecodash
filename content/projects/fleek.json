@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "fleek.png", "full": "FleekForLight.png" },
   "name": "Fleek",
-  "org": ["Fleek"],
+  "org": [null],
   "description": {
-    "short": "Developer platform for building sites and apps on the dweb",
-    "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more."
+    "short": "A platform for building sites and apps on the Dweb.",
+    "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on Web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more."
   },
-  "primaryCta": { "url": "//fleek.co", "text": "Website" },
+  "primaryCta": { "url": "//fleek.co", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -40,9 +40,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["web-publishing"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["library-sdk", "hosted-service"] },
     { "slug": "tooling", "tags": ["ipfs-http-client", "fleek-space-daemon"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

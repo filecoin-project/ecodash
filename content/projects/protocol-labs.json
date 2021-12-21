@@ -7,12 +7,12 @@
     "full": "PL-logo-symbol-black.png"
   },
   "name": "Protocol Labs",
-  "org": ["Protocol Labs"],
+  "org": [null],
   "description": {
-    "short": "Protocol Labs is building the next generation of the internet, team behind several protocols like libp2p, drand, ipfs, filecoin. ",
-    "long": ""
+    "short": "Research, design, & development for next-generation web protocols.",
+    "long": "Protocol Labs is an open-source R&D lab. We build protocols, tools, and services to radically improve the internet. Our projects include IPFS, libp2p, DRAND, and Filecoin."
   },
-  "primaryCta": { "url": "//protocol.ai", "text": "Website" },
+  "primaryCta": { "url": "//protocol.ai", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -32,9 +32,11 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["general-storage"] },
-    { "slug": "software-type", "tags": ["none"] },
+    {
+      "slug": "software-type",
+      "tags": ["library-sdk", "backend-app", "network"]
+    },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["series-n"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["series-n"] }
   ]
 }
