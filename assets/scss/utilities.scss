@@ -62,6 +62,7 @@
 @mixin large { @media screen and (max-width: $breakpoint_Large) { @content; } }
 @mixin xlarge { @media screen and (max-width: $breakpoint_Xlarge) { @content; } }
 @mixin ultraLarge { @media screen and (max-width: $breakpoint_UltraLarge) { @content; } }
+@mixin ultraPlus { @media screen and (min-width: $breakpoint_UltraLarge) { @content; } }
 
 @mixin containerMaxMQ { @media screen and (max-width: $containerWidth) { @content; } }
 @mixin containerMinMQ { @media screen and (max-width: $containerWidthPlusOnePixel) { @content; } }
