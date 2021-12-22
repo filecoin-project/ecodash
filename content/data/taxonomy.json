@@ -35,77 +35,77 @@
         {
           "label": "Archival",
           "slug": "archival",
-          "description": ""
+          "description": "Projects storing on Filecoin for historical or data integrity purposes"
         },
         {
           "label": "Consumer Storage",
           "slug": "consumer-storage",
-          "description": ""
+          "description": "Projects storing data from end-users, or helping users access data"
         },
         {
           "label": "Data Markets",
           "slug": "data-markets",
-          "description": ""
+          "description": "Marketplace-type platforms for data on Filecoin"
         },
         {
           "label": "Decentralized Identity",
           "slug": "decentralized-identity",
-          "description": ""
+          "description": "Projects that bring self-sovereignty to managing personal identity"
         },
         {
           "label": "Education",
           "slug": "education",
-          "description": ""
+          "description": "Projects related to academia, research, education or learning"
         },
         {
           "label": "Games",
           "slug": "games",
-          "description": ""
+          "description": "Projects storing gaming content, or related to gamification"
         },
         {
           "label": "General Storage",
           "slug": "general-storage",
-          "description": ""
+          "description": "Projects that store data that isn't limited to any single category"
         },
         {
           "label": "Health",
           "slug": "health",
-          "description": ""
+          "description": "Projects from the medical and healthcare industry"
         },
         {
           "label": "NFTs",
           "slug": "nfts",
-          "description": ""
+          "description": "Projects which address the storage of non-fungible digital assets"
         },
         {
           "label": "Public Data",
           "slug": "public-data",
-          "description": ""
+          "description": "Projects that store publicly-shared content"
         },
         {
           "label": "Social",
           "slug": "social",
-          "description": ""
+          "description": "Projects that interface with a social interaction layer, including social media"
         },
         {
           "label": "Verifiable Storage",
           "slug": "verifiable-storage",
-          "description": ""
+          "description": "Projects bringing IPFS into the browser, or melding browser-like capabilities with IPFS."
         },
         {
           "label": "Video",
           "slug": "video",
-          "description": ""
+          "description": "Projects that adress the storage, playback, recording or broadcasting of video content"
         },
         {
           "label": "Web Publishing",
           "slug": "web-publishing",
-          "description": ""
+          "description": "Projects that focus on creating web content, or making it web-accessible"
         },
         {
           "label": "Other",
           "slug": "other",
-          "description": ""
+          "description": "Projects that store a particular type of data that doesn't quite fit in any other storage type"
         }
       ]
     },
