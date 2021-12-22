@@ -33,7 +33,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
     { "slug": "pipeline", "tags": [""] }

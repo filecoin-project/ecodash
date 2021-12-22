@@ -44,7 +44,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["library-sdk", "mobile-app"] },
     { "slug": "tooling", "tags": ["none"] },
     { "slug": "pipeline", "tags": [""] }

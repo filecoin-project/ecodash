@@ -36,7 +36,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["zondax-signing-tools"] },
     { "slug": "pipeline", "tags": ["series-n"] }
