@@ -31,7 +31,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["zondax-signing-tools"] },
     { "slug": "pipeline", "tags": [""] }

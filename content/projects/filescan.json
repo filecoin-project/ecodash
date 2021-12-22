@@ -36,7 +36,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
     { "slug": "pipeline", "tags": [""] }

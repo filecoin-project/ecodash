@@ -7,7 +7,7 @@
   "org": ["Application Research Group"],
   "description": {
     "short": "Makes it easy to make Filecoin storage deals and retrieve files.",
-    "long": "Estuary is a decentralized data storage service that wraps a clean, simple API and high-performance optimizations around key decentralized web protocols such as IPFS and Filecoin. With a single call, users can store and retrieve content quickly using an IPFS API that adheres to the IPFS Pinning Services API Spec, and store content on Filecoin with proposition receipts and successful deal receipts. As of October 2021, there are 9,316,195 files sealed on the Filecoin Network, 32,095 successful deals on chain, 81.9 TiB of pinned data as a IPFS node, and 269 TiB total storage sealed on chain."
+    "long": "Estuary is a decentralized data storage service that wraps a clean, simple API and high-performance optimizations around key decentralized web protocols such as IPFS and Filecoin. With a single call, users can store and retrieve content quickly using an IPFS API that adheres to the IPFS Pinning Services API Spec, and store content on Filecoin with proposition receipts and successful deal receipts."
   },
   "primaryCta": { "url": "estuary.tech", "text": "Project Website" },
   "links": [

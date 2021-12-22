@@ -38,7 +38,7 @@
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
     { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["none"] },
+    { "slug": "storage-type", "tags": ["other"] },
     { "slug": "software-type", "tags": ["mobile-app", "web-app"] },
     { "slug": "tooling", "tags": ["metamask-filecoin-snap"] },
     { "slug": "pipeline", "tags": [""] }
