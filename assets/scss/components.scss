@@ -395,6 +395,22 @@
 
 #project-explorer-container {
   padding-top: 2rem;
+  .placeholder-results-empty {
+    background: none;
+    .clear-all-null-results {
+      background: none;
+      display: inline-block;
+      margin: 1rem;
+      border: 2px solid $white;
+      &:active {
+        background-color: $azure;
+      }
+      &:hover {
+        background-color: $azure;
+        border-color: $azure;
+      }
+    }
+  }
 }
 
 #project-explorer-toolbar {
