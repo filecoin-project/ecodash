@@ -221,8 +221,14 @@
 // -----------------------------------------------------------------------------
 
 #segment-slider-chart {
-  @include medium {
+  .main-container {
+    flex-wrap: nowrap;
+  }
+  @include xlarge {
     background-color: transparent;
+    .main-container {
+      flex-wrap: wrap-reverse;
+    }
     .segments-container {
       background-color: inherit;
       .chart-title {
