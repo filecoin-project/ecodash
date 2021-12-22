@@ -2,14 +2,14 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft-storage.svg" },
+  "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft.storage.svg" },
   "name": "NFT.storage",
   "org": ["Protocol Labs"],
   "description": {
-    "short": "Decentralized storage for NFTs on IPFS and Filecoin, via the JS client library or HTTP API.",
-    "long": "Store off-chain NFT data, decentralized on IPFS and Filecoin, and receive an IPFS hash of your content simply by uploading it."
+    "short": "Decentralized storage for NFTs on IPFS & Filecoin.",
+    "long": "NFT.Storage allows you to store off-chain NFT data, decentralized on IPFS and Filecoin, and receive an IPFS hash of your content simply by uploading it."
   },
-  "primaryCta": { "url": "//nft.storage", "text": "Website" },
+  "primaryCta": { "url": "//nft.storage", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -52,7 +52,6 @@
     { "slug": "storage-type", "tags": ["nfts"] },
     { "slug": "software-type", "tags": ["hosted-service"] },
     { "slug": "tooling", "tags": ["estuary"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

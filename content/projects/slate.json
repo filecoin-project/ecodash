@@ -9,7 +9,7 @@
     "short": "Decentralized file sharing network",
     "long": "An open source storage system for your data that makes it easy to collect, organize, and share them anywhere on the web."
   },
-  "primaryCta": { "url": "//slate.host", "text": "Website" },
+  "primaryCta": { "url": "//slate.host", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["consumer-storage", "public-data"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["textile-powergate"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

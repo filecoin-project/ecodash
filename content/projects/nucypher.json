@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "nucypher-square.png", "full": "nucypher-logo.png" },
   "name": "NuCypher",
-  "org": ["NuCypher"],
+  "org": [""],
   "description": {
-    "short": "A cryptographic based infrastructure for Privacy-Preserving application.",
+    "short": "Cryptographic based infrastructure for Privacy-Preserving application.",
     "long": "NuCypher provides tools for secret management, dynamic access control, and secure computation.  "
   },
-  "primaryCta": { "url": "//nucypher.com", "text": "Website" },
+  "primaryCta": { "url": "//nucypher.com", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -34,9 +34,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["network"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -4,14 +4,14 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "Group734.png", "full": "tokenterminal.svg" },
   "name": "Token Terminal",
-  "org": [null],
+  "org": [""],
   "description": {
     "short": "Financial Metrics for Blockchain Protocols",
     "long": ""
   },
   "primaryCta": {
     "url": "//tokenterminal.com/terminal/projects/filecoin",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -44,7 +44,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

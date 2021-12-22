@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "icon-node-factory.png", "full": "Group.png" },
   "name": "Node Factory",
-  "org": ["Node Factory"],
+  "org": [""],
   "description": {
     "short": "Blockchain R&D company that turns ideas into reliable solutions.",
     "long": ""
   },
-  "primaryCta": { "url": "//nodefactory.io", "text": "Website" },
+  "primaryCta": { "url": "//nodefactory.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["hosted-service"] },
     { "slug": "tooling", "tags": ["metamask-filecoin-snap"] },
-    { "slug": "pipeline", "tags": ["grant-sponsorship"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["grant-sponsorship"] }
   ]
 }

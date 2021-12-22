@@ -6,10 +6,10 @@
   "name": "Figment",
   "org": ["Figment Networks"],
   "description": {
-    "short": "Blockchain simplified",
-    "long": "Figment provides a series of solutions for simplified token staking, application development, and participation in governance"
+    "short": "Enterprise-grade node and staking infrastructure",
+    "long": "Figment provides a series of solutions for simplified token staking, application development, and participation in governance."
   },
-  "primaryCta": { "url": "//figment.io", "text": "Website" },
+  "primaryCta": { "url": "//figment.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -37,9 +37,11 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    {
+      "slug": "software-type",
+      "tags": ["infrastructure", "library-sdk", "web-app"]
+    },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

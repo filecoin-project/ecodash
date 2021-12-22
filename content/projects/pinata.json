@@ -9,7 +9,7 @@
     "short": "Pinata is a pinning service and gateway for IPFS.",
     "long": ""
   },
-  "primaryCta": { "url": "//pinata.cloud", "text": "Website" },
+  "primaryCta": { "url": "//pinata.cloud", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["general-storage"] },
     { "slug": "software-type", "tags": ["api", "hosted-service"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -1,34 +1,19 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2021
-    }
-  ],
-  "logo": {
-    "icon": "athena-square.png",
-    "full": "athena-logo.png"
-  },
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "athena-square.png", "full": "athena-logo.png" },
   "name": "Athena Explorer",
-  "org": ["Athena Explorer"],
+  "org": [""],
   "description": {
-    "short": "An open source file storage encryption application",
-    "long": "An open source file storage encryption application that is designed to enable users to easily encrypt their files and upload to the network."
+    "short": "Explorer and dashboard for the Filecoin network.",
+    "long": "Athena is an explorer and dashboard for the Filecoin network. In addition to basic chain and network data, additional features include storage provider analysis, output calculation, datacap analysis, and forecasting."
   },
-  "primaryCta": {
-    "url": "//atpool.com/en-US",
-    "text": "Website"
-  },
+  "primaryCta": { "url": "//atpool.com/en-US", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [
-        {
-          "url": "//atpool.com/en-US",
-          "text": "atpool.com/en-US"
-        }
-      ]
+      "links": [{ "url": "//atpool.com/en-US", "text": "atpool.com/en-US" }]
     },
     {
       "label": "Repo",
@@ -39,67 +24,21 @@
         }
       ]
     },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
-    }
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
   ],
-  "keyInfo": [
-    {
-      "label": "Using Filecoin since",
-      "value": 2021
-    }
-  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
   "video": "",
   "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
   ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": ["network-tools"]
-    },
-    {
-      "slug": "storage-type",
-      "tags": ["consumer-storage"]
-    },
-    {
-      "slug": "software-type",
-      "tags": ["web-app"]
-    },
-    {
-      "slug": "tooling",
-      "tags": ["none"]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [""]
-    },
-    {
-      "slug": "project-status",
-      "tags": [""]
-    }
+    { "slug": "project-category", "tags": ["network-tools"] },
+    { "slug": "storage-type", "tags": ["consumer-storage"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

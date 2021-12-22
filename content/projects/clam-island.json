@@ -1,0 +1,36 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "clam.png", "full": "clam.png" },
+  "name": "Clam Island",
+  "org": [""],
+  "description": {
+    "short": "Gamified NFT Marketplace.",
+    "long": "Clam Island gamifiies crypto investments by providing an integrated, pleasurable gaming UI around Yield Farming and NFTs."
+  },
+  "primaryCta": { "url": "//clamisland.fi", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//clamisland.fi", "text": "clamisland.fi" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//drive.google.com/drive/folders/1q7a3WcYIXW90PlVEOa4MimbfQsiFckeo",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["games"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["accelerator"] }
+  ]
+}

@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "icon-nftwitch.png", "full": "icon-nftwitch.png" },
   "name": "NFTwitch",
-  "org": [null],
+  "org": [""],
   "description": {
-    "short": "NFTwitch allows Twitch streamers to mint NFTs as they grow their follower count, verified via Chainlink calls to the Twitch API. These exclusive collectibles can be given away or sold to fans.",
-    "long": ""
+    "short": "Mint NFTs directly from Twitch streams.",
+    "long": "By interacting with smart contracts and Chainlink oracles, Twitch streamers can mint dynamic NFTs as they grow their channels. Every X followers, the streamer is allowed to mint Y NFTs that they can then re-sell to their fans directly or on open marketplaces. Both parties have something to gain: the funds can be used as a source of income to help bootstrap a streamer, and fans can hold onto a rare and unique, one-of-a-kind collectible. Due to the dynamic nature of the NFT, the value may change over time and fans can re-sell to each other. Since the act of following a streamer on Twitch costs nothing to the viewer, it has never been easier for a streamer to start earning income from their fans. Built for Chainlink Hackathon 2021."
   },
-  "primaryCta": { "url": "//nftwitch.link", "text": "Website" },
+  "primaryCta": { "url": "//nftwitch.link", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -45,9 +45,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": [""] },
-    { "slug": "tooling", "tags": [""] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["nft-storage"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

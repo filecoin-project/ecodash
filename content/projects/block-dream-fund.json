@@ -6,12 +6,12 @@
   "name": "Block Dream Fund",
   "org": ["OKEx"],
   "description": {
-    "short": "$10 million fund dedicated to Filecoin's ecosystem from Block Dream Fund, OKEx‘s investment institute",
-    "long": ""
+    "short": "$10 million fund dedicated to the Filecoin ecosystem.",
+    "long": "10M fund dedicated to Filecoins ecosystem from Block Dream Fund, OKEx‘s investment institute."
   },
   "primaryCta": {
     "url": "//okex.com/blockdream-ventures",
-    "text": "Website"
+    "text": "Project Website"
   },
   "links": [
     {
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

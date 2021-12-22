@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "powerloom-square.png", "full": "powerloom-logo.png" },
   "name": "PowerLoom",
-  "org": ["PowerLoom"],
+  "org": [""],
   "description": {
-    "short": "Scaling trust as the first verification primitive",
+    "short": " Snapshots for on-chain and off-chain data.",
     "long": "PowerLoom protocol aggregates on-chain and off-chain data to generate snapshots with cryptographic proofs in a decentralized manner. "
   },
-  "primaryCta": { "url": "//powerloom.io", "text": "Website" },
+  "primaryCta": { "url": "//powerloom.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -34,9 +34,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["network"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -2,21 +2,18 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "icon-techstars.png",
-    "full": "techstars-logo-2020-billboard-1548-1586377039-768x433.jpeg"
-  },
-  "name": "TechStars",
-  "org": ["TechStars"],
+  "logo": { "icon": "boto_icon_800.png", "full": "boto_icon_800.png" },
+  "name": "Boto",
+  "org": ["Boto"],
   "description": {
-    "short": "Techstars provides accelerator programs for Filecoin startups.",
-    "long": ""
+    "short": "Automating DeFi activities with no-code bots.",
+    "long": "Boto is a no-code platform for non-developers to create & share bots that automate DeFi activities."
   },
-  "primaryCta": { "url": "//techstars.com", "text": "Website" },
+  "primaryCta": { "url": "//botoapp.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [{ "url": "//techstars.com", "text": "techstars.com" }]
+      "links": [{ "url": "//botoapp.io", "text": "botoapp.io" }]
     },
     { "label": "Repo", "links": [{ "url": "", "text": "" }] },
     { "label": "Docs", "links": [{ "url": "", "text": "" }] }
@@ -30,11 +27,10 @@
   ],
   "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "project-category", "tags": ["token-finance"] },
     { "slug": "storage-type", "tags": ["none"] },
-    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["accelerator"] }
   ]
 }

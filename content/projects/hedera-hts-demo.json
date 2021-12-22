@@ -9,10 +9,10 @@
   "name": "Hedera HTS Demo",
   "org": ["Hedera"],
   "description": {
-    "short": "Demonstration app that integrates Hedera and IPFS/Filecoin. Metadata from Hedera Token Service is stored via nft.storage, which then seamlessly writes to IPFS and Filecoin. Written in JavaScript and Vue.JS",
-    "long": ""
+    "short": "Demo app that integrates Hedera and IPFS/Filecoin. ",
+    "long": "Hedera Token Service metadata is stored via nft.storage, which then seamlessly writes to IPFS and Filecoin. "
   },
-  "primaryCta": { "url": "//hedera.com", "text": "Website" },
+  "primaryCta": { "url": "//hedera.com", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -50,7 +50,6 @@
     { "slug": "storage-type", "tags": ["nfts"] },
     { "slug": "software-type", "tags": ["web-app"] },
     { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

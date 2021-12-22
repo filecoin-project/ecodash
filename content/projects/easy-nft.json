@@ -10,11 +10,19 @@
   "org": ["Matrix Storage"],
   "description": {
     "short": "NFT middleware to support saving NFTs into Filecoin & IPFS.",
-    "long": "Enables NFT developers easily connect to IPFS and Filecoin network."
+    "long": "Enables NFT developers to easily connect to IPFS and Filecoin networks. Includes command-line tools and an SDK. Built by MatrixStorage."
   },
-  "primaryCta": { "url": "", "text": "Website" },
+  "primaryCta": {
+    "url": "//storage.anmaicloud.com",
+    "text": "Project Website"
+  },
   "links": [
-    { "label": "Website", "links": [{ "url": "", "text": "" }] },
+    {
+      "label": "Website",
+      "links": [
+        { "url": "//storage.anmaicloud.com", "text": "storage.anmaicloud.com" }
+      ]
+    },
     {
       "label": "Repo",
       "links": [
@@ -39,7 +47,6 @@
     { "slug": "storage-type", "tags": ["nfts"] },
     { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["ipfs-http-client"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": ["early"] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

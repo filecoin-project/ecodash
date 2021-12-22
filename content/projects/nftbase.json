@@ -4,33 +4,22 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "1920x1080-LOGO.png", "full": "1920x1080-LOGO.png" },
   "name": "NFTBase",
-  "org": ["NFTBase (It's not a legal entitiy yet)"],
+  "org": [""],
   "description": {
-    "short": "NFTbase is the DAO based the metaverse NFT marketplace and community run on IPFS. We will make the world where human creativity is fully respected.",
-    "long": ""
+    "short": "NFT marketplace for collectibles, gaming items, and more.",
+    "long": "NFTbase is a marketplace where you can buy and sell digital goods, including collectibles, gaming items, digital art, and other digital assets that are backed by the Ethereum blockchain."
   },
-  "primaryCta": {
-    "url": "//nftbase.ai (https://nftbase.eth.link)",
-    "text": "Website"
-  },
+  "primaryCta": { "url": "//nftbase.ai", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [
-        {
-          "url": "//nftbase.ai (https://nftbase.eth.link)",
-          "text": "nftbase.ai (https://nftbase.eth.link)"
-        }
-      ]
+      "links": [{ "url": "//nftbase.ai", "text": "nftbase.ai" }]
     },
     {
       "label": "Repo",
       "links": [{ "url": "//github.com/nftbase", "text": "github.com/nftbase" }]
     },
-    {
-      "label": "Docs",
-      "links": [{ "url": "//github.com/nftbase", "text": "github.com/nftbase" }]
-    }
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
   ],
   "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
   "video": "//youtube.com/watch?v=KvsBDVwtn5k",
@@ -43,9 +32,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": [""] },
-    { "slug": "tooling", "tags": [""] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["nft-storage"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

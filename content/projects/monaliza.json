@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "mona-lisa.svg", "full": "mona-lisa.svg" },
   "name": "Monaliza",
-  "org": [null],
+  "org": [""],
   "description": {
     "short": "Mint NFTs directly from your Instagram content.",
-    "long": "Connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their instagram, as well as Opensea, and persist this to IPFS. This would hopefully get the average person to be able to adopt blockchain without having to leave the comfort of their favourite platform and make some monetary value on instagram posts/pictures/videos."
+    "long": "Monaliza is a connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their Instagram, as well as OpenSea, and persist this to IPFS. "
   },
-  "primaryCta": { "url": "//monaliza.app", "text": "Website" },
+  "primaryCta": { "url": "//monaliza.app", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -45,9 +45,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["storage-apps-clients"] },
     { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": [""] },
-    { "slug": "tooling", "tags": [""] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "software-type", "tags": ["api"] },
+    { "slug": "tooling", "tags": ["nft-storage"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

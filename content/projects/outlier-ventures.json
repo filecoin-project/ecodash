@@ -2,11 +2,14 @@
   "display": true,
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Group735.png", "full": "Outlier-logo-202021-NEW.png" },
+  "logo": {
+    "icon": "icon-outlier-ventures.png",
+    "full": "Outlier-logo-202021-NEW.png"
+  },
   "name": "Outlier Ventures",
-  "org": ["Outlier Ventures"],
+  "org": [""],
   "description": { "short": "//outlierventures.io", "long": "" },
-  "primaryCta": { "url": "//outlierventures.io", "text": "Website" },
+  "primaryCta": { "url": "//outlierventures.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -28,7 +31,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

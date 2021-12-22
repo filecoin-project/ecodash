@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "ens.svg", "full": "ens.svg" },
   "name": "ENS",
-  "org": [null],
+  "org": [""],
   "description": {
-    "short": "ENS is a decentralised name service for creating domain names on the Ethereum blockchain.",
-    "long": ""
+    "short": "Decentralised name service for creating domains on the ETH blockchain.",
+    "long": "ENS allow you to create your designated web3 username, with no more sandboxed usernames. It allows you to own your username, store an avatar and other profile data, and use it across multiple services."
   },
-  "primaryCta": { "url": "//ens.domains", "text": "Website" },
+  "primaryCta": { "url": "//ens.domains", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -39,7 +39,6 @@
     { "slug": "storage-type", "tags": ["web-publishing"] },
     { "slug": "software-type", "tags": ["hosted-service", "web-app"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

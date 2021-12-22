@@ -4,12 +4,12 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "icon-protofire.png", "full": "protofire-full.svg" },
   "name": "Protofire",
-  "org": [null],
+  "org": [""],
   "description": {
     "short": "Protofire is a consulting service for decentralised protocols.",
     "long": ""
   },
-  "primaryCta": { "url": "//protofire.io", "text": "Website" },
+  "primaryCta": { "url": "//protofire.io", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -31,7 +31,6 @@
     { "slug": "storage-type", "tags": ["decentralized-identity"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

@@ -3,7 +3,7 @@
   "featured": false,
   "sortNumbers": [{ "since": 2021 }],
   "logo": {
-    "icon": "smalldataindustries-logo.png",
+    "icon": "icon-small-data.png",
     "full": "smalldataindustries-logo.png"
   },
   "name": "Small Data Industries",
@@ -12,7 +12,7 @@
     "short": "An integrity safeguard for the world's artistic records.",
     "long": "SDI works with art and media institutions to architect and build sustainable, secure and user-centric systems for storage and preservation of digital collections. "
   },
-  "primaryCta": { "url": "//smalldata.industries", "text": "Website" },
+  "primaryCta": { "url": "//smalldata.industries", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -42,9 +42,8 @@
   "taxonomies": [
     { "slug": "project-category", "tags": ["collaborations"] },
     { "slug": "storage-type", "tags": ["archival", "verifiable-storage"] },
-    { "slug": "software-type", "tags": [""] },
+    { "slug": "software-type", "tags": ["library-sdk"] },
     { "slug": "tooling", "tags": ["starling"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

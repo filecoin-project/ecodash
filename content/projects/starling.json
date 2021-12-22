@@ -6,7 +6,7 @@
   "name": "Starling",
   "org": ["The Starling Lab"],
   "description": { "short": "A framework for data integrity", "long": "" },
-  "primaryCta": { "url": "//starlinglab.org", "text": "Website" },
+  "primaryCta": { "url": "//starlinglab.org", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -44,7 +44,6 @@
     { "slug": "storage-type", "tags": ["archival", "verifiable-storage"] },
     { "slug": "software-type", "tags": ["hosted-service"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": ["none"] }
   ]
 }

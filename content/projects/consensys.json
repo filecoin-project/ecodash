@@ -4,15 +4,15 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": {
     "icon": "icon-consensys.png",
-    "full": "ConsenSys_Acquires_Truffle_Suite__Financial_IT"
+    "full": "ConsenSys.png"
   },
   "name": "ConsenSys ",
-  "org": ["ConsenSys"],
+  "org": [""],
   "description": {
-    "short": "ConsenSys is building Ethereum blockchain infrastructure and applications for new economic systems that are more open, efficient, and secure.",
-    "long": ""
+    "short": "ETH blockchain infrastructure & apps for new ecosystems.",
+    "long": "ConsenSys unlocks Web3, builds on Ethereum, and collaborates worldwide with MetaMask, Infura, and a leading suite of blockchain products, ConsenSys makes it easy to build applications on Ethereum and participate in DeFi, NFTs, DAOs, and the metaverse."
   },
-  "primaryCta": { "url": "//consensys.net", "text": "Website" },
+  "primaryCta": { "url": "//consensys.net", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
@@ -34,7 +34,6 @@
     { "slug": "storage-type", "tags": ["none"] },
     { "slug": "software-type", "tags": ["none"] },
     { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] },
-    { "slug": "project-status", "tags": [""] }
+    { "slug": "pipeline", "tags": [""] }
   ]
 }
