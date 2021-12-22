@@ -90,7 +90,7 @@
         {
           "label": "Verifiable Storage",
           "slug": "verifiable-storage",
-          "description": "Projects bringing IPFS into the browser, or melding browser-like capabilities with IPFS."
+          "description": "Projects safeguarding the integrity of data and content"
         },
         {
           "label": "Video",
@@ -105,7 +105,7 @@
         {
           "label": "Other",
           "slug": "other",
-          "description": "Projects that store a particular type of data that doesn't quite fit in any other storage type"
+          "description": "Projects that store a type of data that doesn't quite fit in any other storage type"
         }
       ]
     },
