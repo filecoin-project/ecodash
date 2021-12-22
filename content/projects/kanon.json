@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "Karon.png", "full": "Group717.png" },
   "name": "Kanon",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "NFT art vault and community.",
     "long": "K21 is an ecosystem built around a closed-end art vault of 21 unique and original NFT artworks by a diverse roster of influential and pioneering contemporary, digital, and cryptonative artists. Engineered for composability, durability, and equity, K21 establishes a new protocol for art."

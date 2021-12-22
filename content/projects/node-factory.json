@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "icon-node-factory.png", "full": "Group.png" },
   "name": "Node Factory",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Blockchain R&D company that turns ideas into reliable solutions.",
     "long": ""

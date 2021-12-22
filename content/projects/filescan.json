@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "icon-filscan.png", "full": "filscan-logo.png" },
   "name": "Filescan",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "A block and message explorer.",
     "long": "Filscan is a blockchain browser for Filecoin, for viewing blockchain data, including querying addresses, messages, block heights, miners, and more. "

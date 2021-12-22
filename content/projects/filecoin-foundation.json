@@ -7,7 +7,7 @@
     "full": "ScreenShot2021-12-07at1_36_29PM.png"
   },
   "name": "Filecoin Foundation",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Independent organization dedicated to developing Filecoin.",
     "long": "The Filecoin Foundation (FF) is an independent organization dedicated to developing Filecoin and related technologies. The Foundation does this by coordinating and supporting the creation and improvement of open source software and open protocols for decentralized data storage and retrieval networks."

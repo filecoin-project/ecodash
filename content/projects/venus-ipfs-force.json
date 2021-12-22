@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2019 }],
   "logo": { "icon": "logo1.png", "full": "logo1.png" },
   "name": "Venus (IPFS Force)",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Venus is an implementation of the Filecoin Distributed Storage Network",
     "long": "Venus is an implementation of the Filecoin protocol in Go. Venus is committed to continuous improvement on the security of Filecoin network and the applicability of distributed clusters."

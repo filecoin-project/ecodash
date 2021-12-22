@@ -7,7 +7,7 @@
     "full": "Outlier-logo-202021-NEW.png"
   },
   "name": "Outlier Ventures",
-  "org": "",
+  "org": [""],
   "description": { "short": "//outlierventures.io", "long": "" },
   "primaryCta": { "url": "//outlierventures.io", "text": "Project Website" },
   "links": [

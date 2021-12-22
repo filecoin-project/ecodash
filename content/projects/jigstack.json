@@ -7,7 +7,7 @@
     "full": "ScreenShot2021-12-07at1_55_14PM.png"
   },
   "name": "Jigstack",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "A decentralized token launch platform.",
     "long": "Jigstack is revolutionary decentralized token launch platform that provides the most cost-effective and safest possible transaction environment to all participants. Raise funds or invest in a new project without dealing with complex setups or intermediaries - no markets, no third parties, no banks."

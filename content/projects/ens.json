@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "ens.svg", "full": "ens.svg" },
   "name": "ENS",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Decentralised name service for creating domains on the ETH blockchain.",
     "long": "ENS allow you to create your designated web3 username, with no more sandboxed usernames. It allows you to own your username, store an avatar and other profile data, and use it across multiple services."

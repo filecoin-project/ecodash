@@ -7,7 +7,7 @@
     "full": "ScreenShot2021-10-28at9.38.37AM.png"
   },
   "name": "Valist",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Software package distribution for web3-native support.",
     "long": "Valist is a web3-native software distribution system, with built-in package registry support. It's powered by smart contracts (on any EVM), IPFS, and Filecoin. Valist is designed to be highly extensible and interoperable with many package managers that developers are familiar with, such as NPM, Pip, Docker, APT, and Cargo."

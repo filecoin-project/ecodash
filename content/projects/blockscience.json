@@ -7,7 +7,7 @@
     "full": "ScreenShot2021-10-27at6.10.27PM.png"
   },
   "name": "BlockScience",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Quantitative consulting firm for network analytics.",
     "long": "BlockScience designs and builds data-driven decision systems for new and legacy businesses leveraging engineering methodologies and academic-grade tools. Expertise includes pre-launch design and evaluation of economic business and ecosystem models based on simulation and analysis.\n\nReports from the Filecoin x BlockScience research collaboration can be found on their blog."

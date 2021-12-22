@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "metaverseAI.jpeg", "full": "metaverse.jpg" },
   "name": "Metaverse AI",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Tools for open Metaverse, VR/AR, & Web3.0 ",
     "long": "Metaverse AI uses advanced blockchain and 3D Virtual Reality tech to build tools for the metaverse – a persistent, high-fidelity virtual realm where people can play, build and monetize their experiences on the blockchain."

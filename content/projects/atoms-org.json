@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "4-ZuTQNE_400x400.jpg", "full": "4-ZuTQNE_400x400.jpg" },
   "name": "Atoms.org",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Smart contract systems for a flourishing academic research economy.",
     "long": "Atoms intends to improve incentives in science by developing smart research contracts mediated by peer-to-peer review networks. These will collectively reward scientific contributions, including proposals, papers, replications, datasets, analyses, annotations, editorials, and more.\n\nLong term, these smart contracts help accelerate research by minimizing science friction, ensuring science quality, and maximizing science variance."

@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "BlockRocket.png", "full": "image80.png" },
   "name": "BlockRocket",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Blockchain engineering & consultancy for smart contracts + dApps.",
     "long": "BlockRocket builds products and help companies understand blockchain technology, smart contracts and cryptocurrencies. Products include the KnownOrigin NFT marketplace and CryptoKaiju trackable physical toys."

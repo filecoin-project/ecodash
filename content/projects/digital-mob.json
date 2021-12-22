@@ -7,7 +7,7 @@
     "full": "digital-mob-square.jpeg"
   },
   "name": "Digital MOB",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Multidisciplinary software development company.",
     "long": "Digital MOB is a multidisciplinary software development company distributed worldwide, partnering with international clients that value quality of outcome above all else, to create memorable and meaningful experiences."

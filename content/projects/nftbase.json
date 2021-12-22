@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "1920x1080-LOGO.png", "full": "1920x1080-LOGO.png" },
   "name": "NFTBase",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "NFT marketplace for collectibles, gaming items, and more.",
     "long": "NFTbase is a marketplace where you can buy and sell digital goods, including collectibles, gaming items, digital art, and other digital assets that are backed by the Ethereum blockchain."

@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "athena-square.png", "full": "athena-logo.png" },
   "name": "Athena Explorer",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Explorer and dashboard for the Filecoin network.",
     "long": "Athena is an explorer and dashboard for the Filecoin network. In addition to basic chain and network data, additional features include storage provider analysis, output calculation, datacap analysis, and forecasting."

@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2020 }],
   "logo": { "icon": "Group734.png", "full": "tokenterminal.svg" },
   "name": "Token Terminal",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Financial Metrics for Blockchain Protocols",
     "long": ""

@@ -4,7 +4,7 @@
   "sortNumbers": [{ "since": 2021 }],
   "logo": { "icon": "mona-lisa.svg", "full": "mona-lisa.svg" },
   "name": "Monaliza",
-  "org": "",
+  "org": [""],
   "description": {
     "short": "Mint NFTs directly from your Instagram content.",
     "long": "Monaliza is a connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their Instagram, as well as OpenSea, and persist this to IPFS. "
