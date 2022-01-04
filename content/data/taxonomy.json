@@ -35,77 +35,77 @@
         {
           "label": "Archival",
           "slug": "archival",
-          "description": "Projects storing on Filecoin for historical or data integrity purposes"
+          "description": "Projects for long-term data storage and preservation"
         },
         {
           "label": "Consumer Storage",
           "slug": "consumer-storage",
-          "description": "Projects storing data from end-users, or helping users access data"
+          "description": "Projects making decentralized storage easy for individuals or groups"
         },
         {
           "label": "Data Markets",
           "slug": "data-markets",
-          "description": "Marketplace-type platforms for data on Filecoin"
+          "description": "Projects related to data marketplaces and the data econonomy"
         },
         {
           "label": "Decentralized Identity",
           "slug": "decentralized-identity",
-          "description": "Projects that bring self-sovereignty to managing personal identity"
+          "description": "Projects bringing self-sovereignty to managing personal identity"
         },
         {
           "label": "Education",
           "slug": "education",
-          "description": "Projects related to academia, research, education or learning"
+          "description": "Projects related to academia, research, education, or learning"
         },
         {
           "label": "Games",
           "slug": "games",
-          "description": "Projects storing gaming content, or related to gamification"
+          "description": "Projects related to online gaming or digital realms"
         },
         {
           "label": "General Storage",
           "slug": "general-storage",
-          "description": "Projects that store data that isn't limited to any single category"
+          "description": "Projects for general-purpose data storage"
         },
         {
           "label": "Health",
           "slug": "health",
-          "description": "Projects from the medical and healthcare industry"
+          "description": "Projects related to health, public health, or medical data"
         },
         {
           "label": "NFTs",
           "slug": "nfts",
-          "description": "Projects which address the storage of non-fungible digital assets"
+          "description": "Projects for storing non-fungible digital tokens and their metadata"
         },
         {
           "label": "Public Data",
           "slug": "public-data",
-          "description": "Projects that store publicly-shared content"
+          "description": "Projects related to storing public data"
         },
         {
           "label": "Social",
           "slug": "social",
-          "description": "Projects that interface with a social interaction layer, including social media"
+          "description": "Projects related to social interaction or social media"
         },
         {
           "label": "Verifiable Storage",
           "slug": "verifiable-storage",
-          "description": "Projects safeguarding the integrity of data and content"
+          "description": "Projects safeguaring or verifying the integrity of data"
         },
         {
           "label": "Video",
           "slug": "video",
-          "description": "Projects that adress the storage, playback, recording or broadcasting of video content"
+          "description": "Projects for storage, playback, recording, or broadcasting of video content"
         },
         {
           "label": "Web Publishing",
           "slug": "web-publishing",
-          "description": "Projects that focus on creating web content, or making it web-accessible"
+          "description": "Projects that focus on creating or publishing web content"
         },
         {
           "label": "Other",
           "slug": "other",
-          "description": "Projects that store a type of data that doesn't quite fit in any other storage type"
+          "description": "Projects that don't quite fit in any other category"
         }
       ]
     },
