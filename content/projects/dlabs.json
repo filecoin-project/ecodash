@@ -1,46 +1,100 @@
 {
-  "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "dlabs-logo.png", "full": "dlabs-logo.png" },
-  "name": "_Dlabs",
-  "org": ["Underscored Labs"],
-  "description": {
-    "short": "Decentralized tools for gaming, VR, and AR.",
-    "long": "_Dlabs (now part of ChainSafe) bridges the creative ecosystem of games, VR and AR with the decentralized world of cryptocurrency. Their Unity SDK bridges any project to any EVM."
-  },
-  "primaryCta": { "url": "//underscoredlabs.com", "text": "Project Website" },
-  "links": [
-    {
-      "label": "Website",
-      "links": [
-        { "url": "//underscoredlabs.com", "text": "underscoredlabs.com" }
-      ]
+    "display": true,
+    "featured": false,
+    "sortNumbers": [{
+        "since": 2021
+    }],
+    "logo": {
+        "icon": "icon-dlabs.png",
+        "full": "icon-dlabs.png"
     },
-    {
-      "label": "Repo",
-      "links": [
+    "name": "_Dlabs",
+    "org": [
+        "Underscored Labs"
+    ],
+    "description": {
+        "short": "Decentralized tools for gaming, VR, and AR.",
+        "long": "_Dlabs (now part of ChainSafe) bridges the creative ecosystem of games, VR and AR with the decentralized world of cryptocurrency. Their Unity SDK bridges any project to any EVM."
+    },
+    "primaryCta": {
+        "url": "//underscoredlabs.com",
+        "text": "Project Website"
+    },
+    "links": [{
+            "label": "Website",
+            "links": [{
+                "url": "//underscoredlabs.com",
+                "text": "underscoredlabs.com"
+            }]
+        },
         {
-          "url": "//github.com/underscoredLabs",
-          "text": "github.com/underscoredLabs"
+            "label": "Repo",
+            "links": [{
+                "url": "//github.com/underscoredLabs",
+                "text": "github.com/underscoredLabs"
+            }]
+        },
+        {
+            "label": "Docs",
+            "links": [{
+                "url": "",
+                "text": ""
+            }]
         }
-      ]
+    ],
+    "keyInfo": [{
+        "label": "Using Filecoin since",
+        "value": "2021"
+    }],
+    "video": "",
+    "stats": [{
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "ctaCard": {
+        "title": "",
+        "description": "",
+        "buttonText": "",
+        "url": ""
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
-  ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["games"] },
-    { "slug": "software-type", "tags": ["library-sdk"] },
-    { "slug": "tooling", "tags": ["fleek-space-daemon"] },
-    { "slug": "pipeline", "tags": [""] }
-  ]
+    "taxonomies": [{
+            "slug": "project-category",
+            "tags": [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags": [
+                "games"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags": [
+                "library-sdk"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags": [
+                "fleek-space-daemon"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags": [
+                ""
+            ]
+        }
+    ]
 }

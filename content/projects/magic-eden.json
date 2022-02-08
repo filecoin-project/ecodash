@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2021
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-magic-eden.png",
+        "full": "logo-magic-eden.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "Magic Eden",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "The leading NFT marketplace on Solana.",
+        "long": "Magic Eden is one of the leading NFT marketplaces on Solana, as well as a launch pad for your collections. Home to the next generation of digital creators with a 0% listing / 2% transaction fee."
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//magiceden.io",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//magiceden.io",
+                    "text": "magiceden.io"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,7 +64,7 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2021"
         }
     ],
     "video": "",
@@ -93,29 +96,28 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "storage-apps-clients"
             ]
         },
         {
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "nfts"
             ]
         },
         {
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "nft-storage"
             ]
         },
         {

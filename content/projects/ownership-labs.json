@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2021
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-ownership-labs.png",
+        "full": "icon-ownership-labs.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "Ownership Labs",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "A private space for curating NFTs, decentralized and encrypted.",
+        "long": "Ownership Labs' vision is to unlock the data economy and brings secure cyberspace for web3 residents. Their products include Dataverse, Loop and Datatoken. Dataverse is your private space for curating NFTs, decentralized and encrypted. Datatoken is a open data marketplaces for traceable private computation. Loop is a personalized content aggregator for tracking latest events in the open web, like NFTs, Mirrors and POAPs. By using these products, you own your data whenever you navigate the web.\nBuilding http://dataverse.art "
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//dataverse.art ",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//dataverse.art ",
+                    "text": "dataverse.art "
                 }
             ]
         },
@@ -41,8 +44,8 @@
             "links":
             [
                 {
-                    "url": "",
-                    "text": ""
+                    "url": "//github.com/ownership-labs",
+                    "text": "github.com/ownership-labs"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,10 +64,10 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2021"
         }
     ],
-    "video": "",
+    "video": "//youtube.com/watch?v=Lr3UaWL-rXY",
     "stats":
     [
         {
@@ -93,29 +96,28 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "storage-apps-clients"
             ]
         },
         {
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "nfts"
             ]
         },
         {
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "nft-storage"
             ]
         },
         {

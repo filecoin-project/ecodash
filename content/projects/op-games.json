@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2021
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-op-games.png",
+        "full": "logo-op-games.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "OP Games",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "A multi-chain gaming platform.",
+        "long": "OP Games is multi-chain gaming platform built on Ethereum & the NEAR Protocol. Their goal is to create a new gaming ecosystem centered on community-owned games involving NFTs & DAOs.\n"
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//opgames.org ",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//opgames.org ",
+                    "text": "opgames.org "
                 }
             ]
         },
@@ -41,8 +44,8 @@
             "links":
             [
                 {
-                    "url": "",
-                    "text": ""
+                    "url": "//github.com/alto-io/decentralized-game-template",
+                    "text": "github.com/alto-io/decentralized-game-template"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,10 +64,10 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2021"
         }
     ],
-    "video": "",
+    "video": "//youtu.be/Ya6r9gYNHDg",
     "stats":
     [
         {
@@ -93,29 +96,29 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "storage-apps-clients"
             ]
         },
         {
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "games",
+                "nfts"
             ]
         },
         {
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "nft-storage"
             ]
         },
         {
@@ -127,3 +130,4 @@
         }
     ]
 }
+

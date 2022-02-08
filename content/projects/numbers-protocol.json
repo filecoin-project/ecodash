@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2020
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-numbers-protocol.png",
+        "full": "logo-numbers-protocol.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "Numbers Protocol",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "A Web3 Photo Network.",
+        "long": "Numbers Protocol has created a network where assets are both traceable & verifiable through its innovative Capture, Seal, Trace process. Numbers protocol also has the World’s 1st Web3 Search Engine for NFTs."
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//numbersprotocol.io",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//numbersprotocol.io",
+                    "text": "numbersprotocol.io"
                 }
             ]
         },
@@ -41,8 +44,8 @@
             "links":
             [
                 {
-                    "url": "",
-                    "text": ""
+                    "url": "//github.com/numbersprotocol",
+                    "text": "github.com/numbersprotocol"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "//api.numbersprotocol.io/api/v3/redoc",
+                    "text": "api.numbersprotocol.io/api/v3/redoc"
                 }
             ]
         }
@@ -61,7 +64,7 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2020"
         }
     ],
     "video": "",
@@ -100,7 +103,7 @@
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "verifiable-storage"
             ]
         },
         {
@@ -108,14 +111,15 @@
             "tags":
             [
                 "api",
-                "library-sdk"
+                "mobile-app",
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "starling"
             ]
         },
         {
