@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2021
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-mona.png",
+        "full": "logo-mona.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "MoNa",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "A virtual metaverse gallery space.",
+        "long": "Mona is building and seeding the open metaverse through the creation and use of beautiful, unique 3D Spaces. They believe art is about the experience, and the experiences that will store the most value over time will be 3d, one-of-one, and dynamic which is why Mona Spaces are so unique."
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//mona.gallery",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//mona.gallery",
+                    "text": "mona.gallery"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,7 +64,7 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2021"
         }
     ],
     "video": "",
@@ -93,29 +96,28 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "storage-apps-clients"
             ]
         },
         {
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "nfts"
             ]
         },
         {
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "nft-storage"
             ]
         },
         {

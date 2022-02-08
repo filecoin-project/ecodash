@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2021
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-opensea.png",
+        "full": "logo-opensea.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "OpenSea",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "The world's first and largest NFT marketplace.",
+        "long": "OpenSea's vision is that open protocols like Ethereum and interoperable standards like ERC-721 and ERC-1155 will enable vibrant new economies. They're building tools that allow consumers to trade their items freely, creators to launch new digital works, and developers to build rich, integrated marketplaces for their digital items."
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//opensea.io",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//opensea.io",
+                    "text": "opensea.io"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,7 +64,7 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2021"
         }
     ],
     "video": "",
@@ -93,29 +96,28 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "storage-apps-clients"
             ]
         },
         {
             "slug": "storage-type",
             "tags":
             [
-                "general-storage"
+                "nfts"
             ]
         },
         {
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "web-app"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "nft-storage"
             ]
         },
         {

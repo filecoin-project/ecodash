@@ -4,24 +4,27 @@
     "sortNumbers":
     [
         {
-            "since": 2019
+            "since": 2020
         }
     ],
     "logo":
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+        "icon": "icon-sinso.png",
+        "full": "logo-sinso.png"
     },
-    "name": "IPFS",
-    "org": [""],
+    "name": "Sinso",
+    "org":
+    [
+        ""
+    ],
     "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+        "short": "The leading medical imaging SaaS cloud service provider.",
+        "long": "SINSO builds the SINSO DAC ecology based on WEB3 technology and jointly promotes the human society to enter the era of decentralized medical care. Users/institutions collect data through SINSO Getway, cast health/medical-related data into NFTs in SINSO DAPP, conduct transactions at SINSO Donors Network, and realize the value transfer of medical data.\n\n"
     },
     "primaryCta":
     {
-        "url": "//ipfs.io",
+        "url": "//sinso.io",
         "text": "Project Website"
     },
     "links":
@@ -31,8 +34,8 @@
             "links":
             [
                 {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
+                    "url": "//sinso.io",
+                    "text": "sinso.io"
                 }
             ]
         },
@@ -51,8 +54,8 @@
             "links":
             [
                 {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
+                    "url": "",
+                    "text": ""
                 }
             ]
         }
@@ -61,7 +64,7 @@
     [
         {
             "label": "Using Filecoin since",
-            "value": 2019
+            "value": "2020"
         }
     ],
     "video": "",
@@ -93,7 +96,7 @@
             "slug": "project-category",
             "tags":
             [
-                "collaborations"
+                "developer-tools"
             ]
         },
         {
@@ -107,15 +110,15 @@
             "slug": "software-type",
             "tags":
             [
-                "api",
-                "library-sdk"
+                "library-sdk",
+                "api"
             ]
         },
         {
             "slug": "tooling",
             "tags":
             [
-                "ipfs-http-client"
+                "none"
             ]
         },
         {
