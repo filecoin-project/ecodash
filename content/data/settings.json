@@ -5,11 +5,19 @@
   },
   "behavior": {
     "showcaseBaseRoute": "/showcase",
-    "primaryCategorySlug": "industry",
+    "primaryCategorySlug": "storage-type",
     "firstTag": "",
-    "lastTag": "",
+    "lastTag": "other",
     "externalLinksTargetBlank": true,
-    "tagMatchType": "or",
+    "tagMatchType": "and",
+    "targetCategoryMatch": [
+      { "categorySlug": "project-category", "tagMatchType": "or" },
+      { "categorySlug": "storage-type", "tagMatchType": "or" },
+      { "categorySlug": "software-type", "tagMatchType": "or" },
+      { "categorySlug": "tooling", "tagMatchType": "or" },
+      { "categorySlug": "pipeline", "tagMatchType": "or" },
+      { "categorySlug": "project-status", "tagMatchType": "or" }
+    ],
     "excludeFilterAllTag": true,
     "includeGranularFilterClearButton": true
   },
@@ -22,11 +30,13 @@
     "showcase": true,
     "defaultView": "grid",
     "alternateLayout": true,
+    "swapVideoPositionSingular": true,
     "hideNonDefaultView": false,
     "hidePagination": false,
     "hideSort": false,
     "hideNumResults": false,
     "setSort": "a_z",
+    "truncateCharacters": [10, 12],
     "setPageSize": 20,
     "disableSingulars": 2,
     "truncateLinks": true,
@@ -35,7 +45,7 @@
     "singularTagLinks": true
   },
   "embeddable_view": {
-    "host": "https://develop.ecosystem.filecoin.io",
+    "host": "https://ecosystem.filecoin.io",
     "target": ".filecoin-ecosystem-embed",
     "copy": {
       "heading": "Who's using Filecoin?",

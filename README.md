@@ -1,6 +1,6 @@
 # Filecoin Ecodash
 
-Interactive ecosystem directory and showcase
+Interactive ecosystem directory and showcase 
 
 **Just want to add a new project to the IPFS ecosystem directory? [Use this form](https://airtable.com/shrjwvk9pAeAk0Ci7).**
 

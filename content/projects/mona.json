@@ -1,0 +1,131 @@
+{
+    "display": true,
+    "featured": false,
+    "sortNumbers":
+    [
+        {
+            "since": 2021
+        }
+    ],
+    "logo":
+    {
+        "icon": "icon-mona.png",
+        "full": "logo-mona.png"
+    },
+    "name": "MoNa",
+    "org":
+    [
+        ""
+    ],
+    "description":
+    {
+        "short": "A virtual metaverse gallery space.",
+        "long": "Mona is building and seeding the open metaverse through the creation and use of beautiful, unique 3D Spaces. They believe art is about the experience, and the experiences that will store the most value over time will be 3d, one-of-one, and dynamic which is why Mona Spaces are so unique."
+    },
+    "primaryCta":
+    {
+        "url": "//mona.gallery",
+        "text": "Project Website"
+    },
+    "links":
+    [
+        {
+            "label": "Website",
+            "links":
+            [
+                {
+                    "url": "//mona.gallery",
+                    "text": "mona.gallery"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links":
+            [
+                {
+                    "url": "",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links":
+            [
+                {
+                    "url": "",
+                    "text": ""
+                }
+            ]
+        }
+    ],
+    "keyInfo":
+    [
+        {
+            "label": "Using Filecoin since",
+            "value": "2021"
+        }
+    ],
+    "video": "",
+    "stats":
+    [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "ctaCard":
+    {
+        "title": "",
+        "description": "",
+        "buttonText": "",
+        "url": ""
+    },
+    "taxonomies":
+    [
+        {
+            "slug": "project-category",
+            "tags":
+            [
+                "storage-apps-clients"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags":
+            [
+                "nfts"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags":
+            [
+                "web-app"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags":
+            [
+                "nft-storage"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags":
+            [
+                ""
+            ]
+        }
+    ]
+}

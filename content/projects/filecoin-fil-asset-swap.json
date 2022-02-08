@@ -1,0 +1,36 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "icon-darma-capital.svg", "full": "logo-darma.png" },
+  "name": "Filecoin FIL asset swap",
+  "org": ["DARMA Capital"],
+  "description": {
+    "short": "Enabling miners to access to the FIL token & avoid high lending rates.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//darma.capital", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//darma.capital", "text": "darma.capital" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
+  ]
+}

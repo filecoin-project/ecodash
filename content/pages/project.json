@@ -1,19 +1,19 @@
 {
   "seo": {
-    "title": "Filecoin Ecosystem",
+    "title": "Explore the Ecosystem | Filecoin",
     "description": "Filecoin interactive ecosystem and showcase."
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://example.com",
+    "url": "https://ecosystem.filecoin.io",
     "type": "website",
-    "image": "https://example.com"
+    "image": ""
   },
   "page_content": {
     "breadcrumbs": [
       {
         "type": "a",
-        "href": "https://example.com",
+        "href": "https://filecoin.io",
         "label": "Home"
       },
       {

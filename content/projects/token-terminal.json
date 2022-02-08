@@ -1,0 +1,49 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "Group734.png", "full": "tokenterminal.svg" },
+  "name": "Token Terminal",
+  "org": [""],
+  "description": {
+    "short": "Financial Metrics for Blockchain Protocols",
+    "long": ""
+  },
+  "primaryCta": {
+    "url": "//tokenterminal.com/terminal/projects/filecoin",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//tokenterminal.com/terminal/projects/filecoin",
+          "text": "tokenterminal.com/terminal/projects/filecoin"
+        }
+      ]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    {
+      "label": "Docs",
+      "links": [
+        { "url": "//docs.tokenterminal.com", "text": "docs.tokenterminal.com" }
+      ]
+    }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["token-finance"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
+  ]
+}

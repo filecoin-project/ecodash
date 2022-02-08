@@ -1,0 +1,36 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "icon-protofire.png", "full": "protofire-full.svg" },
+  "name": "Protofire",
+  "org": [""],
+  "description": {
+    "short": "Protofire is a consulting service for decentralised protocols.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//protofire.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//protofire.io", "text": "protofire.io" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["decentralized-identity"] },
+    { "slug": "software-type", "tags": ["none"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
+  ]
+}

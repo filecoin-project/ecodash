@@ -1,0 +1,42 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": {
+    "icon": "PL-logo-symbol-black.png",
+    "full": "PL-logo-symbol-black.png"
+  },
+  "name": "Protocol Labs",
+  "org": [""],
+  "description": {
+    "short": "Research, design, & development for next-generation web protocols.",
+    "long": "Protocol Labs is an open-source R&D lab. We build protocols, tools, and services to radically improve the internet. Our projects include IPFS, libp2p, DRAND, and Filecoin."
+  },
+  "primaryCta": { "url": "//protocol.ai", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//protocol.ai", "text": "protocol.ai" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    {
+      "slug": "software-type",
+      "tags": ["library-sdk", "backend-app", "network"]
+    },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["series-n"] }
+  ]
+}

@@ -1,200 +1,154 @@
 {
   "categories": [
     {
-      "label": "Industry",
-      "sublabel": "Filter by primary application area",
-      "slug": "industry",
+      "label": "Project Category",
+      "sublabel": "Filter by primary area",
+      "slug": "project-category",
       "tags": [
         {
-          "label": "Browsers",
-          "slug": "browsers",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          "label": "Storage Apps & Clients",
+          "slug": "storage-apps-clients"
         },
         {
-          "label": "Content delivery",
-          "slug": "content-delivery",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-          "position": "first"
+          "label": "Token & Finance",
+          "slug": "token-finance"
         },
         {
-          "label": "Data & machine learning",
-          "slug": "data-machine-learning",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          "label": "Developer Tools",
+          "slug": "developer-tools"
         },
         {
-          "label": "Data governance",
-          "slug": "data-governance",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          "label": "Network Tools",
+          "slug": "network-tools"
         },
         {
-          "label": "Data persistence",
-          "slug": "data-persistence",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "DeFi",
-          "slug": "defi",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Games & VR/AR",
-          "slug": "games-vr-ar",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Identity",
-          "slug": "identity",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Integrations",
-          "slug": "integrations",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "IoT",
-          "slug": "iot",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Marketplaces & ecommerce",
-          "slug": "marketplaces-ecommerce",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "NFTs",
-          "slug": "nfts",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Other",
-          "slug": "other",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-          "position": "last"
-        },
-        {
-          "label": "Prediction",
-          "slug": "prediction",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-          "label": "Social media",
-          "slug": "social-media",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          "label": "Collaborations",
+          "slug": "collaborations"
         }
       ]
     },
     {
-      "label": "Focus areas",
-      "sublabel": "Filter by entityTerm focus or specialty",
-      "slug": "focus",
+      "label": "Storage Type",
+      "sublabel": "Filter by the kind of data stored",
+      "slug": "storage-type",
       "tags": [
         {
-          "label": "Community networks",
-          "slug": "community-networks"
+          "label": "Archival",
+          "slug": "archival",
+          "description": "Projects for long-term data storage and preservation"
         },
         {
-          "label": "Developer tools",
-          "slug": "dev-tools"
+          "label": "Consumer Storage",
+          "slug": "consumer-storage",
+          "description": "Projects making decentralized storage easy for individuals or groups"
+        },
+        {
+          "label": "Data Markets",
+          "slug": "data-markets",
+          "description": "Projects related to data marketplaces and the data econonomy"
+        },
+        {
+          "label": "Decentralized Identity",
+          "slug": "decentralized-identity",
+          "description": "Projects bringing self-sovereignty to managing personal identity"
         },
         {
           "label": "Education",
-          "slug": "education"
+          "slug": "education",
+          "description": "Projects related to academia, research, education, or learning"
         },
         {
-          "label": "File sharing",
-          "slug": "file-sharing"
+          "label": "Games",
+          "slug": "games",
+          "description": "Projects related to online gaming or digital realms"
         },
         {
-          "label": "GLAM",
-          "slug": "glam"
+          "label": "General Storage",
+          "slug": "general-storage",
+          "description": "Projects for general-purpose data storage"
+        },
+        {
+          "label": "Health",
+          "slug": "health",
+          "description": "Projects related to health, public health, or medical data"
+        },
+        {
+          "label": "NFTs",
+          "slug": "nfts",
+          "description": "Projects for storing non-fungible digital tokens and their metadata"
+        },
+        {
+          "label": "Public Data",
+          "slug": "public-data",
+          "description": "Projects related to storing public data"
+        },
+        {
+          "label": "Social",
+          "slug": "social",
+          "description": "Projects related to social interaction or social media"
+        },
+        {
+          "label": "Verifiable Storage",
+          "slug": "verifiable-storage",
+          "description": "Projects safeguaring or verifying the integrity of data"
+        },
+        {
+          "label": "Video",
+          "slug": "video",
+          "description": "Projects for storage, playback, recording, or broadcasting of video content"
+        },
+        {
+          "label": "Web Publishing",
+          "slug": "web-publishing",
+          "description": "Projects that focus on creating or publishing web content"
+        },
+        {
+          "label": "Other",
+          "slug": "other",
+          "description": "Projects that don't quite fit in any other category"
+        }
+      ]
+    },
+    {
+      "label": "Software Type",
+      "sublabel": "Filter by developer or user-facing layer",
+      "slug": "software-type",
+      "tags": [
+        {
+          "label": "API",
+          "slug": "api"
+        },
+        {
+          "label": "Library or SDK",
+          "slug": "library-sdk"
+        },
+        {
+          "label": "Hosted Service",
+          "slug": "hosted-service"
+        },
+        {
+          "label": "Network",
+          "slug": "network"
         },
         {
           "label": "Infrastructure",
           "slug": "infrastructure"
         },
         {
-          "label": "Medical data",
-          "slug": "medical"
+          "label": "Backend App",
+          "slug": "backend-app"
         },
         {
-          "label": "Mobile",
-          "slug": "mobile"
+          "label": "Web App",
+          "slug": "web-app"
         },
         {
-          "label": "Music",
-          "slug": "music"
+          "label": "Mobile App",
+          "slug": "mobile-app"
         },
         {
-          "label": "Package managers",
-          "slug": "package-managers"
-        },
-        {
-          "label": "Public data",
-          "slug": "public-data"
-        },
-        {
-          "label": "Reputation & IP management",
-          "slug": "reputation-ip"
-        },
-        {
-          "label": "Research data",
-          "slug": "research-data"
-        },
-        {
-          "label": "Storage & pinning",
-          "slug": "storage-pinning"
-        },
-        {
-          "label": "Streaming",
-          "slug": "streaming"
-        },
-        {
-          "label": "Supply chain",
-          "slug": "supply-chain"
-        },
-        {
-          "label": "Video",
-          "slug": "video"
-        },
-        {
-          "label": "Web hosting & publishing",
-          "slug": "web-hosting-publishing"
-        }
-      ]
-    },
-    {
-      "label": "IPFS benefits",
-      "sublabel": "Filter by the benefits IPFS provides",
-      "slug": "benefits",
-      "tags": [
-        {
-          "label": "Corporate & government independence",
-          "slug": "corporate-government-independence"
-        },
-        {
-          "label": "Couldn't exist without IPFS",
-          "slug": "couldnt-exist-without-ipfs"
-        },
-        {
-          "label": "Data integrity",
-          "slug": "data-integrity"
-        },
-        {
-          "label": "Disaster resilience",
-          "slug": "disaster-resilience"
-        },
-        {
-          "label": "Interoperability",
-          "slug": "interoperability"
-        },
-        {
-          "label": "Local-first model",
-          "slug": "local-first-model"
-        },
-        {
-          "label": "Self-sovereign data",
-          "slug": "self-sovereign-data"
+          "label": "None",
+          "slug": "none"
         }
       ]
     },
@@ -204,68 +158,83 @@
       "slug": "tooling",
       "tags": [
         {
-          "label": "Bitswap",
-          "slug": "bitswap"
+          "label": "Chainlink External Adapters",
+          "slug": "chainlink-external-adapters"
         },
         {
-          "label": "cljs-ipfs",
-          "slug": "cljs-ipfs"
+          "label": "Estuary",
+          "slug": "estuary"
         },
         {
-          "label": "Ecosystem tools",
-          "slug": "ecosystem-tools"
+          "label": "Fleek Space Daemon",
+          "slug": "fleek-space-daemon"
         },
         {
-          "label": "Filecoin",
-          "slug": "filecoin"
+          "label": "ipfs-http-client",
+          "slug": "ipfs-http-client"
         },
         {
-          "label": "go-ipfs",
-          "slug": "go-ipfs"
+          "label": "Metamask Filecoin Snap",
+          "slug": "metamask-filecoin-snap"
         },
         {
-          "label": "go-libp2p",
-          "slug": "go-libp2p"
+          "label": "NFT.storage",
+          "slug": "nft-storage"
         },
         {
-          "label": "HTTP gateway",
-          "slug": "http-gateway"
+          "label": "Slate",
+          "slug": "slate"
         },
         {
-          "label": "IPFS Cluster",
-          "slug": "ipfs-cluster"
+          "label": "Starling",
+          "slug": "starling"
         },
         {
-          "label": "ipfs-embed",
-          "slug": "ipfs-embed"
+          "label": "Textile Buckets",
+          "slug": "textile-buckets"
         },
         {
-          "label": "IPLD",
-          "slug": "ipld"
+          "label": "Textile Powergate",
+          "slug": "textile-powergate"
         },
         {
-          "label": "js-ipfs",
-          "slug": "js-ipfs"
+          "label": "Web3.storage",
+          "slug": "web3-storage"
         },
         {
-          "label": "js-ipfs-https-client",
-          "slug": "js-ipfs-https-client"
+          "label": "Zondax Signing Tools",
+          "slug": "zondax-signing-tools"
         },
         {
-          "label": "js-libp2p",
-          "slug": "js-libp2p"
+          "label": "None",
+          "slug": "none"
+        }        
+      ]
+    },
+    {
+      "label": "Institutional Support",
+      "sublabel": "Filter by support recieved by the entityTerm",
+      "slug": "pipeline",
+      "tags": [
+        {
+          "label": "Grant or Sponsorship",
+          "slug": "grant-sponsorship"
         },
         {
-          "label": "Pinning services",
-          "slug": "pinning-services"
+          "label": "Accelerator",
+          "slug": "accelerator"
         },
         {
-          "label": "py-ipfs-http-client",
-          "slug": "py-ipfs-http-client"
+          "label": "Seed",
+          "slug": "seed"
         },
         {
-          "label": "rust-libp2p",
-          "slug": "rust-libp2p"
+          "label": "Series A or Beyond",
+          "slug": "series-n"
+        },
+        {
+          "label": "None",
+          "slug": "none"
         }
       ]
     }
@@ -288,14 +257,14 @@
     "date_desc": {
       "type": "number",
       "slug": "time-descending",
-      "label": "Time on IPFS (newer)",
+      "label": "Time on Filecoin (newer)",
       "direction": "DESC",
       "sortNumber": "since"
     },
     "date_asc": {
       "type": "number",
       "slug": "time-ascending",
-      "label": "Time on IPFS (older)",
+      "label": "Time on Filecoin (older)",
       "direction": "ASC",
       "sortNumber": "since"
     }

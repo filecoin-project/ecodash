@@ -1,0 +1,132 @@
+{
+    "display": true,
+    "featured": false,
+    "sortNumbers":
+    [
+        {
+            "since": 2020
+        }
+    ],
+    "logo":
+    {
+        "icon": "icon-sinso.png",
+        "full": "logo-sinso.png"
+    },
+    "name": "Sinso",
+    "org":
+    [
+        ""
+    ],
+    "description":
+    {
+        "short": "The leading medical imaging SaaS cloud service provider.",
+        "long": "SINSO builds the SINSO DAC ecology based on WEB3 technology and jointly promotes the human society to enter the era of decentralized medical care. Users/institutions collect data through SINSO Getway, cast health/medical-related data into NFTs in SINSO DAPP, conduct transactions at SINSO Donors Network, and realize the value transfer of medical data.\n\n"
+    },
+    "primaryCta":
+    {
+        "url": "//sinso.io",
+        "text": "Project Website"
+    },
+    "links":
+    [
+        {
+            "label": "Website",
+            "links":
+            [
+                {
+                    "url": "//sinso.io",
+                    "text": "sinso.io"
+                }
+            ]
+        },
+        {
+            "label": "Repo",
+            "links":
+            [
+                {
+                    "url": "",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "label": "Docs",
+            "links":
+            [
+                {
+                    "url": "",
+                    "text": ""
+                }
+            ]
+        }
+    ],
+    "keyInfo":
+    [
+        {
+            "label": "Using Filecoin since",
+            "value": "2020"
+        }
+    ],
+    "video": "",
+    "stats":
+    [
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        },
+        {
+            "label": "",
+            "value": ""
+        }
+    ],
+    "ctaCard":
+    {
+        "title": "",
+        "description": "",
+        "buttonText": "",
+        "url": ""
+    },
+    "taxonomies":
+    [
+        {
+            "slug": "project-category",
+            "tags":
+            [
+                "developer-tools"
+            ]
+        },
+        {
+            "slug": "storage-type",
+            "tags":
+            [
+                "general-storage"
+            ]
+        },
+        {
+            "slug": "software-type",
+            "tags":
+            [
+                "library-sdk",
+                "api"
+            ]
+        },
+        {
+            "slug": "tooling",
+            "tags":
+            [
+                "none"
+            ]
+        },
+        {
+            "slug": "pipeline",
+            "tags":
+            [
+                ""
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "nucypher-square.png", "full": "nucypher-logo.png" },
+  "name": "NuCypher",
+  "org": [""],
+  "description": {
+    "short": "Cryptographic based infrastructure for Privacy-Preserving application.",
+    "long": "NuCypher provides tools for secret management, dynamic access control, and secure computation.  "
+  },
+  "primaryCta": { "url": "//nucypher.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//nucypher.com", "text": "nucypher.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/nucypher", "text": "github.com/nucypher" }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "//youtube.com/watch?v=MTyd3x7gp88",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["network"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
+  ]
+}

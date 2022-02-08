@@ -56,7 +56,7 @@ export default {
     action: {
       type: String,
       required: false,
-      default: 'https://example.com'
+      default: 'https://protocol.us16.list-manage.com/subscribe/post-json?u=a1dfb670c4f1fb042e82a1f1d&id=ff0bee3cae'
     },
     buttonText: {
       type: String,
@@ -76,3 +76,74 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+// ///////////////////////////////////////////////////////////////////// General
+#mailchimp-form {
+  .panel-top {
+    .email,
+    .submit {
+      @include whiteBorderBack;
+      box-shadow: none;
+      position: relative;
+      margin-left: 9px;
+
+      input {
+        @include fontSize_Small;
+        font-family: $font_Secondary;
+        font-weight: $fontWeight_Regular;
+        background: none;
+        box-shadow: none;
+        height: 30px;
+        padding: 0 20px;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        @include whiteBorderBack;
+        background: $cadmiumBlue;
+        top: -7px;
+        left: -6px;
+        z-index: -1;
+      }
+
+      &:after {
+        @include whiteBorderBack;
+        top: -13px;
+        left: -11px;
+        z-index: -2;
+      }
+    }
+
+    .email {
+      background: $midnight;
+
+      input {
+        color: $white;
+        &::placeholder {
+          color: $white;
+          opacity: 1;
+        }
+      }
+
+    }
+
+    .submit {
+      @include oceanBlueGradient;
+
+      input {
+        color: $blackSapphire;
+        margin-left: 0;
+      }
+    }
+  }
+}
+</style>

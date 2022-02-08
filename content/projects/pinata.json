@@ -1,114 +1,44 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": {
-    "since": 2018
-  },
-  "logo": {
-    "icon": "pinataSVG_df766bc6.svg",
-    "full": "pinataSVG_df766bc6.svg"
-  },
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "pinata-square.png", "full": "pinata-full.svg" },
   "name": "Pinata",
-  "org": [
-    "Pinata"
-  ],
+  "org": ["Pinata Technologies, Inc."],
   "description": {
-    "short": "Pinning service that aims to make IPFS as easy as possible",
-    "long": "IPFS pinning service with easy API and toolkit, designed to make IPFS as easy as possible while also providing the speed and stability required for production applications."
+    "short": "Pinata is a pinning service and gateway for IPFS.",
+    "long": ""
   },
-  "primaryCta": {
-    "url": "//pinata.cloud",
-    "text": "Project website"
-  },
+  "primaryCta": { "url": "//pinata.cloud", "text": "Project Website" },
   "links": [
     {
       "label": "Website",
-      "links": [
-        {
-          "url": "//pinata.cloud",
-          "text": "pinata.cloud"
-        }
-      ]
+      "links": [{ "url": "//pinata.cloud", "text": "pinata.cloud" }]
     },
     {
       "label": "Repo",
       "links": [
-        {
-          "url": "//github.com/PinataCloud",
-          "text": "github.com/PinataCloud"
-        }
+        { "url": "//github.com/PinataCloud", "text": "github.com/PinataCloud" }
       ]
-    }
-  ],
-  "keyInfo": [
+    },
     {
-      "label": "Using IPFS since",
-      "value": "2018"
+      "label": "Docs",
+      "links": [{ "url": "//docs.pinata.cloud", "text": "docs.pinata.cloud" }]
     }
   ],
-  "video": "//youtube.com/watch?v=29k2C1JXyg4&list=PL_0VrY55uV1-THfh1GVoE6v0SxKO9M0gs",
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
   "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
   ],
-  "ctaCard": {
-    "title": "Pinata on Medium",
-    "description": "Blog posts, how-to guides, and more from the Pinata team.",
-    "buttonText": "Read more",
-    "url": "//medium.com/pinata"
-  },
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
   "taxonomies": [
-    {
-      "slug": "industry",
-      "tags": [
-        "data-persistence"
-      ]
-    },
-    {
-      "slug": "focus",
-      "tags": [
-        "storage-pinning",
-        "dev-tools",
-        "file-sharing",
-        "infrastructure",
-        "music",
-        "public-data",
-        "streaming",
-        "supply-chain",
-        "video",
-        "web-hosting-publishing"
-      ]
-    },
-    {
-      "slug": "benefits",
-      "tags": [
-        "data-integrity",
-        "disaster-resilience",
-        "interoperability",
-        "local-first-model",
-        "couldnt-exist-without-ipfs"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "go-ipfs",
-        "ipfs-cluster",
-        "http-gateway",
-        "ipld",
-        "js-ipfs",
-        "js-ipfs-https-client"
-      ]
-    }
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["general-storage"] },
+    { "slug": "software-type", "tags": ["api", "hosted-service"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": [""] }
   ]
 }

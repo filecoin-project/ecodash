@@ -1,0 +1,36 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2021 }],
+  "logo": { "icon": "zora-icon.png", "full": "Zora21.png" },
+  "name": "Zora",
+  "org": ["Zora Labs. Decentralized Auction House"],
+  "description": {
+    "short": "An NFT Marketplace focused on new economic models for creators.",
+    "long": "ZORA is an NFT marketplace that introduces a new universal media registry protocol. It’s a way for creators to participate in the upside of resale markets — they can publish creative media, earn money on their work, and have others build and share what they create. Because this media is based on a protocol, all this happens without the lock-in of social media platforms."
+  },
+  "primaryCta": { "url": "//zora.co", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//zora.co", "text": "zora.co" }]
+    },
+    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    { "slug": "storage-type", "tags": ["nfts"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["nft-storage"] },
+    { "slug": "pipeline", "tags": ["seed"] }
+  ]
+}

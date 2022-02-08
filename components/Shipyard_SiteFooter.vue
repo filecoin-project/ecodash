@@ -4,15 +4,20 @@
     <section class="panel-top">
       <div class="grid-centered-noGutter">
 
-        <div class="col-5_md-6_sm-12 ">
+        <div class="col-5_md-6_sm-10 ">
           <div class="content-wrapper">
-            <h2 class="heading">
-              {{ pageData.heading }}
-            </h2>
+            <h3 class="heading">
+              {{ pageData.cta_heading }}
+            </h3>
+            <div ref="cta" class="cta-text" v-html="pageData.cta_text"></div>
+
+            <h4 class="heading">
+              {{ pageData.form_heading }}
+            </h4>
             <div ref="subheading" class="subheading">
               <component
                 :is="getElementTag(element.type)"
-                v-for="(element, index) in pageData.subheading"
+                v-for="(element, index) in pageData.form_subheading"
                 :key="`subheading-element-${index}`"
                 :href="element.href"
                 target="_blank"
@@ -26,7 +31,7 @@
           </div>
         </div>
 
-        <div v-if="navigation" class="col-5_sm-12">
+        <div v-if="navigation" class="col-5_sm-10">
           <div class="content-wrapper">
             <nav id="footer-navigation">
               <div class="left-column">
@@ -157,6 +162,15 @@ export default {
   }
 }
 
+::v-deep .footer-link {
+ color: white;
+ border-bottom: 1px solid white;
+ &:hover {
+   color: $dodgerBlue;
+   border-bottom: 1px solid $dodgerBlue;
+ }
+}
+
 // ///////////////////////////////////////////////////////////////// [Panel] Top
 .panel-top {
   @include small {
@@ -254,6 +268,10 @@ export default {
       }
     }
   }
+}
+
+.cta-text {
+  margin: 0.5rem 0 2.5rem;
 }
 
 .social-icons-container {

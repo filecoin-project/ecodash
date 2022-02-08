@@ -1,0 +1,49 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": {
+    "icon": "digital-mob-square.jpeg",
+    "full": "digital-mob-square.jpeg"
+  },
+  "name": "Digital MOB",
+  "org": [""],
+  "description": {
+    "short": "Multidisciplinary software development company.",
+    "long": "Digital MOB is a multidisciplinary software development company distributed worldwide, partnering with international clients that value quality of outcome above all else, to create memorable and meaningful experiences."
+  },
+  "primaryCta": {
+    "url": "//github.com/Digital-Mob",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        { "url": "//github.com/Digital-Mob", "text": "github.com/Digital-Mob" }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        { "url": "//github.com/Digital-Mob", "text": "github.com/Digital-Mob" }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["collaborations"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["library-sdk", "web-app"] },
+    { "slug": "tooling", "tags": ["none"] },
+    { "slug": "pipeline", "tags": ["grant-sponsorship"] }
+  ]
+}

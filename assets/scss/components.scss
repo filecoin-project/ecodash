@@ -126,7 +126,6 @@
     .panel-top {
       .email,
       .submit {
-        @include whiteBorderBack;
         box-shadow: none;
         position: relative;
         margin-left: 9px;
@@ -164,27 +163,54 @@
           left: -11px;
           z-index: -2;
         }
+
       }
 
       .email {
+        @include whiteBorderBack;
         background: $midnight;
 
         input {
           color: $white;
+          transition: background-color 0.3s ease;
           &::placeholder {
             color: $white;
             opacity: 1;
           }
+          &:hover, &:focus {
+            background-color: $azure;
+          }
         }
-
       }
 
       .submit {
-        @include oceanBlueGradient;
+        height: 30px;
+        &:before,
+        &:after {
+          transition: 250ms ease-out;
+          width: calc(100% - 2px);
+        }
+        &:hover {
+          &:before {
+            top: -12px;
+            left: -10px;
+          }
+          input {
+            top: -11px;
+            left: -9px;
+          }
+        }
 
         input {
+          @include oceanBlueGradient;
+          @include whiteBorderBack;
+          height: 32px;
+          position: relative;
           color: $blackSapphire;
           margin-left: 0;
+          top: 0px;
+          left: 0px;
+          transition: 250ms ease-out;
         }
       }
     }
@@ -195,7 +221,14 @@
 // -----------------------------------------------------------------------------
 
 #segment-slider-chart {
-  @include medium {
+  .main-container {
+    flex-wrap: nowrap;
+  }
+  @include xlarge {
+    background-color: transparent;
+    .main-container {
+      flex-wrap: wrap-reverse;
+    }
     .segments-container {
       background-color: inherit;
       .chart-title {
@@ -362,6 +395,22 @@
 
 #project-explorer-container {
   padding-top: 2rem;
+  .placeholder-results-empty {
+    background: none;
+    .clear-all-null-results {
+      background: none;
+      display: inline-block;
+      margin: 1rem;
+      border: 2px solid $white;
+      &:active {
+        background-color: $azure;
+      }
+      &:hover {
+        background-color: $azure;
+        border-color: $azure;
+      }
+    }
+  }
 }
 
 #project-explorer-toolbar {
@@ -370,79 +419,8 @@
     margin-bottom: 1.5rem;
     #clear-selected-filters-button {
       margin-left: 0;
-    }
-  }
-  .button-wrapper {
-    position: relative;
-    margin-right: 1.5rem;
-    transition: all 250ms linear;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      @include whiteBorderBack;
-      background-color: $jaguar;
-      transition: inherit;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      @include whiteBorderBack;
-      @include oceanBlueGradient;
-      transition: inherit;
-    }
-    button {
-      z-index: 1;
-      top: 10px;
-      left: 10px;
-      min-height: 2.25rem !important;
-      @include cardText;
-      @include whiteBorderFront;
-      border-radius: 0 !important;
-      background-color: $jaguar;
-      transition: inherit;
-      .button-content {
-        line-height: $leading_Regular;
-        color: $white;
-        transition: all 250ms linear;
-        svg {
-          path {
-            transition: inherit;
-            stroke: $white;
-          }
-        }
-      }
-    }
-    &.button-active {
-      &:before {
-        top: 0px;
-        left: 0px;
-      }
-      &:after {
-        top: 0px;
-        left: 0px;
-      }
-      button {
-        top: 0px;
-        left: 0px;
-        @include oceanBlueGradient;
-        .button-content {
-          color: $blackSapphire;
-          transition: all 250ms linear;
-          svg {
-            path {
-              transition: inherit;
-              stroke: $blackSapphire;
-            }
-          }
-        }
+      path {
+        stroke: $white;
       }
     }
   }
@@ -476,34 +454,27 @@
 
   #filter-panel-toggle-button {
     position: relative;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $turquoise;
+    }
   }
 
   #sort-by-selector {
-    @include shadow1;
-    .button-inner,
-    .dropdown-item {
+    label,
+    span {
       @include fontSize_Small;
-      line-height: 1.5;
-    }
-    .button-inner {
-      align-items: center;
-      background-color: $jaguar;
-      transition: all 250ms linear;
-    }
-    .dropdown-button {
-      min-height: 2rem;
-      font-size: $fontSize_Small;
-      line-height: $leading_Medium;
+      @include leading_Small;
+    }    
+    &.closed {
       .dropdown-toggle {
-        svg {
-          path {
-            stroke: $white;
-          }
+        path {
+          stroke: $white;
         }
       }
       label,
       span {
-        padding-top: 0.125rem;
+        padding-top: 0.25rem;
       }
     }
     &:not(.closed) {
@@ -514,10 +485,8 @@
       .dropdown-toggle {
         transition: 250ms ease-in;
         transform: rotate(-180deg);
-        svg {
-          path {
-            stroke: $blackSapphire;
-          }
+        path {
+          stroke: $blackSapphire;
         }
       }
       .button-inner {
@@ -528,23 +497,13 @@
   }
 
   #list-block-toggle-button {
-    top: 10px;
-    height: calc(2.5rem - 2px);
-    @include whiteBorderBack;
-    overflow: hidden;
-    &:before {
-      width: 52%;
-      background-color: unset;
-      @include oceanBlueGradient;
-    }
-    svg {
-      path,
-      line,
-      g {
-        stroke: $blackSapphire;
-      }
+    path,
+    line,
+    g {
+      stroke: $blackSapphire;
     }
   }
+
 }
 
 // //////////////////////////////////////////////////////////////// Filter Panel
@@ -671,16 +630,42 @@
   #filter-panel-controls {
     .clear-selected-button {
       color: $white;
+      padding-top: 0.5rem;
       @include cardText;
       @include oceanBlueGradient;
     }
     .done-button {
-      left: 1rem;
+      top: 10px;
+      left: 10px;
       @include cardText;
       @include tripleLayer;
       @include whiteBorderBack;
+      background: linear-gradient(90deg, #07070d 0%, #07070d 40%,#178FFD 60%, #39C0CC 90%);
+      background-size: 500% 100%;
+      background-position: 0% 0%;
+      transition: 250ms ease-in-out;
+      &:hover {
+        background-position: 87% 0%;
+      }
       &:after {
         @include oceanBlueGradient;
+        transition: inherit;
+      }
+      &:before {
+        transition: inherit;
+      }
+      &:hover {
+        top: 0;
+        left: 0;
+        background-color: $jaguar;
+        &:after {
+          top: 0px;
+          left: 0px;
+        }
+        &:before {
+          top: 0px;
+          left: 0px;
+        }
       }
     }
   }
@@ -701,7 +686,7 @@
     box-shadow: none;
     padding: 7.5px 10.5px;
     border: 1px solid $lightGrey;
-    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #B0F0FF 40%, #ADD0FE 60%, #178FFD 80%, #39C0CC 100%);
     background-size: 500% 100%;
     background-position: 0% 0%;
     transition: 250ms ease-in-out;
@@ -768,6 +753,9 @@
 // -----------------------------------------------------------------------------
 #paginated-list-navigation-controls {
   margin-top: 6rem !important;
+  @include small {
+    align-items: center !important;
+  }
   svg {
     path,
     line {
@@ -799,10 +787,20 @@
 }
 
 #results-per-page-selector {
-  @include lightBluePurpleGradient;
+  // @include lightBluePurpleGradient;
   @include whiteBorderBack;
   border-radius: $borderRadius_Medium;
   color: $blackSapphire;
+  transition: all 0.3s ease;
+  position: relative;
+  background: linear-gradient(90deg, $paleCornflower 0%, $blizzard 33%, $blizzard 66%, $paleCornflower 100%);
+  background-size: 500% 100%;
+  background-position: 0% 0%;
+  transition: 0.35s ease-in-out;
+  &:hover {
+    border: 1px solid $white;
+    background-position: 92% 0%;
+  }
   .dropdown {
     &.dropdown-button {
       align-items: center;
@@ -1000,6 +998,31 @@
   .ctas {
     position: relative;
     z-index: 3;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      transition: 250ms ease-out;
+    }
+
+    &:before {
+      @include whiteBorderBack;
+      background: $cadmiumBlue;
+      width: calc(100% - 38px);
+      height: calc(100% - 2px);
+      top: -10px;
+      left: 1px;
+      z-index: -1;
+    }
+    &:after {
+      border: 2px solid $caribbeanBlue;
+      width: calc(100% - 42px);
+      height: calc(100% - 4px);
+      top: -13px;
+      left: -2px;
+      z-index: -2;
+    }
 
     .primary-cta {
       @include whiteBorderBack;
@@ -1009,31 +1032,11 @@
       font-weight: $fontWeight_Regular;
       box-shadow: none;
       position: relative;
+      top: -5px;
+      left: -7px;
       padding: 0;
       margin-left: 12px;
-
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-
-      &:before {
-        @include whiteBorderBack;
-        background: $cadmiumBlue;
-        top: -7px;
-        left: -6px;
-        z-index: -1;
-      }
-      &:after {
-        border: 2px solid $caribbeanBlue;
-        top: -13px;
-        left: -11px;
-        z-index: -2;
-      }
+      transition: 250ms ease;
 
       span {
         position: relative;
@@ -1041,7 +1044,7 @@
 
         &[data-tooltip] {
           &::after {
-            top: -1.5rem;
+            top: -1.75rem;
             left: 4rem;
           }
         }
@@ -1050,6 +1053,16 @@
 
     .secondary-cta {
       display: none;
+    }
+    &:hover {
+      &:before {
+        top: -12px;
+        left: -1px;
+      }
+      .primary-cta {
+        top: -12px;
+        left: -12px;
+      }
     }
   }
 }
@@ -1149,9 +1162,10 @@
     }
 
     .cta {
-      @include oceanBlueGradient;
+      // @include oceanBlueGradient;
       @include whiteBorderBack;
       @include fontSize_Small;
+      // background: linear-gradient($azure, $ocean, $ocean, $azure);
       font-family: $font_Secondary;
       font-weight: $fontWeight_Regular;
       color: $white;
@@ -1159,6 +1173,14 @@
       bottom: -20px;
       padding: 6px 29px;
       margin: 0;
+      background: linear-gradient(75deg, $azure 0%, $ocean 33%, $ocean 66%, $azure 100%);
+      background-size: 500% 100%;
+      background-position: 0% 0%;
+      transition: 0.35s ease-in-out;
+      &:hover {
+        border: 1px solid $white;
+        background-position: 95% 0%;
+      }
     }
 
     &.big-number {
@@ -1205,11 +1227,11 @@
   .chiclet {
     @include lightBlueGradient;
     @include whiteBorderBack;
-    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%, #DDECFF 40%, #D5F6FD 60%, #178FFD 80%, #39C0CC 100%);
+    background: linear-gradient(90deg, #F1F3F2 0%, #F1F3F2 20%,  #B0F0FF 40%, #ADD0FE 60%, #178FFD 80%, #39C0CC 100%);
     background-size: 500% 100%;
-    background-position: 50% 0%;
+    background-position: 0% 0%;
     &:hover {
-      background-position: 98% 0%;
+      background-position: 50% 0%;
     }
     &.active-button {
       @include oceanBlueGradient;
@@ -1250,7 +1272,7 @@
     .taxonomy-label {
       @include shadow1;
       border: 1px solid $lightGrey;
-      color: $darkGrey; 
+      color: $darkGrey;
     }
   }
 }

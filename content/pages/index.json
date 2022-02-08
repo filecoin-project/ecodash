@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Filecoin Ecosystem",
+    "title": "Explore the Ecosystem | Filecoin",
     "description": "Filecoin interactive ecosystem and dashboard."
   },
   "og": {
@@ -71,7 +71,7 @@
       }
     },
     "segment_slider": {
-      "filter_toggle_button_text": "View Category",
+      "filter_toggle_button_text": "Explore",
       "mobile_chart_title": "Explore Filecoin"
     },
     "section_filter": {

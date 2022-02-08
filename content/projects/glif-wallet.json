@@ -1,0 +1,44 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2019 }],
+  "logo": { "icon": "icon-glif-allet.png", "full": "logo-Glif-Wallet.png" },
+  "name": "Glif Wallet",
+  "org": ["Glif"],
+  "description": {
+    "short": "Web wallet for FIL",
+    "long": "Glif offers a lightweight web interface to send and receive Filecoin via your Ledger device."
+  },
+  "primaryCta": { "url": "//wallet.glif.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//wallet.glif.io", "text": "wallet.glif.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/glifio/wallet",
+          "text": "github.com/glifio/wallet"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["token-finance"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["web-app"] },
+    { "slug": "tooling", "tags": ["zondax-signing-tools"] },
+    { "slug": "pipeline", "tags": ["series-n"] }
+  ]
+}

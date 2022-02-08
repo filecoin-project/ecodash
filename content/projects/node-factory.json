@@ -1,0 +1,44 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2020 }],
+  "logo": { "icon": "icon-node-factory.png", "full": "Group.png" },
+  "name": "Node Factory",
+  "org": [""],
+  "description": {
+    "short": "Blockchain R&D company that turns ideas into reliable solutions.",
+    "long": ""
+  },
+  "primaryCta": { "url": "//nodefactory.io", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//nodefactory.io", "text": "nodefactory.io" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/nodefactoryIo",
+          "text": "github.com/nodefactoryIo"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["developer-tools"] },
+    { "slug": "storage-type", "tags": ["other"] },
+    { "slug": "software-type", "tags": ["hosted-service"] },
+    { "slug": "tooling", "tags": ["metamask-filecoin-snap"] },
+    { "slug": "pipeline", "tags": ["grant-sponsorship"] }
+  ]
+}
