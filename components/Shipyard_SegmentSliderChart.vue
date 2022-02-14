@@ -85,6 +85,7 @@ const calculateSegmentAndLabelPositions = (instance) => {
   for (let i = 0; i < labels.length; i++) {
     const score = -1 * ((segments[i].offsetWidth / 2) - labels[i].offsetWidth)
     instance.segments[i].labelHeight = labels[i].offsetHeight
+    instance.segments[i].labelWidth = labels[i].offsetWidth
     instance.segments[i].score = score
   }
 
@@ -92,8 +93,8 @@ const calculateSegmentAndLabelPositions = (instance) => {
   ascending.sort((a, b) => a.score - b.score)
   for (let i = 0; i < ascending.length; i++) {
     ascending[i].above = i % 2
-    ascending[i].pos = (25 + ascending[i].score) * -1
-    ascending[i].offset = (25 + ascending[i].score) * -1
+    ascending[i].pos = (25 + ascending[i].score) * -1.15
+    ascending[i].offset = (25 + ascending[i].score) * -1.15
   }
 
   let last, first
@@ -144,6 +145,7 @@ const calculateSegmentAndLabelPositions = (instance) => {
 
   instance.measured = true
   instance.segments = ordered
+
   const col = CloneDeep(instance.segments)
   instance.setSegmentCollection(col)
   handleLoad(instance)
@@ -241,12 +243,6 @@ export default {
       const x = (this.selectedSeg === ind) ? 'segment-foreground' : 'segment-background'
       return 'block-segment' + ' ' + x
     },
-    setMinOffsets (next) {
-      for (let ind = 0; ind < this.segments.length; ind++) {
-        this.segments[ind].pos = Math.min(-80, this.segments[ind].pos)
-      }
-      return next()
-    },
     reduceOffset (amt, repeats, next) {
       if (repeats > 0) {
         const labels = document.getElementsByClassName('segment-label')
@@ -265,7 +261,17 @@ export default {
         const num = repeats - 1
         window.requestAnimationFrame(() => { this.reduceOffset(amt, num, next) })
       } else {
-        next()
+        // extra check to establish minimum offsets for labels depending on their scores
+        for (let ind = 0; ind < this.segments.length; ind++) {
+          if (this.segments[ind].score < 30) {
+            this.segments[ind].pos = Math.min(0, this.segments[ind].pos)
+          } else if (this.segments[ind].score >= 30 && this.segments[ind].score < 60) {
+            this.segments[ind].pos = Math.min(-30, this.segments[ind].pos)
+          } else {
+            this.segments[ind].pos = Math.min(-60, this.segments[ind].pos)
+          }
+        }
+        return next()
       }
     },
     dropOverLappingLabels () {
