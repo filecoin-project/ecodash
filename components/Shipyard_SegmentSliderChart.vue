@@ -1,6 +1,6 @@
 <template>
   <div id="segment-slider-chart" ref="chartFlex" class="chart-container">
-    <div ref="segmentsCtn" class="segments-container">
+    <div :class="['segments-container', tiny ? 'segments-tiny' : 'segments-large']">
 
       <div class="chart-title">
         <h3>{{ mobileChartTitle }}</h3>
@@ -192,7 +192,8 @@ export default {
       segments: this.chartItems,
       measured: false,
       timeOutFunction: null,
-      resize: false
+      resize: false,
+      tiny: false
     }
   },
 
@@ -263,10 +264,8 @@ export default {
       } else {
         // extra check to establish minimum offsets for labels depending on their scores
         for (let ind = 0; ind < this.segments.length; ind++) {
-          if (this.segments[ind].score < 30) {
+          if (this.segments[ind].score <= 92) {
             this.segments[ind].pos = Math.min(0, this.segments[ind].pos)
-          } else if (this.segments[ind].score >= 30 && this.segments[ind].score < 60) {
-            this.segments[ind].pos = Math.min(-30, this.segments[ind].pos)
           } else {
             this.segments[ind].pos = Math.min(-60, this.segments[ind].pos)
           }
@@ -294,11 +293,13 @@ export default {
     },
     handleResize () {
       if (window.matchMedia('(max-width: 64rem)').matches) {
-        this.$refs.segmentsCtn.classList.remove('segments-large')
-        this.$refs.segmentsCtn.classList.add('segments-tiny')
+        if (!this.tiny) {
+          this.tiny = true
+        }
       } else {
-        this.$refs.segmentsCtn.classList.remove('segments-tiny')
-        this.$refs.segmentsCtn.classList.add('segments-large')
+        if (this.tiny) {
+          this.tiny = false
+        }
       }
       const len = this.segments.length
       for (let i = 0; i < len; i++) {

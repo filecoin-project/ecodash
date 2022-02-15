@@ -189,6 +189,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  padding-top: 0.5rem;
 }
 .main-container {
   display: flex;
