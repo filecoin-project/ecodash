@@ -109,13 +109,11 @@ const createLabels = (instance, projects) => {
         }
         tags.forEach((tag) => { if (tag === category) { count++ } })
         const obj = {
-          label,
+          label: { text: label },
           description,
+          count,
           slug: category,
-          size: count * 10,
-          chars: l,
-          logos: selection,
-          display: false
+          logos: selection
         }
         if (primary[category].hasOwnProperty('priority')) {
           obj.priority = primary[category].priority
