@@ -31,21 +31,21 @@
           <span class="segment-id">{{item.label.text}}</span>
 
           <!-- labels above segments -->
-          <div class="indicator slot-1" :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${-30 - Math.random() * 20}px;`">
+          <div :class="['indicator', 'slot-1', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${(-30 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s1.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s1.length}}</span>
           </div>
-          <div class="indicator slot-2" :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${-60 - Math.random() * 20}px;`">
+          <div :class="['indicator', 'slot-2', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${(-60 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s2.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s2.length}}</span>
           </div>
-          <div class="indicator slot-3" :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${-90 - Math.random() * 20}px;`">
+          <div :class="['indicator', 'slot-3', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${(-90 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s3.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s3.length}}</span>
           </div>
 
           <!-- labels below segments -->
-          
+
 
         </div>
 
@@ -98,21 +98,39 @@ const calculateSlotsData = (instance, next) => {
   for (let i = 0; i < len; i++) {
     const items = instance.segments
 
-    const hasFirstNeighbor = i < len - 1
+    const hasFirstNeighbor = i < len - 2
     items[i].segment.s1 = {
-      length: hasFirstNeighbor ? items[i].segment.ihw + items[i + 1].segment.ihw : 1000,
+      length: hasFirstNeighbor ? (
+        items[i].segment.ihw +
+        items[i + 1].segment.ihw * 2 +
+        items[i + 2].segment.ihw
+      ) : 1000,
       occupied: false
     }
 
-    const hasSecondNeighbor = i < len - 2
+    const hasSecondNeighbor = i < len - 4
     items[i].segment.s2 = {
-      length: hasSecondNeighbor ? items[i].segment.ihw + (2 * items[i + 1].segment.ihw) + items[i + 2].segment.ihw : 1000,
+      length: hasSecondNeighbor ? (
+        items[i].segment.ihw +
+        items[i + 1].segment.ihw * 2 +
+        items[i + 2].segment.ihw * 2 +
+        items[i + 3].segment.ihw * 2 +
+        items[i + 4].segment.ihw
+      ) : 1000,
       occupied: false
     }
 
-    const hasThirdNeighbor = i < len - 3
+    const hasThirdNeighbor = i < len - 6
     items[i].segment.s3 = {
-      length: hasThirdNeighbor ? items[i].segment.ihw + (2 * items[i + 1].segment.ihw) + (2 * items[i + 2].segment.ihw) + items[i + 3].segment.ihw : 1000,
+      length: hasThirdNeighbor ? (
+        items[i].segment.ihw +
+        items[i + 1].segment.ihw * 2 +
+        items[i + 2].segment.ihw * 2 +
+        items[i + 3].segment.ihw * 2 +
+        items[i + 4].segment.ihw * 2 +
+        items[i + 5].segment.ihw * 2 +
+        items[i + 6].segment.ihw
+      ) : 1000,
       occupied: false
     }
   }
@@ -121,9 +139,9 @@ const calculateSlotsData = (instance, next) => {
   return next()
 }
 
-const positionFirstTierLabels = (instance, next) => {
+const positionFirstTierLabels = (instance, n, next) => {
   const segments = instance.segments
-  for (let i = 0; i < segments.length; i = i + 1) {
+  for (let i = n; i < segments.length; i = i + 2) {
     if (segments[i].label.width < segments[i].segment.s1.length) {
       segments[i].segment.s1.occupied = true
     }
@@ -131,12 +149,12 @@ const positionFirstTierLabels = (instance, next) => {
   return next()
 }
 
-const positionSecondTierLabels = (instance, next) => {
+const positionSecondTierLabels = (instance, n, next) => {
   const segments = instance.segments
-  for (let i = segments.length - 1; i >= 0 ; i = i - 1) {
+  for (let i = n; i < segments.length; i = i + 2) {
 
-    const h = Math.max(i - 1, 0)
-    const j = Math.min(i + 1, segments.length)
+    const h = Math.max(i - 2, 0)
+    const j = Math.min(i + 2, segments.length)
 
     if (
       segments[i].label.width < segments[i].segment.s2.length
@@ -150,14 +168,14 @@ const positionSecondTierLabels = (instance, next) => {
   return next()
 }
 
-const positionThirdTierLabels = (instance, next) => {
+const positionThirdTierLabels = (instance, n, next) => {
   const segments = instance.segments
-  for (let i = 0; i < segments.length; i = i + 1) {
+  for (let i = n; i < segments.length; i = i + 2) {
 
-    const g = Math.max(i - 2, 0)
-    const h = Math.max(i - 1, 0)
-    const j = Math.min(i + 1, segments.length)
-    const k = Math.min(i + 2, segments.length)
+    const g = Math.max(i - 4, 0)
+    const h = Math.max(i - 2, 0)
+    const j = Math.min(i + 2, segments.length)
+    const k = Math.min(i + 4, segments.length)
 
     if (
       segments[i].label.width < segments[i].segment.s3.length
@@ -173,16 +191,17 @@ const positionThirdTierLabels = (instance, next) => {
 }
 
 const positionRemainingLabels = (instance) => {
-  const segments = instance.segments
-  for (let i = 0; i < segments.length - 2; i++) {
-    if (
-      !segments[i].segment.s1.occupied
-      && !segments[i].segment.s2.occupied
-      && !segments[i].segment.s3.occupied
-    ) {
-      segments[i].segment.below = true
-    }
-  }
+  // const segments = instance.segments
+  // for (let i = 0; i < segments.length - 2; i++) {
+  //   if (
+  //     !segments[i].segment.s1.occupied
+  //     && !segments[i].segment.s2.occupied
+  //     && !segments[i].segment.s3.occupied
+  //   ) {
+  //     segments[i].segment.below = true
+  //   }
+  // }
+  console.log(instance.segments)
 }
 
 const reOrderBasedOnScore = (instance, next) => {
@@ -292,7 +311,8 @@ export default {
       segments: this.chartItems,
       measured: false,
       timeOutFunction: null,
-      resize: false
+      resize: false,
+      random: 10
     }
   },
 
@@ -333,13 +353,23 @@ export default {
       calculateSegmentAndLabelData(this, () => {
         reOrderBasedOnScore(this, () => {
           calculateSlotsData(this, () => {
-            positionFirstTierLabels(this, () => {
-              positionSecondTierLabels(this, () => {
-                positionThirdTierLabels(this, () => {
+
+            positionFirstTierLabels(this, 0, () => {
+              positionSecondTierLabels(this, 0, () => {
+                positionThirdTierLabels(this, 0, () => {
                   positionRemainingLabels(this)
                 })
               })
             })
+
+            positionFirstTierLabels(this, 1, () => {
+              positionSecondTierLabels(this, 1, () => {
+                positionThirdTierLabels(this, 1, () => {
+                  positionRemainingLabels(this)
+                })
+              })
+            })
+
           })
         })
       })
@@ -605,6 +635,9 @@ export default {
       left: 0;
       font-size: 10pt;
       color: black;
+    }
+    &.below {
+      transform: translateY(2rem);
     }
   }
   .slot-1 {
