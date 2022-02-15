@@ -30,22 +30,24 @@
 
           <span class="segment-id">{{item.label.text}}</span>
 
-          <!-- labels above segments -->
-          <div :class="['indicator', 'slot-1', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${(-30 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
+          <div
+            :class="['indicator', 'slot-1', index % 2 === 0 ? 'above' : 'below']"
+            :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${(-30 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s1.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s1.length}}</span>
           </div>
-          <div :class="['indicator', 'slot-2', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${(-60 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
+          <div
+            :class="['indicator', 'slot-2', index % 2 === 0 ? 'above' : 'below']"
+            :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${(-60 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s2.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s2.length}}</span>
           </div>
-          <div :class="['indicator', 'slot-3', index % 2 === 0 ? 'above' : 'below']" :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${(-90 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
+          <div
+            :class="['indicator', 'slot-3', index % 2 === 0 ? 'above' : 'below']"
+            :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${(-90 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
             <span v-if="item.segment.s3.occupied" class="label">{{item.label.text}}</span>
             <span class="ihw">{{item.segment.s3.length}}</span>
           </div>
-
-          <!-- labels below segments -->
-
 
         </div>
 
@@ -61,15 +63,6 @@ import { mapGetters, mapActions } from 'vuex'
 import CloneDeep from 'lodash/cloneDeep'
 
 // =================================================================== Functions
-// const handleLoad = (instance) => {
-//   instance.handleResize()
-// }
-
-// const initResize = (instance) => {
-//   clearTimeout(instance.timeOutFunction)
-//   instance.timeOutFunction = setTimeout(() => { instance.handleResize() }, 250)
-// }
-
 const calculateSegmentAndLabelData = (instance, next) => {
   const dummies = instance.$refs.dummyLabels
 
@@ -168,7 +161,7 @@ const positionSecondTierLabels = (instance, n, next) => {
   return next()
 }
 
-const positionThirdTierLabels = (instance, n, next) => {
+const positionThirdTierLabels = (instance, n) => {
   const segments = instance.segments
   for (let i = n; i < segments.length; i = i + 2) {
 
@@ -186,22 +179,6 @@ const positionThirdTierLabels = (instance, n, next) => {
       segments[i].segment.s3.occupied = true
     }
   }
-
-  return next()
-}
-
-const positionRemainingLabels = (instance) => {
-  // const segments = instance.segments
-  // for (let i = 0; i < segments.length - 2; i++) {
-  //   if (
-  //     !segments[i].segment.s1.occupied
-  //     && !segments[i].segment.s2.occupied
-  //     && !segments[i].segment.s3.occupied
-  //   ) {
-  //     segments[i].segment.below = true
-  //   }
-  // }
-  console.log(instance.segments)
 }
 
 const reOrderBasedOnScore = (instance, next) => {
@@ -270,26 +247,6 @@ const reOrderBasedOnScore = (instance, next) => {
   return next()
 }
 
-// const doNotOverlap = (item1, item2, lookahead) => {
-//   const rect1 = item1.getBoundingClientRect()
-//   const rect2 = item2.getBoundingClientRect()
-//   return (
-//     rect1.right < rect2.left ||
-//     rect1.left > rect2.right ||
-//     rect1.bottom + lookahead < rect2.top ||
-//     rect1.top + lookahead > rect2.bottom
-//   )
-// }
-//
-// const removeMatchingLabel = (instance, label) => {
-//   const len = instance.segments.length
-//   for (let i = 0; i < len; i++) {
-//     if (instance.segments[i].label === label) {
-//       instance.segments[i].display = false
-//     }
-//   }
-// }
-
 // ====================================================================== Export
 export default {
   name: 'ShipyardSegmentSliderChart',
@@ -311,7 +268,6 @@ export default {
       segments: this.chartItems,
       measured: false,
       timeOutFunction: null,
-      resize: false,
       random: 10
     }
   },
@@ -356,17 +312,13 @@ export default {
 
             positionFirstTierLabels(this, 0, () => {
               positionSecondTierLabels(this, 0, () => {
-                positionThirdTierLabels(this, 0, () => {
-                  positionRemainingLabels(this)
-                })
+                positionThirdTierLabels(this, 0)
               })
             })
 
             positionFirstTierLabels(this, 1, () => {
               positionSecondTierLabels(this, 1, () => {
-                positionThirdTierLabels(this, 1, () => {
-                  positionRemainingLabels(this)
-                })
+                positionThirdTierLabels(this, 1)
               })
             })
 
@@ -374,16 +326,6 @@ export default {
         })
       })
     })
-    // this.resize = () => {
-    //   initResize(this)
-    //   console.log(this.$refs.segmentsRow.getBoundingClientRect().width)
-    // }
-    // window.addEventListener('resize', this.resize)
-    // initResize(this)
-  },
-
-  beforeDestroy () {
-    if (this.resize) { window.removeEventListener('resize', this.resize) }
   },
 
   methods: {
@@ -395,74 +337,6 @@ export default {
     },
     setForegrounded (ind) {
       return (this.selectedSeg === ind) ? 'segment-foreground' : 'segment-background'
-    },
-    setMinOffsets (next) {
-      for (let ind = 0; ind < this.segments.length; ind++) {
-        this.segments[ind].pos = Math.min(-80, this.segments[ind].pos)
-      }
-      return next()
-    },
-    reduceOffset (amt, repeats, next) {
-      if (repeats > 0) {
-        const labels = document.getElementsByClassName('segment-label')
-        for (let i = 0; i < this.segments.length; i++) {
-          const overlaps = []
-          const dir = this.segments[i].above ? amt : (-1 * amt)
-          for (let j = 0; j < this.segments.length; j++) {
-            if (labels[i] && labels[j] && j !== i) {
-              overlaps.push(doNotOverlap(labels[i], labels[j], dir))
-            }
-          }
-          if (overlaps.every(Boolean)) {
-            this.segments[i].pos = Math.min(this.segments[i].pos + amt, -20 - this.segments[i].labelHeight)
-          }
-        }
-        const num = repeats - 1
-        window.requestAnimationFrame(() => { this.reduceOffset(amt, num, next) })
-      } else {
-        next()
-      }
-    },
-    dropOverLappingLabels () {
-      const labels = document.getElementsByClassName('segment-label')
-      const targets = document.getElementsByClassName('avoid-me')
-      const overlaps = []
-      for (let i = 0; i < labels.length; i++) {
-        for (let j = 0; j < targets.length; j++) {
-          if (!doNotOverlap(labels[i], targets[j], 0) && targets[j] !== labels[i]) {
-            overlaps.push(i)
-            break
-          }
-        }
-      }
-      if (overlaps.length) {
-        const ind = overlaps.pop()
-        removeMatchingLabel(this, labels[ind].innerText)
-        window.requestAnimationFrame(this.dropOverLappingLabels)
-      }
-    },
-    handleResize () {
-      if (window.matchMedia('(max-width: 64rem)').matches) {
-        this.$refs.segmentsCtn.classList.remove('segments-large')
-        this.$refs.segmentsCtn.classList.add('segments-tiny')
-      } else {
-        this.$refs.segmentsCtn.classList.remove('segments-tiny')
-        this.$refs.segmentsCtn.classList.add('segments-large')
-      }
-      const len = this.segments.length
-      for (let i = 0; i < len; i++) {
-        this.segments[i].pos = this.segments[i].offset - 10
-        this.segments[i].display = true
-      }
-      this.reduceOffset(12, 4, () => {
-        this.dropOverLappingLabels()
-        this.$nextTick(() => { this.$emit('chart-mounted') })
-      })
-    },
-    segmentStyling (size, above, index) {
-      let top = 0
-      if (size > 40) { top = this.segH / 2 * (above ? 1 : -1) }
-      return `width: ${size}%; height: ${this.segH * (size > 40 ? 2 : 1)}px; top: ${top}px; z-index: ${this.segments.length - index};`
     },
     getSegmentStyle (item) {
       return `width: ${item.segment.percent}%;`
