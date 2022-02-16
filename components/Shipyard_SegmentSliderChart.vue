@@ -6,15 +6,13 @@
         <h3>{{ mobileChartTitle }}</h3>
       </div>
 
-      <template>
-        <div
-          v-for="item in segments"
-          :key="`dummy-${item.label.text}`"
-          ref="dummyLabels"
-          class="measure">
-          {{ item.label.text }}
-        </div>
-      </template>
+      <div
+        v-for="item in segments"
+        :key="`dummy-${item.label.text}`"
+        ref="dummyLabels"
+        class="measure">
+        {{ item.label.text }}
+      </div>
 
       <div
         v-if="measured"
@@ -24,29 +22,49 @@
         <div
           v-for="(item, index) in segments"
           :key="index"
-          :class="['test-segment', setForegrounded(index)]"
-          :style="getSegmentStyle(item)"
+          class="segment-wrapper"
+          :style="getSegmentStyle(item, index)"
           @click="updateParent(index)">
-
-          <span class="segment-id">{{item.label.text}}</span>
 
           <div
             :class="['indicator', 'slot-1', index % 2 === 0 ? 'above' : 'below']"
-            :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${(-30 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
-            <span v-if="item.segment.s1.occupied" class="label">{{item.label.text}}</span>
-            <span class="ihw">{{item.segment.s1.length}}</span>
+            :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${getLabelOffset(item, index, 'first')}px;`">
+            <template v-if="item.segment.s1.occupied">
+              <div class="label">
+                {{item.label.text}}
+                <div
+                  class="stem"
+                  :style="`height: ${tiers.first}px;`">
+                </div>
+              </div>
+
+            </template>
           </div>
           <div
             :class="['indicator', 'slot-2', index % 2 === 0 ? 'above' : 'below']"
-            :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${(-60 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
-            <span v-if="item.segment.s2.occupied" class="label">{{item.label.text}}</span>
-            <span class="ihw">{{item.segment.s2.length}}</span>
+            :style="`width: ${item.segment.s2.length}px; left: ${item.segment.ihw}px; top: ${getLabelOffset(item, index, 'second')}px;`">
+            <template v-if="item.segment.s2.occupied">
+              <span class="label">{{item.label.text}}</span>
+              <div
+                class="stem"
+                :style="`height: 10px;`">
+              </div>
+            </template>
           </div>
           <div
             :class="['indicator', 'slot-3', index % 2 === 0 ? 'above' : 'below']"
-            :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${(-90 - Math.random() * random) * (index % 2 === 0 ? 1 : -1) }px;`">
-            <span v-if="item.segment.s3.occupied" class="label">{{item.label.text}}</span>
-            <span class="ihw">{{item.segment.s3.length}}</span>
+            :style="`width: ${item.segment.s3.length}px; left: ${item.segment.ihw}px; top: ${getLabelOffset(item, index, 'third')}px;`">
+            <template v-if="item.segment.s3.occupied">
+              <span class="label">{{item.label.text}}</span>
+              <div
+                class="stem"
+                :style="`height: 10px;`">
+              </div>
+            </template>
+          </div>
+
+          <div
+            :class="['block-segment', setForegrounded(index), { 'displaced-down': (item.size > 40) && index % 2 === 0 }, { 'displaced-up': (item.size > 40) && index % 2 === 0 }]">
           </div>
 
         </div>
@@ -70,7 +88,8 @@ const calculateSegmentAndLabelData = (instance, next) => {
     const rect = dummies[i].getBoundingClientRect()
     const dimensions = {
       width: rect.width,
-      height: rect.height
+      height: rect.height,
+      offset: Math.random() * instance.random
     }
     Object.assign(instance.segments[i].label, dimensions)
 
@@ -144,10 +163,13 @@ const positionFirstTierLabels = (instance, n, next) => {
 
 const positionSecondTierLabels = (instance, n, next) => {
   const segments = instance.segments
-  for (let i = n; i < segments.length; i = i + 2) {
+  const modulo = segments.length
+  const start = (segments.length - 1 - (!modulo ? n : n ? 0 : 1 ))
+  for (let i = start; n <= i; i = i - 2) {
+  // for (let i = n; i < segments.length; i = i + 2) {
 
-    const h = Math.max(i - 2, 0)
-    const j = Math.min(i + 2, segments.length)
+    const h = Math.max(i - 2, n)
+    const j = Math.min(i + 2, start)
 
     if (
       segments[i].label.width < segments[i].segment.s2.length
@@ -163,12 +185,14 @@ const positionSecondTierLabels = (instance, n, next) => {
 
 const positionThirdTierLabels = (instance, n) => {
   const segments = instance.segments
+  const modulo = segments.length
+  const start = (segments.length - 1 - (!modulo ? n : n ? 0 : 1 ))
   for (let i = n; i < segments.length; i = i + 2) {
 
-    const g = Math.max(i - 4, 0)
-    const h = Math.max(i - 2, 0)
-    const j = Math.min(i + 2, segments.length)
-    const k = Math.min(i + 4, segments.length)
+    const g = Math.max(i - 4, n)
+    const h = Math.max(i - 2, n)
+    const j = Math.min(i + 2, start)
+    const k = Math.min(i + 4, start)
 
     if (
       segments[i].label.width < segments[i].segment.s3.length
@@ -182,9 +206,7 @@ const positionThirdTierLabels = (instance, n) => {
 }
 
 const reOrderBasedOnScore = (instance, next) => {
-  const labels = document.querySelectorAll('.measure')
   const segments = instance.segments
-
   const ordered = []
   for (let i = 0; i < segments.length; i++) {
     const score = -1 * (segments[i].segment.ihw - segments[i].label.width)
@@ -215,30 +237,24 @@ const reOrderBasedOnScore = (instance, next) => {
   const l = ascending.length
   const s = Math.ceil(l / 2)
 
-  for (let i = 0; i < s; i++) {
-    ordered.push(ascending[l - i - 1])
-    if (i !== l - i - 1) {
-      ordered.push(ascending[i])
+  const firstHalf = ascending.splice(0, s)
+  ascending.reverse();
+
+  for (let i = 0; i < s; i = i + 2) {
+    ordered.push(ascending[i])
+    if (ascending?.[i + 1]) {
+      ordered.push(ascending[i + 1])
+    }
+
+    ordered.push(firstHalf[i])
+    if (firstHalf?.[i + 1]) {
+      ordered.push(firstHalf[i + 1])
     }
   }
-
   ordered.reverse()
 
   if (first) { ordered.unshift(first[0]) }
   if (last) { ordered.push(last[0]) }
-
-  for (let i = 0; i < ordered.length - 1; i++) {
-    const sum = (ordered[i].above ? 1 : 0) + (ordered[i + 1].above ? 1 : 0)
-    if (sum !== 1) {
-      if (ordered[i].pos > ordered[i + 1].pos) {
-        const p = ordered[i].pos
-        ordered[i].pos = ordered[i + 1].pos
-        ordered[i + 1].pos = p
-        ordered[i].offset = ordered[i].pos
-        ordered[i + 1].offset = ordered[i + 1].pos
-      }
-    }
-  }
 
   instance.measured = true
   instance.segments = ordered
@@ -268,7 +284,12 @@ export default {
       segments: this.chartItems,
       measured: false,
       timeOutFunction: null,
-      random: 10
+      random: 10,
+      tiers: {
+        first: 30,
+        second: 60,
+        third: 90
+      }
     }
   },
 
@@ -338,8 +359,11 @@ export default {
     setForegrounded (ind) {
       return (this.selectedSeg === ind) ? 'segment-foreground' : 'segment-background'
     },
-    getSegmentStyle (item) {
-      return `width: ${item.segment.percent}%;`
+    getSegmentStyle (item, i) {
+      return `width: ${item.segment.percent}%; z-index: ${this.segments.length - i};`
+    },
+    getLabelOffset(item, i, tier) {
+      return ((-1 * this.tiers[tier]) - item.label.offset) * (i % 2 === 0 ? 1 : -1)
     }
   }
 }
@@ -348,17 +372,17 @@ export default {
 <style lang="scss" scoped>
 
 #segment-slider-chart {
-  background-color: white;
+  background-color: transparent !important;
   .main-container {
     flex-wrap: nowrap;
   }
   @include xlarge {
-    // background-color: transparent;
+    background-color: transparent;
     .main-container {
       flex-wrap: wrap-reverse;
     }
     .segments-container {
-      background-color: rgba(0, 255, 255, 0.1);
+      // background-color: rgba(0, 255, 255, 0.1);
       .chart-title {
         color: $blackSapphire;
       }
@@ -368,7 +392,7 @@ export default {
     }
   }
   @include small{
-    background-color: $white;
+    // background-color: $white;
     .main-container {
       @include oceanBorderGradient;
     }
@@ -380,23 +404,17 @@ export default {
     @include whiteBorderBack;
   }
   .segment-line {
-    background-color: black; // *** originally white
+    background-color: $white; // *** originally white
     width: 1px;
     z-index: -1;
-  }
-  .segment-label {
-    @include cardText;
-    letter-spacing: 0.015em;
-    line-height: $leading_Tiny;
-    color: black;
   }
   .segments-row {
     &:before {
       content: '';
       position: absolute;
-      height: 1px;
+      height: 4px;
       width: calc(100% - 1rem);
-      background-color: rgba(0, 0, 0, 0.3); // **** originally white
+      background-color: $white; // **** originally white
       left: 0%;
     }
     @include medium {
@@ -430,10 +448,6 @@ export default {
     padding: 0 2rem;
     padding-bottom: 0;
   }
-  // add gaps between segments
-  // > div {
-  //   margin: 2px;
-  // }
 }
 
 .chart-title {
@@ -453,15 +467,11 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(255, 0, 0, 0.2);
+  // background-color: rgba(255, 0, 0, 0.2);
   height: 4rem;
   &.fixed-for-measuring {
     width: 572px;
   }
-  // add gaps between segments
-  // > div {
-  //   margin: 2px;
-  // }
 }
 
 .segments-large {
@@ -478,7 +488,7 @@ export default {
   width: 7px;
 }
 
-// //////////////////////////////////////////////////////////////////// Segments
+// ///////////////////////////////////////////////// Segments functional styling
 .segment-foreground {
   font-weight: bold;
   &:after {
@@ -486,12 +496,10 @@ export default {
   }
 }
 
-.test-segment {
+.segment-wrapper {
   position: relative;
   height: 2rem;
-  background-color: blue;
-  border: 1px solid black;
-  opacity: 0.4;
+  border: 2px solid transparent;
   box-sizing: border-box;
   .segment-id {
     font-size: 5px;
@@ -499,46 +507,86 @@ export default {
   }
   .indicator {
     position: absolute;
-    .ihw {
-      position: absolute;
-      font-size: 4px;
-    }
-    .label {
-      position: absolute;
-      top: -1rem;
-      left: 0;
-      font-size: 10pt;
-      color: black;
-    }
+
     &.below {
       transform: translateY(2rem);
+      .stem {
+        transform: translateY(-4px) rotate(180deg);
+        top: 0;
+      }
+    }
+
+    .label {
+      position: absolute;
+      top: -0.5rem;
+      left: 0;
+      font-size: 10pt;
+      color: $white;
+      font-family: $font_Secondary;
+      font-weight: $fontWeight_Regular;
+      font-size: $fontSize_Small;
+      letter-spacing: 0.015em;
+      line-height: $leading_Tiny;
+      text-align: left;
+      white-space: normal;
+      z-index: -1000;
+      @include small {
+        display: none;
+      }
+    }
+
+    .stem {
+      position: absolute;
+      border-left: 1px solid $white;
+      left: 0;
+      transform-origin: top;
+      transform: translateY(4px);
+      z-index: -1000;
     }
   }
-  .slot-1 {
-    border-top: 1px solid blue;
-    .ihw {
-      color: blue;
-    }
-  }
-  .slot-2 {
-    border-top: 1px solid green;
-    .ihw {
-      color: green;
-    }
-  }
-  .slot-3 {
-    border-top: 1px solid red;
-    .ihw {
-      color: red;
-    }
-  }
+  // .slot-1 {
+  //   border-top: 1px solid blue;
+  //   .ihw {
+  //     color: blue;
+  //   }
+  // }
+  // .slot-2 {
+  //   border-top: 1px solid green;
+  //   .ihw {
+  //     color: green;
+  //   }
+  // }
+  // .slot-3 {
+  //   border-top: 1px solid red;
+  //   .ihw {
+  //     color: red;
+  //   }
+  // }
 }
 
+.measure {
+  display: inline-block;
+  position: relative;
+  font-family: $font_Secondary;
+  font-weight: $fontWeight_Regular;
+  letter-spacing: 0.015em;
+  line-height: $leading_Tiny;
+  font-size: $fontSize_Mini !important;
+  max-width: 120px;
+  // white-space: nowrap;
+  margin: 0 !important;
+  color: red;
+  opacity: 0.0;
+  font-size: 11pt;
+  // transform: translateY(-6rem);
+}
+
+// /////////////////////////////////////////////////// Segment aesthetic stlying
 .block-segment {
   @include borderRadius_Small;
   position: relative;
-  max-width: 20%;
-  min-width: 7px;
+  height: 100%;
+  width: 100%;
   top: 0px;
   left: 0px;
   background-color: transparent !important;
@@ -590,31 +638,7 @@ export default {
   }
 }
 
-.measure,
-.segment-label {
-  white-space: normal;
-  padding: 0px;
-  // font-size: 10pt;
-  text-align: left;
-  transform: translateX(-3px);
-  @include small {
-    display: none;
-  }
-}
 
-.measure {
-  display: inline-block;
-  position: relative;
-  max-width: 120px;
-  margin: 0 !important;
-  color: black;
-  opacity: 0.0;   // ************ INVISIBLE *************
-  font-size: 11pt;
-}
-
-.segment-label {
-  position: absolute;
-}
 
 .segment-line {
   position: absolute;
