@@ -1,6 +1,6 @@
 <template>
   <div
-    id="segment-slider-chart"
+    id="segment-slider-main"
     ref="segmentSlider"
     @keyup.left="setSliderContent(selected - 1)"
     @keyup.right="setSliderContent(selected + 1)">
@@ -94,7 +94,6 @@ const createLabels = (instance, projects) => {
         let selection = []
         const label = primary[category].label
         const description = primary[category].description
-        const l = getLongestWord(label)
         const icons = logos[category]
         if (icons.length) {
           if (icons.length > 3) {
@@ -124,12 +123,6 @@ const createLabels = (instance, projects) => {
     return items
   }
   return false
-}
-
-const getLongestWord = (label) => {
-  const arr = []
-  label.split(' ').forEach((word) => { arr.push(word.split('').length) })
-  return Math.max(...arr)
 }
 
 // ====================================================================== Export
@@ -180,9 +173,10 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-#segment-slider-chart {
+#segment-slider-main {
+  margin-bottom: 6rem;
   font-weight: 500;
-  font-size: 13pt;
+  font-size: $fontSize_Small;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -193,5 +187,9 @@ export default {
   position: relative;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
+  @include small{
+    background-color: $white;
+    @include oceanBorderGradient;
+  }
 }
 </style>

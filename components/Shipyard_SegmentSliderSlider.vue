@@ -339,10 +339,12 @@ export default {
   z-index: 1;
   @include tripleLayer;
   border: 0px;
-  @include medium {
+  @include large {
     left: calc(50% - 1.75rem);
-    bottom: -3rem;
     transform: translateX(-50%);
+  }
+  @include medium {
+    bottom: -3rem;
   }
   &:before {
     margin: 0 auto;

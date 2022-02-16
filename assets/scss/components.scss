@@ -219,8 +219,33 @@
 
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
+
+#segment-slider-main {
+  .main-container {
+    flex-wrap: nowrap;
+  }
+  @include xlarge {
+    background-color: transparent;
+    .main-container {
+      flex-wrap: wrap-reverse;
+    }
+    .segments-container {
+      background-color: inherit;
+    }
+  }
+  @include small{
+    background-color: $white;
+    .main-container {
+      @include oceanBorderGradient;
+    }
+  }
+}
+
 #segment-slider-chart {
-  background-color: transparent !important;
+  background-color: transparent;
+  @include small{
+    background-color: $white;
+  }
 }
 
 // ///////////////////////////////////////////////////////////// Featured Slider
