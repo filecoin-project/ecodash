@@ -220,7 +220,7 @@
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
 
-#segment-slider-chart {
+#segment-slider-main {
   .main-container {
     flex-wrap: nowrap;
   }
@@ -231,12 +231,6 @@
     }
     .segments-container {
       background-color: inherit;
-      .chart-title {
-        color: $blackSapphire;
-      }
-    }
-    .chart-container {
-      margin-bottom: 4rem;
     }
   }
   @include small{
@@ -244,37 +238,13 @@
     .main-container {
       @include oceanBorderGradient;
     }
-    .chart-container {
-      margin-bottom: 2rem;
-    }
   }
-  .block-segment {
-    @include whiteBorderBack;
-  }
-  .segment-line {
+}
+
+#segment-slider-chart {
+  background-color: transparent;
+  @include small{
     background-color: $white;
-    width: 1px;
-    z-index: -1;
-  }
-  .segment-label {
-    @include cardText;
-    letter-spacing: 0.015em;
-    line-height: $leading_Tiny;
-  }
-  .segments-row {
-    &:before {
-      content: '';
-      position: absolute;
-      height: 4px;
-      width: calc(100% - 1rem);
-      background-color: $white;
-      left: 0%;
-    }
-    @include medium {
-      &:before {
-        width: 100%;
-      }
-    }
   }
 }
 
@@ -465,7 +435,7 @@
     span {
       @include fontSize_Small;
       @include leading_Small;
-    }    
+    }
     &.closed {
       .dropdown-toggle {
         path {
