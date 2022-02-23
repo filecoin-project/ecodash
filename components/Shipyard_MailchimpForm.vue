@@ -83,10 +83,8 @@ export default {
   .panel-top {
     .email,
     .submit {
-      @include whiteBorderBack;
       box-shadow: none;
       position: relative;
-      margin-left: 9px;
 
       input {
         @include fontSize_Small;
@@ -124,7 +122,9 @@ export default {
     }
 
     .email {
+      @include whiteBorderBack;
       background: $midnight;
+      margin-left: 9px;
 
       input {
         color: $white;
@@ -137,11 +137,14 @@ export default {
     }
 
     .submit {
-      @include oceanBlueGradient;
-
+      margin-left: 12px;
       input {
+        @include whiteBorderBack;
+        @include oceanBlueGradient;
         color: $blackSapphire;
         margin-left: 0;
+        box-sizing: content-box;
+        width: calc(100% - 2.5rem);
       }
     }
   }

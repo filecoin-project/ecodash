@@ -128,7 +128,6 @@
       .submit {
         box-shadow: none;
         position: relative;
-        margin-left: 9px;
 
         input {
           @include fontSize_Small;
@@ -185,6 +184,7 @@
 
       .submit {
         height: 30px;
+        transition: 250ms ease-out;
         &:before,
         &:after {
           transition: 250ms ease-out;
@@ -192,12 +192,12 @@
         }
         &:hover {
           &:before {
-            top: -12px;
-            left: -10px;
+            top: -13px;
+            left: -11px;
           }
           input {
-            top: -11px;
-            left: -9px;
+            top: -13px;
+            left: -11px;
           }
         }
 
