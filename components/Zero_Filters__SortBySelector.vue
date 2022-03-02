@@ -6,6 +6,7 @@
     v-click-outside="closeAllSelect"
     :class="['dropdown-wrapper', 'focus-visible', { closed }]"
     :style="{ minWidth: `${maxLength * 10}px` }"
+    tabindex="0"
     @keyup="(e) => handleKeyboardInteraction(e)">
 
     <div
@@ -206,22 +207,6 @@ export default {
     optionSelected (obj) {
       this.selected = obj.label
       this.closeAllSelect()
-      // if (obj.type === 'alphabetical') {
-      //   this.sortAlphabetically(obj.key, obj.direction)
-      // } else if (obj.type === 'number') {
-      //   this.sortNumerically(obj.sortNumber, obj.direction)
-      // }
-      // this.setRouteQuery({
-      //   key: 'sort-by',
-      //   data: obj.slug
-      // })
-      // this.$emit('changed', {
-      //   event: 'optionSelected',
-      //   data: {
-      //     label: obj.label,
-      //     slug: obj.slug
-      //   }
-      // })
     },
     sortAlphabetically (key, mode) {
       if (this.collection.array) {
@@ -260,9 +245,9 @@ export default {
 
 .select-native {
   position: absolute;
-  right: 20rem;
+  right: 0rem;
   top: 0;
-  opacity: 0.5;
+  opacity: 0;
   z-index: -10;
   &:focus {
     top: 100%;
