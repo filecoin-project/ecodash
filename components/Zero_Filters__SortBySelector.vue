@@ -27,8 +27,8 @@
     </div>
 
     <select
-      ref="nativeSelect"
       id="sortby-native-select"
+      ref="nativeSelect"
       v-model="selected"
       class="select-native">
       <template v-for="option in options">
