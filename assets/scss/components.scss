@@ -688,6 +688,7 @@
   .thumbnail {
     border-radius: 0 !important;
     img {
+      max-width: unset !important;
       height: 75px;
     }
   }
