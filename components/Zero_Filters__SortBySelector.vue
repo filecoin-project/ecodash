@@ -6,13 +6,13 @@
     v-click-outside="closeAllSelect"
     :class="['dropdown-wrapper', 'focus-visible', { closed }]"
     :style="{ minWidth: `${maxLength * 10}px` }"
-    @keyup.enter="toggleDropDown()">
+    @keyup="(e) => handleKeyboardInteraction(e)">
 
     <div
       :class="['dropdown-button', { 'gradient': !closed }]"
-      @click="toggleDropDown()">
+      @click.stop="toggleDropDown()">
 
-      <label>
+      <label for="sortby-native-select">
         {{ label }}
       </label>
 
@@ -26,15 +26,28 @@
 
     </div>
 
+    <select
+      id="sortby-native-select"
+      ref="nativeSelect"
+      v-model="selected"
+      class="select-native">
+      <template v-for="option in options">
+        <option
+          :key="`select-option-${option.label}`"
+          :value="option.label">
+          {{ option.label }}
+        </option>
+      </template>
+    </select>
+
     <div class="dropdown-root" :style="{ height: `${height}px` }">
 
-      <div ref="dropdownList" class="dropdown-list">
+      <div ref="dropdownList" class="dropdown-list" aria-hidden="true">
         <template v-for="option in options">
           <div
             :key="`div-option-${option.label}`"
             :value="option.label"
             :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]"
-            :tabindex="closed ? -1 : 0"
             @click="optionSelected(option)"
             @keyup.enter.self="optionSelected(option)">
             {{ option.label }}
@@ -113,6 +126,25 @@ export default {
           })
         }
       }
+    },
+    selected (val) {
+      const obj = this.options.find(item => item.label === val)
+      if (obj.type === 'alphabetical') {
+        this.sortAlphabetically(obj.key, obj.direction)
+      } else if (obj.type === 'number') {
+        this.sortNumerically(obj.sortNumber, obj.direction)
+      }
+      this.setRouteQuery({
+        key: 'sort-by',
+        data: obj.slug
+      })
+      this.$emit('changed', {
+        event: 'optionSelected',
+        data: {
+          label: obj.label,
+          slug: obj.slug
+        }
+      })
     }
   },
 
@@ -173,22 +205,6 @@ export default {
     optionSelected (obj) {
       this.selected = obj.label
       this.closeAllSelect()
-      if (obj.type === 'alphabetical') {
-        this.sortAlphabetically(obj.key, obj.direction)
-      } else if (obj.type === 'number') {
-        this.sortNumerically(obj.sortNumber, obj.direction)
-      }
-      this.setRouteQuery({
-        key: 'sort-by',
-        data: obj.slug
-      })
-      this.$emit('changed', {
-        event: 'optionSelected',
-        data: {
-          label: obj.label,
-          slug: obj.slug
-        }
-      })
     },
     sortAlphabetically (key, mode) {
       if (this.collection.array) {
@@ -213,12 +229,29 @@ export default {
         const payload = { type: 'sorted', collection: cloned }
         this.setCollection(payload)
       }
+    },
+    handleKeyboardInteraction (e) {
+      if (e.key === 'Enter' || e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        this.$refs.nativeSelect.focus()
+      }
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+
+.select-native {
+  position: absolute;
+  right: 0rem;
+  top: 0;
+  opacity: 0;
+  z-index: -10;
+  &:focus {
+    top: 100%;
+  }
+}
+
 ::selection {
   color: none;
   background: none;

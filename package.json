@@ -17,6 +17,7 @@
     "node": ">=16.13.0"
   },
   "dependencies": {
+    "@agency-undone/au-nuxt-module-zero": "^1.0.18",
     "@agency-undone/nuxt-module-ecosystem-directory": "^1.0.20",
     "@agency-undone/nuxt-module-ipfs": "^1.0.2-alpha.4",
     "@nuxtjs/eslint-config": "^7.0.0",
