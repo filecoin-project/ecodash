@@ -6,14 +6,13 @@
     v-click-outside="closeAllSelect"
     :class="['dropdown-wrapper', 'focus-visible', { closed }]"
     :style="{ minWidth: `${maxLength * 10}px` }"
-    tabindex="0"
     @keyup="(e) => handleKeyboardInteraction(e)">
 
     <div
       :class="['dropdown-button', { 'gradient': !closed }]"
       @click.stop="toggleDropDown()">
 
-      <label for="dropdown-native-select">
+      <label for="sortby-native-select">
         {{ label }}
       </label>
 
@@ -29,7 +28,7 @@
 
     <select
       ref="nativeSelect"
-      id="dropdown-native-select"
+      id="sortby-native-select"
       v-model="selected"
       class="select-native">
       <template v-for="option in options">
@@ -129,7 +128,6 @@ export default {
       }
     },
     selected (val) {
-      console.log(val)
       const obj = this.options.find(item => item.label === val)
       if (obj.type === 'alphabetical') {
         this.sortAlphabetically(obj.key, obj.direction)
