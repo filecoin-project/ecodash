@@ -11,14 +11,14 @@ Interactive ecosystem directory and showcase
 The existing workflow for adding a project to the ecosystem directory, or amending an existing project, is as described below.
 
 ### Adding a New Project
-- Project info is added to the [master IPFS project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) in one of two ways:
+- Project info is added to the [master Filecoin project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) in one of two ways:
      - Directly in the base as a new row
-     - By requesting a project's representative fill in the [IPFS Ecosystem Directory Submission Form](https://airtable.com/shrjwvk9pAeAk0Ci7)
+     - By requesting a project's representative fill in the [Filecoin Ecodash Submission Form](https://airtable.com/shrjwvk9pAeAk0Ci7)
 - Once a record is added to the database, an IPFS core team member reviews the record for accuracy, consistency, typos, etc, as well as determining whether the project should be included in the directory (a decision largely based on project maturity)
 - If the project is approved to be included in the directory, directions for adding the data to the repo can be found [here](#transforming-project-data)
 
 ### Amending an Existing Project
-- Project info should be amended in the [master IPFS project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) as a single source of truth
+- Project info should be amended in the [master Filecoin project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) as a single source of truth
 - From there, un-tick and re-tick the `Include in directory?` box to regenerate the JSON
 - Replace the JSON and/or images in the repo as indicated in the [instructions](#transforming-project-data)
 
@@ -32,7 +32,7 @@ TLDR: https://ecosystem.ipfs.io/showcase/?category=focus is a general-purpose, u
 
 ## Behavior
 
-- The showcase view is visible in its bare form at [ecosystem.ipfs.io/showcase](https://ecosystem.ipfs.io/showcase)
+- The showcase view is visible in its bare form at [ecosystem.filecoin.io/showcase](https://ecosystem.ipfs.io/showcase)
 - It provides a logo-based visual summary of the projects in the app by category
 - Each tag within the selected category is assigned a block
 - The container for the tag is sized based on whether there's a small, medium, or large quantity of projects within it
@@ -44,9 +44,9 @@ TLDR: https://ecosystem.ipfs.io/showcase/?category=focus is a general-purpose, u
 Customizing the view is done using GET parameters. You might notice that the base showcase link feels a little empty.
 
 Adding a target top-level `category` param to showcase solves this issue. Examples:
-- [/showcase/?category=industry](https://ecosystem.ipfs.io/showcase/?category=industry)
-- [/showcase/?category=focus](https://ecosystem.ipfs.io/showcase/?category=focus)
-- [/showcase/?category=benefits](https://ecosystem.ipfs.io/showcase/?category=benefits)
+- [/showcase/?category=industry](https://ecosystem.filecoin.io/showcase/?category=industry)
+- [/showcase/?category=focus](https://ecosystem.filecoin.io/showcase/?category=focus)
+- [/showcase/?category=benefits](https://ecosystem.filecoin.io/showcase/?category=benefits)
 
 > Note: This category selection will work for _both_ categories that allow one tag per project (category in which tags are mutually exclusive) and categories that allow multiple tags.
 
@@ -75,8 +75,8 @@ Example use case: [/showcase/?category=focus&md=5&lg=15](https://ecosystem.ipfs.
 
 This repo is currently deployed to Fleek on the following URLs:
 
-`main` branch: https://ecosystem.ipfs.io/
-`develop` branch: https://ipfs-ecosystem-develop.on.fleek.co/
+`main` branch: https://ecosystem.filecoin.io/
+`develop` branch: https://filecoin-ecosystem-develop.on.fleek.co/
 
 Pushes made to the `main` or `develop` branches of this repo will automatically be reflected in the URLs above. Please allow 2-5 minutes for the application to re-build before seeing changes in your browser.
 
@@ -115,7 +115,7 @@ In a terminal, run the commands below to get set up
 $ cd ~/Desktop
 
 # Clone the repo
-$ git clone git@github.com:ipfs/ecosystem-directory.git
+$ git clone git@github.com:filecoin-project/ecosystem-directory.git
 
 # Enter the repo directory
 $ cd ecosystem-directory
