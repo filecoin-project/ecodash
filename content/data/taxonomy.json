@@ -206,6 +206,10 @@
           "slug": "zondax-signing-tools"
         },
         {
+          "label": "FVM",
+          "slug": "FVM"
+        },
+        {
           "label": "None",
           "slug": "none"
         }
