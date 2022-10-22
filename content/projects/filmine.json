@@ -1,0 +1,113 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2022
+    }
+  ],
+  "logo": {
+    "icon": "filmine-icon.png",
+    "full": "filmine-icon.png"
+  },
+  "name": "Filmine",
+  "org": [
+    "Alt Labs"
+  ],
+  "description": {
+    "short": "Compute and storage network hardware resources.",
+    "long": "Filmine acts as an infrastructure layer of the Web3, providing compute and storage networks a shared layer of hardware resources to run workloads while retaining the ability to connect. They are a FVM Early Builder."
+  },
+  "primaryCta": {
+    "url": "//filmine.io",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//filmine.io",
+          "text": "filmine.io"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/filmineio",
+          "text": "github.com/filmineio"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2022"
+    }
+  ],
+  "video": "",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": [
+        "developer-tools"
+      ]
+    },
+    {
+      "slug": "storage-type",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "software-type",
+      "tags": [
+        "infrastructure"
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": [
+        "FVM"
+      ]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [
+        ""
+      ]
+    }
+  ]
+}
