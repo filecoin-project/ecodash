@@ -1,0 +1,113 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2022
+    }
+  ],
+  "logo": {
+    "icon": "origin-storage-icon.jpeg",
+    "full": "origin-storage-icon.jpeg"
+  },
+  "name": "Origin Storage",
+  "org": [
+    ""
+  ],
+  "description": {
+    "short": "Service platform for distributed storage infrastructure.",
+    "long": "Origin Storage is a holistic service platform for distributed storage infrastructure. As a FVM Early Builder, they intend to build the first NFT standard for the Filecoin network."
+  },
+  "primaryCta": {
+    "url": "//originstorage.io",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//originstorage.io",
+          "text": "originstorage.io"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2022"
+    }
+  ],
+  "video": "",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "storage-type",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "software-type",
+      "tags": [
+        "infrastructure"
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": [
+        "FVM"
+      ]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [
+        ""
+      ]
+    }
+  ]
+}
