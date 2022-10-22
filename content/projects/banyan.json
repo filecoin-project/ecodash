@@ -1,0 +1,113 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2022
+    }
+  ],
+  "logo": {
+    "icon": "banyan-icon.png",
+    "full": "banyan-icon.png"
+  },
+  "name": "Banyan",
+  "org": [
+    ""
+  ],
+  "description": {
+    "short": "Aggregates storage providers & introduces crypto economic incentives.",
+    "long": "Banyan aggregates storage providers and introduces simple crypto economic incentives to make data worth storing in the web3 era. They are a FVM Early Builder."
+  },
+  "primaryCta": {
+    "url": "//banyan.computer",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//banyan.computer",
+          "text": "banyan.computer"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/banyancomputer",
+          "text": "github.com/banyancomputer"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2022"
+    }
+  ],
+  "video": "",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": [
+        "storage-apps-clients"
+      ]
+    },
+    {
+      "slug": "storage-type",
+      "tags": [
+        "data-markets"
+      ]
+    },
+    {
+      "slug": "software-type",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": [
+        "FVM"
+      ]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [
+        ""
+      ]
+    }
+  ]
+}
