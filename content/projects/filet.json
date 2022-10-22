@@ -1,0 +1,113 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [
+    {
+      "since": 2022
+    }
+  ],
+  "logo": {
+    "icon": "filet-icon.png",
+    "full": "filet-icon.png"
+  },
+  "name": "Filet",
+  "org": [
+    ""
+  ],
+  "description": {
+    "short": "FIL mining power tokenization.",
+    "long": "Filet is a Filecoin mining power tokenization protocol that is  deployed on the Filecoin network, to optimize FIL staking services. As a FVM Early Builder, they intend to build a staking platform for FIL holders and miners."
+  },
+  "primaryCta": {
+    "url": "//filet.finance/\n",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//filet.finance/\n",
+          "text": "filet.finance/\n"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/CodeIsLaw0108/FILETokenContract",
+          "text": "github.com/CodeIsLaw0108/FILETokenContract"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2022"
+    }
+  ],
+  "video": "",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": [
+        "token-finance"
+      ]
+    },
+    {
+      "slug": "storage-type",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "software-type",
+      "tags": [
+        ""
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": [
+        "FVM"
+      ]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [
+        ""
+      ]
+    }
+  ]
+}
