@@ -2,7 +2,7 @@
 
 Interactive ecosystem directory and showcase 
 
-**Just want to add a new project to the IPFS ecosystem directory? [Use this form](https://airtable.com/shrjwvk9pAeAk0Ci7).**
+**Just want to add a new project to the IPFS ecosystem directory? [Use this form](https://airtable.com/shrurjLTEsPeNW2Db).**
 
 ***
 
@@ -11,14 +11,14 @@ Interactive ecosystem directory and showcase
 The existing workflow for adding a project to the ecosystem directory, or amending an existing project, is as described below.
 
 ### Adding a New Project
-- Project info is added to the [master Filecoin project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) in one of two ways:
+- Project info is added to the [master Filecoin project database](https://airtable.com/appAAVcWUtgLMS6PK) in one of two ways:
      - Directly in the base as a new row
-     - By requesting a project's representative fill in the [Filecoin Ecodash Submission Form](https://airtable.com/shrjwvk9pAeAk0Ci7)
-- Once a record is added to the database, an IPFS core team member reviews the record for accuracy, consistency, typos, etc, as well as determining whether the project should be included in the directory (a decision largely based on project maturity)
+     - By requesting a project's representative fill in the [Filecoin Ecodash Submission Form](https://airtable.com/shrurjLTEsPeNW2Db)
+- Once a record is added to the database, a Filecoin core team member reviews the record for accuracy, consistency, typos, etc, as well as determining whether the project should be included in the directory (a decision largely based on project maturity)
 - If the project is approved to be included in the directory, directions for adding the data to the repo can be found [here](#transforming-project-data)
 
 ### Amending an Existing Project
-- Project info should be amended in the [master Filecoin project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) as a single source of truth
+- Project info should be amended in the [master Filecoin project database](https://airtable.com/appAAVcWUtgLMS6PK) as a single source of truth
 - From there, un-tick and re-tick the `Include in directory?` box to regenerate the JSON
 - Replace the JSON and/or images in the repo as indicated in the [instructions](#transforming-project-data)
 

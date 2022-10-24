@@ -3,23 +3,23 @@
   "featured": false,
   "sortNumbers": [
     {
-      "since": 2021
+      "since": 2022
     }
   ],
   "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
+    "icon": "icefiredb-icon.png",
+    "full": "icefiredb-icon.png"
   },
-  "name": "Zondax",
+  "name": "IceFireDB",
   "org": [
-    "Zondax"
+    ""
   ],
   "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
+    "short": "Developer-friendly database.",
+    "long": "IceFireDB is a database for Web3 developers to achieve decentralized data storage. As a FVM Early Builder, they intend to create a decentralized nosql and sql database platform."
   },
   "primaryCta": {
-    "url": "//zondax.ch",
+    "url": "//icefiredb.xyz",
     "text": "Project Website"
   },
   "links": [
@@ -27,8 +27,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
+          "url": "//icefiredb.xyz",
+          "text": "icefiredb.xyz"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
+          "url": "//github.com/IceFireDB",
+          "text": "github.com/IceFireDB"
         }
       ]
     },
@@ -54,7 +54,7 @@
   "keyInfo": [
     {
       "label": "Using Filecoin since",
-      "value": "2021"
+      "value": "2022"
     }
   ],
   "video": "",
@@ -82,25 +82,25 @@
     {
       "slug": "project-category",
       "tags": [
-        "developer-tools"
+        ""
       ]
     },
     {
       "slug": "storage-type",
       "tags": [
-        "Other"
+        ""
       ]
     },
     {
       "slug": "software-type",
       "tags": [
-        "library-sdk"
+        ""
       ]
     },
     {
       "slug": "tooling",
       "tags": [
-        "zondax-signing-tools", "FVM"
+        "FVM"
       ]
     },
     {

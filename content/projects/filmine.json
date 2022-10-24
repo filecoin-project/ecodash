@@ -3,23 +3,23 @@
   "featured": false,
   "sortNumbers": [
     {
-      "since": 2021
+      "since": 2022
     }
   ],
   "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
+    "icon": "filmine-icon.png",
+    "full": "filmine-icon.png"
   },
-  "name": "Zondax",
+  "name": "Filmine",
   "org": [
-    "Zondax"
+    "Alt Labs"
   ],
   "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
+    "short": "Compute and storage network hardware resources.",
+    "long": "Filmine acts as an infrastructure layer of the Web3, providing compute and storage networks a shared layer of hardware resources to run workloads while retaining the ability to connect. They are a FVM Early Builder."
   },
   "primaryCta": {
-    "url": "//zondax.ch",
+    "url": "//filmine.io",
     "text": "Project Website"
   },
   "links": [
@@ -27,8 +27,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
+          "url": "//filmine.io",
+          "text": "filmine.io"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
+          "url": "//github.com/filmineio",
+          "text": "github.com/filmineio"
         }
       ]
     },
@@ -54,7 +54,7 @@
   "keyInfo": [
     {
       "label": "Using Filecoin since",
-      "value": "2021"
+      "value": "2022"
     }
   ],
   "video": "",
@@ -88,19 +88,19 @@
     {
       "slug": "storage-type",
       "tags": [
-        "Other"
+        ""
       ]
     },
     {
       "slug": "software-type",
       "tags": [
-        "library-sdk"
+        "infrastructure"
       ]
     },
     {
       "slug": "tooling",
       "tags": [
-        "zondax-signing-tools", "FVM"
+        "FVM"
       ]
     },
     {

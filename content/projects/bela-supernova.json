@@ -3,23 +3,23 @@
   "featured": false,
   "sortNumbers": [
     {
-      "since": 2021
+      "since": 2022
     }
   ],
   "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
+    "icon": "bela-supernova.png",
+    "full": "bela-supernova.png"
   },
-  "name": "Zondax",
+  "name": "Bela Supernova",
   "org": [
-    "Zondax"
+    ""
   ],
   "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
+    "short": "Facilitates blockchain integration into daily solutions.",
+    "long": "Bela Supernova is a trusted blockchain community contributor, whose solutions facilitate blockchain integration into day-to-day life. Their Inter-Planetary Electronic Health Records (ipEHR) solution provides an alternative option to store patients’ data in the FileCoin blockchain. As a FVM Early Builder, they intend to deploy their EVMs that store user credentials and EHR data indexes, to FVM. This enables computation without accessing private data."
   },
   "primaryCta": {
-    "url": "//zondax.ch",
+    "url": "//bsn.si/blockchain ",
     "text": "Project Website"
   },
   "links": [
@@ -27,8 +27,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
+          "url": "//bsn.si/blockchain ",
+          "text": "bsn.si/blockchain "
         }
       ]
     },
@@ -36,8 +36,8 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
+          "url": "//github.com/bsn-si/IPEHR-gateway",
+          "text": "github.com/bsn-si/IPEHR-gateway"
         }
       ]
     },
@@ -54,7 +54,7 @@
   "keyInfo": [
     {
       "label": "Using Filecoin since",
-      "value": "2021"
+      "value": "2022"
     }
   ],
   "video": "",
@@ -82,25 +82,25 @@
     {
       "slug": "project-category",
       "tags": [
-        "developer-tools"
+        "storage-apps-clients"
       ]
     },
     {
       "slug": "storage-type",
       "tags": [
-        "Other"
+        "health"
       ]
     },
     {
       "slug": "software-type",
       "tags": [
-        "library-sdk"
+        ""
       ]
     },
     {
       "slug": "tooling",
       "tags": [
-        "zondax-signing-tools", "FVM"
+        "FVM"
       ]
     },
     {
