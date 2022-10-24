@@ -1,16 +1,22 @@
 {
   "display": true,
   "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
+  "sortNumbers": [
+    {
+      "since": 2021
+    }
+  ],
   "logo": {
     "icon": "icon-filswan.png",
     "full": "WeChat3a6f11de72b557117c07c1ca71bc2eee.png"
   },
   "name": "FilSwan",
-  "org": [""],
+  "org": [
+    ""
+  ],
   "description": {
     "short": "Distributed data and computing platform.",
-    "long": "FilSwan offers a decentralized edge infrastructure with a marketplace and software that moves data storage and analysis onto Web3."
+    "long": "FilSwan offers a decentralized edge infrastructure with a marketplace and software that moves data storage and analysis onto Web3.\n\nAs a FVM Early Builder, they intend to build a Chainlink oracle on EVMs, to deploy to FVM for provable storage solutions on-chain."
   },
   "primaryCta": {
     "url": "//filswan.com/#/dashboard\nhttps://docs.filswan.com",
@@ -28,23 +34,80 @@
     },
     {
       "label": "Repo",
-      "links": [{ "url": "//github.com/filswan", "text": "github.com/filswan" }]
+      "links": [
+        {
+          "url": "//github.com/filswan",
+          "text": "github.com/filswan"
+        }
+      ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "",
+          "text": ""
+        }
+      ]
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2021"
+    }
+  ],
   "video": "",
   "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "ctaCard": {
+    "title": "",
+    "description": "",
+    "buttonText": "",
+    "url": ""
+  },
   "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["consumer-storage", "data-markets"] },
-    { "slug": "software-type", "tags": ["infrastructure"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+    {
+      "slug": "project-category",
+      "tags": [
+        "storage-apps-clients"
+      ]
+    },
+    {
+      "slug": "storage-type",
+      "tags": [
+        "consumer-storage", "data-markets"
+      ]
+    },
+    {
+      "slug": "software-type",
+      "tags": [
+        "infrastructure"
+      ]
+    },
+    {
+      "slug": "tooling",
+      "tags": [
+        "FVM"
+      ]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [
+        ""
+      ]
+    }
   ]
 }

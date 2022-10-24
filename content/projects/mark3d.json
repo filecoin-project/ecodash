@@ -3,23 +3,23 @@
   "featured": false,
   "sortNumbers": [
     {
-      "since": 2021
+      "since": 2022
     }
   ],
   "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
+    "icon": "mark3d-icon.jpeg",
+    "full": "mark3d-icon.jpeg"
   },
-  "name": "Zondax",
+  "name": "Mark3d",
   "org": [
-    "Zondax"
+    ""
   ],
   "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
+    "short": "Tokenization and marketplace of 3D assets",
+    "long": "Mark3d.xyz is a Web3 engine for the new 3D Internet. They are developing a complete set of necessary smart contracts and tools to connect spatial web with NFT, DeFi, and DAO protocols. As a FVM Early Builder, they intend to deploy existing EVM smart contracts over Filecoin and enable additional encryption, for users to put transferable private files inside NFTs, with original heavy 3D files in high resolution."
   },
   "primaryCta": {
-    "url": "//zondax.ch",
+    "url": "//mark3d.xyz",
     "text": "Project Website"
   },
   "links": [
@@ -27,8 +27,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
+          "url": "//mark3d.xyz",
+          "text": "mark3d.xyz"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
+          "url": "",
+          "text": ""
         }
       ]
     },
@@ -54,7 +54,7 @@
   "keyInfo": [
     {
       "label": "Using Filecoin since",
-      "value": "2021"
+      "value": "2022"
     }
   ],
   "video": "",
@@ -82,25 +82,25 @@
     {
       "slug": "project-category",
       "tags": [
-        "developer-tools"
+        ""
       ]
     },
     {
       "slug": "storage-type",
       "tags": [
-        "Other"
+        "data-markets"
       ]
     },
     {
       "slug": "software-type",
       "tags": [
-        "library-sdk"
+        ""
       ]
     },
     {
       "slug": "tooling",
       "tags": [
-        "zondax-signing-tools", "FVM"
+        "FVM"
       ]
     },
     {

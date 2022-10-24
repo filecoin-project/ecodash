@@ -22,8 +22,8 @@
       },
       {
         "type": "a",
-        "href": "https://filecoin.io/mine/",
-        "label": "Mine"
+        "href": "https://filecoin.io/provide/",
+        "label": "Provide"
       },
       {
         "type": "a",
@@ -89,12 +89,6 @@
           "href": "https://github.com/filecoin-project/community#forums",
           "target": "_blank",
           "label": "Forum"
-        },
-        {
-          "type": "a",
-          "href": "https://riot.im/app/#/group/+filecoin:matrix.org",
-          "target": "_blank",
-          "label": "Matrix"
         }
       ],
       "right_header": "Resources",

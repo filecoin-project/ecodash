@@ -3,23 +3,23 @@
   "featured": false,
   "sortNumbers": [
     {
-      "since": 2021
+      "since": 2022
     }
   ],
   "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
+    "icon": "legacy-icon.jpeg",
+    "full": "legacy-icon.jpeg"
   },
-  "name": "Zondax",
+  "name": "Legacy",
   "org": [
-    "Zondax"
+    ""
   ],
   "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
+    "short": "Perpetual storage of personal and institutional memoirs",
+    "long": "Legacy is a Web3 community and platform for capturing and preserving personal and institutional memoirs. As a FVM Early Builder, they intend to implement perpetual storage and a Data DAO for guardians of preserved content, via actors on the FVM."
   },
   "primaryCta": {
-    "url": "//zondax.ch",
+    "url": "//legacy.page",
     "text": "Project Website"
   },
   "links": [
@@ -27,8 +27,8 @@
       "label": "Website",
       "links": [
         {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
+          "url": "//legacy.page",
+          "text": "legacy.page"
         }
       ]
     },
@@ -36,8 +36,8 @@
       "label": "Repo",
       "links": [
         {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
+          "url": "//github.com/TheLegacyNetwork",
+          "text": "github.com/TheLegacyNetwork"
         }
       ]
     },
@@ -54,7 +54,7 @@
   "keyInfo": [
     {
       "label": "Using Filecoin since",
-      "value": "2021"
+      "value": "2022"
     }
   ],
   "video": "",
@@ -82,25 +82,25 @@
     {
       "slug": "project-category",
       "tags": [
-        "developer-tools"
+        "storage-apps-clients"
       ]
     },
     {
       "slug": "storage-type",
       "tags": [
-        "Other"
+        "consumer-storage"
       ]
     },
     {
       "slug": "software-type",
       "tags": [
-        "library-sdk"
+        ""
       ]
     },
     {
       "slug": "tooling",
       "tags": [
-        "zondax-signing-tools", "FVM"
+        "FVM"
       ]
     },
     {
