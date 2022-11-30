@@ -1,0 +1,54 @@
+{
+  "display": true,
+  "featured": false,
+  "sortNumbers": [{ "since": 2022 }],
+  "logo": { "icon": "web3-cloud-drive.png", "full": "web3-cloud-drive.png" },
+  "name": "Web3 Cloud Drive",
+  "org": ["SXX Future Data Company"],
+  "description": {
+    "short": "Decentralized file storage application",
+    "long": "A decentralized file storage application for the Web3 era, based on blockchain technology and IPFS (InterPlanetary File System) decentralized distributed storage technology, it can provide massive storage space for users who require data security and decentralization, achieve data trust, multi-node backup, decentralized storage, fast retrieval and other functions. It is suitable for data backup, data distribution, collaborative sharing, NFT storage, etc."
+  },
+  "primaryCta": { "url": "//sxxfuture.com", "text": "Project Website" },
+  "links": [
+    {
+      "label": "Website",
+      "links": [{ "url": "//sxxfuture.com", "text": "sxxfuture.com" }]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/sxxfuture-official",
+          "text": "github.com/sxxfuture-official"
+        }
+      ]
+    },
+    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+  ],
+  "keyInfo": [{ "label": "Using Filecoin since", "value": "2022" }],
+  "video": "",
+  "stats": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ],
+  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
+  "taxonomies": [
+    { "slug": "project-category", "tags": ["storage-apps-clients"] },
+    {
+      "slug": "storage-type",
+      "tags": [
+        "video",
+        "verifiable-storage",
+        "general-storage",
+        "consumer-storage",
+        "archival"
+      ]
+    },
+    { "slug": "software-type", "tags": ["mobile-app"] },
+    { "slug": "tooling", "tags": ["estuary"] },
+    { "slug": "pipeline", "tags": ["none"] }
+  ]
+}
+
