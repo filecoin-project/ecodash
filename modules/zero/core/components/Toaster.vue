@@ -2,7 +2,7 @@
   <div v-if="messages" class="toaster">
 
     <template v-for="toast in toasts">
-      <Zero_Core__Toast
+      <Toast
         v-if="toast"
         :key="toast.id"
         :toast="toast" />

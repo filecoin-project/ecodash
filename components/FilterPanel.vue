@@ -7,16 +7,16 @@
     :selected="selectedTags">
     <div id="filter-accordion">
 
-      <Zero_Core__Accordion
+      <Accordion
         v-slot="{ active }"
         :multiple="true">
         <template v-for="(heading, i) in ProjectFilters">
-          <Zero_Core__Accordion_Section
+          <AccordionSection
             :key="`taxonomy-category-${i}`"
             :active="active"
             :selected="true"
             class="filter-category container">
-            <Zero_Core__Accordion_Header class="filter-category heading-wrapper">
+            <AccordionHeader class="filter-category heading-wrapper">
               <div
                 tabindex="0"
                 class="filter-category heading focus-visible">
@@ -37,8 +37,8 @@
               <div>
                 <ChevronIcon class="dropdown-toggle" />
               </div>
-            </Zero_Core__Accordion_Header>
-            <Zero_Core__Accordion_Content>
+            </AccordionHeader>
+            <AccordionContent>
               <div class="filter-category chiclet-list">
                 <div
                   v-if="includeFilterAllTag"
@@ -58,10 +58,10 @@
                   {{ tag.label }}
                 </div>
               </div>
-            </Zero_Core__Accordion_Content>
-          </Zero_Core__Accordion_Section>
+            </AccordionContent>
+          </AccordionSection>
         </template>
-      </Zero_Core__Accordion>
+      </Accordion>
 
       <div id="filter-panel-controls" class="bottom-buttons">
         <button
@@ -85,6 +85,10 @@ import { mapGetters, mapActions } from 'vuex'
 
 import Filters from '@/components/Filters'
 import ChevronIcon from '@/components/icons/ChevronIcon'
+import Accordion from '@/modules/zero/core/components/Accordion'
+import AccordionSection from '@/modules/zero/core/components/Accordion_Section'
+import AccordionHeader from '@/modules/zero/core/components/Accordion_Header'
+import AccordionContent from '@/modules/zero/core/components/Accordion_Content'
 
 // =================================================================== Functions
 const toggleAllCategoryTags = (instance, heading) => {
@@ -122,7 +126,11 @@ export default {
 
   components: {
     Filters,
-    ChevronIcon
+    ChevronIcon,
+    Accordion,
+    AccordionSection,
+    AccordionHeader,
+    AccordionContent
   },
 
   props: {

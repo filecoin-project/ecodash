@@ -19,10 +19,6 @@ const plugins = [
   {
     src: Path.resolve(__dirname, 'plugins/index.js'),
     filename: 'zero/filters/index.js'
-  },
-  {
-    src: Path.resolve(__dirname, 'plugins/global-components.js'),
-    filename: 'zero/filters/global-components.js'
   }
 ]
 
@@ -91,7 +87,6 @@ const registerPlugins = (instance, next) => {
 // -----------------------------------------------------------------------------
 export default async function (instance) {
   if (instance.options.zero.filters.include) {
-    await compileComponents(instance)
     await compileStore(instance)
     registerPlugins(instance, () => {
       console.log(`📦 [Module] Filters`)

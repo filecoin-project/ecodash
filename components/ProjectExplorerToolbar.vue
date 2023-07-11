@@ -4,22 +4,22 @@
     <div class="filter-panel-controls">
 
       <div :class="['button-wrapper', filterButtonFloating, { 'button-active': filterPanelOpen }]">
-        <Zero_Core__Button
+        <Button
           id="filter-panel-toggle-button"
           type="C"
           :text="filterPanelToggleButtonLabel"
           :class="['focus-visible', { 'active': filterPanelOpen }]"
           @clicked="toggleFilterPanel">
           <template #icon-before>
-            <Zero_Core__Icon_FiltersToggle />
+            <FiltersToggle />
           </template>
-        </Zero_Core__Button>
+        </Button>
       </div>
 
       <div
         v-if="selectedFiltersCount"
         class="button-wrapper clear-selected">
-        <Zero_Core__Button
+        <Button
           id="clear-selected-filters-button"
           class="focus-visible"
           type="C"
@@ -28,7 +28,7 @@
           <template #icon-after>
             <CloseIcon />
           </template>
-        </Zero_Core__Button>
+        </Button>
       </div>
 
     </div>
@@ -47,7 +47,7 @@
             @changed="sortBySelectorChanged"
             @setwidth="setSortByMinWidth">
             <template #dropdown-icon>
-              <Zero_Core__Icon_SelectorToggle />
+              <SelectorToggle />
             </template>
           </SortBySelector>
         </div>
@@ -77,6 +77,8 @@ import BlockViewIcon from '@/components/icons/BlockViewIcon'
 import ListViewIcon from '@/components/icons/ListViewIcon'
 import CloseIcon from '@/components/icons/CloseIcon'
 import SortBySelector from '@/components/SortBySelector'
+import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+import FiltersToggle from '@/modules/zero/core/components/icons/FiltersToggle'
 
 // ====================================================================== Export
 export default {
@@ -86,7 +88,9 @@ export default {
     BlockViewIcon,
     ListViewIcon,
     CloseIcon,
-    SortBySelector
+    SortBySelector,
+    SelectorToggle,
+    FiltersToggle
   },
 
   props: {

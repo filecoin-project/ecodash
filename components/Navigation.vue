@@ -38,7 +38,7 @@
                       @changed="changeDropdownState"
                       @setwidth="setDropdownWidth">
                       <template #dropdown-icon>
-                        <Zero_Core__Icon_SelectorToggle />
+                        <SelectorToggle />
                       </template>
                     </DropdownSelector>
                   </div>
@@ -63,14 +63,14 @@
 
       <div class="col-4">
         <div class="nav-toolbar">
-          <Zero_Core__FilterBar
+          <FilterBar
             id="nav-filter-bar"
             :filter-value="filterValue"
             action="store">
             <template #icon>
               <SearchIcon />
             </template>
-          </Zero_Core__FilterBar>
+          </FilterBar>
         </div>
       </div>
 
@@ -103,6 +103,8 @@ import DropdownSelector from '@/components/DropdownSelector'
 import SiteLogo from '@/components/SiteLogo'
 import SocialIcons from '@/components/SocialIcons'
 import SearchIcon from '@/components/icons/SearchIcon'
+import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+import FilterBar from '@/modules/zero/core/components/FilterBar'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -119,7 +121,9 @@ export default {
     DropdownSelector,
     SiteLogo,
     SocialIcons,
-    SearchIcon
+    SearchIcon,
+    SelectorToggle,
+    FilterBar
   },
 
   data () {
@@ -142,7 +146,7 @@ export default {
       navigation: 'global/navigation',
       siteContent: 'global/siteContent',
       filterPanelOpen: 'filters/filterPanelOpen',
-      filterValue: 'core/filterValue',
+      filterValue: 'core/filterValue'
     }),
     headerNavigationClasses () {
       const showBackground = this.showBackground
