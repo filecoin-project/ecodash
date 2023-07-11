@@ -8,75 +8,87 @@
 
       <div :class="['modal-background', { 'show-background': navOpen, 'transition-out': modalClosing }]"></div>
 
-      <div class="col">
-        <div class="navigation-content">
+      <div class="col-3">
+        <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
+          <SiteLogo id="site-logo" />
+        </a>
+      </div>
+      
+      <div
+        :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
+        tabindex="0"
+        @click="toggleNav"
+        @keyup.enter="toggleNav">
+      </div>
 
-          <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
-            <SiteLogo id="site-logo" />
-          </a>
-
-          <div
-            :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
-            tabindex="0"
-            @click="toggleNav"
-            @keyup.enter="toggleNav">
-          </div>
-
-          <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
-            <div class="links-container">
-              <template v-for="(link, index) in navigation.header">
-                <template v-if="link.hasOwnProperty('links')">
-                  <div :key="index" class="relative-wrapper" :style="{ minWidth: `${dropdownWidth}px` }">
-                    <div
-                      :class="['button-wrapper', 'sort-by-wrapper', dropdownState]">
-                      <DropdownSelector
-                        class="sort-by-selector"
-                        label="Explore Network"
-                        :dropdown-options="link.links"
-                        :display-selected="false"
-                        :modal="navOpen"
-                        @changed="changeDropdownState"
-                        @setwidth="setDropdownWidth">
-                        <template #dropdown-icon>
-                          <Zero_Core__Icon_SelectorToggle />
-                        </template>
-                      </DropdownSelector>
-                    </div>
+      <div class="col-5">
+        <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
+          <nav class="links-container">
+            <template v-for="(link, index) in navigation.header">
+              <template v-if="link.hasOwnProperty('links')">
+                <div :key="index" class="relative-wrapper" :style="{ minWidth: `${dropdownWidth}px` }">
+                  <div
+                    :class="['button-wrapper', 'sort-by-wrapper', dropdownState]">
+                    <DropdownSelector
+                      class="sort-by-selector"
+                      label="Explore Network"
+                      :dropdown-options="link.links"
+                      :display-selected="false"
+                      :modal="navOpen"
+                      @changed="changeDropdownState"
+                      @setwidth="setDropdownWidth">
+                      <template #dropdown-icon>
+                        <Zero_Core__Icon_SelectorToggle />
+                      </template>
+                    </DropdownSelector>
                   </div>
-                </template>
-                <template v-else>
-                  <component
-                    :is="link.type"
-                    :key="index"
-                    :to="link.disabled ? '' : link.href"
-                    :href="link.disabled ? '' : link.href"
-                    :disabled="link.disabled"
-                    :target="link.target"
-                    class="navigation-link onhover-line focus-visible">
-                    {{ link.label }}
-                  </component>
-                </template>
+                </div>
               </template>
-            </div>
-
-            <div
-              v-if="languageSelector"
-              class="language-selector">
-              <a class="option">
-                EN
-              </a>
-              <a class="option">
-                中文
-              </a>
-            </div>
-
-            <div :class="['social-icon-container', { 'visible': navOpen }]">
-              <SocialIcons />
-            </div>
-          </div>
-
+              <template v-else>
+                <component
+                  :is="link.type"
+                  :key="index"
+                  :to="link.disabled ? '' : link.href"
+                  :href="link.disabled ? '' : link.href"
+                  :disabled="link.disabled"
+                  :target="link.target"
+                  class="navigation-link onhover-line focus-visible">
+                  {{ link.label }}
+                </component>
+              </template>
+            </template>
+          </nav>
         </div>
       </div>
+
+      <div class="col-4">
+        <div class="nav-toolbar">
+          <Zero_Core__FilterBar
+            id="nav-filter-bar"
+            :filter-value="filterValue"
+            action="store">
+            <template #icon>
+              <SearchIcon />
+            </template>
+          </Zero_Core__FilterBar>
+        </div>
+      </div>
+
+        <!-- <div
+          v-if="languageSelector"
+          class="language-selector">
+          <a class="option">
+            EN
+          </a>
+          <a class="option">
+            中文
+          </a>
+        </div> -->
+
+      <div :class="['social-icon-container', { 'visible': navOpen }]">
+        <SocialIcons />
+      </div>
+
     </div>
 
   </section>
@@ -90,6 +102,7 @@ import Throttle from 'lodash/throttle'
 import DropdownSelector from '@/components/DropdownSelector'
 import SiteLogo from '@/components/SiteLogo'
 import SocialIcons from '@/components/SocialIcons'
+import SearchIcon from '@/components/icons/SearchIcon'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -105,7 +118,8 @@ export default {
   components: {
     DropdownSelector,
     SiteLogo,
-    SocialIcons
+    SocialIcons,
+    SearchIcon
   },
 
   data () {
@@ -127,7 +141,8 @@ export default {
     ...mapGetters({
       navigation: 'global/navigation',
       siteContent: 'global/siteContent',
-      filterPanelOpen: 'filters/filterPanelOpen'
+      filterPanelOpen: 'filters/filterPanelOpen',
+      filterValue: 'core/filterValue',
     }),
     headerNavigationClasses () {
       const showBackground = this.showBackground
@@ -250,13 +265,13 @@ export default {
   height: 100%;
 }
 
-.navigation-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.25rem;
-}
+// .navigation-content {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 0.25rem;
+// }
 
 #site-logo,
 .navigation-link {
