@@ -8,7 +8,7 @@
     :disabled="disabled"
     @click="clickHandler">
 
-    <Zero_Core__Loader_TripleDot :class="{ show: loading }" />
+    <Loader_TripleDot :class="{ show: loading }" />
 
     <div :class="['button-content', { hide: loading }]">
 

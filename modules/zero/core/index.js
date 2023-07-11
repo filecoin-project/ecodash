@@ -57,11 +57,11 @@ const plugins = [
   {
     src: Path.resolve(__dirname, 'plugins/nuxt-hammer.js'),
     filename: 'zero/core/nuxt-hammer.js'
-  },
-  {
-    src: Path.resolve(__dirname, 'plugins/global-components.js'),
-    filename: 'zero/core/global-components.js'
   }
+  // {
+  //   src: Path.resolve(__dirname, 'plugins/global-components.js'),
+  //   filename: 'zero/core/global-components.js'
+  // }
 ]
 
 // ////////////////////////////////////////////////////////////////// Middleware
@@ -203,7 +203,7 @@ const runHttps = (instance, next) => {
 // -----------------------------------------------------------------------------
 export default async function (instance) {
   if (instance.options.zero.core.include) {
-    await compileComponents(instance)
+    // await compileComponents(instance)
     await compileStore(instance)
     await registerMiddleware(instance)
     await registerRoutes(instance)

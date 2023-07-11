@@ -7,7 +7,7 @@
 
       <div :class="`grid-noGutter ${headerState} hero-breadcrumbs`">
         <div class="col">
-          <Zero_Core__Breadcrumbs v-if="breadcrumbs" :breadcrumbs="breadcrumbs" />
+          <Breadcrumbs v-if="breadcrumbs" :breadcrumbs="breadcrumbs" />
         </div>
       </div>
 

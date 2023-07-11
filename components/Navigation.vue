@@ -38,7 +38,7 @@
                         @changed="changeDropdownState"
                         @setwidth="setDropdownWidth">
                         <template #dropdown-icon>
-                          <Zero_Core__Icon_SelectorToggle />
+                          <SelectorToggle />
                         </template>
                       </DropdownSelector>
                     </div>
@@ -90,6 +90,7 @@ import Throttle from 'lodash/throttle'
 import DropdownSelector from '@/components/DropdownSelector'
 import SiteLogo from '@/components/SiteLogo'
 import SocialIcons from '@/components/SocialIcons'
+import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -105,7 +106,8 @@ export default {
   components: {
     DropdownSelector,
     SiteLogo,
-    SocialIcons
+    SocialIcons,
+    SelectorToggle
   },
 
   data () {

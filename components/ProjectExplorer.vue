@@ -35,14 +35,14 @@
             {{ filterPanelHeading }}
           </h4>
 
-          <Zero_Core__FilterBar
+          <FilterBar
             id="filter-bar"
             :filter-value="searchQuery"
             action="store">
             <template #icon>
               <SearchIcon />
             </template>
-          </Zero_Core__FilterBar>
+          </FilterBar>
 
         </div>
 
@@ -56,7 +56,7 @@
       <!-- ================================================== Paginated List -->
       <div id="paginated-list">
 
-        <Zero_Pagination__Paginate
+        <Paginate
           v-if="sortedCollection"
           v-slot="{ paginated, paginatedCount }"
           :display="display"
@@ -77,7 +77,7 @@
               :class="projectCardColumns"
               :style="{ animationDelay: `${30 * index}ms`, zIndex: paginatedCount - index }" />
           </div>
-        </Zero_Pagination__Paginate>
+        </Paginate>
 
         <div v-else class="placeholder-results-empty">
           {{ pageData.section_filter.results_empty_placeholder }}
@@ -92,7 +92,7 @@
           v-if="sortedCollection && showPaginationControls"
           id="paginated-list-navigation-controls">
 
-          <Zero_Pagination__Controls
+          <Controls
             breaker="..."
             @navigateToPage="navigateToPage">
             <template #first-page>
@@ -107,16 +107,16 @@
             <template #last-page>
               <LastArrowIcon class="last-arrow" />
             </template>
-          </Zero_Pagination__Controls>
+          </Controls>
 
-          <Zero_Pagination__ResultsPerPageSelector
+          <ResultsPerPageSelector
             :label="resultsPerPageDropdownLabel"
             :collection="sortedCollection"
             @changed="resultsPerPageSelectorChanged">
             <template #dropdown-icon>
               <ChevronIcon />
             </template>
-          </Zero_Pagination__ResultsPerPageSelector>
+          </ResultsPerPageSelector>
 
         </div>
       </div>
@@ -134,12 +134,16 @@ import ProjectExplorerToolbar from '@/components/ProjectExplorerToolbar'
 import CloseIcon from '@/components/icons/CloseIcon'
 import SearchIcon from '@/components/icons/SearchIcon'
 import FilterPanel from '@/components/FilterPanel'
+import FilterBar from '@/modules/zero/core/components/FilterBar'
 import ProjectCard from '@/components/ProjectCard'
 import ChevronIcon from '@/components/icons/ChevronIcon'
 import FirstArrowIcon from '@/components/icons/FirstArrowIcon'
 import PrevArrowIcon from '@/components/icons/PrevArrowIcon'
 import NextArrowIcon from '@/components/icons/NextArrowIcon'
 import LastArrowIcon from '@/components/icons/LastArrowIcon'
+import Paginate from '@/modules/zero/pagination/components/Paginate'
+import Controls from '@/modules/zero/pagination/components/Controls'
+import ResultsPerPageSelector from '@/modules/zero/pagination/components/ResultsPerPageSelector'
 
 // =================================================================== Functions
 const clearPanelHeight = (instance) => {
@@ -159,12 +163,16 @@ export default {
     CloseIcon,
     SearchIcon,
     FilterPanel,
+    FilterBar,
     ProjectCard,
     ChevronIcon,
     FirstArrowIcon,
     NextArrowIcon,
     PrevArrowIcon,
-    LastArrowIcon
+    LastArrowIcon,
+    Paginate,
+    Controls,
+    ResultsPerPageSelector
   },
 
   props: {

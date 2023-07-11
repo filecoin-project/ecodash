@@ -4,7 +4,7 @@
     <div v-if="breadcrumbs" class="grid">
       <div class="col">
         <section id="section-breadcrumbs">
-          <Zero_Core__Breadcrumbs v-if="breadcrumbs" :breadcrumbs="breadcrumbs" />
+          <Breadcrumbs v-if="breadcrumbs" :breadcrumbs="breadcrumbs" />
         </section>
       </div>
     </div>
@@ -123,17 +123,17 @@
         <section
           v-if="checkIfArrayOfNullObjectValues(project.taxonomies)"
           id="section-filters">
-          <Zero_Core__Accordion
+          <Accordion
             v-slot="{ active }"
             :multiple="true">
             <template v-for="(taxonomy, i) in taxonomies">
-              <Zero_Core__Accordion_Section
+              <Accordion_Section
                 v-if="taxonomy.slug && taxonomy.tags"
                 :key="`taxonomy-category-${i}`"
                 :active="active"
                 :selected="true"
                 class="filters">
-                <Zero_Core__Accordion_Header>
+                <Accordion_Header>
                   <div tabindex="0" class="heading-wrapper focus-visible">
                     <h3 class="heading">
                       {{ $getTaxonomyCategoryLabel(taxonomy.slug) }}
@@ -142,8 +142,8 @@
                       <ChevronIcon class="dropdown-toggle" />
                     </div>
                   </div>
-                </Zero_Core__Accordion_Header>
-                <Zero_Core__Accordion_Content>
+                </Accordion_Header>
+                <Accordion_Content>
                   <div class="chiclet-list">
                     <component
                       :is="chicletType"
@@ -154,10 +154,10 @@
                       {{ $getTaxonomyTagLabel(taxonomy.slug, taxonomyTag) }}
                     </component>
                   </div>
-                </Zero_Core__Accordion_Content>
-              </Zero_Core__Accordion_Section>
+                </Accordion_Content>
+              </Accordion_Section>
             </template>
-          </Zero_Core__Accordion>
+          </Accordion>
         </section>
       </div>
     </div>

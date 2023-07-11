@@ -6,7 +6,7 @@
     <div class="grid">
       <div class="col">
 
-        <Zero_Core__Breadcrumbs
+        <Breadcrumbs
           v-if="breadcrumbsVisible"
           :breadcrumbs="pageData.breadcrumbs" />
 
