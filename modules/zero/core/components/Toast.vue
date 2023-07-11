@@ -4,10 +4,10 @@
     <div class="panel-top">
 
       <div class="icon">
-        <Zero_Core__Icon_Checkmark
+        <Checkmark
           v-if="category === 'success'"
           fill="white" />
-        <Zero_Core__Icon_Caution
+        <Caution
           v-if="category === 'caution' || category === 'error'"
           fill="white" />
       </div>
@@ -34,9 +34,17 @@
 // ===================================================================== Imports
 import Config from '@/nuxt.config'
 
+import Checkmark from '@/modules/zero/components/icons/Checkmark'
+import Caution from '@/modules/zero/components/icons/Caution'
+
 // ====================================================================== Export
 export default {
   name: 'Toast',
+
+  components: {
+    Checkmark,
+    Caution
+  },
 
   props: {
     toast: {
