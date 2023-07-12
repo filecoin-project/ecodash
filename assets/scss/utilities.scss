@@ -1,8 +1,8 @@
 // ///////////////////////////////////////////////////////////////////// Imports
 // -----------------------------------------------------------------------------
+@use 'sass:math';
 @import 'variables';
 @import 'settings';
-
 // ////////////////////////////////////////////////////////////////////// Mixins
 // --------------------------------------------------------------------- General
 @mixin optional-at-root($sel) { @at-root #{if(not &, $sel, selector-append(&, $sel))} { @content; } }
@@ -130,6 +130,16 @@
   font-weight: 700;
 }
 
+// ------------------------------------------------------------------- Functions
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+
+@function leading($lineHeight, $fontSize) {
+  @return math.div(math.round(10 * math.div($lineHeight, $fontSize)), 10);
+}
+
 // ------------------------------------------------------------------- Animation
 @mixin animation ($animate...) {
   $max: length($animate);
@@ -188,6 +198,10 @@
   background: linear-gradient(75deg, $morningSky, $frostbite);
 }
 
+@mixin lightOceanGradient {
+  background: linear-gradient(75deg, #60C1FF, #5DE3F2);
+}
+
 // --------------------------------------------------------------------- Borders
 
 @mixin oceanBorderGradient {
@@ -206,10 +220,8 @@
 }
 
 // ------------------------------------------------------------ Layered Elements
-
 @mixin tripleLayer {
   position: relative;
-  @include whiteBorderFront;
   border-radius: 0;
   transform: unset;
   &:before {

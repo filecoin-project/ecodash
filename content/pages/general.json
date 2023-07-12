@@ -32,11 +32,6 @@
       },
       {
         "type": "a",
-        "href": "https://filecoin.io/blog/",
-        "label": "Blog"
-      },
-      {
-        "type": "a",
         "href": "#",
         "label": "Explore Network",
         "links": [
@@ -63,6 +58,13 @@
         ]
       }
     ],
+    "header_cta": {
+      "button": {
+        "type": "a",
+        "text": "Add your project",
+        "href": "https://example.com"
+      }
+    },
     "footer": {
       "left_header": "Reach out",
       "left_links": [

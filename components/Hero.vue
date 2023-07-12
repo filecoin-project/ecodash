@@ -5,11 +5,11 @@
       v-if="pageData"
       :class="`panel-top transition ${headerState}`">
 
-      <div :class="`grid-noGutter ${headerState} hero-breadcrumbs`">
+      <!--       <div :class="`grid-noGutter ${headerState} hero-breadcrumbs`">
         <div class="col">
           <Breadcrumbs v-if="breadcrumbs" :breadcrumbs="breadcrumbs" />
         </div>
-      </div>
+      </div> -->
 
     </section>
 

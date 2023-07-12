@@ -11,7 +11,7 @@
       :target="link.target"
       :class="[link.type === 'div' ? 'breadcrumb-button' : 'breadcrumb-link', 'focus-visible']">
       <span class="label">{{ link.label }}</span>
-      <span class="divider">|</span>
+      <span class="divider">/</span>
     </component>
 
   </section>
@@ -33,8 +33,13 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
+.breadcrumbs {
+  padding-top: 1.125rem;
+}
+
 .breadcrumb-link,
 .breadcrumb-button {
+  position: relative;
   display: inline-block;
   font-size: inherit;
   &:last-child {
@@ -55,10 +60,19 @@ export default {
       text-decoration-color: currentColor;
     }
   }
+  .label,
+  .divider {
+    color: #1890FD;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 18px;
+    letter-spacing: 0.26px;
+  }
 }
 
 .divider {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
   color: inherit;
 }
 </style>

@@ -8,7 +8,7 @@
     :disabled="disabled"
     @click="clickHandler">
 
-    <Loader_TripleDot :class="{ show: loading }" />
+    <LoaderTripleDot :class="{ show: loading }" />
 
     <div :class="['button-content', { hide: loading }]">
 
@@ -33,6 +33,8 @@
 // ===================================================================== Imports
 import { mapGetters, mapActions } from 'vuex'
 
+import LoaderTripleDot from '@/modules/zero/core/components/LoaderTripleDot'
+
 // ===================================================================== Functions
 const checkSlots = (instance) => {
   const slots = instance.$slots
@@ -43,6 +45,10 @@ const checkSlots = (instance) => {
 // ====================================================================== Export
 export default {
   name: 'Button',
+
+  components: {
+    LoaderTripleDot
+  },
 
   props: {
     type: { // A, B, C, D
@@ -175,13 +181,13 @@ export default {
 }
 
 // /////////////////////////////////////////////////////////////// [Type] Common
-.type-A,
+.type-navlink,
 .type-B,
 .type-C,
 .type-D {
   border-radius: 0.125rem;
   white-space: nowrap;
-  padding: 0 0.75rem;
+  // padding: 0 0.75rem;
   &:not(:disabled) {
     // &:hover {
     //   transform: scale(1.05);
@@ -200,29 +206,67 @@ export default {
 }
 
 // //////////////////////////////////////////////////////////////////// [Type] A
-.type-A {
-  // background-color: blue;
+.type-navlink {
   &:disabled {
     box-shadow: none;
+  }
+  .item-after {
+    color: $white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.32px;
   }
 }
 
 // //////////////////////////////////////////////////////////////////// [Type] B
-.type-B {
-  color: blue;
-  border: 2px solid blue;
-  &:not(:disabled) {
-    text-decoration: underline transparent;
-    text-underline-offset: $underlineSpacing;
-    transition: text-decoration-color 250ms ease-out;
-    &:hover {
-      transition: text-decoration-color 250ms ease-in;
-      text-decoration-color: currentColor;
-    }
+.type-cta {
+  @include tripleLayer;
+  padding: 0;
+  border-radius: 1px;
+  transition: 250ms ease;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    border-radius: inherit;
+    box-sizing: border-box;
+    transition: inherit;
   }
-  &:disabled {
-    border-color: $gray300;
-    color: white;
+  &:after {
+    background-color: $cadmiumBlue;
+  }
+  .button-content {
+    position: relative;
+    left: -1px;
+    top: 0;
+    transition: inherit;
+    border-radius: inherit;
+    padding: toRem(4.5) toRem(12);
+    background: linear-gradient(244deg, #39C0CC 0%, #178FFD 100%);
+  }
+  .item-after {
+    color: $blackSapphire;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: leading(18, 14);
+    margin-left: 0.625rem;
+    white-space: nowrap;
+  }
+  .icon {
+    display: flex;
+    width: toRem(10);
+    height: toRem(10);
+  }
+  &:hover {
+    .button-content {
+      left: $bottomLayerOffsetLeft;
+      top: $bottomLayerOffsetTop;
+    }
+    &:after {
+      left: $bottomLayerOffsetLeft;
+      top: $bottomLayerOffsetTop;
+    }
   }
 }
 

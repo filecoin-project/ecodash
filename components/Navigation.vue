@@ -4,79 +4,91 @@
     id="header-navigation"
     :class="headerNavigationClasses">
 
-    <div class="grid-noGutter">
+    <div class="grid-noGutter-middle">
 
       <div :class="['modal-background', { 'show-background': navOpen, 'transition-out': modalClosing }]"></div>
 
-      <div class="col">
-        <div class="navigation-content">
-
-          <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
-            <SiteLogo id="site-logo" />
-          </a>
-
-          <div
-            :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
-            tabindex="0"
-            @click="toggleNav"
-            @keyup.enter="toggleNav">
-          </div>
-
-          <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
-            <div class="links-container">
-              <template v-for="(link, index) in navigation.header">
-                <template v-if="link.hasOwnProperty('links')">
-                  <div :key="index" class="relative-wrapper" :style="{ minWidth: `${dropdownWidth}px` }">
-                    <div
-                      :class="['button-wrapper', 'sort-by-wrapper', dropdownState]">
-                      <DropdownSelector
-                        class="sort-by-selector"
-                        label="Explore Network"
-                        :dropdown-options="link.links"
-                        :display-selected="false"
-                        :modal="navOpen"
-                        @changed="changeDropdownState"
-                        @setwidth="setDropdownWidth">
-                        <template #dropdown-icon>
-                          <SelectorToggle />
-                        </template>
-                      </DropdownSelector>
-                    </div>
-                  </div>
-                </template>
-                <template v-else>
-                  <component
-                    :is="link.type"
-                    :key="index"
-                    :to="link.disabled ? '' : link.href"
-                    :href="link.disabled ? '' : link.href"
-                    :disabled="link.disabled"
-                    :target="link.target"
-                    class="navigation-link onhover-line focus-visible">
-                    {{ link.label }}
-                  </component>
-                </template>
-              </template>
-            </div>
-
-            <div
-              v-if="languageSelector"
-              class="language-selector">
-              <a class="option">
-                EN
-              </a>
-              <a class="option">
-                中文
-              </a>
-            </div>
-
-            <div :class="['social-icon-container', { 'visible': navOpen }]">
-              <SocialIcons />
-            </div>
-          </div>
-
+      <div class="col-3_lg-2">
+        <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
+          <SiteLogo id="site-logo" />
+        </a>
+      </div>
+      
+      <div class="col-0_sm-2" data-push-left="off-0_sm-8">
+        <div
+          :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
+          tabindex="0"
+          @click="toggleNav"
+          @keyup.enter="toggleNav">
         </div>
       </div>
+
+      <div class="col-5_lg-6">
+        <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
+          <nav class="links-container">
+            <template v-for="(link, index) in navigation.header">
+              <template v-if="link.hasOwnProperty('links')">
+                <DropdownSelector
+                  :key="index"
+                  label="Explore Network"
+                  :dropdown-options="link.links"
+                  :display-selected="false"
+                  :modal="navOpen"
+                  @changed="changeDropdownState"
+                  @setwidth="setDropdownWidth">
+                  <template #dropdown-icon>
+                    <SelectorToggle />
+                  </template>
+                </DropdownSelector>
+              </template>
+              <template v-else>
+                <Button
+                  :key="index"
+                  type="navlink"
+                  :tag="link.type"
+                  :to="link.disabled ? '' : link.href"
+                  :disabled="link.disabled"
+                  :text="link.label"
+                  target="_blank"
+                  class="navigation-link onhover-line focus-visible" />
+              </template>
+            </template>
+          </nav>
+        </div>
+      </div>
+
+      <div class="col-4_sm-hidden">
+        <div class="nav-toolbar">
+          <FilterBar
+            id="nav-filter-bar"
+            :filter-value="filterValue"
+            action="store">
+            <template #icon>
+              <SearchIcon />
+            </template>
+          </FilterBar>
+          <Button
+            type="cta"
+            :tag="navCta.type"
+            :to="navCta.disabled ? '' : navCta.href"
+            :disabled="navCta.disabled"
+            :text="navCta.text"
+            class="nav-cta">
+            <template #icon-before>
+              <AddIcon />
+            </template>
+          </Button>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+      </div>
+
+      <div :class="['social-icon-container', { 'visible': navOpen }]">
+        <SocialIcons />
+      </div>
+
     </div>
 
   </section>
@@ -90,7 +102,12 @@ import Throttle from 'lodash/throttle'
 import DropdownSelector from '@/components/DropdownSelector'
 import SiteLogo from '@/components/SiteLogo'
 import SocialIcons from '@/components/SocialIcons'
+import SearchIcon from '@/components/icons/SearchIcon'
+import AddIcon from '@/components/icons/AddIcon'
 import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+import FilterBar from '@/modules/zero/core/components/FilterBar'
+import Button from '@/modules/zero/core/components/Button'
+import Breadcrumbs from '@/modules/zero/core/components/Breadcrumbs'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -107,7 +124,12 @@ export default {
     DropdownSelector,
     SiteLogo,
     SocialIcons,
-    SelectorToggle
+    AddIcon,
+    SearchIcon,
+    SelectorToggle,
+    FilterBar,
+    Button,
+    Breadcrumbs
   },
 
   data () {
@@ -120,8 +142,7 @@ export default {
       showBackground: false,
       forceNavigationVisible: true,
       dropdownState: 'closed',
-      dropdownWidth: 0,
-      languageSelector: false
+      dropdownWidth: 0
     }
   },
 
@@ -129,8 +150,15 @@ export default {
     ...mapGetters({
       navigation: 'global/navigation',
       siteContent: 'global/siteContent',
-      filterPanelOpen: 'filters/filterPanelOpen'
+      filterPanelOpen: 'filters/filterPanelOpen',
+      filterValue: 'core/filterValue'
     }),
+    pageData () {
+      return this.siteContent.index.page_content
+    },
+    breadcrumbs () {
+      return this.pageData.breadcrumbs.index_view
+    },
     headerNavigationClasses () {
       const showBackground = this.showBackground
       const forceVisible = this.forceNavigationVisible
@@ -151,6 +179,9 @@ export default {
           label: 'yoo'
         }
       }
+    },
+    navCta () {
+      return this.navigation.header_cta.button
     }
   },
 
@@ -219,6 +250,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 #header-navigation {
   position: fixed;
+  padding-top: toRem(39);
   top: 0;
   left: 0;
   width: 100%;
@@ -246,20 +278,6 @@ export default {
   }
 }
 
-[class*="grid"],
-[class*="col"],
-.navigation-content {
-  height: 100%;
-}
-
-.navigation-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.25rem;
-}
-
 #site-logo,
 .navigation-link {
   cursor: pointer;
@@ -285,10 +303,18 @@ export default {
   display: flex;
   max-width: unset;
   width: 100%;
+  height: 100%;
+  @include large {
+    padding-left: 3rem;
+  }
+  @include medium {
+    padding-left: 1rem;
+  }
   @include small {
     display: none;
     flex-direction: column;
     position: fixed;
+    padding: 0 toRem(36);
     top: $navigationHeight;
     left: 0;
     width: 100vw;
@@ -314,77 +340,81 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // margin-left: 2rem;
-  margin: 0 2rem;
-  &:before {
-    content: '';
-    position: relative;
-    width: 6rem;
-    height: 100%;
-    flex-grow: 1;
-  }
+  margin: 0 1rem;
   @include medium {
-    margin: 0 1rem;
+    margin-left: 0;
   }
   @include small {
     flex-direction: column;
     justify-content: center;
-    // margin-left: 5rem;
-    margin: 0 5rem;
     justify-content: flex-start;
-    &:before {
-      content: '';
-      position: relative;
-      width: 100%;
-      height: 2rem;
-      flex-grow: 0;
+    align-items: flex-start;
+    ::v-deep .dropdown-selector {
+      margin: toRem(12) 0;
+      .button-inner {
+        padding-left: 0.5rem;
+      }
     }
   }
 }
 
 .navigation-link {
-  font-family: $font_Primary;
-  letter-spacing: $letter_SpacingRegular;
-  font-size: $fontSize_Regular;
-  margin: 0 1.0rem;
+  display: inline-block;
+  margin: 0 toRem(6);
   @include medium {
-    margin: 0 0.5rem;
-  }
-  @include borderRadius_Medium;
-  @include small {
-    align-self: start;
-    font-size: $fontSize_Large;
-    line-height: $leading_Mini;
-    margin: 0 0 2rem 0;
-  }
-}
-
-.relative-wrapper {
-  height: 100%;
-  margin-left: 1rem;
-  content: '';
-  position: relative;
-  width: 100px;
-  z-index: 100;
-  @include small {
     margin: 0;
-    align-self: start;
   }
-}
-
-.language-selector {
-  display: flex;
-  .option {
-    color: $white;
-    &:active {
-      color: $caribbeanBlue;
+  @include small {
+    margin: toRem(9) 0;
+  }
+  &.onhover-line {
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+    &:after {
+      content: "";
+      height: 1px;
+      bottom: 0px;
+      background-color: currentColor;
+      position: absolute;
+      width: calc(100% - 20px);
+      left: 10px;
+      opacity: 0;
+      transition: all .2s cubic-bezier(0.4, 0.0, 0.2, 1.0);
     }
   }
+}
+
+// ///////////////////////////////////////////////////////////////// Nav Toolbar
+.nav-toolbar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.nav-cta {
+  height: toRem(27);
+  margin-left: 2rem;
+  transform: translateY(2px);
 }
 
 // ////////////////////////////////////////////////////// Modal + Hamburger icon
 .modal-background {
   display: none;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='684' height='684' viewBox='0 0 684 684'><defs><linearGradient id='linear-gradient' x1='0.985' y1='0.018' x2='0.017' y2='0.862' gradientUnits='objectBoundingBox'><stop offset='0' stop-color='%2339c0cc'/><stop offset='1' stop-color='%23178ffd'/></linearGradient></defs><pattern id='bg' patternUnits='userSpaceOnUse' width='684' height='684'><g id='Rectangle_1597' data-name='Rectangle 1597' transform='translate(354 13)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g><g id='Rectangle_1601' data-name='Rectangle 1601' transform='translate(11 353)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g></pattern><pattern id='bb' patternUnits='userSpaceOnUse' width='171' height='171'><path id='Rectangle_1509' data-name='Rectangle 1509' d='M1,1V170H170V1H1M0,0H171V171H0Z' fill='url(%23linear-gradient)' opacity='0.2' /></pattern><rect width='100%25' height='100%25' fill='url(%23bg)'/><rect width='100%25' height='100%25' fill='url(%23bb)'/></svg>");
+    opacity: 0.7;
+    z-index: 1;
+  }
   @include small {
     position: absolute;
     width: 100vw;
@@ -406,7 +436,7 @@ export default {
   height: 14px;
   width: 2rem;
   @include small {
-    display: inline;
+    display: block;
   }
   &:before {
     content: '';
@@ -457,78 +487,6 @@ export default {
   transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
   transform: scale(1.1);
   opacity: 0.0;
-}
-
-// /////////////////////////////////////////////////////////// Dropdown Selector
-.button-wrapper {
-  position: relative;
-  transition: all 250ms linear;
-  position: absolute;
-  top: calc(-50% - 0.25rem);
-  @include small {
-    top: 0;
-  }
-  &.open {
-    &:after {
-      background: linear-gradient(90deg, $daytonaBlue, $daytonaBlue);
-    }
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    @include whiteBorderBack;
-    background-color: $jaguar;
-    transition: inherit;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    @include whiteBorderBack;
-    @include oceanBlueGradient;
-    transition: inherit;
-  }
-  button {
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    @include whiteBorderFront;
-    border-radius: 0 !important;
-    background-color: $jaguar;
-    transition: inherit;
-  }
-  &.button-active {
-    &:before {
-      top: 0px;
-      left: 0px;
-    }
-    &:after {
-      top: 1px;
-      left: 1px;
-    }
-    button {
-      top: 2px;
-      left: 2px;
-      @include oceanBlueGradient;
-    }
-  }
-  &:hover {
-    button {
-      top: 0px;
-      left: 0px;
-    }
-    &:after {
-      top: 0px;
-      left: 0px;
-    }
-  }
 }
 
 </style>
