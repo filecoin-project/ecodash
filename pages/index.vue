@@ -5,7 +5,14 @@
       :content="hero"
       :categories="categories" />
 
-    <ProjectExplorer :defaultview="gridOrListView" />
+    <div class="grid">
+      <div class="col-6">
+        <CardListBlock :cards="cardColumnOne" />
+      </div>
+      <div class="col-6">
+        <CardListBlock :cards="cardColumnTwo" />
+      </div>
+    </div>
 
   </div>
 </template>
@@ -19,6 +26,7 @@ import HeroHeader from '@/components/HeroHeader'
 import SegmentSlider from '@/components/SegmentSlider'
 import FeaturedProjectsSlider from '@/components/FeaturedProjectsSlider'
 import ProjectExplorer from '@/components/ProjectExplorer'
+import CardListBlock from '@/components/CardListBlock'
 
 // =================================================================== Functions
 const parseURLParams = (instance, next) => {
@@ -113,7 +121,8 @@ export default {
     HeroHeader,
     SegmentSlider,
     FeaturedProjectsSlider,
-    ProjectExplorer
+    ProjectExplorer,
+    CardListBlock
   },
 
   layout: 'base',
@@ -209,6 +218,14 @@ export default {
     },
     categories () {
       return this.siteContent.taxonomy.categories
+    },
+    cardColumnOne () {
+      const halflength = Math.ceil(this.projects.length / 2)
+      return this.projects.slice(0, halflength)
+    },
+    cardColumnTwo () {
+      const halflength = Math.ceil(this.projects.length / 2)
+      return this.projects.slice(halflength, this.projects.length)
     },
     gridOrListView () {
       if (this.settings.visibility.defaultView === 'list') {

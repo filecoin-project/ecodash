@@ -33,9 +33,7 @@
                   label="Explore Network"
                   :dropdown-options="link.links"
                   :display-selected="false"
-                  :modal="navOpen"
-                  @changed="changeDropdownState"
-                  @setwidth="setDropdownWidth">
+                  :modal="navOpen">
                   <template #dropdown-icon>
                     <SelectorToggle />
                   </template>
@@ -140,9 +138,7 @@ export default {
       modalClosing: false,
       scrollPosition: 0,
       showBackground: false,
-      forceNavigationVisible: true,
-      dropdownState: 'closed',
-      dropdownWidth: 0
+      forceNavigationVisible: true
     }
   },
 
@@ -232,12 +228,6 @@ export default {
     },
     updateScrollPosition () {
       this.scrollPosition = window.scrollY
-    },
-    changeDropdownState (item) {
-      this.dropdownState = item.data.state
-    },
-    setDropdownWidth (val) {
-      this.dropdownWidth = val
     }
   }
 }
