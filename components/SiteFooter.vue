@@ -1,10 +1,45 @@
 <template>
   <footer id="site-footer">
 
+    <section class="panel-top">
+      <div class="grid-noGutter">
+        <div class="col-12">
+          <div class="subfooter-cta">
+            <div class="grid">
+              <div class="col-10" data-push-left="off-1">
+                <div class="heading">
+                  {{ subfooter.heading }}
+                </div>
+                <div class="subheading">
+                  {{ subfooter.subheading }}
+                </div>
+                <div class="cta">
+                  <Button
+                    type="cta"
+                    :tag="subfooter.cta.type"
+                    :to="subfooter.cta.disabled ? '' : subfooter.cta.href"
+                    :disabled="subfooter.cta.disabled"
+                    :text="subfooter.cta.text"
+                    class="nav-cta">
+                    <template #icon-before>
+                      <AddIcon />
+                    </template>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="panel-bottom">
       <div class="grid-noGutter">
 
-        <div class="col-5_md-6_sm-10" data-push-right="off-1">
+        <div
+          class="col-4_sm-10"
+          data-push-left="off-1"
+          data-push-right="off-1">
           <div class="content-wrapper panel-left">
 
             <h4 class="heading">
@@ -22,7 +57,10 @@
           </div>
         </div>
 
-        <div class="col-5_sm-10" data-push-left="off-1">
+        <div
+          class="col-4_sm-10"
+          data-push-left="off-1"
+          data-push-right="off-1">
           <div class="content-wrapper panel-right">
             <nav id="footer-navigation">
               <div class="left-column">
@@ -73,17 +111,9 @@
                     ↗
                   </template>
                 </Button>
-                <!-- <component
-                  :is="link.type"
-                  v-for="(link, index) in footer.right_links"
-                  :key="index"
-                  :to="link.disabled ? '' : link.href"
-                  :href="link.disabled ? '' : link.href"
-                  :disabled="link.disabled"
-                  :target="link.target"
-                  class="footer-link focus-visible">
-                  {{ link.label }}
-                </component> -->
+                
+                <SocialIcons />
+
               </div>
             </nav>
           </div>
@@ -103,6 +133,8 @@ import MailchimpForm from '@/components/MailchimpForm'
 import Button from '@/modules/zero/core/components/Button'
 import DropdownSelector from '@/components/DropdownSelector'
 import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+import SocialIcons from '@/components/SocialIcons'
+import AddIcon from '@/components/icons/AddIcon'
 
 // ====================================================================== Export
 export default {
@@ -112,7 +144,9 @@ export default {
     MailchimpForm,
     Button,
     DropdownSelector,
-    SelectorToggle
+    SelectorToggle,
+    SocialIcons,
+    AddIcon
   },
 
   computed: {
@@ -121,6 +155,9 @@ export default {
     }),
     navigation () {
       return this.siteContent.general.navigation
+    },
+    subfooter () {
+      return this.siteContent.general.subfooter
     },
     footer () {
       return this.siteContent.general.footer
@@ -144,6 +181,50 @@ export default {
   padding: 0;
 }
 
+// ///////////////////////////////////////////////////////////////// [Panel] Top
+.subfooter-cta {
+  position: relative;
+  padding: toRem(59) 0;
+  margin-top: 3rem;
+  margin-bottom: toRem(52);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-image-slice: 1 !important;
+    border-width: 3px;
+    border-image-source: linear-gradient(25deg, #213C4F, #406380);
+    box-shadow: 0px 0px 15px 3px #213140;
+    opacity: 0.6;
+  }
+  .heading,
+  .subheading {
+    text-align: center;
+  }
+  .heading {
+    font-size: toRem(22);
+    font-weight: 600;
+    line-height: leading(36, 22);
+    letter-spacing: 0.48px;
+    margin-bottom: toRem(28);
+  }
+  .subheading {
+    font-size: toRem(18);
+    font-weight: 400;
+    line-height: leading(30, 18);
+    letter-spacing: 0.36px;
+    margin-bottom: toRem(45);
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // ////////////////////////////////////////////////////////////// [Panel] Bottom
 .panel-bottom {
   @include small {
@@ -154,8 +235,6 @@ export default {
 // //////////////////////////////////////////////////////////////// [Panel] Left
 .content-wrapper {
   &.panel-left {
-    padding-right: 3rem;
-    padding-left: 1rem;
     .heading {
       font-size: toRem(18);
       font-weight: 600;

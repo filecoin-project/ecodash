@@ -63,14 +63,6 @@
               <div class="category-info">
                 {{ activeCategory.description }}
               </div>
-              <!-- <Button
-                tag="nuxt-link"
-                text="See all projects in this category"
-                to="/">
-                <template #icon-after>
-                  →
-                </template>
-              </Button> -->
             </div>
           </div>
         </div>
