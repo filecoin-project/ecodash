@@ -140,8 +140,12 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .button {
   position: relative;
-  height: 2.25rem;
   cursor: pointer;
+  &:hover {
+    .item-after {
+      transform: translateX(0.5rem);
+    }
+  }
 }
 
 .triple-dot-loader,
@@ -170,8 +174,16 @@ export default {
   }
 }
 
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: line-height(36, 16);
+  letter-spacing: 0.48px;
+}
+
 .item-after {
-  margin-left: 0.75rem;
+  transition: 250ms ease;
+  margin-left: 0.25rem;
 }
 
 .icon {
@@ -253,6 +265,9 @@ export default {
     margin-left: 0.625rem;
     white-space: nowrap;
   }
+  .item-after {
+    transform: none !important;
+  }
   .icon {
     display: flex;
     width: toRem(10);
@@ -302,6 +317,7 @@ export default {
   .button-content {
     position: relative;
     z-index: 2;
+    padding: 0;
   }
   .text {
     font-size: toRem(14);
@@ -310,10 +326,10 @@ export default {
     letter-spacing: 0.5px;
     transition: background 500ms ease;
     background: linear-gradient(
-      90deg, 
-      rgba(255,255,255,1) 0%, 
-      rgba(255,255,255,1) 33%, 
-      rgba(96,193,255,1) 66%, 
+      90deg,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 33%,
+      rgba(96,193,255,1) 66%,
       rgba(93,227,242,1) 100%
     ) 0 0 / 300% 100%;
     background-position: 100%;

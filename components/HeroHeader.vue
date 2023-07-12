@@ -33,7 +33,45 @@
               tag="nuxt-link"
               :text="category.label"
               :to="`/category/${category.slug}`"
-              :class="['category-button', { active: activeCategory && activeCategory === category.slug }]" />
+              :class="['category-button', { active: activeCategory && activeCategory.slug === category.slug }]" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        v-if="activeCategory"
+        class="col-12"
+        data-push-left="off-0"
+        data-push-right="off-0">
+        <div class="active-category">
+          <div class="grid-noGutter">
+            <div class="col-3" data-push-left="off-1">
+              <div class="category-title">
+                {{ activeCategory.label }}
+              </div>
+              <Button
+                tag="a"
+                text="Add your project"
+                to="https://example.com"
+                class="category-title-cta">
+                <template #icon-after>
+                  →
+                </template>
+              </Button>
+            </div>
+            <div class="col-7" data-push-right="off-1">
+              <div class="category-info">
+                {{ activeCategory.description }}
+              </div>
+              <!-- <Button
+                tag="nuxt-link"
+                text="See all projects in this category"
+                to="/">
+                <template #icon-after>
+                  →
+                </template>
+              </Button> -->
+            </div>
           </div>
         </div>
       </div>
@@ -74,7 +112,10 @@ export default {
     },
     activeCategory () {
       const route = this.$route
-      if (route.params.category) { return route.params.category }
+      if (route.params.category) {
+        const active = this.categories.find(cat => cat.slug === route.params.category)
+        return active
+      }
       return false
     }
   }
@@ -100,16 +141,60 @@ export default {
   letter-spacing: 0.8px;
 }
 
-.subheading {
+.subheading,
+.category-info {
   font-size: toRem(18);
   font-weight: 400;
   line-height: leading(30, 18);
   letter-spacing: 0.36px;
 }
 
+.active-category {
+  position: relative;
+  padding: toRem(48) 0;
+  margin-top: 3rem;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-image-slice: 1 !important;
+    border-width: 3px;
+    border-image-source: linear-gradient(25deg, #213C4F, #406380);
+    box-shadow: 0px 0px 15px 3px #213140;
+    opacity: 0.6;
+  }
+}
+
 .category-list {
   display: flex;
   justify-content: center;
   padding-top: toRem(43);
+}
+
+.category-title {
+  font-size: toRem(22);
+  font-weight: 600;
+  line-height: leading(36, 22);
+  letter-spacing: 0.48px;
+  padding-left: 0.5rem;
+}
+
+.category-title-cta {
+  ::v-deep .button-content {
+    height: unset;
+  }
+  ::v-deep .text,
+  ::v-deep .item-after {
+    background: linear-gradient(90deg, rgba(96,193,255,1) 0%, rgba(93,227,242,1) 100%);
+    @include gradientText;
+  }
+}
+
+.category-info {
+  padding-left: 3rem;
 }
 </style>
