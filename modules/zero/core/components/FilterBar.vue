@@ -33,7 +33,7 @@ export default {
     placeholder: {
       type: String,
       required: false,
-      default: 'Enter text here'
+      default: 'search the ecosystem'
     },
     action: {
       type: String,
@@ -70,40 +70,103 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$dimensions: 2.25rem;
-
 // ///////////////////////////////////////////////////////////////////// General
 .filter-bar {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 1;
-  width: 100%;
-  height: calc(#{$dimensions} - 2px);
-  margin-right: 1rem;
+  height: 2rem;
+  width: toRem(132);
+  border-radius: toRem(1);
+  padding: toRem(9);
+  box-sizing: border-box;
+  transition: width 250ms ease-in;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    box-sizing: border-box;
+    transition: opacity 250ms ease, border 250ms ease;
+  }
+  &:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    @include lightOceanGradient;
+  }
+  &:after {
+    border: solid 1px rgba($white, 1);
+    background-color: $blackSapphire;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+    &:after {
+      transition: border 0ms ease;
+      border: solid 1px rgba($white, 0);
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      top: 1px;
+      left: 1px;
+    }
+  }
+  &.focused {
+    width: toRem(200);
+  }
 }
 
 .icon-container {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(#{$dimensions} - 2px);
-  height: calc(#{$dimensions} - 2px);
   transition: 250ms ease-out;
+  width: toRem(13);
+  height: toRem(13);
+  margin-right: 0.375rem;
+  ::v-deep svg {
+    line,
+    circle {
+      stroke: $white;
+    }
+  }
 }
 
 .input {
+  position: relative;
+  z-index: 2;
   @include borderRadius_Medium;
-  flex: 1;
+  width: 100%;
   height: 100%;
-  padding: 0.66rem 0;
-  font-size: 10pt;
-  font-weight: 300;
+  font-size: toRem(14);
+  font-weight: $fontWeight_Regular;
+  line-height: 1;
+  letter-spacing: 0.32px;
   transition: 250ms ease-out;
   -webkit-appearance: none;
   &:hover, &:active, &:focus {
     transition: 250ms ease-in;
+  }
+  &::placeholder {
+    color: white;
+    opacity: 0;
+  }
+  &:focus{
+    &::placeholder {
+      opacity: 0.7;
+    }
   }
 }
 </style>
