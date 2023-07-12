@@ -6,9 +6,9 @@
     <div class="grid">
       <div class="col">
 
-        <Breadcrumbs
+<!--         <Breadcrumbs
           v-if="breadcrumbsVisible"
-          :breadcrumbs="pageData.breadcrumbs" />
+          :breadcrumbs="pageData.breadcrumbs" /> -->
 
         <div class="segments-container">
 

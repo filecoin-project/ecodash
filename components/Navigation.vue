@@ -153,11 +153,8 @@ export default {
       filterPanelOpen: 'filters/filterPanelOpen',
       filterValue: 'core/filterValue'
     }),
-    pageData () {
-      return this.siteContent.index.page_content
-    },
     breadcrumbs () {
-      return this.pageData.breadcrumbs.index_view
+      return this.siteContent.general.navigation.breadcrumbs
     },
     headerNavigationClasses () {
       const showBackground = this.showBackground

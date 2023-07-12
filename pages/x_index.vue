@@ -1,9 +1,73 @@
 <template>
   <div :class="`page page-${tag} container`">
 
-    <HeroHeader
-      :content="hero"
-      :categories="categories" />
+    <div
+      ref="collapsibleSection"
+      :style="{ height: `${sectionHeight}px` }"
+      class="collapsible-section">
+      <transition-group name="fade" tag="section">
+
+        <section
+          v-if="segmentSlider"
+          id="section-segment-slider"
+          ref="segmentSlider"
+          key="segment-slider">
+          <div class="grid">
+            <div class="col">
+
+              <SegmentSlider @init="resetSectionHeight" />
+
+            </div>
+          </div>
+        </section>
+
+        <section
+          v-if="featuredSlider"
+          id="section-featured-slider"
+          ref="featuredSection"
+          key="featured-slider">
+          <div class="grid">
+
+            <div class="col-12">
+              <h3 class="heading">
+                {{ generalPageData.section_featured_slider.heading }}
+              </h3>
+              <div class="description">
+                {{ generalPageData.section_featured_slider.description }}
+              </div>
+            </div>
+
+            <div class="col-12">
+              <FeaturedProjectsSlider
+                parent="Home Page"
+                @init="resetSectionHeight" />
+            </div>
+
+          </div>
+        </section>
+
+        <section
+          v-if="routeQuery.filters !== 'enabled'"
+          id="section-filter"
+          ref="filterHeading"
+          key="filters-heading">
+          <div class="grid">
+            <div class="col">
+
+              <h3 class="heading">
+                {{ filterSectionHeading }}
+              </h3>
+
+              <div class="description">
+                {{ pageData.section_filter.description }}
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </transition-group>
+    </div>
 
     <ProjectExplorer :defaultview="gridOrListView" />
 
@@ -15,7 +79,6 @@
 import { mapGetters, mapActions } from 'vuex'
 import CloneDeep from 'lodash/cloneDeep'
 
-import HeroHeader from '@/components/HeroHeader'
 import SegmentSlider from '@/components/SegmentSlider'
 import FeaturedProjectsSlider from '@/components/FeaturedProjectsSlider'
 import ProjectExplorer from '@/components/ProjectExplorer'
@@ -110,7 +173,6 @@ export default {
   name: 'IndexPage',
 
   components: {
-    HeroHeader,
     SegmentSlider,
     FeaturedProjectsSlider,
     ProjectExplorer
@@ -204,12 +266,6 @@ export default {
     pageData () {
       return this.siteContent.index.page_content
     },
-    hero () {
-      return this.pageData.hero
-    },
-    categories () {
-      return this.siteContent.taxonomy.categories
-    },
     gridOrListView () {
       if (this.settings.visibility.defaultView === 'list') {
         return true
@@ -245,7 +301,7 @@ export default {
   },
 
   mounted () {
-    // parseURLParams(this)
+    parseURLParams(this)
     this.resize = () => { this.$nextTick(() => { initResize(this) }) }
     window.addEventListener('resize', this.resize)
   },

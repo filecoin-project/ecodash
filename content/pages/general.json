@@ -65,6 +65,17 @@
         "href": "https://example.com"
       }
     },
+    "breadcrumbs": [
+      {
+        "type": "a",
+        "href": "https://filecoin.io",
+        "label": "Home"
+      },
+      {
+        "type": "div",
+        "label": "Filecoin Ecosystem"
+      }
+    ],
     "footer": {
       "left_header": "Reach out",
       "left_links": [
