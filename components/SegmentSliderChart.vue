@@ -6,7 +6,7 @@
       :style="`height: ${tiers.third * 2}px;`">
 
       <div class="chart-title">
-        <h3>{{ mobileChartTitle }}</h3>
+        <h3></h3>
       </div>
 
       <div
@@ -315,12 +315,6 @@ export default {
       siteContent: 'global/siteContent',
       segmentCollection: 'core/segmentCollection'
     }),
-    segmentSliderContent () {
-      return this.siteContent.index.page_content.segment_slider
-    },
-    mobileChartTitle () {
-      return this.segmentSliderContent.mobile_chart_title
-    },
     totalProjects () {
       let total = 0
       for (let i = 0; i < this.chartItems.length; i++) {

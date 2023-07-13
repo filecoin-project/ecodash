@@ -49,19 +49,20 @@
               <div class="category-title">
                 {{ activeCategory.label }}
               </div>
-              <Button
-                tag="a"
-                text="Add your project"
-                to="https://example.com"
-                class="category-title-cta">
-                <template #icon-after>
-                  →
-                </template>
-              </Button>
             </div>
             <div class="col-7" data-push-right="off-1">
               <div class="category-info">
-                {{ activeCategory.description }}
+                <span>{{ activeCategory.description }}</span>
+                <Button
+                  tag="a"
+                  type="green"
+                  text="Add your project"
+                  to="https://example.com"
+                  class="category-title-cta">
+                  <template #icon-after>
+                    →
+                  </template>
+                </Button>
               </div>
             </div>
           </div>
@@ -143,7 +144,8 @@ export default {
 
 .active-category {
   position: relative;
-  padding: toRem(48) 0;
+  padding-top: toRem(48);
+  padding-bottom: toRem(38);
   margin-top: 3rem;
   &:before {
     content: '';
@@ -175,18 +177,20 @@ export default {
   padding-left: 0.5rem;
 }
 
-.category-title-cta {
-  ::v-deep .button-content {
-    height: unset;
-  }
-  ::v-deep .text,
-  ::v-deep .item-after {
-    background: linear-gradient(90deg, rgba(96,193,255,1) 0%, rgba(93,227,242,1) 100%);
-    @include gradientText;
+.category-info {
+  padding-left: 3rem;
+  span {
+    display: block;
+    margin-bottom: 0.625rem;
   }
 }
 
-.category-info {
-  padding-left: 3rem;
+.category-title-cta {
+  display: block;
+  width: fit-content;
+  ::v-deep .button-content {
+    padding: 0;
+  }
 }
+
 </style>

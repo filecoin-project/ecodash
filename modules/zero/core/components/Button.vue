@@ -51,7 +51,7 @@ export default {
   },
 
   props: {
-    type: { // A, B, C, D
+    type: {
       type: String,
       required: false,
       default: 'A'
@@ -179,6 +179,7 @@ export default {
   font-weight: 400;
   line-height: line-height(36, 16);
   letter-spacing: 0.48px;
+  white-space: nowrap;
 }
 
 .item-after {
@@ -191,32 +192,6 @@ export default {
   height: 0.7rem;
   margin: auto;
 }
-
-// /////////////////////////////////////////////////////////////// [Type] Common
-.type-navlink,
-.type-B,
-.type-C,
-.type-D {
-  border-radius: 0.125rem;
-  white-space: nowrap;
-  // padding: 0 0.75rem;
-  &:not(:disabled) {
-    // &:hover {
-    //   transform: scale(1.05);
-    // }
-    // &:focus {
-    //   @include focus_BoxShadow_Regular;
-    // }
-    // &:active {
-    //   transform: scale(0.95);
-    // }
-  }
-  &:disabled {
-    background-color: $gray300;
-    cursor: no-drop;
-  }
-}
-
 // //////////////////////////////////////////////////////////////////// [Type] A
 .type-navlink {
   &:disabled {
@@ -354,10 +329,15 @@ export default {
 }
 
 // //////////////////////////////////////////////////////////////////// [Type] A
-.type-D {
-  color: blue;
-  border: 1px solid blue;
-  padding: 0 0.375rem;
-  height: auto;
+.type-green {
+  .text,
+  .item-after {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: leading(36, 16);
+    letter-spacing: 0.48px;
+    background: linear-gradient(135deg, #1DFF5C 0%, #2ACFE3 100%);
+    @include gradientText;
+  }
 }
 </style>

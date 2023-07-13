@@ -5,22 +5,13 @@
       :content="hero"
       :categories="categories" />
 
-    <div class="grid">
-      <div class="col-6">
-        <CardListBlock :cards="cardColumnOne" />
-      </div>
-      <div class="col-6">
-        <CardListBlock :cards="cardColumnTwo" />
-      </div>
-    </div>
-
-    <section class="section-segment-slider">
+    <section class="project-list">
       <div class="grid">
-        <div class="col-12">
-          <h3 class="heading">
-            Explore Projects
-          </h3>
-          <SegmentSlider />
+        <div class="col-6">
+          <CardListBlock :cards="cardColumnOne" />
+        </div>
+        <div class="col-6">
+          <CardListBlock :cards="cardColumnTwo" />
         </div>
       </div>
     </section>
@@ -34,7 +25,6 @@ import { mapGetters, mapActions } from 'vuex'
 // import CloneDeep from 'lodash/cloneDeep'
 
 import HeroHeader from '@/components/HeroHeader'
-import SegmentSlider from '@/components/SegmentSlider'
 import CardListBlock from '@/components/CardListBlock'
 
 // =================================================================== Functions
@@ -128,7 +118,6 @@ export default {
 
   components: {
     HeroHeader,
-    SegmentSlider,
     CardListBlock
   },
 
@@ -327,13 +316,8 @@ export default {
   }
 }
 
-.section-segment-slider {
-  .heading {
-    font-size: toRem(22);
-    font-weight: 600;
-    line-height: leading(36, 22);
-    letter-spacing: 0.48px;
-  }
+.project-list {
+  margin-bottom: toRem(100);
 }
 
 // ///////////////////////////////////////////////////////////////// Transitions
