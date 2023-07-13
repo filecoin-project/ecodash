@@ -2,20 +2,19 @@
   <div :class="`page page-${tag} container`">
 
     <HeroHeader
-      :content="hero"
-      :categories="categories" />
+      v-if="subcategory"
+      :content="subcategory"
+      :categories="false"
+      :back-button="backButton"
+      :heading-cta="true" />
 
     <section class="project-list">
       <div class="grid">
-        <div
-          v-for="subcategory in subcategories"
-          :key="subcategory.heading"
-          class="col-6 subcategory">
-          <CardListBlock
-            :heading="subcategory.heading"
-            :cards="subcategory.projects"
-            :list-total="subcategory.count"
-            :cta="{ text: subcategory.heading, slug: subcategory.slug }" />
+        <div class="col-6">
+          <CardListBlock :cards="cardColumnOne" />
+        </div>
+        <div class="col-6">
+          <CardListBlock :cards="cardColumnTwo" />
         </div>
       </div>
     </section>
@@ -44,13 +43,12 @@ export default {
 
   data () {
     return {
-      tag: 'category'
+      tag: 'subcategory'
     }
   },
 
   async fetch ({ store, req }) {
     await store.dispatch('global/getBaseData', { key: 'core' })
-    await store.dispatch('global/getBaseData', { key: 'category' })
     await store.dispatch('projects/getProjects')
   },
 
@@ -61,41 +59,48 @@ export default {
       taxonomyLabels: 'filters/taxonomyLabels',
       projects: 'projects/projects'
     }),
-    pageData () {
-      return this.siteContent[this.tag].page_content
-    },
-    hero () {
-      return this.pageData.hero
-    },
     categories () {
       return this.siteContent.taxonomy.categories
     },
     activeCategory () {
       const route = this.$route
       if (route.params.category) {
-        const active = this.categories.find(cat => cat.slug === route.params.category)
-        return active
+        const categories = this.categories
+        if (categories) {
+          const active = categories.find(cat => cat.slug === route.params.category)
+          if (active) { return active }
+        }
       }
       return false
     },
-    subcategories () {
+    subcategory () {
       if (this.activeCategory) {
-        const subcategories = []
-        const headings = ['Bridges and Oracles', 'Infrastructure & Other', 'Leasing & Staking', 'Exchanges & Swaps']
-        const slugs = ['bridges-and-cracles', 'infrastructure-other', 'leasing-staking', 'exchanges-swaps']
-        // const subcategories = this.activeCategory.subcategories
-        for (let i = 0; i < 4; i++) {
-          const column = this.projects.slice(i * 5, (i + 1) * 5)
-          subcategories.push({
-            heading: headings[i],
-            slug: slugs[i],
-            count: column.length,
-            projects: column
-          })
+        const route = this.$route
+        if (route.params.subcategory) {
+          // const category = this.category
+          // const active = category.subcategories.find(cat => cat.slug === route.params.subcategory)
+          return {
+            heading: 'Bridges and Oracles',
+            subheading: 'Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.'
+          }
         }
-        return subcategories
       }
-      return []
+      return false
+    },
+    backButton () {
+      if (this.activeCategory) {
+        return {
+          text: `Back to ${this.activeCategory.label}`,
+          url: `/category/${this.activeCategory.slug}`
+        }
+      }
+      return false
+    },
+    cardColumnOne () {
+      return this.projects.slice(0, 5)
+    },
+    cardColumnTwo () {
+      return this.projects.slice(5, 8)
     }
   }
 }
@@ -104,7 +109,7 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .project-list {
-  // margin-bottom: toRem(100);
+  margin-bottom: toRem(100);
 }
 
 .subcategory {

@@ -259,6 +259,7 @@ export default {
 
   mounted () {
     // parseURLParams(this)
+    console.log(this.$router)
     this.resize = () => { this.$nextTick(() => { initResize(this) }) }
     window.addEventListener('resize', this.resize)
   },

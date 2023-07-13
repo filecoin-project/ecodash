@@ -8,7 +8,7 @@
       <Button
         v-if="cta"
         tag="nuxt-link"
-        :to="`/${cta.slug}`"
+        :to="cta.path"
         class="heading-button">
         <template #icon-before>
           <ArrowBoxIcon />
@@ -33,7 +33,7 @@
       v-if="cta"
       type="green"
       tag="nuxt-link"
-      :to="`/${cta.slug}`"
+      :to="cta.path"
       :text="cta.text"
       class="card-list-cta">
       <template #icon-after>
