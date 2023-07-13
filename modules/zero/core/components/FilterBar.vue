@@ -74,7 +74,7 @@ export default {
 .filter-bar {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   height: 2rem;
   width: toRem(132);
@@ -135,7 +135,7 @@ export default {
   transition: 250ms ease-out;
   width: toRem(13);
   height: toRem(13);
-  margin-right: 0.375rem;
+  margin-left: 0.375rem;
   ::v-deep svg {
     line,
     circle {

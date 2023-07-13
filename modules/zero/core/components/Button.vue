@@ -188,11 +188,11 @@ export default {
 }
 
 .icon {
+  transition: 250ms ease;
   display: inline-block;
-  height: 0.7rem;
   margin: auto;
 }
-// //////////////////////////////////////////////////////////////////// [Type] A
+// ///////////////////////////////////////////////////////////// [Type] Nav link
 .type-navlink {
   &:disabled {
     box-shadow: none;
@@ -207,7 +207,7 @@ export default {
   }
 }
 
-// //////////////////////////////////////////////////////////////////// [Type] B
+// ////////////////////////////////////////////////////////////////// [Type] CTA
 .type-cta {
   @include tripleLayer;
   padding: 0;
@@ -260,7 +260,7 @@ export default {
   }
 }
 
-// //////////////////////////////////////////////////////////////////// [Type] A
+// ////////////////////////////////////////////////////////////// [Type] Outline
 .type-outline {
   position: relative;
   padding: toRem(7) toRem(15);
@@ -328,16 +328,35 @@ export default {
   }
 }
 
-// //////////////////////////////////////////////////////////////////// [Type] A
-.type-green {
+// //////////////////////////////////////////////////////////// [Type] Gradients
+.type-green,
+.type-blue {
   .text,
-  .item-after {
+  .item-after,
+  .icon {
     font-size: 1rem;
     font-weight: 400;
     line-height: leading(36, 16);
-    letter-spacing: 0.48px;
+    letter-spacing: 0.48px;    
+  }
+}
+
+.type-green {
+  .text,
+  .item-after,
+  .icon {
     background: linear-gradient(135deg, #1DFF5C 0%, #2ACFE3 100%);
     @include gradientText;
   }
 }
+
+.type-blue {
+  .text,
+  .item-after,
+  .icon {
+    background: linear-gradient(146deg, #60C1FF 0%, #5DE3F2 100%);
+    @include gradientText;
+  }
+}
+
 </style>

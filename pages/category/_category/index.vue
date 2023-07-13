@@ -15,7 +15,7 @@
             :heading="subcategory.heading"
             :cards="subcategory.projects"
             :list-total="subcategory.count"
-            :cta="{ text: subcategory.heading, slug: subcategory.slug }" />
+            :cta="{ text: subcategory.heading, path: subcategory.path }" />
         </div>
       </div>
     </section>
@@ -82,13 +82,14 @@ export default {
       if (this.activeCategory) {
         const subcategories = []
         const headings = ['Bridges and Oracles', 'Infrastructure & Other', 'Leasing & Staking', 'Exchanges & Swaps']
-        const slugs = ['bridges-and-cracles', 'infrastructure-other', 'leasing-staking', 'exchanges-swaps']
+        const slugs = ['bridges-and-oracles', 'infrastructure-other', 'leasing-staking', 'exchanges-swaps']
         // const subcategories = this.activeCategory.subcategories
         for (let i = 0; i < 4; i++) {
           const column = this.projects.slice(i * 5, (i + 1) * 5)
+          const categorySlug = this.activeCategory.slug
           subcategories.push({
             heading: headings[i],
-            slug: slugs[i],
+            path: `/category/${categorySlug}/${slugs[i]}`,
             count: column.length,
             projects: column
           })
