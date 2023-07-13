@@ -1,20 +1,75 @@
 <template>
   <div :class="`page page-${tag} container`">
 
-    <HeroHeader
-      :content="hero"
-      :categories="categories" />
+    <div
+      ref="collapsibleSection"
+      :style="{ height: `${sectionHeight}px` }"
+      class="collapsible-section">
+      <transition-group name="fade" tag="section">
 
-    <section class="project-list">
-      <div class="grid">
-        <div class="col-6">
-          <CardListBlock :cards="cardColumnOne" />
-        </div>
-        <div class="col-6">
-          <CardListBlock :cards="cardColumnTwo" />
-        </div>
-      </div>
-    </section>
+        <section
+          v-if="segmentSlider"
+          id="section-segment-slider"
+          ref="segmentSlider"
+          key="segment-slider">
+          <div class="grid">
+            <div class="col">
+
+              <SegmentSlider @init="resetSectionHeight" />
+
+            </div>
+          </div>
+        </section>
+
+        <section
+          v-if="featuredSlider"
+          id="section-featured-slider"
+          ref="featuredSection"
+          key="featured-slider">
+          <div class="grid">
+
+            <div class="col-12">
+              <h3 class="heading">
+                {{ generalPageData.section_featured_slider.heading }}
+              </h3>
+              <div class="description">
+                {{ generalPageData.section_featured_slider.description }}
+              </div>
+            </div>
+
+            <div class="col-12">
+              <FeaturedProjectsSlider
+                parent="Home Page"
+                @init="resetSectionHeight" />
+            </div>
+
+          </div>
+        </section>
+
+        <section
+          v-if="routeQuery.filters !== 'enabled'"
+          id="section-filter"
+          ref="filterHeading"
+          key="filters-heading">
+          <div class="grid">
+            <div class="col">
+
+              <h3 class="heading">
+                {{ filterSectionHeading }}
+              </h3>
+
+              <div class="description">
+                {{ pageData.section_filter.description }}
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </transition-group>
+    </div>
+
+    <ProjectExplorer :defaultview="gridOrListView" />
 
   </div>
 </template>
@@ -22,88 +77,89 @@
 <script>
 // ===================================================================== Imports
 import { mapGetters, mapActions } from 'vuex'
-// import CloneDeep from 'lodash/cloneDeep'
+import CloneDeep from 'lodash/cloneDeep'
 
-import HeroHeader from '@/components/HeroHeader'
-import CardListBlock from '@/components/CardListBlock'
+import SegmentSlider from '@/components/SegmentSlider'
+import FeaturedProjectsSlider from '@/components/FeaturedProjectsSlider'
+import ProjectExplorer from '@/components/ProjectExplorer'
 
 // =================================================================== Functions
-// const parseURLParams = (instance, next) => {
-//   const cloned = CloneDeep(instance.$route.query)
-//   instance.clearRouteQuery()
+const parseURLParams = (instance, next) => {
+  const cloned = CloneDeep(instance.$route.query)
+  instance.clearRouteQuery()
 
-//   if (cloned.hasOwnProperty('filters')) {
-//     if (cloned.filters === 'enabled') {
-//       if (!window.matchMedia('(max-width: 53.125rem)').matches) {
-//         instance.setFilterPanelOpen(true)
-//       }
-//       instance.setRouteQuery({
-//         key: 'filters',
-//         data: cloned.filters
-//       })
-//       if (!cloned.hasOwnProperty('tags')) {
-//         instance.clearAllTags()
-//       }
-//     } else {
-//       instance.mountSegmentAndFeaturedSliders()
-//     }
-//   } else {
-//     instance.mountSegmentAndFeaturedSliders()
-//   }
+  if (cloned.hasOwnProperty('filters')) {
+    if (cloned.filters === 'enabled') {
+      if (!window.matchMedia('(max-width: 53.125rem)').matches) {
+        instance.setFilterPanelOpen(true)
+      }
+      instance.setRouteQuery({
+        key: 'filters',
+        data: cloned.filters
+      })
+      if (!cloned.hasOwnProperty('tags')) {
+        instance.clearAllTags()
+      }
+    } else {
+      instance.mountSegmentAndFeaturedSliders()
+    }
+  } else {
+    instance.mountSegmentAndFeaturedSliders()
+  }
 
-//   if (cloned.hasOwnProperty('tags')) {
-//     const tags = cloned.tags.split(',')
-//     const slug = tags.filter(tag => instance.taxonomyLabels.hasOwnProperty(tag)).join(',')
-//     instance.setRouteQuery({
-//       key: 'tags',
-//       data: slug
-//     })
-//   }
+  if (cloned.hasOwnProperty('tags')) {
+    const tags = cloned.tags.split(',')
+    const slug = tags.filter(tag => instance.taxonomyLabels.hasOwnProperty(tag)).join(',')
+    instance.setRouteQuery({
+      key: 'tags',
+      data: slug
+    })
+  }
 
-//   if (cloned.hasOwnProperty('results')) {
-//     const results = cloned.results
-//     if (!results.isNaN) {
-//       if (results > 0) {
-//         instance.setRouteQuery({
-//           key: 'results',
-//           data: parseInt(results)
-//         })
-//       }
-//     }
-//   }
+  if (cloned.hasOwnProperty('results')) {
+    const results = cloned.results
+    if (!results.isNaN) {
+      if (results > 0) {
+        instance.setRouteQuery({
+          key: 'results',
+          data: parseInt(results)
+        })
+      }
+    }
+  }
 
-//   if (cloned.hasOwnProperty('sort-by')) {
-//     instance.setRouteQuery({
-//       key: 'sort-by',
-//       data: cloned['sort-by']
-//     })
-//   }
+  if (cloned.hasOwnProperty('sort-by')) {
+    instance.setRouteQuery({
+      key: 'sort-by',
+      data: cloned['sort-by']
+    })
+  }
 
-//   if (cloned.hasOwnProperty('display-type')) {
-//     instance.setRouteQuery({
-//       key: 'display-type',
-//       data: cloned['display-type']
-//     })
-//   }
+  if (cloned.hasOwnProperty('display-type')) {
+    instance.setRouteQuery({
+      key: 'display-type',
+      data: cloned['display-type']
+    })
+  }
 
-//   instance.$nextTick(() => {
-//     setRouteQueryPage(instance, cloned)
-//   })
-// }
+  instance.$nextTick(() => {
+    setRouteQueryPage(instance, cloned)
+  })
+}
 
-// const setRouteQueryPage = (instance, cloned) => {
-//   if (cloned.hasOwnProperty('page')) {
-//     const page = cloned.page
-//     if (!page.isNaN) {
-//       if (page > 0) {
-//         instance.setRouteQuery({
-//           key: 'page',
-//           data: parseInt(page)
-//         })
-//       }
-//     }
-//   }
-// }
+const setRouteQueryPage = (instance, cloned) => {
+  if (cloned.hasOwnProperty('page')) {
+    const page = cloned.page
+    if (!page.isNaN) {
+      if (page > 0) {
+        instance.setRouteQuery({
+          key: 'page',
+          data: parseInt(page)
+        })
+      }
+    }
+  }
+}
 
 const initResize = (instance) => {
   clearTimeout(instance.timeOutFunction)
@@ -117,8 +173,9 @@ export default {
   name: 'IndexPage',
 
   components: {
-    HeroHeader,
-    CardListBlock
+    SegmentSlider,
+    FeaturedProjectsSlider,
+    ProjectExplorer
   },
 
   layout: 'base',
@@ -209,20 +266,6 @@ export default {
     pageData () {
       return this.siteContent.index.page_content
     },
-    hero () {
-      return this.pageData.hero
-    },
-    categories () {
-      return this.siteContent.taxonomy.categories
-    },
-    cardColumnOne () {
-      const halflength = Math.ceil(this.projects.length / 2)
-      return this.projects.slice(0, halflength)
-    },
-    cardColumnTwo () {
-      const halflength = Math.ceil(this.projects.length / 2)
-      return this.projects.slice(halflength, this.projects.length)
-    },
     gridOrListView () {
       if (this.settings.visibility.defaultView === 'list') {
         return true
@@ -258,7 +301,7 @@ export default {
   },
 
   mounted () {
-    // parseURLParams(this)
+    parseURLParams(this)
     this.resize = () => { this.$nextTick(() => { initResize(this) }) }
     window.addEventListener('resize', this.resize)
   },
@@ -316,8 +359,20 @@ export default {
   }
 }
 
-.project-list {
-  margin-bottom: toRem(100);
+.heading {
+  @include fontSize_ExtraMediumLarge;
+  margin-bottom: 0.75rem;
+}
+
+#segment-slider-chart {
+  margin-bottom: 5rem;
+  @include small {
+    margin-top: calc(4.1665vw / 2);
+  }
+}
+
+#featured-projects-slider {
+  margin-top: 1rem;
 }
 
 // ///////////////////////////////////////////////////////////////// Transitions

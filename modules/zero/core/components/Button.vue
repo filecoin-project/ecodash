@@ -16,7 +16,7 @@
         <slot name="icon-before"></slot>
       </div>
 
-      <p v-if="text" :class="{ 'item-after': iconBefore }">
+      <p v-if="text" :class="['text', { 'item-after': iconBefore }]">
         {{ text }}
       </p>
 
@@ -51,7 +51,7 @@ export default {
   },
 
   props: {
-    type: { // A, B, C, D
+    type: {
       type: String,
       required: false,
       default: 'A'
@@ -140,8 +140,12 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .button {
   position: relative;
-  height: 2.25rem;
   cursor: pointer;
+  &:hover {
+    .item-after {
+      transform: translateX(0.5rem);
+    }
+  }
 }
 
 .triple-dot-loader,
@@ -170,8 +174,17 @@ export default {
   }
 }
 
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: line-height(36, 16);
+  letter-spacing: 0.48px;
+  white-space: nowrap;
+}
+
 .item-after {
-  margin-left: 0.75rem;
+  transition: 250ms ease;
+  margin-left: 0.25rem;
 }
 
 .icon {
@@ -179,38 +192,12 @@ export default {
   height: 0.7rem;
   margin: auto;
 }
-
-// /////////////////////////////////////////////////////////////// [Type] Common
-.type-navlink,
-.type-B,
-.type-C,
-.type-D {
-  border-radius: 0.125rem;
-  white-space: nowrap;
-  // padding: 0 0.75rem;
-  &:not(:disabled) {
-    // &:hover {
-    //   transform: scale(1.05);
-    // }
-    // &:focus {
-    //   @include focus_BoxShadow_Regular;
-    // }
-    // &:active {
-    //   transform: scale(0.95);
-    // }
-  }
-  &:disabled {
-    background-color: $gray300;
-    cursor: no-drop;
-  }
-}
-
 // //////////////////////////////////////////////////////////////////// [Type] A
 .type-navlink {
   &:disabled {
     box-shadow: none;
   }
-  .item-after {
+  .text {
     color: $white;
     font-size: 1rem;
     font-style: normal;
@@ -245,13 +232,16 @@ export default {
     padding: toRem(4.5) toRem(12);
     background: linear-gradient(244deg, #39C0CC 0%, #178FFD 100%);
   }
-  .item-after {
+  .text {
     color: $blackSapphire;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: leading(18, 14);
     margin-left: 0.625rem;
     white-space: nowrap;
+  }
+  .item-after {
+    transform: none !important;
   }
   .icon {
     display: flex;
@@ -271,16 +261,83 @@ export default {
 }
 
 // //////////////////////////////////////////////////////////////////// [Type] A
-.type-C {
-  @include borderRadius_Medium;
-  background-color: #ffffff;
+.type-outline {
+  position: relative;
+  padding: toRem(7) toRem(15);
+  margin: 0 0.25rem;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    transition: 250ms ease;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(96,193,255,1) 0%, rgba(93,227,242,1) 100%);
+    border-radius: toRem(20);
+  }
+  &:after {
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: $blackSapphire;
+    border-radius: toRem(19);
+    opacity: 1;
+  }
+  .button-content {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+  }
+  .text {
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: leading(18, 14);
+    letter-spacing: 0.5px;
+    transition: background 500ms ease;
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 33%,
+      rgba(96,193,255,1) 66%,
+      rgba(93,227,242,1) 100%
+    ) 0 0 / 300% 100%;
+    background-position: 100%;
+    @include gradientText;
+  }
+  &:hover {
+    .text {
+      background-position: 0%;
+    }
+  }
+  &.active,
+  &:active {
+    &:after {
+      opacity: 0;
+    }
+    .text {
+      background: none;
+      -webkit-text-fill-color: unset;
+      color: $blackSapphire;
+    }
+  }
 }
 
 // //////////////////////////////////////////////////////////////////// [Type] A
-.type-D {
-  color: blue;
-  border: 1px solid blue;
-  padding: 0 0.375rem;
-  height: auto;
+.type-green {
+  .text,
+  .item-after {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: leading(36, 16);
+    letter-spacing: 0.48px;
+    background: linear-gradient(135deg, #1DFF5C 0%, #2ACFE3 100%);
+    @include gradientText;
+  }
 }
 </style>

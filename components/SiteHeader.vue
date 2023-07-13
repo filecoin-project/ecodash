@@ -3,7 +3,7 @@
 
     <Navigation />
 
-    <Hero />
+    <!-- <Hero /> -->
 
   </header>
 </template>
@@ -11,15 +11,13 @@
 <script>
 // ====================================================================== Import
 import Navigation from '@/components/Navigation'
-import Hero from '@/components/Hero'
 
 // ====================================================================== Export
 export default {
   name: 'SiteHeader',
 
   components: {
-    Navigation,
-    Hero
+    Navigation
   }
 }
 </script>

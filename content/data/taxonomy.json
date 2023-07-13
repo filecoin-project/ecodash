@@ -4,6 +4,7 @@
       "label": "Project Category",
       "sublabel": "Filter by primary area",
       "slug": "project-category",
+      "description": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
       "tags": [
         {
           "label": "Storage Apps & Clients",
@@ -31,6 +32,7 @@
       "label": "Storage Type",
       "sublabel": "Filter by the kind of data stored",
       "slug": "storage-type",
+      "description": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
       "tags": [
         {
           "label": "Archival",
@@ -113,6 +115,7 @@
       "label": "Software Type",
       "sublabel": "Filter by developer or user-facing layer",
       "slug": "software-type",
+      "description": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
       "tags": [
         {
           "label": "API",
@@ -156,6 +159,7 @@
       "label": "Tooling",
       "sublabel": "Filter by implementation or tooling used",
       "slug": "tooling",
+      "description": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
       "tags": [
         {
           "label": "Chainlink External Adapters",
@@ -219,6 +223,7 @@
       "label": "Institutional Support",
       "sublabel": "Filter by support recieved by the entityTerm",
       "slug": "pipeline",
+      "description": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
       "tags": [
         {
           "label": "Grant or Sponsorship",

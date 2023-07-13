@@ -6,7 +6,7 @@
       :style="`height: ${tiers.third * 2}px;`">
 
       <div class="chart-title">
-        <h3>{{ mobileChartTitle }}</h3>
+        <h3></h3>
       </div>
 
       <div
@@ -315,12 +315,6 @@ export default {
       siteContent: 'global/siteContent',
       segmentCollection: 'core/segmentCollection'
     }),
-    segmentSliderContent () {
-      return this.siteContent.index.page_content.segment_slider
-    },
-    mobileChartTitle () {
-      return this.segmentSliderContent.mobile_chart_title
-    },
     totalProjects () {
       let total = 0
       for (let i = 0; i < this.chartItems.length; i++) {
@@ -611,8 +605,7 @@ export default {
     left: 7px;
     width: 100%;
     height: 100%;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'><defs><pattern id='bg' patternUnits='userSpaceOnUse' width='4' height='4'><g><circle cx='1' cy='1' r='1.0' fill='%23fff'/></g></pattern></defs><rect transform='translate(2 2)' width='99%25' height='98%25' fill='url(%23bg)'/></svg>");
-    z-index: 10;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='155' height='87' viewBox='0 0 155 87' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3crect x='154.061' width='86.9697' height='154.061' transform='rotate(90 154.061 0)' fill='url(%23pattern0)'/%3e%3cdefs%3e%3cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='0.257143' height='0.145161'%3e%3cuse xlink:href='%23image0_2309_80206' transform='scale(0.00214286 0.00120968)'/%3e%3c/pattern%3e%3cimage id='image0_2309_80206' width='120' height='120' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAyklEQVR4Ae3dsQqDMBRAUVMo+P9fK3Ro15LFQbB6e87mGC4S8oZkLDu27fX+/l7X51jCaut9LKQJHCdwnMBxAscJHCdw3JjPfUdd/dz4b+v1B8cJHCdw3O7+YRZtFs2FCRwncJzAcQLHCRwnMAAAAAAAAAAAAAAAAAAAAAAAAHA690VP3BfNrQgcJ3CcwHECxwkcJ3CctwsP8nYhPyVwnMBxZtETs2huReA4geMEjhM4TuA4gQEAAAAAAAAAAAAAAAAAAAAAAIDTfQC1HjBL0I+pNwAAAABJRU5ErkJggg=='/%3e%3c/defs%3e%3c/svg%3e ");    z-index: 10;
     opacity: 0;
     transition: inherit;
   }

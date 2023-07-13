@@ -5,7 +5,7 @@
     method="post"
     target="_blank">
 
-    <div class="panel-top">
+    <div class="form-container">
       <span class="email">
         <input
           required="required"
@@ -23,18 +23,6 @@
           name="subscribe" />
       </span>
     </div>
-
-    <!-- <div class="panel-bottom">
-      <input
-        type="checkbox"
-        required=""
-        name="gdpr[28879]"
-        class="focus-visible"
-        value="Y" />
-      <span>
-        {{ checkboxText }}
-      </span>
-    </div> -->
 
     <div aria-hidden="true" style="position: absolute; left: -5000px">
       <input
@@ -80,52 +68,60 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 #mailchimp-form {
-  .panel-top {
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+    @include mini {
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+    }
+
     .email,
     .submit {
       box-shadow: none;
       position: relative;
-
+      height: toRem(27);
+      box-sizing: border-box;
       input {
-        @include fontSize_Small;
-        font-family: $font_Secondary;
-        font-weight: $fontWeight_Regular;
+        display: flex;
+        font-size: toRem(14);
+        line-height: leading(18, 14);
+        letter-spacing: 0.5px;
         background: none;
         box-shadow: none;
-        height: 30px;
+        height: 100%;
         padding: 0 20px;
       }
-
       &:before,
       &:after {
+        box-sizing: inherit;
         content: '';
         position: absolute;
         display: block;
         width: 100%;
         height: 100%;
       }
-
       &:before {
         @include whiteBorderBack;
         background: $cadmiumBlue;
-        top: -7px;
-        left: -6px;
+        top: -4px;
+        left: -4px;
         z-index: -1;
       }
-
       &:after {
         @include whiteBorderBack;
-        top: -13px;
-        left: -11px;
+        top: -8px;
+        left: -8px;
         z-index: -2;
       }
     }
 
     .email {
+      flex-grow: 1;
       @include whiteBorderBack;
       background: $midnight;
       margin-left: 9px;
-
       input {
         color: $white;
         &::placeholder {
@@ -133,18 +129,27 @@ export default {
           opacity: 1;
         }
       }
-
+      &:before {
+        background: $midnight;
+        top: -4.5px;
+        left: -4.5px;
+      }
     }
 
     .submit {
       margin-left: 12px;
+      border-radius: 1px;
       input {
-        @include whiteBorderBack;
+        font-weight: 600;
+        padding: toRem(4.5) toRem(27);
         @include oceanBlueGradient;
         color: $blackSapphire;
         margin-left: 0;
-        box-sizing: content-box;
-        width: calc(100% - 2.5rem);
+        border-radius: 1px;
+      }
+      &:before,
+      &:after {
+        border-radius: inherit;
       }
     }
   }

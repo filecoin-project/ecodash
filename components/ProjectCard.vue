@@ -1,11 +1,5 @@
 <template>
-  <component
-    :is="componentType"
-    :to="navigateToProject"
-    :href="primaryCta"
-    :target="primaryCta ? '_blank' : null"
-    tabindex="0"
-    :class="['project-card', 'focus-visible', format]">
+  <div :class="['project-card', format]">
     <div class="card-inner-wrapper">
 
       <div class="thumbnail">
@@ -16,22 +10,53 @@
         <p class="title">
           {{ title }}
         </p>
-        <p
-          class="description"
-          :data-tooltip="description.length >= 70 ? description : false"
-          data-tooltip-theme="dark">
-          {{ $TruncateString(description, 70) }}
-        </p>
+        <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
+          <span>{{ description }}</span>
+          <span v-if="tagString" class="tags">{{ tagString }}</span>
+        </div>
+
+        <div class="button-row">
+          <Button
+            type="outline"
+            tag="a"
+            text="Go"
+            :to="url"
+            target="_blank"
+            class="external-link">
+            <template #icon-after>
+              ↗
+            </template>
+          </Button>
+          <Button
+            tag="button"
+            text="More"
+            :class="['see-more', { expanded }]"
+            @clicked="toggleExpanded">
+            <template #icon-after>
+              <SelectorToggle />
+            </template>
+          </Button>
+        </div>
+
       </div>
 
     </div>
-  </component>
+  </div>
 </template>
 
 <script>
+// ====================================================================== Import
+import Button from '@/modules/zero/core/components/Button'
+import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+
 // ====================================================================== Export
 export default {
   name: 'ProjectCard',
+
+  components: {
+    Button,
+    SelectorToggle
+  },
 
   props: {
     format: {
@@ -40,10 +65,6 @@ export default {
       required: false
     },
     title: {
-      type: String,
-      required: true
-    },
-    slug: {
       type: String,
       required: true
     },
@@ -62,15 +83,22 @@ export default {
       default: '',
       required: false
     },
-    navigationBehavior: {
-      type: Number,
-      default: 2,
-      required: false
-    },
     enableImageAlt: {
       type: Boolean,
       default: true,
       required: false
+    },
+    tags: {
+      type: [Array, Boolean],
+      default: false,
+      required: false
+    }
+  },
+
+  data () {
+    return {
+      expanded: false,
+      blockDescription: false
     }
   },
 
@@ -100,6 +128,30 @@ export default {
         return null
       }
       return this.title
+    },
+    tagString () {
+      if (Array.isArray(this.tags)) {
+        return `tags: ${this.tags.join(', ')}`
+      }
+      return false
+    }
+  },
+
+  watch: {
+    expanded (val) {
+      if (val) {
+        this.blockDescription = true
+      } else {
+        setTimeout(() => {
+          this.blockDescription = false
+        }, 250)
+      }
+    }
+  },
+
+  methods: {
+    toggleExpanded () {
+      this.expanded = !this.expanded
     }
   }
 }
@@ -109,51 +161,113 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .project-card {
   position: relative;
-  padding: 0 0.5rem 1rem;
+  padding: 0.625rem;
   opacity: 0;
   animation: fadein 0.3s 1;
   animation-fill-mode: forwards;
   cursor: pointer;
-  transition: width 0ms;
-  &:hover {
-    .title {
-      transition: text-decoration-color 250ms ease-in;
-      text-decoration-color: currentColor;
+  border-radius: 2px;
+  border: 2px solid #0D222B;
+  background: $blackSapphire;
+  margin-bottom: 0.625rem;
+}
+
+.list-view {
+  .card-inner-wrapper {
+    @include borderRadius_Medium;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .thumbnail {
+    width: toRem(45);
+    height: toRem(45);
+    margin-right: 0.625rem;
+    background-color: $white;
+  }
+  .content {
+    padding-left: 0.625rem;
+    width: calc(100% - toRem(55));
+  }
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: leading(30, 16);
+    letter-spacing: 0.36px;
+  }
+  .description {
+    font-size: toRem(14);
+    line-height: leading(21, 14);
+    letter-spacing: 0.5px;
+    max-height: toRem(42);
+    transition: max-height 250ms ease;
+    overflow: hidden;
+    &.clip {
+      display: -webkit-box;
+      -webkit-box-flex: 1;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
     }
-    .thumbnail img {
-      transform: scale(1.05);
+    &.expanded {
+      max-height: toRem(200);
     }
-    .description {
-      &[data-tooltip] {
-        &:before,
-        &:after {
-          transition: 250ms ease-in;
-          transform: translate(-50%, 0);
-          opacity: 1;
+  }
+  .button-row {
+    display: flex;
+    padding-top: 1rem;
+    ::v-deep {
+      .button {
+        height: toRem(30);
+        .text,
+        .item-after {
+          font-size: toRem(14);
+          font-weight: 500;
+          line-height: leading(18, 14);
         }
       }
     }
   }
-  &:not(.list-view) {
-    .content {
-      margin-bottom: 2rem;
+  .external-link {
+    display: flex;
+    padding: toRem(5) toRem(7);
+    &:before,
+    &:after {
+      border-radius: 1px;
+    }
+    ::v-deep .text {
+      background-position: 0%;
+    }
+    ::v-deep .item-after {
+      transform: scale(0.9);
+    }
+    &:hover {
+      ::v-deep .text {
+        background-position: 100%;
+      }
+      ::v-deep .item-after {
+        transform: scale(1.0);
+      }
+    }
+    &:active {
+      ::v-deep .item-after {
+        color: $blackSapphire;
+      }
     }
   }
-  &.list-view {
-    .card-inner-wrapper {
-      @include borderRadius_Medium;
+  .see-more {
+    padding: toRem(5) toRem(10);
+    ::v-deep .item-after {
       display: flex;
-      flex-direction: row;
-      background-color: #FFFFFF;
-      height: 100%;
     }
-    .thumbnail {
-      width: 7rem;
-      height: 7rem;
-      margin-bottom: 0;
+    &:hover {
+      ::v-deep .item-after {
+        transform: none;
+      }
     }
-    .content {
-      padding: 1rem 1rem 1rem 0;
+    &.expanded {
+      ::v-deep .item-after {
+        transform: rotate(-180deg);
+      }
     }
   }
 }
@@ -163,60 +277,4 @@ export default {
   100% { opacity: 1; }
 }
 
-.thumbnail {
-  @include borderRadius_Medium;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10rem;
-  background-color: #FFFFFF;
-  margin-bottom: 1rem;
-  img {
-    max-width: 40%;
-    max-height: 50%;
-    width: auto;
-    transition: 500ms ease-in-out;
-  }
-}
-
-.content {
-  flex: 1;
-}
-
-.title {
-  @include fontSize_Medium;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  text-decoration: underline transparent;
-  text-underline-offset: $underlineSpacing;
-  transition: text-decoration-color 250ms ease-out;
-}
-
-.description {
-  @include fontSize_Small;
-  @include leading_Small;
-  position: relative;
-  &:hover {
-    &[data-tooltip] {
-      &:before,
-      &:after {
-        transform: translate(0, 0);
-        opacity: 0;
-      }
-    }
-  }
-  &[data-tooltip] {
-    &:before,
-    &:after {
-      z-index: 100;
-    }
-    &:after {
-      width: 100%;
-      white-space: normal;
-      text-align: center;
-    }
-  }
-}
 </style>

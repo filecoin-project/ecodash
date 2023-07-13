@@ -1,27 +1,53 @@
 <template>
-  <footer v-if="pageData" id="site-footer">
+  <footer id="site-footer">
 
     <section class="panel-top">
-      <div class="grid-centered-noGutter">
+      <div class="grid-noGutter">
+        <div class="col-12">
+          <div class="subfooter-cta">
+            <div class="grid">
+              <div class="col-10" data-push-left="off-1">
+                <div class="heading">
+                  {{ subfooter.heading }}
+                </div>
+                <div class="subheading">
+                  {{ subfooter.subheading }}
+                </div>
+                <div class="cta">
+                  <Button
+                    type="cta"
+                    :tag="subfooter.cta.type"
+                    :to="subfooter.cta.disabled ? '' : subfooter.cta.href"
+                    :disabled="subfooter.cta.disabled"
+                    :text="subfooter.cta.text"
+                    class="nav-cta">
+                    <template #icon-before>
+                      <AddIcon />
+                    </template>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="col-5_md-6_sm-10 ">
-          <div class="content-wrapper">
-            <h3 class="heading">
-              {{ pageData.cta_heading }}
-            </h3>
-            <div ref="cta" class="cta-text" v-html="pageData.cta_text"></div>
+    <section class="panel-bottom">
+      <div class="grid-noGutter">
+
+        <div
+          class="col-4_sm-10"
+          data-push-left="off-1"
+          data-push-right="off-1">
+          <div class="content-wrapper panel-left">
 
             <h4 class="heading">
-              {{ pageData.form_heading }}
+              {{ footer.heading }}
             </h4>
+
             <div ref="subheading" class="subheading">
-              <component
-                :is="getElementTag(element.type)"
-                v-for="(element, index) in pageData.form_subheading"
-                :key="`subheading-element-${index}`"
-                :href="element.href"
-                target="_blank"
-                class="focus-visible">{{ element.content ? element.content : '' }}</component>
+              {{ footer.subheading }}
             </div>
 
             <div ref="mailform" class="mailchimp-form">
@@ -31,40 +57,63 @@
           </div>
         </div>
 
-        <div v-if="navigation" class="col-5_sm-10">
-          <div class="content-wrapper">
+        <div
+          class="col-4_sm-10"
+          data-push-left="off-1"
+          data-push-right="off-1">
+          <div class="content-wrapper panel-right">
             <nav id="footer-navigation">
               <div class="left-column">
                 <div class="links-heading">
-                  {{ navigation.footer.left_header }}
+                  {{ footer.left_heading }}
                 </div>
-                <component
-                  :is="link.type"
-                  v-for="(link, index) in navigation.footer.left_links"
-                  :key="index"
-                  :to="link.disabled ? '' : link.href"
-                  :href="link.disabled ? '' : link.href"
-                  :disabled="link.disabled"
-                  :target="link.target"
-                  class="navigation-link onhover-opacity focus-visible">
-                  {{ link.label }}
-                </component>
+                <template v-for="(link, index) in navigation.header">
+                  <template v-if="link.hasOwnProperty('links')">
+                    <DropdownSelector
+                      :key="index"
+                      label="Explore Network"
+                      :dropdown-options="link.links"
+                      :display-selected="false"
+                      class="footer-link">
+                      <template #dropdown-icon>
+                        <SelectorToggle />
+                      </template>
+                    </DropdownSelector>
+                  </template>
+                  <template v-else>
+                    <Button
+                      :key="`link-left-${index}`"
+                      type="navlink"
+                      :tag="link.type"
+                      :to="link.disabled ? '' : link.href"
+                      :disabled="link.disabled"
+                      :text="link.label"
+                      target="_blank"
+                      class="footer-link focus-visible" />
+                  </template>
+                </template>
               </div>
               <div class="right-column">
                 <div class="links-heading">
-                  {{ navigation.footer.right_header }}
+                  {{ footer.right_heading }}
                 </div>
-                <component
-                  :is="link.type"
-                  v-for="(link, index) in navigation.footer.right_links"
-                  :key="index"
+                <Button
+                  v-for="(link, index) in footer.right_links"
+                  :key="`link-right-${index}`"
+                  :tag="link.type"
                   :to="link.disabled ? '' : link.href"
                   :href="link.disabled ? '' : link.href"
                   :disabled="link.disabled"
                   :target="link.target"
-                  class="navigation-link onhover-opacity focus-visible">
-                  {{ link.label }}
-                </component>
+                  :text="link.label"
+                  class="footer-link focus-visible">
+                  <template #icon-after>
+                    ↗
+                  </template>
+                </Button>
+                
+                <SocialIcons />
+
               </div>
             </nav>
           </div>
@@ -72,27 +121,6 @@
 
       </div>
     </section>
-
-    <!-- <section class="panel-bottom">
-      <div class="grid-centered-noGutter">
-
-        <div class="col-10_sm-12">
-          <div ref="copyright" class="copyright content-wrapper">
-            <template v-if="pageData.copyright.length">
-              <Shipyard_CopyrightLogo />
-              <component
-                :is="getElementTag(element.type)"
-                v-for="(element, index) in pageData.copyright"
-                :key="`copyright-element-${index}`"
-                :href="element.href"
-                target="_blank"
-                class="focus-visible">{{ element.content ? element.content : '' }}</component>
-            </template>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
 
   </footer>
 </template>
@@ -102,39 +130,37 @@
 import { mapGetters } from 'vuex'
 
 import MailchimpForm from '@/components/MailchimpForm'
+import Button from '@/modules/zero/core/components/Button'
+import DropdownSelector from '@/components/DropdownSelector'
+import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+import SocialIcons from '@/components/SocialIcons'
+import AddIcon from '@/components/icons/AddIcon'
 
 // ====================================================================== Export
 export default {
   name: 'SiteFooter',
 
   components: {
-    MailchimpForm
+    MailchimpForm,
+    Button,
+    DropdownSelector,
+    SelectorToggle,
+    SocialIcons,
+    AddIcon
   },
 
   computed: {
     ...mapGetters({
-      siteContent: 'global/siteContent',
-      navigation: 'global/navigation'
+      siteContent: 'global/siteContent'
     }),
-    pageData () {
-      const siteContent = this.siteContent
-      if (siteContent.hasOwnProperty('general')) {
-        return siteContent.general.footer_content
-      }
-      return false
-    }
-  },
-
-  methods: {
-    getElementTag (string) {
-      switch (string) {
-        case 'text':
-          return 'span'
-        case 'link':
-          return 'a'
-        default:
-          return 'span'
-      }
+    navigation () {
+      return this.siteContent.general.navigation
+    },
+    subfooter () {
+      return this.siteContent.general.subfooter
+    },
+    footer () {
+      return this.siteContent.general.footer
     }
   }
 }
@@ -155,144 +181,133 @@ export default {
   padding: 0;
 }
 
-::v-deep .subheading,
-::v-deep .copyright {
-  a {
-    text-decoration: underline transparent;
-    text-underline-offset: $underlineSpacing;
-    transition: text-decoration-color 250ms ease-out;
-    &:hover {
-      transition: text-decoration-color 250ms ease-in;
-      text-decoration-color: currentColor;
-    }
+// ///////////////////////////////////////////////////////////////// [Panel] Top
+.subfooter-cta {
+  position: relative;
+  padding: toRem(59) 0;
+  margin-top: 3rem;
+  margin-bottom: toRem(52);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-image-slice: 1 !important;
+    border-width: 3px;
+    border-image-source: linear-gradient(25deg, #213C4F, #406380);
+    box-shadow: 0px 0px 15px 3px #213140;
+    opacity: 0.6;
+  }
+  .heading,
+  .subheading {
+    text-align: center;
+  }
+  .heading {
+    font-size: toRem(22);
+    font-weight: 600;
+    line-height: leading(36, 22);
+    letter-spacing: 0.48px;
+    margin-bottom: toRem(28);
+  }
+  .subheading {
+    font-size: toRem(18);
+    font-weight: 400;
+    line-height: leading(30, 18);
+    letter-spacing: 0.36px;
+    margin-bottom: toRem(45);
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
   }
 }
 
-::v-deep .footer-link {
- color: white;
- border-bottom: 1px solid white;
- &:hover {
-   color: $dodgerBlue;
-   border-bottom: 1px solid $dodgerBlue;
- }
-}
-
-// ///////////////////////////////////////////////////////////////// [Panel] Top
-.panel-top {
+// ////////////////////////////////////////////////////////////// [Panel] Bottom
+.panel-bottom {
   @include small {
     margin-bottom: 1rem;
   }
 }
 
-.heading {
-  font-size: 1.75rem;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.01rem;
-}
-
-.subheading {
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.navigation-link {
-  &:not(:last-child) {
-    margin-right: 1.6875rem;
+// //////////////////////////////////////////////////////////////// [Panel] Left
+.content-wrapper {
+  &.panel-left {
+    .heading {
+      font-size: toRem(18);
+      font-weight: 600;
+      line-height: leading(36, 18);
+      letter-spacing: 0.36px;
+      margin-bottom: 0.25rem;
+    }
+    .subheading {
+      font-size: toRem(18);
+      font-weight: 400;
+      line-height: leading(30, 18);
+      letter-spacing: 0.36px;
+      margin-bottom: toRem(37);
+    }
   }
 }
 
+// /////////////////////////////////////////////////////////////// [Panel] Right
 #footer-navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 2rem;
-  @include small {
-    margin-bottom: 0;
-  }
-  @include mini {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-  }
+  // @include mini {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   margin-top: 1rem;
+  // }
   .left-column,
   .right-column {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-end;
   }
 }
 
-// ////////////////////////////////////////////////////////////// [Panel] Bottom
-
-::v-deep #mailchimp-form {
-  margin-top: 2.5rem;
-  @include small {
-    margin-top: 1rem;
-  }
-  .panel-top {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.5rem;
-    @include mini {
-      flex-direction: column;
-      margin-bottom: 0.5rem;
-    }
-    .centered {
-      justify-content: center;
-    }
-  }
-  .panel-bottom {
-    span {
-      padding-left: 0.25rem;
-    }
-  }
-  input {
-    &[type="email"],
-    &[type="submit"] {
-      @include borderRadius_Medium;
-    }
-    &[type="email"] {
-      flex: 1;
-      padding: 0.5rem;
-      line-height: 1.5;
-    }
-    &[type="submit"] {
-      padding: 0 0.75rem;
-      margin-left: 1rem;
-      font-weight: 600;
-      transition: 250ms ease-out;
-      @include mini {
-        line-height: 1.5;
-        padding: 0.5rem;
-        margin-left: 0;
-        margin-top: 0.5rem;
-      }
-      &:hover {
-        transition: 250ms ease-in;
-      }
-    }
-  }
+.links-heading {
+  font-size: toRem(18);
+  font-weight: 600;
+  line-height: leading(21, 18);
+  letter-spacing: 0.36px;
+  margin-bottom: toRem(15);
 }
 
-.cta-text {
-  margin: 0.5rem 0 2.5rem;
-}
-
-.social-icons-container {
-  @include small {
-    margin: 2rem 0;
+.footer-link {
+  opacity: 0.9;
+  transition: opacity 200ms ease;
+  &:hover {
+    opacity: 1.0;
   }
-}
-
-::v-deep .copyright {
-  @include fontSize_Small;
-  svg {
-    display: inline-block;
-    vertical-align: middle;
-    width: 1rem;
-    margin-right: 0.25rem;
+  ::v-deep .button-content {
+    padding: 0;
+    margin: 1px 0;
+    .text {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: leading(35, 16);
+      letter-spacing: 0.36px;
+    }
+  }
+  &.dropdown-selector {
+    margin: 1px 0;
+    ::v-deep .button-inner {
+      justify-content: flex-end;
+      padding: 0;
+    }
+    ::v-deep label {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: leading(35, 16);
+      letter-spacing: 0.36px;
+    }
   }
 }
 

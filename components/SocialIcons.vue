@@ -20,20 +20,20 @@
 // ===================================================================== Imports
 import { mapGetters } from 'vuex'
 
-import GithubIcon from '@/components/icons/GithubIcon'
-import YoutubeIcon from '@/components/icons/YoutubeIcon'
+import SlackIcon from '@/components/icons/SlackIcon'
 import TwitterIcon from '@/components/icons/TwitterIcon'
-import LinkedInIcon from '@/components/icons/LinkedInIcon'
+import MatrixIcon from '@/components/icons/MatrixIcon'
+import WeChatIcon from '@/components/icons/WeChatIcon'
 
 // ====================================================================== Export
 export default {
   name: 'SocialIcons',
 
   components: {
-    GithubIcon,
-    YoutubeIcon,
+    SlackIcon,
     TwitterIcon,
-    LinkedInIcon
+    MatrixIcon,
+    WeChatIcon
   },
 
   computed: {
@@ -41,7 +41,7 @@ export default {
       siteContent: 'global/siteContent'
     }),
     links () {
-      const networks = ['Github', 'Youtube', 'Twitter', 'LinkedIn']
+      const networks = ['Slack', 'Twitter', 'Matrix', 'WeChat']
       const siteContent = this.siteContent
       const links = []
       if (siteContent.general && siteContent.general.social_icons) {
@@ -66,13 +66,14 @@ export default {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-top: toRem(19);
   @include small {
     justify-content: flex-start;
   }
   a {
     width: 2rem;
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: toRem(9);
     }
   }
   svg {

@@ -30,13 +30,6 @@
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
 #segment-slider-card {
-  // ------------------------------------------------------------------- General
-  .slider-card {
-    background-color: white;
-  }
-  .description {
-    color: $font_Color_Secondary;
-  }
   // -------------------------------------------------------------------- Arrows
   .nav-arrow {
     .prev-arrow,
@@ -56,9 +49,6 @@
 
 #segment-slider-chart {
   // -------------------------------------------------------------------- Mobile
-  @include medium {
-    background-color: white;
-  }
   .segments-tiny {
     background-color: $site_backgroundColor;
     @include medium {
@@ -77,17 +67,17 @@
   }
 }
 
-// //////////////////////////////////////////////////////////////// Project Card
-// -----------------------------------------------------------------------------
-.project-card {
-  .title {
-    color: $fill_Dark_Primary;
-    font-family: $font_Secondary;
-  }
-  .description {
-    color: $font_Color_Secondary;
-  }
-}
+// // //////////////////////////////////////////////////////////////// Project Card
+// // -----------------------------------------------------------------------------
+// .project-card {
+//   .title {
+//     color: $fill_Dark_Primary;
+//     font-family: $font_Secondary;
+//   }
+//   .description {
+//     color: $font_Color_Secondary;
+//   }
+// }
 
 // ///////////////////////////////////////////////////////////////////// Toolbar
 // -----------------------------------------------------------------------------
@@ -323,11 +313,11 @@
   .featured-box {
     border-color: $border_Color_Medium;
   }
-  .project-card {
-    .thumbnail {
-      border-color: $border_Color_Light;
-    }
-  }
+  // .project-card {
+  //   .thumbnail {
+  //     border-color: $border_Color_Light;
+  //   }
+  // }
 }
 
 // ---------------------------------------------------- Featured Projects Slider
@@ -361,34 +351,6 @@
   }
   .block-404 {
     background-color: $fill_Dark_Primary;
-  }
-}
-
-// ///////////////////////////////////////////////////////////////// Site Footer
-// -----------------------------------------------------------------------------
-#site-footer {
-  color: white;
-  background-color: $fill_Dark_Primary;
-  .subheading,
-  .copyright {
-    a {
-      color: $highlight_Light;
-    }
-  }
-  .navigation-link {
-    font-family: $font_Secondary;
-  }
-}
-
-#mailchimp-form {
-  input {
-    &[type="submit"] {
-      background-color: $highlight_Medium;
-    }
-    &[type="email"] {
-      background-color: white;
-      color: black;
-    }
   }
 }
 
@@ -476,150 +438,6 @@
     h1 {
       margin-top: 3.5rem;
       margin-bottom: 1.25rem;
-    }
-  }
-}
-
-// ////////////////////////////////////////////////////////////////////// Footer
-// -----------------------------------------------------------------------------
-#site-footer {
-  background-color: transparent;
-  .panel-top {
-    .heading,
-    .links-heading {
-      font-family: $font_Primary;
-      font-size: $fontSize_Large;
-      font-weight: $fontWeight_SemiBold;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Large;
-    }
-    .links-heading {
-      margin-bottom: 0.25rem;
-    }
-    .subheading,
-    .navigation-link {
-      font-family: $font_Primary;
-      font-size: $fontSize_Medium;
-      font-weight: $fontWeight_Regular;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Regular;
-    }
-    .navigation-link {
-      padding: 0.125rem 0;
-      color: #B5B5B6;
-      &:hover {
-        opacity: 1 !important;
-        color: $dodgerBlue;
-      }
-    }
-  }
-  .content-wrapper {
-    margin: 0 2rem;
-    @include medium {
-      margin: 0;
-      margin-left: 2rem;
-    }
-    @include small {
-      margin: 0;
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-// ///////////////////////////////////////////////////////////////// Footer Form
-// -----------------------------------------------------------------------------
-.mailchimp-form {
-  #mailchimp-form {
-    .panel-top {
-      .email,
-      .submit {
-        box-shadow: none;
-        position: relative;
-
-        input {
-          @include fontSize_Small;
-          font-family: $font_Secondary;
-          font-weight: $fontWeight_Regular;
-          background: none;
-          box-shadow: none;
-          height: 30px;
-          padding: 0 20px;
-        }
-
-        &:before,
-        &:after {
-          content: '';
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-
-        &:before {
-          @include whiteBorderBack;
-          background: $cadmiumBlue;
-          top: -7px;
-          left: -6px;
-          z-index: -1;
-        }
-
-        &:after {
-          @include whiteBorderBack;
-          top: -13px;
-          left: -11px;
-          z-index: -2;
-        }
-
-      }
-
-      .email {
-        @include whiteBorderBack;
-        background: $midnight;
-
-        input {
-          color: $white;
-          transition: background-color 0.3s ease;
-          &::placeholder {
-            color: $white;
-            opacity: 1;
-          }
-          &:hover, &:focus {
-            background-color: $azure;
-          }
-        }
-      }
-
-      .submit {
-        height: 30px;
-        transition: 250ms ease-out;
-        &:before,
-        &:after {
-          transition: 250ms ease-out;
-          width: calc(100% - 2px);
-        }
-        &:hover {
-          &:before {
-            top: -13px;
-            left: -11px;
-          }
-          input {
-            top: -13px;
-            left: -11px;
-          }
-        }
-
-        input {
-          @include oceanBlueGradient;
-          @include whiteBorderBack;
-          height: 32px;
-          position: relative;
-          color: $blackSapphire;
-          margin-left: 0;
-          top: 0px;
-          left: 0px;
-          transition: 250ms ease-out;
-        }
-      }
     }
   }
 }
@@ -1041,51 +859,51 @@
 
 // /////////////////////////////////////////////////////////////// Project Cards
 // -----------------------------------------------------------------------------
-.project-card {
-  &:not(.list-view) {
-    .content {
-      margin-bottom: 1rem !important;
-    }
-  }
-  .card-inner-wrapper {
-    @include oceanBorderGradient;
-    border-radius: 0 !important;
-    height: 100%;
-  }
-  .thumbnail {
-    border-radius: 0 !important;
-    img {
-      max-width: unset !important;
-      height: 75px;
-    }
-  }
-  .title {
-    @include leading_Regular;
-    font-family: $font_Primary;
-    font-weight: $fontWeight_Medium;
-    letter-spacing: $letter_SpacingRegular;
-    font-size: $fontSize_Regular !important;
-    margin-bottom: 0.5rem !important;
-  }
-  .description {
-    @include leading_Small;
-    font-family: $font_Secondary;
-    font-weight: $fontWeight_Regular;
-  }
-  &.list-view {
-    .title,
-    .description {
-      color: $blackSapphire;
-    }
-  }
-  &.block-view {
-    .title,
-    .description {
-      padding: 0 1rem;
-      color: $white;
-    }
-  }
-}
+// .project-card {
+//   &:not(.list-view) {
+//     .content {
+//       margin-bottom: 1rem !important;
+//     }
+//   }
+//   .card-inner-wrapper {
+//     @include oceanBorderGradient;
+//     border-radius: 0 !important;
+//     height: 100%;
+//   }
+//   .thumbnail {
+//     border-radius: 0 !important;
+//     img {
+//       max-width: unset !important;
+//       height: 75px;
+//     }
+//   }
+//   .title {
+//     @include leading_Regular;
+//     font-family: $font_Primary;
+//     font-weight: $fontWeight_Medium;
+//     letter-spacing: $letter_SpacingRegular;
+//     font-size: $fontSize_Regular !important;
+//     margin-bottom: 0.5rem !important;
+//   }
+//   .description {
+//     @include leading_Small;
+//     font-family: $font_Secondary;
+//     font-weight: $fontWeight_Regular;
+//   }
+//   &.list-view {
+//     .title,
+//     .description {
+//       color: $blackSapphire;
+//     }
+//   }
+//   &.block-view {
+//     .title,
+//     .description {
+//       padding: 0 1rem;
+//       color: $white;
+//     }
+//   }
+// }
 
 // ////////////////////////////////////////////////////////////////// Pagination
 // -----------------------------------------------------------------------------
