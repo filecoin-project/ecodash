@@ -26,7 +26,7 @@
         class="col-8"
         data-push-left="off-2"
         data-push-right="off-2">
-        <div class="subheading">
+        <div v-if="subheading" class="subheading">
           {{ subheading }}
         </div>
         <Button
