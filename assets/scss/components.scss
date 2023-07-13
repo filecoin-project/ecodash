@@ -30,13 +30,6 @@
 // ////////////////////////////////////////////////////////////// Segment Slider
 // -----------------------------------------------------------------------------
 #segment-slider-card {
-  // ------------------------------------------------------------------- General
-  .slider-card {
-    background-color: white;
-  }
-  .description {
-    color: $font_Color_Secondary;
-  }
   // -------------------------------------------------------------------- Arrows
   .nav-arrow {
     .prev-arrow,
@@ -56,9 +49,6 @@
 
 #segment-slider-chart {
   // -------------------------------------------------------------------- Mobile
-  @include medium {
-    background-color: white;
-  }
   .segments-tiny {
     background-color: $site_backgroundColor;
     @include medium {

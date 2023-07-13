@@ -14,97 +14,106 @@
       </div>
     </div>
 
+    <section class="section-segment-slider">
+      <div class="grid">
+        <div class="col-12">
+          <h3 class="heading">
+            Explore Projects
+          </h3>
+          <SegmentSlider />
+        </div>
+      </div>
+    </section>
+
   </div>
 </template>
 
 <script>
 // ===================================================================== Imports
 import { mapGetters, mapActions } from 'vuex'
-import CloneDeep from 'lodash/cloneDeep'
+// import CloneDeep from 'lodash/cloneDeep'
 
 import HeroHeader from '@/components/HeroHeader'
 import SegmentSlider from '@/components/SegmentSlider'
-import FeaturedProjectsSlider from '@/components/FeaturedProjectsSlider'
-import ProjectExplorer from '@/components/ProjectExplorer'
 import CardListBlock from '@/components/CardListBlock'
 
 // =================================================================== Functions
-const parseURLParams = (instance, next) => {
-  const cloned = CloneDeep(instance.$route.query)
-  instance.clearRouteQuery()
+// const parseURLParams = (instance, next) => {
+//   const cloned = CloneDeep(instance.$route.query)
+//   instance.clearRouteQuery()
 
-  if (cloned.hasOwnProperty('filters')) {
-    if (cloned.filters === 'enabled') {
-      if (!window.matchMedia('(max-width: 53.125rem)').matches) {
-        instance.setFilterPanelOpen(true)
-      }
-      instance.setRouteQuery({
-        key: 'filters',
-        data: cloned.filters
-      })
-      if (!cloned.hasOwnProperty('tags')) {
-        instance.clearAllTags()
-      }
-    } else {
-      instance.mountSegmentAndFeaturedSliders()
-    }
-  } else {
-    instance.mountSegmentAndFeaturedSliders()
-  }
+//   if (cloned.hasOwnProperty('filters')) {
+//     if (cloned.filters === 'enabled') {
+//       if (!window.matchMedia('(max-width: 53.125rem)').matches) {
+//         instance.setFilterPanelOpen(true)
+//       }
+//       instance.setRouteQuery({
+//         key: 'filters',
+//         data: cloned.filters
+//       })
+//       if (!cloned.hasOwnProperty('tags')) {
+//         instance.clearAllTags()
+//       }
+//     } else {
+//       instance.mountSegmentAndFeaturedSliders()
+//     }
+//   } else {
+//     instance.mountSegmentAndFeaturedSliders()
+//   }
 
-  if (cloned.hasOwnProperty('tags')) {
-    const tags = cloned.tags.split(',')
-    const slug = tags.filter(tag => instance.taxonomyLabels.hasOwnProperty(tag)).join(',')
-    instance.setRouteQuery({
-      key: 'tags',
-      data: slug
-    })
-  }
+//   if (cloned.hasOwnProperty('tags')) {
+//     const tags = cloned.tags.split(',')
+//     const slug = tags.filter(tag => instance.taxonomyLabels.hasOwnProperty(tag)).join(',')
+//     instance.setRouteQuery({
+//       key: 'tags',
+//       data: slug
+//     })
+//   }
 
-  if (cloned.hasOwnProperty('results')) {
-    const results = cloned.results
-    if (!results.isNaN) {
-      if (results > 0) {
-        instance.setRouteQuery({
-          key: 'results',
-          data: parseInt(results)
-        })
-      }
-    }
-  }
+//   if (cloned.hasOwnProperty('results')) {
+//     const results = cloned.results
+//     if (!results.isNaN) {
+//       if (results > 0) {
+//         instance.setRouteQuery({
+//           key: 'results',
+//           data: parseInt(results)
+//         })
+//       }
+//     }
+//   }
 
-  if (cloned.hasOwnProperty('sort-by')) {
-    instance.setRouteQuery({
-      key: 'sort-by',
-      data: cloned['sort-by']
-    })
-  }
+//   if (cloned.hasOwnProperty('sort-by')) {
+//     instance.setRouteQuery({
+//       key: 'sort-by',
+//       data: cloned['sort-by']
+//     })
+//   }
 
-  if (cloned.hasOwnProperty('display-type')) {
-    instance.setRouteQuery({
-      key: 'display-type',
-      data: cloned['display-type']
-    })
-  }
+//   if (cloned.hasOwnProperty('display-type')) {
+//     instance.setRouteQuery({
+//       key: 'display-type',
+//       data: cloned['display-type']
+//     })
+//   }
 
-  instance.$nextTick(() => {
-    setRouteQueryPage(instance, cloned)
-  })
-}
+//   instance.$nextTick(() => {
+//     setRouteQueryPage(instance, cloned)
+//   })
+// }
 
-const setRouteQueryPage = (instance, cloned) => {
-  if (cloned.hasOwnProperty('page')) {
-    const page = cloned.page
-    if (!page.isNaN) {
-      if (page > 0) {
-        instance.setRouteQuery({
-          key: 'page',
-          data: parseInt(page)
-        })
-      }
-    }
-  }
-}
+// const setRouteQueryPage = (instance, cloned) => {
+//   if (cloned.hasOwnProperty('page')) {
+//     const page = cloned.page
+//     if (!page.isNaN) {
+//       if (page > 0) {
+//         instance.setRouteQuery({
+//           key: 'page',
+//           data: parseInt(page)
+//         })
+//       }
+//     }
+//   }
+// }
 
 const initResize = (instance) => {
   clearTimeout(instance.timeOutFunction)
@@ -120,8 +129,6 @@ export default {
   components: {
     HeroHeader,
     SegmentSlider,
-    FeaturedProjectsSlider,
-    ProjectExplorer,
     CardListBlock
   },
 
@@ -320,20 +327,13 @@ export default {
   }
 }
 
-.heading {
-  @include fontSize_ExtraMediumLarge;
-  margin-bottom: 0.75rem;
-}
-
-#segment-slider-chart {
-  margin-bottom: 5rem;
-  @include small {
-    margin-top: calc(4.1665vw / 2);
+.section-segment-slider {
+  .heading {
+    font-size: toRem(22);
+    font-weight: 600;
+    line-height: leading(36, 22);
+    letter-spacing: 0.48px;
   }
-}
-
-#featured-projects-slider {
-  margin-top: 1rem;
 }
 
 // ///////////////////////////////////////////////////////////////// Transitions

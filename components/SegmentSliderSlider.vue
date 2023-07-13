@@ -13,14 +13,12 @@
             width="10"
             height="15" />
         </button>
-
         <h3
           :key="`${heading}-medium`"
           ref="navTitle"
           class="title-between-buttons transition-content">
           {{ heading }}
         </h3>
-
         <button
           class="nav-arrow focus-visible"
           @click="incrementSelection(selectedSeg + 1)">
@@ -30,36 +28,36 @@
         </button>
       </div>
 
-      <div :key="heading" class="transition-content">
-        <div ref="content">
-          <div class="title-large-screen">
-            <h3>
-              {{ heading }}
-            </h3>
-          </div>
+      <div
+        :key="heading"
+        class="transition-content">
 
+        <div ref="content">
+          <h3 class="heading">
+            {{ heading }}
+          </h3>
           <div class="description">
             {{ description }}
           </div>
         </div>
 
         <div v-if="logos" class="logo-wrapper">
-
           <img
             v-for="item in logos"
             :key="item.path"
             :src="$relativity(`/images/projects/${item.path}`)"
             :alt="enableImageAlt ? item.alt : null" />
-
         </div>
+
       </div>
 
       <div class="view-all-wrapper">
-        <button
-          class="view-all button noselect focus-visible"
-          @click="jump2Filters">
-          {{ filterToggleButtonText }}
-        </button>
+        <Button
+          type="cta"
+          tag="button"
+          text="View Category"
+          class="view-all-button"
+          @clicked="jump2Filters" />
       </div>
 
     </div>
@@ -72,6 +70,7 @@ import { mapGetters, mapActions } from 'vuex'
 
 import NextArrowIcon from '@/components/icons/NextArrowIcon'
 import PrevArrowIcon from '@/components/icons/PrevArrowIcon'
+import Button from '@/modules/zero/core/components/Button'
 
 // ====================================================================== Export
 export default {
@@ -79,7 +78,8 @@ export default {
 
   components: {
     NextArrowIcon,
-    PrevArrowIcon
+    PrevArrowIcon,
+    Button
   },
 
   props: {
@@ -103,24 +103,23 @@ export default {
     heightPadding: {
       type: Number,
       required: false,
-      default: 200
+      default: 109 // card top and bottom padding + margin & height of logos
     }
   },
+
   data () {
     return {
       resize: false,
       contentHeight: false
     }
   },
+
   computed: {
     ...mapGetters({
       siteContent: 'global/siteContent',
       routeQuery: 'filters/routeQuery',
       segmentCollection: 'core/segmentCollection'
     }),
-    filterToggleButtonText () {
-      return this.siteContent.index.page_content.segment_slider.filter_toggle_button_text
-    },
     currentCategory () {
       if (this.selectedSeg in this.segmentCollection) {
         return this.segmentCollection[this.selectedSeg]
@@ -146,16 +145,20 @@ export default {
       return 'height: unset;'
     }
   },
+
   mounted () {
     this.resize = () => { this.resetContentHeight() }
     window.addEventListener('resize', this.resize)
   },
+
   beforeDestroy () {
     if (this.resize) { window.removeEventListener('resize', this.resize) }
   },
+
   updated () {
     this.resetContentHeight()
   },
+
   methods: {
     ...mapActions({
       setRouteQuery: 'filters/setRouteQuery',
@@ -207,45 +210,81 @@ export default {
   position: relative;
 }
 
-.slider-container {
-  min-width: 16rem;
-  flex: 1 1 10rem;
-  display: flex;
-  align-items: center;
-}
 .slider-card {
   position: relative;
-  padding: 0.5rem;
   width: 100%;
-  min-width: 14rem;
+  height: 100%;
+  padding: toRem(26) toRem(18);
   align-items: center;
   transition: height ease 200ms;
   @include borderRadius_Medium;
   @include oceanBorderGradient;
+  border-width: 2px;
+  background-color: $blackSapphire;
+  color: $white;
   @include small {
     border: none;
   }
-  h3 {
-    font-family: $font_Primary;
-    font-size: $fontSize_Small;
-    font-weight: $fontWeight_SemiBold;
-    letter-spacing: $letter_SpacingRegular;
-    line-height: $leading_Small;
-    color: $blackSapphire;
-    @include leading_Regular;
-    font-weight: 500;
-    @include small {
-      @include fontSize_Small;
+}
+
+.transition-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: leading(15, 16);
+  letter-spacing: 0.26px;
+  margin-bottom: toRem(30);
+}
+
+.description {
+  font-size: toRem(14);
+  font-weight: 400;
+  line-height: leading(21, 14);
+  letter-spacing: 0.25px;
+  margin-bottom: 2rem;
+}
+
+.view-all-wrapper {
+  position: absolute;
+  top: calc(100% - 0.5rem);
+  left: calc(50% + 0.5rem);
+  transform: translateX(-50%);
+}
+
+.view-all-button {
+  z-index: 1;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  img {
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
+  > img {
+    margin: 0 0.75rem;
+    width: auto;
+    width: toRem(37);
+    height: toRem(37);
+  }
 }
-.transition-content {
-  animation: fadein 500ms ease;
-}
-@keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
+// //////////////////////////////////////////////////////////// from here to animations not done
 .title-large-screen {
   margin-bottom: 1rem;
   @include leading_Regular;
@@ -259,34 +298,16 @@ export default {
     display: inline;
   }
 }
-.description {
-  padding: 0 0.25rem;
-  margin-bottom: 2rem;
-  font-family: $font_Secondary;
-  font-size: $fontSize_Small;
-  font-weight: $fontWeight_Regular;
-  letter-spacing: 0;
-  line-height: $leading_Small;
-  color: $darkGrey;
-  @include small {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @include tiny {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 .slide-nav {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 0.75rem;
   @include small {
+    display: flex;
     justify-content: space-between;
     max-width: 50%;
     margin-left: auto;
@@ -314,104 +335,20 @@ export default {
     outline: none;
   }
 }
-.logo-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 0;
-  img {
-    &:first-child {
-      margin-left: 0;
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-.logo-wrapper {
-  > img {
-    margin: 0 0.75rem;
-    width: auto;
-    max-width: 25%;
-    max-height: 2.5rem;
-  }
-}
-.view-all-wrapper {
-  position: absolute;
-  left: 8px;
-  right: 0;
-  width: 10rem;
-  bottom: -1.75rem;
-  z-index: 1;
-  @include tripleLayer;
-  border: 0px;
-  @include large {
-    left: calc(50% - 1.75rem);
-    transform: translateX(-50%);
-  }
-  @include medium {
-    bottom: -3rem;
-  }
-  &:before {
-    margin: 0 auto;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    top: 5px;
-    left: 27px;
-    background-color: $jaguar;
-  }
-  &:after {
-    margin: 0 auto;
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    top: 10px;
-    left: 32px;
-    transition: 250ms ease-out;
-    @include oceanBlueGradient;
-  }
-  .view-all {
-    margin: 0 auto;
-    padding: 0.25rem 0;
-    width: 10rem;
-    height: 30px;
-    top: 0px;
-    left: 36px;
-    font-weight: $fontWeight_Medium !important;
-    text-align: center;
-    transform: translateY(50%);
-    transition: 250ms ease-out;
-    @include cardText;
-    background-color: $jaguar !important;
-    border: 2px solid white;
-    // @include medium {
-    //   transform: translateY(-75%);
-    // }
-    &:hover {
-      transition: 250ms ease-in;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  &:hover {
-    &:after {
-      top: 6px;
-      left: 28px;
-    }
-    button {
-      top: -9px;
-      left: 28px;
-    }
-  }
-}
+
 .noselect {
   user-select: none;
 }
 // ////////////////////////////////////////////////////////////////// Animations
+.transition-content {
+  animation: fadein 500ms ease;
+}
+
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all .25s ease;

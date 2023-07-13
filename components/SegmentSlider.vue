@@ -7,23 +7,27 @@
 
     <div class="main-container">
 
-      <SegmentSliderSlider
-        v-if="chartItems"
-        :selected-seg="selected"
-        :parent-category="primaryCategory.slug"
-        :container-height="containerHeight"
-        :enable-image-alt="enableImageAlt"
-        @update-slider="setSliderContent" />
-
-      <SegmentSliderChart
-        v-if="chartItems"
-        :chart-items="chartItems"
-        :selected-seg="selected"
-        :container-height="containerHeight"
-        @update-slider="setSliderContent"
-        @keyup.left="setSliderContent(selected - 1)"
-        @chart-mounted="chartMounted" />
-
+      <div class="grid-noGutter-middle">
+        <div class="col-3">
+          <SegmentSliderSlider
+            v-if="chartItems"
+            :selected-seg="selected"
+            :parent-category="primaryCategory.slug"
+            :container-height="containerHeight"
+            :enable-image-alt="enableImageAlt"
+            @update-slider="setSliderContent" />
+        </div>
+        <div class="col-9">
+          <SegmentSliderChart
+            v-if="chartItems"
+            :chart-items="chartItems"
+            :selected-seg="selected"
+            :container-height="containerHeight"
+            @update-slider="setSliderContent"
+            @keyup.left="setSliderContent(selected - 1)"
+            @chart-mounted="chartMounted" />
+        </div>
+      </div>
     </div>
 
   </div>
@@ -184,7 +188,6 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 #segment-slider-main {
-  margin-bottom: 6rem;
   font-weight: 500;
   font-size: $fontSize_Small;
   line-height: 1.4;
