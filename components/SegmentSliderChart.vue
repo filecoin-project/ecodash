@@ -455,6 +455,9 @@ export default {
     width: calc(100% - 1rem);
     background-color: $white;
     left: 0%;
+    @include small {
+      height: 2px;
+    }
   }
 
   @include medium {

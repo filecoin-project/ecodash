@@ -97,6 +97,19 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
+.card-list-block {
+  &.left {
+    @include small {
+      margin-left: -0.5rem;
+    }
+  }
+  &.right {
+    @include small {
+      margin-right: -0.5rem;
+    }
+  }
+}
+
 .heading {
   display: flex;
   font-size: toRem(22);

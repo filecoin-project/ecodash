@@ -3,9 +3,9 @@
     <div class="grid">
 
       <div
-        class="col-6"
-        data-push-left="off-3"
-        data-push-right="off-3">
+        class="col-6_sm-12"
+        data-push-left="off-3_sm-0"
+        data-push-right="off-3_sm-0">
         <Button
           v-if="backButton"
           type="blue"
@@ -23,9 +23,9 @@
       </div>
 
       <div
-        class="col-8"
-        data-push-left="off-2"
-        data-push-right="off-2">
+        class="col-8_sm-12"
+        data-push-left="off-2_sm-0"
+        data-push-right="off-2_sm-0">
         <div v-if="subheading" class="subheading">
           {{ subheading }}
         </div>
@@ -153,6 +153,10 @@ export default {
 .hero-header {
   padding-top: toRem(85);
   padding-bottom: toRem(78);
+  @include small {
+    padding-top: toRem(80);
+    padding-bottom: toRem(37);
+  }
 }
 
 .back-button,
@@ -191,6 +195,10 @@ export default {
   font-weight: 600;
   line-height: leading(55, 44);
   letter-spacing: 0.8px;
+  @include small {
+    font-size: 1.5rem;
+    line-height: leading(36, 24);
+  }
 }
 
 .subheading,
@@ -199,6 +207,10 @@ export default {
   font-weight: 400;
   line-height: leading(30, 18);
   letter-spacing: 0.36px;
+  @include small {
+    font-size: toRem(14);
+    line-height: leading(21, 14);
+  }
 }
 
 .active-category {
@@ -226,6 +238,20 @@ export default {
   display: flex;
   justify-content: center;
   padding-top: toRem(43);
+  @include small {
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.category-button {
+  width: fit-content;
+  @include small {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .category-title {

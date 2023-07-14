@@ -294,9 +294,6 @@ export default {
 }
 .title-between-buttons {
   display: none;
-  @include medium {
-    display: inline;
-  }
 }
 
 .slide-nav {

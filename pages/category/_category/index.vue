@@ -8,14 +8,15 @@
     <section class="project-list">
       <div class="grid">
         <div
-          v-for="subcategory in subcategories"
+          v-for="(subcategory, i) in subcategories"
           :key="subcategory.heading"
           class="col-6 subcategory">
           <CardListBlock
             :heading="subcategory.heading"
             :cards="subcategory.projects"
             :list-total="subcategory.count"
-            :cta="{ text: subcategory.heading, path: subcategory.path }" />
+            :cta="{ text: subcategory.heading, path: subcategory.path }"
+            :class="i % 2 === 0 ? 'left' : 'right'" />
         </div>
       </div>
     </section>

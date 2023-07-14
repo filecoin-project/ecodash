@@ -8,22 +8,13 @@
 
       <div :class="['modal-background', { 'show-background': navOpen, 'transition-out': modalClosing }]"></div>
 
-      <div class="col-3_lg-2">
+      <div class="col-3_lg-2_sm-4">
         <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
           <SiteLogo id="site-logo" />
         </a>
       </div>
-      
-      <div class="col-0_sm-2" data-push-left="off-0_sm-8">
-        <div
-          :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
-          tabindex="0"
-          @click="toggleNav"
-          @keyup.enter="toggleNav">
-        </div>
-      </div>
 
-      <div class="col-5_lg-6">
+      <div class="col-5_lg-6_sm-1">
         <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
           <nav class="links-container">
             <template v-for="(link, index) in navigation.header">
@@ -55,7 +46,7 @@
         </div>
       </div>
 
-      <div class="col-4_sm-hidden">
+      <div class="col-4_sm-7">
         <div class="nav-toolbar">
           <FilterBar
             id="nav-filter-bar"
@@ -77,6 +68,12 @@
               <AddIcon />
             </template>
           </Button>
+          <div
+            :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
+            tabindex="0"
+            @click="toggleNav"
+            @keyup.enter="toggleNav">
+          </div>
         </div>
       </div>
 
@@ -265,6 +262,9 @@ export default {
   z-index: 9999;
   transform: translateY(-$navigationHeight);
   transition: transform 250ms ease-in-out;
+  @include small {
+    padding-top: toRem(20);
+  }
   &.force-visible {
     transform: translateY(0);
   }
@@ -301,6 +301,10 @@ export default {
   opacity: 1.0;
   z-index: 100;
   transition: all 0.3s ease;
+  @include small {
+    height: 2rem;
+    width: unset;
+  }
   &:hover {
     transform: scale(1.05);
   }
@@ -400,12 +404,18 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  @include small {
+    align-items: center;
+  }
 }
 
 .nav-cta {
   height: toRem(27);
   margin-left: 2rem;
   transform: translateY(2px);
+  @include small {
+    display: none;
+  }
 }
 
 // ////////////////////////////////////////////////////// Modal + Hamburger icon
@@ -440,8 +450,9 @@ export default {
   display: none;
   position: relative;
   z-index: 1000;
+  width: 1.5rem;
   height: 14px;
-  width: 2rem;
+  margin-left: toRem(11);
   @include small {
     display: block;
   }

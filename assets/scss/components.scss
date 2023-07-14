@@ -67,18 +67,6 @@
   }
 }
 
-// // //////////////////////////////////////////////////////////////// Project Card
-// // -----------------------------------------------------------------------------
-// .project-card {
-//   .title {
-//     color: $fill_Dark_Primary;
-//     font-family: $font_Secondary;
-//   }
-//   .description {
-//     color: $font_Color_Secondary;
-//   }
-// }
-
 // ///////////////////////////////////////////////////////////////////// Toolbar
 // -----------------------------------------------------------------------------
 // ------------------------------------------------ [Toggle Button] Filter Panel
@@ -386,91 +374,6 @@
 // -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
-}
-
-#header-hero {
-  margin-bottom: 1.25rem;
-  .breadcrumbs {
-    margin-top: 0;
-    .breadcrumb-link {
-      font-weight: $fontWeight_SemiBold;
-    }
-  }
-  .index-subheading {
-    font-family: $font_Primary;
-    font-size: $fontSize_Medium;
-    font-weight: $fontWeight_Regular;
-    letter-spacing: $letter_SpacingRegular;
-    line-height: $leading_Medium;
-    width: 75%;
-    @include medium {
-      width: 100%;
-    }
-  }
-  &.index-view,
-  &.filters-view,
-  &.filters-applied,
-  &.hero-header {
-    background-color: unset !important;
-    h1 {
-      font-family: $font_Primary;
-      font-size: $fontSize_ExtraExtraLarge;
-      font-weight: $fontWeight_SemiBold;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Small;
-    }
-    .display-total {
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      letter-spacing: inherit;
-      line-height: inherit;
-    }
-  }
-  &.index-view {
-    h1 {
-      margin-top: 4.25rem;
-      margin-bottom: 1.5rem;
-    }
-  }
-  &.filters-view,
-  &.filters-applied {
-    h1 {
-      margin-top: 3.5rem;
-      margin-bottom: 1.25rem;
-    }
-  }
-}
-
-// ////////////////////////////////////////////////////////////// Segment Slider
-// -----------------------------------------------------------------------------
-
-#segment-slider-main {
-  .main-container {
-    flex-wrap: nowrap;
-  }
-  @include xlarge {
-    background-color: transparent;
-    .main-container {
-      flex-wrap: wrap-reverse;
-    }
-    .segments-container {
-      background-color: inherit;
-    }
-  }
-  @include small{
-    background-color: $white;
-    .main-container {
-      @include oceanBorderGradient;
-    }
-  }
-}
-
-#segment-slider-chart {
-  background-color: transparent;
-  @include small{
-    background-color: $white;
-  }
 }
 
 // ///////////////////////////////////////////////////////////// Featured Slider
