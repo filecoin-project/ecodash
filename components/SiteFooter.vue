@@ -37,9 +37,9 @@
       <div class="grid-noGutter">
 
         <div
-          class="col-4_sm-10"
-          data-push-left="off-1"
-          data-push-right="off-1">
+          class="col-4_sm-12"
+          data-push-left="off-1_sm-0"
+          data-push-right="off-1_sm-0">
           <div class="content-wrapper panel-left">
 
             <h4 class="heading">
@@ -58,9 +58,9 @@
         </div>
 
         <div
-          class="col-4_sm-10"
-          data-push-left="off-1"
-          data-push-right="off-1">
+          class="col-4_sm-12"
+          data-push-left="off-1_sm-0"
+          data-push-right="off-1_sm-0">
           <div class="content-wrapper panel-right">
             <nav id="footer-navigation">
               <div class="left-column">
@@ -83,13 +83,16 @@
                   <template v-else>
                     <Button
                       :key="`link-left-${index}`"
-                      type="navlink"
                       :tag="link.type"
                       :to="link.disabled ? '' : link.href"
                       :disabled="link.disabled"
                       :text="link.label"
                       target="_blank"
-                      class="footer-link focus-visible" />
+                      class="footer-link focus-visible">
+                      <template #icon-after>
+                        ↗
+                      </template>
+                    </Button>
                   </template>
                 </template>
               </div>
@@ -111,12 +114,13 @@
                     ↗
                   </template>
                 </Button>
-                
-                <SocialIcons />
-
               </div>
             </nav>
           </div>
+        </div>
+
+        <div class="col-10_sm-12" data-push-left="off-1_sm-0">
+          <SocialIcons />
         </div>
 
       </div>
@@ -175,12 +179,6 @@ export default {
   }
 }
 
-[class~="grid"],
-[class*="grid-"],
-[class*="grid_"] {
-  padding: 0;
-}
-
 // ///////////////////////////////////////////////////////////////// [Panel] Top
 .subfooter-cta {
   position: relative;
@@ -211,6 +209,12 @@ export default {
     line-height: leading(36, 22);
     letter-spacing: 0.48px;
     margin-bottom: toRem(28);
+    @include small {
+      font-size: toRem(18);
+      line-height: leading(36, 18);
+      letter-spacing: 0.36px;
+      margin-bottom: toRem(13);
+    }
   }
   .subheading {
     font-size: toRem(18);
@@ -218,6 +222,11 @@ export default {
     line-height: leading(30, 18);
     letter-spacing: 0.36px;
     margin-bottom: toRem(45);
+    @include small {
+      font-size: toRem(14);
+      line-height: leading(21, 14);
+      margin-bottom: toRem(9);
+    }
   }
   .cta {
     display: flex;
@@ -257,18 +266,15 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  // @include mini {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  //   margin-top: 1rem;
-  // }
   .left-column,
   .right-column {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include small {
+      align-items: flex-start;
+      width: 50%;
+    }
   }
 }
 
@@ -301,6 +307,9 @@ export default {
     ::v-deep .button-inner {
       justify-content: flex-end;
       padding: 0;
+      @include small {
+        justify-content: flex-start;
+      }
     }
     ::v-deep label {
       font-size: 1rem;
