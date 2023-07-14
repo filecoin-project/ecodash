@@ -2,7 +2,14 @@
   <div :class="['filter-bar', { focused }]">
 
     <div class="icon-container">
-      <slot name="icon" />
+      <Button
+        type="button"
+        class="button-icon"
+        @clicked="$emit('on-submit')">
+        <template #icon-before>
+          <slot name="icon" />
+        </template>
+      </Button>
     </div>
 
     <input
@@ -12,7 +19,8 @@
       class="input"
       @input="handleInput"
       @focus="focused = true"
-      @blur="focused = false">
+      @blur="focused = false"
+      @keydown.enter="$emit('on-submit')">
 
   </div>
 </template>
@@ -21,9 +29,15 @@
 // ===================================================================== Imports
 import { mapActions } from 'vuex'
 
+import Button from '@/modules/zero/core/components/Button'
+
 // ====================================================================== Export
 export default {
   name: 'FilterBar',
+
+  components: {
+    Button
+  },
 
   props: {
     filterValue: {
@@ -74,7 +88,7 @@ export default {
 .filter-bar {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   height: 2rem;
   width: toRem(132);
@@ -135,11 +149,24 @@ export default {
   transition: 250ms ease-out;
   width: toRem(13);
   height: toRem(13);
-  margin-right: 0.375rem;
+  margin-left: 0.375rem;
   ::v-deep svg {
     line,
     circle {
       stroke: $white;
+    }
+  }
+}
+
+.button-icon {
+  ::v-deep .icon {
+    display: block;
+    margin: 0;
+    width: toRem(13);
+    height: toRem(13);
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 }

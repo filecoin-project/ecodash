@@ -60,7 +60,8 @@
           <FilterBar
             id="nav-filter-bar"
             :filter-value="filterValue"
-            action="store">
+            action="store"
+            @on-submit="navigateToResults">
             <template #icon>
               <SearchIcon />
             </template>
@@ -228,6 +229,25 @@ export default {
     },
     updateScrollPosition () {
       this.scrollPosition = window.scrollY
+    },
+    navigateToResults () {
+      if (this.filterValue) {
+        if (this.$route.path !== '/results') {
+          this.$router.push({
+            path: '/results',
+            query: {
+              search: this.filterValue
+            }
+          })
+        } else {
+          this.$router.replace({
+            path: '/results',
+            query: {
+              search: this.filterValue
+            }
+          })
+        }
+      }
     }
   }
 }

@@ -2,13 +2,14 @@
   <div :class="`page page-${tag} container`">
 
     <HeroHeader
-      v-if="subcategory"
-      :content="subcategory"
+      :content="resultsHeading"
       :categories="false"
       :back-button="backButton"
       :heading-cta="true" />
 
-    <section class="project-list">
+    <section
+      v-if="resultsCount"
+      class="project-list">
       <div class="grid">
         <div class="col-6">
           <CardListBlock :cards="cardColumnOne" />
@@ -24,7 +25,7 @@
 
 <script>
 // ===================================================================== Imports
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 // import CloneDeep from 'lodash/cloneDeep'
 
 import HeroHeader from '@/components/HeroHeader'
@@ -57,51 +58,49 @@ export default {
       siteContent: 'global/siteContent',
       routeQuery: 'filters/routeQuery',
       taxonomyLabels: 'filters/taxonomyLabels',
-      projects: 'projects/projects'
+      projects: 'projects/projects',
+      filterValue: 'core/filterValue'
     }),
     categories () {
       return this.siteContent.taxonomy.categories
     },
-    activeCategory () {
-      const route = this.$route
-      if (route.params.category) {
-        const categories = this.categories
-        if (categories) {
-          const active = categories.find(cat => cat.slug === route.params.category)
-          if (active) { return active }
-        }
-      }
-      return false
-    },
-    subcategory () {
-      if (this.activeCategory) {
-        const route = this.$route
-        if (route.params.subcategory) {
-          // const category = this.category
-          // const active = category.subcategories.find(cat => cat.slug === route.params.subcategory)
-          return {
-            heading: 'Bridges and Oracles',
-            subheading: 'Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.'
-          }
-        }
-      }
-      return false
-    },
     backButton () {
-      if (this.activeCategory) {
-        return {
-          text: `Back to ${this.activeCategory.label}`,
-          url: `/category/${this.activeCategory.slug}`
-        }
+      return {
+        text: 'Back to all categories',
+        url: '/'
       }
-      return false
+    },
+    resultsHeading () {
+      if (this.resultsCount) {
+        return { heading: `${this.resultsCount} Results for "${this.filterValue}"` }
+      }
+      return {
+        heading: `No results for "${this.filterValue}"`,
+        subheading: 'Please try another query'
+      }
     },
     cardColumnOne () {
       return this.projects.slice(0, 5)
     },
     cardColumnTwo () {
       return this.projects.slice(5, 8)
+    },
+    resultsCount () {
+      return this.cardColumnOne.length + this.cardColumnTwo.length
     }
+  },
+
+  mounted () {
+    const query = this.$route.query
+    if (query && query.search) {
+      this.setFilterValue(query.search)
+    }
+  },
+
+  methods: {
+    ...mapActions({
+      setFilterValue: 'core/setFilterValue'
+    })
   }
 }
 </script>

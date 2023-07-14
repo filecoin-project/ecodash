@@ -259,8 +259,8 @@ export default {
 
   mounted () {
     // parseURLParams(this)
-    this.resize = () => { this.$nextTick(() => { initResize(this) }) }
-    window.addEventListener('resize', this.resize)
+    // this.resize = () => { this.$nextTick(() => { initResize(this) }) }
+    // window.addEventListener('resize', this.resize)
   },
 
   beforeDestroy () {

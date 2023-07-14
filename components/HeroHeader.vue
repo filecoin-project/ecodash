@@ -6,6 +6,17 @@
         class="col-6"
         data-push-left="off-3"
         data-push-right="off-3">
+        <Button
+          v-if="backButton"
+          type="blue"
+          tag="nuxt-link"
+          :to="backButton.url"
+          :text="backButton.text"
+          class="back-button">
+          <template #icon-before>
+            →
+          </template>
+        </Button>
         <div class="heading">
           {{ heading }}
         </div>
@@ -15,12 +26,24 @@
         class="col-8"
         data-push-left="off-2"
         data-push-right="off-2">
-        <div class="subheading">
+        <div v-if="subheading" class="subheading">
           {{ subheading }}
         </div>
+        <Button
+          v-if="headingCta"
+          type="blue"
+          tag="nuxt-link"
+          to="https://example.com"
+          text="Add your project"
+          class="heading-cta">
+          <template #icon-after>
+            →
+          </template>
+        </Button>
       </div>
 
       <div
+        v-if="categories"
         class="col-12"
         data-push-left="off-0"
         data-push-right="off-0">
@@ -90,9 +113,19 @@ export default {
       default: () => ({})
     },
     categories: {
-      type: Array,
+      type: [Array, Boolean],
       required: true,
       default: () => []
+    },
+    backButton: {
+      type: [Object, Boolean],
+      required: false,
+      default: false
+    },
+    headingCta: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
 
@@ -105,7 +138,7 @@ export default {
     },
     activeCategory () {
       const route = this.$route
-      if (route.params.category) {
+      if (this.categories && route.params.category) {
         const active = this.categories.find(cat => cat.slug === route.params.category)
         return active
       }
@@ -120,6 +153,32 @@ export default {
 .hero-header {
   padding-top: toRem(85);
   padding-bottom: toRem(78);
+}
+
+.back-button,
+.heading-cta {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+.back-button {
+  margin-bottom: 0.125rem;
+  ::v-deep .icon {
+    transform: translateY(2px) rotate(180deg);
+  }
+  &:hover {
+    ::v-deep .text {
+      transform: none;
+    }
+    ::v-deep .icon {
+      transform: translateY(2px) rotate(180deg) translateX(0.5rem);
+    }
+  }
+}
+
+.heading-cta {
+  margin-top: toRem(14);
 }
 
 .heading,
