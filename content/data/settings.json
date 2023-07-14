@@ -19,7 +19,16 @@
       { "categorySlug": "project-status", "tagMatchType": "or" }
     ],
     "excludeFilterAllTag": true,
-    "includeGranularFilterClearButton": true
+    "includeGranularFilterClearButton": true,
+    "defaultSelectedFilters": [
+      "api",
+      "library-sdk",
+      "hosted-service",
+      "network",
+      "backend-app",
+      "mobile-app",
+      "web-app"
+    ]
   },
   "visibility": {
     "excludeSingulars": false,
