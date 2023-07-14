@@ -78,7 +78,9 @@
       </div>
 
       <div class="col-12">
-        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <Breadcrumbs
+          :breadcrumbs="breadcrumbs"
+          :class="{ hidden: breadcrumbs.length < 2 }" />
       </div>
 
       <div :class="['social-icon-container', { 'visible': navOpen }]">
@@ -147,8 +149,33 @@ export default {
       filterPanelOpen: 'filters/filterPanelOpen',
       filterValue: 'core/filterValue'
     }),
+    categories () {
+      return this.siteContent.taxonomy.categories
+    },
+    breadcrumbsMap () {
+      return this.siteContent.general.navigation.breadcrumbs_map
+    },
     breadcrumbs () {
-      return this.siteContent.general.navigation.breadcrumbs
+      const route = this.$route
+      const params = route.params
+      const breadcrumbs = [this.breadcrumbsMap.index]
+      if (params.category) {
+        const active = this.categories.find(cat => cat.slug === params.category)
+        breadcrumbs.push({ href: `/category/${params.category}`, label: active.label })
+        if (params.subcategory) {
+          breadcrumbs.push({ href: `/category/${params.category}/${params.subcategory}`, label: 'Bridges and Oracles' })
+        }
+      } else if (this.breadcrumbsMap.hasOwnProperty(route.name) && route.name !== 'index') {
+        breadcrumbs.push(this.breadcrumbsMap[route.name])
+      }
+      breadcrumbs.forEach((item, i) => {
+        if (i !== breadcrumbs.length - 1) {
+          item.type = 'nuxt-link'
+        } else {
+          item.type = 'div'
+        }
+      })
+      return breadcrumbs
     },
     headerNavigationClasses () {
       const showBackground = this.showBackground
@@ -282,6 +309,12 @@ export default {
     height: 100%;
     opacity: 0;
     transition: 250ms ease-in-out;
+  }
+}
+
+::v-deep .breadcrumbs {
+  &.hidden {
+    visibility: hidden;
   }
 }
 
