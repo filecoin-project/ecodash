@@ -1,0 +1,18 @@
+{
+  "seo": {
+    "title": "Explore the Ecosystem | Filecoin",
+    "description": "Filecoin interactive ecosystem and dashboard."
+  },
+  "og": {
+    "site_name": "Filecoin Ecosystem",
+    "url": "https://ecosystem.filecoin.io",
+    "type": "website",
+    "image": ""
+  },
+  "page_content": {
+    "hero": {
+      "heading": "The Filecoin Ecosystem",
+      "subheading": "Discover the diverse landscape of applications and projects that are part of the Filecoin ecosystem."
+    }
+  }
+}

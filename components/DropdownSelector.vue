@@ -1,11 +1,9 @@
 <template>
   <button
     v-if="options.length > 0"
-    id="dropdown-selector"
     ref="selector"
     v-click-outside="closeAllSelect"
-    :class="['dropdown-wrapper', 'focus-visible', { closed }]"
-    :style="{ minWidth: `${maxLength * 10}px` }"
+    :class="['dropdown-selector', 'dropdown-wrapper', 'focus-visible', { closed }]"
     @keyup.enter="toggleDropDown()">
 
     <div
@@ -34,17 +32,20 @@
           <template v-for="option in options">
             <div
               :key="`dropdown-option-${option.label}`"
-              class="dropdown-item-wrap">
-              <component
-                :is="option.type"
+              class="dropdown-item-wrapper">
+              <Button
+                tag="a"
                 :to="option.disabled ? '' : option.href"
                 :href="option.disabled ? '' : option.href"
                 :disabled="option.disabled"
                 :target="option.target"
                 :tabindex="closed ? -1 : 0"
+                :text="option.label"
                 :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]">
-                {{ option.label }}
-              </component>
+                <template #icon-after>
+                  ↗
+                </template>
+              </Button>
             </div>
           </template>
         </div>
@@ -62,9 +63,15 @@
 // ===================================================================== Imports
 import { mapGetters, mapActions } from 'vuex'
 
+import Button from '@/modules/zero/core/components/Button'
+
 // ====================================================================== Export
 export default {
   name: 'DropdownSelector',
+
+  components: {
+    Button
+  },
 
   props: {
     label: {
@@ -133,7 +140,7 @@ export default {
       setCollection: 'core/setCollection'
     }),
     setDimensions () {
-      this.dropdownListHeight = this.$refs.dropdownList.clientHeight
+      this.dropdownListHeight = this.$refs.dropdownList.clientHeight + 9
       this.$emit('setwidth', this.$refs.selector.clientWidth + 14)
     },
     toggleDropDown () {
@@ -178,6 +185,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// ///////////////////////////////////////////////////////////////////// General
 ::selection {
   color: none;
   background: none;
@@ -188,65 +196,67 @@ export default {
   background: none;
 }
 
-#dropdown-selector {
-  font-family: $font_Secondary;
-  .button-inner {
-    font-size: $fontSize_Small;
-    transition: all 250ms linear;
-    background-color: $jaguar;
-    transition: background-color 0.3s ease;
-    &:hover {
-      background-color: $turquoise;
-    }
-    @include small {
-      font-size: $fontSize_Regular;
-    }
-    label, span {
-      padding-top: 0.25rem;
-      @include leading_Medium;
-    }
-  }
-  &:not(.closed) {
-    .shadow {
-      transition: opacity 250ms ease-in, height 0ms;
-      opacity: 1;
-    }
+.dropdown-selector {
+  width: toRem(165);
+  &:hover {
+    cursor: pointer;
     .button-inner {
-      @include oceanBlueGradient;
-      color: $blackSapphire;
+      label, span {
+        cursor: pointer;
+        background: -webkit-linear-gradient(#39C0CC, #178FFD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .dropdown-toggle {
+        ::v-deep svg {
+          path {
+            stroke: #178FFD;
+          }
+        }
+      }
     }
   }
 }
 
 .dropdown-wrapper {
-  @include borderRadius_Medium;
   position: relative;
-  white-space: nowrap;
-  font-weight: 400;
-  line-height: 1.7;
   cursor: pointer;
   z-index: 1000;
   transition: 250ms ease-out;
 }
 
+// ///////////////////////////////////////////////////////////// Dropdown Button
 .dropdown-button {
   display: block;
-  .button-inner {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 1.0rem;
-    z-index: 20;
-    label {
-      margin-right: 0.25rem;
-    }
+}
+
+.button-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1.0rem;
+  z-index: 20;
+  transition: all 250ms linear;
+  label, span {
+    margin-right: 0.625rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.32px;
+    background: -webkit-linear-gradient(#FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: inherit;
+    white-space: nowrap;
   }
 }
 
 ::v-deep .dropdown-toggle {
-  transform: translateY(-5%);
-  opacity: 0.75;
-  margin-left: 0.5rem;
+  display: flex;
+  height: toRem(5);
+  width: toRem(9);
   transition: 250ms ease-out;
   &:hover {
     cursor: pointer;
@@ -270,18 +280,44 @@ export default {
   }
 }
 
+// /////////////////////////////////////////////////////////////// Dropdown Menu
 .dropdown-root {
-  @include borderRadius_Medium;
-  // position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
   width: 100%;
   overflow: hidden;
   z-index: 10;
   transition: height 250ms ease-in-out;
-  position: relative;
   padding-top: 0;
   color: $blackSapphire;
+  margin-top: 5px;
+  border-radius: 1px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    width: calc(100% - 5px);
+    height: calc(100% - 6px);
+    background: linear-gradient(244deg, #39C0CC 0%, #178FFD 100%);
+  }
+  &:after {
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 7px);
+    height: calc(100% - 8px);
+    background: $blackSapphire;
+  }
+  @include small {
+    right: unset;
+    left: 0;
+  }
 }
 
 .shadow {
@@ -299,36 +335,40 @@ export default {
 }
 
 .dropdown-list {
-  width: 100%;
+  position: relative;
+  width: calc(100% - 5px);
   text-align: right;
   box-sizing: border-box;
+  padding: toRem(9) 0;
+  border: solid 1px $white;
+  border-radius: 1px;
+  transform: translate(5px, 5px);
+  z-index: 2;
 }
 
-.dropdown-item-wrap {
-  background-color: $white;
-  padding: 0.5rem 1rem;
+.dropdown-item-wrapper {
+  padding: 0 toRem(14);
+  &:hover {
+    background: linear-gradient(244deg, #39C0CC 0%, #178FFD 100%);
+  }
   .dropdown-item {
-    font-size: $fontSize_Small;
     width: 100%;
-    padding-left: 6rem;
     white-space: normal;
-    @include small {
-      font-size: $fontSize_Regular;
-    }
-    &:not(.highlighted) {
-      text-decoration: underline transparent;
-      text-underline-offset: $underlineSpacing;
-      cursor: pointer;
-      transition: text-decoration-color 250ms ease-out;
-      &:hover {
-        transition: text-decoration-color 250ms ease-in;
-        text-decoration-color: currentColor;
-      }
-    }
-    &.highlighted {
-      background-color: unset;
+    color: $white;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: leading(29, 16);
+    letter-spacing: 0.32px;
+    &:hover {
       color: $blackSapphire;
-      @include lightBlueGradient;
+    }
+    ::v-deep .button-content {
+      padding: 0;
+      justify-content: flex-end;
+      .item-after {
+        margin-left: toRem(6);
+      }
     }
   }
 }
