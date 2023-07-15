@@ -68,12 +68,12 @@
         data-push-right="off-0">
         <div class="active-category">
           <div class="grid-noGutter">
-            <div class="col-3" data-push-left="off-1">
+            <div class="col-3_sm-10" data-push-left="off-1" data-push-right="off-0_sm-1">
               <div class="category-title">
                 {{ activeCategory.label }}
               </div>
             </div>
-            <div class="col-7" data-push-right="off-1">
+            <div class="col-7_sm-10" data-push-left="off-0_sm-1" data-push-right="off-1">
               <div class="category-info">
                 <span>{{ activeCategory.description }}</span>
                 <Button
@@ -164,6 +164,13 @@ export default {
   display: block;
   width: fit-content;
   margin: auto;
+  ::v-deep .text,
+  ::v-deep .icon {
+    @include small {
+      font-size: toRem(14);
+      line-height: line-height(21, 14);
+    }
+  }
 }
 
 .back-button {
@@ -183,6 +190,10 @@ export default {
 
 .heading-cta {
   margin-top: toRem(14);
+  @include small {
+    margin-top: 0.125rem;
+    height: toRem(21);
+  }
 }
 
 .heading,
@@ -218,11 +229,15 @@ export default {
   padding-top: toRem(48);
   padding-bottom: toRem(38);
   margin-top: 3rem;
+  @include small {
+    padding-top: 2rem;
+    padding-bottom: toRem(26);
+  }
   &:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -3px;
+    left: -3px;
     width: 100%;
     height: 100%;
     border: 3px solid;
@@ -260,13 +275,27 @@ export default {
   line-height: leading(36, 22);
   letter-spacing: 0.48px;
   padding-left: 0.5rem;
+  @include small {
+    font-size: toRem(18);
+    line-height: leading(24, 18);
+    padding-left: 0;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .category-info {
   padding-left: 3rem;
+  @include small {
+    padding-left: 0;
+  }
   span {
     display: block;
     margin-bottom: 0.625rem;
+    @include small {
+      margin-bottom: 1.25rem;
+      font-size: toRem(14);
+      line-height: leading(21, 14);
+    }
   }
 }
 
@@ -275,6 +304,13 @@ export default {
   width: fit-content;
   ::v-deep .button-content {
     padding: 0;
+    @include small {
+      .text,
+      .item-after {
+        font-size: toRem(14);
+        line-height: leading(21, 14);
+      }
+    }
   }
 }
 

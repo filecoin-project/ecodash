@@ -24,6 +24,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 #site-header {
   padding-top: $navigationHeight;
+  color: white;
   @include small {
     padding-top: toRem(82);
   }

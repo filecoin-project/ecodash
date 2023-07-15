@@ -242,6 +242,9 @@ export default {
     }
     &.expanded {
       max-height: toRem(200);
+      @include small {
+        max-height: toRem(500);
+      }
     }
   }
   .button-row {

@@ -6,7 +6,7 @@
         <div class="col-12">
           <div class="subfooter-cta">
             <div class="grid">
-              <div class="col-10" data-push-left="off-1">
+              <div class="col-10_sm-12" data-push-left="off-1_sm-0">
                 <div class="heading">
                   {{ subfooter.heading }}
                 </div>
@@ -185,6 +185,12 @@ export default {
   padding: toRem(59) 0;
   margin-top: 3rem;
   margin-bottom: toRem(52);
+  @include small {
+    padding: toRem(40) toRem(22);
+    padding-bottom: toRem(34);
+    margin-bottom: toRem(63);
+    margin-top: toRem(21);
+  }
   &:before {
     content: '';
     position: absolute;
@@ -209,12 +215,6 @@ export default {
     line-height: leading(36, 22);
     letter-spacing: 0.48px;
     margin-bottom: toRem(28);
-    @include small {
-      font-size: toRem(18);
-      line-height: leading(36, 18);
-      letter-spacing: 0.36px;
-      margin-bottom: toRem(13);
-    }
   }
   .subheading {
     font-size: toRem(18);
@@ -223,9 +223,7 @@ export default {
     letter-spacing: 0.36px;
     margin-bottom: toRem(45);
     @include small {
-      font-size: toRem(14);
-      line-height: leading(21, 14);
-      margin-bottom: toRem(9);
+      margin-bottom: toRem(36);
     }
   }
   .cta {

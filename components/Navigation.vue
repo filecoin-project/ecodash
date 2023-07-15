@@ -309,6 +309,7 @@ export default {
     height: 100%;
     opacity: 0;
     transition: 250ms ease-in-out;
+    background: $blackSapphire;
   }
 }
 
@@ -442,6 +443,10 @@ export default {
   }
 }
 
+::v-deep #nav-filter-bar {
+  z-index: 1000;
+}
+
 .nav-cta {
   height: toRem(27);
   margin-left: 2rem;
@@ -454,6 +459,7 @@ export default {
 // ////////////////////////////////////////////////////// Modal + Hamburger icon
 .modal-background {
   display: none;
+  background-color: $blackSapphire;
   &:before {
     content: '';
     position: absolute;

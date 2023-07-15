@@ -116,6 +116,14 @@ export default {
   margin-bottom: toRem(100);
 }
 
+::v-deep .hero-header {
+  .heading-cta {
+    @include small {
+      display: none;
+    }
+  }
+}
+
 .subcategory {
   margin-bottom: toRem(30);
 }
