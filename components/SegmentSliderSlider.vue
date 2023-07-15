@@ -224,6 +224,7 @@ export default {
   color: $white;
   @include small {
     border: none;
+    padding-top: 0;
   }
 }
 
@@ -304,11 +305,13 @@ export default {
   margin-top: 1rem;
   margin-bottom: 0.75rem;
   @include small {
+    position: absolute;
+    top: 0;
+    left: 1.125rem;
+    width: calc(100% - 2.25rem);
     display: flex;
     justify-content: space-between;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0;
   }
   @include tiny {
     max-width: unset;
@@ -327,6 +330,9 @@ export default {
   width: 3.75rem;
   @include small {
     width: auto;
+    ::v-deep path {
+      stroke: $white;
+    }
   }
   &:focus {
     outline: none;

@@ -6,46 +6,6 @@
   }
 }
 
-// ////////////////////////////////////////////////////////////// Segment Slider
-// -----------------------------------------------------------------------------
-#segment-slider-card {
-  // -------------------------------------------------------------------- Arrows
-  .nav-arrow {
-    .prev-arrow,
-    .next-arrow {
-      line,
-      path {
-        stroke: $fill_Dark_Primary;
-      }
-    }
-  }
-  // -------------------------------------------------------------------- Arrows
-  .view-all {
-    color: white;
-    background-color: $fill_Dark_Secondary;
-  }
-}
-
-#segment-slider-chart {
-  // -------------------------------------------------------------------- Mobile
-  .segments-tiny {
-    background-color: $site_backgroundColor;
-    @include medium {
-      background-color: white;
-    }
-  }
-  // ------------------------------------------------------------------ Segments
-  .segment-foreground {
-    background-color: $fill_Dark_Primary;
-  }
-  .segment-background {
-    background-color: $highlight_Medium;
-  }
-  .segment-line {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-}
-
 // ///////////////////////////////////////////////////////////////////// Toolbar
 // -----------------------------------------------------------------------------
 // ------------------------------------------------ [Toggle Button] Filter Panel

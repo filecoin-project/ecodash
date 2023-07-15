@@ -397,11 +397,29 @@ export default {
     padding-top: 0;
     margin-bottom: 0rem;
   }
+  .segments-tiny {
+    background-color: $site_backgroundColor;
+    @include medium {
+      background-color: white;
+    }
+  }
+  .segment-foreground {
+    background-color: $fill_Dark_Primary;
+  }
+  .segment-background {
+    background-color: $highlight_Medium;
+  }
+  .segment-line {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .chart-container {
   position: relative;
   flex: 3 1 42.75rem;
+  @include small {
+    background-color: $blackSapphire;
+  }
 }
 
 .segments-container {
@@ -412,29 +430,14 @@ export default {
   @include borderRadius_Medium;
   position: relative;
   padding: 0 2.5rem;
-  @include medium {
-    padding: 0 6rem;
-    padding-bottom: 7rem;
-  }
   @include small {
     padding: 0 3rem;
-    padding-bottom: 0;
-  }
-  @include tiny {
-    min-width: 16rem;
-    padding: 0 2rem;
-    padding-bottom: 0;
+    height: toRem(190) !important;
   }
 }
 
 .chart-title {
   display: none;
-  color: $blackSapphire;
-  padding: 2.5rem 0;
-  @include small {
-    display: block;
-    padding: 2rem 0;
-  }
 }
 
 .segments-row {
@@ -443,11 +446,12 @@ export default {
   align-items: center;
   justify-content: flex-start;
   height: 4rem;
-
+  @include small {
+    position: relative;
+  }
   &.fixed-for-measuring {
     width: 572px;
   }
-
   &:before {
     content: '';
     position: absolute;
@@ -457,12 +461,8 @@ export default {
     left: 0%;
     @include small {
       height: 2px;
-    }
-  }
-
-  @include medium {
-    &:before {
-      width: 100%;
+      width: calc(100% + 2rem);
+      left: -1rem;
     }
   }
 }
