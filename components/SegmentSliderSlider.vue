@@ -87,10 +87,6 @@ export default {
       type: Number,
       default: 0
     },
-    parentCategory: {
-      type: String,
-      required: true
-    },
     containerHeight: {
       type: Number,
       default: 440

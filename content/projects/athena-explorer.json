@@ -1,44 +1,37 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "athena-square.png", "full": "athena-logo.png" },
+  "since": 2021,
+  "icon": "athena-square.png",
   "name": "Athena Explorer",
-  "org": [""],
-  "description": {
-    "short": "Explorer and dashboard for the Filecoin network.",
-    "long": "Athena is an explorer and dashboard for the Filecoin network. In addition to basic chain and network data, additional features include storage provider analysis, output calculation, datacap analysis, and forecasting."
-  },
-  "primaryCta": { "url": "//atpool.com/en-US", "text": "Project Website" },
-  "links": [
+  "org": [],
+  "description": "Athena is an explorer and dashboard for the Filecoin network. In addition to basic chain and network data, additional features include storage provider analysis, output calculation, datacap analysis, and forecasting.",
+  "website": "//atpool.com/en-US",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//atpool.com/en-US", "text": "atpool.com/en-US" }]
+      "github": "//github.com/AthenaExplorer"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/AthenaExplorer",
-          "text": "github.com/AthenaExplorer"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": ["network-explorers-and-reputation"]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": ["data-storage-and-management"]
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["consumer-storage"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
-  ]
+  "tags": ["foo", "bar", "fvm"]
 }

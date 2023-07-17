@@ -22,10 +22,10 @@
         :key="`${index}-${card.name}`"
         format="list-view"
         :title="card.name"
-        :description="card.description.long"
-        :logo="card.logo.icon"
+        :description="card.description"
+        :logo="card.icon"
         :tags="card.tags"
-        :url="`https:${card.primaryCta.url}`"
+        :url="`https:${card.website}`"
         :style="{ animationDelay: `${30 * index}ms` }" />
     </div>
 
