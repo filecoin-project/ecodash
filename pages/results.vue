@@ -79,11 +79,26 @@ export default {
         subheading: 'Please try another query'
       }
     },
+    searchQuery () {
+      return this.filterValue
+    },
+    searchResults () {
+      const query = this.searchQuery.toLowerCase()
+      return this.projects.filter((project) => {
+        const matched = project.name.toLowerCase().includes(query) || project.org.join('').toLowerCase().includes(query)
+        if (!matched) { return false }
+        return project
+      })
+    },
     cardColumnOne () {
-      return this.projects.slice(0, 5)
+      const len = this.searchResults.length
+      if (len) { return this.searchResults.slice(0, Math.ceil(len / 2)) }
+      return []
     },
     cardColumnTwo () {
-      return this.projects.slice(5, 8)
+      const len = this.searchResults.length
+      if (len) { return this.searchResults.slice(Math.ceil(len / 2), len) }
+      return []
     },
     resultsCount () {
       return this.cardColumnOne.length + this.cardColumnTwo.length

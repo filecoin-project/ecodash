@@ -124,39 +124,39 @@ const generateProjectManifestFiles = async (slugs, primaryCategory, taxonomies) 
     const payload = {
       full: [],
       mini: [],
-      activeFilters: [],
-      showcase: { taxonomies: await reformatTaxonomies(taxonomies), projects: [] },
+      // activeFilters: [],
+      // showcase: { taxonomies: await reformatTaxonomies(taxonomies), projects: [] },
       routes: []
     }
     for (let i = 0; i < len; i++) {
       const slug = slugs[i]
       const project = JSON.parse(await Fs.readFileSync(`${paths.projects}/${slug}.json`))
-      const filterItems = project.taxonomies.filter(taxonomy => taxonomy.slug === primaryCategory)
-      const filters = filterItems.length && filterItems[0].tags ? filterItems[0].tags : []
+      // const filterItems = project.taxonomies.filter(taxonomy => taxonomy.slug === primaryCategory)
+      // const filters = filterItems.length && filterItems[0].tags ? filterItems[0].tags : []
       const tags = {}
-      await compileTags(project, taxonomies.categories, tags)
+      // await compileTags(project, taxonomies.categories, tags)
       project.slug = slug
       payload.full.push(project)
       payload.mini.push({
         slug,
         name: project.name,
-        logo: project.logo,
+        logo: project.icon,
         description: project.description,
-        org: project.org,
-        featured: project.featured,
-        sortNumbers: project.sortNumbers,
-        filters
+        org: project.org
+        // featured: project.featured,
+        // sortNumbers: project.sortNumbers,
+        // filters
       })
-      filters.forEach(filter => {
-        if (payload.activeFilters.indexOf(filter) < 0) {
-          payload.activeFilters.push(filter)
-        }
-      })
-      payload.showcase.projects.push({
-        name: project.name,
-        logo: project.logo.icon || project.logo.full,
-        tags
-      })
+      // filters.forEach(filter => {
+      //   if (payload.activeFilters.indexOf(filter) < 0) {
+      //     payload.activeFilters.push(filter)
+      //   }
+      // })
+      // payload.showcase.projects.push({
+      //   name: project.name,
+      //   logo: project.icon,
+      //   tags
+      // })
       payload.routes.push({
         route: `/project/${slug}`,
         payload: project
@@ -219,11 +219,11 @@ const Manifestor = async (instance) => {
     const payload = await generateProjectManifestFiles(slugs, primaryCategory, taxonomies)
     await Fs.writeFileSync(paths.project_routes, JSON.stringify(payload.routes))
     await Fs.writeFileSync(paths.project_list, JSON.stringify(payload.full))
-    await Fs.writeFileSync(paths.showcase_data, JSON.stringify(payload.showcase))
-    if (settings.visibility.embeddableObject) {
-      const embeddableViewScript = await generateEmbeddableViewFile(payload.mini, payload.activeFilters, primaryCategory, slugs, settings)
-      await Fs.writeFileSync(`${paths.staticDir}/embeddable-view.js`, embeddableViewScript)
-    }
+    // await Fs.writeFileSync(paths.showcase_data, JSON.stringify(payload.showcase))
+    // if (settings.visibility.embeddableObject) {
+    //   const embeddableViewScript = await generateEmbeddableViewFile(payload.mini, payload.activeFilters, primaryCategory, slugs, settings)
+    //   await Fs.writeFileSync(`${paths.staticDir}/embeddable-view.js`, embeddableViewScript)
+    // }
     console.log('🏁 Manifest projects complete')
   } catch (e) {
     console.log('========================================== [Manifestor] Error')

@@ -47,6 +47,22 @@ const checkForSmallBreakpoint = (instance) => {
   }
 }
 
+const getSubcategoryProjects = (subcategory, projects) => {
+  const filtered = []
+  const len = projects.length
+  for (let i = 0; i < len; i++) {
+    const project = projects[i]
+    let memberships = []
+    project.taxonomy.forEach((cat) => {
+      memberships = memberships.concat(cat.subcategories)
+    })
+    if (memberships.includes(subcategory)) {
+      filtered.push(project)
+    }
+  }
+  return filtered
+}
+
 // ====================================================================== Export
 export default {
   name: 'CategoryPage',
@@ -98,21 +114,21 @@ export default {
     },
     subcategories () {
       if (this.activeCategory) {
-        const subcategories = []
-        const headings = ['Bridges and Oracles', 'Infrastructure & Other', 'Leasing & Staking', 'Exchanges & Swaps']
-        const slugs = ['bridges-and-oracles', 'infrastructure-other', 'leasing-staking', 'exchanges-swaps']
-        // const subcategories = this.activeCategory.subcategories
-        for (let i = 0; i < 4; i++) {
-          const column = this.projects
+        const array = []
+        const subcategories = this.activeCategory.subcategories
+        const len = subcategories.length
+        for (let i = 0; i < len; i++) {
           const categorySlug = this.activeCategory.slug
-          subcategories.push({
-            heading: headings[i],
-            path: `/category/${categorySlug}/${slugs[i]}`,
+          const subcategory = subcategories[i]
+          const column = getSubcategoryProjects(subcategory.slug, this.projects)
+          array.push({
+            heading: subcategory.label,
+            path: `/category/${categorySlug}/${subcategory.slug}`,
             count: column.length,
             projects: column
           })
         }
-        return subcategories
+        return array
       }
       return []
     }
