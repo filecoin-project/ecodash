@@ -69,6 +69,7 @@ export default {
   margin-top: toRem(19);
   @include small {
     justify-content: flex-start;
+    margin-top: toRem(23);
   }
   a {
     width: 2rem;

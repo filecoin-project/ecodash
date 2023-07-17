@@ -48,6 +48,10 @@ export default {
     font-weight: 600;
     line-height: leading(36, 22);
     letter-spacing: 0.48px;
+    margin-bottom: 2rem;
+    @include small {
+      margin-bottom: 1.25rem;
+    }
   }
 }
 </style>

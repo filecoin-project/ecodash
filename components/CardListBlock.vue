@@ -16,17 +16,20 @@
       </Button>
     </h5>
 
-    <div class="card-list">
-      <ProjectCard
-        v-for="(card, index) in cards"
+    <div :class="['card-list', { 'grid-noBottom': foldColumns }]">
+      <div
+        v-for="(card, index) in cardlist"
         :key="`${index}-${card.name}`"
-        format="list-view"
-        :title="card.name"
-        :description="card.description.long"
-        :logo="card.logo.icon"
-        :tags="card.tags"
-        :url="`https:${card.primaryCta.url}`"
-        :style="{ animationDelay: `${30 * index}ms` }" />
+        :class="[{ 'col-6': foldColumns }, { folded: foldColumns }]">
+        <ProjectCard
+          format="list-view"
+          :title="card.name"
+          :description="card.description.long"
+          :logo="card.logo.icon"
+          :tags="card.tags"
+          :url="`https:${card.primaryCta.url}`"
+          :style="{ animationDelay: `${30 * index}ms` }" />
+      </div>
     </div>
 
     <Button
@@ -78,6 +81,16 @@ export default {
       type: [Object, Boolean],
       reqiured: false,
       default: false
+    },
+    foldColumns: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    limit: {
+      type: [Number, Boolean],
+      required: false,
+      default: false
     }
   },
 
@@ -90,6 +103,9 @@ export default {
         return this.heading
       }
       return false
+    },
+    cardlist () {
+      return this.limit ? this.cards.slice(0, this.limit) : this.cards
     }
   }
 }
@@ -97,6 +113,21 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
+.card-list-block {
+  &.left {
+    @include small {
+      margin-left: -0.5rem;
+      margin-right: -3px;
+    }
+  }
+  &.right {
+    @include small {
+      margin-right: -0.5rem;
+      margin-left: -3px;
+    }
+  }
+}
+
 .heading {
   display: flex;
   font-size: toRem(22);
@@ -106,13 +137,24 @@ export default {
   background: linear-gradient(146deg, #60C1FF 0%, #5DE3F2 100%);
   @include gradientText;
   margin-bottom: 0.625rem;
+  @include small {
+    font-size: toRem(18);
+    line-height: leading(24, 18);
+  }
 }
 
 .heading-button {
   ::v-deep .button-content {
+    @include small {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .icon {
       display: flex;
       transform: translateY(-1px);
+      @include small {
+        transform: none;
+      }
     }
   }
 }
@@ -120,6 +162,29 @@ export default {
 .card-list-cta {
   ::v-deep .button-content {
     padding: 0;
+    .text {
+      @include small {
+        font-size: toRem(14);
+        line-height: leading(21, 14);
+        letter-spacing: 0.48px;
+      }
+    }
   }
 }
+
+.folded {
+  &:nth-child(odd) {
+    ::v-deep .project-card {
+      margin-left: -0.5rem;
+      margin-right: -3px;
+    }
+  }
+  &:nth-child(even) {
+    ::v-deep .project-card {
+      margin-right: -0.5rem;
+      margin-left: -3px;
+    }
+  }
+}
+
 </style>

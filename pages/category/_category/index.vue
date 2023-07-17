@@ -8,14 +8,17 @@
     <section class="project-list">
       <div class="grid">
         <div
-          v-for="subcategory in subcategories"
+          v-for="(subcategory, i) in subcategories"
           :key="subcategory.heading"
-          class="col-6 subcategory">
+          class="col-6_sm-12 subcategory">
           <CardListBlock
             :heading="subcategory.heading"
             :cards="subcategory.projects"
             :list-total="subcategory.count"
-            :cta="{ text: subcategory.heading, path: subcategory.path }" />
+            :cta="{ text: subcategory.heading, path: subcategory.path }"
+            :fold-columns="small"
+            :limit="small ? 6 : 5"
+            :class="i % 2 === 0 ? 'left' : 'right'" />
         </div>
       </div>
     </section>
@@ -31,6 +34,19 @@ import { mapGetters } from 'vuex'
 import HeroHeader from '@/components/HeroHeader'
 import CardListBlock from '@/components/CardListBlock'
 
+// =================================================================== Functions
+const checkForSmallBreakpoint = (instance) => {
+  if (window.matchMedia('(max-width: 53.125rem)').matches) {
+    if (!instance.small) {
+      instance.small = true
+    }
+  } else {
+    if (instance.small) {
+      instance.small = false
+    }
+  }
+}
+
 // ====================================================================== Export
 export default {
   name: 'CategoryPage',
@@ -44,7 +60,9 @@ export default {
 
   data () {
     return {
-      tag: 'category'
+      tag: 'category',
+      small: false,
+      resize: false
     }
   },
 
@@ -85,7 +103,7 @@ export default {
         const slugs = ['bridges-and-oracles', 'infrastructure-other', 'leasing-staking', 'exchanges-swaps']
         // const subcategories = this.activeCategory.subcategories
         for (let i = 0; i < 4; i++) {
-          const column = this.projects.slice(i * 5, (i + 1) * 5)
+          const column = this.projects
           const categorySlug = this.activeCategory.slug
           subcategories.push({
             heading: headings[i],
@@ -98,17 +116,29 @@ export default {
       }
       return []
     }
+  },
+
+  mounted () {
+    checkForSmallBreakpoint(this)
+    this.resize = () => { checkForSmallBreakpoint(this) }
+    window.addEventListener('resize', this.resize)
+  },
+
+  beforeDestroy () {
+    if (this.resize) { window.removeEventListener('resize', this.resize) }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-.project-list {
-  // margin-bottom: toRem(100);
-}
-
 .subcategory {
   margin-bottom: toRem(30);
+}
+
+::v-deep .card-list-block {
+  @include small {
+    margin: 0 -0.5rem !important;
+  }
 }
 </style>
