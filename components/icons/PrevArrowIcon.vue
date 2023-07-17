@@ -1,28 +1,7 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    :width="width"
-    :height="height"
-    viewBox="0 0 7.818 11.336"
-    class="prev-arrow">
-
-    <g transform="translate(1.41 9.926) rotate(-90)">
-
-      <path
-        d="M0,0,3.439,4.061,4.233,5"
-        transform="translate(8.517 4.998) rotate(180)"
-        stroke-linecap="round"
-        stroke-width="2" />
-
-      <line
-        x1="4.284"
-        y2="4.998"
-        transform="translate(4.284 4.998) rotate(180)"
-        stroke-linecap="round"
-        stroke-width="2" />
-
-    </g>
-
+  <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.98926 10.7734L3.05633 6.44594" stroke="white" stroke-width="3" stroke-linecap="round" />
+    <path d="M7.98926 2.11781L3.05633 6.44531" stroke="white" stroke-width="3" stroke-linecap="round" />
   </svg>
 </template>
 

@@ -384,36 +384,6 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-#segment-slider-chart {
-  padding-top: 2rem;
-  @include large {
-    margin-bottom: 3rem;
-  }
-  @include medium {
-    padding-top: 6rem;
-    margin-bottom: 0;
-  }
-  @include small {
-    padding-top: 0;
-    margin-bottom: 0rem;
-  }
-  .segments-tiny {
-    background-color: $site_backgroundColor;
-    @include medium {
-      background-color: white;
-    }
-  }
-  .segment-foreground {
-    background-color: $fill_Dark_Primary;
-  }
-  .segment-background {
-    background-color: $highlight_Medium;
-  }
-  .segment-line {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-}
-
 .chart-container {
   position: relative;
   flex: 3 1 42.75rem;

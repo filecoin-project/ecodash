@@ -189,7 +189,7 @@ export default {
     padding: toRem(40) toRem(22);
     padding-bottom: toRem(34);
     margin-bottom: toRem(63);
-    margin-top: toRem(21);
+    margin-top: 0;
   }
   &:before {
     content: '';
