@@ -12,10 +12,10 @@
       class="project-list">
       <div class="grid">
         <div class="col-6">
-          <CardListBlock :cards="cardColumnOne" />
+          <CardListBlock :cards="cardColumnOne" class="left" />
         </div>
         <div class="col-6">
-          <CardListBlock :cards="cardColumnTwo" />
+          <CardListBlock :cards="cardColumnTwo" class="right" />
         </div>
       </div>
     </section>
