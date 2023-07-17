@@ -11,14 +11,10 @@
     <section class="project-list">
       <div class="grid">
         <div class="col-6">
-          <CardListBlock
-            :cards="cardColumnOne"
-            class="left" />
+          <CardListBlock :cards="cardColumnOne" />
         </div>
         <div class="col-6">
-          <CardListBlock
-            :cards="cardColumnTwo"
-            class="right" />
+          <CardListBlock :cards="cardColumnTwo" />
         </div>
       </div>
     </section>
@@ -114,14 +110,6 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .project-list {
   margin-bottom: toRem(100);
-}
-
-::v-deep .hero-header {
-  .heading-cta {
-    @include small {
-      display: none;
-    }
-  }
 }
 
 .subcategory {

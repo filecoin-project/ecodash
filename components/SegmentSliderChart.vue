@@ -384,12 +384,24 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
+#segment-slider-chart {
+  padding-top: 2rem;
+  @include large {
+    margin-bottom: 3rem;
+  }
+  @include medium {
+    padding-top: 6rem;
+    margin-bottom: 0;
+  }
+  @include small {
+    padding-top: 0;
+    margin-bottom: 0rem;
+  }
+}
+
 .chart-container {
   position: relative;
   flex: 3 1 42.75rem;
-  @include small {
-    background-color: $blackSapphire;
-  }
 }
 
 .segments-container {
@@ -400,14 +412,29 @@ export default {
   @include borderRadius_Medium;
   position: relative;
   padding: 0 2.5rem;
+  @include medium {
+    padding: 0 6rem;
+    padding-bottom: 7rem;
+  }
   @include small {
     padding: 0 3rem;
-    height: toRem(190) !important;
+    padding-bottom: 0;
+  }
+  @include tiny {
+    min-width: 16rem;
+    padding: 0 2rem;
+    padding-bottom: 0;
   }
 }
 
 .chart-title {
   display: none;
+  color: $blackSapphire;
+  padding: 2.5rem 0;
+  @include small {
+    display: block;
+    padding: 2rem 0;
+  }
 }
 
 .segments-row {
@@ -416,12 +443,11 @@ export default {
   align-items: center;
   justify-content: flex-start;
   height: 4rem;
-  @include small {
-    position: relative;
-  }
+
   &.fixed-for-measuring {
     width: 572px;
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -429,10 +455,11 @@ export default {
     width: calc(100% - 1rem);
     background-color: $white;
     left: 0%;
-    @include small {
-      height: 2px;
-      width: calc(100% + 2rem);
-      left: -1rem;
+  }
+
+  @include medium {
+    &:before {
+      width: 100%;
     }
   }
 }

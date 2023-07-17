@@ -8,10 +8,10 @@
     <section class="project-list">
       <div class="grid">
         <div class="col-6">
-          <CardListBlock :cards="cardColumnOne" class="left" />
+          <CardListBlock :cards="cardColumnOne" />
         </div>
         <div class="col-6">
-          <CardListBlock :cards="cardColumnTwo" class="right" />
+          <CardListBlock :cards="cardColumnTwo" />
         </div>
       </div>
     </section>
@@ -105,12 +105,12 @@ import CardListBlock from '@/components/CardListBlock'
 //   }
 // }
 
-// const initResize = (instance) => {
-//   clearTimeout(instance.timeOutFunction)
-//   instance.timeOutFunction = setTimeout(() => {
-//     instance.resetSectionHeight()
-//   }, 150)
-// }
+const initResize = (instance) => {
+  clearTimeout(instance.timeOutFunction)
+  instance.timeOutFunction = setTimeout(() => {
+    instance.resetSectionHeight()
+  }, 150)
+}
 
 // ====================================================================== Export
 export default {

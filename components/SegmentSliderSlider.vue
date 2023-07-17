@@ -6,28 +6,26 @@
       :style="cardHeight">
 
       <div class="slide-nav">
-        <Button
-          type="button"
+        <button
           class="nav-arrow focus-visible"
-          @clicked="incrementSelection(selectedSeg - 1)">
-          <template #icon-before>
-            <PrevArrowIcon />
-          </template>
-        </Button>
+          @click="incrementSelection(selectedSeg - 1)">
+          <PrevArrowIcon
+            width="10"
+            height="15" />
+        </button>
         <h3
           :key="`${heading}-medium`"
           ref="navTitle"
           class="title-between-buttons transition-content">
           {{ heading }}
         </h3>
-        <Button
-          type="button"
+        <button
           class="nav-arrow focus-visible"
-          @clicked="incrementSelection(selectedSeg + 1)">
-          <template #icon-before>
-            <NextArrowIcon />
-          </template>
-        </Button>
+          @click="incrementSelection(selectedSeg + 1)">
+          <NextArrowIcon
+            width="10"
+            height="15" />
+        </button>
       </div>
 
       <div
@@ -226,7 +224,6 @@ export default {
   color: $white;
   @include small {
     border: none;
-    padding-top: 0;
   }
 }
 
@@ -238,24 +235,12 @@ export default {
   overflow: hidden;
 }
 
-.heading,
-.description {
-  @include small {
-    padding: 0 2.875rem;
-  }
-}
-
 .heading {
   font-size: 1rem;
   font-weight: 600;
   line-height: leading(15, 16);
   letter-spacing: 0.26px;
   margin-bottom: toRem(30);
-  @include small {
-    font-size: toRem(13);
-    line-height: leading(15, 13);
-    margin-bottom: 1rem;
-  }
 }
 
 .description {
@@ -264,12 +249,6 @@ export default {
   line-height: leading(21, 14);
   letter-spacing: 0.25px;
   margin-bottom: 2rem;
-  @include small {
-    font-size: toRem(13);
-    line-height: leading(19, 13);
-    letter-spacing: 0.18px;
-    margin-bottom: 0.75rem;
-  }
 }
 
 .view-all-wrapper {
@@ -300,13 +279,24 @@ export default {
   }
   > img {
     margin: 0 0.75rem;
+    width: auto;
     width: toRem(37);
     height: toRem(37);
   }
 }
-
+// //////////////////////////////////////////////////////////// from here to animations not done
+.title-large-screen {
+  margin-bottom: 1rem;
+  @include leading_Regular;
+  @include medium {
+    display: none;
+  }
+}
 .title-between-buttons {
   display: none;
+  @include medium {
+    display: inline;
+  }
 }
 
 .slide-nav {
@@ -317,29 +307,32 @@ export default {
   margin-top: 1rem;
   margin-bottom: 0.75rem;
   @include small {
-    position: absolute;
-    top: 1.875rem;
-    left: 1.125rem;
-    width: calc(100% - 2.25rem);
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include tiny {
+    max-width: unset;
   }
 }
-
 .nav-arrow {
+  @include borderRadius_Medium;
   display: flex;
+  padding: 0.25rem;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0.5rem;
   border: none;
+  font-weight: 900;
+  width: 3.75rem;
+  @include small {
+    width: auto;
+  }
   &:focus {
     outline: none;
-  }
-  ::v-deep .icon {
-    display: flex;
-    width: toRem(9.5);
-    height: toRem(13);
   }
 }
 

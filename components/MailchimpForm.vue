@@ -72,9 +72,9 @@ export default {
     display: flex;
     flex-direction: row;
     margin-bottom: 0.5rem;
-    @include small {
-      margin-bottom: toRem(45);
-      padding-right: toRem(66);
+    @include mini {
+      flex-direction: column;
+      margin-bottom: 0.5rem;
     }
 
     .email,
@@ -92,10 +92,6 @@ export default {
         box-shadow: none;
         height: 100%;
         padding: 0 20px;
-        @include small {
-          font-size: toRem(12);
-          line-height: leading(18, 12);
-        }
       }
       &:before,
       &:after {
@@ -150,7 +146,6 @@ export default {
         color: $blackSapphire;
         margin-left: 0;
         border-radius: 1px;
-        @inc
       }
       &:before,
       &:after {

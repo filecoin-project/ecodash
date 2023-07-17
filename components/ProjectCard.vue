@@ -8,7 +8,7 @@
 
       <div class="content">
         <p class="title">
-          <span>{{ title }}</span>
+          {{ title }}
         </p>
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
           <span>{{ description }}</span>
@@ -174,7 +174,6 @@ export default {
 
 .list-view {
   .card-inner-wrapper {
-    position: relative;
     @include borderRadius_Medium;
     display: flex;
     flex-direction: row;
@@ -185,38 +184,16 @@ export default {
     height: toRem(45);
     margin-right: 0.625rem;
     background-color: $white;
-    @include small {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: toRem(40);
-      height: toRem(40);
-    }
   }
   .content {
     padding-left: 0.625rem;
     width: calc(100% - toRem(55));
-    @include small {
-      padding-left: 0;
-      width: 100%;
-    }
   }
   .title {
     font-size: 1rem;
     font-weight: 600;
     line-height: leading(30, 16);
     letter-spacing: 0.36px;
-    @include small {
-      padding-left: toRem(52);
-      font-size: 0.875rem;
-      line-height: leading(21, 14);
-      height: toRem(40);
-      display: flex;
-      align-items: center;
-      span {
-        display: block;
-      }
-    }
   }
   .description {
     font-size: toRem(14);
@@ -225,26 +202,14 @@ export default {
     max-height: toRem(42);
     transition: max-height 250ms ease;
     overflow: hidden;
-    @include small {
-      margin-top: 0.625rem;
-      font-size: 0.75rem;
-      line-height: leading(18, 12);
-      max-height: toRem(79);
-    }
     &.clip {
       display: -webkit-box;
       -webkit-box-flex: 1;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      @include small {
-        -webkit-line-clamp: 4;
-      }
     }
     &.expanded {
       max-height: toRem(200);
-      @include small {
-        max-height: toRem(500);
-      }
     }
   }
   .button-row {
@@ -258,10 +223,6 @@ export default {
           font-size: toRem(14);
           font-weight: 500;
           line-height: leading(18, 14);
-          @include small {
-            font-size: 0.75rem;
-            line-height: leading(18, 12);
-          }
         }
       }
     }
