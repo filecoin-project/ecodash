@@ -96,6 +96,9 @@ export default {
   padding: toRem(9);
   box-sizing: border-box;
   transition: width 250ms ease-in;
+  @include small {
+    height: toRem(29);
+  }
   &:before,
   &:after {
     content: '';
@@ -120,6 +123,9 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
+    @include small {
+      border: none;
+    }
   }
   &:hover {
     &:before {
@@ -132,6 +138,9 @@ export default {
       height: calc(100% - 2px);
       top: 1px;
       left: 1px;
+      @include small {
+        border: none;
+      }
     }
   }
   &.focused {

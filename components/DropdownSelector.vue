@@ -316,7 +316,8 @@ export default {
   }
   @include small {
     right: unset;
-    left: 0;
+    left: 1rem;
+    top: calc(100% + 0.625rem);
   }
 }
 
@@ -368,6 +369,14 @@ export default {
       justify-content: flex-end;
       .item-after {
         margin-left: toRem(6);
+      }
+      .text,
+      .item-after {
+        @include small {
+          font-size: 1rem;
+          line-height: leading(36, 16);
+          letter-spacing: 0.32px;
+        }
       }
     }
   }

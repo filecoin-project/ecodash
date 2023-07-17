@@ -35,6 +35,10 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .breadcrumbs {
   padding-top: 1.125rem;
+  font-size: toRem(13);
+  font-weight: 450;
+  line-height: leading(18, 13);
+  letter-spacing: 0.26px;
 }
 
 .breadcrumb-link,

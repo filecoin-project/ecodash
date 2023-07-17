@@ -65,17 +65,11 @@
         "href": "https://example.com"
       }
     },
-    "breadcrumbs": [
-      {
-        "type": "a",
-        "href": "https://filecoin.io",
-        "label": "Home"
-      },
-      {
-        "type": "div",
-        "label": "Filecoin Ecosystem"
-      }
-    ]
+    "breadcrumbs_map": {
+      "index": { "href": "/", "label": "Home" },
+      "category": { "href": "/", "label": "Home" },
+      "results": { "href": "/results", "label": "Results" }
+    }
   },
   "section_featured_slider": {
     "heading": "Related entityTermPlural",

@@ -8,22 +8,13 @@
 
       <div :class="['modal-background', { 'show-background': navOpen, 'transition-out': modalClosing }]"></div>
 
-      <div class="col-3_lg-2">
+      <div class="col-3_lg-2_sm-4">
         <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
           <SiteLogo id="site-logo" />
         </a>
       </div>
-      
-      <div class="col-0_sm-2" data-push-left="off-0_sm-8">
-        <div
-          :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
-          tabindex="0"
-          @click="toggleNav"
-          @keyup.enter="toggleNav">
-        </div>
-      </div>
 
-      <div class="col-5_lg-6">
+      <div class="col-5_lg-6_sm-1">
         <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
           <nav class="links-container">
             <template v-for="(link, index) in navigation.header">
@@ -55,7 +46,7 @@
         </div>
       </div>
 
-      <div class="col-4_sm-hidden">
+      <div class="col-4_sm-7">
         <div class="nav-toolbar">
           <FilterBar
             id="nav-filter-bar"
@@ -77,11 +68,19 @@
               <AddIcon />
             </template>
           </Button>
+          <div
+            :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
+            tabindex="0"
+            @click="toggleNav"
+            @keyup.enter="toggleNav">
+          </div>
         </div>
       </div>
 
       <div class="col-12">
-        <Breadcrumbs :breadcrumbs="breadcrumbs" />
+        <Breadcrumbs
+          :breadcrumbs="breadcrumbs"
+          :class="{ hidden: breadcrumbs.length < 2 }" />
       </div>
 
       <div :class="['social-icon-container', { 'visible': navOpen }]">
@@ -150,8 +149,33 @@ export default {
       filterPanelOpen: 'filters/filterPanelOpen',
       filterValue: 'core/filterValue'
     }),
+    categories () {
+      return this.siteContent.taxonomy.categories
+    },
+    breadcrumbsMap () {
+      return this.siteContent.general.navigation.breadcrumbs_map
+    },
     breadcrumbs () {
-      return this.siteContent.general.navigation.breadcrumbs
+      const route = this.$route
+      const params = route.params
+      const breadcrumbs = [this.breadcrumbsMap.index]
+      if (params.category) {
+        const active = this.categories.find(cat => cat.slug === params.category)
+        breadcrumbs.push({ href: `/category/${params.category}`, label: active.label })
+        if (params.subcategory) {
+          breadcrumbs.push({ href: `/category/${params.category}/${params.subcategory}`, label: 'Bridges and Oracles' })
+        }
+      } else if (this.breadcrumbsMap.hasOwnProperty(route.name) && route.name !== 'index') {
+        breadcrumbs.push(this.breadcrumbsMap[route.name])
+      }
+      breadcrumbs.forEach((item, i) => {
+        if (i !== breadcrumbs.length - 1) {
+          item.type = 'nuxt-link'
+        } else {
+          item.type = 'div'
+        }
+      })
+      return breadcrumbs
     },
     headerNavigationClasses () {
       const showBackground = this.showBackground
@@ -265,6 +289,9 @@ export default {
   z-index: 9999;
   transform: translateY(-$navigationHeight);
   transition: transform 250ms ease-in-out;
+  @include small {
+    padding-top: toRem(20);
+  }
   &.force-visible {
     transform: translateY(0);
   }
@@ -282,6 +309,13 @@ export default {
     height: 100%;
     opacity: 0;
     transition: 250ms ease-in-out;
+    background: $blackSapphire;
+  }
+}
+
+::v-deep .breadcrumbs {
+  &.hidden {
+    visibility: hidden;
   }
 }
 
@@ -301,6 +335,10 @@ export default {
   opacity: 1.0;
   z-index: 100;
   transition: all 0.3s ease;
+  @include small {
+    height: 2rem;
+    width: unset;
+  }
   &:hover {
     transform: scale(1.05);
   }
@@ -400,17 +438,28 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  @include small {
+    align-items: center;
+  }
+}
+
+::v-deep #nav-filter-bar {
+  z-index: 1000;
 }
 
 .nav-cta {
   height: toRem(27);
   margin-left: 2rem;
   transform: translateY(2px);
+  @include small {
+    display: none;
+  }
 }
 
 // ////////////////////////////////////////////////////// Modal + Hamburger icon
 .modal-background {
   display: none;
+  background-color: $blackSapphire;
   &:before {
     content: '';
     position: absolute;
@@ -440,8 +489,9 @@ export default {
   display: none;
   position: relative;
   z-index: 1000;
+  width: 1.5rem;
   height: 14px;
-  width: 2rem;
+  margin-left: toRem(11);
   @include small {
     display: block;
   }

@@ -8,7 +8,17 @@
     <div class="main-container">
 
       <div class="grid-noGutter-middle">
-        <div class="col-3">
+        <div class="col-12 small-only">
+          <SegmentSliderChart
+            v-if="chartItems"
+            :chart-items="chartItems"
+            :selected-seg="selected"
+            :container-height="containerHeight"
+            @update-slider="setSliderContent"
+            @keyup.left="setSliderContent(selected - 1)"
+            @chart-mounted="chartMounted" />
+        </div>
+        <div class="col-3_sm-12">
           <SegmentSliderSlider
             v-if="chartItems"
             :selected-seg="selected"
@@ -17,7 +27,7 @@
             :enable-image-alt="enableImageAlt"
             @update-slider="setSliderContent" />
         </div>
-        <div class="col-9">
+        <div class="col-9_sm-hidden">
           <SegmentSliderChart
             v-if="chartItems"
             :chart-items="chartItems"
@@ -194,15 +204,23 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  @include small {
+    margin: 0 -0.5rem;
+  }
 }
+
 .main-container {
-  display: flex;
   position: relative;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
   @include small{
-    background-color: $white;
+    border-width: 2px;
     @include oceanBorderGradient;
+  }
+}
+
+.small-only {
+  display: none;
+  @include small {
+    display: block;
   }
 }
 </style>

@@ -3,8 +3,6 @@
 
     <Navigation />
 
-    <!-- <Hero /> -->
-
   </header>
 </template>
 
@@ -26,5 +24,9 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 #site-header {
   padding-top: $navigationHeight;
+  color: white;
+  @include small {
+    padding-top: toRem(82);
+  }
 }
 </style>
