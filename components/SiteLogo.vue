@@ -36,6 +36,7 @@
 
 <script>
 // ====================================================================== Export
-export default { name: 'SiteLogo' }
-
+export default { 
+  name: 'SiteLogo' 
+}
 </script>
