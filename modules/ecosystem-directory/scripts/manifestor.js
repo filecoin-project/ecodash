@@ -9,7 +9,7 @@ const paths = {
   staticDir: `static`,
   taxonomies: `static/content/core_taxonomy.json`,
   settings: `static/content/core_settings.json`,
-  project_routes: `static/content/project-routes.json`,
+  category_routes: `static/content/category-routes.json`,
   project_list: `static/content/project-list.json`,
   showcase_data: `static/content/showcase-data.json`
 }
@@ -113,26 +113,43 @@ const compileTags = (project, categories, tags) => {
 }
 
 /*
+  Generate all possible routes based on taxonomy object categories and subcategories
+*/
+const generateCategoryRoutes = async (taxonomies) => {
+  try {
+    const routes = []
+    const categories = taxonomies.categories
+    categories.forEach((category) => {
+      routes.push({ route: `/category/${category.slug}` })
+      const subcategories = category.subcategories
+      subcategories.forEach((subcategory) => {
+        routes.push({ route: `/category/${category.slug}/${subcategory.slug}` })
+      })
+    })
+    return routes
+  } catch (e) {
+    console.log('============================== [generateCategoryRoutes] Error')
+    throw e
+  }
+}
+
+/*
   - Open and parse all project JSON files
   - Push all of them into an array (to be used by main app and nuxt.config.js routes/generate block)
   - Push all of them into an array with some information removed (to be used by embedable-view.js and the showcase view)
 */
-const generateProjectManifestFiles = async (slugs, primaryCategory, taxonomies) => {
+const generateProjectManifestFiles = async (slugs, taxonomies) => {
   try {
     const len = slugs.length
     if (len === 0) { throw new Error('[manifestor.js] Unable to generate Project files because no projects exist') }
     const payload = {
       full: [],
-      mini: [],
-      // activeFilters: [],
-      // showcase: { taxonomies: await reformatTaxonomies(taxonomies), projects: [] },
-      routes: []
+      mini: []
+      // showcase: { taxonomies: await reformatTaxonomies(taxonomies), projects: [] }
     }
     for (let i = 0; i < len; i++) {
       const slug = slugs[i]
       const project = JSON.parse(await Fs.readFileSync(`${paths.projects}/${slug}.json`))
-      // const filterItems = project.taxonomies.filter(taxonomy => taxonomy.slug === primaryCategory)
-      // const filters = filterItems.length && filterItems[0].tags ? filterItems[0].tags : []
       const tags = {}
       // await compileTags(project, taxonomies.categories, tags)
       project.slug = slug
@@ -140,26 +157,9 @@ const generateProjectManifestFiles = async (slugs, primaryCategory, taxonomies) 
       payload.mini.push({
         slug,
         name: project.name,
-        logo: project.icon,
+        icon: project.icon,
         description: project.description,
         org: project.org
-        // featured: project.featured,
-        // sortNumbers: project.sortNumbers,
-        // filters
-      })
-      // filters.forEach(filter => {
-      //   if (payload.activeFilters.indexOf(filter) < 0) {
-      //     payload.activeFilters.push(filter)
-      //   }
-      // })
-      // payload.showcase.projects.push({
-      //   name: project.name,
-      //   logo: project.icon,
-      //   tags
-      // })
-      payload.routes.push({
-        route: `/project/${slug}`,
-        payload: project
       })
     }
     return payload
@@ -215,15 +215,16 @@ const Manifestor = async (instance) => {
     const slugs = await getSlugs()
     const settings = JSON.parse(Fs.readFileSync(paths.settings))
     const taxonomies = JSON.parse(await Fs.readFileSync(paths.taxonomies))
-    const primaryCategory = settings.behavior.primaryCategorySlug
-    const payload = await generateProjectManifestFiles(slugs, primaryCategory, taxonomies)
-    await Fs.writeFileSync(paths.project_routes, JSON.stringify(payload.routes))
+    const routes = await generateCategoryRoutes(taxonomies)
+    await Fs.writeFileSync(paths.category_routes, JSON.stringify(routes))
+    const payload = await generateProjectManifestFiles(slugs, taxonomies)
     await Fs.writeFileSync(paths.project_list, JSON.stringify(payload.full))
     // await Fs.writeFileSync(paths.showcase_data, JSON.stringify(payload.showcase))
-    // if (settings.visibility.embeddableObject) {
-    //   const embeddableViewScript = await generateEmbeddableViewFile(payload.mini, payload.activeFilters, primaryCategory, slugs, settings)
-    //   await Fs.writeFileSync(`${paths.staticDir}/embeddable-view.js`, embeddableViewScript)
-    // }
+    if (settings.visibility.embeddableObject) {
+      const primaryCategory = settings.behavior.primaryCategorySlug
+      const embeddableViewScript = await generateEmbeddableViewFile(payload.mini, payload.activeFilters, primaryCategory, slugs, settings)
+      await Fs.writeFileSync(`${paths.staticDir}/embeddable-view.js`, embeddableViewScript)
+    }
     console.log('🏁 Manifest projects complete')
   } catch (e) {
     console.log('========================================== [Manifestor] Error')

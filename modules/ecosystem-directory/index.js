@@ -24,12 +24,12 @@ const pages = [
     component: 'pages/index.vue',
     chunkName: 'ecosystem-directory/index'
   },
-  {
-    name: 'ecosystem-directory/project',
-    path: '/project/:id',
-    component: 'pages/_project.vue',
-    chunkName: 'ecosystem-directory/project'
-  },
+  // {
+  //   name: 'ecosystem-directory/project',
+  //   path: '/project/:id',
+  //   component: 'pages/_project.vue',
+  //   chunkName: 'ecosystem-directory/project'
+  // },
   {
     name: 'ecosystem-directory/showcase',
     path: '/showcase',
@@ -133,7 +133,7 @@ const registerRoutes = (instance) => {
     })
     // Register all project pages and import payloads
     instance.options.generate.routes = () => {
-      let routes = require(`${instance.options.rootDir}/static/content/project-routes.json`)
+      let routes = require(`${instance.options.rootDir}/static/content/category-routes.json`)
       routes = routes.concat(generate)
       return routes
     }
