@@ -1,7 +1,7 @@
 /* eslint-disable */
 /*
 //  This script is used to transform the project json data structure from the legacy v1 format to the new v2 format
-//  This script is intended to be run from the root of the repoo
+//  This script is intended to be run from the root of the repo
 //  Usage (node 16): `node transform-projects.js`
 //
 */
@@ -41,7 +41,7 @@ function transformObject(original) {
           break;
         case 'website':
         case 'docs':
-          platform = null;
+          platform = null; // skip docs link
           break;
         default:
           platform = linkObject.label;
@@ -60,7 +60,7 @@ function transformObject(original) {
   if (original.taxonomies) {
     for (const tax of original.taxonomies) {
       if (tax.tags) {
-        transformed.tags.push(...tax.tags.filter(tag => tag !== ""));
+        transformed.tags.push(...tax.tags.filter(tag => tag !== "").map(tag => tag.toLowerCase().replace(/-/g, ' ')));
       }
     }
   }
