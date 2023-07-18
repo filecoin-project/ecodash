@@ -1,7 +1,16 @@
+/* eslint-disable */
+/*
+//  This script is used to transform the project json data structure from the legacy v1 format to the new v2 format
+//  This script is intended to be run from the root of the repoo
+//  Usage (node 16): `node transform-projects.js`
+//
+*/
+
 const fs = require('fs');
 const path = require('path');
 
-function convertObject(original) {
+// transformation function to new data structure
+function transformObject(original) {
   const socialMediaPlatforms = ["Github", "Twitter", "Linkedin", "Facebook", "Discord", "Instagram"];
 
   const transformed = {
@@ -9,14 +18,14 @@ function convertObject(original) {
     since: (original.sortNumbers && original.sortNumbers.length > 0) ? original.sortNumbers[0].since : null,
     icon: (original.logo && original.logo.icon) ? original.logo.icon : null,
     name: original.name || '',
-    org: original.org || [],
+    org: (original.org && original.org.length > 0) ? original.org[0] : '',
     description: (original.description && original.description.short) ? original.description.short : '',
     website: (original.primaryCta && original.primaryCta.url) ? original.primaryCta.url : '',
     social: [],
     taxonomy: [
       { category: "finance", subcategories: [] },
       { category: "media-and-entertainment", subcategories: [] },
-      { category: "tooling-and-productivity", subcategories: ["developer-tools-and-other"] },
+      { category: "tooling-and-productivity", subcategories: [] },
       { category: "storage-and-cloud-services", subcategories: [] },
       { category: "education-science-public-goods", subcategories: [] }
     ],
@@ -32,7 +41,7 @@ function convertObject(original) {
           break;
         case 'website':
         case 'docs':
-          platform = null; // we don't want to add these to social
+          platform = null;
           break;
         default:
           platform = linkObject.label;
@@ -59,6 +68,7 @@ function convertObject(original) {
   return transformed;
 }
 
+// function to perform the file reads and overwrites
 function convertFilesInDirectory(dirPath) {
   console.log(`Reading directory: ${dirPath}`);
   
@@ -72,7 +82,7 @@ function convertFilesInDirectory(dirPath) {
 
       const filePath = path.join(dirPath, file);
       const original = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-      const transformed = convertObject(original);
+      const transformed = transformObject(original);
 
       fs.writeFileSync(filePath, JSON.stringify(transformed, null, 2) + "\n");
 
@@ -81,6 +91,7 @@ function convertFilesInDirectory(dirPath) {
   });
 }
 
+// hardcode paths
 const projectDirectory = path.join(__dirname, '..', 'content', 'projects');
 
 console.log(`Script directory: ${__dirname}`);
