@@ -1,33 +1,101 @@
-{  
+{
   "display": true,
-  "since": 2020,
-  "icon": "fleek.png",
-  "name": "Fleek",
-  "org": [],
-  "description": "A platform for building sites and apps on the Dweb.",
-  "website": "//fleek.co",
-  "social": [ { "twitter": "http://..." }, {"github": "http://..."} ],
-  "taxonomy": [
+  "featured": false,
+  "sortNumbers": [
     {
-      "category": "finance",
-      "subcategories": []
-    },
-    {
-      "category": "media-and-entertainment",
-      "subcategories": []
-    },
-    {
-      "category": "tooling-and-productivity",
-      "subcategories": ["developer-tools-and-other"]
-    },
-    {
-      "category": "storage-and-cloud-services",
-      "subcategories": []
-    },
-    {
-      "category": "education-science-public-goods",
-      "subcategories": []
+      "since": 2020
     }
   ],
-  "tags": ["foo", "bar", "fvm"]
+  "logo": {
+    "icon": "fleek.png",
+    "full": "FleekForLight.png"
+  },
+  "name": "Fleek",
+  "org": [""],
+  "description": {
+    "short": "A platform for building sites and apps on the Dweb.",
+    "long": "Fleek is a dweb developer platform with everything needed to build and manage sites and apps on Web3 and the underlying protocols that power it: hosting, storage, gateways, domains, and more.\n\nAs a FVM Early Builder, they intend to leverage FVM as a base layer for these protocols."
+  },
+  "primaryCta": {
+    "url": "//fleek.co",
+    "text": "Project Website"
+  },
+  "links": [
+    {
+      "label": "Website",
+      "links": [
+        {
+          "url": "//fleek.co",
+          "text": "fleek.co"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "links": [
+        {
+          "url": "//github.com/FleekHQ",
+          "text": "github.com/FleekHQ"
+        }
+      ]
+    },
+    {
+      "label": "Docs",
+      "links": [
+        {
+          "url": "//docs.fleek.co",
+          "text": "docs.fleek.co"
+        }
+      ]
+    }
+  ],
+  "keyInfo": [
+    {
+      "label": "Using Filecoin since",
+      "value": "2020"
+    }
+  ],
+  "video": "//youtube.com/watch?v=mCvYpl6wqB0",
+  "stats": [
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    },
+    {
+      "label": "",
+      "value": ""
+    }
+  ],
+  "ctaCard": {
+    "title": "Fleek case study",
+    "description": "Learn how Fleek relies on IPFS for its suite of developer tools and services.",
+    "buttonText": "Case study",
+    "url": "//docs.ipfs.io/concepts/case-study-fleek"
+  },
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "tags": ["storage-apps-clients"]
+    },
+    {
+      "slug": "storage-type",
+      "tags": ["web-publishing"]
+    },
+    {
+      "slug": "software-type",
+      "tags": ["library-sdk", "hosted-service"]
+    },
+    {
+      "slug": "tooling",
+      "tags": ["ipfs-http-client", "fleek-space-daemon", "FVM"]
+    },
+    {
+      "slug": "pipeline",
+      "tags": [""]
+    }
+  ]
 }
