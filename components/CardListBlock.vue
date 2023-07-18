@@ -28,6 +28,7 @@
           :logo="card.icon"
           :tags="card.tags"
           :url="`https:${card.website}`"
+          :social="card.social"
           :style="{ animationDelay: `${30 * index}ms` }" />
       </div>
     </div>
