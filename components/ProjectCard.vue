@@ -13,6 +13,19 @@
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
           <span>{{ description }}</span>
           <span v-if="tagString" class="tags">{{ tagString }}</span>
+          <div v-if="social.length" class="socials">
+            <Button
+              v-for="obj in social"
+              :key="Object.keys(obj)[0]"
+              tag="a"
+              :to="Object.values(obj)[0]"
+              target="_blank"
+              class="social-icon">
+              <template #icon-before>
+                <component :is="getSocialIcon(Object.keys(obj)[0])" />
+              </template>
+            </Button>
+          </div>
         </div>
 
         <div class="button-row">
@@ -49,13 +62,24 @@
 import Button from '@/modules/zero/core/components/Button'
 import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
 
+import SlackIcon from '@/components/icons/SlackIcon'
+import TwitterIcon from '@/components/icons/TwitterIcon'
+import MatrixIcon from '@/components/icons/MatrixIcon'
+import WeChatIcon from '@/components/icons/WeChatIcon'
+import GithubIcon from '@/components/icons/GithubIcon'
+
 // ====================================================================== Export
 export default {
   name: 'ProjectCard',
 
   components: {
     Button,
-    SelectorToggle
+    SelectorToggle,
+    SlackIcon,
+    TwitterIcon,
+    MatrixIcon,
+    WeChatIcon,
+    GithubIcon
   },
 
   props: {
@@ -92,6 +116,11 @@ export default {
       type: [Array, Boolean],
       default: false,
       required: false
+    },
+    social: {
+      type: Array,
+      required: false,
+      default: () => []
     }
   },
 
@@ -131,7 +160,7 @@ export default {
     },
     tagString () {
       if (Array.isArray(this.tags)) {
-        return `tags: ${this.tags.join(', ')}`
+        return `Tags: ${this.tags.join(', ')}`
       }
       return false
     }
@@ -152,6 +181,16 @@ export default {
   methods: {
     toggleExpanded () {
       this.expanded = !this.expanded
+    },
+    getSocialIcon (name) {
+      switch (name) {
+        case 'twitter' : return 'TwitterIcon'
+        case 'github' : return 'GithubIcon'
+        case 'wechat' : return 'WeChatIcon'
+        case 'slack' : return 'SlackIcon'
+        case 'matrix' : return 'MatrixIcon'
+        default : return 'div'
+      }
     }
   }
 }
@@ -165,7 +204,6 @@ export default {
   opacity: 0;
   animation: fadein 0.3s 1;
   animation-fill-mode: forwards;
-  cursor: pointer;
   border-radius: 2px;
   border: 2px solid #0D222B;
   background: $blackSapphire;
@@ -179,6 +217,7 @@ export default {
     display: flex;
     flex-direction: row;
     height: 100%;
+    z-index: 2;
   }
   .thumbnail {
     width: toRem(45);
@@ -245,6 +284,13 @@ export default {
       @include small {
         max-height: toRem(500);
       }
+      .tags,
+      .socials {
+        opacity: 1;
+      }
+    }
+    span {
+      display: block;
     }
   }
   .button-row {
@@ -309,11 +355,88 @@ export default {
       }
     }
   }
+  .tags,
+  .socials {
+    transition: 250ms ease;
+    opacity: 0;
+  }
+  .tags {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: toRem(13);
+    font-style: italic;
+    line-height: leading(25, 13);
+    margin-top: toRem(5);
+    margin-bottom: toRem(15);
+    @include small {
+      font-size: 0.75rem;
+      line-height: leading(18, 12);
+    }
+  }
+  .socials {
+    display: flex;
+  }
+  .social-icon {
+    &:not(:last-child) {
+      margin-right: 0.625rem;
+    }
+    ::v-deep .button-content {
+      padding: 0;
+    }
+    ::v-deep .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      svg {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.2);
+      }
+      svg,
+      path {
+        fill: #5DE3F2;
+      }
+    }
+  }
 }
 
 @keyframes fadein {
   0%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+// /////////////////////////////////////////////////////////////// Hover Effects
+.project-card {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    box-sizing: border-box;
+    transition: opacity 250ms ease, border 250ms ease;
+  }
+  &:before {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+    @include lightOceanGradient;
+  }
+  &:after {
+    background-color: $blackSapphire;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+    &:after {
+      transition: border 0ms ease;
+    }
+  }
 }
 
 </style>

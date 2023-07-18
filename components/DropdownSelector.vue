@@ -29,25 +29,24 @@
       <div class="dropdown-root" :style="{ height: `${height}px` }">
 
         <div ref="dropdownList" class="dropdown-list">
-          <template v-for="option in options">
-            <div
-              :key="`dropdown-option-${option.label}`"
-              class="dropdown-item-wrapper">
-              <Button
-                tag="a"
-                :to="option.disabled ? '' : option.href"
-                :href="option.disabled ? '' : option.href"
-                :disabled="option.disabled"
-                :target="option.target"
-                :tabindex="closed ? -1 : 0"
-                :text="option.label"
-                :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]">
-                <template #icon-after>
-                  ↗
-                </template>
-              </Button>
-            </div>
-          </template>
+          <div
+            v-for="option in options"
+            :key="`dropdown-option-${option.label}`"
+            class="dropdown-item-wrapper">
+            <Button
+              tag="a"
+              :to="option.disabled ? '' : option.href"
+              :href="option.disabled ? '' : option.href"
+              :disabled="option.disabled"
+              :target="option.target"
+              :tabindex="closed ? -1 : 0"
+              :text="option.label"
+              :class="['dropdown-item', 'focus-visible', { highlighted: (selected === option.label) }]">
+              <template #icon-after>
+                ↗
+              </template>
+            </Button>
+          </div>
         </div>
 
       </div>

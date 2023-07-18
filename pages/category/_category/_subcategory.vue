@@ -34,6 +34,23 @@ import { mapGetters } from 'vuex'
 import HeroHeader from '@/components/HeroHeader'
 import CardListBlock from '@/components/CardListBlock'
 
+// =================================================================== Functions
+const getSubcategoryProjects = (subcategory, projects) => {
+  const filtered = []
+  const len = projects.length
+  for (let i = 0; i < len; i++) {
+    const project = projects[i]
+    let memberships = []
+    project.taxonomy.forEach((cat) => {
+      memberships = memberships.concat(cat.subcategories)
+    })
+    if (memberships.includes(subcategory)) {
+      filtered.push(project)
+    }
+  }
+  return filtered
+}
+
 // ====================================================================== Export
 export default {
   name: 'CategoryPage',
@@ -81,11 +98,14 @@ export default {
       if (this.activeCategory) {
         const route = this.$route
         if (route.params.subcategory) {
-          // const category = this.category
-          // const active = category.subcategories.find(cat => cat.slug === route.params.subcategory)
-          return {
-            heading: 'Bridges and Oracles',
-            subheading: 'Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.'
+          const subcategories = this.activeCategory.subcategories
+          const subcategory = subcategories.find(cat => cat.slug === route.params.subcategory)
+          if (subcategory) {
+            return {
+              heading: subcategory.label,
+              subheading: subcategory.description,
+              slug: subcategory.slug
+            }
           }
         }
       }
@@ -100,11 +120,21 @@ export default {
       }
       return false
     },
+    subcategoryProjects () {
+      if (this.subcategory) {
+        return getSubcategoryProjects(this.subcategory.slug, this.projects)
+      }
+      return []
+    },
     cardColumnOne () {
-      return this.projects.slice(0, 5)
+      const len = this.subcategoryProjects.length
+      if (len) { return this.subcategoryProjects.slice(0, Math.ceil(len / 2)) }
+      return []
     },
     cardColumnTwo () {
-      return this.projects.slice(5, 8)
+      const len = this.subcategoryProjects.length
+      if (len) { return this.subcategoryProjects.slice(Math.ceil(len / 2), len) }
+      return []
     }
   }
 }

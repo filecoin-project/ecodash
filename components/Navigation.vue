@@ -1,48 +1,40 @@
 <template>
   <section
-    v-if="navigation"
     id="header-navigation"
     :class="headerNavigationClasses">
-
     <div class="grid-noGutter-middle">
 
-      <div :class="['modal-background', { 'show-background': navOpen, 'transition-out': modalClosing }]"></div>
+      <div :class="['modal-background', { 'show-background': navOpen }, { 'transition-out': modalClosing }]"></div>
 
       <div class="col-3_lg-2_sm-4">
-        <a :href="navigation.index.href" tabindex="0" class="logo-link focus-visible">
+        <nuxt-link to="/" tabindex="0" class="logo-link focus-visible">
           <SiteLogo id="site-logo" />
-        </a>
+        </nuxt-link>
       </div>
 
       <div class="col-5_lg-6_sm-1">
-        <div :class="['navigation', { 'modal-open' : navOpen, 'transition-out': modalClosing }]">
-          <nav class="links-container">
-            <template v-for="(link, index) in navigation.header">
-              <template v-if="link.hasOwnProperty('links')">
-                <DropdownSelector
-                  :key="index"
-                  label="Explore Network"
-                  :dropdown-options="link.links"
-                  :display-selected="false"
-                  :modal="navOpen">
-                  <template #dropdown-icon>
-                    <SelectorToggle />
-                  </template>
-                </DropdownSelector>
+        <div :class="['navigation', { 'modal-open': navOpen }, { 'transition-out': modalClosing }]">
+          <div class="nav-items">
+            <Button
+              v-for="(link, index) in navigation"
+              :key="`nav-link-${index}`"
+              type="navlink"
+              :tag="link.type"
+              :to="link.disabled ? '' : link.href"
+              :disabled="link.disabled"
+              :text="link.label"
+              target="_blank"
+              class="navigation-link onhover-line focus-visible" />
+            <DropdownSelector
+              :label="dropdown.label"
+              :dropdown-options="dropdown.links"
+              :display-selected="false"
+              :modal="navOpen">
+              <template #dropdown-icon>
+                <SelectorToggle />
               </template>
-              <template v-else>
-                <Button
-                  :key="index"
-                  type="navlink"
-                  :tag="link.type"
-                  :to="link.disabled ? '' : link.href"
-                  :disabled="link.disabled"
-                  :text="link.label"
-                  target="_blank"
-                  class="navigation-link onhover-line focus-visible" />
-              </template>
-            </template>
-          </nav>
+            </DropdownSelector>
+          </div>
         </div>
       </div>
 
@@ -60,8 +52,7 @@
           <Button
             type="cta"
             :tag="navCta.type"
-            :to="navCta.disabled ? '' : navCta.href"
-            :disabled="navCta.disabled"
+            :to="navCta.href"
             :text="navCta.text"
             class="nav-cta">
             <template #icon-before>
@@ -69,7 +60,7 @@
             </template>
           </Button>
           <div
-            :class="['hamburger-icon', 'focus-visible', {'close-icon' : navOpen}]"
+            :class="['hamburger-icon', 'focus-visible', { 'close-icon': navOpen }]"
             tabindex="0"
             @click="toggleNav"
             @keyup.enter="toggleNav">
@@ -78,17 +69,14 @@
       </div>
 
       <div class="col-12">
-        <Breadcrumbs
-          :breadcrumbs="breadcrumbs"
-          :class="{ hidden: breadcrumbs.length < 2 }" />
+        <Breadcrumbs :breadcrumbs="breadcrumbs" />
       </div>
 
-      <div :class="['social-icon-container', { 'visible': navOpen }]">
+      <div :class="['social-icon-container', { visibile: navOpen }]">
         <SocialIcons />
       </div>
 
     </div>
-
   </section>
 </template>
 
@@ -97,15 +85,15 @@
 import { mapGetters } from 'vuex'
 import Throttle from 'lodash/throttle'
 
-import DropdownSelector from '@/components/DropdownSelector'
 import SiteLogo from '@/components/SiteLogo'
-import SocialIcons from '@/components/SocialIcons'
-import SearchIcon from '@/components/icons/SearchIcon'
-import AddIcon from '@/components/icons/AddIcon'
+import DropdownSelector from '@/components/DropdownSelector'
+import Button from '@/modules/zero/core/components/Button'
 import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
 import FilterBar from '@/modules/zero/core/components/FilterBar'
-import Button from '@/modules/zero/core/components/Button'
+import SearchIcon from '@/components/icons/SearchIcon'
+import AddIcon from '@/components/icons/AddIcon'
 import Breadcrumbs from '@/modules/zero/core/components/Breadcrumbs'
+import SocialIcons from '@/components/SocialIcons'
 
 // =================================================================== Functions
 const checkScreenWidth = (instance) => {
@@ -116,18 +104,18 @@ const checkScreenWidth = (instance) => {
 
 // ====================================================================== Export
 export default {
-  name: 'Navigation',
+  name: 'SiteNavigation',
 
   components: {
-    DropdownSelector,
     SiteLogo,
-    SocialIcons,
-    AddIcon,
-    SearchIcon,
+    DropdownSelector,
+    Button,
     SelectorToggle,
     FilterBar,
-    Button,
-    Breadcrumbs
+    SearchIcon,
+    AddIcon,
+    Breadcrumbs,
+    SocialIcons
   },
 
   data () {
@@ -144,13 +132,20 @@ export default {
 
   computed: {
     ...mapGetters({
-      navigation: 'global/navigation',
       siteContent: 'global/siteContent',
-      filterPanelOpen: 'filters/filterPanelOpen',
       filterValue: 'core/filterValue'
     }),
     categories () {
       return this.siteContent.taxonomy.categories
+    },
+    navigation () {
+      return this.siteContent.general.navigation.nav_items
+    },
+    dropdown () {
+      return this.siteContent.general.navigation.nav_dropdown
+    },
+    navCta () {
+      return this.siteContent.general.navigation.header_cta.button
     },
     breadcrumbsMap () {
       return this.siteContent.general.navigation.breadcrumbs_map
@@ -182,24 +177,8 @@ export default {
       const forceVisible = this.forceNavigationVisible
       let compiled = ''
       if (forceVisible) { compiled += 'force-visible ' }
-      if (showBackground) { compiled += 'show-background ' }
+      if (showBackground) { compiled += 'show-background' }
       return compiled
-    },
-    dropdownOptions () {
-      return {
-        one: {
-          label: 'hola'
-        },
-        two: {
-          label: 'hi'
-        },
-        three: {
-          label: 'yoo'
-        }
-      }
-    },
-    navCta () {
-      return this.navigation.header_cta.button
     }
   },
 
@@ -313,12 +292,6 @@ export default {
   }
 }
 
-::v-deep .breadcrumbs {
-  &.hidden {
-    visibility: hidden;
-  }
-}
-
 #site-logo,
 .navigation-link {
   cursor: pointer;
@@ -356,7 +329,8 @@ export default {
     padding-left: 1rem;
   }
   @include small {
-    display: none;
+    display: block;
+    visibility: hidden;
     flex-direction: column;
     position: fixed;
     padding: 0 toRem(36);
@@ -367,10 +341,10 @@ export default {
     max-width: none;
     z-index: 100;
     &:not(.modal-open) {
-      display: none;
+      visibility: hidden;
     }
     &.modal-open {
-      display: block;
+      visibility: visible;
     }
   }
   &.modal-open {
@@ -379,7 +353,7 @@ export default {
   }
 }
 
-.links-container {
+.nav-items {
   flex: 1;
   display: flex;
   flex-direction: row;

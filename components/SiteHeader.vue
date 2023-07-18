@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 #site-header {
+  position: relative;
   padding-top: $navigationHeight;
   color: white;
   @include small {
