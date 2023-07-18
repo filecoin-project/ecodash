@@ -20,7 +20,7 @@ function transformObject(original) {
     name: original.name || '',
     org: (original.org && original.org.length > 0) ? original.org[0] : '',
     description: (original.description && original.description.short) ? original.description.short : '',
-    website: (original.primaryCta && original.primaryCta.url) ? original.primaryCta.url : '',
+    website: (original.primaryCta && original.primaryCta.url) ? original.primaryCta.url.toLowerCase() : '',
     social: [],
     taxonomy: [
       { category: "finance", subcategories: [] },
@@ -50,8 +50,10 @@ function transformObject(original) {
       if (platform && socialMediaPlatforms.includes(platform) && linkObject.links) {
         for (const link of linkObject.links) {
           let obj = {};
-          obj[platform.toLowerCase()] = link.url;
-          transformed.social.push(obj);
+          if (link.url && link.url.trim() !== "") {
+            obj[platform.toLowerCase()] = link.url.toLowerCase();
+            transformed.social.push(obj);
+          }
         }
       }
     }
