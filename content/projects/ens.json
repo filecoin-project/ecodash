@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "ens.svg",
+  "icon": "icon-ens.svg",
   "name": "ENS",
   "org": "",
   "description": "Decentralised name service for creating domains on the ETH blockchain.",

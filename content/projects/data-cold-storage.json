@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "data-cold-storage.png",
+  "icon": "icon-data-cold-storage.png",
   "name": "Data Cold Storage",
   "org": "SXX Future Data Company",
   "description": "Data disaster recovery and cold storage platform",

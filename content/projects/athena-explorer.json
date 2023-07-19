@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
+  "icon": "icon-athena-explorer.png",
   "name": "Athena Explorer",
   "org": "",
   "description": "Explorer and dashboard for the Filecoin network.",

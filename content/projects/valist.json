@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "ValistLogo256copy.png",
+  "icon": "icon-valist.png",
   "name": "Valist",
   "org": "",
   "description": "Software package distribution for web3-native support.",

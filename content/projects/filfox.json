@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "filfox-square.png",
+  "icon": "icon-filfox.png",
   "name": "Filfox",
   "org": "",
   "description": "A Filecoin data services platform.",

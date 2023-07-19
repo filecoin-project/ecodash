@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "mintgate.jpeg",
+  "icon": "icon-mintgate.jpeg",
   "name": "MintGate",
   "org": "MintKudos Inc.",
   "description": "A no-code store builder for NFTs and token gated content.",

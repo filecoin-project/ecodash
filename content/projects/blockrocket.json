@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "BlockRocket.png",
+  "icon": "icon-blockrocket.png",
   "name": "BlockRocket",
   "org": "",
   "description": "Blockchain engineering & consultancy for smart contracts + dApps.",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "nucypher-square.png",
+  "icon": "icon-nucypher.png",
   "name": "NuCypher",
   "org": "",
   "description": "Cryptographic based infrastructure for Privacy-Preserving application.",

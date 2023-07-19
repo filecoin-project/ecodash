@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "icon-filscan.png",
+  "icon": "icon-filescan.png",
   "name": "Filescan",
   "org": "",
   "description": "A block and message explorer.",

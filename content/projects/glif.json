@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "glif-icon.png",
+  "icon": "icon-glif.png",
   "name": "Glif",
   "org": "",
   "description": "Interoperable apps and tools for the Filecoin network.",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "icon-glif-allet.png",
+  "icon": "icon-glif-wallet.png",
   "name": "Glif Wallet",
   "org": "Glif",
   "description": "Web wallet for FIL",

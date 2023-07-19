@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "lighthouse-icon.png",
+  "icon": "icon-lighthouse-storage.png",
   "name": "Lighthouse Storage",
   "org": "",
   "description": "Perpetual storage on Filecoin network.",

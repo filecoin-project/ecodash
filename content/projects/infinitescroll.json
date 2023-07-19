@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "infinitescroll-square.png",
+  "icon": "icon-infinitescroll.png",
   "name": "InfiniteScroll",
   "org": "",
   "description": "Interoperable tools for the Filecoin network.",

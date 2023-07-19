@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "pinata-square.png",
+  "icon": "icon-pinata.png",
   "name": "Pinata",
   "org": "Pinata Technologies, Inc.",
   "description": "Pinata is a pinning service and gateway for IPFS.",

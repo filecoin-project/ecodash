@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "icon-starling-lab.png",
+  "icon": "icon-starling.png",
   "name": "Starling",
   "org": "The Starling Lab",
   "description": "A framework for data integrity",

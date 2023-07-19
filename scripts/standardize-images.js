@@ -31,7 +31,7 @@ fs.readdirSync(projectDir).forEach(file => {
     data.icon = newImageName;
 
     // Write updated data back to the file
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + "\n");
     
     console.log(`Updated image name in ${file} from ${oldImageName} to ${newImageName}`);
     

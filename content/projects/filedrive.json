@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "filedrive-logo.png",
+  "icon": "icon-filedrive.png",
   "name": "FileDrive",
   "org": "",
   "description": "Distributed storage & infrastructure based on IPFS & Filecoin.",

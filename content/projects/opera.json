@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "opera-square.png",
+  "icon": "icon-opera.png",
   "name": "Opera",
   "org": "Opera for Android",
   "description": "Opera adds built-in support for IPFS sites",

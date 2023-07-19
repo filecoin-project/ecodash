@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "origin-storage-icon.jpeg",
+  "icon": "icon-origin-storage.jpeg",
   "name": "Origin Storage",
   "org": "",
   "description": "Service platform for distributed storage infrastructure.",

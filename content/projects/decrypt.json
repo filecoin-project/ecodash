@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "decrypt-square.png",
+  "icon": "icon-decrypt.png",
   "name": "Decrypt",
   "org": "",
   "description": "Editorial website for Web3",

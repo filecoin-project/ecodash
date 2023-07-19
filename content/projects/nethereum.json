@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "nethereum-square.png",
+  "icon": "icon-nethereum.png",
   "name": "Nethereum",
   "org": "ConsenSys",
   "description": "An open source .NET integration library for blockchain",

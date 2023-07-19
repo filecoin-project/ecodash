@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "logo-glyph.png",
+  "icon": "icon-estuary.png",
   "name": "Estuary",
   "org": "Application Research Group",
   "description": "Makes it easy to make Filecoin storage deals and retrieve files.",

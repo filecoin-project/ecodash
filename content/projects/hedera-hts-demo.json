@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "hedera-hashgraph-hbar-logo.png",
+  "icon": "icon-hedera-hts-demo.png",
   "name": "Hedera HTS Demo",
   "org": "Hedera",
   "description": "Demo app that integrates Hedera and IPFS/Filecoin. ",
