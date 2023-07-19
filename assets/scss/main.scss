@@ -364,6 +364,10 @@ li {
   z-index: 100;
 }
 
+.page.container {
+  position: relative;
+}
+
 [class~="grid"],
 [class*="grid-"],
 [class*="grid_"] {

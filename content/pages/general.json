@@ -14,7 +14,7 @@
       "type": "a",
       "href": "https://filecoin.io"
     },
-    "header": [
+    "nav_items": [
       {
         "type": "a",
         "href": "https://filecoin.io/store/",
@@ -29,35 +29,37 @@
         "type": "a",
         "href": "https://filecoin.io/build/",
         "label": "Build"
-      },
-      {
-        "type": "a",
-        "href": "#",
-        "label": "Explore Network",
-        "links": [
-          {
-            "type": "a",
-            "href": "https://filfox.info/en",
-            "label": "Filfox"
-          },
-          {
-            "type": "a",
-            "href": "https://filescan.io/scan",
-            "label": "Filescan"
-          },
-          {
-            "type": "a",
-            "href": "https://filscout.io/en/",
-            "label": "Filscout"
-          },
-          {
-            "type": "a",
-            "href": "https://spacegap.github.io/#/",
-            "label": "Spacegap"
-          }
-        ]
       }
     ],
+    "nav_dropdown": {
+      "label": "Explore Network",
+      "links": [
+        {
+          "type": "a",
+          "href": "https://filfox.info/en",
+          "label": "Filfox",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://filescan.io/scan",
+          "label": "Filescan",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://filscout.io/en/",
+          "label": "Filscout",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://spacegap.github.io/#/",
+          "label": "Spacegap",
+          "target": "_blank"
+        }
+      ]
+    },
     "header_cta": {
       "button": {
         "type": "a",

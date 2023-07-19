@@ -103,7 +103,6 @@ const calculateSegmentAndLabelData = (dummies, instance, next) => {
       offset: Math.random() * instance.random
     }
     Object.assign(instance.segments[i].label, dimensions)
-
     const num = instance.segments[i].count
     const percent = num / instance.totalProjects
     instance.segments[i].segment = {
@@ -111,7 +110,6 @@ const calculateSegmentAndLabelData = (dummies, instance, next) => {
       ihw: (percent * 572) / 2
     }
   }
-
   return next()
 }
 
@@ -130,7 +128,6 @@ const calculateSlotsData = (instance, next) => {
         : 1000,
       occupied: false
     }
-
     const hasSecondNeighbor = i < len - 4
     items[i].segment.s2 = {
       length: hasSecondNeighbor
@@ -144,7 +141,6 @@ const calculateSlotsData = (instance, next) => {
         : 1000,
       occupied: false
     }
-
     const hasThirdNeighbor = i < len - 6
     items[i].segment.s3 = {
       length: hasThirdNeighbor
@@ -161,7 +157,6 @@ const calculateSlotsData = (instance, next) => {
       occupied: false
     }
   }
-
   instance.measured = true
   return next()
 }
@@ -182,10 +177,8 @@ const positionSecondTierLabels = (instance, n, next) => {
   const start = (segments.length - 1 - (!modulo ? n : n ? 0 : 1))
   for (let i = start; n <= i; i = i - 2) {
   // for (let i = n; i < segments.length; i = i + 2) {
-
     const h = Math.max(i - 2, n)
     const j = Math.min(i + 2, start)
-
     if (
       segments[i].label.width < segments[i].segment.s2.length &&
       !segments[i].segment.s1.occupied &&
@@ -207,7 +200,6 @@ const positionThirdTierLabels = (instance, n, next) => {
     const h = Math.max(i - 2, n)
     const j = Math.min(i + 2, end)
     const k = Math.min(i + 4, end)
-
     if (
       segments[i].label.width < segments[i].segment.s3.length &&
       !segments[i].segment.s1.occupied &&
@@ -222,16 +214,13 @@ const positionThirdTierLabels = (instance, n, next) => {
 
 const reOrderBasedOnScore = (instance, next) => {
   const segments = instance.segments
-
   const ordered = []
   for (let i = 0; i < segments.length; i++) {
     const score = -1 * (segments[i].segment.ihw - segments[i].label.width)
     instance.segments[i].score = score
   }
-
   const ascending = CloneDeep(instance.segments)
   ascending.sort((a, b) => a.score - b.score)
-
   let last, first
   for (let i = 0; i < ascending.length; i++) {
     if (ascending[i].hasOwnProperty('priority')) {
@@ -249,13 +238,10 @@ const reOrderBasedOnScore = (instance, next) => {
       }
     }
   }
-
   const l = ascending.length
   const s = Math.ceil(l / 2)
-
   const firstHalf = ascending.splice(0, s)
   ascending.reverse()
-
   for (let i = 0; i < s; i = i + 2) {
     if (typeof ascending[i] !== 'undefined') {
       ordered.push(ascending[i])
@@ -271,10 +257,8 @@ const reOrderBasedOnScore = (instance, next) => {
     }
   }
   ordered.reverse()
-
   if (first) { ordered.unshift(first[0]) }
   if (last) { ordered.push(last[0]) }
-
   instance.measured = true
   instance.segments = ordered
   const col = CloneDeep(instance.segments)
@@ -313,14 +297,14 @@ export default {
   computed: {
     ...mapGetters({
       siteContent: 'global/siteContent',
-      segmentCollection: 'core/segmentCollection'
+      segmentCollection: 'core/segmentCollection',
+      projects: 'projects/projects'
     }),
     totalProjects () {
-      let total = 0
-      for (let i = 0; i < this.chartItems.length; i++) {
-        total = total + this.chartItems[i].count
+      if (Array.isArray(this.projects)) {
+        return this.projects.length
       }
-      return total
+      return 0
     }
   },
 

@@ -173,6 +173,7 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 #site-footer {
+  position: relative;
   padding: 5.25rem 0;
   @include small {
     padding: 2rem 0;
@@ -185,6 +186,7 @@ export default {
   padding: toRem(59) 0;
   margin-top: 3rem;
   margin-bottom: toRem(52);
+  isolation: isolate;
   @include small {
     padding: toRem(40) toRem(22);
     padding-bottom: toRem(34);

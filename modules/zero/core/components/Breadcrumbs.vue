@@ -1,18 +1,21 @@
 <template>
-  <section class="breadcrumbs">
+  <section :class="['breadcrumbs', { hidden: !links.length }]">
 
-    <component
-      :is="link.type"
-      v-for="(link, index) in breadcrumbs"
-      :key="index"
+    <nuxt-link
+      v-for="link in links"
+      :key="`breadcrumb-${link.label}`"
       :to="link.disabled ? '' : { path: link.href, query: link.query || false }"
       :href="link.disabled ? '' : link.href + $CompileQueryString(link.query)"
       :disabled="link.disabled"
       :target="link.target"
-      :class="[link.type === 'div' ? 'breadcrumb-button' : 'breadcrumb-link', 'focus-visible']">
+      class="breadcrumb-link focus-visible">
       <span class="label">{{ link.label }}</span>
       <span class="divider">/</span>
-    </component>
+    </nuxt-link>
+
+    <div class="breadcrumb-button">
+      <span>{{ current }}</span>
+    </div>
 
   </section>
 </template>
@@ -25,7 +28,33 @@ export default {
   props: {
     breadcrumbs: {
       type: Array,
-      required: true
+      required: true,
+      default: () => []
+    }
+  },
+
+  data () {
+    return {
+      links: [],
+      current: ''
+    }
+  },
+
+  watch: {
+    breadcrumbs () {
+      this.setBreadcrumbs()
+    }
+  },
+
+  mounted () {
+    this.setBreadcrumbs()
+  },
+
+  methods: {
+    setBreadcrumbs () {
+      this.links = this.breadcrumbs.filter(item => item.type === 'nuxt-link')
+      const current = this.breadcrumbs.find(item => item.type === 'div')
+      this.current = current ? current.label : ''
     }
   }
 }
@@ -34,11 +63,15 @@ export default {
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
 .breadcrumbs {
+  display: flex;
   padding-top: 1.125rem;
   font-size: toRem(13);
   font-weight: 450;
   line-height: leading(18, 13);
   letter-spacing: 0.26px;
+  &.hidden {
+    visibility: hidden;
+  }
 }
 
 .breadcrumb-link,
