@@ -35,7 +35,7 @@
             text="Go"
             :to="url"
             target="_blank"
-            class="external-link">
+            class="external-link scale-up">
             <template #icon-after>
               ↗
             </template>
@@ -43,7 +43,7 @@
           <Button
             tag="button"
             text="More"
-            :class="['see-more', { expanded }]"
+            :class="['see-more', 'scale-up', { expanded }]"
             @clicked="toggleExpanded">
             <template #icon-after>
               <SelectorToggle />
@@ -436,6 +436,14 @@ export default {
     &:after {
       transition: border 0ms ease;
     }
+  }
+}
+
+.scale-up {
+  transition: 200ms ease;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
