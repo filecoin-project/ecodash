@@ -2,7 +2,7 @@
 /*
 //  This script is used to inject subcsategories into projects in the repo, based on a list
 //  This script is intended to be run from the root of the repo
-//  Usage (node 16): `node inject-categories.js`
+//  Usage (node 16): `node scripts/inject-categories.js`
 //
 */
 

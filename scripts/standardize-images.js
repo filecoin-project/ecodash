@@ -2,7 +2,7 @@
 /*
 //  This script is used to make all the images in the projects directory follow a standard naming convention
 //  This script is intended to be run from the root of the repo
-//  Usage (node 16): `node standardize-images.js`
+//  Usage (node 16): `node scripts/standardize-images.js`
 //
 */
 
