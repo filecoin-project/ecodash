@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "privacy-and-security"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

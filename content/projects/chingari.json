@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "photo-and-video"
+      ]
     },
     {
       "category": "tooling-and-productivity",

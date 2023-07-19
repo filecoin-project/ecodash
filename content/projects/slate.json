@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "ai-productivity-and-utilities"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

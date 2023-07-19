@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "communication-and-social"
+      ]
     },
     {
       "category": "tooling-and-productivity",

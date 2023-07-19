@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "publishing-and-news"
+      ]
     },
     {
       "category": "tooling-and-productivity",
