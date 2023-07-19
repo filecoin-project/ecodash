@@ -30,7 +30,9 @@
     },
     {
       "category": "education-science-and-public-goods",
-      "subcategories": []
+      "subcategories": [
+        "governance-daos-and-public-goods"
+      ]
     }
   ],
   "tags": [

@@ -10,7 +10,7 @@
 
 // Set this flag to true for Option 1 (overwrite all project category objects)
 // or false for Option 2 (only inject no subcategory exists for a particular project)
-const OVERWRITE_SUBCATEGORIES = true;
+const OVERWRITE_SUBCATEGORIES = false;
 
 const fs = require('fs');
 const path = require('path');
