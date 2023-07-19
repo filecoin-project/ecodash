@@ -8,6 +8,10 @@
 
 'use strict';
 
+// Set this flag to true for Option 1 (overwrite all project category objects)
+// or false for Option 2 (only inject no subcategory exists for a particular project)
+const OVERWRITE_SUBCATEGORIES = true;
+
 const fs = require('fs');
 const path = require('path');
 
@@ -144,7 +148,9 @@ function processFile(filename, filePath) {
   // Add the subcategory to the appropriate category in the taxonomy
   for (const catObj of projectJson.taxonomy) {
     if (catObj.category === category) {
-      catObj.subcategories.push(subcategory);
+      if (OVERWRITE_SUBCATEGORIES || (!OVERWRITE_SUBCATEGORIES && catObj.subcategories.length === 0)) {
+        catObj.subcategories = [subcategory];
+      }
       break;
     }
   }
