@@ -98,6 +98,7 @@ export default {
   transition: width 250ms ease-in;
   @include small {
     height: toRem(29);
+    padding: toRem(2) toRem(9);
   }
   &:before,
   &:after {
@@ -192,6 +193,13 @@ export default {
   letter-spacing: 0.32px;
   transition: 250ms ease-out;
   -webkit-appearance: none;
+  @include small {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: toRem(13);
+    font-style: italic;
+    line-height: leading(21, 13);
+    letter-spacing: 0.36px;
+  }
   &:hover, &:active, &:focus {
     transition: 250ms ease-in;
   }

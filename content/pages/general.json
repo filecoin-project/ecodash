@@ -42,8 +42,8 @@
         },
         {
           "type": "a",
-          "href": "https://filescan.io/scan",
-          "label": "Filescan",
+          "href": "https://filscan.io/scan",
+          "label": "Filscan",
           "target": "_blank"
         },
         {
@@ -56,6 +56,24 @@
           "type": "a",
           "href": "https://spacegap.github.io/#/",
           "label": "Spacegap",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://green.filecoin.io/",
+          "label": "Filecoin Green",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://dashboard.starboard.ventures/",
+          "label": "Starboard",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://filecoin.io/",
+          "label": "Filecoin.io",
           "target": "_blank"
         }
       ]

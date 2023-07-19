@@ -56,11 +56,12 @@
 
       <div class="view-all-wrapper">
         <Button
+          v-if="slug"
           type="cta"
-          tag="button"
+          tag="nuxt-link"
+          :to="`/category/${slug}`"
           text="View Category"
-          class="view-all-button"
-          @clicked="jump2Filters" />
+          class="view-all-button" />
       </div>
 
     </div>
@@ -130,6 +131,9 @@ export default {
     },
     description () {
       return this.currentCategory.description ? this.currentCategory.description : ''
+    },
+    slug () {
+      return this.currentCategory.slug ? this.currentCategory.slug : ''
     },
     logos () {
       if (this.currentCategory.hasOwnProperty('logos')) {
@@ -277,6 +281,7 @@ export default {
 }
 
 .view-all-button {
+  display: block;
   z-index: 1;
   ::v-deep .button-content {
     .text {
