@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2019,
+  "icon": "filedrive-logo.png",
+  "name": "FileDrive",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Distributed storage & infrastructure based on IPFS & Filecoin.",
+  "website": "//filedrive.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filedrive-team"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "archival",
+    "public data",
+    "web publishing",
+    "library sdk",
+    "fvm"
   ]
 }

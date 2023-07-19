@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "digital-mob-square.jpeg",
+  "name": "Digital MOB",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Multidisciplinary software development company.",
+  "website": "//github.com/digital-mob",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/digital-mob"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "collaborations",
+    "other",
+    "library sdk",
     "web app",
-    "none"
+    "fvm",
+    "grant sponsorship"
   ]
 }

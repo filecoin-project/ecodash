@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2019,
+  "icon": "orbitdb-square.png",
+  "name": "OrbitDB",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "A serverless, distributed, peer-to-peer database.",
+  "website": "//orbitdb.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/orbitdb/orbit-db"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "developer tools",
+    "data markets",
+    "verifiable storage",
+    "public data",
+    "library sdk",
+    "ipfs http client"
   ]
 }

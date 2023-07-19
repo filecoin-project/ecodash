@@ -1,16 +1,12 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-magic-eden.png",
+  "name": "Magic Eden",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "The leading NFT marketplace on Solana.",
+  "website": "//magiceden.io",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "storage apps clients",
+    "nfts",
     "web app",
-    "none"
+    "nft storage"
   ]
 }

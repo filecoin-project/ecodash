@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "CID.png",
+  "name": "CID Gravity",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Pricing & client management for Filecoin miners.",
+  "website": "//cidgravity.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/cidgravity/cidgravity-x"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,12 @@
     }
   ],
   "tags": [
-    "network tools",
+    "storage apps clients",
+    "collaborations",
+    "data markets",
     "consumer storage",
-    "web app",
-    "none"
+    "infrastructure",
+    "none",
+    "accelerator"
   ]
 }

@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "icon": "hedera-hashgraph-hbar-logo.png",
+  "name": "Hedera HTS Demo",
+  "org": "Hedera",
+  "description": "Demo app that integrates Hedera and IPFS/Filecoin. ",
+  "website": "//hedera.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/hashgraph/hedera-hts-demo"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "storage apps clients",
+    "nfts",
     "web app",
-    "none"
+    "nft storage"
   ]
 }

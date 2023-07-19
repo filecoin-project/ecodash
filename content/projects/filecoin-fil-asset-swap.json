@@ -1,16 +1,12 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "since": 2020,
+  "icon": "icon-darma-capital.svg",
+  "name": "Filecoin FIL asset swap",
+  "org": "DARMA Capital",
+  "description": "Enabling miners to access to the FIL token & avoid high lending rates.",
+  "website": "//darma.capital",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "other",
+    "none",
     "none"
   ]
 }

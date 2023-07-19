@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "starboard-icon.jpeg",
+  "name": "Starboard Ventures",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Investing in and building data economies",
+  "website": "//starboard.ventures",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/starboard-ventures"
     }
   ],
   "taxonomy": [
@@ -35,8 +35,7 @@
   ],
   "tags": [
     "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "developer tools",
+    "fvm"
   ]
 }

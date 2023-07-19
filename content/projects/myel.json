@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-myel.png",
+  "name": "Myel",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Community Powered Content Delivery Network.",
+  "website": "//myel.network",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/myelnet"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "developer tools",
+    "other",
+    "network",
     "none"
   ]
 }

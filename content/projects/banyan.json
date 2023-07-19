@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2022,
+  "icon": "banyan-icon.png",
+  "name": "Banyan",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Aggregates storage providers & introduces crypto economic incentives.",
+  "website": "//banyan.computer",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/banyancomputer"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "data markets",
+    "fvm"
   ]
 }

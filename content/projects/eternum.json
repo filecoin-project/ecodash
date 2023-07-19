@@ -1,16 +1,12 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "icon": "icon-eternum.svg",
+  "name": "Eternum",
+  "org": "Stochastic Technologies",
+  "description": "Simple & easy-to-use IPFS pinning service. ",
+  "website": "//eternum.io",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,8 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
+    "developer tools",
     "consumer storage",
+    "api",
     "web app",
     "none"
   ]

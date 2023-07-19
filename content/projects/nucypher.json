@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "nucypher-square.png",
+  "name": "NuCypher",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Cryptographic based infrastructure for Privacy-Preserving application.",
+  "website": "//nucypher.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/nucypher"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "other",
+    "network",
     "none"
   ]
 }

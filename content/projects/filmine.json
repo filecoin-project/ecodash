@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2022,
+  "icon": "filmine-icon.png",
+  "name": "Filmine",
+  "org": "Alt Labs",
+  "description": "Compute and storage network hardware resources.",
+  "website": "//filmine.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filmineio"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "developer tools",
+    "infrastructure",
+    "fvm"
   ]
 }

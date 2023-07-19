@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2019,
+  "icon": "logo1.png",
+  "name": "Venus (IPFS Force)",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Venus is an implementation of the Filecoin Distributed Storage Network",
+  "website": "//venus.filecoin.io/ ",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filecoin-project/venus"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "collaborations",
+    "general storage",
+    "library sdk",
+    "fvm"
   ]
 }

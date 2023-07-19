@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "kotal.jpeg",
+  "name": "Kotal",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "All-in-one platform to deploy Blockchain infrastructure.",
+  "website": "//kotal.co",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/kotalco"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "developer tools",
+    "general storage",
+    "infrastructure",
+    "library sdk",
+    "hosted service",
     "none"
   ]
 }

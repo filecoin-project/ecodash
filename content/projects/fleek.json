@@ -1,12 +1,16 @@
-{  
+{
   "display": true,
   "since": 2020,
   "icon": "fleek.png",
   "name": "Fleek",
-  "org": [],
+  "org": "",
   "description": "A platform for building sites and apps on the Dweb.",
   "website": "//fleek.co",
-  "social": [ { "twitter": "http://..." }, {"github": "http://..."} ],
+  "social": [
+    {
+      "github": "//github.com/fleekhq"
+    }
+  ],
   "taxonomy": [
     {
       "category": "finance",
@@ -18,7 +22,7 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": ["developer-tools-and-other"]
+      "subcategories": []
     },
     {
       "category": "storage-and-cloud-services",
@@ -29,5 +33,13 @@
       "subcategories": []
     }
   ],
-  "tags": ["foo", "bar", "fvm"]
+  "tags": [
+    "storage apps clients",
+    "web publishing",
+    "library sdk",
+    "hosted service",
+    "ipfs http client",
+    "fleek space daemon",
+    "fvm"
+  ]
 }

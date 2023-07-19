@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2019,
+  "icon": "icon-starling-lab.png",
+  "name": "Starling",
+  "org": "The Starling Lab",
+  "description": "A framework for data integrity",
+  "website": "//starlinglab.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filecoin-project/starling"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "archival",
+    "verifiable storage",
+    "hosted service",
+    "none",
     "none"
   ]
 }

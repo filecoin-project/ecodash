@@ -1,16 +1,12 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-mona.png",
+  "name": "MoNa",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "A virtual metaverse gallery space.",
+  "website": "//mona.gallery",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "storage apps clients",
+    "nfts",
     "web app",
-    "none"
+    "nft storage"
   ]
 }

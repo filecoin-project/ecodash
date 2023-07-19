@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "Karon.png",
+  "name": "Kanon",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "NFT art vault and community.",
+  "website": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/kanonart"
     }
   ],
   "taxonomy": [
@@ -34,8 +34,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "storage apps clients",
+    "nfts",
     "web app",
     "none"
   ]

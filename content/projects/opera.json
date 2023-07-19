@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "opera-square.png",
+  "name": "Opera",
+  "org": "Opera for Android",
+  "description": "Opera adds built-in support for IPFS sites",
+  "website": "//play.google.com/store/apps/details?id=com.opera.browser",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/ipfs/in-web-browsers#opera"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "other",
+    "hosted service",
+    "none",
     "none"
   ]
 }

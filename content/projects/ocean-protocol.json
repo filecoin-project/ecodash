@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2019,
+  "icon": "Subtract.png",
+  "name": "Ocean Protocol",
+  "org": "Ocean Protocol Foundation Ltd.",
+  "description": "Tools for the Web3 Data Economy",
+  "website": "//oceanprotocol.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/oceanprotocol"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
+    "storage apps clients",
     "consumer storage",
-    "web app",
+    "library sdk",
+    "network",
     "none"
   ]
 }

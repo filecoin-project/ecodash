@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "icon-numbers-protocol.png",
+  "name": "Numbers Protocol",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "A Web3 Photo Network.",
+  "website": "//numbersprotocol.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/numbersprotocol"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "collaborations",
+    "verifiable storage",
+    "api",
+    "mobile app",
     "web app",
-    "none"
+    "starling"
   ]
 }

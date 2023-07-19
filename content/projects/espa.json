@@ -1,16 +1,12 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-espa.png",
+  "name": "ESPA",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "The Filecoin Storage Provider Accelerator.",
+  "website": "//web3espa.io",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "other",
+    "none",
     "none"
   ]
 }

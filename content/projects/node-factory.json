@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "icon-node-factory.png",
+  "name": "Node Factory",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Blockchain R&D company that turns ideas into reliable solutions.",
+  "website": "//nodefactory.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/nodefactoryio"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "developer tools",
+    "other",
+    "hosted service",
+    "metamask filecoin snap",
+    "grant sponsorship"
   ]
 }

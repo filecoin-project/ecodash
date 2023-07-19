@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "ens.svg",
+  "name": "ENS",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Decentralised name service for creating domains on the ETH blockchain.",
+  "website": "//ens.domains",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/ensdomains"
     }
   ],
   "taxonomy": [
@@ -34,8 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "collaborations",
+    "web publishing",
+    "hosted service",
     "web app",
     "none"
   ]

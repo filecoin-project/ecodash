@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2019,
+  "icon": "metamask.png",
+  "name": "MetaMask",
+  "org": "ConsenSys",
+  "description": "Web3 wallet and gateway to the decentralized web",
+  "website": "//metamask.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/metamask"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "token finance",
+    "other",
+    "mobile app",
     "web app",
-    "none"
+    "metamask filecoin snap"
   ]
 }

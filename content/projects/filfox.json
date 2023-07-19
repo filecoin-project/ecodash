@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "filfox-square.png",
+  "name": "Filfox",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "A Filecoin data services platform.",
+  "website": "//filfox.info/en",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filfox"
     }
   ],
   "taxonomy": [
@@ -35,7 +35,7 @@
   ],
   "tags": [
     "network tools",
-    "consumer storage",
+    "other",
     "web app",
     "none"
   ]

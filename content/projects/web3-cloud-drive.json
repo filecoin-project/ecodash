@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2022,
+  "icon": "web3-cloud-drive.png",
+  "name": "Web3 Cloud Drive",
+  "org": "SXX Future Data Company",
+  "description": "Decentralized file storage application",
+  "website": "//sxxfuture.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/sxxfuture-official"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,14 @@
     }
   ],
   "tags": [
-    "network tools",
+    "storage apps clients",
+    "video",
+    "verifiable storage",
+    "general storage",
     "consumer storage",
-    "web app",
+    "archival",
+    "mobile app",
+    "estuary",
     "none"
   ]
 }

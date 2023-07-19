@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "Group721.png",
+  "name": "Jigstack",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "A decentralized token launch platform.",
+  "website": "//jigstack.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/jigstack-dev"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "token finance",
+    "nfts",
     "web app",
-    "none"
+    "nft storage"
   ]
 }

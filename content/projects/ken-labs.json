@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2022,
+  "icon": "kenlabs-icon.png",
+  "name": "KEN Labs",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Open source ledger database",
+  "website": "//kencloud.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/kenlabs"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,7 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "fvm"
   ]
 }

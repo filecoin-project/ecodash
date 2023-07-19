@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "livepee.png",
+  "name": "Livepeer",
+  "org": "Livepeer, Inc.",
+  "description": "Decentralized video streaming protocol & network.",
+  "website": "//livepeer.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/livepeer"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "developer tools",
+    "video",
+    "network",
+    "library sdk",
     "none"
   ]
 }

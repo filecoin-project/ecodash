@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "1920x1080-LOGO.png",
+  "name": "NFTBase",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "NFT marketplace for collectibles, gaming items, and more.",
+  "website": "//nftbase.ai",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/nftbase"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "storage apps clients",
+    "nfts",
     "web app",
-    "none"
+    "nft storage"
   ]
 }

@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "opgames-square.jpg",
+  "name": "OPgames",
+  "org": "Outplay Games",
+  "description": "A platform and protocol for turning games into NFTs",
+  "website": "//opgames.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/alto-io/game3.js"
     }
   ],
   "taxonomy": [
@@ -34,8 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "collaborations",
+    "games",
+    "nfts",
     "web app",
     "none"
   ]

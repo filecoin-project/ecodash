@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "icon": "Zondaxlogo.png",
+  "name": "Zondax",
+  "org": "Zondax",
+  "description": "An engineering partner for blockchain and deep tech solutions.",
+  "website": "//zondax.ch",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/zondax"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "developer tools",
+    "other",
+    "library sdk",
+    "zondax signing tools",
+    "fvm"
   ]
 }

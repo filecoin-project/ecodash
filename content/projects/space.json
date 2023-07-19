@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "WeChat5ae8f64079ea48f7ef4797415893d64b.png",
+  "name": "Space",
+  "org": "Fleek",
+  "description": "User-controlled, encrypted file storage & sharing platform.",
+  "website": "//space.storage",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/fleekhq/space-web"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
+    "developer tools",
     "consumer storage",
-    "web app",
+    "library sdk",
     "none"
   ]
 }

@@ -1,16 +1,12 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "since": 2020,
+  "icon": "imToken-Avatar.png",
+  "name": "iamToken",
+  "org": "imToken",
+  "description": "A decentralized mobile light digital asset management tool.",
+  "website": "//token.im/\nhttps://docs.token.im",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,12 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "token finance",
+    "other",
+    "api",
+    "mobile app",
+    "library sdk",
+    "none",
+    "series n"
   ]
 }

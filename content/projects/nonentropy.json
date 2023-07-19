@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-nonentropy.png",
+  "name": "NonEntropy",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "A Web 3 storage infrastructure platform",
+  "website": "//nonentropy.jp",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/nonentropy-japan"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "other",
+    "infrastructure",
     "none"
   ]
 }

@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "icon-filswan.png",
+  "name": "FilSwan",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Distributed data and computing platform.",
+  "website": "//filswan.com/#/dashboard\nhttps://docs.filswan.com",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filswan"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,10 @@
     }
   ],
   "tags": [
-    "network tools",
+    "storage apps clients",
     "consumer storage",
-    "web app",
-    "none"
+    "data markets",
+    "infrastructure",
+    "fvm"
   ]
 }

@@ -1,16 +1,12 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2022,
+  "icon": "magmo-icon.jpeg",
+  "name": "Magmo",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "State payment channels for retrieval markets.",
+  "website": "//magmo.com/, https://statechannels.org",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "token finance",
+    "infrastructure",
+    "fvm"
   ]
 }

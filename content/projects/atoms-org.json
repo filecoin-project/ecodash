@@ -1,16 +1,12 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "4-ZuTQNE_400x400.jpg",
+  "name": "Atoms.org",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "Smart contract systems for a flourishing academic research economy.",
+  "website": "//atoms.org",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "collaborations",
+    "public data",
+    "network",
     "none"
   ]
 }

@@ -1,16 +1,12 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "icon-sinso.png",
+  "name": "Sinso",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
-  "social": [
-    {
-      "github": "//github.com/athenaexplorer"
-    }
-  ],
+  "description": "The leading medical imaging SaaS cloud service provider.",
+  "website": "//sinso.io",
+  "social": [],
   "taxonomy": [
     {
       "category": "finance",
@@ -34,9 +30,10 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
+    "developer tools",
+    "general storage",
+    "library sdk",
+    "api",
     "none"
   ]
 }

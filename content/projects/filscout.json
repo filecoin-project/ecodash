@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "icon-filscout.png",
+  "name": "Filscout",
+  "org": "IPFS Union",
+  "description": "A Filecoin network browser.",
+  "website": "//filscout.com/en",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/filecoin-project/community/blob/master/projects/application/filscout-en.md"
     }
   ],
   "taxonomy": [
@@ -35,7 +35,7 @@
   ],
   "tags": [
     "network tools",
-    "consumer storage",
+    "other",
     "web app",
     "none"
   ]

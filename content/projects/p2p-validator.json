@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2020,
+  "icon": "icon-p2p-validator.svg",
+  "name": "P2P Validator",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Secure, non-custodial staking & network validation.",
+  "website": "//p2p.org",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/p2p-org"
     }
   ],
   "taxonomy": [
@@ -34,8 +34,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
+    "collaborations",
+    "other",
     "web app",
     "none"
   ]

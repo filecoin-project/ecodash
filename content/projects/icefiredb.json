@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2022,
+  "icon": "icefiredb-icon.png",
+  "name": "IceFireDB",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Developer-friendly database.",
+  "website": "//icefiredb.xyz",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/icefiredb"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,6 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "fvm"
   ]
 }

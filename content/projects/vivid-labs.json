@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
-  "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "since": 2020,
+  "icon": "Logo.jpeg",
+  "name": "Vivid Labs",
+  "org": "Live Planet, Inc.",
+  "description": "Next-generation publishing platform for video & multimedia NFTs.",
+  "website": "//videocoin.io",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/videocoin"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,11 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "video",
+    "nfts",
+    "api",
+    "hosted service",
+    "nft storage"
   ]
 }

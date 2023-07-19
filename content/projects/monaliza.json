@@ -1,14 +1,14 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "icon": "mona-lisa.svg",
+  "name": "Monaliza",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Mint NFTs directly from your Instagram content.",
+  "website": "//monaliza.app",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/monalisanft/nfthack"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,9 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "nfts",
+    "api",
+    "nft storage"
   ]
 }

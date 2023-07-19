@@ -1,14 +1,14 @@
 {
   "display": true,
-  "since": 2021,
-  "icon": "athena-square.png",
-  "name": "Athena Explorer",
+  "since": 2022,
+  "icon": "bela-supernova.png",
+  "name": "Bela Supernova",
   "org": "",
-  "description": "Explorer and dashboard for the Filecoin network.",
-  "website": "//atpool.com/en-us",
+  "description": "Facilitates blockchain integration into daily solutions.",
+  "website": "//bsn.si/blockchain ",
   "social": [
     {
-      "github": "//github.com/athenaexplorer"
+      "github": "//github.com/bsn-si/ipehr-gateway"
     }
   ],
   "taxonomy": [
@@ -34,9 +34,8 @@
     }
   ],
   "tags": [
-    "network tools",
-    "consumer storage",
-    "web app",
-    "none"
+    "storage apps clients",
+    "health",
+    "fvm"
   ]
 }
