@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "curio-icon.jpeg",
+  "icon": "icon-curio.jpeg",
   "name": "Curio",
   "org": "Curio Digital Inc",
   "description": "NFT marketplace for entertainment, helping brands monetize their IP.",
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
     {
       "category": "tooling-and-productivity",

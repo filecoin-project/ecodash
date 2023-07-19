@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "digital-mob-square.jpeg",
+  "icon": "icon-digital-mob.jpeg",
   "name": "Digital MOB",
   "org": "",
   "description": "Multidisciplinary software development company.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

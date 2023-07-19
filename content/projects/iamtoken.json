@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "imToken-Avatar.png",
+  "icon": "icon-iamtoken.png",
   "name": "iamToken",
   "org": "imToken",
   "description": "A decentralized mobile light digital asset management tool.",
@@ -18,7 +18,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

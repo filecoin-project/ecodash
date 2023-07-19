@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "thegraph-square.png",
+  "icon": "icon-the-graph.png",
   "name": "The Graph",
   "org": "Graph Foundation",
   "description": "Indexing protocol for querying networks like Ethereum and IPFS.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

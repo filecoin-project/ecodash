@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "icon-darma-capital.svg",
+  "icon": "icon-filecoin-fil-asset-swap.svg",
   "name": "Filecoin FIL asset swap",
   "org": "DARMA Capital",
   "description": "Enabling miners to access to the FIL token & avoid high lending rates.",

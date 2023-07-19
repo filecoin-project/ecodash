@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "MoNA_Square_Icon-wht.png",
+  "icon": "icon-the-mona.png",
   "name": "The MoNA",
   "org": "The MoNA",
   "description": "A metaverse society for high-end 3D art.",
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
     {
       "category": "tooling-and-productivity",

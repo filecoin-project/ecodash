@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "MevsySX_400x400.jpg",
+  "icon": "icon-chingari.jpg",
   "name": "Chingari",
   "org": "",
   "description": "Unique and fun short video app.",
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "photo-and-video"
+      ]
     },
     {
       "category": "tooling-and-productivity",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "icon-filscan.png",
+  "icon": "icon-filescan.png",
   "name": "Filescan",
   "org": "",
   "description": "A block and message explorer.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

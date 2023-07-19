@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "polyphene-icon.jpeg",
+  "icon": "icon-polyphene.jpeg",
   "name": "Polyphene",
   "org": "",
   "description": "Cross-chain communication and Layer 2 network solutions.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "filfox-square.png",
+  "icon": "icon-filfox.png",
   "name": "Filfox",
   "org": "",
   "description": "A Filecoin data services platform.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

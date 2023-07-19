@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "banyan-icon.png",
+  "icon": "icon-banyan.png",
   "name": "Banyan",
   "org": "",
   "description": "Aggregates storage providers & introduces crypto economic incentives.",
@@ -26,7 +26,9 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "enterprise-solutions"
+      ]
     },
     {
       "category": "education-science-public-goods",

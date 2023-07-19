@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "kotal.jpeg",
+  "icon": "icon-kotal.jpeg",
   "name": "Kotal",
   "org": "",
   "description": "All-in-one platform to deploy Blockchain infrastructure.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

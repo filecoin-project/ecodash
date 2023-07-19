@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "ledger-icon.png",
+  "icon": "icon-ledger.png",
   "name": "Ledger",
   "org": "",
   "description": "Trusted hardware wallet for blockchain applications.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

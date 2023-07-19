@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "1628149169831.png",
+  "icon": "icon-slate.png",
   "name": "Slate",
   "org": "Applications Research Group",
   "description": "Decentralized file sharing network",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "ai-productivity-and-utilities"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

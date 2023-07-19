@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "icon-glif-allet.png",
+  "icon": "icon-glif-wallet.png",
   "name": "Glif Wallet",
   "org": "Glif",
   "description": "Web wallet for FIL",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

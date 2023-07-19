@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "icefiredb-icon.png",
+  "icon": "icon-icefiredb.png",
   "name": "IceFireDB",
   "org": "",
   "description": "Developer-friendly database.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "metamask.png",
+  "icon": "icon-metamask.png",
   "name": "MetaMask",
   "org": "ConsenSys",
   "description": "Web3 wallet and gateway to the decentralized web",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

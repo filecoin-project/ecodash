@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "logo1.png",
+  "icon": "icon-venus-ipfs-force.png",
   "name": "Venus (IPFS Force)",
   "org": "",
   "description": "Venus is an implementation of the Filecoin Distributed Storage Network",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

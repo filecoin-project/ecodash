@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "kenlabs-icon.png",
+  "icon": "icon-ken-labs.png",
   "name": "KEN Labs",
   "org": "",
   "description": "Open source ledger database",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

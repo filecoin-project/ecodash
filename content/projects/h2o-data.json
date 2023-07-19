@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "h20-icon.jpeg",
+  "icon": "icon-h2o-data.jpeg",
   "name": "H2O Data",
   "org": "",
   "description": "Liquid staking protocol for Filecoin.",
@@ -26,7 +26,9 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "data-curation-and-monetization"
+      ]
     },
     {
       "category": "education-science-public-goods",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "metaverseAI.jpeg",
+  "icon": "icon-metaverse-ai.jpeg",
   "name": "Metaverse AI",
   "org": "",
   "description": "Tools for open Metaverse, VR/AR, & Web3.0 ",
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "communication-and-social"
+      ]
     },
     {
       "category": "tooling-and-productivity",

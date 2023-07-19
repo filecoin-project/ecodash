@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "MathWallet_App_Icon.png",
+  "icon": "icon-math-wallet.png",
   "name": "Math Wallet",
   "org": "",
   "description": "A universal Crypto Wallet.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

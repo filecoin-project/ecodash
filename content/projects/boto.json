@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "boto_icon_800.png",
+  "icon": "icon-boto.png",
   "name": "Boto",
   "org": "Boto",
   "description": "Automating DeFi activities with no-code bots.",
@@ -18,7 +18,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "ai-productivity-and-utilities"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

@@ -2,9 +2,11 @@
 /*
 //  This script is used to transform the project json data structure from the legacy v1 format to the new v2 format
 //  This script is intended to be run from the root of the repo
-//  Usage (node 16): `node transform-projects.js`
+//  Usage (node 16): `node scripts/transform-projects.js`
 //
 */
+
+'use strict';
 
 const fs = require('fs');
 const path = require('path');

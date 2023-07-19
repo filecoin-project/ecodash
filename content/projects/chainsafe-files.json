@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "Group720.png",
+  "icon": "icon-chainsafe-files.png",
   "name": "ChainSafe Files",
   "org": "Chainsafe",
   "description": "Encrypted file storage on Filecoin, via a clean web interface.",
@@ -26,7 +26,9 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "data-storage-and-management"
+      ]
     },
     {
       "category": "education-science-public-goods",

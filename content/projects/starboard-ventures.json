@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2020,
-  "icon": "starboard-icon.jpeg",
+  "icon": "icon-starboard-ventures.jpeg",
   "name": "Starboard Ventures",
   "org": "",
   "description": "Investing in and building data economies",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

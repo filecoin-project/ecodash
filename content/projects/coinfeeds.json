@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2021,
-  "icon": "YnffrUSQ_400x400.png",
+  "icon": "icon-coinfeeds.png",
   "name": "CoinFeeds",
   "org": "",
   "description": "API for real-time news & social on any cryptocurrency.",
@@ -10,7 +10,9 @@
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "infrastructure-and-other"
+      ]
     },
     {
       "category": "media-and-entertainment",

@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "filmine-icon.png",
+  "icon": "icon-filmine.png",
   "name": "Filmine",
   "org": "Alt Labs",
   "description": "Compute and storage network hardware resources.",
@@ -14,7 +14,9 @@
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "leasing-and-staking"
+      ]
     },
     {
       "category": "media-and-entertainment",

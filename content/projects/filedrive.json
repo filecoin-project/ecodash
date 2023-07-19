@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2019,
-  "icon": "filedrive-logo.png",
+  "icon": "icon-filedrive.png",
   "name": "FileDrive",
   "org": "",
   "description": "Distributed storage & infrastructure based on IPFS & Filecoin.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

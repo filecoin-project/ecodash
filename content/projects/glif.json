@@ -1,7 +1,7 @@
 {
   "display": true,
   "since": 2022,
-  "icon": "glif-icon.png",
+  "icon": "icon-glif.png",
   "name": "Glif",
   "org": "",
   "description": "Interoperable apps and tools for the Filecoin network.",
@@ -22,7 +22,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",
