@@ -206,9 +206,11 @@ export default {
     border-image-source: linear-gradient(25deg, #213C4F, #406380);
     box-shadow: 0px 0px 15px 3px #213140;
     opacity: 0.6;
+    background-color: $blackSapphire;
   }
   .heading,
   .subheading {
+    position: relative;
     text-align: center;
   }
   .heading {
@@ -229,6 +231,7 @@ export default {
     }
   }
   .cta {
+    position: relative;
     display: flex;
     justify-content: center;
   }
