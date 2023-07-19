@@ -15,13 +15,18 @@
           class="focus-visible"
           name="EMAIL" />
       </span>
-      <span class="submit">
-        <input
-          type="submit"
-          :value="buttonText"
-          class="focus-visible"
-          name="subscribe" />
-      </span>
+      <Button
+        type="cta"
+        tag="button"
+        class="submit-button">
+        <template #icon-after>
+          <input
+            type="submit"
+            :value="buttonText"
+            class="focus-visible"
+            name="subscribe" />
+        </template>
+      </Button>
     </div>
 
     <div aria-hidden="true" style="position: absolute; left: -5000px">
@@ -29,16 +34,23 @@
         type="text"
         name="b_25473244c7d18b897f5a1ff6b_cad54b2230"
         tabindex="-1"
-        value="">
+        value="" />
     </div>
 
   </form>
 </template>
 
 <script>
+// ====================================================================== Import
+import Button from '@/modules/zero/core/components/Button'
+
 // ====================================================================== Export
 export default {
   name: 'MailchimpForm',
+
+  components: {
+    Button
+  },
 
   props: {
     action: {
@@ -77,8 +89,7 @@ export default {
       padding-right: toRem(66);
     }
 
-    .email,
-    .submit {
+    .email {
       box-shadow: none;
       position: relative;
       height: toRem(27);
@@ -125,7 +136,8 @@ export default {
       flex-grow: 1;
       @include whiteBorderBack;
       background: $midnight;
-      margin-left: 9px;
+      margin-left: toRem(9);
+      margin-right: toRem(13);
       input {
         color: $white;
         &::placeholder {
@@ -140,21 +152,27 @@ export default {
       }
     }
 
-    .submit {
-      margin-left: 12px;
-      border-radius: 1px;
-      input {
-        font-weight: 600;
-        padding: toRem(4.5) toRem(27);
-        @include oceanBlueGradient;
-        color: $blackSapphire;
-        margin-left: 0;
-        border-radius: 1px;
-        @inc
-      }
-      &:before,
-      &:after {
-        border-radius: inherit;
+    .submit-button {
+      position: relative;
+      z-index: 100;
+      height: toRem(27);
+      ::v-deep .button-content {
+        input {
+          display: flex;
+          font-size: toRem(14);
+          line-height: leading(18, 14);
+          letter-spacing: 0.5px;
+          background: none;
+          box-shadow: none;
+          height: 100%;
+          padding: 0 20px;
+          color: $blackSapphire;
+          font-weight: 600;
+          @include small {
+            font-size: toRem(12);
+            line-height: leading(18, 12);
+          }
+        }
       }
     }
   }

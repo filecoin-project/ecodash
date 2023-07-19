@@ -67,7 +67,7 @@
                 <div class="links-heading">
                   {{ footer.left_heading }}
                 </div>
-                <template v-for="(link, index) in navigation.header">
+                <template v-for="(link, index) in navigation">
                   <template v-if="link.hasOwnProperty('links')">
                     <DropdownSelector
                       :key="index"
@@ -132,6 +132,7 @@
 <script>
 // ===================================================================== Imports
 import { mapGetters } from 'vuex'
+import CloneDeep from 'lodash/cloneDeep'
 
 import MailchimpForm from '@/components/MailchimpForm'
 import Button from '@/modules/zero/core/components/Button'
@@ -158,7 +159,10 @@ export default {
       siteContent: 'global/siteContent'
     }),
     navigation () {
-      return this.siteContent.general.navigation
+      const nav = CloneDeep(this.siteContent.general.navigation.nav_items)
+      const dropdown = this.siteContent.general.navigation.nav_dropdown
+      nav.push(dropdown)
+      return nav
     },
     subfooter () {
       return this.siteContent.general.subfooter
@@ -231,6 +235,7 @@ export default {
     }
   }
   .cta {
+    z-index: 100;
     position: relative;
     display: flex;
     justify-content: center;

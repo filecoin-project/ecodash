@@ -278,6 +278,11 @@ export default {
 
 .view-all-button {
   z-index: 1;
+  ::v-deep .button-content {
+    .text {
+      margin: 0 0.625rem;
+    }
+  }
 }
 
 .logo-wrapper {
