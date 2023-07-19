@@ -64,7 +64,7 @@
       "button": {
         "type": "a",
         "text": "Add your project",
-        "href": "https://example.com"
+        "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow"
       }
     },
     "breadcrumbs_map": {
@@ -83,7 +83,7 @@
     "cta": {
       "type": "a",
       "href": "https://example.com",
-      "text": "Add your project"
+      "text": "https://github.com/filecoin-project/ecodash#project-addchange-workflow"
     }
   },
   "footer": {

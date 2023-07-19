@@ -33,7 +33,7 @@
           v-if="headingCta"
           type="blue"
           tag="nuxt-link"
-          to="https://example.com"
+          to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
           text="Add your project"
           class="heading-cta">
           <template #icon-after>
@@ -80,7 +80,7 @@
                   tag="a"
                   type="green"
                   text="Add your project"
-                  to="https://example.com"
+                  to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
                   class="category-title-cta">
                   <template #icon-after>
                     →
