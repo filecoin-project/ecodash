@@ -119,13 +119,22 @@ const subcatCatMapping = Object.fromEntries(
   )
 );
 
+let processedFilesCount = 0;
+let unchangedFiles = [];
+
 // Function to iterate through each file
 function processFile(filename, filePath) {
   const subcategory = projectSubcatMapping[filename];
-  if (!subcategory) return;
+  if (!subcategory) {
+    unchangedFiles.push(filename);
+    return;
+  }
 
   const category = subcatCatMapping[subcategory];
-  if (!category) return;
+  if (!category) {
+    unchangedFiles.push(filename);
+    return;
+  }
 
   // Read the file and parse the JSON
   const projectJson = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
@@ -140,11 +149,15 @@ function processFile(filename, filePath) {
 
   // Write the updated JSON back to the file
   fs.writeFileSync(filePath, JSON.stringify(projectJson, null, 2) + "\n");
+  processedFilesCount++;
+  console.log(`Processed file: ${filename}`);
 }
 
 // Function to read and process all files in a directory
 function processFilesInDirectory(dirPath) {
   const files = fs.readdirSync(dirPath);
+
+  console.log(`Found ${files.length} files/directories`);
 
   files.forEach(file => {
     if (path.extname(file) === '.json') {
@@ -152,6 +165,9 @@ function processFilesInDirectory(dirPath) {
       processFile(file, filePath);
     }
   });
+
+  console.log(`Processed ${processedFilesCount} out of ${files.length} files`);
+  console.log(`Unchanged files: \n${unchangedFiles.join('\n')}`);
 }
 
 // Directory containing the project JSON files
