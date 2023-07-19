@@ -9,8 +9,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const projectDir = './content/projects';
-const imageDir = './static/images/projects';
+const projectDir = path.resolve(__dirname, '../content/projects');
+const imageDir = path.resolve(__dirname, '../static/images/projects');
 
 let usedImages = [];
 
@@ -18,7 +18,7 @@ let usedImages = [];
 fs.readdirSync(projectDir).forEach(file => {
   if (path.extname(file) === '.json') {
     const filePath = path.join(projectDir, file);
-    let data = require(filePath);
+    let data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     // Get old image name
     const oldImageName = data.icon;
@@ -45,7 +45,7 @@ fs.readdirSync(projectDir).forEach(file => {
 // Read all files in the image directory
 let allImages = fs.readdirSync(imageDir);
 
-// Log any images that aren't used in any project
+// Find any images that aren't used
 let unusedImages = allImages.filter(image => !usedImages.includes(image));
 
 console.log("Unused images: ", unusedImages);
