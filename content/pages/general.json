@@ -64,7 +64,7 @@
       "button": {
         "type": "a",
         "text": "Add your project",
-        "href": "https://example.com"
+        "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow"
       }
     },
     "breadcrumbs_map": {
@@ -82,7 +82,7 @@
     "subheading": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
     "cta": {
       "type": "a",
-      "href": "https://example.com",
+      "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow",
       "text": "Add your project"
     }
   },
@@ -121,12 +121,14 @@
       {
         "type": "a",
         "href": "https://research.filecoin.io/",
-        "label": "Research"
+        "label": "Research",
+        "target": "_blank"
       },
       {
         "type": "a",
         "href": "https://filecoin.io/blog/",
-        "label": "Blog"
+        "label": "Blog",
+        "target": "_blank"
       },
       {
         "type": "a",
@@ -143,26 +145,27 @@
       {
         "type": "a",
         "href": "https://security.filecoin.io/",
-        "label": "Security"
+        "label": "Security",
+        "target": "_blank"
       }
     ]
   },
   "social_icons": [
     {
       "network": "Slack",
-      "href": "https://example.com"
+      "href": "https://filecoin.io/slack"
     },
     {
       "network": "Twitter",
-      "href": "https://example.com"
+      "href": "https://twitter.com/filecoin"
     },
     {
       "network": "Matrix",
-      "href": "https://example.com"
+      "href": "https://riot.im/app/#/group/+filecoin:matrix.org"
     },
     {
       "network": "WeChat",
-      "href": "https://example.com"
+      "href": "https://docs.filecoin.io/basics/project‒and‒community/social‒media/#wechat"
     }
   ],
   "404_error_page": {

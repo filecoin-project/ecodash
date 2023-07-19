@@ -8,7 +8,7 @@
         :href="link.href"
         target="_blank"
         rel="noopener noreferrer"
-        class="focus-visible">
+        class="social-link focus-visible">
         <component :is="`${link.network}Icon`"></component>
       </a>
     </div>
@@ -83,6 +83,14 @@ export default {
     path {
       fill: white;
     }
+  }
+}
+
+.social-link {
+  transition: 200ms ease;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.1);
   }
 }
 </style>

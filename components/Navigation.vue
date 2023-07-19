@@ -322,6 +322,7 @@ export default {
   max-width: unset;
   width: 100%;
   height: 100%;
+  transform: translateX(-1rem);
   @include large {
     padding-left: 3rem;
   }
@@ -412,6 +413,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-left: -1rem;
   @include small {
     align-items: center;
   }

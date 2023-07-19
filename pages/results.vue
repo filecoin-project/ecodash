@@ -26,7 +26,6 @@
 <script>
 // ===================================================================== Imports
 import { mapGetters, mapActions } from 'vuex'
-// import CloneDeep from 'lodash/cloneDeep'
 
 import HeroHeader from '@/components/HeroHeader'
 import CardListBlock from '@/components/CardListBlock'
@@ -85,7 +84,7 @@ export default {
     searchResults () {
       const query = this.searchQuery.toLowerCase()
       return this.projects.filter((project) => {
-        const matched = project.name.toLowerCase().includes(query) || project.org.join('').toLowerCase().includes(query)
+        const matched = project.name.toLowerCase().includes(query) || project.org.toLowerCase().includes(query)
         if (!matched) { return false }
         return project
       })

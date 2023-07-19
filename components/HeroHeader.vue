@@ -33,7 +33,7 @@
           v-if="headingCta"
           type="blue"
           tag="nuxt-link"
-          to="https://example.com"
+          to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
           text="Add your project"
           class="heading-cta">
           <template #icon-after>
@@ -80,7 +80,7 @@
                   tag="a"
                   type="green"
                   text="Add your project"
-                  to="https://example.com"
+                  to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
                   class="category-title-cta">
                   <template #icon-after>
                     →
@@ -246,6 +246,7 @@ export default {
     border-image-source: linear-gradient(25deg, #213C4F, #406380);
     box-shadow: 0px 0px 15px 3px #213140;
     opacity: 0.6;
+    background-color: $blackSapphire;
   }
 }
 
@@ -270,6 +271,7 @@ export default {
 }
 
 .category-title {
+  position: relative;
   font-size: toRem(22);
   font-weight: 600;
   line-height: leading(36, 22);
@@ -284,6 +286,7 @@ export default {
 }
 
 .category-info {
+  position: relative;
   padding-left: 3rem;
   @include small {
     padding-left: 0;

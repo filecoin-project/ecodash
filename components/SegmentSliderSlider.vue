@@ -45,10 +45,11 @@
 
         <div v-if="logos" class="logo-wrapper">
           <img
-            v-for="item in logos"
-            :key="item.path"
-            :src="$relativity(`/images/projects/${item.path}`)"
-            :alt="enableImageAlt ? item.alt : null" />
+            v-for="logo in logos"
+            :key="logo"
+            :src="$relativity(`/images/projects/${logo}`)"
+            :alt="enableImageAlt ? logo : null"
+            class="image" />
         </div>
 
       </div>
@@ -277,6 +278,11 @@ export default {
 
 .view-all-button {
   z-index: 1;
+  ::v-deep .button-content {
+    .text {
+      margin: 0 0.625rem;
+    }
+  }
 }
 
 .logo-wrapper {
@@ -286,7 +292,8 @@ export default {
   align-items: center;
   width: 100%;
   margin-bottom: 1.25rem;
-  img {
+  .image {
+    background-color: $white;
     &:first-child {
       margin-left: 0;
     }
