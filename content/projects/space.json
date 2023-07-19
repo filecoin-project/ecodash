@@ -1,47 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": {
-    "icon": "WeChat5ae8f64079ea48f7ef4797415893d64b.png",
-    "full": "Page1.png"
-  },
+  "since": 2020,
+  "icon": "WeChat5ae8f64079ea48f7ef4797415893d64b.png",
   "name": "Space",
-  "org": ["Fleek"],
-  "description": {
-    "short": "User-controlled, encrypted file storage & sharing platform.",
-    "long": "Space is an open-source, encrypted, user-controlled file storage and sharing platform built on open-web protocols including IPFS, Textile, Filecoin, GunDB, and more."
-  },
-  "primaryCta": { "url": "//space.storage", "text": "Project Website" },
-  "links": [
+  "org": "Fleek",
+  "description": "User-controlled, encrypted file storage & sharing platform.",
+  "website": "//space.storage",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//space.storage", "text": "space.storage" }]
+      "github": "//github.com/fleekhq/space-web"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/FleekHQ/space-web",
-          "text": "github.com/FleekHQ/space-web"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["consumer-storage"] },
-    { "slug": "software-type", "tags": ["library-sdk"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "consumer storage",
+    "library sdk",
+    "none"
   ]
 }

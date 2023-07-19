@@ -1,44 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "BlockRocket.png", "full": "image80.png" },
+  "since": 2020,
+  "icon": "BlockRocket.png",
   "name": "BlockRocket",
-  "org": [""],
-  "description": {
-    "short": "Blockchain engineering & consultancy for smart contracts + dApps.",
-    "long": "BlockRocket builds products and help companies understand blockchain technology, smart contracts and cryptocurrencies. Products include the KnownOrigin NFT marketplace and CryptoKaiju trackable physical toys."
-  },
-  "primaryCta": { "url": "//blockrocket.tech", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Blockchain engineering & consultancy for smart contracts + dApps.",
+  "website": "//blockrocket.tech",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//blockrocket.tech", "text": "blockrocket.tech" }]
+      "github": "//github.com/blockrockettech"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/blockrockettech",
-          "text": "github.com/blockrockettech"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "nfts",
+    "none",
+    "none"
   ]
 }

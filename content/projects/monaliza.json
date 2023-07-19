@@ -1,52 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "mona-lisa.svg", "full": "mona-lisa.svg" },
+  "since": 2021,
+  "icon": "mona-lisa.svg",
   "name": "Monaliza",
-  "org": [""],
-  "description": {
-    "short": "Mint NFTs directly from your Instagram content.",
-    "long": "Monaliza is a connector between Instagram and NFTs, enabling users to mint their own NFTs and submit them straight to their Instagram, as well as OpenSea, and persist this to IPFS. "
-  },
-  "primaryCta": { "url": "//monaliza.app", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Mint NFTs directly from your Instagram content.",
+  "website": "//monaliza.app",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//monaliza.app", "text": "monaliza.app" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/monalisanft/nfthack",
-          "text": "github.com/monalisanft/nfthack"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//github.com/monalisanft/nfthack",
-          "text": "github.com/monalisanft/nfthack"
-        }
-      ]
+      "github": "//github.com/monalisanft/nfthack"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["api"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "nfts",
+    "api",
+    "nft storage"
   ]
 }

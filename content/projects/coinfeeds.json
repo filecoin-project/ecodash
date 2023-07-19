@@ -1,36 +1,39 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "YnffrUSQ_400x400.png", "full": "YnffrUSQ_400x400.png" },
+  "since": 2021,
+  "icon": "YnffrUSQ_400x400.png",
   "name": "CoinFeeds",
-  "org": [""],
-  "description": {
-    "short": "API for real-time news & social on any cryptocurrency.",
-    "long": "Coinfeed provides the best data by applying the same machine learning technologies we used when leading the data teams at Uber and Robinhood. Our long term vision is to become the Bloomberg for crypto."
-  },
-  "primaryCta": { "url": "//coinfeeds.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "API for real-time news & social on any cryptocurrency.",
+  "website": "//coinfeeds.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//coinfeeds.io", "text": "coinfeeds.io" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["web-app", "api"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "network tools",
+    "other",
+    "web app",
+    "api",
+    "none"
   ]
 }

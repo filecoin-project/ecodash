@@ -1,113 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "bela-supernova.png",
-    "full": "bela-supernova.png"
-  },
+  "since": 2022,
+  "icon": "bela-supernova.png",
   "name": "Bela Supernova",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Facilitates blockchain integration into daily solutions.",
-    "long": "Bela Supernova is a trusted blockchain community contributor, whose solutions facilitate blockchain integration into day-to-day life. Their Inter-Planetary Electronic Health Records (ipEHR) solution provides an alternative option to store patients’ data in the FileCoin blockchain. As a FVM Early Builder, they intend to deploy their EVMs that store user credentials and EHR data indexes, to FVM. This enables computation without accessing private data."
-  },
-  "primaryCta": {
-    "url": "//bsn.si/blockchain ",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Facilitates blockchain integration into daily solutions.",
+  "website": "//bsn.si/blockchain ",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//bsn.si/blockchain ",
-          "text": "bsn.si/blockchain "
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/bsn-si/IPEHR-gateway",
-          "text": "github.com/bsn-si/IPEHR-gateway"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/bsn-si/ipehr-gateway"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "storage-apps-clients"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "health"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "storage apps clients",
+    "health",
+    "fvm"
   ]
 }

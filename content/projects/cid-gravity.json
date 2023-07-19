@@ -1,47 +1,45 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "CID.png", "full": "CID.png" },
+  "since": 2021,
+  "icon": "CID.png",
   "name": "CID Gravity",
-  "org": [""],
-  "description": {
-    "short": "Pricing & client management for Filecoin miners.",
-    "long": "CID Gravity is a pricing and client management solution for Filecoin miners, deployed in less than 30 minutes, where you are able to manage everything through a user friendly interface, and has been built by the miner community as lightweight, secure, and natively integrated with Lotus and the Filecoin miner environment."
-  },
-  "primaryCta": { "url": "//cidgravity.com", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Pricing & client management for Filecoin miners.",
+  "website": "//cidgravity.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//cidgravity.com", "text": "cidgravity.com" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/CIDgravity/CIDgravity-X",
-          "text": "github.com/CIDgravity/CIDgravity-X"
-        }
-      ]
-    },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+      "github": "//github.com/cidgravity/cidgravity-x"
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
+  "taxonomy": [
     {
-      "slug": "project-category",
-      "tags": ["storage-apps-clients", "collaborations"]
+      "category": "finance",
+      "subcategories": []
     },
-    { "slug": "storage-type", "tags": ["data-markets", "consumer-storage"] },
-    { "slug": "software-type", "tags": ["infrastructure"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["accelerator"] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "storage apps clients",
+    "collaborations",
+    "data markets",
+    "consumer storage",
+    "infrastructure",
+    "none",
+    "accelerator"
   ]
 }

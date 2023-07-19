@@ -1,46 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Logo.jpeg", "full": "Logo.png" },
+  "since": 2020,
+  "icon": "Logo.jpeg",
   "name": "Vivid Labs",
-  "org": ["Live Planet, Inc."],
-  "description": {
-    "short": "Next-generation publishing platform for video & multimedia NFTs.",
-    "long": "The VideoCoin ecosystem delivers innovative services on the blockchain that reimagine the future of video. Its current focus is bringing Video NFTs to everyone through our integration with Filecoin."
-  },
-  "primaryCta": { "url": "//videocoin.io", "text": "Project Website" },
-  "links": [
+  "org": "Live Planet, Inc.",
+  "description": "Next-generation publishing platform for video & multimedia NFTs.",
+  "website": "//videocoin.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//videocoin.io", "text": "videocoin.io" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/videocoin", "text": "github.com/videocoin" }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        { "url": "//github.com/videocoin", "text": "github.com/videocoin" }
-      ]
+      "github": "//github.com/videocoin"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=guBRMUIeX24",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["video", "nfts"] },
-    { "slug": "software-type", "tags": ["api", "hosted-service"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "video",
+    "nfts",
+    "api",
+    "hosted service",
+    "nft storage"
   ]
 }

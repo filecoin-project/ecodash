@@ -1,47 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Voodfy.png", "full": "Vector-3.png" },
+  "since": 2020,
+  "icon": "Voodfy.png",
   "name": "Voodfy",
-  "org": ["Voodfy"],
-  "description": {
-    "short": "Decentralized video hosting platform.",
-    "long": "Decentralized video platform for creators to host and monetize content their way."
-  },
-  "primaryCta": {
-    "url": "//voodfy.com/",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "Voodfy",
+  "description": "Decentralized video hosting platform.",
+  "website": "//voodfy.com/",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//voodfy.com",
-          "text": "voodfy.com"
-        }
-      ]
+      "github": "//github.com/voodfy"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [{ "url": "//github.com/Voodfy", "text": "github.com/Voodfy" }]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=oCgASk9WF5o",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["video"] },
-    { "slug": "software-type", "tags": ["hosted-service"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "video",
+    "hosted service",
+    "none"
   ]
 }

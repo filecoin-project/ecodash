@@ -1,113 +1,39 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "icefiredb-icon.png",
-    "full": "icefiredb-icon.png"
-  },
+  "since": 2022,
+  "icon": "icefiredb-icon.png",
   "name": "IceFireDB",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Developer-friendly database.",
-    "long": "IceFireDB is a database for Web3 developers to achieve decentralized data storage. As a FVM Early Builder, they intend to create a decentralized nosql and sql database platform."
-  },
-  "primaryCta": {
-    "url": "//icefiredb.xyz",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Developer-friendly database.",
+  "website": "//icefiredb.xyz",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//icefiredb.xyz",
-          "text": "icefiredb.xyz"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/IceFireDB",
-          "text": "github.com/IceFireDB"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/icefiredb"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "fvm"
   ]
 }

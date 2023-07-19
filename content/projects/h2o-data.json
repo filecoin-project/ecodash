@@ -1,113 +1,40 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "h20-icon.jpeg",
-    "full": "h20-icon.jpeg"
-  },
+  "since": 2022,
+  "icon": "h20-icon.jpeg",
   "name": "H2O Data",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Liquid staking protocol for Filecoin.",
-    "long": "H2O is a non-pegged stable asset based on Reflexer Labs - RAI, with the goal of becoming the data-backed Medium of Exchange and Unit of Account for the unfolding data economy. H2O’s roadmap includes major developments such as liquid staking wrappers for the data economy (& DataFi), multi-collateralization of H2O, and data-backed H2O. \n\nAs a FVM Early Builder, they intend to develop a liquid staking protocol for Filecoin."
-  },
-  "primaryCta": {
-    "url": "//app.h2odata.xyz",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Liquid staking protocol for Filecoin.",
+  "website": "//app.h2odata.xyz",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//app.h2odata.xyz",
-          "text": "app.h2odata.xyz"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/h2odata",
-          "text": "github.com/h2odata"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/h2odata"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "token-finance"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "token finance",
+    "fvm"
   ]
 }

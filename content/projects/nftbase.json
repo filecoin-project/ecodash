@@ -1,39 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "1920x1080-LOGO.png", "full": "1920x1080-LOGO.png" },
+  "since": 2021,
+  "icon": "1920x1080-LOGO.png",
   "name": "NFTBase",
-  "org": [""],
-  "description": {
-    "short": "NFT marketplace for collectibles, gaming items, and more.",
-    "long": "NFTbase is a marketplace where you can buy and sell digital goods, including collectibles, gaming items, digital art, and other digital assets that are backed by the Ethereum blockchain."
-  },
-  "primaryCta": { "url": "//nftbase.ai", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "NFT marketplace for collectibles, gaming items, and more.",
+  "website": "//nftbase.ai",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//nftbase.ai", "text": "nftbase.ai" }]
+      "github": "//github.com/nftbase"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [{ "url": "//github.com/nftbase", "text": "github.com/nftbase" }]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=KvsBDVwtn5k",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "nfts",
+    "web app",
+    "nft storage"
   ]
 }

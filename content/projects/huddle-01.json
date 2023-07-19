@@ -1,113 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2020
-    }
-  ],
-  "logo": {
-    "icon": "icon-huddle01.png",
-    "full": "huddle-01-social.png"
-  },
+  "since": 2020,
+  "icon": "icon-huddle01.png",
   "name": "Huddle 01",
-  "org": [
-    "Graphene 01, Inc."
-  ],
-  "description": {
-    "short": "World’s first decentralized video conferencing platform",
-    "long": "Huddle01 provides holistic video solutions for all your business needs with simple UI, powerful SDK, custom domain, and in-depth analysis dashboard.\n\nAs a FVM Early Builder, they intend to leverage FVM as a base layer for these solutions."
-  },
-  "primaryCta": {
-    "url": "//huddle01.io",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "Graphene 01, Inc.",
+  "description": "World’s first decentralized video conferencing platform",
+  "website": "//huddle01.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//huddle01.io",
-          "text": "huddle01.io"
-        }
-      ]
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
     {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [
-    {
-      "label": "Using Filecoin since",
-      "value": "2020"
-    }
-  ],
-  "video": "//youtube.com/watch?v=A5OBAvpm7jI",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "storage-apps-clients"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "video"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "web-app"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "storage apps clients",
+    "video",
+    "web app",
+    "fvm"
   ]
 }

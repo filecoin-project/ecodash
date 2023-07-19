@@ -1,100 +1,42 @@
 {
-    "display": true,
-    "featured": false,
-    "sortNumbers": [{
-        "since": 2021
-    }],
-    "logo": {
-        "icon": "icon-dlabs.png",
-        "full": "icon-dlabs.png"
+  "display": true,
+  "since": 2021,
+  "icon": "icon-dlabs.png",
+  "name": "_Dlabs",
+  "org": "Underscored Labs",
+  "description": "Decentralized tools for gaming, VR, and AR.",
+  "website": "//underscoredlabs.com",
+  "social": [
+    {
+      "github": "//github.com/underscoredlabs"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
-    "name": "_Dlabs",
-    "org": [
-        "Underscored Labs"
-    ],
-    "description": {
-        "short": "Decentralized tools for gaming, VR, and AR.",
-        "long": "_Dlabs (now part of ChainSafe) bridges the creative ecosystem of games, VR and AR with the decentralized world of cryptocurrency. Their Unity SDK bridges any project to any EVM."
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    "primaryCta": {
-        "url": "//underscoredlabs.com",
-        "text": "Project Website"
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    "links": [{
-            "label": "Website",
-            "links": [{
-                "url": "//underscoredlabs.com",
-                "text": "underscoredlabs.com"
-            }]
-        },
-        {
-            "label": "Repo",
-            "links": [{
-                "url": "//github.com/underscoredLabs",
-                "text": "github.com/underscoredLabs"
-            }]
-        },
-        {
-            "label": "Docs",
-            "links": [{
-                "url": "",
-                "text": ""
-            }]
-        }
-    ],
-    "keyInfo": [{
-        "label": "Using Filecoin since",
-        "value": "2021"
-    }],
-    "video": "",
-    "stats": [{
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        }
-    ],
-    "ctaCard": {
-        "title": "",
-        "description": "",
-        "buttonText": "",
-        "url": ""
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
     },
-    "taxonomies": [{
-            "slug": "project-category",
-            "tags": [
-                "developer-tools"
-            ]
-        },
-        {
-            "slug": "storage-type",
-            "tags": [
-                "games"
-            ]
-        },
-        {
-            "slug": "software-type",
-            "tags": [
-                "library-sdk"
-            ]
-        },
-        {
-            "slug": "tooling",
-            "tags": [
-                "fleek-space-daemon"
-            ]
-        },
-        {
-            "slug": "pipeline",
-            "tags": [
-                ""
-            ]
-        }
-    ]
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer tools",
+    "games",
+    "library sdk",
+    "fleek space daemon"
+  ]
 }

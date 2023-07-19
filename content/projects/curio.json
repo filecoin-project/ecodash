@@ -1,36 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "curio-icon.jpeg", "full": "curio-logo.png" },
+  "since": 2021,
+  "icon": "curio-icon.jpeg",
   "name": "Curio",
-  "org": ["Curio Digital Inc"],
-  "description": {
-    "short": "NFT marketplace for entertainment, helping brands monetize their IP.",
-    "long": "Curio is a curated NFT marketplace focused on helping brands monetize their intellectual property through non-fungible tokens. Built on the Ethereum blockchain, these NFTs are verifiable and create opportunities for fans to engage with brands that they love in new and different ways with digital fan clubs, memorabilia, and more."
-  },
-  "primaryCta": { "url": "//oncurio.com", "text": "Project Website" },
-  "links": [
+  "org": "Curio Digital Inc",
+  "description": "NFT marketplace for entertainment, helping brands monetize their IP.",
+  "website": "//oncurio.com",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//oncurio.com", "text": "oncurio.com" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtu.be/QC90YKBSCt4",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "nfts",
+    "web app",
+    "nft storage"
   ]
 }

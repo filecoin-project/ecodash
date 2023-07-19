@@ -1,114 +1,43 @@
 {
-    "display": true,
-    "featured": false,
-    "sortNumbers": [
-      {
-        "since": 2021
-      }
-    ],
-    "logo": {
-      "icon": "icon-ownership-labs.jpg",
-      "full": "icon-ownership-labs.jpg"
+  "display": true,
+  "since": 2021,
+  "icon": "icon-ownership-labs.jpg",
+  "name": "Ownership Labs",
+  "org": "",
+  "description": "A private space for curating NFTs, decentralized and encrypted.",
+  "website": "//dataverse.art ",
+  "social": [
+    {
+      "github": "//github.com/ownership-labs"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
-    "name": "Ownership Labs",
-    "org": [
-      ""
-    ],
-    "description": {
-      "short": "A private space for curating NFTs, decentralized and encrypted.",
-      "long": "Ownership Labs' vision is to unlock the data economy and brings secure cyberspace for web3 residents. Their products include Dataverse, Loop and Datatoken. Dataverse is your private space for curating NFTs, decentralized and encrypted. Datatoken is a open data marketplaces for traceable private computation. Loop is a personalized content aggregator for tracking latest events in the open web, like NFTs, Mirrors and POAPs. By using these products, you own your data whenever you navigate the web.\nBuilding http://dataverse.art\n\nAs a FVM Early Builder, they intend to leverage its on-chain storage and actor capabilities to optimize their products."
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    "primaryCta": {
-      "url": "//dataverse.art ",
-      "text": "Project Website"
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    "links": [
-      {
-        "label": "Website",
-        "links": [
-          {
-            "url": "//dataverse.art ",
-            "text": "dataverse.art "
-          }
-        ]
-      },
-      {
-        "label": "Repo",
-        "links": [
-          {
-            "url": "//github.com/ownership-labs",
-            "text": "github.com/ownership-labs"
-          }
-        ]
-      },
-      {
-        "label": "Docs",
-        "links": [
-          {
-            "url": "",
-            "text": ""
-          }
-        ]
-      }
-    ],
-    "keyInfo": [
-      {
-        "label": "Using Filecoin since",
-        "value": "2021"
-      }
-    ],
-    "video": "//youtube.com/watch?v=Lr3UaWL-rXY",
-    "stats": [
-      {
-        "label": "",
-        "value": ""
-      },
-      {
-        "label": "",
-        "value": ""
-      },
-      {
-        "label": "",
-        "value": ""
-      }
-    ],
-    "ctaCard": {
-      "title": "",
-      "description": "",
-      "buttonText": "",
-      "url": ""
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
     },
-    "taxonomies": [
-      {
-        "slug": "project-category",
-        "tags": [
-          "storage-apps-clients"
-        ]
-      },
-      {
-        "slug": "storage-type",
-        "tags": [
-          "nfts"
-        ]
-      },
-      {
-        "slug": "software-type",
-        "tags": [
-          "web-app"
-        ]
-      },
-      {
-        "slug": "tooling",
-        "tags": [
-          "nft-storage", "FVM"
-        ]
-      },
-      {
-        "slug": "pipeline",
-        "tags": [
-          ""
-        ]
-      }
-    ]
-  }
-  
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "storage apps clients",
+    "nfts",
+    "web app",
+    "nft storage",
+    "fvm"
+  ]
+}

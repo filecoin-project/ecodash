@@ -1,36 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "mintgate.jpeg", "full": "mintGatelogo.svg" },
+  "since": 2020,
+  "icon": "mintgate.jpeg",
   "name": "MintGate",
-  "org": ["MintKudos Inc."],
-  "description": {
-    "short": "A no-code store builder for NFTs and token gated content.",
-    "long": "MintGate is a fundamentally new paradigm for digital content. Create NFT access passes and generate secret links to your for events, videos, music, websites, and blogs."
-  },
-  "primaryCta": { "url": "//mintgate.io", "text": "Project Website" },
-  "links": [
+  "org": "MintKudos Inc.",
+  "description": "A no-code store builder for NFTs and token gated content.",
+  "website": "//mintgate.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//mintgate.io", "text": "mintgate.io" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=QxJ5-nuY1NA",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "nfts",
+    "web app",
+    "nft storage"
   ]
 }

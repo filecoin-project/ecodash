@@ -1,36 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "icon-darma-capital.svg", "full": "logo-darma.png" },
+  "since": 2020,
+  "icon": "icon-darma-capital.svg",
   "name": "Filecoin FIL asset swap",
-  "org": ["DARMA Capital"],
-  "description": {
-    "short": "Enabling miners to access to the FIL token & avoid high lending rates.",
-    "long": ""
-  },
-  "primaryCta": { "url": "//darma.capital", "text": "Project Website" },
-  "links": [
+  "org": "DARMA Capital",
+  "description": "Enabling miners to access to the FIL token & avoid high lending rates.",
+  "website": "//darma.capital",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//darma.capital", "text": "darma.capital" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "other",
+    "none",
+    "none"
   ]
 }

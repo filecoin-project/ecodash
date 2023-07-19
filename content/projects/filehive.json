@@ -1,44 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-filehive.png", "full": "filehive1.png" },
+  "since": 2021,
+  "icon": "icon-filehive.png",
   "name": "Filehive",
-  "org": ["OB1"],
-  "description": {
-    "short": "A Filecoin-backed marketplace for datasets.",
-    "long": "Filehive is a dataset marketplace for Filecoin that makes it easy to buy and sell curated datasets."
-  },
-  "primaryCta": { "url": "//filehive.app", "text": "Project Website" },
-  "links": [
+  "org": "OB1",
+  "description": "A Filecoin-backed marketplace for datasets.",
+  "website": "//filehive.app",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//filehive.app", "text": "filehive.app" }]
+      "github": "//github.com/ob1company/filehive"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/OB1Company/filehive",
-          "text": "github.com/OB1Company/filehive"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["data-markets"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["textile-powergate"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "data markets",
+    "web app",
+    "textile powergate"
   ]
 }

@@ -1,113 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "polyphene-icon.jpeg",
-    "full": "polyphene-icon.jpeg"
-  },
+  "since": 2022,
+  "icon": "polyphene-icon.jpeg",
   "name": "Polyphene",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Cross-chain communication and Layer 2 network solutions.",
-    "long": "Polyphene develops Web3 projects, such as Holium. As a FVM Early Builder, they have developed a high-level Rust SDK. They intend to continue building solutions to unlock cross-chain communications and Layer 2 networks."
-  },
-  "primaryCta": {
-    "url": "//polyphene.io",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Cross-chain communication and Layer 2 network solutions.",
+  "website": "//polyphene.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//polyphene.io",
-          "text": "polyphene.io"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/polyphene/, https://github.com/polyphene/fvm-rs-sdk",
-          "text": "github.com/polyphene/, https://github.com/polyphene/fvm-rs-sdk"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/polyphene/, https://github.com/polyphene/fvm-rs-sdk"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "developer-tools"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "library-sdk"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "developer tools",
+    "library sdk",
+    "fvm"
   ]
 }

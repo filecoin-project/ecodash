@@ -1,113 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "filmine-icon.png",
-    "full": "filmine-icon.png"
-  },
+  "since": 2022,
+  "icon": "filmine-icon.png",
   "name": "Filmine",
-  "org": [
-    "Alt Labs"
-  ],
-  "description": {
-    "short": "Compute and storage network hardware resources.",
-    "long": "Filmine acts as an infrastructure layer of the Web3, providing compute and storage networks a shared layer of hardware resources to run workloads while retaining the ability to connect. They are a FVM Early Builder."
-  },
-  "primaryCta": {
-    "url": "//filmine.io",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "Alt Labs",
+  "description": "Compute and storage network hardware resources.",
+  "website": "//filmine.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//filmine.io",
-          "text": "filmine.io"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/filmineio",
-          "text": "github.com/filmineio"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/filmineio"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "developer-tools"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "infrastructure"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "developer tools",
+    "infrastructure",
+    "fvm"
   ]
 }

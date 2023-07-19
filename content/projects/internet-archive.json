@@ -1,49 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "internetarchive-square.png",
-    "full": "InternetArchive-logo.png"
-  },
+  "since": 2021,
+  "icon": "internetarchive-square.png",
   "name": "Internet Archive",
-  "org": [""],
-  "description": {
-    "short": "A digital library of the internet.",
-    "long": "Internet Archive is a non-profit library of millions of free books, movies, software, music, websites, and other cultural artifacts in digital form available to researchers, historians, scholars, the print disabled, and the general public."
-  },
-  "primaryCta": { "url": "//archive.org/index.php", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "A digital library of the internet.",
+  "website": "//archive.org/index.php",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        { "url": "//archive.org/index.php", "text": "archive.org/index.php" }
-      ]
+      "github": "//github.com/internetarchive"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/internetarchive",
-          "text": "github.com/internetarchive"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/channel/UCFa_X02QhJnP0FNpFAKyRRg",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["archival"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "archival",
+    "none",
+    "none"
   ]
 }

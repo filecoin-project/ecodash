@@ -1,44 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "ens.svg", "full": "ens.svg" },
+  "since": 2021,
+  "icon": "ens.svg",
   "name": "ENS",
-  "org": [""],
-  "description": {
-    "short": "Decentralised name service for creating domains on the ETH blockchain.",
-    "long": "ENS allow you to create your designated web3 username, with no more sandboxed usernames. It allows you to own your username, store an avatar and other profile data, and use it across multiple services."
-  },
-  "primaryCta": { "url": "//ens.domains", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Decentralised name service for creating domains on the ETH blockchain.",
+  "website": "//ens.domains",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//ens.domains", "text": "ens.domains" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/ensdomains", "text": "github.com/ensdomains" }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [{ "url": "//docs.ens.domains", "text": "docs.ens.domains" }]
+      "github": "//github.com/ensdomains"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["web-publishing"] },
-    { "slug": "software-type", "tags": ["hosted-service", "web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "web publishing",
+    "hosted service",
+    "web app",
+    "none"
   ]
 }

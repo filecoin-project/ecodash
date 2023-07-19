@@ -1,42 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2019 }],
-  "logo": {
-    "icon": "PL-logo-symbol-black.png",
-    "full": "PL-logo-symbol-black.png"
-  },
+  "since": 2019,
+  "icon": "PL-logo-symbol-black.png",
   "name": "Protocol Labs",
-  "org": [""],
-  "description": {
-    "short": "Research, design, & development for next-generation web protocols.",
-    "long": "Protocol Labs is an open-source R&D lab. We build protocols, tools, and services to radically improve the internet. Our projects include IPFS, libp2p, DRAND, and Filecoin."
-  },
-  "primaryCta": { "url": "//protocol.ai", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Research, design, & development for next-generation web protocols.",
+  "website": "//protocol.ai",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//protocol.ai", "text": "protocol.ai" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
-  ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["general-storage"] },
     {
-      "slug": "software-type",
-      "tags": ["library-sdk", "backend-app", "network"]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["series-n"] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "general storage",
+    "library sdk",
+    "backend app",
+    "network",
+    "none",
+    "series n"
   ]
 }

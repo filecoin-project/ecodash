@@ -1,39 +1,39 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "MoNA_Square_Icon-wht.png",
-    "full": "MoNA_Square_Icon-wht.png"
-  },
+  "since": 2021,
+  "icon": "MoNA_Square_Icon-wht.png",
   "name": "The MoNA",
-  "org": ["The MoNA"],
-  "description": {
-    "short": "A metaverse society for high-end 3D art.",
-    "long": ""
-  },
-  "primaryCta": { "url": "//mona.gallery", "text": "Project Website" },
-  "links": [
+  "org": "The MoNA",
+  "description": "A metaverse society for high-end 3D art.",
+  "website": "//mona.gallery",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//mona.gallery", "text": "mona.gallery" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//mona.gallery",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["accelerator"] }
+  "tags": [
+    "collaborations",
+    "nfts",
+    "web app",
+    "none",
+    "accelerator"
   ]
 }

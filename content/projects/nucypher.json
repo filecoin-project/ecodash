@@ -1,41 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "nucypher-square.png", "full": "nucypher-logo.png" },
+  "since": 2021,
+  "icon": "nucypher-square.png",
   "name": "NuCypher",
-  "org": [""],
-  "description": {
-    "short": "Cryptographic based infrastructure for Privacy-Preserving application.",
-    "long": "NuCypher provides tools for secret management, dynamic access control, and secure computation.  "
-  },
-  "primaryCta": { "url": "//nucypher.com", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Cryptographic based infrastructure for Privacy-Preserving application.",
+  "website": "//nucypher.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//nucypher.com", "text": "nucypher.com" }]
+      "github": "//github.com/nucypher"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/nucypher", "text": "github.com/nucypher" }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=MTyd3x7gp88",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["network"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "other",
+    "network",
+    "none"
   ]
 }

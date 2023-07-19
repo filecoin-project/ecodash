@@ -1,39 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Coinomi-logo.png", "full": "Coinomi-logo-typography.png" },
+  "since": 2020,
+  "icon": "Coinomi-logo.png",
   "name": "Coinomi",
-  "org": [""],
-  "description": {
-    "short": "The blockchain wallet trusted by millions.",
-    "long": "Coinomi is a security-first, multi-chain wallet for both mobile & desktop that provides native support and true ownership for more than 125 blockchains and thousands of tokens."
-  },
-  "primaryCta": { "url": "//coinomi.com/en", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "The blockchain wallet trusted by millions.",
+  "website": "//coinomi.com/en",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//coinomi.com/en", "text": "coinomi.com/en" }]
+      "github": "//github.com/coinomi"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [{ "url": "//github.com/coinomi", "text": "github.com/coinomi" }]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["mobile-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "token finance",
+    "other",
+    "mobile app",
+    "none"
   ]
 }

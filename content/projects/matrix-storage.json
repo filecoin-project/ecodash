@@ -1,44 +1,40 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "matrixstorage-square.png",
-    "full": "matrixstorage-cn.png, matrixstorage-en.png"
-  },
+  "since": 2021,
+  "icon": "matrixstorage-square.png",
   "name": "Matrix Storage / 矩阵存储",
-  "org": ["Anmai Cloud"],
-  "description": {
-    "short": "Stable & reliable IPFS decentralized storage services. ",
-    "long": "Matrix Storage provide Easy-to-Use PaaS Services, OpenAPI Services and Storage Toolset Suites."
-  },
-  "primaryCta": {
-    "url": "//storage.anmaicloud.com",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "Anmai Cloud",
+  "description": "Stable & reliable IPFS decentralized storage services. ",
+  "website": "//storage.anmaicloud.com",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        { "url": "//storage.anmaicloud.com", "text": "storage.anmaicloud.com" }
-      ]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["archival", "public-data"] },
-    { "slug": "software-type", "tags": ["api", "infrastructure"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps clients",
+    "archival",
+    "public data",
+    "api",
+    "infrastructure",
+    "none"
   ]
 }

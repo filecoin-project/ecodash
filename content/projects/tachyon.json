@@ -1,36 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "icon-mesh.png", "full": "logo-consensys-mesh.png" },
+  "since": 2020,
+  "icon": "icon-mesh.png",
   "name": "Tachyon",
-  "org": ["Consensys Mesh "],
-  "description": {
-    "short": "Accelerator for early-stage blockchain & Web 3.0 startups",
-    "long": "Tachyon is an accelerator for early-stage blockchain and Web 3.0 startups. Twice a year, Tachyon brings together a highly selective group of founders for an intense 12-week sprint to hone their value proposition, test their assumptions with real customers, and prepare for the next phase of investment and growth.\n\nTachyon's Filecoin Launchpad Accelerator is a full-time, fully remote program dedicated to startups building more open, interoperable, and programmable tools, infrastructure, and applications for projects that build on and bridge the IPFS, Filecoin, and Ethereum communities."
-  },
-  "primaryCta": { "url": "//mesh.xyz/tachyon", "text": "Project Website" },
-  "links": [
+  "org": "Consensys Mesh ",
+  "description": "Accelerator for early-stage blockchain & Web 3.0 startups",
+  "website": "//mesh.xyz/tachyon",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//mesh.xyz/tachyon", "text": "mesh.xyz/tachyon" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "other",
+    "none",
+    "none"
   ]
 }

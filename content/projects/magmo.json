@@ -1,113 +1,37 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "magmo-icon.jpeg",
-    "full": "magmo-icon.jpeg"
-  },
+  "since": 2022,
+  "icon": "magmo-icon.jpeg",
   "name": "Magmo",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "State payment channels for retrieval markets.",
-    "long": "Magmo intends to bring modern state channels to Filecoin to enable retrieval systems for storage. As a FVM Early Builder, Magmo is deploying their state channel framework, nitro, which allows payment channels to be spun up and torn down off-chain. They are doing so by deploying their solidity code onto Filecoin via FEVM."
-  },
-  "primaryCta": {
-    "url": "//magmo.com/, https://statechannels.org",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "State payment channels for retrieval markets.",
+  "website": "//magmo.com/, https://statechannels.org",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//magmo.com/, https://statechannels.org",
-          "text": "magmo.com/, https://statechannels.org"
-        }
-      ]
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
     {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [
-    {
-      "label": "Using Filecoin since",
-      "value": "2022"
-    }
-  ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "token-finance"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "infrastructure"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "token finance",
+    "infrastructure",
+    "fvm"
   ]
 }

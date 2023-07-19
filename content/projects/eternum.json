@@ -1,41 +1,39 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-eternum.svg", "full": "icon-eternum.svg" },
+  "since": 2021,
+  "icon": "icon-eternum.svg",
   "name": "Eternum",
-  "org": ["Stochastic Technologies"],
-  "description": {
-    "short": "Simple & easy-to-use IPFS pinning service. ",
-    "long": "It will host your IPFS files so you can be sure they'll always be available, and it comes with an API that you can use in your apps."
-  },
-  "primaryCta": { "url": "//eternum.io", "text": "Project Website" },
-  "links": [
+  "org": "Stochastic Technologies",
+  "description": "Simple & easy-to-use IPFS pinning service. ",
+  "website": "//eternum.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//eternum.io", "text": "eternum.io" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
     {
-      "label": "Docs",
-      "links": [
-        { "url": "//eternum.io/help/api", "text": "eternum.io/help/api" }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["consumer-storage"] },
-    { "slug": "software-type", "tags": ["api", "web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "consumer storage",
+    "api",
+    "web app",
+    "none"
   ]
 }

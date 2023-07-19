@@ -1,47 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "infinitescroll-square.png",
-    "full": "infinitescroll-square.png"
-  },
+  "since": 2021,
+  "icon": "infinitescroll-square.png",
   "name": "InfiniteScroll",
-  "org": [""],
-  "description": {
-    "short": "Interoperable tools for the Filecoin network.",
-    "long": "InfiniteScroll is a subversive software for optimistic internets."
-  },
-  "primaryCta": { "url": "//infinitescroll.org", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Interoperable tools for the Filecoin network.",
+  "website": "//infinitescroll.org",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//infinitescroll.org", "text": "infinitescroll.org" }]
+      "github": "//github.com/infinitescroll"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/infinitescroll",
-          "text": "github.com/infinitescroll"
-        }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["general-storage"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["ipfs-http-client"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "general storage",
+    "none",
+    "ipfs http client"
   ]
 }

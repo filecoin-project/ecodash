@@ -1,41 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "powerloom-square.png", "full": "powerloom-logo.png" },
+  "since": 2021,
+  "icon": "powerloom-square.png",
   "name": "PowerLoom",
-  "org": [""],
-  "description": {
-    "short": " Snapshots for on-chain and off-chain data.",
-    "long": "PowerLoom protocol aggregates on-chain and off-chain data to generate snapshots with cryptographic proofs in a decentralized manner. "
-  },
-  "primaryCta": { "url": "//powerloom.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": " Snapshots for on-chain and off-chain data.",
+  "website": "//powerloom.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//powerloom.io", "text": "powerloom.io" }]
+      "github": "//github.com/powerloom"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/PowerLoom", "text": "github.com/PowerLoom" }
-      ]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=y0hxjcAYeac",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["network"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "other",
+    "network",
+    "none"
   ]
 }

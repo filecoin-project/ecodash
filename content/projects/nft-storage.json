@@ -1,57 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-nft-storage.png", "full": "logo-nft.storage.svg" },
+  "since": 2021,
+  "icon": "icon-nft-storage.png",
   "name": "NFT.storage",
-  "org": ["Protocol Labs"],
-  "description": {
-    "short": "Decentralized storage for NFTs on IPFS & Filecoin.",
-    "long": "NFT.Storage allows you to store off-chain NFT data, decentralized on IPFS and Filecoin, and receive an IPFS hash of your content simply by uploading it."
-  },
-  "primaryCta": { "url": "//nft.storage", "text": "Project Website" },
-  "links": [
+  "org": "Protocol Labs",
+  "description": "Decentralized storage for NFTs on IPFS & Filecoin.",
+  "website": "//nft.storage",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//nft.storage", "text": "nft.storage" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/ipfs-shipyard/nft.storage",
-          "text": "github.com/ipfs-shipyard/nft.storage"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//github.com/ipfs-shipyard/nft.storage",
-          "text": "github.com/ipfs-shipyard/nft.storage"
-        }
-      ]
+      "github": "//github.com/ipfs-shipyard/nft.storage"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=o_yVYft-7z4",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": {
-    "title": "An nft.storage overview",
-    "description": "Learn how nft.storage makes NFT best practices easier",
-    "buttonText": "More details",
-    "url": "//filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts"
-  },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["hosted-service"] },
-    { "slug": "tooling", "tags": ["estuary"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "nfts",
+    "hosted service",
+    "estuary"
   ]
 }

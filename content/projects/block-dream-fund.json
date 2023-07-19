@@ -1,44 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-okex.png", "full": "Official_logo_of_OKEx1.png" },
+  "since": 2021,
+  "icon": "icon-okex.png",
   "name": "Block Dream Fund",
-  "org": ["OKEx"],
-  "description": {
-    "short": "$10 million fund dedicated to the Filecoin ecosystem.",
-    "long": "10M fund dedicated to Filecoins ecosystem from Block Dream Fund, OKEx‘s investment institute."
-  },
-  "primaryCta": {
-    "url": "//okex.com/blockdream-ventures",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "OKEx",
+  "description": "$10 million fund dedicated to the Filecoin ecosystem.",
+  "website": "//okex.com/blockdream-ventures",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//okex.com/blockdream-ventures",
-          "text": "okex.com/blockdream-ventures"
-        }
-      ]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "other",
+    "none",
+    "none"
   ]
 }

@@ -1,113 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2020
-    }
-  ],
-  "logo": {
-    "icon": "digital-mob-square.jpeg",
-    "full": "digital-mob-square.jpeg"
-  },
+  "since": 2020,
+  "icon": "digital-mob-square.jpeg",
   "name": "Digital MOB",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Multidisciplinary software development company.",
-    "long": "Digital MOB is a multidisciplinary software development company distributed worldwide, partnering with international clients that value quality of outcome above all else, to create memorable and meaningful experiences.\n\nAs a FVM Early Builder, they are bringing the FilecoinJS library up-to-date and enriching it with functionalities related to the FVM."
-  },
-  "primaryCta": {
-    "url": "//github.com/Digital-Mob",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Multidisciplinary software development company.",
+  "website": "//github.com/digital-mob",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//github.com/Digital-Mob",
-          "text": "github.com/Digital-Mob"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/Digital-Mob",
-          "text": "github.com/Digital-Mob"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/digital-mob"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2020"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "collaborations"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "Other"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "library-sdk", "web-app"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        "grant-sponsorship"
-      ]
-    }
+  "tags": [
+    "collaborations",
+    "other",
+    "library sdk",
+    "web app",
+    "fvm",
+    "grant sponsorship"
   ]
 }

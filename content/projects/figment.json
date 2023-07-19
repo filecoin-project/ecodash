@@ -1,47 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-figment.jpg", "full": "Figment-logo.png" },
+  "since": 2021,
+  "icon": "icon-figment.jpg",
   "name": "Figment",
-  "org": ["Figment Networks"],
-  "description": {
-    "short": "Enterprise-grade node and staking infrastructure",
-    "long": "Figment provides a series of solutions for simplified token staking, application development, and participation in governance."
-  },
-  "primaryCta": { "url": "//figment.io", "text": "Project Website" },
-  "links": [
+  "org": "Figment Networks",
+  "description": "Enterprise-grade node and staking infrastructure",
+  "website": "//figment.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//figment.io", "text": "figment.io" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/figment-networks",
-          "text": "github.com/figment-networks"
-        }
-      ]
-    },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+      "github": "//github.com/figment-networks"
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/channel/UCW8jHuPqYLE6bYFR30aGg9Q",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
+  "taxonomy": [
     {
-      "slug": "software-type",
-      "tags": ["infrastructure", "library-sdk", "web-app"]
+      "category": "finance",
+      "subcategories": []
     },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "other",
+    "infrastructure",
+    "library sdk",
+    "web app",
+    "none"
   ]
 }
