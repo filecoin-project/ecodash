@@ -4,6 +4,10 @@
     @click="toggleExpanded">
     <div class="card-inner-wrapper">
 
+      <FVMIcon
+        v-if="fvm"
+        class="fvm-icon" />
+
       <div class="thumbnail">
         <img :src="$relativity(`/images/projects/${logo}`)" :alt="imageAlt" />
       </div>
@@ -68,6 +72,7 @@ import TwitterIcon from '@/components/icons/TwitterIcon'
 import MatrixIcon from '@/components/icons/MatrixIcon'
 import WeChatIcon from '@/components/icons/WeChatIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
+import FVMIcon from '@/components/icons/FVMIcon'
 
 // ====================================================================== Export
 export default {
@@ -80,7 +85,8 @@ export default {
     TwitterIcon,
     MatrixIcon,
     WeChatIcon,
-    GithubIcon
+    GithubIcon,
+    FVMIcon
   },
 
   props: {
@@ -164,6 +170,9 @@ export default {
         return `Tags: ${this.tags.join(', ')}`
       }
       return false
+    },
+    fvm () {
+      return this.tags && this.tags.includes('fvm')
     }
   },
 
@@ -237,6 +246,18 @@ export default {
       left: 0;
       width: toRem(40);
       height: toRem(40);
+    }
+  }
+  .fvm-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
+    height: 1.5rem;
+    @include small {
+      display: none;
+      width: 0.75rem;
+      height: 1.125rem;
     }
   }
   .content {
