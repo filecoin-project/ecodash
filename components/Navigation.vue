@@ -412,6 +412,7 @@ export default {
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: -1rem;
+  z-index: 100;
   @include small {
     align-items: center;
   }
