@@ -424,7 +424,7 @@ export default {
     z-index: 1;
     border-radius: inherit;
     box-sizing: border-box;
-    transition: opacity 250ms ease, border 250ms ease;
+    transition: opacity 250ms linear, border 250ms linear;
   }
   &:before {
     width: calc(100% + 2px);
@@ -446,13 +446,13 @@ export default {
       opacity: 1;
     }
     &:after {
-      transition: border 0ms ease;
+      transition: border 0ms linear;
     }
   }
 }
 
 .scale-up {
-  transition: 200ms ease;
+  transition: 200ms linear;
   transform: scale(1);
   &:hover {
     transform: scale(1.1);
