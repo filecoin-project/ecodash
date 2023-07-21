@@ -175,6 +175,9 @@ export default {
 
 .back-button {
   margin-bottom: 0.125rem;
+  @include small {
+    margin-bottom: 0;
+  }
   ::v-deep .icon {
     transform: translateY(2px) rotate(180deg);
   }
@@ -191,8 +194,9 @@ export default {
 .heading-cta {
   margin-top: toRem(14);
   @include small {
-    margin-top: 0.125rem;
+    margin-top: 1rem;
     height: toRem(21);
+    transform: translateY(-4px);
   }
 }
 
@@ -221,6 +225,12 @@ export default {
   @include small {
     font-size: toRem(14);
     line-height: leading(21, 14);
+  }
+}
+
+.subheading {
+  @include small {
+    transform: translateY(-4px);
   }
 }
 

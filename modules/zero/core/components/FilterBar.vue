@@ -95,10 +95,12 @@ export default {
   border-radius: toRem(1);
   padding: toRem(9);
   box-sizing: border-box;
-  transition: width 250ms ease-in;
+  transition: width 250ms ease, border 250ms ease;
+  border: solid 1px rgba($white, 1);
   @include small {
     height: toRem(29);
     padding: toRem(2) toRem(9);
+    border: solid 1px rgba($white, 0);
   }
   &:before,
   &:after {
@@ -107,40 +109,37 @@ export default {
     z-index: 1;
     border-radius: inherit;
     box-sizing: border-box;
-    transition: opacity 250ms ease, border 250ms ease;
+    transition: opacity 250ms ease;
   }
   &:before {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
     opacity: 0;
     @include lightOceanGradient;
   }
   &:after {
-    border: solid 1px rgba($white, 1);
     background-color: $blackSapphire;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    @include small {
-      border: none;
-    }
   }
   &:hover {
+    border: solid 1px rgba($white, 0);
     &:before {
       opacity: 1;
     }
-    &:after {
-      transition: border 0ms ease;
-      border: solid 1px rgba($white, 0);
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      top: 1px;
-      left: 1px;
-      @include small {
-        border: none;
+  }
+  &:hover,
+  &:active,
+  &.focused {
+    .button-icon {
+      ::v-deep .icon {
+        @include small {
+          transform: scale(1);
+        }
       }
     }
   }
@@ -174,6 +173,10 @@ export default {
     margin: 0;
     width: toRem(13);
     height: toRem(13);
+    transition: 200ms ease;
+    @include small {
+      transform: scale(1.46);
+    }
     svg {
       width: 100%;
       height: 100%;
