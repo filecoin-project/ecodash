@@ -55,7 +55,7 @@
               type="outline"
               tag="nuxt-link"
               :text="category.label"
-              :to="`/category/${category.slug}`"
+              :to="activeCategory.slug === category.slug ? '/' : `/category/${category.slug}`"
               :class="['category-button', { active: activeCategory && activeCategory.slug === category.slug }]" />
           </div>
         </div>
