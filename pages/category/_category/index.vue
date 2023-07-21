@@ -121,12 +121,14 @@ export default {
           const categorySlug = this.activeCategory.slug
           const subcategory = subcategories[i]
           const column = getSubcategoryProjects(subcategory.slug, this.projects)
-          array.push({
-            heading: subcategory.label,
-            path: `/category/${categorySlug}/${subcategory.slug}`,
-            count: column.length,
-            projects: column
-          })
+          if (column.length) {
+            array.push({
+              heading: subcategory.label,
+              path: `/category/${categorySlug}/${subcategory.slug}`,
+              count: column.length,
+              projects: column
+            })
+          }
         }
         return array
       }
