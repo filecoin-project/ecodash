@@ -273,6 +273,11 @@ export default {
 
 .category-button {
   width: fit-content;
+  transform: scale(1);
+  transition: 200ms ease;
+  &:hover {
+    transform: scale(1.05);
+  }
   @include small {
     &:not(:last-child) {
       margin-bottom: 0.5rem;
