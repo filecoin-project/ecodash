@@ -1,5 +1,7 @@
 <template>
-  <div :class="['project-card', format]">
+  <div
+    :class="['project-card', format]"
+    @click="toggleExpanded">
     <div class="card-inner-wrapper">
 
       <div class="thumbnail">
@@ -43,8 +45,7 @@
           <Button
             tag="button"
             text="More"
-            :class="['see-more', 'scale-up', { expanded }]"
-            @clicked="toggleExpanded">
+            :class="['see-more', 'scale-up', { expanded }]">
             <template #icon-after>
               <SelectorToggle />
             </template>
@@ -202,12 +203,18 @@ export default {
   position: relative;
   padding: 0.625rem;
   opacity: 0;
+  cursor: pointer;
   animation: fadein 0.3s 1;
   animation-fill-mode: forwards;
   border-radius: 2px;
   border: 2px solid #0D222B;
   background: $blackSapphire;
   margin-bottom: 0.625rem;
+  &:hover {
+    .see-more {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .list-view {
@@ -376,8 +383,13 @@ export default {
     display: flex;
   }
   .social-icon {
+    transform: scale(1);
+    transition: 250ms ease;
     &:not(:last-child) {
       margin-right: 0.625rem;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
     ::v-deep .button-content {
       padding: 0;
