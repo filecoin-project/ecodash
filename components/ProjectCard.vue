@@ -1,6 +1,12 @@
 <template>
-  <div :class="['project-card', format]">
+  <div
+    :class="['project-card', format]"
+    @click="toggleExpanded">
     <div class="card-inner-wrapper">
+
+      <FVMIcon
+        v-if="fvm"
+        class="fvm-icon" />
 
       <div class="thumbnail">
         <img :src="$relativity(`/images/projects/${logo}`)" :alt="imageAlt" />
@@ -35,7 +41,7 @@
             text="Go"
             :to="url"
             target="_blank"
-            class="external-link">
+            class="external-link scale-up">
             <template #icon-after>
               ↗
             </template>
@@ -43,8 +49,7 @@
           <Button
             tag="button"
             text="More"
-            :class="['see-more', { expanded }]"
-            @clicked="toggleExpanded">
+            :class="['see-more', 'scale-up', { expanded }]">
             <template #icon-after>
               <SelectorToggle />
             </template>
@@ -67,6 +72,7 @@ import TwitterIcon from '@/components/icons/TwitterIcon'
 import MatrixIcon from '@/components/icons/MatrixIcon'
 import WeChatIcon from '@/components/icons/WeChatIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
+import FVMIcon from '@/components/icons/FVMIcon'
 
 // ====================================================================== Export
 export default {
@@ -79,7 +85,8 @@ export default {
     TwitterIcon,
     MatrixIcon,
     WeChatIcon,
-    GithubIcon
+    GithubIcon,
+    FVMIcon
   },
 
   props: {
@@ -163,6 +170,9 @@ export default {
         return `Tags: ${this.tags.join(', ')}`
       }
       return false
+    },
+    fvm () {
+      return this.tags && this.tags.includes('fvm')
     }
   },
 
@@ -202,12 +212,18 @@ export default {
   position: relative;
   padding: 0.625rem;
   opacity: 0;
+  cursor: pointer;
   animation: fadein 0.3s 1;
   animation-fill-mode: forwards;
   border-radius: 2px;
   border: 2px solid #0D222B;
   background: $blackSapphire;
   margin-bottom: 0.625rem;
+  &:hover {
+    .see-more {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .list-view {
@@ -230,6 +246,18 @@ export default {
       left: 0;
       width: toRem(40);
       height: toRem(40);
+    }
+  }
+  .fvm-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
+    height: 1.5rem;
+    @include small {
+      display: none;
+      width: 0.75rem;
+      height: 1.125rem;
     }
   }
   .content {
@@ -376,8 +404,13 @@ export default {
     display: flex;
   }
   .social-icon {
+    transform: scale(1);
+    transition: 250ms ease;
     &:not(:last-child) {
       margin-right: 0.625rem;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
     ::v-deep .button-content {
       padding: 0;
@@ -412,7 +445,7 @@ export default {
     z-index: 1;
     border-radius: inherit;
     box-sizing: border-box;
-    transition: opacity 250ms ease, border 250ms ease;
+    transition: opacity 250ms linear, border 250ms linear;
   }
   &:before {
     width: calc(100% + 2px);
@@ -434,8 +467,16 @@ export default {
       opacity: 1;
     }
     &:after {
-      transition: border 0ms ease;
+      transition: border 0ms linear;
     }
+  }
+}
+
+.scale-up {
+  transition: 200ms linear;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
