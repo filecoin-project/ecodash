@@ -138,14 +138,14 @@
     "right_links": [
       {
         "type": "a",
-        "href": "https://research.filecoin.io/",
-        "label": "Research",
+        "href": "https://filecoin.io/blog",
+        "label": "Blog",
         "target": "_blank"
       },
       {
         "type": "a",
-        "href": "https://filecoin.io/blog/",
-        "label": "Blog",
+        "href": "https://docs.filecoin.io",
+        "label": "Docs",
         "target": "_blank"
       },
       {
@@ -162,7 +162,7 @@
       },
       {
         "type": "a",
-        "href": "https://security.filecoin.io/",
+        "href": "https://security.filecoin.io",
         "label": "Security",
         "target": "_blank"
       }
