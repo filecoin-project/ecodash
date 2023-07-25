@@ -157,7 +157,8 @@ export default {
         const active = this.categories.find(cat => cat.slug === params.category)
         breadcrumbs.push({ href: `/category/${params.category}`, label: active.label })
         if (params.subcategory) {
-          breadcrumbs.push({ href: `/category/${params.category}/${params.subcategory}`, label: 'Bridges and Oracles' })
+          const subcategory = active.subcategories.find(subcat => subcat.slug === params.subcategory)
+          breadcrumbs.push({ href: `/category/${params.category}/${params.subcategory}`, label: subcategory.label })
         }
       } else if (this.breadcrumbsMap.hasOwnProperty(route.name) && route.name !== 'index') {
         breadcrumbs.push(this.breadcrumbsMap[route.name])

@@ -3,8 +3,7 @@
 
     <HeroHeader
       :content="resultsHeading"
-      :categories="false"
-      :back-button="backButton"
+      :back-button="true"
       :heading-cta="true" />
 
     <section
@@ -62,12 +61,6 @@ export default {
     }),
     categories () {
       return this.siteContent.taxonomy.categories
-    },
-    backButton () {
-      return {
-        text: 'Back to all categories',
-        url: '/'
-      }
     },
     resultsHeading () {
       if (this.resultsCount) {
