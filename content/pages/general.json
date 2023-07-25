@@ -42,8 +42,8 @@
         },
         {
           "type": "a",
-          "href": "https://filescan.io/scan",
-          "label": "Filescan",
+          "href": "https://filscan.io/scan",
+          "label": "Filscan",
           "target": "_blank"
         },
         {
@@ -56,6 +56,24 @@
           "type": "a",
           "href": "https://spacegap.github.io/#/",
           "label": "Spacegap",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://green.filecoin.io/",
+          "label": "Filecoin Green",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://dashboard.starboard.ventures/",
+          "label": "Starboard",
+          "target": "_blank"
+        },
+        {
+          "type": "a",
+          "href": "https://filecoin.io/",
+          "label": "Filecoin.io",
           "target": "_blank"
         }
       ]
@@ -78,12 +96,13 @@
     "description": "Take a look at some projects that are similar to this one."
   },
   "subfooter": {
-    "heading": "Lorem Ipsum Dolor",
-    "subheading": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
+    "heading": "Working on a project?",
+    "subheading": "If you're part of a project that's building on Filecoin, you can add it using our public Github respository. You can also edit an existing project by creating a pull request.",
     "cta": {
       "type": "a",
       "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow",
-      "text": "Add your project"
+      "text": "Add your project",
+      "target": "_blank"
     }
   },
   "footer": {
@@ -120,14 +139,14 @@
     "right_links": [
       {
         "type": "a",
-        "href": "https://research.filecoin.io/",
-        "label": "Research",
+        "href": "https://filecoin.io/blog",
+        "label": "Blog",
         "target": "_blank"
       },
       {
         "type": "a",
-        "href": "https://filecoin.io/blog/",
-        "label": "Blog",
+        "href": "https://docs.filecoin.io",
+        "label": "Docs",
         "target": "_blank"
       },
       {
@@ -144,7 +163,7 @@
       },
       {
         "type": "a",
-        "href": "https://security.filecoin.io/",
+        "href": "https://security.filecoin.io",
         "label": "Security",
         "target": "_blank"
       }

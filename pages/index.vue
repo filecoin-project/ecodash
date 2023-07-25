@@ -214,9 +214,9 @@ export default {
   //   parseURLParams(this)
   // },
 
-  beforeDestroy () {
-    this.clearRouteQuery()
-  },
+  // beforeDestroy () {
+  //   this.clearRouteQuery()
+  // },
 
   methods: {
     ...mapActions({

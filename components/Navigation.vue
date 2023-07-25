@@ -4,7 +4,7 @@
     :class="headerNavigationClasses">
     <div class="grid-noGutter-middle">
 
-      <div :class="['modal-background', { 'show-background': navOpen }, { 'transition-out': modalClosing }]"></div>
+      <div :class="['modal-background', { 'show-background': navOpen }]"></div>
 
       <div class="col-3_lg-2_sm-4">
         <nuxt-link to="/" tabindex="0" class="logo-link focus-visible">
@@ -13,7 +13,7 @@
       </div>
 
       <div class="col-5_lg-6_sm-1">
-        <div :class="['navigation', { 'modal-open': navOpen }, { 'transition-out': modalClosing }]">
+        <div :class="['navigation', { 'modal-open': navOpen }]">
           <div class="nav-items">
             <Button
               v-for="(link, index) in navigation"
@@ -123,7 +123,6 @@ export default {
       navOpen: false,
       resize: false,
       scroll: false,
-      modalClosing: false,
       scrollPosition: 0,
       showBackground: false,
       forceNavigationVisible: true
@@ -219,12 +218,8 @@ export default {
   methods: {
     toggleNav () {
       if (this.navOpen) {
-        this.modalClosing = true
-        setTimeout(() => {
-          this.modalClosing = false
-          document.body.classList.remove('no-scroll')
-          this.navOpen = !this.navOpen
-        }, 300)
+        this.navOpen = !this.navOpen
+        document.body.classList.remove('no-scroll')
       } else {
         document.body.classList.add('no-scroll')
         this.navOpen = !this.navOpen
@@ -270,6 +265,7 @@ export default {
   transition: transform 250ms ease-in-out;
   @include small {
     padding-top: toRem(20);
+    height: toRem(92);
   }
   &.force-visible {
     transform: translateY(0);
@@ -331,7 +327,6 @@ export default {
   }
   @include small {
     display: block;
-    visibility: hidden;
     flex-direction: column;
     position: fixed;
     padding: 0 toRem(36);
@@ -341,11 +336,14 @@ export default {
     height: calc(100vh - 8.25rem);
     max-width: none;
     z-index: 100;
-    &:not(.modal-open) {
-      visibility: hidden;
-    }
+    transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease;
+    visibility: hidden;
+    transform: scale(1.1);
+    opacity: 0;
     &.modal-open {
+      opacity: 1;
       visibility: visible;
+      transform: scale(1);
     }
   }
   &.modal-open {
@@ -414,6 +412,7 @@ export default {
   justify-content: flex-end;
   align-items: flex-end;
   margin-left: -1rem;
+  z-index: 100;
   @include small {
     align-items: center;
   }
@@ -436,6 +435,10 @@ export default {
 .modal-background {
   display: none;
   background-color: $blackSapphire;
+  transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease;
+  visibility: hidden;
+  transform: scale(1.1);
+  opacity: 0;
   &:before {
     content: '';
     position: absolute;
@@ -458,6 +461,9 @@ export default {
   &.show-background {
     display: inline;
     animation: landing 300ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
   }
 }
 
@@ -514,12 +520,6 @@ export default {
     transform: scale(1.0);
     opacity: 1.0;
   }
-}
-
-.transition-out {
-  transition: 300ms cubic-bezier(0.4, 0.0, 0.2, 1.0);
-  transform: scale(1.1);
-  opacity: 0.0;
 }
 
 </style>
