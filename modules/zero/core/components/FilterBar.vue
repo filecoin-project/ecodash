@@ -126,7 +126,8 @@ export default {
     top: 0;
     left: 0;
   }
-  &:hover {
+  &:hover,
+  &:focus-within {
     border: solid 1px rgba($white, 0);
     &:before {
       opacity: 1;
@@ -205,6 +206,7 @@ export default {
   }
   &:hover, &:active, &:focus {
     transition: 250ms ease-in;
+    font-style: normal;
   }
   &::placeholder {
     color: white;
