@@ -266,6 +266,17 @@ const reOrderBasedOnScore = (instance, next) => {
   return next()
 }
 
+const setDefaultCategory = (instance) => {
+  const route = instance.$route
+  const active = route.params.category
+  if (active) {
+    const index = instance.segments.findIndex(item => item.slug === active)
+    if (index >= 0) {
+      instance.updateParent(index)
+    }
+  }
+}
+
 // ====================================================================== Export
 export default {
   name: 'SegmentSliderChart',
@@ -317,6 +328,9 @@ export default {
           slug: segment.slug
         })
       }
+    },
+    '$route' () {
+      setDefaultCategory(this)
     }
   },
 
@@ -333,6 +347,7 @@ export default {
                       positionThirdTierLabels(this, 0, () => {
                         positionThirdTierLabels(this, 1, () => {
                           console.log('labels loaded')
+                          setDefaultCategory(this)
                         })
                       })
                     })
