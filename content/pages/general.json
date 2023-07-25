@@ -96,12 +96,13 @@
     "description": "Take a look at some projects that are similar to this one."
   },
   "subfooter": {
-    "heading": "Lorem Ipsum Dolor",
-    "subheading": "Lörem ipsum lar tepp astrotes polig ressa, kroning. Plasade hing. Dovis pseudovis konde ohins. Profiering prens sarar. Löse egoskapet dobur än yhinat pydoda i länade.",
+    "heading": "Working on a project?",
+    "subheading": "If you're part of a project that's building on Filecoin, you can add it using our public Github respository. You can also edit an existing project by creating a pull request.",
     "cta": {
       "type": "a",
       "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow",
-      "text": "Add your project"
+      "text": "Add your project",
+      "target": "_blank"
     }
   },
   "footer": {
