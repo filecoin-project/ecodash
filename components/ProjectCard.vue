@@ -234,6 +234,9 @@ export default {
     flex-direction: row;
     height: 100%;
     z-index: 2;
+    @include small {
+      margin-top: 0.5rem;
+    }
   }
   .thumbnail {
     width: toRem(45);
@@ -255,9 +258,10 @@ export default {
     width: 1rem;
     height: 1.5rem;
     @include small {
-      display: none;
-      width: 0.75rem;
-      height: 1.125rem;
+      width: 0.625rem;
+      height: 0.875rem;
+      top: toRem(-13);
+      right: toRem(-5);
     }
   }
   .content {
