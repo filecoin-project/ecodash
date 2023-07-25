@@ -3,7 +3,8 @@
 
     <HeroHeader
       :content="hero"
-      :categories="categories" />
+      :categories="categories"
+      :show-category-info="true" />
 
     <section class="project-list">
       <div class="grid">

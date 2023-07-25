@@ -2,10 +2,8 @@
   <div :class="`page page-${tag} container`">
 
     <HeroHeader
-      v-if="subcategory"
       :content="subcategory"
-      :categories="false"
-      :back-button="backButton"
+      :back-button="true"
       :heading-cta="true" />
 
     <section class="project-list">
@@ -95,34 +93,25 @@ export default {
       return false
     },
     subcategory () {
+      const obj = {}
       if (this.activeCategory) {
         const route = this.$route
         if (route.params.subcategory) {
           const subcategories = this.activeCategory.subcategories
           const subcategory = subcategories.find(cat => cat.slug === route.params.subcategory)
           if (subcategory) {
-            return {
-              heading: subcategory.label,
-              subheading: subcategory.description,
-              slug: subcategory.slug
-            }
+            obj.heading = subcategory.label
+            obj.subheading = subcategory.description
+            obj.slug = subcategory.slug
           }
         }
       }
-      return false
-    },
-    backButton () {
-      if (this.activeCategory) {
-        return {
-          text: `Back to ${this.activeCategory.label}`,
-          url: `/category/${this.activeCategory.slug}`
-        }
-      }
-      return false
+      return obj
     },
     subcategoryProjects () {
-      if (this.subcategory) {
-        return getSubcategoryProjects(this.subcategory.slug, this.projects)
+      const slug = this.subcategory.slug
+      if (slug) {
+        return getSubcategoryProjects(slug, this.projects)
       }
       return []
     },

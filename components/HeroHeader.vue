@@ -6,29 +6,37 @@
         class="col-6_sm-12"
         data-push-left="off-3_sm-0"
         data-push-right="off-3_sm-0">
-        <Button
-          v-if="backButton"
-          type="blue"
-          tag="nuxt-link"
-          :to="backButton.url"
-          :text="backButton.text"
-          class="back-button">
-          <template #icon-before>
-            →
-          </template>
-        </Button>
+
+        <!-- without this <ClientOnly> tag, a weird hydration error appears only in the build -->
+        <ClientOnly>
+          <Button
+            v-if="backButton"
+            type="blue"
+            tag="nuxt-link"
+            :to="backButtonUrl"
+            :text="backButtonText"
+            class="back-button">
+            <template #icon-before>
+              →
+            </template>
+          </Button>
+        </ClientOnly>
+
         <div class="heading">
           {{ heading }}
         </div>
+
       </div>
 
       <div
         class="col-8_sm-12"
         data-push-left="off-2_sm-0"
         data-push-right="off-2_sm-0">
+
         <div v-if="subheading" class="subheading">
           {{ subheading }}
         </div>
+
         <Button
           v-if="headingCta"
           type="blue"
@@ -40,10 +48,11 @@
             →
           </template>
         </Button>
+
       </div>
 
       <div
-        v-if="categories"
+        v-if="categories.length"
         class="col-12"
         data-push-left="off-0"
         data-push-right="off-0">
@@ -62,7 +71,7 @@
       </div>
 
       <div
-        v-if="activeCategory"
+        v-if="activeCategory && showCategoryInfo"
         class="col-12"
         data-push-left="off-0"
         data-push-right="off-0">
@@ -97,6 +106,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 import Button from '@/modules/zero/core/components/Button'
 
 export default {
@@ -113,12 +124,12 @@ export default {
       default: () => ({})
     },
     categories: {
-      type: [Array, Boolean],
-      required: true,
+      type: Array,
+      required: false,
       default: () => []
     },
     backButton: {
-      type: [Object, Boolean],
+      type: Boolean,
       required: false,
       default: false
     },
@@ -126,23 +137,44 @@ export default {
       type: Boolean,
       required: false,
       default: false
+    },
+    showCategoryInfo: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
 
   computed: {
+    ...mapGetters({
+      siteContent: 'global/siteContent'
+    }),
     heading () {
       return this.content.heading
     },
     subheading () {
       return this.content.subheading
     },
+    taxonomy () {
+      return this.siteContent.taxonomy
+    },
     activeCategory () {
       const route = this.$route
-      if (this.categories && route.params.category) {
-        const active = this.categories.find(cat => cat.slug === route.params.category)
+      if (route.params.category) {
+        const active = this.taxonomy.categories.find(cat => cat.slug === route.params.category)
         return active
       }
       return false
+    },
+    backButtonUrl () {
+      const route = this.$route
+      if (route.path === '/results') { return '/' }
+      return this.activeCategory ? `/category/${this.activeCategory.slug}` : ''
+    },
+    backButtonText () {
+      const route = this.$route
+      if (route.path === '/results') { return 'Back to all categories' }
+      return this.activeCategory ? `Back to ${this.activeCategory.label}` : ''
     }
   }
 }
