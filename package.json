@@ -1,6 +1,6 @@
 {
   "name": "filecoin-project-ecodash",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Interactive ecosystem directory and showcase",
   "author": {
     "name": "Agency Undone",
@@ -34,5 +34,11 @@
     "vue-ls": "^4.0.0",
     "vue-uuid": "^2.0.2",
     "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "airtable": "^0.12.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security"
   }
 }
