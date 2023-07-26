@@ -32,11 +32,15 @@ const getAirtableRecords = () => {
   return new Promise((resolve) => {
     const base = Airtable.base(process.env.AIRTABLE_BASE_ID)
     base('Main')
-      .select({ filterByFormula: 'IF(AND({Include in directory?}, NOT({Rejected})), TRUE(), FALSE())' })
-      .eachPage((records, next) => {
+    .select({ filterByFormula: 'AND({Include in directory?}, NOT({Rejected}), {New directory addition})' })
+    .eachPage((records, next) => {
         resolve(records)
-      })
+    })
   })
+}
+
+const getRecordSlug = (record) => {
+  return getProjectNameSlug(record.fields['Product/project name'])
 }
 
 // ----------------------------------------------------------- diffAmountDeleted
@@ -55,27 +59,28 @@ const diffAmountDeleted = async (count) => {
   }
 }
 
-// ------------------------------------------------------- deleteAllLocalRecords
-const deleteAllLocalRecords = async () => {
-  try {
-    const projectFiles = await Fs.readdir(PROJECT_DIR_PATH)
-    const imageFiles = await Fs.readdir(IMAGE_DIR_PATH)
-    const files = projectFiles
-      .map(file => `${PROJECT_DIR_PATH}/${file}`)
-      .concat(
-        imageFiles.map(file => `${IMAGE_DIR_PATH}/${file}`)
-      )
-    const len = files.length
-    for (let i = 0; i < len; i++) {
-      const path = files[i]
-      if (Fs.existsSync(path)) {
-        await Fs.unlink(path)
+// -------------------------------------------------- deleteSpecificLocalRecords
+const deleteSpecificLocalRecords = async (records) => {
+    try {
+      const slugs = records.map(getRecordSlug)
+      const projectFiles = await Fs.readdir(PROJECT_DIR_PATH)
+      const imageFiles = await Fs.readdir(IMAGE_DIR_PATH)
+      const files = projectFiles
+        .filter(file => slugs.includes(Path.basename(file, '.json')))
+        .map(file => `${PROJECT_DIR_PATH}/${file}`)
+        .concat(
+          imageFiles.filter(file => slugs.some(slug => file.startsWith(`icon-${slug}`) || file.startsWith(`logo-${slug}`)))
+          .map(file => `${IMAGE_DIR_PATH}/${file}`)
+        )
+      for (let path of files) {
+        if (Fs.existsSync(path)) {
+          await Fs.unlink(path)
+        }
       }
+    } catch (e) {
+      console.log('=========================== [function: deleteSpecificLocalRecords]')
+      throw e
     }
-  } catch (e) {
-    console.log('=========================== [function: deleteAllLocalRecords]')
-    throw e
-  }
 }
 
 // ------------------------------------------------------ writeProjectFileToDisk
@@ -194,7 +199,7 @@ const AirtableFetch = async () => {
     const records = await getAirtableRecords()
     const count = records.length
     await diffAmountDeleted(count)
-    await deleteAllLocalRecords()
+    await deleteSpecificLocalRecords(records)
     for (let i = 0; i < count; i++) {
       const record = records[i].fields
       const projectSlug = getProjectNameSlug(record['Product/project name'])
