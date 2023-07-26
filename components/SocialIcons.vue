@@ -22,8 +22,10 @@ import { mapGetters } from 'vuex'
 
 import SlackIcon from '@/components/icons/SlackIcon'
 import TwitterIcon from '@/components/icons/TwitterIcon'
-import MatrixIcon from '@/components/icons/MatrixIcon'
+import GithubIcon from '@/components/icons/GithubIcon'
 import WeChatIcon from '@/components/icons/WeChatIcon'
+import TelegramIcon from '@/components/icons/TelegramIcon'
+import DiscordIcon from '@/components/icons/DiscordIcon'
 
 // ====================================================================== Export
 export default {
@@ -32,8 +34,10 @@ export default {
   components: {
     SlackIcon,
     TwitterIcon,
-    MatrixIcon,
-    WeChatIcon
+    GithubIcon,
+    WeChatIcon,
+    TelegramIcon,
+    DiscordIcon
   },
 
   computed: {
@@ -41,7 +45,7 @@ export default {
       siteContent: 'global/siteContent'
     }),
     links () {
-      const networks = ['Slack', 'Twitter', 'Matrix', 'WeChat']
+      const networks = ['Slack', 'Twitter', 'WeChat', 'Telegram', 'Discord', 'Github']
       const siteContent = this.siteContent
       const links = []
       if (siteContent.general && siteContent.general.social_icons) {
