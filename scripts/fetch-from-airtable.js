@@ -29,14 +29,20 @@ const IMAGE_DIR_PATH = Path.resolve(__dirname, '../static/images/projects/')
 // -----------------------------------------------------------------------------
 // ---------------------------------------------------------- getAirtableRecords
 const getAirtableRecords = () => {
-  return new Promise((resolve) => {
-    const base = Airtable.base(process.env.AIRTABLE_BASE_ID)
-    base('Main')
-    .select({ filterByFormula: 'AND({Include in directory?}, NOT({Rejected}), {New directory addition})' })
-    .eachPage((records, next) => {
-        resolve(records)
-    })
-  })
+  return new Promise((resolve, reject) => {
+    try {
+      const base = Airtable.base(process.env.AIRTABLE_BASE_ID)
+      base('Main')
+      .select({ filterByFormula: 'AND({Include in directory?}, {New directory addition})' })
+      .eachPage((records, next) => {
+          resolve(records)
+      }, function done(err) {
+        if (err) { reject(err); }
+      });
+    } catch (err) {
+      reject(err);
+    }
+  });
 }
 
 const getRecordSlug = (record) => {
@@ -74,7 +80,7 @@ const deleteSpecificLocalRecords = async (records) => {
         )
       for (let path of files) {
         if (Fs.existsSync(path)) {
-          await Fs.unlink(path)
+          await Fs.unlink(path).catch(e => { throw e })
         }
       }
     } catch (e) {
@@ -196,7 +202,7 @@ const AirtableFetch = async () => {
   console.log('🤖 Airtable fetch started', '\n')
   try {
     verifyEnvVars()
-    const records = await getAirtableRecords()
+    const records = await getAirtableRecords().catch(e => { throw e; })
     const count = records.length
     await diffAmountDeleted(count)
     await deleteSpecificLocalRecords(records)
