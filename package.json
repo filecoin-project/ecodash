@@ -39,6 +39,7 @@
     "airtable": "^0.12.1",
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "sharp": "^0.32.4"
   }
 }
