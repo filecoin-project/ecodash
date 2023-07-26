@@ -108,7 +108,17 @@ const csvContent = [
   ["filescan.json", "network-explorers-and-reputation"],
   ["trust-wallet.json", "wallets-identity-and-authentication"],
   ["filfox.json", "network-explorers-and-reputation"],
-  ["athena-explorer.json", "network-explorers-and-reputation"]
+  ["athena-explorer.json", "network-explorers-and-reputation"],
+  ["bela-supernova.json", "developer-tools-and-other"],
+  ["block-dream-fund.json", "governance-daos-and-public-goods"],
+  ["ens.json", "wallets-identity-and-authentication"],
+  ["filecoin-fil-asset-swap.json", "leasing-and-staking"],
+  ["node-factory.json", "enterprise-solutions"],
+  ["nonentropy.json", "data-storage-and-management"],
+  ["outlier-ventures.json", "governance-daos-and-public-goods"],
+  ["small-data-industries.json", "arts-and-collectibles"],
+  ["token-terminal.json", "network-explorers-and-reputation"],
+  ["truffle.json", "developer-tools-and-other"]
 ];
 
 // Read the taxonomy file and parse its json
