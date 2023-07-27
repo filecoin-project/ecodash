@@ -58,7 +58,14 @@ const removeProtocol = (url) => {
     return transformed;
   };  
   
+
   function getProjectNameSlug(name) {
+    console.log("Name before calling getProjectNameSlug: ", name);
+    if (!name || typeof name !== 'string') {
+      console.error('Invalid project name');
+      return;
+    }
+  
     return name
       .toLowerCase()
       .replace(/[^a-zA-Z0-9\s\.]/gi, '')

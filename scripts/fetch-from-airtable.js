@@ -46,7 +46,7 @@ const getAirtableRecords = () => {
 }
 
 const getRecordSlug = (record) => {
-  return getProjectNameSlug(record.fields['Product/project name'])
+  return getProjectNameSlug(record.fields['Project Name'])
 }
 
 // ----------------------------------------------------------- diffAmountDeleted
@@ -204,11 +204,11 @@ const AirtableFetch = async () => {
     verifyEnvVars()
     const records = await getAirtableRecords().catch(e => { throw e; })
     const count = records.length
-    await diffAmountDeleted(count)
+    // await diffAmountDeleted(count)
     await deleteSpecificLocalRecords(records)
     for (let i = 0; i < count; i++) {
       const record = records[i].fields
-      const projectSlug = getProjectNameSlug(record['Product/project name'])
+      const projectSlug = getProjectNameSlug(record['Project Name'])
       const icons = record['Icon (square)']
       const logos = record['Logo (non-square)']
 
@@ -221,14 +221,14 @@ const AirtableFetch = async () => {
         logoFileName = await fetchAndProcessImage(projectSlug, logos[0], 'logo')
       }
       if(!await isProjectLive(record)) {
-        console.log(`   🚫 ${record['Product/project name']} url: ${record.Website} appears to be down. Double check the URL and remove from Airtable if unavailable`)
+        console.log(`   🚫 ${record['Project Name']} url: ${record.Website} appears to be down. Double check the URL and remove from Airtable if unavailable`)
       }
       // Transform from Airtable representation to the directory's schema format
       const transformedProject = transformAirtableRecord(record, { iconFileName, logoFileName })
       const success = await writeProjectFileToDisk(projectSlug, transformedProject)
 
       if(!success) {
-          console.log(`   🚫 ${record['Product/project name']} failed to be saved`) 
+          console.log(`   🚫 ${record['Project Name']} failed to be saved`) 
       }
 
     }
