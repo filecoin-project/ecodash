@@ -36,10 +36,9 @@
     }
   ],
   "tags": [
-    "storage apps clients",
+    "storage apps",
     "consumer storage",
     "library sdk",
-    "network",
-    "none"
+    "network"
   ]
 }

@@ -36,17 +36,17 @@
     }
   ],
   "tags": [
-    "network-tools",
-    "developer-tools",
-    "storage-apps-&-clients",
+    "network tools",
+    "developer tools",
+    "storage apps",
     "collaborations",
     "api",
-    "library/sdk",
+    "library sdk",
     "nfts",
     "social",
-    "decentralized-identity",
-    "chainlink-external-adapters",
+    "decentralized identity",
+    "chainlink external adapters",
     "fvm",
-    "metamask-filecoin-snap"
+    "metamask filecoin snap"
   ]
 }

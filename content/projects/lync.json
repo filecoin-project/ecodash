@@ -36,15 +36,14 @@
     }
   ],
   "tags": [
-    "developer-tools",
-    "library/sdk",
+    "developer tools",
+    "library sdk",
     "api",
     "infrastructure",
     "games",
     "nfts",
-    "decentralized-identity",
-    "other",
-    "ipfs-http-client",
+    "decentralized identity",
+    "ipfs http client",
     "nft.storage",
     "web3.storage",
     "fvm"
