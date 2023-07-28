@@ -6,13 +6,13 @@
 
       <div :class="['modal-background', { 'show-background': navOpen }]"></div>
 
-      <div class="col-3_lg-2_sm-4">
+      <div class="col-2_lg-2_sm-4">
         <nuxt-link to="/" tabindex="0" class="logo-link focus-visible">
           <SiteLogo id="site-logo" />
         </nuxt-link>
       </div>
 
-      <div class="col-5_lg-6_sm-1">
+      <div class="col-5_sm-1">
         <div :class="['navigation', { 'modal-open': navOpen }]">
           <div class="nav-items">
             <Button
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-4_sm-7">
+      <div class="col-5_sm-7">
         <div class="nav-toolbar">
           <FilterBar
             id="nav-filter-bar"
@@ -319,13 +319,13 @@ export default {
   max-width: unset;
   width: 100%;
   height: 100%;
-  transform: translateX(-1rem);
   @include large {
-    padding-left: 3rem;
-  }
-  @include medium {
     padding-left: 1rem;
+    transform: translateX(-2rem);
   }
+  // @include medium {
+  //   padding-left: 1rem;
+  // }
   @include small {
     display: block;
     flex-direction: column;
@@ -360,9 +360,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin: 0 1rem;
-  @include medium {
-    margin-left: 0;
-  }
   @include small {
     flex-direction: column;
     justify-content: center;
@@ -380,7 +377,7 @@ export default {
 .navigation-link {
   display: inline-block;
   margin: 0 toRem(6);
-  @include medium {
+  @include large {
     margin: 0;
   }
   @include small {
@@ -414,6 +411,9 @@ export default {
   align-items: flex-end;
   margin-left: -1rem;
   z-index: 100;
+  @include large {
+    margin-left: 0;
+  }
   @include small {
     align-items: center;
   }

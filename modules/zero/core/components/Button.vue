@@ -299,7 +299,7 @@ export default {
     font-weight: 500;
     line-height: leading(18, 14);
     letter-spacing: 0.5px;
-    transition: background 500ms ease;
+    transition: background 500ms linear;
     background: linear-gradient(
       90deg,
       rgba(255,255,255,1) 0%,
@@ -337,7 +337,7 @@ export default {
     font-size: 1rem;
     font-weight: 400;
     line-height: leading(36, 16);
-    letter-spacing: 0.48px;    
+    letter-spacing: 0.48px;
   }
 }
 

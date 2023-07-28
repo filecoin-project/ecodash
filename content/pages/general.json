@@ -81,7 +81,7 @@
     "header_cta": {
       "button": {
         "type": "a",
-        "text": "Add your project",
+        "text": "Add your project via Github",
         "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow"
       }
     },
@@ -101,7 +101,7 @@
     "cta": {
       "type": "a",
       "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow",
-      "text": "Add your project",
+      "text": "Add your project via Github",
       "target": "_blank"
     }
   },
