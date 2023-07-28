@@ -32,13 +32,13 @@
     }
   ],
   "tags": [
-    "storage-apps-&-clients",
-    "web-app",
-    "consumer-storage",
-    "general-storage",
+    "storage apps",
+    "web app",
+    "consumer storage",
+    "general storage",
     "nfts",
     "video",
-    "ipfs-http-client",
+    "ipfs http client",
     "nft.storage"
   ]
 }

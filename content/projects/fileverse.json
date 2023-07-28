@@ -36,22 +36,22 @@
     }
   ],
   "tags": [
-    "network-tools",
-    "storage-apps",
+    "network tools",
+    "storage apps",
     "collaborations",
-    "developer-tools",
-    "web-app",
-    "backend-app",
+    "developer tools",
+    "web app",
+    "backend app",
     "archival",
-    "consumer-storage",
-    "decentralized-identity",
-    "general-storage",
+    "consumer storage",
+    "decentralized identity",
+    "general storage",
     "social",
-    "web-publishing",
+    "web publishing",
     "video",
     "nfts",
     "web3.storage",
-    "fleek-space-daemon",
-    "ipfs-http-client"
+    "fleek space daemon",
+    "ipfs http client"
   ]
 }
