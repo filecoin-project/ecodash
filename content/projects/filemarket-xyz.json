@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-filemarket-xyz.png",
   "name": "FileMarket.xyz",
   "org": "FileMarket Labs",
   "description": "Multi-chain NFT platform for trading files with privacy data layer.",
-  "website": "https://filemarket.xyz",
+  "website": "//filemarket.xyz",
   "social": [
     {
       "github": "https://github.com/Filemarket-xyz"
@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

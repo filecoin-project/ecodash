@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-lync.png",
   "name": "LYNC",
   "org": "LYNC WORLD",
   "description": "LYNC is a GameFi infrastructure that allows game developers to launch their game on-chain, by keeping blockchain complexities aside.",
-  "website": "https://lync.world/",
+  "website": "//lync.world/",
   "social": [
     {
       "github": "https://github.com/LYNC-WORLD"
@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "gaming"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2020",
+  "since": 2020,
   "icon": "icon-longhash.png",
   "name": "LongHash",
   "org": "LongHash Ventures",
   "description": "Longhash delivers an accelerator program for Filecoin startups.",
-  "website": "https://longhash.vc/",
+  "website": "//longhash.vc/",
   "social": [],
   "taxonomy": [
     {
@@ -25,8 +25,10 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
-      "subcategories": []
+      "category": "education-science-and-public-goods",
+      "subcategories": [
+        "education-and-science"
+      ]
     }
   ],
   "tags": [

@@ -1,16 +1,18 @@
 {
   "display": true,
-  "since": "2017",
+  "since": 2017,
   "icon": "icon-coinlist.jpeg",
   "name": "CoinList",
   "org": "",
   "description": "Trusted platform for new crypto offerings. ",
-  "website": "https://coinlist.co/",
+  "website": "//coinlist.co/",
   "social": [],
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "leasing-and-staking"
+      ]
     },
     {
       "category": "media-and-entertainment",
@@ -25,7 +27,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

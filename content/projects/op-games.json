@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2021",
+  "since": 2021,
   "icon": "icon-op-games.png",
   "name": "OP Games",
   "org": "",
   "description": "A multi-chain gaming platform.",
-  "website": "https://opgames.org ",
+  "website": "//opgames.org ",
   "social": [
     {
       "github": "https://github.com/alto-io/decentralized-game-template"
@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "gaming"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

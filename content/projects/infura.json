@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2021",
+  "since": 2021,
   "icon": "icon-infura.png",
   "name": "Infura",
   "org": "ConsenSys",
   "description": "Gateways & nodes for Ethereum & IPFS allowing developers to develop without running their own nodes.",
-  "website": "https://infura.io/",
+  "website": "//infura.io/",
   "social": [
     {
       "github": "https://github.com/INFURA"
@@ -22,14 +22,16 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

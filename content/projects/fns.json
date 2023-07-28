@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2017",
+  "since": 2017,
   "icon": "icon-fns.png",
   "name": "FNS",
   "org": "fildomains",
   "description": "Filecoin-based data name service!",
-  "website": "https://fildomains.com",
+  "website": "//fildomains.com",
   "social": [
     {
       "github": "https://github.com/fildomains"
@@ -22,14 +22,16 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
     },
     {
       "category": "storage-and-cloud-services",
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

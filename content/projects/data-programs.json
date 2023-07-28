@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2020",
+  "since": 2020,
   "icon": "icon-data-programs.png",
   "name": "Data Programs",
   "org": "Filecoin Data Programs",
   "description": "Onboarding public datasets into the Filecoin network by enabling SPs with accelerator programs and tools.",
-  "website": "https://slingshot.filecoin.io",
+  "website": "//slingshot.filecoin.io",
   "social": [
     {
       "github": "https://github.com/data-preservation-programs/"
@@ -26,10 +26,12 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "data-storage-and-management"
+      ]
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

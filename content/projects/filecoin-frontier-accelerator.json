@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2020",
+  "since": 2020,
   "icon": "icon-filecoin-frontier-accelerator.png",
   "name": "Filecoin Frontier Accelerator",
   "org": "LongHash Ventures",
   "description": "A focused accelerator program for Filecoin startups.",
-  "website": "https://www.longhashventures.com/filecoin/",
+  "website": "//www.longhashventures.com/filecoin/",
   "social": [],
   "taxonomy": [
     {
@@ -25,8 +25,10 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
-      "subcategories": []
+      "category": "education-science-and-public-goods",
+      "subcategories": [
+        "education-and-science"
+      ]
     }
   ],
   "tags": [

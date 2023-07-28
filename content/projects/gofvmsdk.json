@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-gofvmsdk.png",
   "name": "go-fvm-sdk",
   "org": "Force Community",
   "description": "go-fvm-sdk provides a series of tools for developers to write user-defined actors/contracts for FVM using TinyGo.",
-  "website": "https://forcecommunity.io/\n",
+  "website": "//forcecommunity.io/\n",
   "social": [
     {
       "github": "https://github.com/ipfs-force-community"
@@ -22,14 +22,16 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
     },
     {
       "category": "storage-and-cloud-services",
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

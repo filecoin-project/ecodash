@@ -1,16 +1,18 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-stfil.png",
   "name": "STFIL",
   "org": "FrogHub",
   "description": "1st Filecoin Liquidity Staking & Leveraged Farming protocol launched on FVM",
-  "website": "https://stfil.io",
+  "website": "//stfil.io",
   "social": [],
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "leasing-and-staking"
+      ]
     },
     {
       "category": "media-and-entertainment",
@@ -25,7 +27,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

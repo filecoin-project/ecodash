@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-chanson-studio.png",
   "name": "Chanson Studio",
   "org": "Chaining PTY LTD",
   "description": "Chanson Studio is a Decentralised NFT online platform to promote, capture and propagate music inspirations. Chanson is powered by Filecoin to store and retrieve music created by both established or aspiring artists. Chanson has an innovative feature whereby music creators can mint NFTs for any musical works they created whether it is a full solo piece or just an unfinished melody. Other creators can then build on these musical components to create more music while the original creators get paid through their NFT copyright.",
-  "website": "https://chansonstudio.xyz/",
+  "website": "//chansonstudio.xyz/",
   "social": [],
   "taxonomy": [
     {
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -25,7 +27,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

@@ -31,7 +31,7 @@ readdir(directoryPath)
             let hasChanged = false;
             jsonData.taxonomy = jsonData.taxonomy.map(taxonomyItem => {
               // Fix typo in category name (specific use case, can be altered for other use cases)
-              if (taxonomyItem.category === 'education-science-public-goods') {
+              if (taxonomyItem.category === 'education-science-and-public-goods') {
                 taxonomyItem.category = 'education-science-and-public-goods';
                 hasChanged = true;
               }

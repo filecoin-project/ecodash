@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-ntent-art.gif",
   "name": "ntent.art",
   "org": "ntent",
   "description": "ntent is a digital art and immersive experience collective and smart contract platform for generative and dynamic art. Our mission is to empower artists and collectors to push the limits of art production technologies inclusively while positively impacting the environment. We curate collection releases and live art experiences that utilize advanced production technologies, and audience participation to create digital art pieces/installations with intention.",
-  "website": "https://www.ntent.art/",
+  "website": "//www.ntent.art/",
   "social": [],
   "taxonomy": [
     {
@@ -14,7 +14,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -25,7 +27,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2019",
+  "since": 2019,
   "icon": "icon-supranational.jpeg",
   "name": "Supranational",
   "org": "",
   "description": "A product and service company developing hardware accelerated cryptography for verifiable and confidential computing. ",
-  "website": "https://www.supranational.net/",
+  "website": "//www.supranational.net/",
   "social": [],
   "taxonomy": [
     {
@@ -22,10 +22,12 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "data-storage-and-management"
+      ]
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-tellor.png",
   "name": "Tellor",
   "org": "Tellor",
   "description": "Tellor is a decentralized oracle protocol that incentivizes an open, permissionless network of data reporting and data validation, ensuring that data can be provided by anyone and checked by everyone.",
-  "website": "https://www.tellor.io",
+  "website": "//www.tellor.io",
   "social": [
     {
       "github": "https://github.com/tellor-io"
@@ -14,7 +14,9 @@
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "bridges-and-oracles"
+      ]
     },
     {
       "category": "media-and-entertainment",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

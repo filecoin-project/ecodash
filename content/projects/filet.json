@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2022",
+  "since": 2022,
   "icon": "icon-filet.png",
   "name": "Filet",
   "org": "",
   "description": "FIL mining power tokenization.",
-  "website": "https://www.filet.finance/\n",
+  "website": "//www.filet.finance/\n",
   "social": [
     {
       "github": "https://github.com/CodeIsLaw0108/FILETokenContract"
@@ -14,7 +14,9 @@
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "leasing-and-staking"
+      ]
     },
     {
       "category": "media-and-entertainment",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],

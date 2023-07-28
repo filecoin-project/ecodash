@@ -1,11 +1,11 @@
 {
   "display": true,
-  "since": "2019",
+  "since": 2019,
   "icon": "icon-tvcc-news.png",
   "name": "TVCC News",
   "org": "TVCC (Television Creative Contents)",
   "description": "We, TVCC, are developing media content to introduce recent trends and issues to audiences about IPFS and Filecoin. Also, we are saving the content that TVCC has created in Filecoin. ",
-  "website": "https://www.tvcc.kr",
+  "website": "//www.tvcc.kr",
   "social": [
     {
       "github": "https://github.com/seong-k\n"
@@ -18,7 +18,9 @@
     },
     {
       "category": "media-and-entertainment",
-      "subcategories": []
+      "subcategories": [
+        "publishing-and-news"
+      ]
     },
     {
       "category": "tooling-and-productivity",
@@ -29,7 +31,7 @@
       "subcategories": []
     },
     {
-      "category": "education-science-public-goods",
+      "category": "education-science-and-public-goods",
       "subcategories": []
     }
   ],
