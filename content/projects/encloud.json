@@ -36,7 +36,7 @@
     }
   ],
   "tags": [
-    "storage-apps-&-clients",
+    "storage-apps",
     "developer-tools",
     "collaborations",
     "library/sdk",
@@ -44,7 +44,6 @@
     "api",
     "consumer-storage",
     "general-storage",
-    "other",
     "estuary",
     "fvm"
   ]
