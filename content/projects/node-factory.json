@@ -26,7 +26,9 @@
     },
     {
       "category": "storage-and-cloud-services",
-      "subcategories": []
+      "subcategories": [
+        "enterprise-solutions"
+      ]
     },
     {
       "category": "education-science-and-public-goods",

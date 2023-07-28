@@ -1,0 +1,42 @@
+{
+  "display": true,
+  "since": 2022,
+  "icon": "icon-filet.png",
+  "name": "Filet",
+  "org": "",
+  "description": "FIL mining power tokenization.",
+  "website": "//www.filet.finance/\n",
+  "social": [
+    {
+      "github": "https://github.com/CodeIsLaw0108/FILETokenContract"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": [
+        "leasing-and-staking"
+      ]
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "token-&-finance",
+    "fvm"
+  ]
+}

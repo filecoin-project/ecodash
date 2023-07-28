@@ -29,7 +29,7 @@ function transformObject(original) {
       { category: "media-and-entertainment", subcategories: [] },
       { category: "tooling-and-productivity", subcategories: [] },
       { category: "storage-and-cloud-services", subcategories: [] },
-      { category: "education-science-public-goods", subcategories: [] }
+      { category: "education-science-and-public-goods", subcategories: [] }
     ],
     tags: []
   };

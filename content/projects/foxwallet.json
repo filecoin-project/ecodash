@@ -1,0 +1,45 @@
+{
+  "display": true,
+  "since": 2021,
+  "icon": "icon-foxwallet.png",
+  "name": "FoxWallet",
+  "org": "FOXWALLET FOUNDATION LTD.",
+  "description": " FoxWallet is a safe and easy-to-use decentralized audited wallet, dedicated to creating an entrance and connection to the Web3 world.",
+  "website": "//foxwallet.com/",
+  "social": [
+    {
+      "github": "http://github.com/foxwallet"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "token-&-finance",
+    "mobile-app",
+    "decentralized-identity",
+    "nfts",
+    "fvm"
+  ]
+}

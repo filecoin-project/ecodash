@@ -18,7 +18,9 @@
     },
     {
       "category": "tooling-and-productivity",
-      "subcategories": []
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
     },
     {
       "category": "storage-and-cloud-services",

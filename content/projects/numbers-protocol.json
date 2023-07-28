@@ -1,0 +1,46 @@
+{
+  "display": true,
+  "since": 2020,
+  "icon": "icon-numbers-protocol.png",
+  "name": "Numbers Protocol",
+  "org": "",
+  "description": "A Web3 Photo Network.",
+  "website": "//numbersprotocol.io",
+  "social": [
+    {
+      "github": "https://github.com/numbersprotocol"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "photo-and-video"
+      ]
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "api",
+    "mobile-app",
+    "web-app",
+    "verifiable-storage",
+    "starling"
+  ]
+}
