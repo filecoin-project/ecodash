@@ -79,100 +79,97 @@ export default {
 
 <style lang="scss" scoped>
 // ///////////////////////////////////////////////////////////////////// General
-#mailchimp-form {
-  .form-container {
+.form-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  @include small {
+    margin-bottom: toRem(45);
+    padding-right: toRem(66);
+  }
+}
+
+.email {
+  box-shadow: none;
+  position: relative;
+  height: toRem(27);
+  box-sizing: border-box;
+  @include whiteBorderBack;
+  background: $midnight;
+  margin-left: toRem(9);
+  margin-right: toRem(13);
+  @include tiny {
+    min-width: 10rem;
+  }
+  input {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 0.5rem;
+    font-size: toRem(14);
+    line-height: leading(18, 14);
+    letter-spacing: 0.5px;
+    background: none;
+    box-shadow: none;
+    height: 100%;
+    padding: 0 1.25rem;
+    color: $white;
     @include small {
-      margin-bottom: toRem(45);
-      padding-right: toRem(66);
+      font-size: toRem(12);
+      line-height: leading(18, 12);
     }
+    @include tiny {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    &::placeholder {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  &:before,
+  &:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &:before {
+    @include whiteBorderBack;
+    background: $midnight;
+    top: -4.5px;
+    left: -4.5px;
+    z-index: -1;
+  }
+  &:after {
+    @include whiteBorderBack;
+    top: -8px;
+    left: -8px;
+    z-index: -2;
+  }
+}
 
-    .email {
+.submit-button {
+  position: relative;
+  z-index: 100;
+  height: toRem(27);
+  ::v-deep .button-content {
+    input {
+      display: flex;
+      font-size: toRem(14);
+      line-height: leading(18, 14);
+      letter-spacing: 0.5px;
+      background: none;
       box-shadow: none;
-      position: relative;
-      height: toRem(27);
-      box-sizing: border-box;
-      input {
-        display: flex;
-        font-size: toRem(14);
-        line-height: leading(18, 14);
-        letter-spacing: 0.5px;
-        background: none;
-        box-shadow: none;
-        height: 100%;
-        padding: 0 20px;
-        @include small {
-          font-size: toRem(12);
-          line-height: leading(18, 12);
-        }
+      height: 100%;
+      padding: 0 1.25rem;
+      color: $blackSapphire;
+      font-weight: 600;
+      @include small {
+        font-size: toRem(12);
+        line-height: leading(18, 12);
       }
-      &:before,
-      &:after {
-        box-sizing: inherit;
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-      &:before {
-        @include whiteBorderBack;
-        background: $cadmiumBlue;
-        top: -4px;
-        left: -4px;
-        z-index: -1;
-      }
-      &:after {
-        @include whiteBorderBack;
-        top: -8px;
-        left: -8px;
-        z-index: -2;
-      }
-    }
-
-    .email {
-      flex-grow: 1;
-      @include whiteBorderBack;
-      background: $midnight;
-      margin-left: toRem(9);
-      margin-right: toRem(13);
-      input {
-        color: $white;
-        &::placeholder {
-          color: $white;
-          opacity: 1;
-        }
-      }
-      &:before {
-        background: $midnight;
-        top: -4.5px;
-        left: -4.5px;
-      }
-    }
-
-    .submit-button {
-      position: relative;
-      z-index: 100;
-      height: toRem(27);
-      ::v-deep .button-content {
-        input {
-          display: flex;
-          font-size: toRem(14);
-          line-height: leading(18, 14);
-          letter-spacing: 0.5px;
-          background: none;
-          box-shadow: none;
-          height: 100%;
-          padding: 0 20px;
-          color: $blackSapphire;
-          font-weight: 600;
-          @include small {
-            font-size: toRem(12);
-            line-height: leading(18, 12);
-          }
-        }
+      @include tiny {
+        padding: 0 0.5rem;
       }
     }
   }
