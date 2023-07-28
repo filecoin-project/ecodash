@@ -37,8 +37,8 @@
       <div class="grid-noGutter">
 
         <div
-          class="col-4_sm-12"
-          data-push-left="off-1_sm-0"
+          class="col-5_sm-12"
+          data-push-left="off-0"
           data-push-right="off-1_sm-0">
           <div class="content-wrapper panel-left">
 
@@ -58,45 +58,48 @@
         </div>
 
         <div
-          class="col-4_sm-12"
-          data-push-left="off-1_sm-0"
-          data-push-right="off-1_sm-0">
+          class="col-6_sm-12"
+          data-push-left="off-0"
+          data-push-right="off-0">
           <div class="content-wrapper panel-right">
             <nav id="footer-navigation">
-              <div class="left-column">
+              <div class="left-column nav-column">
+                <div class="links-heading">
+                  Reach Out
+                </div>
+                <Button
+                  v-for="(link, index) in socials"
+                  :key="`link-left-${index}`"
+                  tag="a"
+                  :to="link.disabled ? '' : link.href"
+                  :disabled="link.disabled"
+                  :text="link.network"
+                  target="_blank"
+                  class="footer-link focus-visible">
+                  <template #icon-after>
+                    ↗
+                  </template>
+                </Button>
+              </div>
+              <div class="middle-column nav-column">
                 <div class="links-heading">
                   {{ footer.left_heading }}
                 </div>
-                <template v-for="(link, index) in navigation">
-                  <template v-if="link.hasOwnProperty('links')">
-                    <DropdownSelector
-                      :key="index"
-                      label="Explore Network"
-                      :dropdown-options="link.links"
-                      :display-selected="false"
-                      class="footer-link">
-                      <template #dropdown-icon>
-                        <SelectorToggle />
-                      </template>
-                    </DropdownSelector>
+                <Button
+                  v-for="(link, index) in navigation"
+                  :key="`link-middle-${index}`"
+                  :tag="link.type"
+                  :to="link.disabled ? '' : link.href"
+                  :disabled="link.disabled"
+                  :text="link.label"
+                  target="_blank"
+                  class="footer-link focus-visible">
+                  <template #icon-after>
+                    ↗
                   </template>
-                  <template v-else>
-                    <Button
-                      :key="`link-left-${index}`"
-                      :tag="link.type"
-                      :to="link.disabled ? '' : link.href"
-                      :disabled="link.disabled"
-                      :text="link.label"
-                      target="_blank"
-                      class="footer-link focus-visible">
-                      <template #icon-after>
-                        ↗
-                      </template>
-                    </Button>
-                  </template>
-                </template>
+                </Button>
               </div>
-              <div class="right-column">
+              <div class="right-column nav-column">
                 <div class="links-heading">
                   {{ footer.right_heading }}
                 </div>
@@ -115,13 +118,31 @@
                   </template>
                 </Button>
               </div>
+              <div class="left-column nav-column small-only">
+                <div class="links-heading">
+                  Reach Out
+                </div>
+                <Button
+                  v-for="(link, index) in socials"
+                  :key="`link-left-${index}`"
+                  tag="a"
+                  :to="link.disabled ? '' : link.href"
+                  :disabled="link.disabled"
+                  :text="link.network"
+                  target="_blank"
+                  class="footer-link focus-visible">
+                  <template #icon-after>
+                    ↗
+                  </template>
+                </Button>
+              </div>
             </nav>
           </div>
         </div>
 
-        <div class="col-10_sm-12" data-push-left="off-1_sm-0">
+        <!-- <div class="col-10_sm-12" data-push-left="off-1_sm-0">
           <SocialIcons />
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -136,10 +157,10 @@ import CloneDeep from 'lodash/cloneDeep'
 
 import MailchimpForm from '@/components/MailchimpForm'
 import Button from '@/modules/zero/core/components/Button'
-import DropdownSelector from '@/components/DropdownSelector'
-import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
-import SocialIcons from '@/components/SocialIcons'
 import AddIcon from '@/components/icons/AddIcon'
+// import SelectorToggle from '@/modules/zero/core/components/icons/SelectorToggle'
+// import DropdownSelector from '@/components/DropdownSelector'
+// import SocialIcons from '@/components/SocialIcons'
 
 // ====================================================================== Export
 export default {
@@ -148,10 +169,10 @@ export default {
   components: {
     MailchimpForm,
     Button,
-    DropdownSelector,
-    SelectorToggle,
-    SocialIcons,
     AddIcon
+    // SelectorToggle,
+    // DropdownSelector,
+    // SocialIcons
   },
 
   computed: {
@@ -160,8 +181,11 @@ export default {
     }),
     navigation () {
       const nav = CloneDeep(this.siteContent.general.navigation.nav_items)
-      const dropdown = this.siteContent.general.navigation.nav_dropdown
-      nav.push(dropdown)
+      nav.push({
+        type: 'a',
+        href: 'https://filecoin.io',
+        label: 'Filecoin.io'
+      })
       return nav
     },
     subfooter () {
@@ -169,6 +193,9 @@ export default {
     },
     footer () {
       return this.siteContent.general.footer
+    },
+    socials () {
+      return this.siteContent.general.social_icons
     }
   }
 }
@@ -273,8 +300,13 @@ export default {
 #footer-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  @include small {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
   .left-column,
+  .middle-column,
   .right-column {
     display: flex;
     flex-direction: column;
@@ -286,12 +318,38 @@ export default {
   }
 }
 
+.nav-column {
+  margin-left: toRem(90);
+  @include medium {
+    margin-left: toRem(40);
+  }
+  @include small {
+    margin: 0;
+    width: 50%;
+    &:last-child {
+      margin-top: toRem(53);
+    }
+  }
+  &.left-column {
+    @include small {
+      display: none !important;
+    }
+    &.small-only {
+      display: none !important;
+      @include small {
+        display: flex !important;
+      }
+    }
+  }
+}
+
 .links-heading {
   font-size: toRem(18);
   font-weight: 600;
   line-height: leading(21, 18);
   letter-spacing: 0.36px;
   margin-bottom: toRem(15);
+  white-space: nowrap;
 }
 
 .footer-link {

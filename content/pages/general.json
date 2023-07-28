@@ -179,12 +179,20 @@
       "href": "https://twitter.com/filecoin"
     },
     {
-      "network": "Matrix",
-      "href": "https://riot.im/app/#/group/+filecoin:matrix.org"
+      "network": "WeChat",
+      "href": "https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF"
     },
     {
-      "network": "WeChat",
-      "href": "https://docs.filecoin.io/basics/project‒and‒community/social‒media/#wechat"
+      "network": "Telegram",
+      "href": "https://t.me/filecoinio"
+    },
+    {
+      "network": "Discord",
+      "href": "https://discord.gg/ipfs"
+    },
+    {
+      "network": "Github",
+      "href": "https://github.com/filecoin-project/community#forums"
     }
   ],
   "404_error_page": {
