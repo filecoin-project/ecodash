@@ -1,0 +1,45 @@
+{
+  "display": true,
+  "since": "2022",
+  "icon": "icon-filfi.svg",
+  "name": "FilFi",
+  "org": "FilFiDAO",
+  "description": "FilFi is a Defi protocol that creates the liquidity of Filecoin assets, providing services such as staking pool, lending, joint mining, hashrate trading, as well as all other services. Tokenized assets are seamlessly connected to DEX for maximum liquidity.",
+  "website": "http://filfi.io",
+  "social": [
+    {
+      "github": "https://github.com/filfi"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "token-&-finance",
+    "hosted-service",
+    "web-app",
+    "other",
+    "metamask-filecoin-snap",
+    "zondax-signing-tools",
+    "fvm"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "display": true,
+  "since": "2022",
+  "icon": "icon-fns-space.png",
+  "name": "FNS SPACE",
+  "org": "",
+  "description": "FNS is a web3 name service building on Filecoin. All FNS users could replace the complex address with a personalized name, store profile data and transfer crypto assets.",
+  "website": "https://fns.space/",
+  "social": [
+    {
+      "github": "https://github.com/FNS-DAO"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer-tools",
+    "web-app",
+    "library/sdk",
+    "decentralized-identity",
+    "fvm"
+  ]
+}

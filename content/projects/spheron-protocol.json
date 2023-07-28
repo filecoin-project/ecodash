@@ -1,0 +1,46 @@
+{
+  "display": true,
+  "since": "2021",
+  "icon": "icon-spheron-protocol.jpeg",
+  "name": "Spheron Protocol",
+  "org": "",
+  "description": "Decentralized platform for automating modern web projects.",
+  "website": "https://spheron.network/",
+  "social": [
+    {
+      "github": "https://github.com/argoapp-live"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer-tools",
+    "collaborations",
+    "web-app",
+    "api",
+    "nfts",
+    "web-publishing",
+    "data-markets",
+    "estuary"
+  ]
+}

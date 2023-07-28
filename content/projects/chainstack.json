@@ -1,0 +1,43 @@
+{
+  "display": true,
+  "since": "2022",
+  "icon": "icon-chainstack.png",
+  "name": "Chainstack",
+  "org": "Chainstack",
+  "description": "The leading suite of services connecting developers with Web3 infrastructure, powering applications in DeFi, NFT, gaming, analytics, and everything in between",
+  "website": "https://chainstack.com",
+  "social": [
+    {
+      "github": "https://github.com/chainstack"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer-tools",
+    "api",
+    "hosted-service",
+    "infrastructure",
+    "fvm"
+  ]
+}

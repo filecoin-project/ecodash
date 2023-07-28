@@ -1,0 +1,38 @@
+{
+  "display": true,
+  "since": "2020",
+  "icon": "icon-longhash.png",
+  "name": "LongHash",
+  "org": "LongHash Ventures",
+  "description": "Longhash delivers an accelerator program for Filecoin startups.",
+  "website": "https://longhash.vc/",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "none",
+    "other",
+    "none"
+  ]
+}

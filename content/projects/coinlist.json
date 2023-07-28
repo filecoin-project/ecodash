@@ -1,0 +1,33 @@
+{
+  "display": true,
+  "since": "2017",
+  "icon": "icon-coinlist.jpeg",
+  "name": "CoinList",
+  "org": "",
+  "description": "Trusted platform for new crypto offerings. ",
+  "website": "https://coinlist.co/",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": []
+}

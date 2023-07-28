@@ -1,0 +1,38 @@
+{
+  "display": true,
+  "since": "2020",
+  "icon": "icon-filecoin-frontier-accelerator.png",
+  "name": "Filecoin Frontier Accelerator",
+  "org": "LongHash Ventures",
+  "description": "A focused accelerator program for Filecoin startups.",
+  "website": "https://www.longhashventures.com/filecoin/",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "none",
+    "other",
+    "none"
+  ]
+}

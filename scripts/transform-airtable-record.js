@@ -1,4 +1,10 @@
 /* eslint-disable */
+/*
+//  Airtable transformation
+//  This script transforms the airtable data into a predefined new data structure for this project
+//  This script should not be run directly, it's invoked by `fetch-from-airtable.js`, see that script for usage
+//
+*/
 
 // Strips http(s) to use // and let the client determine the protocol
 const removeProtocol = (url) => {

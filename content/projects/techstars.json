@@ -1,0 +1,38 @@
+{
+  "display": true,
+  "since": "2021",
+  "icon": "icon-techstars.png",
+  "name": "TechStars",
+  "org": "TechStars",
+  "description": "Techstars provides accelerator programs for Filecoin startups.",
+  "website": "http://techstars.com",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "none",
+    "other",
+    "none"
+  ]
+}

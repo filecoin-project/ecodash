@@ -1,9 +1,13 @@
 /* eslint-disable */
-/**
- *
- * [Script] Airtable Fetch
- *
- */
+/*
+//  Airtable fetch
+//  This script can be used to fetch the latest data from Airtable and update the local project files, including images
+//  Currently it is configured to match two boolean conditions: {Include in directory?} and {New directory addition} are both true
+//  This script will delete all local project files that match the above conditions, and then fetch the latest data from Airtable
+//  This script is intended to be run from the root of the repo
+//  Usage (node 16): `node scripts/fetch-from-airtable.js`
+//
+*/
 
 // ///////////////////////////////////////////////////// Imports + general setup
 // -----------------------------------------------------------------------------
