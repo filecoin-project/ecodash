@@ -75,7 +75,7 @@ const deleteSpecificLocalRecords = async (records) => {
         .filter(file => slugs.includes(Path.basename(file, '.json')))
         .map(file => `${PROJECT_DIR_PATH}/${file}`)
         .concat(
-          imageFiles.filter(file => slugs.some(slug => file.startsWith(`icon-${slug}`) || file.startsWith(`logo-${slug}`)))
+          imageFiles.filter(file => slugs.some(slug => file.startsWith(`icon-${slug}`)))
           .map(file => `${IMAGE_DIR_PATH}/${file}`)
         )
       for (let path of files) {
@@ -94,7 +94,7 @@ const writeProjectFileToDisk = async (fileName, transformedProject) => {
   try {
     await Fs.writeFile(
       `${PROJECT_DIR_PATH}/${fileName}.json`,
-      JSON.stringify(transformedProject, null, 2)
+      JSON.stringify(transformedProject, null, 2) + "\n"
     )
     return true
   } catch (e) {
@@ -122,9 +122,6 @@ const resizeImage = async (data, recordName, imageData, savePath, writeableStrea
     let transformer
     if (imageType === 'icon-square' && (width > 400 || height > 400)) {
       transformer = await Sharp().resize(400)
-      data.pipe(transformer).pipe(writeableStream)
-    } else if (imageType === 'logo' && (width > 1200 || height > 1200)) {
-      transformer = await Sharp().resize(1200)
       data.pipe(transformer).pipe(writeableStream)
     } else {
       data.pipe(writeableStream)
@@ -164,7 +161,7 @@ const downloadImage = async (recordName, imageData, savePath, imageType, fileExt
 const fetchAndProcessImage = async (recordName, imageData, imageType) => {
   try {
     const fileExt = Mime.getExtension(imageData.type)
-    const prefix = imageType === 'icon-square' ? 'icon' : 'logo'
+    const prefix = imageType === 'icon-square' ? 'icon' : ''
     const filename = `${prefix}-${recordName}.${fileExt}`
     const savePath = `${IMAGE_DIR_PATH}/${filename}`
     await downloadImage(recordName, imageData, savePath, imageType, fileExt)
@@ -207,31 +204,25 @@ const AirtableFetch = async () => {
     // await diffAmountDeleted(count)
     await deleteSpecificLocalRecords(records)
     for (let i = 0; i < count; i++) {
-      const record = records[i].fields
-      const projectSlug = getProjectNameSlug(record['Project Name'])
-      const icons = record['Icon (square)']
-      const logos = record['Logo (non-square)']
-
-      let iconFileName, logoFileName
-      if (icons) {
-        isIconSquare(icons[0], projectSlug)
-        iconFileName = await fetchAndProcessImage(projectSlug, icons[0], 'icon-square')
-      }
-      if (logos) {
-        logoFileName = await fetchAndProcessImage(projectSlug, logos[0], 'logo')
-      }
-      if(!await isProjectLive(record)) {
-        console.log(`   🚫 ${record['Project Name']} url: ${record.Website} appears to be down. Double check the URL and remove from Airtable if unavailable`)
-      }
-      // Transform from Airtable representation to the directory's schema format
-      const transformedProject = transformAirtableRecord(record, { iconFileName, logoFileName })
-      const success = await writeProjectFileToDisk(projectSlug, transformedProject)
-
-      if(!success) {
-          console.log(`   🚫 ${record['Project Name']} failed to be saved`) 
-      }
-
+        const record = records[i].fields
+        const projectSlug = getProjectNameSlug(record['Project Name'])
+        const icons = record['Icon (square)']
+        let iconFileName
+        if (icons) {
+            isIconSquare(icons[0], projectSlug)
+            iconFileName = await fetchAndProcessImage(projectSlug, icons[0], 'icon-square')
+        }
+        if(!await isProjectLive(record)) {
+            console.log(`   🚫 ${record['Project Name']} url: ${record.Website} appears to be down. Double check the URL and remove from Airtable if unavailable`)
+        }
+        // Transform from Airtable representation to the directory's schema format
+        const transformedProject = transformAirtableRecord(record, { iconFileName })
+        const success = await writeProjectFileToDisk(projectSlug, transformedProject)
+        if(!success) {
+            console.log(`   🚫 ${record['Project Name']} failed to be saved`) 
+        }
     }
+
     console.log('\n')
     console.log('🏁 Airtable fetch complete')
     process.exit(0)
