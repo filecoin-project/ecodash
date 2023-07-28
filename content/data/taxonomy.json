@@ -8,27 +8,27 @@
         {
           "slug": "data-storage-and-management",
           "label": "Data Storage and Management",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "data-retrieval",
           "label": "Data Retrieval",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "compute-services",
           "label": "Compute Services",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "data-curation-and-monetization",
           "label": "Data Curation and Monetization",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "enterprise-solutions",
           "label": "Enterprise Solutions",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         }
       ]
     },
@@ -40,22 +40,22 @@
         {
           "slug": "leasing-and-staking",
           "label": "Leasing and Staking",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "exchanges-and-swaps",
           "label": "Exchanges and Swaps",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "infrastructure-and-other",
           "label": "Infrastructure and other",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "bridges-and-oracles",
           "label": "Bridges and Oracles",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         }
       ]
     },
@@ -67,27 +67,27 @@
         {
           "slug": "wallets-identity-and-authentication",
           "label": "Wallets, Identity and Authentication",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "network-explorers-and-reputation",
           "label": "Network Explorers and Reputation",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "developer-tools-and-other",
           "label": "Developer Tools and other",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "privacy-and-security",
           "label": "Privacy and Security",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "ai-productivity-and-utilities",
           "label": "AI Productivity and Utilities",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         }
       ]
     },
@@ -99,32 +99,32 @@
         {
           "slug": "arts-and-collectibles",
           "label": "Arts and Collectibles",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "photo-and-video",
           "label": "Photo and Video",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "music",
           "label": "Music",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "gaming",
           "label": "Gaming",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "communication-and-social",
           "label": "Communication and Social",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "publishing-and-news",
           "label": "Publishing and News",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         }
       ]
     },
@@ -136,12 +136,12 @@
         {
           "slug": "governance-daos-and-public-goods",
           "label": "Governance, DAOs and Public Goods",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         },
         {
           "slug": "education-and-science",
           "label": "Education and Science",
-          "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est"
+          "description": ""
         }
       ]
     }
