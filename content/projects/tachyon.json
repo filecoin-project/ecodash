@@ -1,0 +1,40 @@
+{
+  "display": true,
+  "since": 2020,
+  "icon": "icon-tachyon.png",
+  "name": "Tachyon",
+  "org": "Consensys Mesh ",
+  "description": "Accelerator for early-stage blockchain & Web 3.0 startups",
+  "website": "//mesh.xyz/tachyon/",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": [
+        "governance-daos-and-public-goods"
+      ]
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "none",
+    "other",
+    "none"
+  ]
+}

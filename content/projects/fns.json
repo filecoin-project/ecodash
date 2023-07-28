@@ -1,0 +1,52 @@
+{
+  "display": true,
+  "since": 2017,
+  "icon": "icon-fns.png",
+  "name": "FNS",
+  "org": "fildomains",
+  "description": "Filecoin-based data name service!",
+  "website": "//fildomains.com",
+  "social": [
+    {
+      "github": "https://github.com/fildomains"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "network-tools",
+    "developer-tools",
+    "storage-apps-&-clients",
+    "collaborations",
+    "api",
+    "library/sdk",
+    "nfts",
+    "social",
+    "decentralized-identity",
+    "chainlink-external-adapters",
+    "fvm",
+    "metamask-filecoin-snap"
+  ]
+}

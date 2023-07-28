@@ -10,7 +10,9 @@
   "taxonomy": [
     {
       "category": "finance",
-      "subcategories": []
+      "subcategories": [
+        "leasing-and-staking"
+      ]
     },
     {
       "category": "media-and-entertainment",
@@ -30,9 +32,6 @@
     }
   ],
   "tags": [
-    "collaborations",
-    "other",
-    "none",
-    "none"
+    "collaborations"
   ]
 }

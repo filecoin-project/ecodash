@@ -1,0 +1,42 @@
+{
+  "display": true,
+  "since": 2020,
+  "icon": "icon-sbps-solar-solutions.svg",
+  "name": "SBPS & Solar Solutions",
+  "org": "Dcent BV",
+  "description": "We are trying to become the most efficient datacenter in Europe. Focussing on renewability and cost.",
+  "website": "//www.dcent.nl",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
+      ]
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "infrastructure",
+    "education",
+    "health",
+    "other",
+    "none"
+  ]
+}

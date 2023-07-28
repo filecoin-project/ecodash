@@ -1,0 +1,48 @@
+{
+  "display": true,
+  "since": 2022,
+  "icon": "icon-museum-of-crypto-art.png",
+  "name": "Museum of Crypto Art",
+  "org": "Museum of Crypto Art",
+  "description": "We aim to build a dynamic application around the immutable data we preserve on Filecoin. The application will load all M○C△ exhibitions, architecture, and artworks from a single point in time, attributed to artists, curators, collectors involved. Similar to the Wayback Machine, but here focused on documenting the creative renaissance of cryptocurrency and the artists and collectors exploring artistry in NFTs. ",
+  "website": "//museumofcryptoart.com",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "storage-apps-&-clients",
+    "developer-tools",
+    "web-app",
+    "library/sdk",
+    "archival",
+    "education",
+    "nfts",
+    "social",
+    "web3.storage",
+    "nft.storage",
+    "ipfs-http-client"
+  ]
+}

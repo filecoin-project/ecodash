@@ -1,0 +1,50 @@
+{
+  "display": true,
+  "since": 2022,
+  "icon": "icon-encloud.png",
+  "name": "encloud",
+  "org": "encloud",
+  "description": "We accelerate decentralized cloud adoption with privacy. We deliver private storage, compute, and collaboration (in addition to existing tech we will enable data DAOs/unions using FVM) working with SPs and network applications",
+  "website": "//encloud.tech",
+  "social": [
+    {
+      "github": "https://github.com/encloud-tech/encloud"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
+      ]
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "storage-apps",
+    "developer-tools",
+    "collaborations",
+    "library/sdk",
+    "infrastructure",
+    "api",
+    "consumer-storage",
+    "general-storage",
+    "estuary",
+    "fvm"
+  ]
+}

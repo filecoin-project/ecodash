@@ -4,7 +4,7 @@
   "icon": "icon-outlier-ventures.png",
   "name": "Outlier Ventures",
   "org": "",
-  "description": "//outlierventures.io",
+  "description": "Outlier Ventures has been backing Web3 founders since 2014, and was one of the first VC firms dedicated to investing in the emerging crypto ecosystem.",
   "website": "//outlierventures.io",
   "social": [],
   "taxonomy": [
@@ -26,7 +26,9 @@
     },
     {
       "category": "education-science-and-public-goods",
-      "subcategories": []
+      "subcategories": [
+        "governance-daos-and-public-goods"
+      ]
     }
   ],
   "tags": [
