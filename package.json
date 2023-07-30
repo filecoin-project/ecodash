@@ -37,9 +37,11 @@
   },
   "devDependencies": {
     "airtable": "^0.12.1",
+    "ajv-cli": "^5.0.0",
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
+    "jsonlint": "^1.6.3",
     "sharp": "^0.32.4"
   }
 }

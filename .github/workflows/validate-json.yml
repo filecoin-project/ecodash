@@ -1,0 +1,85 @@
+name: Validation
+
+on: 
+  pull_request:
+  push:
+    branches: 
+      - main
+      - develop
+
+jobs:
+  json_validation:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Check for new or modified JSON project files
+      id: check_files
+      run: |
+        JSON_COUNT=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} | grep -c "content/projects/.*\.json" || true)
+        echo "::set-output name=count::$JSON_COUNT"
+      
+    - name: Configure Node 16
+      if: steps.check_files.outputs.count != '0'
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Cache npm dependencies
+      if: steps.check_files.outputs.count != '0'
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+      
+    - name: Install npm dependencies
+      if: steps.check_files.outputs.count != '0'
+      run: npm ci
+
+    - name: Set script permissions
+      if: steps.check_files.outputs.count != '0'
+      run: chmod +x ./scripts/basic-validation.sh
+
+    - name: Validate JSON files
+      if: steps.check_files.outputs.count != '0'
+      run: ./scripts/basic-validation.sh
+      env:
+        GITHUB_BEFORE: ${{ github.event.before }}
+        GITHUB_AFTER: ${{ github.event.after }}
+
+  schema_validation:
+    needs: json_validation
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Check if JSON files are modified
+      id: check_files
+      run: |
+        JSON_COUNT=$(git diff --name-only ${{ github.event.before }}..${{ github.event.after }} | grep -c "content/projects/.*\.json" || true)
+        echo "::set-output name=count::$JSON_COUNT"
+
+    - name: Configure Node 16
+      if: steps.check_files.outputs.count != '0'
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Install NPM dependencies
+      if: steps.check_files.outputs.count != '0'
+      run: npm ci
+
+    - name: Set script permissions
+      if: steps.check_files.outputs.count != '0'
+      run: chmod +x ./scripts/schema-validation.sh
+
+    - name: Validate JSON schema
+      if: steps.check_files.outputs.count != '0'
+      run: ./scripts/schema-validation.sh
+      env:
+        GITHUB_BEFORE: ${{ github.event.before }}
+        GITHUB_AFTER: ${{ github.event.after }}
