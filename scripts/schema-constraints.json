@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+      "display": {
+        "type": "boolean"
+      },
+      "since": {
+        "type": "integer",
+        "pattern": "^20[0-9]{2}$"
+      },
+      "icon": {
+        "type": "string",
+        "pattern": "\\.((svg)|(jpeg)|(jpg)|(png)|(gif)|(webp))$"
+      },
+      "name": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "org": {
+        "type": "string",
+        "maxLength": 100
+      },
+      "website": {
+        "type": "string",
+        "pattern": "^(https?:)?//"
+      },
+      "social": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^(https?:)?//"
+          }
+        }
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "maxLength": 50
+        }
+      }
+    },
+    "required": ["display", "since", "icon", "name", "org", "website", "social", "tags"]
+  }
+  

@@ -75,11 +75,11 @@ jobs:
 
     - name: Set script permissions
       if: steps.check_files.outputs.count != '0'
-      run: chmod +x ./scripts/validate-schema.sh
+      run: chmod +x ./scripts/schema-validation.sh
 
     - name: Validate JSON schema
       if: steps.check_files.outputs.count != '0'
-      run: ./scripts/validate-schema.sh
+      run: ./scripts/schema-validation.sh
       env:
         GITHUB_BEFORE: ${{ github.event.before }}
         GITHUB_AFTER: ${{ github.event.after }}
