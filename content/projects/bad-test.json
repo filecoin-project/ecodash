@@ -1,0 +1,43 @@
+{
+    "display": true,
+    "since": 2021,
+    "icon": "",
+    "name": "foo",
+    "org": "",
+    "description": "foo",
+    "website": "//foo.com",
+    "social": [
+      {
+        "github": "//github.com/foo/foo-x"
+      }
+    ],
+    "taxonomy": [
+      {
+        "category": "finance",
+        "subcategories": []
+      },
+      {
+        "category": "media-and-entertainment",
+        "subcategories": []
+      },
+      {
+        "category": "tooling-and-productivity",
+        "subcategories": []
+      },
+      {
+        "category": "storage-and-cloud-services",
+        "subcategories": [
+          "data-storage-and-management"
+        ]
+      },
+      {
+        "category": "education-science-and-public-goods",
+        "subcategories": []
+      }
+    ],
+    "tags": [
+      "fvm",
+      "accelerator"
+    ]
+  }
+  
