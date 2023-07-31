@@ -25,6 +25,12 @@
       "maxLength": 100,
       "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
     },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1000,
+      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
+    },
     "website": {
       "type": "string",
       "pattern": "^(https?:)?//.+\\.[a-zA-Z]+"
@@ -42,7 +48,104 @@
         "additionalProperties": false
       },
       "minItems": 0
-    },    
+    },
+    "taxonomy": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["finance"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["media-and-entertainment"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["tooling-and-productivity"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["storage-and-cloud-services"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["education-science-and-public-goods"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        }
+      ],
+      "minItems": 5,
+      "maxItems": 5
+    },
     "tags": {
       "type": "array",
       "items": {
@@ -52,5 +155,5 @@
       }
     }
   },
-  "required": ["display", "since", "icon", "name", "website", "social", "description", "taxonomy", "tags"]
+  "required": ["display", "since", "icon", "name", "description", "website", "social", "taxonomy", "tags"]
 }
