@@ -1,7 +1,7 @@
 {
     "display": true,
     "since": 2068,
-    "icon": "91.png",
+    "icon": "icon-boto.png",
     "name": "foo",
     "org": "",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -14,7 +14,7 @@
     "taxonomy": [
       {
         "category": "finance",
-        "subcategories": []
+        "subcategories": ["data-storage-and-management"]
       },
       {
         "category": "media-and-entertainment",
@@ -26,9 +26,7 @@
       },
       {
         "category": "storage-and-cloud-services",
-        "subcategories": [
-          "data-storage-and-management"
-        ]
+        "subcategories": []
       },
       {
         "category": "education-science-and-public-goods",
