@@ -6,7 +6,7 @@ TAXONOMY_ERRORS=0
 ICON_ERRORS=0
 
 # Perform schema validation with AJV
-for file in $(git diff --name-only --diff-filter=AM HEAD~..HEAD | grep "content/projects/.*\.json"); do
+for file in $(git diff --name-only --diff-filter=AM HEAD^..HEAD | grep "content/projects/.*\.json"); do
   npx ajv-cli validate -s scripts/schema-constraints.json -d "$file" || SCHEMA_ERRORS=$((SCHEMA_ERRORS+1))
 done
 

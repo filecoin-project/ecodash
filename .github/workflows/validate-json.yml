@@ -19,7 +19,7 @@ jobs:
     - name: Check for new or modified JSON project files
       id: check_files
       run: |
-        JSON_COUNT=$(git diff --name-only HEAD~..HEAD | grep -c "content/projects/.*\.json" || true)
+        JSON_COUNT=$(git diff --name-only HEAD^..HEAD | grep -c "content/projects/.*\.json" || true)
         echo "::set-output name=count::$JSON_COUNT"
       
     - name: Configure Node 16
@@ -61,7 +61,7 @@ jobs:
     - name: Check if JSON files are modified
       id: check_files
       run: |
-        JSON_COUNT=$(git diff --name-only HEAD~..HEAD | grep -c "content/projects/.*\.json" || true)
+        JSON_COUNT=$(git diff --name-only HEAD^..HEAD | grep -c "content/projects/.*\.json" || true)
         echo "::set-output name=count::$JSON_COUNT"
 
     - name: Configure Node 16
