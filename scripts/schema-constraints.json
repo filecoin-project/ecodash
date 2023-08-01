@@ -11,6 +11,7 @@
     },
     "icon": {
       "type": "string",
+      "minLength": 5,
       "pattern": "^.+\\.((svg)|(jpeg)|(jpg)|(png)|(gif)|(webp))$"
     },
     "name": {
@@ -21,10 +22,15 @@
     },
     "org": {
       "type": "string",
-      "minLength": 2,
       "maxLength": 100,
-      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
-    },
+      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]*$",
+      "if": {
+        "minLength": 1
+      },
+      "then": {
+        "minLength": 2
+      }
+    },    
     "description": {
       "type": "string",
       "minLength": 20,
@@ -33,6 +39,7 @@
     },
     "website": {
       "type": "string",
+      "minLength": 5,
       "pattern": "^(https?:)?//.+\\.[a-zA-Z]+"
     },
     "social": {
