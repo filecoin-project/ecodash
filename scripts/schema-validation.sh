@@ -24,7 +24,7 @@ if [[ "$TAXONOMY_ERRORS" -ne "0" ]]; then
 fi
 
 # Further validate whether icons exist, are square and do not exceed 500px
-node scripts/check-icons.js || ICON_ERRORS=$((ICON_ERRORS+1))
+node scripts/check-images.js || ICON_ERRORS=$((ICON_ERRORS+1))
 
 if [[ "$ICON_ERRORS" -ne "0" ]]; then
   echo "🚫 $ICON_ERRORS icon errors found"
