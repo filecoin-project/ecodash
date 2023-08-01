@@ -1,48 +1,159 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "type": "object",
-    "properties": {
-      "display": {
-        "type": "boolean"
-      },
-      "since": {
-        "type": "integer",
-        "pattern": "^20[0-9]{2}$"
-      },
-      "icon": {
-        "type": "string",
-        "pattern": "\\.((svg)|(jpeg)|(jpg)|(png)|(gif)|(webp))$"
-      },
-      "name": {
-        "type": "string",
-        "maxLength": 100
-      },
-      "org": {
-        "type": "string",
-        "maxLength": 100
-      },
-      "website": {
-        "type": "string",
-        "pattern": "^(https?:)?//"
-      },
-      "social": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string",
-            "pattern": "^(https?:)?//"
-          }
-        }
-      },
-      "tags": {
-        "type": "array",
-        "items": {
-          "type": "string",
-          "maxLength": 50
-        }
-      }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "display": {
+      "type": "boolean"
     },
-    "required": ["display", "since", "icon", "name", "org", "website", "social", "tags"]
-  }
-  
+    "since": {
+      "type": "integer",
+      "pattern": "^20[0-9]{2}$"
+    },
+    "icon": {
+      "type": "string",
+      "pattern": "^.+\\.((svg)|(jpeg)|(jpg)|(png)|(gif)|(webp))$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
+    },
+    "org": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1000,
+      "pattern": "^[\\x20-\\x7E\\xA0-\\xFF]{2,}$"
+    },
+    "website": {
+      "type": "string",
+      "pattern": "^(https?:)?//.+\\.[a-zA-Z]+"
+    },
+    "social": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "patternProperties": {
+          "^.*$": {
+            "type": "string",
+            "pattern": "^(https?:)?//.+\\.[a-zA-Z]+"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "taxonomy": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["finance"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["media-and-entertainment"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["tooling-and-productivity"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["storage-and-cloud-services"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": ["education-science-and-public-goods"]
+            },
+            "subcategories": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0,
+              "maxItems": 1
+            }
+          },
+          "required": ["category", "subcategories"]
+        }
+      ],
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 50
+      }
+    }
+  },
+  "required": ["display", "since", "icon", "name", "description", "website", "social", "taxonomy", "tags"]
+}
