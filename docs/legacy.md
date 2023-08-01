@@ -1,96 +1,12 @@
-# Filecoin Ecodash
+# Legacy documentation
+
+⚠️ This information is outdated. These are lecacy docs from a previous iteration of the Ecosystem site that was based on data submitted to an Airtable base.
 
 Interactive ecosystem directory and showcase 
 
-![Data Programs graph image](static/images/open-graph.png)
+**Just want to add a new project to the IPFS ecosystem directory? [Use this form](https://airtable.com/shrurjLTEsPeNW2Db).**
 
 ***
-
-## Adding or editing a project
-
-This is a public repository, and you can add a new project or amend an existing project by submitting a pull request (PR). Your PR should contain a `json` file in `content/projects/` with your changes. This file must conform to a specific schema, otherwise one of the checks will fail.
-
-Let's go through the steps to adding a new project. Editing a project is a simpler version of the same process, where you do not have to create a new file.
-
-1. Create a new `json` file in `content/projects/my-project.json`, where `my-project` is the lowercase alphanumeric kebab-case name of your project (for example, a project called "Hello World Labs" would become `hello-world-labs.json`)
-
-2. Copy the contents of the template, found in `content/project-template.json` (do not change this file, only copy), and add it to your file
-
-3. Replace the content in the file with your project's data (see next section for detailed constraints and limitations)
-
-4. Upload a sqare icon to `static/images/projects` and reference that file name in the `icon` key of your json (only the file name is needed, not the full path)
-
-5. Create commit your changes and create a pull request against the `main` branch using the pull request template
-
-6. If all checks pass, your PR will be reviewed by a community administrator
-
-
-### Project schema and validation
-
-Each modified `json` file in `content/projects` runs through several CI checks: 
-
-1. The first checks to ensure that the `json` is syntactically valid
-2. The second performs more advanced checks:
-  - `json` keys and values must match certain criteria (e.g., they exist, meet minimums, maximums, etc.)
-  - Categories and subcategories must follow the defined taxonomy (defined in `taxonomy.json`)
-  - Images are sized correctly (< 500px for raster images and 1:1 aspect ratio)
-
-In order to pass these checks, you should be aware of the schema, and its contraints. Let's take a look at a sample data structure, pre-filled with some content.
-
-```json
-{
-    "display": true,
-    "since": 2023,
-    "icon": "icon-myproject.png",
-    "name": "My Project",
-    "org": "Optional Parent Company Name",
-    "description": "One to several sentences describing your project",
-    "website": "//myproject.xyz",
-    "social": [
-        { "github": "//github.com/myproject" },
-        { "twitter": "//twitter.com/myproject" }
-      ],
-    "taxonomy": [
-      {
-        "category": "finance",
-        "subcategories": [ "leasing-and-staking", "exchanges-and-swaps", "infrastructure-and-other", "bridges-and-oracles" ]
-      },
-      {
-        "category": "media-and-entertainment",
-        "subcategories":  [ "arts-and-collectibles", "photo-and-video", "music", "gaming", "communication-and-social", "publishing-and-news" ]
-      },
-      {
-        "category": "tooling-and-productivity",
-        "subcategories": [ "wallets-identity-and-authentication", "network-explorers-and-reputation", "developer-tools-and-other", "privacy-and-security", "ai-productivity-and-utilities" ]
-      },
-      {
-        "category": "storage-and-cloud-services",
-        "subcategories": [ "data-storage-and-management", "data-retrieval", "compute-services", "data-curation-and-monetization", "enterprise-solutions" ]
-      },
-      {
-        "category": "education-science-and-public-goods",
-        "subcategories": [ "governance-daos-and-public-goods", "education-and-science" ]
-      }
-    ],
-    "tags": [ "optionally", "include", "some", "tags", "like", "fvm" ]
-  }
-  
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Project Add/Change Workflow
 
