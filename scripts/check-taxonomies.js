@@ -51,6 +51,9 @@ projectFiles.forEach(file => {
   }
 });
 
-if (!errorOccurred) {
+if (errorOccurred) {
+  console.error('🚫 Error: Invalid taxonomy data found');
+  process.exit(1);
+} else {
   console.log('✅ Success: All project files have valid subcategories!');
 }
