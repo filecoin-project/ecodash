@@ -1,5 +1,5 @@
-{smks
-    "display": true,
+{
+    "display": true, // invalid comment
     "since": 2021,
     "icon": "",
     "name": "foo",
