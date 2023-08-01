@@ -8,3 +8,6 @@ done
 
 ## Further validate whether subcategories are used correctly and adhere to taxonomy definitions
 node scripts/check-taxonomies.js || exit 1
+
+## Further validate whether icons exist, are square and do not exceed 500px
+node scripts/check-taxonomies.js || exit 1
