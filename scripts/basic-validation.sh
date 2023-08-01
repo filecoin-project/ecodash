@@ -6,6 +6,6 @@ for file in $(git diff --name-only --diff-filter=AM HEAD~..HEAD | grep "content/
   npx jsonlint -q "$file" || ERRORS=$((ERRORS+1))
 done
 if [[ "$ERRORS" -ne "0" ]]; then
-  echo "$ERRORS errors found during JSON validation"
+  echo "🚫 $ERRORS errors found durin basic JSON validation"
   exit 1
 fi
