@@ -1,7 +1,7 @@
 {
     "display": true,
     "since": 2068,
-    "icon": "",
+    "icon": "fake-icon.png",
     "name": "foo",
     "org": "",
     "description": "foo",
