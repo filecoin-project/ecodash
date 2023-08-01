@@ -302,17 +302,19 @@ export default {
     transition: background 500ms linear;
     background: linear-gradient(
       90deg,
-      rgba(255,255,255,1) 0%,
-      rgba(255,255,255,1) 33%,
-      rgba(96,193,255,1) 66%,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,1) 20%,
+      rgba(255,255,255,1) 40%,
+      rgba(255,255,255,1) 60%,
+      rgba(96,193,255,1) 80%,
       rgba(93,227,242,1) 100%
-    ) 0 0 / 300% 100%;
+    ) 0 0 / 500% 100%;
     background-position: 100%;
     @include gradientText;
   }
   &:hover {
     .text {
-      background-position: 0%;
+      background-position: 50%;
     }
   }
   &.active,
@@ -321,9 +323,7 @@ export default {
       opacity: 0;
     }
     .text {
-      background: none;
-      -webkit-text-fill-color: unset;
-      color: $blackSapphire;
+      background-position: 0%;
     }
   }
 }
