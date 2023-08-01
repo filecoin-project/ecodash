@@ -1,6 +1,6 @@
 {
-    "display": true, // invalid comment
-    "since": 2021,
+    "display": true,
+    "since": 1968,
     "icon": "",
     "name": "foo",
     "org": "",
