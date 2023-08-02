@@ -82,7 +82,7 @@
       "button": {
         "type": "a",
         "text": "Add your project via Github",
-        "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow"
+        "href": "https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory"
       }
     },
     "breadcrumbs_map": {
@@ -100,7 +100,7 @@
     "subheading": "If you're part of a project that's building on Filecoin, you can add it using our public Github respository. You can also edit an existing project by creating a pull request.",
     "cta": {
       "type": "a",
-      "href": "https://github.com/filecoin-project/ecodash#project-addchange-workflow",
+      "href": "https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory",
       "text": "Add your project via Github",
       "target": "_blank"
     }
