@@ -4,6 +4,27 @@
     @click="toggleExpanded">
     <div class="card-inner-wrapper">
 
+      <svg
+        class="dummy-gradient"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient
+            id="card-icon-gradient"
+            x1="4.43478"
+            y1="0.667602"
+            x2="19.8276"
+            y2="2.58746"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#60C1FF" />
+            <stop offset="1" stop-color="#5DE3F2" />
+          </linearGradient>
+        </defs>
+      </svg>
+
       <FVMIcon
         v-if="fvm"
         class="fvm-icon" />
@@ -19,16 +40,18 @@
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
           <span>{{ description }}</span>
           <span v-if="tagString" class="tags">{{ tagString }}</span>
-          <div v-if="social.length" class="socials">
+          <div v-if="socialLinks.length" class="socials">
             <Button
-              v-for="obj in social"
+              v-for="obj in socialLinks"
               :key="Object.keys(obj)[0]"
               tag="a"
               :to="Object.values(obj)[0]"
               target="_blank"
               class="social-icon">
               <template #icon-before>
-                <component :is="getSocialIcon(Object.keys(obj)[0])" />
+                <component
+                  :is="getSocialIcon(Object.keys(obj)[0])"
+                  :aria-label="Object.keys(obj)[0]" />
               </template>
             </Button>
           </div>
@@ -72,6 +95,10 @@ import TwitterIcon from '@/components/icons/TwitterIcon'
 import MatrixIcon from '@/components/icons/MatrixIcon'
 import WeChatIcon from '@/components/icons/WeChatIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
+import DiscordIcon from '@/components/icons/DiscordIcon'
+import GenericLinkIcon from '@/components/icons/GenericLinkIcon'
+import YoutubeIcon from '@/components/icons/YoutubeIcon'
+import CodeIcon from '@/components/icons/CodeIcon'
 import FVMIcon from '@/components/icons/FVMIcon'
 
 // ====================================================================== Export
@@ -86,6 +113,10 @@ export default {
     MatrixIcon,
     WeChatIcon,
     GithubIcon,
+    DiscordIcon,
+    YoutubeIcon,
+    GenericLinkIcon,
+    CodeIcon,
     FVMIcon
   },
 
@@ -173,6 +204,12 @@ export default {
     },
     fvm () {
       return this.tags && this.tags.includes('fvm')
+    },
+    socialLinks () {
+      const slug = this.$Slugify(this.title.replaceAll('.', ' '))
+      return this.social.concat([{
+        repo: `https://github.com/filecoin-project/ecodash/blob/main/content/projects/${slug}.json`
+      }])
     }
   },
 
@@ -199,7 +236,10 @@ export default {
         case 'wechat' : return 'WeChatIcon'
         case 'slack' : return 'SlackIcon'
         case 'matrix' : return 'MatrixIcon'
-        default : return 'div'
+        case 'discord' : return 'DiscordIcon'
+        case 'youtube' : return 'YoutubeIcon'
+        case 'repo' : return 'CodeIcon'
+        default : return 'GenericLinkIcon'
       }
     }
   }
@@ -265,12 +305,16 @@ export default {
     }
   }
   .content {
-    padding-left: 0.625rem;
+    padding-left: 0.125rem;
     width: calc(100% - toRem(55));
     @include small {
       padding-left: 0;
       width: 100%;
     }
+  }
+  .title,
+  .description {
+    padding-left: 0.5rem;
   }
   .title {
     font-size: 1rem;
@@ -290,6 +334,7 @@ export default {
     }
   }
   .description {
+    padding-bottom: 0.125rem;
     font-size: toRem(14);
     line-height: leading(21, 14);
     letter-spacing: 0.5px;
@@ -411,10 +456,10 @@ export default {
     transform: scale(1);
     transition: 250ms ease;
     &:not(:last-child) {
-      margin-right: 0.625rem;
+      margin-right: 1rem;
     }
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.15);
     }
     ::v-deep .button-content {
       padding: 0;
@@ -425,14 +470,19 @@ export default {
       svg {
         width: 100%;
         height: 100%;
-        transform: scale(1.2);
+        transform: scale(1);
       }
       svg,
       path {
-        fill: #5DE3F2;
+        // fill: #5DE3F2;
+        fill: url(#card-icon-gradient);
       }
     }
   }
+}
+
+.dummy-gradient {
+  position: absolute;
 }
 
 @keyframes fadein {
