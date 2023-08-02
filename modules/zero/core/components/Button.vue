@@ -4,7 +4,7 @@
     :to="getTo()"
     :href="getHref()"
     :target="getTarget()"
-    :class="['button', getType()]"
+    :class="['button', getType(), { disabled }]"
     :disabled="disabled"
     @click="clickHandler">
 
@@ -310,20 +310,32 @@ export default {
     background-position: 100%;
     @include gradientText;
   }
-  &:hover {
-    .text {
-      background-position: 0%;
+  &:not(.disabled) {
+    &:hover {
+      .text {
+        background-position: 0%;
+      }
+    }
+    &.active,
+    &:active {
+      &:after {
+        opacity: 0;
+      }
+      .text {
+        background: none;
+        -webkit-text-fill-color: unset;
+        color: $blackSapphire;
+      }
     }
   }
-  &.active,
-  &:active {
-    &:after {
-      opacity: 0;
-    }
-    .text {
+  &.disabled {
+    opacity: 0.7;
+    &:before {
       background: none;
-      -webkit-text-fill-color: unset;
-      color: $blackSapphire;
+      background-color: rgba(255, 255, 255, 0.40);
+    }
+    &:after {
+      background-color: #404044;
     }
   }
 }
@@ -337,7 +349,7 @@ export default {
     font-size: 1rem;
     font-weight: 400;
     line-height: leading(36, 16);
-    letter-spacing: 0.48px;    
+    letter-spacing: 0.48px;
   }
 }
 

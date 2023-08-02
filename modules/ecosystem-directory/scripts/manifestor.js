@@ -150,7 +150,23 @@ const generateProjectManifestFiles = async (slugs, taxonomies) => {
     for (let i = 0; i < len; i++) {
       const slug = slugs[i]
       const project = JSON.parse(await Fs.readFileSync(`${paths.projects}/${slug}.json`))
-      const tags = {}
+      if (!project.website.match(/^(https?:)?\/\//i)) {
+        project.website = ''
+        console.log(`Invalid project website in json data for ${project.name}`)
+      }
+      const socials = []
+      if (Array.isArray(project.social)) {
+        project.social.forEach((link) => {
+          const url = Object.values(link)[0]
+          if (typeof url === 'string' && url.match(/^(https?:)?\/\//i)) {
+            socials.push(link)
+          } else {
+            console.log(`Invalid social link in json data for ${project.name}`)
+          }
+        })
+      }
+      project.social = socials
+      // const tags = {}
       // await compileTags(project, taxonomies.categories, tags)
       project.slug = slug
       payload.full.push(project)

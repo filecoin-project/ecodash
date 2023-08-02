@@ -39,7 +39,8 @@
             type="outline"
             tag="a"
             text="Go"
-            :to="url"
+            :to="primaryCta"
+            :disabled="!primaryCta"
             target="_blank"
             class="external-link scale-up">
             <template #icon-after>
@@ -154,9 +155,7 @@ export default {
       return `/project/${this.slug}`
     },
     primaryCta () {
-      if (this.navigationBehavior === 1) {
-        return this.url
-      }
+      if (this.url) { return this.url }
       return null
     },
     imageAlt () {
@@ -370,6 +369,21 @@ export default {
         color: $blackSapphire;
       }
     }
+    &.disabled {
+      &:hover {
+        ::v-deep .text {
+          background-position: 0%;
+        }
+        ::v-deep .item-after {
+          transform: scale(0.9);
+        }
+      }
+      &:active {
+        ::v-deep .item-after {
+          color: $white;
+        }
+      }
+    }
   }
   .see-more {
     padding: toRem(5) toRem(10);
@@ -477,10 +491,12 @@ export default {
 }
 
 .scale-up {
-  transition: 200ms linear;
-  transform: scale(1);
-  &:hover {
-    transform: scale(1.1);
+  &:not(.disabled) {
+    transition: 200ms linear;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
