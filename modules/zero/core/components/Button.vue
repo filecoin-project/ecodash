@@ -4,7 +4,7 @@
     :to="getTo()"
     :href="getHref()"
     :target="getTarget()"
-    :class="['button', getType()]"
+    :class="['button', getType(), { disabled }]"
     :disabled="disabled"
     @click="clickHandler">
 
@@ -260,8 +260,8 @@ export default {
   }
 }
 
-// ////////////////////////////////////////////////////////////// [Type] Outline
-.type-outline {
+// ///////////////////////////////////////////////////// [Type] Category Chiclet
+.type-category-chiclet {
   position: relative;
   padding: toRem(7) toRem(15);
   margin: 0 0.25rem;
@@ -324,6 +324,86 @@ export default {
     }
     .text {
       background-position: 0%;
+    }
+  }
+}
+
+// ////////////////////////////////////////////////////////////// [Type] Outline
+.type-outline {
+  position: relative;
+  padding: toRem(7) toRem(15);
+  margin: 0 0.25rem;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    transition: 250ms ease;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(96,193,255,1) 0%, rgba(93,227,242,1) 100%);
+    border-radius: toRem(20);
+  }
+  &:after {
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: $blackSapphire;
+    border-radius: toRem(19);
+    opacity: 1;
+  }
+  .button-content {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+  }
+  .text {
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: leading(18, 14);
+    letter-spacing: 0.5px;
+    transition: background 500ms ease;
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,1) 33%,
+      rgba(96,193,255,1) 66%,
+      rgba(93,227,242,1) 100%
+    ) 0 0 / 300% 100%;
+    background-position: 100%;
+    @include gradientText;
+  }
+  &:not(.disabled) {
+    &:hover {
+      .text {
+        background-position: 0%;
+      }
+    }
+    &.active,
+    &:active {
+      &:after {
+        opacity: 0;
+      }
+      .text {
+        background: none;
+        -webkit-text-fill-color: unset;
+        color: $blackSapphire;
+      }
+    }
+  }
+  &.disabled {
+    opacity: 0.7;
+    &:before {
+      background: none;
+      background-color: rgba(255, 255, 255, 0.40);
+    }
+    &:after {
+      background-color: #404044;
     }
   }
 }

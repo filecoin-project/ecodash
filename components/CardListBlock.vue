@@ -27,7 +27,7 @@
           :description="card.description"
           :logo="card.icon"
           :tags="card.tags"
-          :url="`https:${card.website}`"
+          :url="card.website.startsWith('http') || card.website === '' ? card.website : `https:${card.website}`"
           :social="card.social"
           :style="{ animationDelay: `${30 * index}ms` }" />
       </div>
@@ -107,6 +107,12 @@ export default {
     },
     cardlist () {
       return this.limit ? this.cards.slice(0, this.limit) : this.cards
+    },
+    getCardUrl (url) {
+      // if (typeof url === 'string' && url !== '') {
+      //   return url.startsWith('http') ? url : `https:${url}`
+      // }
+      return ''
     }
   }
 }

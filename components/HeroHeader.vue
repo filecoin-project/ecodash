@@ -61,7 +61,7 @@
             <Button
               v-for="(category, i) in categories"
               :key="`category-${i}`"
-              type="outline"
+              type="category-chiclet"
               tag="nuxt-link"
               :text="category.label"
               :to="activeCategory.slug === category.slug ? '/' : `/category/${category.slug}`"
