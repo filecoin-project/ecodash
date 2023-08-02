@@ -42,7 +42,7 @@
           type="blue"
           tag="nuxt-link"
           to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
-          text="Add your project"
+          text="Add your project via Github"
           class="heading-cta">
           <template #icon-after>
             →
@@ -88,7 +88,7 @@
                 <Button
                   tag="a"
                   type="green"
-                  text="Add your project"
+                  text="Add your project via Github"
                   to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
                   class="category-title-cta">
                   <template #icon-after>
