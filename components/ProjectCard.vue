@@ -40,9 +40,9 @@
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
           <span>{{ description }}</span>
           <span v-if="tagString" class="tags">{{ tagString }}</span>
-          <div v-if="social.length" class="socials">
+          <div v-if="socialLinks.length" class="socials">
             <Button
-              v-for="obj in social"
+              v-for="obj in socialLinks"
               :key="Object.keys(obj)[0]"
               tag="a"
               :to="Object.values(obj)[0]"
@@ -204,6 +204,12 @@ export default {
     },
     fvm () {
       return this.tags && this.tags.includes('fvm')
+    },
+    socialLinks () {
+      const slug = this.$Slugify(this.title.replaceAll('.', ' '))
+      return this.social.concat([{
+        repo: `https://github.com/filecoin-project/ecodash/blob/main/content/projects/${slug}.json`
+      }])
     }
   },
 
