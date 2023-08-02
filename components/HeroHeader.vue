@@ -42,7 +42,7 @@
           type="blue"
           tag="nuxt-link"
           to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
-          text="Add your project"
+          text="Add your project via Github"
           class="heading-cta">
           <template #icon-after>
             →
@@ -61,7 +61,7 @@
             <Button
               v-for="(category, i) in categories"
               :key="`category-${i}`"
-              type="outline"
+              type="category-chiclet"
               tag="nuxt-link"
               :text="category.label"
               :to="activeCategory.slug === category.slug ? '/' : `/category/${category.slug}`"
@@ -88,7 +88,7 @@
                 <Button
                   tag="a"
                   type="green"
-                  text="Add your project"
+                  text="Add your project via Github"
                   to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
                   class="category-title-cta">
                   <template #icon-after>
