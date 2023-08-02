@@ -13,25 +13,24 @@
     "taxonomy": [
       {
         "category": "finance",
-        "subcategories": [ "leasing-and-staking", "exchanges-and-swaps", "infrastructure-and-other", "bridges-and-oracles" ]
+        "subcategories": ["leasing-and-staking", "exchanges-and-swaps", "infrastructure-and-other", "bridges-and-oracles"]
       },
       {
         "category": "media-and-entertainment",
-        "subcategories":  [ "arts-and-collectibles", "photo-and-video", "music", "gaming", "communication-and-social", "publishing-and-news" ]
+        "subcategories":  ["arts-and-collectibles", "photo-and-video", "music", "gaming", "communication-and-social", "publishing-and-news"]
       },
       {
         "category": "tooling-and-productivity",
-        "subcategories": [ "wallets-identity-and-authentication", "network-explorers-and-reputation", "developer-tools-and-other", "privacy-and-security", "ai-productivity-and-utilities" ]
+        "subcategories": ["wallets-identity-and-authentication", "network-explorers-and-reputation", "developer-tools-and-other", "privacy-and-security", "ai-productivity-and-utilities"]
       },
       {
         "category": "storage-and-cloud-services",
-        "subcategories": [ "data-storage-and-management", "data-retrieval", "compute-services", "data-curation-and-monetization", "enterprise-solutions" ]
+        "subcategories": ["data-storage-and-management", "data-retrieval", "compute-services", "data-curation-and-monetization", "enterprise-solutions"]
       },
       {
         "category": "education-science-and-public-goods",
-        "subcategories": [ "governance-daos-and-public-goods", "education-and-science" ]
+        "subcategories": ["governance-daos-and-public-goods", "education-and-science"]
       }
     ],
-    "tags": [ "optionally", "include", "some", "tags", "like", "fvm" ]
+    "tags": ["optionally", "include", "some", "tags", "like", "fvm"]
   }
-  
