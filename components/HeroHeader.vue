@@ -41,7 +41,7 @@
           v-if="headingCta"
           type="blue"
           tag="nuxt-link"
-          to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
+          to="https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory"
           text="Add your project via Github"
           class="heading-cta">
           <template #icon-after>
@@ -89,7 +89,7 @@
                   tag="a"
                   type="green"
                   text="Add your project via Github"
-                  to="https://github.com/filecoin-project/ecodash#project-addchange-workflow"
+                  to="https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory"
                   class="category-title-cta">
                   <template #icon-after>
                     →
