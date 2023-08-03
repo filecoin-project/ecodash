@@ -1,1 +1,8 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Ecosystem directory website
+    url: https://filecoinecosystem.io
+    about: Explore the ecosystem directory to see what projects are already listed
+  - name: Get in touch with the community
+    url: https://filecoin.io/slack
+    about: Join Filecoin community Slack and search available channels
