@@ -72,7 +72,7 @@ Running this project locally requires a few steps and dependencies.
 
 ### 1. Cloning the repo
 
-First clone the repo to your local disk, and install all dependencies. The following are a ssequence of
+First clone the repo to your local disk, and install all dependencies. The following are a sequence of
 
 ```zsh
 # Navigate to your desired local path
