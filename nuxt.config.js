@@ -110,7 +110,7 @@ export default {
   // ---------------------------------------------------------------------------
   router: {
     base: process.env.NODE_ENV === 'development' ? '/' : '/ipfs/hash/',
-    middleware: 'plausible'
+    middleware: ['plausible']
     // extendRoutes (routes, resolve) {}
   },
   // /////////////////////////////////////////////////////// Build configuration
