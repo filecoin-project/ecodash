@@ -1,6 +1,5 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Validation](https://github.com/filecoin-project/ecodash/actions/workflows/validation.yml/badge.svg?branch=develop)
-
 # Filecoin Ecosystem Directory
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Validation](https://github.com/filecoin-project/ecodash/actions/workflows/validation.yml/badge.svg?branch=develop)
 
 An interactive ecosystem directory and showcase, visible on [ecosystem.filecoin.io](https://ecosystem.filecoin.io)
 
