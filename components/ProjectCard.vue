@@ -4,30 +4,34 @@
     @click="toggleExpanded">
     <div class="card-inner-wrapper">
 
-      <svg
-        class="dummy-gradient"
-        width="20"
-        height="20"
-        viewBox="0 0 20 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient
-            id="card-icon-gradient"
-            x1="4.43478"
-            y1="0.667602"
-            x2="19.8276"
-            y2="2.58746"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#60C1FF" />
-            <stop offset="1" stop-color="#5DE3F2" />
-          </linearGradient>
-        </defs>
-      </svg>
+      <ClientOnly>
+        <svg
+          class="dummy-gradient"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient
+              id="card-icon-gradient"
+              x1="4.43478"
+              y1="0.667602"
+              x2="19.8276"
+              y2="2.58746"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#60C1FF" />
+              <stop offset="1" stop-color="#5DE3F2" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </ClientOnly>
 
-      <FVMIcon
-        v-if="fvm"
-        class="fvm-icon" />
+      <ClientOnly>
+        <FVMIcon
+          v-if="fvm"
+          class="fvm-icon" />
+      </ClientOnly>
 
       <div class="thumbnail">
         <img :src="$relativity(`/images/projects/${logo}`)" :alt="imageAlt" />
@@ -40,20 +44,17 @@
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
           <span>{{ description }}</span>
           <span v-if="tagString" class="tags">{{ tagString }}</span>
-          <div v-if="socialLinks.length" class="socials">
-            <Button
-              v-for="obj in socialLinks"
-              :key="Object.keys(obj)[0]"
-              tag="a"
-              :to="Object.values(obj)[0]"
+          <div class="socials">
+            <a
+              v-for="(link, i) in socialLinks"
+              :key="`link-${i}`"
+              :href="link.url"
               target="_blank"
               class="social-icon">
-              <template #icon-before>
-                <component
-                  :is="getSocialIcon(Object.keys(obj)[0])"
-                  :aria-label="Object.keys(obj)[0]" />
-              </template>
-            </Button>
+              <component
+                :is="link.component"
+                :aria-label="link.component" />
+            </a>
           </div>
         </div>
 
@@ -166,7 +167,8 @@ export default {
   data () {
     return {
       expanded: false,
-      blockDescription: false
+      blockDescription: false,
+      socialLinks: []
     }
   },
 
@@ -203,12 +205,6 @@ export default {
     },
     fvm () {
       return this.tags && this.tags.includes('fvm')
-    },
-    socialLinks () {
-      const slug = this.$Slugify(this.title.replaceAll('.', ' '))
-      return this.social.concat([{
-        repo: `https://github.com/filecoin-project/ecodash/blob/main/content/projects/${slug}.json`
-      }])
     }
   },
 
@@ -222,6 +218,19 @@ export default {
         }, 250)
       }
     }
+  },
+
+  mounted () {
+    const slug = this.$Slugify(this.title.replaceAll('.', ' '))
+    const socials = this.social.map(item => ({
+      component: this.getSocialIcon(Object.keys(item)[0]),
+      url: Object.values(item)[0]
+    }))
+    socials.push({
+      component: 'CodeIcon',
+      url: `https://github.com/filecoin-project/ecodash/blob/main/content/projects/${slug}.json`
+    })
+    this.socialLinks = socials
   },
 
   methods: {
@@ -469,28 +478,22 @@ export default {
   .social-icon {
     transform: scale(1);
     transition: 250ms ease;
+    width: 1.25rem;
+    height: 1.25rem;
+    ::v-deep svg {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+    }
+    ::v-deep svg,
+    ::v-deep path {
+      fill: url(#card-icon-gradient);
+    }
     &:not(:last-child) {
       margin-right: 1rem;
     }
     &:hover {
       transform: scale(1.15);
-    }
-    ::v-deep .button-content {
-      padding: 0;
-    }
-    ::v-deep .icon {
-      width: 1.25rem;
-      height: 1.25rem;
-      svg {
-        width: 100%;
-        height: 100%;
-        transform: scale(1);
-      }
-      svg,
-      path {
-        // fill: #5DE3F2;
-        fill: url(#card-icon-gradient);
-      }
     }
   }
 }

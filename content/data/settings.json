@@ -37,7 +37,8 @@
     "truncateLinks": true,
     "mediaAltAtts": true,
     "linksAltAtts": true,
-    "indexHeadingEntityCount": true
+    "indexHeadingEntityCount": true,
+    "randomizeProjects": true
   },
   "embeddable_view": {
     "host": "https://ecosystem.filecoin.io",
