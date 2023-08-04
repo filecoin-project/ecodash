@@ -1,0 +1,10 @@
+{
+    "build": {
+      "image": "node:16.14",
+      "command": "npm ci && npm run generate",
+      "publicDir": "dist",
+      "environment": {
+        "SERVER_ENV": "production"
+      }
+    }
+}
