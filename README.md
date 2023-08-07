@@ -1,5 +1,5 @@
 # Filecoin Ecosystem Directory
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Validation](https://github.com/filecoin-project/ecodash/actions/workflows/validation.yml/badge.svg?branch=develop) [![Twitter Follow](https://img.shields.io/twitter/follow/filecoin?style=social)](https://twitter.com/Filecoin)
+[![Twitter Follow](https://img.shields.io/twitter/follow/filecoin?style=social)](https://twitter.com/Filecoin) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Validation](https://github.com/filecoin-project/ecodash/actions/workflows/validation.yml/badge.svg?branch=develop)
 
 An interactive ecosystem directory and showcase, visible on [ecosystem.filecoin.io](https://ecosystem.filecoin.io)
 
