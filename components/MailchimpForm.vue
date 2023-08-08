@@ -6,14 +6,15 @@
     target="_blank">
 
     <div class="form-container">
-      <span class="email">
+      <span :class="['email', { focused }]">
         <input
           required="required"
           type="email"
           aria-label="Email Address"
           :placeholder="placeholder"
-          class="focus-visible"
-          name="EMAIL" />
+          name="EMAIL"
+          @focus="focused = true"
+          @blur="focused = false" />
       </span>
       <Button
         type="cta"
@@ -73,6 +74,12 @@ export default {
       required: false,
       default: 'Please send me the newsletter'
     }
+  },
+
+  data () {
+    return {
+      focused: false
+    }
   }
 }
 </script>
@@ -98,6 +105,9 @@ export default {
   background: $midnight;
   margin-left: toRem(9);
   margin-right: toRem(13);
+  transition: 250ms ease;
+  top: 0px;
+  left: 0px;
   @include tiny {
     min-width: 10rem;
   }
@@ -132,6 +142,7 @@ export default {
     display: block;
     width: 100%;
     height: 100%;
+    transition: inherit;
   }
   &:before {
     @include whiteBorderBack;
@@ -145,6 +156,15 @@ export default {
     top: -8px;
     left: -8px;
     z-index: -2;
+  }
+  &.focused {
+    top: -8px;
+    left: -8px;
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
