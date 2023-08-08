@@ -102,6 +102,12 @@ export default {
     }
   },
 
+  data () {
+    return {
+      cardlist: []
+    }
+  },
+
   computed: {
     cardListHeading () {
       if (this.heading && this.listTotal) {
@@ -111,11 +117,15 @@ export default {
         return this.heading
       }
       return false
-    },
-    cardlist () {
-      const list = this.limit ? this.cards.slice(0, this.limit) : this.cards
-      if (this.randomize) { return this.$ShuffleArray(list) }
-      return list
+    }
+  },
+
+  mounted () {
+    const list = this.limit ? this.cards.slice(0, this.limit) : this.cards
+    if (this.randomize) {
+      this.cardlist = this.$ShuffleArray(list)
+    } else {
+      this.cardlist = list
     }
   }
 }
