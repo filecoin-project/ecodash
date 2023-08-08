@@ -20,6 +20,7 @@
                     :to="subfooter.cta.disabled ? '' : subfooter.cta.href"
                     :disabled="subfooter.cta.disabled"
                     :text="subfooter.cta.text"
+                    :target="subfooter.cta.target"
                     class="nav-cta">
                     <template #icon-before>
                       <AddIcon />
@@ -319,9 +320,9 @@ export default {
 }
 
 .nav-column {
-  margin-left: toRem(90);
+  margin-left: toRem(82);
   @include medium {
-    margin-left: toRem(40);
+    margin-left: 2rem;
   }
   @include small {
     margin: 0;
@@ -360,6 +361,7 @@ export default {
   }
   ::v-deep .button-content {
     padding: 0;
+    padding-left: 0.5rem;
     margin: 1px 0;
     .text {
       font-size: 1rem;

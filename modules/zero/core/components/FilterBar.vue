@@ -1,6 +1,16 @@
 <template>
   <div :class="['filter-bar', { focused }]">
 
+    <input
+      :value="filterValue"
+      :placeholder="placeholder"
+      type="text"
+      :class="['input', 'focus-visible']"
+      @input="handleInput"
+      @focus="focused = true"
+      @blur="focused = false"
+      @keydown.enter="$emit('on-submit')">
+
     <div class="icon-container">
       <Button
         type="button"
@@ -11,16 +21,6 @@
         </template>
       </Button>
     </div>
-
-    <input
-      :value="filterValue"
-      :placeholder="placeholder"
-      type="text"
-      class="input"
-      @input="handleInput"
-      @focus="focused = true"
-      @blur="focused = false"
-      @keydown.enter="$emit('on-submit')">
 
   </div>
 </template>
@@ -88,7 +88,6 @@ export default {
 .filter-bar {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   height: 2rem;
   width: toRem(132);
@@ -207,6 +206,7 @@ export default {
   &:hover, &:active, &:focus {
     transition: 250ms ease-in;
     font-style: normal;
+    box-shadow: none !important;
   }
   &::placeholder {
     color: white;

@@ -455,11 +455,6 @@ export default {
       }
     }
   }
-  .tags,
-  .socials {
-    transition: 250ms ease;
-    opacity: 0;
-  }
   .tags {
     color: rgba(255, 255, 255, 0.70);
     font-size: toRem(13);
@@ -467,6 +462,8 @@ export default {
     line-height: leading(25, 13);
     margin-top: toRem(5);
     margin-bottom: toRem(15);
+    transition: 250ms ease;
+    opacity: 0;
     @include small {
       font-size: 0.75rem;
       line-height: leading(18, 12);

@@ -407,7 +407,7 @@ button,
 select,
 textarea {
   &:focus {
-  // @include focus_BoxShadow_Small;
+  @include focus_BoxShadow_Small;
   outline: 0;
  }
  &.focus-visible:focus:not(:focus-visible) {

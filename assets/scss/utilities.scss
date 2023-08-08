@@ -101,15 +101,15 @@
 }
 
 @mixin focus_BoxShadow_Small {
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba($springGreen, 0.5);
 }
 
 @mixin focus_BoxShadow_Regular {
-  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 5px rgba($springGreen, 0.5);
 }
 
 @mixin focus_BoxShadow_Link {
-  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 5px rgba($springGreen, 0.5);
   border-radius: 0.125rem;
 }
 
