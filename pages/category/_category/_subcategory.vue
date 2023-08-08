@@ -11,11 +11,13 @@
         <div class="col-6">
           <CardListBlock
             :cards="cardColumnOne"
+            :randomize="randomizeProjects"
             class="left" />
         </div>
         <div class="col-6">
           <CardListBlock
             :cards="cardColumnTwo"
+            :randomize="randomizeProjects"
             class="right" />
         </div>
       </div>
@@ -76,7 +78,8 @@ export default {
       siteContent: 'global/siteContent',
       routeQuery: 'filters/routeQuery',
       taxonomyLabels: 'filters/taxonomyLabels',
-      projects: 'projects/projects'
+      projects: 'projects/projects',
+      settings: 'global/settings'
     }),
     categories () {
       return this.siteContent.taxonomy.categories
@@ -124,6 +127,9 @@ export default {
       const len = this.subcategoryProjects.length
       if (len) { return this.subcategoryProjects.slice(Math.ceil(len / 2), len) }
       return []
+    },
+    randomizeProjects () {
+      return this.settings.visibility.randomizeProjects
     }
   }
 }

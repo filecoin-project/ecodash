@@ -19,6 +19,7 @@
             :cta="{ text: subcategory.heading, path: subcategory.path }"
             :fold-columns="small"
             :limit="small ? 6 : 5"
+            :randomize="randomizeProjects"
             :class="i % 2 === 0 ? 'left' : 'right'" />
         </div>
       </div>
@@ -92,6 +93,7 @@ export default {
   computed: {
     ...mapGetters({
       siteContent: 'global/siteContent',
+      settings: 'global/settings',
       routeQuery: 'filters/routeQuery',
       taxonomyLabels: 'filters/taxonomyLabels',
       projects: 'projects/projects'
@@ -134,6 +136,9 @@ export default {
         return array
       }
       return []
+    },
+    randomizeProjects () {
+      return this.settings.visibility.randomizeProjects
     }
   },
 

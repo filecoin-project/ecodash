@@ -8,10 +8,16 @@
     <section class="project-list">
       <div class="grid">
         <div class="col-6">
-          <CardListBlock :cards="cardColumnOne" class="left" />
+          <CardListBlock
+            :cards="cardColumnOne"
+            :randomize="randomizeProjects"
+            class="left" />
         </div>
         <div class="col-6">
-          <CardListBlock :cards="cardColumnTwo" class="right" />
+          <CardListBlock
+            :cards="cardColumnTwo"
+            :randomize="randomizeProjects"
+            class="right" />
         </div>
       </div>
     </section>
@@ -167,6 +173,7 @@ export default {
   computed: {
     ...mapGetters({
       siteContent: 'global/siteContent',
+      settings: 'global/settings',
       routeQuery: 'filters/routeQuery',
       filterPanelOpen: 'filters/filterPanelOpen',
       taxonomyLabels: 'filters/taxonomyLabels',
@@ -196,6 +203,9 @@ export default {
     cardColumnTwo () {
       const halflength = Math.ceil(this.projects.length / 2)
       return this.projects.slice(halflength, this.projects.length)
+    },
+    randomizeProjects () {
+      return this.settings.visibility.randomizeProjects
     }
   },
 

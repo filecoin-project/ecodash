@@ -49,10 +49,12 @@
 </template>
 
 <script>
+// ===================================================================== Imports
 import ProjectCard from '@/components/ProjectCard'
 import Button from '@/modules/zero/core/components/Button'
 import ArrowBoxIcon from '@/components/icons/ArrowBoxIcon'
 
+// ====================================================================== Export
 export default {
   name: 'CardListBlock',
 
@@ -92,6 +94,17 @@ export default {
       type: [Number, Boolean],
       required: false,
       default: false
+    },
+    randomize: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+
+  data () {
+    return {
+      cardlist: []
     }
   },
 
@@ -104,15 +117,15 @@ export default {
         return this.heading
       }
       return false
-    },
-    cardlist () {
-      return this.limit ? this.cards.slice(0, this.limit) : this.cards
-    },
-    getCardUrl (url) {
-      // if (typeof url === 'string' && url !== '') {
-      //   return url.startsWith('http') ? url : `https:${url}`
-      // }
-      return ''
+    }
+  },
+
+  mounted () {
+    const list = this.limit ? this.cards.slice(0, this.limit) : this.cards
+    if (this.randomize) {
+      this.cardlist = this.$ShuffleArray(list)
+    } else {
+      this.cardlist = list
     }
   }
 }
