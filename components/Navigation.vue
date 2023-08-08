@@ -54,6 +54,7 @@
             :tag="navCta.type"
             :to="navCta.href"
             :text="navCta.text"
+            :target="navCta.target"
             class="nav-cta">
             <template #icon-before>
               <AddIcon />
@@ -295,7 +296,7 @@ export default {
 }
 
 .logo-link {
-  @include borderRadius_Medium;
+  display: block;
 }
 
 #site-logo {

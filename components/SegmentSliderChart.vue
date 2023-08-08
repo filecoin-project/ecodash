@@ -33,7 +33,7 @@
             :class="['indicator', 'slot-1', index % 2 === 0 ? 'above' : 'below']"
             :style="`width: ${item.segment.s1.length}px; left: ${item.segment.ihw}px; top: ${getLabelOffset(item, index, 'first')}px;`">
             <template v-if="item.segment.s1.occupied">
-              <div class="label">
+              <div class="label tabbable" tabindex="0" @keydown.enter="updateParent(index)">
                 <div class="stem-relative-wrap" :style="`width: ${item.label.width}px;`">
                   <span class="label-text">{{ item.label.text }}</span>
                   <div
@@ -523,6 +523,24 @@ export default {
   .dots {
     opacity: 1 !important;
   }
+}
+
+
+.tabbable {
+  &:focus {
+    @include focus_BoxShadow_Small;
+    outline: 0;
+  }
+  &.focus-visible:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+.tabbable.focus-visible:focus-visible,
+.tabbable.focus-visible:moz-focusring {
+  @include focus_BoxShadow_Small;
+  outline: 0;
 }
 
 // /////////////////////////////////////////////////// Segment aesthetic stlying

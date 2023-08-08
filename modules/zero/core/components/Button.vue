@@ -4,9 +4,11 @@
     :to="getTo()"
     :href="getHref()"
     :target="getTarget()"
-    :class="['button', getType(), { disabled }]"
+    :class="['button', getType(), { disabled }, 'focus-visible']"
     :disabled="disabled"
-    @click="clickHandler">
+    tabindex="0"
+    @click="clickHandler"
+    @keyup.native.enter="keyEnterHandler">
 
     <LoaderTripleDot :class="{ show: loading }" />
 
@@ -119,6 +121,11 @@ export default {
       }
       this.$emit('clicked')
     },
+    keyEnterHandler () {
+      if (this.tag === 'nuxt-link') {
+        this.$router.push({ path: this.to })
+      }
+    },
     getTo () {
       return this.tag === 'nuxt-link' ? this.to : false
     },
@@ -140,6 +147,7 @@ export default {
 // ///////////////////////////////////////////////////////////////////// General
 .button {
   position: relative;
+  display: block;
   cursor: pointer;
   &:hover {
     .item-after {
@@ -258,6 +266,23 @@ export default {
       top: $bottomLayerOffsetTop;
     }
   }
+}
+
+.type-cta {
+  &:focus {
+    box-shadow: 0 0 0 1px rgba($springGreen, 0.25);
+    filter: drop-shadow(0 0 0.25rem $springGreen);
+  }
+  &.focus-visible:focus:not(:focus-visible) {
+    box-shadow: none;
+    filter: none;
+  }
+}
+
+.type-cta.focus-visible:focus-visible,
+.type-cta.focus-visible:moz-focusring {
+  box-shadow: 0 0 0 1px rgba($springGreen, 0.25);
+  filter: drop-shadow(0 0 1rem $springGreen);
 }
 
 // ///////////////////////////////////////////////////// [Type] Category Chiclet

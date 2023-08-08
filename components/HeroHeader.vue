@@ -40,9 +40,10 @@
         <Button
           v-if="headingCta"
           type="blue"
-          tag="nuxt-link"
+          tag="a"
           to="https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory"
           text="Add your project via Github"
+          target="_blank"
           class="heading-cta">
           <template #icon-after>
             →
@@ -90,6 +91,7 @@
                   type="green"
                   text="Add your project via Github"
                   to="https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory"
+                  target="_blank"
                   class="category-title-cta">
                   <template #icon-after>
                     →

@@ -16,7 +16,7 @@
       :value="filterValue"
       :placeholder="placeholder"
       type="text"
-      class="input"
+      :class="['input', 'focus-visible']"
       @input="handleInput"
       @focus="focused = true"
       @blur="focused = false"
@@ -207,6 +207,7 @@ export default {
   &:hover, &:active, &:focus {
     transition: 250ms ease-in;
     font-style: normal;
+    box-shadow: none !important;
   }
   &::placeholder {
     color: white;
