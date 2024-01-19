@@ -40,7 +40,7 @@ export default {
           {
             hid: 'plausible',
             src: 'https://plausible.io/js/plausible.js',
-            'data-domain': 'ecosystem.filecoin.io',
+            'data-domain': 'filecoinecosystem.io',
             async: true,
             defer: true
           }
@@ -100,7 +100,7 @@ export default {
   // ---------------------------------------------------------------------------
   // Doc: https://support.count.ly/hc/en-us/articles/360037441932-Web-analytics-JavaScript
   countly: {
-    initialize: true, // if set to false, Countly will be DISABLED
+    initialize: false, // if set to false, Countly will be DISABLED
     debug: process.env.NODE_ENV === 'development',
     disableInDevelopment: true,
     suppressErrorLogs: true
