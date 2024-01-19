@@ -4,7 +4,7 @@
   "icon": "icon-glif-wallet.png",
   "name": "Glif Wallet",
   "org": "Glif",
-  "description": "Web wallet for FIL",
+  "description": "A web-based Filecoin wallet built with Next.js",
   "website": "//wallet.glif.io",
   "social": [
     {
