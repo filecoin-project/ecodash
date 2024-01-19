@@ -1,47 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "Group721.png",
-    "full": "ScreenShot2021-12-07at1_55_14PM.png"
-  },
+  "since": 2021,
+  "icon": "icon-jigstack.png",
   "name": "Jigstack",
-  "org": [""],
-  "description": {
-    "short": "A decentralized token launch platform.",
-    "long": "Jigstack is revolutionary decentralized token launch platform that provides the most cost-effective and safest possible transaction environment to all participants. Raise funds or invest in a new project without dealing with complex setups or intermediaries - no markets, no third parties, no banks."
-  },
-  "primaryCta": { "url": "//jigstack.org", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "A decentralized token launch platform.",
+  "website": "//jigstack.org",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//jigstack.org", "text": "jigstack.org" }]
-    },
+      "github": "//github.com/jigstack-dev"
+    }
+  ],
+  "taxonomy": [
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/jigstack-dev",
-          "text": "github.com/jigstack-dev"
-        }
+      "category": "finance",
+      "subcategories": [
+        "infrastructure-and-other"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "defi",
+    "nfts",
+    "web app",
+    "nft.storage"
   ]
 }

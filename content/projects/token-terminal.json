@@ -1,49 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "Group734.png", "full": "tokenterminal.svg" },
+  "since": 2020,
+  "icon": "icon-token-terminal.png",
   "name": "Token Terminal",
-  "org": [""],
-  "description": {
-    "short": "Financial Metrics for Blockchain Protocols",
-    "long": ""
-  },
-  "primaryCta": {
-    "url": "//tokenterminal.com/terminal/projects/filecoin",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Financial Metrics for Blockchain Protocols",
+  "website": "//tokenterminal.com/terminal/projects/filecoin",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//tokenterminal.com/terminal/projects/filecoin",
-          "text": "tokenterminal.com/terminal/projects/filecoin"
-        }
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
       ]
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
     {
-      "label": "Docs",
-      "links": [
-        { "url": "//docs.tokenterminal.com", "text": "docs.tokenterminal.com" }
-      ]
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "defi",
+    "web app"
   ]
 }

@@ -1,46 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": {
-    "icon": "MathWallet_App_Icon.png",
-    "full": "MathWallet_Logo_Black.png"
-  },
+  "since": 2020,
+  "icon": "icon-math-wallet.png",
   "name": "Math Wallet",
-  "org": [""],
-  "description": {
-    "short": "A universal Crypto Wallet.",
-    "long": "MathWallet is a powerful universal crypto wallet which support multi-chain tokens and dApps on both mobile / browser extension / web / hardware wallet."
-  },
-  "primaryCta": { "url": "//mathwallet.org/en-us", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "A universal Crypto Wallet.",
+  "website": "//mathwallet.org/en-us",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        { "url": "//mathwallet.org/en-us", "text": "mathwallet.org/en-us" }
+      "github": "//github.com/mathwallet"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "wallets-identity-and-authentication"
       ]
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/mathwallet", "text": "github.com/mathwallet" }
-      ]
+      "category": "storage-and-cloud-services",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["web-app", "mobile-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["series-n"] }
+  "tags": [
+    "defi",
+    "web app",
+    "mobile app",
+    "series n"
   ]
 }

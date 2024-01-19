@@ -1,52 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": {
-    "icon": "TrustWallet-icon.png",
-    "full": "TrustWallet-logo.png"
-  },
+  "since": 2020,
+  "icon": "icon-trust-wallet.png",
   "name": "Trust Wallet",
-  "org": ["Trust Wallet"],
-  "description": {
-    "short": "The most trusted & secure multi-coin crypto wallet.",
-    "long": "Trust Wallet is a multi-coin wallet allows you to store, send, receive and exchange different cryptocurrencies with a single account. It supports many cryptocurrencies including Bitcoin, Ethereum, Ethereum Classic, Binance Coin or also Ravencoin. It also support staking on Proof-of-Stake coins such as Tezos, Cosmos or Tron."
-  },
-  "primaryCta": { "url": "//trustwallet.com", "text": "Project Website" },
-  "links": [
+  "org": "Trust Wallet",
+  "description": "The most trusted & secure multi-coin crypto wallet.",
+  "website": "//trustwallet.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//trustwallet.com", "text": "trustwallet.com" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/trustwallet", "text": "github.com/trustwallet" }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//developer.trustwallet.com",
-          "text": "developer.trustwallet.com"
-        }
-      ]
+      "github": "//github.com/trustwallet"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["library-sdk", "mobile-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "defi",
+    "library sdk",
+    "mobile app"
   ]
 }

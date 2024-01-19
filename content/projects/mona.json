@@ -1,131 +1,40 @@
 {
-    "display": true,
-    "featured": false,
-    "sortNumbers":
-    [
-        {
-            "since": 2021
-        }
-    ],
-    "logo":
+  "display": true,
+  "since": 2021,
+  "icon": "icon-mona.png",
+  "name": "MoNa",
+  "org": "",
+  "description": "A virtual metaverse gallery space.",
+  "website": "//mona.gallery",
+  "social": [],
+  "taxonomy": [
     {
-        "icon": "icon-mona.png",
-        "full": "logo-mona.png"
+      "category": "finance",
+      "subcategories": []
     },
-    "name": "MoNa",
-    "org":
-    [
-        ""
-    ],
-    "description":
     {
-        "short": "A virtual metaverse gallery space.",
-        "long": "Mona is building and seeding the open metaverse through the creation and use of beautiful, unique 3D Spaces. They believe art is about the experience, and the experiences that will store the most value over time will be 3d, one-of-one, and dynamic which is why Mona Spaces are so unique."
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
     },
-    "primaryCta":
     {
-        "url": "//mona.gallery",
-        "text": "Project Website"
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    "links":
-    [
-        {
-            "label": "Website",
-            "links":
-            [
-                {
-                    "url": "//mona.gallery",
-                    "text": "mona.gallery"
-                }
-            ]
-        },
-        {
-            "label": "Repo",
-            "links":
-            [
-                {
-                    "url": "",
-                    "text": ""
-                }
-            ]
-        },
-        {
-            "label": "Docs",
-            "links":
-            [
-                {
-                    "url": "",
-                    "text": ""
-                }
-            ]
-        }
-    ],
-    "keyInfo":
-    [
-        {
-            "label": "Using Filecoin since",
-            "value": "2021"
-        }
-    ],
-    "video": "",
-    "stats":
-    [
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        }
-    ],
-    "ctaCard":
     {
-        "title": "",
-        "description": "",
-        "buttonText": "",
-        "url": ""
+      "category": "storage-and-cloud-services",
+      "subcategories": []
     },
-    "taxonomies":
-    [
-        {
-            "slug": "project-category",
-            "tags":
-            [
-                "storage-apps-clients"
-            ]
-        },
-        {
-            "slug": "storage-type",
-            "tags":
-            [
-                "nfts"
-            ]
-        },
-        {
-            "slug": "software-type",
-            "tags":
-            [
-                "web-app"
-            ]
-        },
-        {
-            "slug": "tooling",
-            "tags":
-            [
-                "nft-storage"
-            ]
-        },
-        {
-            "slug": "pipeline",
-            "tags":
-            [
-                ""
-            ]
-        }
-    ]
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "storage apps",
+    "nfts",
+    "web app",
+    "nft.storage"
+  ]
 }

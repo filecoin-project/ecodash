@@ -1,36 +1,38 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-protofire.png", "full": "protofire-full.svg" },
+  "since": 2021,
+  "icon": "icon-protofire.png",
   "name": "Protofire",
-  "org": [""],
-  "description": {
-    "short": "Protofire is a consulting service for decentralised protocols.",
-    "long": ""
-  },
-  "primaryCta": { "url": "//protofire.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Protofire is a consulting service for decentralised protocols.",
+  "website": "//protofire.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//protofire.io", "text": "protofire.io" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["decentralized-identity"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "decentralized identity"
   ]
 }

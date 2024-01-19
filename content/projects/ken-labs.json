@@ -1,113 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "kenlabs-icon.png",
-    "full": "kenlabs-icon.png"
-  },
+  "since": 2022,
+  "icon": "icon-ken-labs.png",
   "name": "KEN Labs",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Open source ledger database",
-    "long": "KEN Labs is an open source ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. They are developing Pando, a sidechain metadata service that aggregates various data streams. It provides a lightweight query interface for consumers. As a FVM Early Builder, they intend to build native web3 products with it, starting with Pando."
-  },
-  "primaryCta": {
-    "url": "//kencloud.com",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Open source ledger database",
+  "website": "//kencloud.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//kencloud.com",
-          "text": "kencloud.com"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/kenlabs",
-          "text": "github.com/kenlabs"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/kenlabs"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "storage-apps-clients"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "storage apps",
+    "fvm"
   ]
 }

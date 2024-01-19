@@ -1,36 +1,40 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-chestr.png", "full": "chestr-logo.png" },
+  "since": 2021,
+  "icon": "icon-chestr.png",
   "name": "Chestr",
-  "org": [""],
-  "description": {
-    "short": "Open collaboration and tooling for the next Web3 cultural classics.",
-    "long": "With Chestr, you can join forces with like-minded creators to create and promote together. Chester's platform tools include opportunity feeds, revenue share pools via smart contracts, social rewards to earn Street Cred and $COLLAB for participation, and remixing & attribution. Backed by Consensys and Protocol Labs."
-  },
-  "primaryCta": { "url": "//chestr.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Open collaboration and tooling for the next Web3 cultural classics.",
+  "website": "//chestr.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//chestr.io", "text": "chestr.io" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["accelerator"] }
+  "tags": [
+    "developer tools",
+    "nfts",
+    "web app",
+    "accelerator"
   ]
 }

@@ -1,41 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "livepee.png", "full": "livepeer.png" },
+  "since": 2020,
+  "icon": "icon-livepeer.png",
   "name": "Livepeer",
-  "org": ["Livepeer, Inc."],
-  "description": {
-    "short": "Decentralized video streaming protocol & network.",
-    "long": "The Livepeer project aims to deliver a live video streaming network protocol that is fully decentralized, highly scalable, crypto token incentivized and results in a solution that is cheaper to an app developer or broadcaster than using traditional centralized live video solutions."
-  },
-  "primaryCta": { "url": "//livepeer.org", "text": "Project Website" },
-  "links": [
+  "org": "Livepeer, Inc.",
+  "description": "Decentralized video streaming protocol & network.",
+  "website": "//livepeer.org",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//livepeer.org", "text": "livepeer.org" }]
+      "github": "//github.com/livepeer"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/livepeer", "text": "github.com/livepeer" }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=WSituDcunzA",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["video"] },
-    { "slug": "software-type", "tags": ["network", "library-sdk"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "video",
+    "network",
+    "library sdk"
   ]
 }

@@ -1,47 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "logo-glyph.png", "full": "estuary_logo_cropped.svg" },
+  "since": 2021,
+  "icon": "icon-estuary.png",
   "name": "Estuary",
-  "org": ["Application Research Group"],
-  "description": {
-    "short": "Makes it easy to make Filecoin storage deals and retrieve files.",
-    "long": "Estuary is a decentralized data storage service that wraps a clean, simple API and high-performance optimizations around key decentralized web protocols such as IPFS and Filecoin. With a single call, users can store and retrieve content quickly using an IPFS API that adheres to the IPFS Pinning Services API Spec, and store content on Filecoin with proposition receipts and successful deal receipts."
-  },
-  "primaryCta": { "url": "estuary.tech", "text": "Project Website" },
-  "links": [
+  "org": "Application Research Group",
+  "description": "Makes it easy to make Filecoin storage deals and retrieve files.",
+  "website": "//estuary.tech",
+  "social": [
     {
-      "label": "Website",
-      "links": [ { "url": "//estuary.tech", "text": "estuary.tech" } ]
+      "github": "//github.com/application-research/estuary"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/application-research/estuary",
-          "text": "github.com/application-research/estuary"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
     {
-      "label": "Docs",
-      "links": [{ "url": "//docs.estuary.tech", "text": "docs.estuary.tech" }]
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=gW4Xd0pBs30",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["general-storage"] },
-    { "slug": "software-type", "tags": ["api", "web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "general storage",
+    "api",
+    "web app"
   ]
 }

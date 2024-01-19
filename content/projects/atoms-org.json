@@ -1,36 +1,39 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "4-ZuTQNE_400x400.jpg", "full": "4-ZuTQNE_400x400.jpg" },
+  "since": 2021,
+  "icon": "icon-atoms-org.jpg",
   "name": "Atoms.org",
-  "org": [""],
-  "description": {
-    "short": "Smart contract systems for a flourishing academic research economy.",
-    "long": "Atoms intends to improve incentives in science by developing smart research contracts mediated by peer-to-peer review networks. These will collectively reward scientific contributions, including proposals, papers, replications, datasets, analyses, annotations, editorials, and more.\n\nLong term, these smart contracts help accelerate research by minimizing science friction, ensuring science quality, and maximizing science variance."
-  },
-  "primaryCta": { "url": "//atoms.org", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Smart contract systems for a flourishing academic research economy.",
+  "website": "//atoms.org",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//atoms.org", "text": "atoms.org" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": [
+        "education-and-science"
+      ]
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["public-data"] },
-    { "slug": "software-type", "tags": ["network"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "public data",
+    "network"
   ]
 }

@@ -1,44 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "pinata-square.png", "full": "pinata-full.svg" },
+  "since": 2021,
+  "icon": "icon-pinata.png",
   "name": "Pinata",
-  "org": ["Pinata Technologies, Inc."],
-  "description": {
-    "short": "Pinata is a pinning service and gateway for IPFS.",
-    "long": ""
-  },
-  "primaryCta": { "url": "//pinata.cloud", "text": "Project Website" },
-  "links": [
+  "org": "Pinata Technologies, Inc.",
+  "description": "Pinata is a pinning service and gateway for IPFS.",
+  "website": "//pinata.cloud",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//pinata.cloud", "text": "pinata.cloud" }]
+      "github": "//github.com/pinatacloud"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/PinataCloud", "text": "github.com/PinataCloud" }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
     {
-      "label": "Docs",
-      "links": [{ "url": "//docs.pinata.cloud", "text": "docs.pinata.cloud" }]
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["general-storage"] },
-    { "slug": "software-type", "tags": ["api", "hosted-service"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "general storage",
+    "api",
+    "hosted service"
   ]
 }

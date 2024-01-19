@@ -1,49 +1,45 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "icon-small-data.png",
-    "full": "smalldataindustries-logo.png"
-  },
+  "since": 2021,
+  "icon": "icon-small-data-industries.png",
   "name": "Small Data Industries",
-  "org": ["Small Data Industries"],
-  "description": {
-    "short": "An integrity safeguard for the world's artistic records.",
-    "long": "SDI works with art and media institutions to architect and build sustainable, secure and user-centric systems for storage and preservation of digital collections. "
-  },
-  "primaryCta": { "url": "//smalldata.industries", "text": "Project Website" },
-  "links": [
+  "org": "Small Data Industries",
+  "description": "An integrity safeguard for the world's artistic records.",
+  "website": "//smalldata.industries",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        { "url": "//smalldata.industries", "text": "smalldata.industries" }
+      "github": "//github.com/smalldata-industries"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "arts-and-collectibles"
       ]
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/smalldata-industries",
-          "text": "github.com/smalldata-industries"
-        }
-      ]
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "//youtube.com/watch?v=seV_HVdyAwM",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["archival", "verifiable-storage"] },
-    { "slug": "software-type", "tags": ["library-sdk"] },
-    { "slug": "tooling", "tags": ["starling"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "archival",
+    "verifiable storage",
+    "library sdk",
+    "starling"
   ]
 }

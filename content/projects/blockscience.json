@@ -1,39 +1,37 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": {
-    "icon": "Q-_3YcNe_400x400.jpg",
-    "full": "ScreenShot2021-10-27at6.10.27PM.png"
-  },
+  "since": 2020,
+  "icon": "icon-blockscience.jpg",
   "name": "BlockScience",
-  "org": [""],
-  "description": {
-    "short": "Quantitative consulting firm for network analytics.",
-    "long": "BlockScience designs and builds data-driven decision systems for new and legacy businesses leveraging engineering methodologies and academic-grade tools. Expertise includes pre-launch design and evaluation of economic business and ecosystem models based on simulation and analysis.\n\nReports from the Filecoin x BlockScience research collaboration can be found on their blog."
-  },
-  "primaryCta": { "url": "//block.science", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Quantitative consulting firm for network analytics.",
+  "website": "//block.science",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//block.science", "text": "block.science" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": [
+        "education-and-science"
+      ]
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "defi"
   ]
 }

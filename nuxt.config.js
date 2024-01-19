@@ -34,7 +34,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
-    ]
+    ],
+    script: process.env.NODE_ENV === 'production'
+      ? [
+          {
+            hid: 'plausible',
+            src: 'https://plausible.io/js/plausible.js',
+            'data-domain': 'ecosystem.filecoin.io',
+            async: true,
+            defer: true
+          }
+        ]
+      : []
   },
   // ////////////////////////////////////////// Customize the progress-bar color
   // ---------------------------------------------------------------------------
@@ -61,8 +72,8 @@ export default {
   // /////////////////////////////////////////////////////////// Nuxt.js Modules
   // ---------------------------------------------------------------------------
   modules: [
-    // Doc: https://github.com/ipfs-shipyard/nuxt-module-ecosystem-directory
-    '@agency-undone/nuxt-module-ecosystem-directory',
+    '~/modules/zero',
+    '~/modules/ecosystem-directory',
     // Doc: https://github.com/nuxt-community/style-resources-module/
     '@nuxtjs/style-resources',
     // Doc: https://github.com/agency-undone/nuxt-module-ipfs
@@ -100,7 +111,8 @@ export default {
   // /////////////////////////////////////////////////////// Router + Middleware
   // ---------------------------------------------------------------------------
   router: {
-    base: process.env.NODE_ENV === 'development' ? '/' : '/ipfs/hash/'
+    base: process.env.NODE_ENV === 'development' ? '/' : '/ipfs/hash/',
+    middleware: ['plausible']
     // extendRoutes (routes, resolve) {}
   },
   // /////////////////////////////////////////////////////// Build configuration

@@ -1,47 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "thegraph-square.png", "full": "thegraph-square.png" },
+  "since": 2021,
+  "icon": "icon-the-graph.png",
   "name": "The Graph",
-  "org": ["Graph Foundation"],
-  "description": {
-    "short": "Indexing protocol for querying networks like Ethereum and IPFS.",
-    "long": "Anyone can build and publish open APIs, called subgraphs, making data easily accessible."
-  },
-  "primaryCta": { "url": "//thegraph.com", "text": "Project Website" },
-  "links": [
+  "org": "Graph Foundation",
+  "description": "Indexing protocol for querying networks like Ethereum and IPFS.",
+  "website": "//thegraph.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//thegraph.com", "text": "thegraph.com" }]
+      "github": "//github.com/graphprotocol"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/graphprotocol",
-          "text": "github.com/graphprotocol"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
       ]
     },
     {
-      "label": "Docs",
-      "links": [{ "url": "//thegraph.com/docs", "text": "thegraph.com/docs" }]
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["general-storage"] },
-    { "slug": "software-type", "tags": ["api", "library-sdk"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "general storage",
+    "api",
+    "library sdk"
   ]
 }

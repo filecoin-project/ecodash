@@ -1,49 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "Karon.png", "full": "Group717.png" },
+  "since": 2021,
+  "icon": "icon-kanon.png",
   "name": "Kanon",
-  "org": [""],
-  "description": {
-    "short": "NFT art vault and community.",
-    "long": "K21 is an ecosystem built around a closed-end art vault of 21 unique and original NFT artworks by a diverse roster of influential and pioneering contemporary, digital, and cryptonative artists. Engineered for composability, durability, and equity, K21 establishes a new protocol for art."
-  },
-  "primaryCta": {
-    "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "NFT art vault and community.",
+  "website": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//k21.kanon.art/\nhttps://docs.kanon.art/k21",
-          "text": "k21.kanon.art/\nhttps://docs.kanon.art/k21"
-        }
+      "github": "//github.com/kanonart"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "arts-and-collectibles"
       ]
     },
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/kanonart", "text": "github.com/kanonart" }
-      ]
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps",
+    "nfts",
+    "web app"
   ]
 }

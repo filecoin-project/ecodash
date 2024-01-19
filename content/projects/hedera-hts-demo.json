@@ -1,55 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "hedera-hashgraph-hbar-logo.png",
-    "full": "hedera-hashgraph-hbar-logo.png"
-  },
+  "since": 2021,
+  "icon": "icon-hedera-hts-demo.png",
   "name": "Hedera HTS Demo",
-  "org": ["Hedera"],
-  "description": {
-    "short": "Demo app that integrates Hedera and IPFS/Filecoin. ",
-    "long": "Hedera Token Service metadata is stored via nft.storage, which then seamlessly writes to IPFS and Filecoin. "
-  },
-  "primaryCta": { "url": "//hedera.com", "text": "Project Website" },
-  "links": [
+  "org": "Hedera",
+  "description": "Demo app that integrates Hedera and IPFS/Filecoin. ",
+  "website": "//hedera.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//hedera.com", "text": "hedera.com" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/hashgraph/hedera-hts-demo",
-          "text": "github.com/hashgraph/hedera-hts-demo"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//github.com/hashgraph/hedera-hts-demo",
-          "text": "github.com/hashgraph/hedera-hts-demo"
-        }
-      ]
+      "github": "//github.com/hashgraph/hedera-hts-demo"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps",
+    "nfts",
+    "web app",
+    "nft.storage"
   ]
 }

@@ -1,41 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "chainsafe-square.jpeg", "full": "chainsafe-square.jpeg" },
+  "since": 2021,
+  "icon": "icon-chainsafe.jpeg",
   "name": "ChainSafe",
-  "org": [""],
-  "description": {
-    "short": "R&D firm with multi-chain perspective.",
-    "long": "ChainSafe is multi-disciplinary team offering R&D, consulting, and product development. ChainSafe's Filecoin projects include the Forest (Rust) implementation of Filecoin and Chainsafe Files (web application & API for encrypted storage)."
-  },
-  "primaryCta": { "url": "//chainsafe.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "R&D firm with multi-chain perspective.",
+  "website": "//chainsafe.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//chainsafe.io", "text": "chainsafe.io" }]
-    },
+      "github": "//github.com/chainsafe"
+    }
+  ],
+  "taxonomy": [
     {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/ChainSafe", "text": "github.com/ChainSafe" }
+      "category": "finance",
+      "subcategories": [
+        "infrastructure-and-other"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["none"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations"
   ]
 }

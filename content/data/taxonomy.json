@@ -1,244 +1,147 @@
 {
   "categories": [
     {
-      "label": "Project Category",
-      "sublabel": "Filter by primary area",
-      "slug": "project-category",
-      "tags": [
+      "slug": "storage-and-cloud-services",
+      "label": "Storage and Cloud Services",
+      "description": "Applications that are built on top of or in conjunction with the Filecoin Protocol’s storage and retrieval services",
+      "subcategories": [
         {
-          "label": "Storage Apps & Clients",
-          "slug": "storage-apps-clients"
+          "slug": "data-storage-and-management",
+          "label": "Data Storage and Management",
+          "description": ""
         },
         {
-          "label": "Token & Finance",
-          "slug": "token-finance"
+          "slug": "data-retrieval",
+          "label": "Data Retrieval",
+          "description": ""
         },
         {
-          "label": "Developer Tools",
-          "slug": "developer-tools"
+          "slug": "compute-services",
+          "label": "Compute Services",
+          "description": ""
         },
         {
-          "label": "Network Tools",
-          "slug": "network-tools"
+          "slug": "data-curation-and-monetization",
+          "label": "Data Curation and Monetization",
+          "description": ""
         },
         {
-          "label": "Collaborations",
-          "slug": "collaborations"
+          "slug": "enterprise-solutions",
+          "label": "Enterprise Solutions",
+          "description": ""
         }
       ]
     },
     {
-      "label": "Storage Type",
-      "sublabel": "Filter by the kind of data stored",
-      "slug": "storage-type",
-      "tags": [
+      "slug": "finance",
+      "label": "Finance",
+      "description": "Applications that focus on building out services to better connect Storage Providers with token holders; examples include leasing, staking, borrowing, and exchanging tokens",
+      "subcategories": [
         {
-          "label": "Archival",
-          "slug": "archival",
-          "description": "Projects for long-term data storage and preservation"
+          "slug": "leasing-and-staking",
+          "label": "Leasing and Staking",
+          "description": ""
         },
         {
-          "label": "Consumer Storage",
-          "slug": "consumer-storage",
-          "description": "Projects making decentralized storage easy for individuals or groups"
+          "slug": "exchanges-and-swaps",
+          "label": "Exchanges and Swaps",
+          "description": ""
         },
         {
-          "label": "Data Markets",
-          "slug": "data-markets",
-          "description": "Projects related to data marketplaces and the data econonomy"
+          "slug": "infrastructure-and-other",
+          "label": "Infrastructure and other",
+          "description": ""
         },
         {
-          "label": "Decentralized Identity",
-          "slug": "decentralized-identity",
-          "description": "Projects bringing self-sovereignty to managing personal identity"
-        },
-        {
-          "label": "Education",
-          "slug": "education",
-          "description": "Projects related to academia, research, education, or learning"
-        },
-        {
-          "label": "Games",
-          "slug": "games",
-          "description": "Projects related to online gaming or digital realms"
-        },
-        {
-          "label": "General Storage",
-          "slug": "general-storage",
-          "description": "Projects for general-purpose data storage"
-        },
-        {
-          "label": "Health",
-          "slug": "health",
-          "description": "Projects related to health, public health, or medical data"
-        },
-        {
-          "label": "NFTs",
-          "slug": "nfts",
-          "description": "Projects for storing non-fungible digital tokens and their metadata"
-        },
-        {
-          "label": "Public Data",
-          "slug": "public-data",
-          "description": "Projects related to storing public data"
-        },
-        {
-          "label": "Social",
-          "slug": "social",
-          "description": "Projects related to social interaction or social media"
-        },
-        {
-          "label": "Verifiable Storage",
-          "slug": "verifiable-storage",
-          "description": "Projects safeguaring or verifying the integrity of data"
-        },
-        {
-          "label": "Video",
-          "slug": "video",
-          "description": "Projects for storage, playback, recording, or broadcasting of video content"
-        },
-        {
-          "label": "Web Publishing",
-          "slug": "web-publishing",
-          "description": "Projects that focus on creating or publishing web content"
-        },
-        {
-          "label": "Other",
-          "slug": "other",
-          "description": "Projects that don't quite fit in any other category"
+          "slug": "bridges-and-oracles",
+          "label": "Bridges and Oracles",
+          "description": ""
         }
       ]
     },
     {
-      "label": "Software Type",
-      "sublabel": "Filter by developer or user-facing layer",
-      "slug": "software-type",
-      "tags": [
+      "slug": "tooling-and-productivity",
+      "label": "Tooling and Productivity",
+      "description": "Applications that focus on decentralizing developer tooling and providing access to users, ultimately making progress",
+      "subcategories": [
         {
-          "label": "API",
-          "slug": "api"
+          "slug": "wallets-identity-and-authentication",
+          "label": "Wallets, Identity and Authentication",
+          "description": ""
         },
         {
-          "label": "Library or SDK",
-          "slug": "library-sdk"
+          "slug": "network-explorers-and-reputation",
+          "label": "Network Explorers and Reputation",
+          "description": ""
         },
         {
-          "label": "Hosted Service",
-          "slug": "hosted-service"
+          "slug": "developer-tools-and-other",
+          "label": "Developer Tools and other",
+          "description": ""
         },
         {
-          "label": "Network",
-          "slug": "network"
+          "slug": "privacy-and-security",
+          "label": "Privacy and Security",
+          "description": ""
         },
         {
-          "label": "Infrastructure",
-          "slug": "infrastructure"
-        },
-        {
-          "label": "Backend App",
-          "slug": "backend-app"
-        },
-        {
-          "label": "Web App",
-          "slug": "web-app"
-        },
-        {
-          "label": "Mobile App",
-          "slug": "mobile-app"
-        },
-        {
-          "label": "None",
-          "slug": "none"
+          "slug": "ai-productivity-and-utilities",
+          "label": "AI Productivity and Utilities",
+          "description": ""
         }
       ]
     },
     {
-      "label": "Tooling",
-      "sublabel": "Filter by implementation or tooling used",
-      "slug": "tooling",
-      "tags": [
+      "slug": "media-and-entertainment",
+      "label": "Media and Entertainment",
+      "description": "Applications that are aimed at connecting users in the Filecoin ecosystem either to each other or through creations in the digital economy",
+      "subcategories": [
         {
-          "label": "Chainlink External Adapters",
-          "slug": "chainlink-external-adapters"
+          "slug": "arts-and-collectibles",
+          "label": "Arts and Collectibles",
+          "description": ""
         },
         {
-          "label": "Estuary",
-          "slug": "estuary"
+          "slug": "photo-and-video",
+          "label": "Photo and Video",
+          "description": ""
         },
         {
-          "label": "Fleek Space Daemon",
-          "slug": "fleek-space-daemon"
+          "slug": "music",
+          "label": "Music",
+          "description": ""
         },
         {
-          "label": "ipfs-http-client",
-          "slug": "ipfs-http-client"
+          "slug": "gaming",
+          "label": "Gaming",
+          "description": ""
         },
         {
-          "label": "Metamask Filecoin Snap",
-          "slug": "metamask-filecoin-snap"
+          "slug": "communication-and-social",
+          "label": "Communication and Social",
+          "description": ""
         },
         {
-          "label": "NFT.storage",
-          "slug": "nft-storage"
-        },
-        {
-          "label": "Slate",
-          "slug": "slate"
-        },
-        {
-          "label": "Starling",
-          "slug": "starling"
-        },
-        {
-          "label": "Textile Buckets",
-          "slug": "textile-buckets"
-        },
-        {
-          "label": "Textile Powergate",
-          "slug": "textile-powergate"
-        },
-        {
-          "label": "Web3.storage",
-          "slug": "web3-storage"
-        },
-        {
-          "label": "Zondax Signing Tools",
-          "slug": "zondax-signing-tools"
-        },
-        {
-          "label": "FVM (Early Builders)",
-          "slug": "FVM"
-        },
-        {
-          "label": "None",
-          "slug": "none"
+          "slug": "publishing-and-news",
+          "label": "Publishing and News",
+          "description": ""
         }
       ]
     },
     {
-      "label": "Institutional Support",
-      "sublabel": "Filter by support recieved by the entityTerm",
-      "slug": "pipeline",
-      "tags": [
+      "slug": "education-science-and-public-goods",
+      "label": "Education, Science and Public Goods",
+      "description": "Resources within the Filecoin ecosystem that benefit from the creation or sharing of public goods, education and research",
+      "subcategories": [
         {
-          "label": "Grant or Sponsorship",
-          "slug": "grant-sponsorship"
+          "slug": "governance-daos-and-public-goods",
+          "label": "Governance, DAOs and Public Goods",
+          "description": ""
         },
         {
-          "label": "Accelerator",
-          "slug": "accelerator"
-        },
-        {
-          "label": "Seed",
-          "slug": "seed"
-        },
-        {
-          "label": "Series A or Beyond",
-          "slug": "series-n"
-        },
-        {
-          "label": "None",
-          "slug": "none"
+          "slug": "education-and-science",
+          "label": "Education and Science",
+          "description": ""
         }
       ]
     }

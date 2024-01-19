@@ -1,44 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "icon-node-factory.png", "full": "Group.png" },
+  "since": 2020,
+  "icon": "icon-node-factory.png",
   "name": "Node Factory",
-  "org": [""],
-  "description": {
-    "short": "Blockchain R&D company that turns ideas into reliable solutions.",
-    "long": ""
-  },
-  "primaryCta": { "url": "//nodefactory.io", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Blockchain R&D company that turns ideas into reliable solutions.",
+  "website": "//nodefactory.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//nodefactory.io", "text": "nodefactory.io" }]
+      "github": "//github.com/nodefactoryio"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/nodefactoryIo",
-          "text": "github.com/nodefactoryIo"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "enterprise-solutions"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["hosted-service"] },
-    { "slug": "tooling", "tags": ["metamask-filecoin-snap"] },
-    { "slug": "pipeline", "tags": ["grant-sponsorship"] }
+  "tags": [
+    "developer tools",
+    "hosted service",
+    "metamask filecoin snap",
+    "grant sponsorship"
   ]
 }

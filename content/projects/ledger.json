@@ -1,49 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2019 }],
-  "logo": { "icon": "ledger-icon.png", "full": "ledger-logo.png" },
+  "since": 2019,
+  "icon": "icon-ledger.png",
   "name": "Ledger",
-  "org": [""],
-  "description": {
-    "short": "Trusted hardware wallet for blockchain applications.",
-    "long": "Ledger hardware wallets combined with Ledger Live app give you access to all our smart services: buy, exchange, trade your crypto, manage your NFTs and more - 100% securely and in one powerful app."
-  },
-  "primaryCta": { "url": "//ledger.com", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Trusted hardware wallet for blockchain applications.",
+  "website": "//ledger.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//ledger.com", "text": "ledger.com" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        { "url": "//github.com/LedgerHQ", "text": "github.com/LedgerHQ" }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//developers.ledger.com/docs/coin/general-process",
-          "text": "developers.ledger.com/docs/coin/general-process"
-        }
-      ]
+      "github": "//github.com/ledgerhq"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "wallets-identity-and-authentication"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["token-finance"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["library-sdk"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] }
+  "tags": [
+    "defi",
+    "library sdk"
   ]
 }

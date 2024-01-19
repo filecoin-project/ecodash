@@ -1,47 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "3boxlabs-white.svg",
-    "full": "ThreeBoxLogoBlack_4e0a0543.svg"
-  },
+  "since": 2021,
+  "icon": "icon-ceramic-network-idx.svg",
   "name": "Ceramic Network & IDX",
-  "org": ["3Box Labs"],
-  "description": {
-    "short": "Decentralized identity and open data on the Ceramic network.",
-    "long": "Created by 3Box Labs, Ceramic is a decentralized network for managing mutable information on the open internet. IDX is a decentralized, cross-platform identity standard built on Ceramic."
-  },
-  "primaryCta": { "url": "//3boxlabs.com", "text": "Project Website" },
-  "links": [
+  "org": "3Box Labs",
+  "description": "Decentralized identity and open data on the Ceramic network.",
+  "website": "//3boxlabs.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//3boxlabs.com", "text": "3boxlabs.com" }]
+      "github": "//github.com/ceramicnetwork"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/ceramicnetwork",
-          "text": "github.com/ceramicnetwork"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["decentralized-identity"] },
-    { "slug": "software-type", "tags": ["network"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "decentralized identity",
+    "network"
   ]
 }

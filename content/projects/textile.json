@@ -1,0 +1,48 @@
+{
+  "display": true,
+  "since": 2019,
+  "icon": "icon-textile.png",
+  "name": "Textile",
+  "org": "Textile",
+  "description": "Developer tools and APIs to build on IPFS and Filecoin.",
+  "website": "//textile.io/",
+  "social": [
+    {
+      "github": "https://github.com/textileio"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer tools",
+    "api",
+    "library sdk",
+    "hosted service",
+    "infrastructure",
+    "backend app",
+    "web app",
+    "general storage"
+  ]
+}

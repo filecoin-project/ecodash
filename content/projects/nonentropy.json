@@ -1,44 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "icon-nonentropy.png", "full": "Nonentropy-logo.png" },
+  "since": 2021,
+  "icon": "icon-nonentropy.png",
   "name": "NonEntropy",
-  "org": [""],
-  "description": {
-    "short": "A Web 3 storage infrastructure platform",
-    "long": ""
-  },
-  "primaryCta": { "url": "//nonentropy.jp", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "A Web 3 storage infrastructure platform",
+  "website": "//nonentropy.jp",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//nonentropy.jp", "text": "nonentropy.jp" }]
+      "github": "//github.com/nonentropy-japan"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/NonEntropy-Japan",
-          "text": "github.com/NonEntropy-Japan"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["infrastructure"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "collaborations",
+    "infrastructure"
   ]
 }

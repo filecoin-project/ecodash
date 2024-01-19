@@ -1,44 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "athena-square.png", "full": "athena-logo.png" },
+  "since": 2021,
+  "icon": "icon-athena-explorer.png",
   "name": "Athena Explorer",
-  "org": [""],
-  "description": {
-    "short": "Explorer and dashboard for the Filecoin network.",
-    "long": "Athena is an explorer and dashboard for the Filecoin network. In addition to basic chain and network data, additional features include storage provider analysis, output calculation, datacap analysis, and forecasting."
-  },
-  "primaryCta": { "url": "//atpool.com/en-US", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "Explorer and dashboard for the Filecoin network.",
+  "website": "//atpool.com/en-us",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//atpool.com/en-US", "text": "atpool.com/en-US" }]
+      "github": "//github.com/athenaexplorer"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/AthenaExplorer",
-          "text": "github.com/AthenaExplorer"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["consumer-storage"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "network tools",
+    "consumer storage",
+    "web app"
   ]
 }

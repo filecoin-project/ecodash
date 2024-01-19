@@ -19,31 +19,26 @@
       { "categorySlug": "project-status", "tagMatchType": "or" }
     ],
     "excludeFilterAllTag": true,
-    "includeGranularFilterClearButton": true
+    "includeGranularFilterClearButton": true,
+    "defaultSelectedFilters": []
   },
   "visibility": {
-    "excludeSingulars": false,
     "breadcrumbs": true,
     "segmentChart": true,
     "featuredSlider": false,
-    "embeddableObject": true,
-    "showcase": true,
-    "defaultView": "grid",
-    "alternateLayout": true,
-    "swapVideoPositionSingular": true,
-    "hideNonDefaultView": false,
+    "embeddableObject": false,
+    "showcase": false,
     "hidePagination": false,
     "hideSort": false,
     "hideNumResults": false,
     "setSort": "a_z",
     "truncateCharacters": [10, 12],
     "setPageSize": 20,
-    "disableSingulars": 2,
     "truncateLinks": true,
     "mediaAltAtts": true,
     "linksAltAtts": true,
-    "singularTagLinks": true,
-    "indexHeadingEntityCount": true
+    "indexHeadingEntityCount": true,
+    "randomizeProjects": true
   },
   "embeddable_view": {
     "host": "https://ecosystem.filecoin.io",

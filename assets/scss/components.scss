@@ -1,15 +1,295 @@
-// ///////////////////////////////////////////////////////////////////// General
+// //////////////////////////////////////////////////////////////////////// Hero
 // -----------------------------------------------------------------------------
-.breadcrumbs {
-  font-family: 'Suisse Intl Book';
-  font-size: $fontSize_Small;
-  font-weight: $fontWeight_Regular;
-  letter-spacing: $letter_SpacingRegular;
-  line-height: $leading_Small;
-  .breadcrumb-link {
-    .divider {
-      font-weight: inherit;
+.filters-heading {
+  .display-total {
+    color: $font_Color_Primary;
+  }
+}
+
+// ///////////////////////////////////////////////////////////////////// Toolbar
+// -----------------------------------------------------------------------------
+// ------------------------------------------------ [Toggle Button] Filter Panel
+#filter-panel-toggle-button {
+  &.active {
+    color: white;
+    background-color: $fill_Dark_Primary;
+    .svg-icon {
+      path {
+        stroke: white;
+      }
     }
+  }
+}
+
+// ------------------------------------------------------------ Sort-By Selector
+#sort-by-selector {
+  .dropdown-root {
+    background-color: white;
+  }
+  .shadow {
+    background-color: white;
+  }
+  .highlighted {
+    color: white;
+    background-color: $highlight_Light;
+  }
+}
+
+// --------------------------------------------- [Toggle Button] List Block View
+#list-block-toggle-button {
+  &:before {
+    background-color: $fill_Dark_Primary;
+  }
+}
+
+// //////////////////////////////////////////////////////////////// Filter Panel
+// -----------------------------------------------------------------------------
+// --------------------------------------------------------------------- General
+
+#filter-panel {
+  .filter-category {
+    &.heading {
+      font-family: $font_Secondary;
+    }
+    &.sub-heading {
+      font-family: $font_Primary;
+    }
+  }
+}
+
+// -------------------------------------------------------------------- Controls
+#filter-panel-controls {
+  font-family: $font_Secondary;
+  .clear-selected-button,
+  .done-button {
+    &:hover {
+      color: white;
+      background-color: $highlight_Dark;
+    }
+  }
+  .clear-selected-button {
+    background-color: $fill_Light;
+    color: $fill_Dark_Primary;
+  }
+  .done-button {
+    color: white;
+    background-color: $fill_Dark_Primary;
+  }
+}
+
+// //////////////////////////////////////////////////////////////// Project List
+// -----------------------------------------------------------------------------
+// --------------------------------------------------------------------- General
+#project-explorer-container {
+  .placeholder-results-empty {
+    background-color: white;
+    .clear-all-null-results {
+      background: $site_backgroundColor;
+      &:hover {
+        background-color: $highlight_Dark;
+      }
+    }
+  }
+}
+
+#results-per-page-selector {
+  background-color: white;
+  .dropdown-list {
+    background-color: white;
+    &:after {
+      background-color: white;
+    }
+  }
+  .highlighted {
+    color: white;
+    background-color: $highlight_Light;
+  }
+}
+
+// //////////////////////////////////////////////////////////////////// Chiclets
+// -----------------------------------------------------------------------------
+.chiclet-list {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 0.75rem;
+  column-gap: 0.625rem;
+}
+
+.chiclet {
+  @include fontSize_Mini;
+  padding: 0.3125rem 0.75rem;
+  font-weight: 500;
+  background-color: $fill_Light;
+  cursor: pointer;
+  transition: 250ms ease-out;
+  &.active-button {
+    background-color: $fill_Dark_Primary;
+    color: white;
+  }
+  &:hover {
+    transition: 250ms ease-in;
+    background-color: $highlight_Dark;
+    color: white;
+  }
+}
+
+// ///////////////////////////////////////////////////////////////////// Tooltip
+// -----------------------------------------------------------------------------
+// Companion mixin: tooltipMobilePosition | found in @/assets/core/utilities.scss
+[data-tooltip] {
+  position: relative;
+  &:hover {
+    &:before,
+    &:after {
+      transition: 250ms ease-in;
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0.5rem);
+    pointer-events: none;
+    opacity: 0;
+    transition: 250ms ease-out;
+  }
+  &:before {
+    content: '';
+    top: calc(100% + 2px);
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.375rem solid $fill_Dark_Primary;
+  }
+  &:after {
+    @include fontSize_Mini;
+    content: attr(data-tooltip);
+    top: calc(100% + 0.5rem);
+    background-color: $fill_Dark_Primary;
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.125rem;
+  }
+  &[data-tooltip-theme="light"] {
+    &:before {
+      border-bottom-color: $fill_Light;
+    }
+    &:after {
+      color: $fill_Dark_Primary;
+      background-color: $fill_Light;
+    }
+  }
+  &[data-tooltip-theme="dark"] {
+    &:before {
+      border-bottom-color: $fill_Dark_Primary;
+    }
+    &:after {
+      color: $fill_Light;
+      background-color: $fill_Dark_Primary;
+    }
+  }
+}
+
+// ///////////////////////////////////////////////////////////////// Detail Page
+// -----------------------------------------------------------------------------
+// --------------------------------------------------------------------- General
+.page-project {
+  .breadcrumb-link {
+    color: $highlight_Medium;
+  }
+  .company {
+    font-family: $font_Primary;
+  }
+  .ctas {
+    a {
+      &.primary-cta {
+        color: white;
+        background-color: $fill_Dark_Primary;
+        &:hover {
+          background-color: $highlight_Dark;
+        }
+      }
+    }
+  }
+  .card {
+    &.big-number {
+      color: $fill_Dark_Primary;
+      background-color: $fill_Light;
+    }
+    &.case-study {
+      border-color: $fill_Light;
+      .title,
+      .description {
+        color: $fill_Dark_Primary;
+      }
+      .cta {
+        color: $fill_Dark_Primary;
+        border-color: $fill_Dark_Primary;
+        &:hover {
+          background-color: $highlight_Dark;
+          border-color: $highlight_Dark;
+        }
+      }
+    }
+  }
+  .statistic,
+  .title {
+    font-family: $font_Secondary;
+  }
+  .featured-box {
+    border-color: $border_Color_Medium;
+  }
+  // .project-card {
+  //   .thumbnail {
+  //     border-color: $border_Color_Light;
+  //   }
+  // }
+}
+
+// ---------------------------------------------------- Featured Projects Slider
+#featured-projects-slider {
+  input {
+    &[type=range] {
+      &::-webkit-slider-runnable-track {
+        background: $border_Color_Dark;
+      }
+      &::-moz-range-track {
+        background: $border_Color_Dark;
+      }
+      &::-ms-fill-lower {
+        background: $border_Color_Dark;
+      }
+      &::-ms-fill-upper {
+        background: $border_Color_Dark;
+      }
+    }
+  }
+}
+
+// ////////////////////////////////////////////////////////////// 404/Error Page
+// -----------------------------------------------------------------------------
+.error-page {
+  .breadcrumb-link {
+    color: $highlight_Medium;
+  }
+  .block-segment {
+    background-color: $highlight_Medium;
+  }
+  .block-404 {
+    background-color: $fill_Dark_Primary;
+  }
+}
+
+// /////////////////////////////////////////////////////////////// Showcase Page
+// -----------------------------------------------------------------------------
+#taxonomy-grid {
+  .taxonomy {
+    border-color: rgba($fill_Light, 0.5);
+  }
+  .taxonomy-label {
+    font-family: $font_Primary;
+    background-color: white;
   }
 }
 
@@ -17,235 +297,6 @@
 // -----------------------------------------------------------------------------
 #site-header {
   background-color: transparent;
-}
-
-#header-hero {
-  margin-bottom: 1.25rem;
-  .breadcrumbs {
-    margin-top: 0;
-    .breadcrumb-link {
-      font-weight: $fontWeight_SemiBold;
-    }
-  }
-  .index-subheading {
-    font-family: $font_Primary;
-    font-size: $fontSize_Medium;
-    font-weight: $fontWeight_Regular;
-    letter-spacing: $letter_SpacingRegular;
-    line-height: $leading_Medium;
-    width: 75%;
-    @include medium {
-      width: 100%;
-    }
-  }
-  &.index-view,
-  &.filters-view,
-  &.filters-applied,
-  &.hero-header {
-    background-color: unset !important;
-    h1 {
-      font-family: $font_Primary;
-      font-size: $fontSize_ExtraExtraLarge;
-      font-weight: $fontWeight_SemiBold;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Small;
-    }
-    .display-total {
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      letter-spacing: inherit;
-      line-height: inherit;
-    }
-  }
-  &.index-view {
-    h1 {
-      margin-top: 4.25rem;
-      margin-bottom: 1.5rem;
-    }
-  }
-  &.filters-view,
-  &.filters-applied {
-    h1 {
-      margin-top: 3.5rem;
-      margin-bottom: 1.25rem;
-    }
-  }
-}
-
-// ////////////////////////////////////////////////////////////////////// Footer
-// -----------------------------------------------------------------------------
-#site-footer {
-  background-color: transparent;
-  .panel-top {
-    .heading,
-    .links-heading {
-      font-family: $font_Primary;
-      font-size: $fontSize_Large;
-      font-weight: $fontWeight_SemiBold;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Large;
-    }
-    .links-heading {
-      margin-bottom: 0.25rem;
-    }
-    .subheading,
-    .navigation-link {
-      font-family: $font_Primary;
-      font-size: $fontSize_Medium;
-      font-weight: $fontWeight_Regular;
-      letter-spacing: $letter_SpacingRegular;
-      line-height: $leading_Regular;
-    }
-    .navigation-link {
-      padding: 0.125rem 0;
-      color: #B5B5B6;
-      &:hover {
-        opacity: 1 !important;
-        color: $dodgerBlue;
-      }
-    }
-  }
-  .content-wrapper {
-    margin: 0 2rem;
-    @include medium {
-      margin: 0;
-      margin-left: 2rem;
-    }
-    @include small {
-      margin: 0;
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-// ///////////////////////////////////////////////////////////////// Footer Form
-// -----------------------------------------------------------------------------
-.mailchimp-form {
-  #mailchimp-form {
-    .panel-top {
-      .email,
-      .submit {
-        box-shadow: none;
-        position: relative;
-
-        input {
-          @include fontSize_Small;
-          font-family: $font_Secondary;
-          font-weight: $fontWeight_Regular;
-          background: none;
-          box-shadow: none;
-          height: 30px;
-          padding: 0 20px;
-        }
-
-        &:before,
-        &:after {
-          content: '';
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-
-        &:before {
-          @include whiteBorderBack;
-          background: $cadmiumBlue;
-          top: -7px;
-          left: -6px;
-          z-index: -1;
-        }
-
-        &:after {
-          @include whiteBorderBack;
-          top: -13px;
-          left: -11px;
-          z-index: -2;
-        }
-
-      }
-
-      .email {
-        @include whiteBorderBack;
-        background: $midnight;
-
-        input {
-          color: $white;
-          transition: background-color 0.3s ease;
-          &::placeholder {
-            color: $white;
-            opacity: 1;
-          }
-          &:hover, &:focus {
-            background-color: $azure;
-          }
-        }
-      }
-
-      .submit {
-        height: 30px;
-        transition: 250ms ease-out;
-        &:before,
-        &:after {
-          transition: 250ms ease-out;
-          width: calc(100% - 2px);
-        }
-        &:hover {
-          &:before {
-            top: -13px;
-            left: -11px;
-          }
-          input {
-            top: -13px;
-            left: -11px;
-          }
-        }
-
-        input {
-          @include oceanBlueGradient;
-          @include whiteBorderBack;
-          height: 32px;
-          position: relative;
-          color: $blackSapphire;
-          margin-left: 0;
-          top: 0px;
-          left: 0px;
-          transition: 250ms ease-out;
-        }
-      }
-    }
-  }
-}
-
-// ////////////////////////////////////////////////////////////// Segment Slider
-// -----------------------------------------------------------------------------
-
-#segment-slider-main {
-  .main-container {
-    flex-wrap: nowrap;
-  }
-  @include xlarge {
-    background-color: transparent;
-    .main-container {
-      flex-wrap: wrap-reverse;
-    }
-    .segments-container {
-      background-color: inherit;
-    }
-  }
-  @include small{
-    background-color: $white;
-    .main-container {
-      @include oceanBorderGradient;
-    }
-  }
-}
-
-#segment-slider-chart {
-  background-color: transparent;
-  @include small{
-    background-color: $white;
-  }
 }
 
 // ///////////////////////////////////////////////////////////// Featured Slider
@@ -520,46 +571,6 @@
         }
       }
     }
-    #filter-bar {
-      height: 1.875rem;
-      .icon-container {
-        width: fit-content;
-        height: fit-content;
-        left: 10.5px;
-        top: 50%;
-        transform: translateY(-50%);
-        svg {
-          height: 1rem;
-          width: 1rem;
-          line,
-          circle {
-            stroke: #BFBFBF;
-          }
-        }
-      }
-      input {
-        padding: 8.5px 10.5px;
-        padding-left: calc(1rem + 21px);
-        font-family: $font_Primary;
-        font-weight: $fontWeight_Regular;
-        letter-spacing: $letter_SpacingRegular;
-        color: $tundora;
-        &::placeholder {
-          font-family: $font_Primary;
-          font-weight: $fontWeight_Medium;
-          font-size: $fontSize_Small;
-          color: $tundora;
-          opacity: 1;
-          z-index: 100;
-        }
-        &:hover {
-          background-color: $white;
-        }
-        &:focus {
-          background-color: $white;
-        }
-      }
-    }
   }
 
   .filter-category {
@@ -672,54 +683,6 @@
   }
 }
 
-// /////////////////////////////////////////////////////////////// Project Cards
-// -----------------------------------------------------------------------------
-.project-card {
-  &:not(.list-view) {
-    .content {
-      margin-bottom: 1rem !important;
-    }
-  }
-  .card-inner-wrapper {
-    @include oceanBorderGradient;
-    border-radius: 0 !important;
-    height: 100%;
-  }
-  .thumbnail {
-    border-radius: 0 !important;
-    img {
-      max-width: unset !important;
-      height: 75px;
-    }
-  }
-  .title {
-    @include leading_Regular;
-    font-family: $font_Primary;
-    font-weight: $fontWeight_Medium;
-    letter-spacing: $letter_SpacingRegular;
-    font-size: $fontSize_Regular !important;
-    margin-bottom: 0.5rem !important;
-  }
-  .description {
-    @include leading_Small;
-    font-family: $font_Secondary;
-    font-weight: $fontWeight_Regular;
-  }
-  &.list-view {
-    .title,
-    .description {
-      color: $blackSapphire;
-    }
-  }
-  &.block-view {
-    .title,
-    .description {
-      padding: 0 1rem;
-      color: $white;
-    }
-  }
-}
-
 // ////////////////////////////////////////////////////////////////// Pagination
 // -----------------------------------------------------------------------------
 #paginated-list-navigation-controls {
@@ -799,141 +762,6 @@
   }
 }
 
-// //////////////////////////////////////////////////////////////// Page Project
-// -----------------------------------------------------------------------------
-.page-project {
-  position: relative;
-  background-color: $projectDetailsGrey !important;
-  font-family: $font_Primary;
-  color: $darkGrey;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(#ffffff 0%, transparent 50%), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='684' height='684' viewBox='0 0 684 684'><defs><linearGradient id='linear-gradient' x1='0.985' y1='0.018' x2='0.017' y2='0.862' gradientUnits='objectBoundingBox'><stop offset='0' stop-color='%2339c0cc'/><stop offset='1' stop-color='%23178ffd'/></linearGradient></defs><pattern id='bg' patternUnits='userSpaceOnUse' width='684' height='684'><g id='Rectangle_1597' data-name='Rectangle 1597' transform='translate(354 13)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g><g id='Rectangle_1601' data-name='Rectangle 1601' transform='translate(11 353)' fill='none' stroke='%23add6fe' stroke-width='2' stroke-dasharray='3 7' opacity='0.2'><rect width='320' height='319' stroke='none'/><rect x='1' y='1' width='318' height='317' fill='none'/></g></pattern><pattern id='bb' patternUnits='userSpaceOnUse' width='171' height='171'><path id='Rectangle_1509' data-name='Rectangle 1509' d='M1,1V170H170V1H1M0,0H171V171H0Z' fill='url(%23linear-gradient)' opacity='0.2' /></pattern><rect width='100%25' height='100%25' fill='url(%23bg)'/><rect width='100%25' height='100%25' fill='url(%23bb)'/></svg>");
-    opacity: 0.75;
-    z-index: 0;
-  }
-
-  [class~="grid"],
-  [class*="grid-"],
-  [class*="grid_"],
-  section {
-    position: relative;
-    z-index: 5;
-  }
-
-  a {
-    color: $azure;
-  }
-
-  // //////////////////////////////////// Project Featured Slider [Page Project]
-  // ---------------------------------------------------------------------------
-  .featured-box {
-    border: none !important;
-  }
-
-  #section-featured-slider {
-    margin-top: 0 !important;
-    margin-bottom: 0;
-
-    h3.heading,
-    div.description {
-      padding-left: 0.5rem;
-      font-family: $font_Primary;
-      letter-spacing: $letter_SpacingRegular;
-    }
-
-    .heading {
-      @include fontSize_ExtraLarge;
-      font-weight: $fontWeight_SemiBold;
-      line-height: $leading_Regular;
-      margin-bottom: 0.5rem;
-    }
-
-    .description {
-      @include fontSize_Regular;
-      font-weight: $fontWeight_Regular;
-      line-height: $leading_Small;
-      margin-bottom: 2.2rem !important;
-    }
-
-    .featured-box {
-      border: none;
-      padding-top: 3.2rem;
-    }
-
-    .project-card {
-      .thumbnail {
-        border: 0;
-        background-color: white;
-        img {
-          height: 75px;
-        }
-      }
-      .title,
-      .description {
-        color: $darkGrey;
-      }
-    }
-
-  }
-
-  #slider-line {
-    width: calc(50% - 1rem) !important;
-    .dummy-thumb {
-      position: relative;
-      top: 1.75rem;
-      width: 74px;
-      height: 14px;
-      z-index: 2;
-      @include oceanBorderGradient;
-      border-width: 1px;
-      background-color: transparent;
-      transform: unset;
-      border-radius: 0;
-      &:before {
-        content: '';
-        position: absolute;
-        width: calc(100% + 2px);
-        height: calc(100% + 2px);
-        top: 1px;
-        left: 1px;
-        // @include whiteBorderBack;
-        @include oceanBlueGradient;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        width: calc(100% + 2px);
-        height: calc(100% + 2px);
-        top: 2px;
-        left: 2px;
-        @include whiteBorderBack;
-        @include oceanBlueGradient;
-      }
-      svg {
-        display: none;
-      }
-    }
-    &:after {
-      z-index: 1 !important;
-      top: 2.25rem !important;
-      border: 1px solid $greyBlue !important;
-    }
-    #feature-range-slider {
-      position: absolute;
-      &::-webkit-slider-thumb { width: 74px; }
-      &::-moz-range-thumb { width: 74px; }
-      &::-ms-thumb { width: 74px; }
-    }
-  }
-
-}
 // //////////////////////////////////////////////////////////////// Project Info
 #section-project-info {
   margin-bottom: 4.3rem !important;

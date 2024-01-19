@@ -1,44 +1,45 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "1628149169831.png", "full": "slate1.png" },
+  "since": 2020,
+  "icon": "icon-slate.png",
   "name": "Slate",
-  "org": ["Applications Research Group"],
-  "description": {
-    "short": "Decentralized file sharing network",
-    "long": "An open source storage system for your data that makes it easy to collect, organize, and share them anywhere on the web."
-  },
-  "primaryCta": { "url": "//slate.host", "text": "Project Website" },
-  "links": [
+  "org": "Applications Research Group",
+  "description": "Decentralized file sharing network",
+  "website": "//slate.host",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//slate.host", "text": "slate.host" }]
+      "github": "//github.com/filecoin-project/slate"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/filecoin-project/slate",
-          "text": "github.com/filecoin-project/slate"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "ai-productivity-and-utilities"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=xh-UVt9UBEo",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["consumer-storage", "public-data"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["textile-powergate"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "storage apps",
+    "consumer storage",
+    "public data",
+    "web app",
+    "textile powergate"
   ]
 }

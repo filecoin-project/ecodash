@@ -7,68 +7,13 @@
     "site_name": "Filecoin Ecosystem",
     "url": "https://ecosystem.filecoin.io",
     "type": "website",
-    "image": ""
+    "image": "/images/open-graph.png"
   },
   "404_error_message": "Not Found",
   "page_content": {
-    "breadcrumbs": {
-      "index_view": [
-        {
-          "type": "a",
-          "href": "https://filecoin.io",
-          "label": "Home"
-        },
-        {
-          "type": "div",
-          "label": "Filecoin Ecosystem"
-        }
-      ],
-      "filters_view": [
-        {
-          "type": "a",
-          "href": "https://filecoin.io",
-          "label": "Home"
-        },
-        {
-          "type": "a",
-          "href": "/",
-          "label": "Filecoin Ecosystem"
-        },
-        {
-          "type": "div",
-          "label": "All entityTermPlural"
-        }
-      ],
-      "filters_applied_view": [
-        {
-          "type": "a",
-          "href": "https://filecoin.io",
-          "label": "Home"
-        },
-        {
-          "type": "a",
-          "href": "/",
-          "label": "Filecoin Ecosystem"
-        },
-        {
-          "type": "div",
-          "label": "Filtered results"
-        }
-      ]
-    },
     "hero": {
-      "heading": {
-        "index_view": "The Filecoin Ecosystem",
-        "filters_view": "All entityTermPlural",
-        "filters_applied_view": "Filtered results"
-      },
-      "subheading": {
-        "index_view": "Discover the diverse landscape of applications and projects that are part of the Filecoin ecosystem in this interactive showcase.",
-        "filters_view": {
-          "show_all": "Showing all entityTermPlural, no filters selected",
-          "show_search": "Showing entityTermPlural matching"
-        }
-      }
+      "heading": "The Filecoin Ecosystem",
+      "subheading": "Discover the diverse landscape of applications and projects that are part of the Filecoin ecosystem."
     },
     "segment_slider": {
       "filter_toggle_button_text": "Explore",

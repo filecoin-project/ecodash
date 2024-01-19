@@ -1,113 +1,40 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2021
-    }
-  ],
-  "logo": {
-    "icon": "ValistLogo256copy.png",
-    "full": "ScreenShot2021-10-28at9.38.37AM.png"
-  },
+  "since": 2021,
+  "icon": "icon-valist.png",
   "name": "Valist",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Software package distribution for web3-native support.",
-    "long": "Valist is a web3-native software distribution system, with built-in package registry support. It's powered by smart contracts (on any EVM), IPFS, and Filecoin. Valist is designed to be highly extensible and interoperable with many package managers that developers are familiar with, such as NPM, Pip, Docker, APT, and Cargo.\n\nAs a FVM Early Builder, they have the potential to deploy their contracts on FVM for an enhanced system and are weighing in on design, architecture and more."
-  },
-  "primaryCta": {
-    "url": "//valist.io",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Software package distribution for web3-native support.",
+  "website": "//valist.io",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//valist.io",
-          "text": "valist.io"
-        }
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
       ]
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "category": "storage-and-cloud-services",
+      "subcategories": []
     },
     {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//docs.valist.io",
-          "text": "docs.valist.io"
-        }
-      ]
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "keyInfo": [
-    {
-      "label": "Using Filecoin since",
-      "value": "2021"
-    }
-  ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "storage-apps-clients"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "verifiable-storage"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "library-sdk"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "storage apps",
+    "verifiable storage",
+    "library sdk",
+    "fvm"
   ]
 }

@@ -1,113 +1,41 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "cloudslit-icon.png",
-    "full": "cloudslit-icon.png"
-  },
+  "since": 2022,
+  "icon": "icon-cloudslit.png",
   "name": "Cloudslit",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Secure networks and private data retrievals.",
-    "long": "CloudSlit uses blockchain, web3 and secure network technology of private data retrieval to enhance and improve network security/privacy protection of users' privatization. They are a FVM Early Builder."
-  },
-  "primaryCta": {
-    "url": "//cloudslit.xyz",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Secure networks and private data retrievals.",
+  "website": "//cloudslit.xyz",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//cloudslit.xyz",
-          "text": "cloudslit.xyz"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/cloudslit/cloudslit",
-          "text": "github.com/cloudslit/cloudslit"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/cloudslit/cloudslit"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-retrieval"
+      ]
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "fvm"
   ]
 }

@@ -1,131 +1,37 @@
 {
-    "display": true,
-    "featured": false,
-    "sortNumbers":
-    [
-        {
-            "since": 2021
-        }
-    ],
-    "logo":
+  "display": true,
+  "since": 2021,
+  "icon": "icon-espa.png",
+  "name": "ESPA",
+  "org": "",
+  "description": "The Filecoin Storage Provider Accelerator.",
+  "website": "//web3espa.io",
+  "social": [],
+  "taxonomy": [
     {
-        "icon": "icon-espa.png",
-        "full": "logo-espa.png"
+      "category": "finance",
+      "subcategories": []
     },
-    "name": "ESPA",
-    "org":
-    [
-        ""
-    ],
-    "description":
     {
-        "short": "The Filecoin Storage Provider Accelerator.",
-        "long": "Enterprise Storage Provider Accelerator (ESPA) is a 9 month intensive course that teaches how to be a successful Web3 Storage Provider."
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    "primaryCta":
     {
-        "url": "//web3espa.io",
-        "text": "Project Website"
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    "links":
-    [
-        {
-            "label": "Website",
-            "links":
-            [
-                {
-                    "url": "//web3espa.io",
-                    "text": "web3espa.io"
-                }
-            ]
-        },
-        {
-            "label": "Repo",
-            "links":
-            [
-                {
-                    "url": "",
-                    "text": ""
-                }
-            ]
-        },
-        {
-            "label": "Docs",
-            "links":
-            [
-                {
-                    "url": "",
-                    "text": ""
-                }
-            ]
-        }
-    ],
-    "keyInfo":
-    [
-        {
-            "label": "Using Filecoin since",
-            "value": "2021"
-        }
-    ],
-    "video": "",
-    "stats":
-    [
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        }
-    ],
-    "ctaCard":
     {
-        "title": "",
-        "description": "",
-        "buttonText": "",
-        "url": ""
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "enterprise-solutions"
+      ]
     },
-    "taxonomies":
-    [
-        {
-            "slug": "project-category",
-            "tags":
-            [
-                "collaborations"
-            ]
-        },
-        {
-            "slug": "storage-type",
-            "tags":
-            [
-                "Other"
-            ]
-        },
-        {
-            "slug": "software-type",
-            "tags":
-            [
-                "none"
-            ]
-        },
-        {
-            "slug": "tooling",
-            "tags":
-            [
-                "none"
-            ]
-        },
-        {
-            "slug": "pipeline",
-            "tags":
-            [
-                ""
-            ]
-        }
-    ]
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations"
+  ]
 }

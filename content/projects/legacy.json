@@ -1,113 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2022
-    }
-  ],
-  "logo": {
-    "icon": "legacy-icon.jpeg",
-    "full": "legacy-icon.jpeg"
-  },
+  "since": 2022,
+  "icon": "icon-legacy.jpeg",
   "name": "Legacy",
-  "org": [
-    ""
-  ],
-  "description": {
-    "short": "Perpetual storage of personal and institutional memoirs",
-    "long": "Legacy is a Web3 community and platform for capturing and preserving personal and institutional memoirs. As a FVM Early Builder, they intend to implement perpetual storage and a Data DAO for guardians of preserved content, via actors on the FVM."
-  },
-  "primaryCta": {
-    "url": "//legacy.page",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "",
+  "description": "Perpetual storage of personal and institutional memoirs",
+  "website": "//legacy.page",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//legacy.page",
-          "text": "legacy.page"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/TheLegacyNetwork",
-          "text": "github.com/TheLegacyNetwork"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/thelegacynetwork"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2022"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "communication-and-social"
+      ]
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "storage-apps-clients"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "consumer-storage"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        ""
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "storage apps",
+    "consumer storage",
+    "fvm"
   ]
 }

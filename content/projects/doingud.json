@@ -1,36 +1,40 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "GMBQYUD6_400x400.jpg", "full": "GMBQYUD6_400x400.jpg" },
+  "since": 2021,
+  "icon": "icon-doingud.jpg",
   "name": "DoinGud",
-  "org": [""],
-  "description": {
-    "short": "NFT marketplace with social cause donations.",
-    "long": "DoinGud is focused on inspiring creativity and positive social impact. Their NFT marketplace offers tools to empower creators, curators, collectors, and communities to tap into sustainable income streams, creatively engage with their patrons, and create lasting impact for the causes they care about."
-  },
-  "primaryCta": { "url": "//doingud.com", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "NFT marketplace with social cause donations.",
+  "website": "//doingud.com",
+  "social": [],
+  "taxonomy": [
     {
-      "label": "Website",
-      "links": [{ "url": "//doingud.com", "text": "doingud.com" }]
+      "category": "finance",
+      "subcategories": []
     },
-    { "label": "Repo", "links": [{ "url": "", "text": "" }] },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "arts-and-collectibles"
+      ]
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["developer-tools"] },
-    { "slug": "storage-type", "tags": ["nfts"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["nft-storage"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "developer tools",
+    "nfts",
+    "web app",
+    "nft.storage"
   ]
 }

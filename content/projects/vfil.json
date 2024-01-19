@@ -1,0 +1,43 @@
+{
+  "display": true,
+  "since": 2022,
+  "icon": "icon-vfil.svg",
+  "name": "vFIL",
+  "org": "Bifrost",
+  "description": "Bifrost is a dedicated Layer 1 built on Substrate providing non custodial decentralized cross- chain liquid tokens for staked assets.",
+  "website": "//bifrost.finance/",
+  "social": [
+    {
+      "github": "https://github.com/bifrost-finance"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": [
+        "leasing-and-staking"
+      ]
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "defi",
+    "zondax signing tools",
+    "fvm"
+  ]
+}

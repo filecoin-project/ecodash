@@ -1,113 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [
-    {
-      "since": 2021
-    }
-  ],
-  "logo": {
-    "icon": "Zondaxlogo.png",
-    "full": "image142.png"
-  },
+  "since": 2021,
+  "icon": "icon-zondax.png",
   "name": "Zondax",
-  "org": [
-    "Zondax"
-  ],
-  "description": {
-    "short": "An engineering partner for blockchain and deep tech solutions.",
-    "long": "Zondax is a team of software developers, engineers and cryptographers with diverse technical backgrounds that work together to build innovative tech products for companies from all kinds of industries. Zondax focuses on blockchain protocol development and integration and software for HSMs and hardware wallets.\n\nAs a FVM Early Builder, they have built an AssemblyScript SDK."
-  },
-  "primaryCta": {
-    "url": "//zondax.ch",
-    "text": "Project Website"
-  },
-  "links": [
+  "org": "Zondax",
+  "description": "An engineering partner for blockchain and deep tech solutions.",
+  "website": "//zondax.ch",
+  "social": [
     {
-      "label": "Website",
-      "links": [
-        {
-          "url": "//zondax.ch",
-          "text": "zondax.ch"
-        }
-      ]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/Zondax",
-          "text": "github.com/Zondax"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "",
-          "text": ""
-        }
-      ]
+      "github": "//github.com/zondax"
     }
   ],
-  "keyInfo": [
+  "taxonomy": [
     {
-      "label": "Using Filecoin since",
-      "value": "2021"
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
     }
   ],
-  "video": "",
-  "stats": [
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    },
-    {
-      "label": "",
-      "value": ""
-    }
-  ],
-  "ctaCard": {
-    "title": "",
-    "description": "",
-    "buttonText": "",
-    "url": ""
-  },
-  "taxonomies": [
-    {
-      "slug": "project-category",
-      "tags": [
-        "developer-tools"
-      ]
-    },
-    {
-      "slug": "storage-type",
-      "tags": [
-        "Other"
-      ]
-    },
-    {
-      "slug": "software-type",
-      "tags": [
-        "library-sdk"
-      ]
-    },
-    {
-      "slug": "tooling",
-      "tags": [
-        "zondax-signing-tools", "FVM"
-      ]
-    },
-    {
-      "slug": "pipeline",
-      "tags": [
-        ""
-      ]
-    }
+  "tags": [
+    "developer tools",
+    "library sdk",
+    "zondax signing tools",
+    "fvm"
   ]
 }

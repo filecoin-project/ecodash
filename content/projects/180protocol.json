@@ -1,0 +1,50 @@
+{
+  "display": true,
+  "since": 2021,
+  "icon": "icon-180protocol.png",
+  "name": "180Protocol",
+  "org": "Bond180",
+  "description": "180Protocol is an infrastructure for creating enterprise data unions. We remove barriers and encourage collaboration and data sharing amongst enterprises.",
+  "website": "//180protocol.com",
+  "social": [
+    {
+      "github": "https://github.com/180Protocol"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
+      ]
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "developer tools",
+    "api",
+    "hosted service",
+    "infrastructure",
+    "network",
+    "web app",
+    "library sdk",
+    "data markets",
+    "estuary"
+  ]
+}

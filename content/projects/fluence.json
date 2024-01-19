@@ -1,0 +1,43 @@
+{
+  "display": true,
+  "since": 2020,
+  "icon": "icon-fluence.png",
+  "name": "Fluence",
+  "org": "",
+  "description": "Make full-featured apps with integrations to Web 3 networks",
+  "website": "//fluence.network/",
+  "social": [
+    {
+      "github": "https://github.com/fluencelabs"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "developer-tools-and-other"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "developer tools",
+    "library sdk",
+    "general storage"
+  ]
+}

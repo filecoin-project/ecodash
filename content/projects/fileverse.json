@@ -1,0 +1,57 @@
+{
+  "display": true,
+  "since": 2022,
+  "icon": "icon-fileverse.png",
+  "name": "Fileverse",
+  "org": "Fileverse",
+  "description": "Easy file and information sharing between blockchain addresses. Share files with anyone, chat with friends, collaborate with everyone à la Web3.",
+  "website": "//beta.fileverse.io/",
+  "social": [
+    {
+      "github": "//github.com/fileverse "
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
+      ]
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "network tools",
+    "storage apps",
+    "collaborations",
+    "developer tools",
+    "web app",
+    "backend app",
+    "archival",
+    "consumer storage",
+    "decentralized identity",
+    "general storage",
+    "social",
+    "web publishing",
+    "video",
+    "nfts",
+    "web3.storage",
+    "fleek space daemon",
+    "ipfs http client"
+  ]
+}

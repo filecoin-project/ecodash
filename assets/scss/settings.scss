@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // -------------------------------------------------------------------- Families
 $font_Primary: 'SuisseIntl', sans-serif;
-$font_Secondary: 'Suisse Intl Mono', sans-serif, monospace;
+$font_Secondary: 'SuisseIntl', sans-serif;
 
 // --------------------------------------------------------------------- General
 $containerWidth: 68.75rem; // 1100px
@@ -66,6 +66,7 @@ $navigationHeight: 8.25rem;
 // --------------------------------------------------------------- Border Radius
 $borderRadius_Small: 0;
 $borderRadius_Medium: 1px;
+$borderRadius_Large: 0.5rem;
 
 // //////////////////////////////////////////////////////// Button Layer Spacing
 $bottomLayerOffsetLeft: -10px;
@@ -83,11 +84,16 @@ $font_Color_Primary: $white;
 $font_Color_Secondary: $tundora;
 
 $fill_Dark: $midnight;
+$fill_Dark_Primary: black;
 $fill_Dark_Secondary: $cadmiumBlue;
 $fill_Light: $white;
 $fill_Active: $jaguar;
 
 $highlight_Light: $dodgerBlue;
 $highlight_Medium: $dodgerBlue;
+$highlight_Dark: $gray800;
 
 $border_Color: $white;
+$border_Color_Light: $gray200;
+$border_Color_Medium: $gray400;
+$border_Color_Dark: $gray600;

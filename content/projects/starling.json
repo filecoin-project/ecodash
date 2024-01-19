@@ -1,49 +1,44 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2019 }],
-  "logo": { "icon": "icon-starling-lab.png", "full": "starling-logo.png" },
+  "since": 2019,
+  "icon": "icon-starling.png",
   "name": "Starling",
-  "org": ["The Starling Lab"],
-  "description": { "short": "A framework for data integrity", "long": "" },
-  "primaryCta": { "url": "//starlinglab.org", "text": "Project Website" },
-  "links": [
+  "org": "The Starling Lab",
+  "description": "A framework for data integrity",
+  "website": "//starlinglab.org",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//starlinglab.org", "text": "starlinglab.org" }]
-    },
-    {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/filecoin-project/starling",
-          "text": "github.com/filecoin-project/starling"
-        }
-      ]
-    },
-    {
-      "label": "Docs",
-      "links": [
-        {
-          "url": "//starlingstorage.io/getting-started.html",
-          "text": "starlingstorage.io/getting-started.html"
-        }
-      ]
+      "github": "//github.com/filecoin-project/starling"
     }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2019 }],
-  "video": "//youtube.com/watch?v=rSTAPvPfsW0",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": [
+        "publishing-and-news"
+      ]
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["collaborations"] },
-    { "slug": "storage-type", "tags": ["archival", "verifiable-storage"] },
-    { "slug": "software-type", "tags": ["hosted-service"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] }
+  "tags": [
+    "collaborations",
+    "archival",
+    "verifiable storage",
+    "hosted service"
   ]
 }

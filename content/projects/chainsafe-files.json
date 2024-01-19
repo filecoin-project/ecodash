@@ -1,47 +1,43 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": {
-    "icon": "Group720.png",
-    "full": "WeChat4284245da1c66b74775722192f454ef5.png"
-  },
+  "since": 2021,
+  "icon": "icon-chainsafe-files.png",
   "name": "ChainSafe Files",
-  "org": ["Chainsafe"],
-  "description": {
-    "short": "Encrypted file storage on Filecoin, via a clean web interface.",
-    "long": "ChainSafe Files offers encrypted file storage on the Filecoin network, including sharing. ChainSafe Files is built on the principle that your digital home should be like your physical one. Peaceful, private, and all yours."
-  },
-  "primaryCta": { "url": "//files.chainsafe.io", "text": "Project Website" },
-  "links": [
+  "org": "Chainsafe",
+  "description": "Encrypted file storage on Filecoin, via a clean web interface.",
+  "website": "//files.chainsafe.io",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//files.chainsafe.io", "text": "files.chainsafe.io" }]
+      "github": "//github.com/chainsafe/ui-monorepo"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/chainsafe/ui-monorepo",
-          "text": "github.com/chainsafe/ui-monorepo"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2021 }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
-    { "slug": "storage-type", "tags": ["consumer-storage"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": ["none"] }
+  "tags": [
+    "storage apps",
+    "consumer storage",
+    "web app"
   ]
 }

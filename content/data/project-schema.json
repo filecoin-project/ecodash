@@ -1,0 +1,15 @@
+{
+  "display": "boolean",
+  "since": "number",
+  "icon": "string",
+  "name": "string",
+  "org": ["string"],
+  "description": "string",
+  "website": "string",
+  "social": ["object"],
+  "taxonomy": [{
+    "category": "string",
+    "subcategories": ["string"]
+  }],
+  "tags": ["string"]
+}

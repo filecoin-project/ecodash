@@ -1,0 +1,39 @@
+{
+  "display": true,
+  "since": 2021,
+  "icon": "icon-hashmix.png",
+  "name": "HashMix",
+  "org": "HashMix",
+  "description": "HashMix FIL Liquid Staking, a fully trustless and risk-free liquid staking protocol built on FVM.",
+  "website": "//fvm.hashmix.org/",
+  "social": [],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": [
+        "leasing-and-staking"
+      ]
+    },
+    {
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "defi",
+    "web app",
+    "fvm"
+  ]
+}

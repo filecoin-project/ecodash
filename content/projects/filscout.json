@@ -1,44 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "icon-filscout.png", "full": "filscout-logo.png" },
+  "since": 2020,
+  "icon": "icon-filscout.png",
   "name": "Filscout",
-  "org": ["IPFS Union"],
-  "description": {
-    "short": "A Filecoin network browser.",
-    "long": "Filscout provides users with all kinds of data, info and visual chart including information of miners, blocks, messages and common tools. "
-  },
-  "primaryCta": { "url": "//filscout.com/en", "text": "Project Website" },
-  "links": [
+  "org": "IPFS Union",
+  "description": "A Filecoin network browser.",
+  "website": "//filscout.com/en",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//filscout.com/en", "text": "filscout.com/en" }]
+      "github": "//github.com/filecoin-project/community/blob/master/projects/application/filscout-en.md"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/filecoin-project/community/blob/master/projects/application/Filscout-en.md",
-          "text": "github.com/filecoin-project/community/blob/master/projects/application/Filscout-en.md"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=rnsmMVfIyl4",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "network tools",
+    "web app"
   ]
 }

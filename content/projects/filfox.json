@@ -1,39 +1,42 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2020 }],
-  "logo": { "icon": "filfox-square.png", "full": "filfox-logo.png" },
+  "since": 2020,
+  "icon": "icon-filfox.png",
   "name": "Filfox",
-  "org": [""],
-  "description": {
-    "short": "A Filecoin data services platform.",
-    "long": "Filfox is a Filecoin blockchain explorer and data service platform, providing one-stop data services based on Filecoin including mining rankings, blockchain data queries, and visualization charts."
-  },
-  "primaryCta": { "url": "//filfox.info/en", "text": "Project Website" },
-  "links": [
+  "org": "",
+  "description": "A Filecoin data services platform.",
+  "website": "//filfox.info/en",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//filfox.info/en", "text": "filfox.info/en" }]
+      "github": "//github.com/filfox"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [{ "url": "//github.com/filfox", "text": "github.com/filfox" }]
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": [
+        "network-explorers-and-reputation"
+      ]
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": []
+    },
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
   ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": 2020 }],
-  "video": "//youtube.com/watch?v=VGZNngZ9u1Q",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["network-tools"] },
-    { "slug": "storage-type", "tags": ["other"] },
-    { "slug": "software-type", "tags": ["web-app"] },
-    { "slug": "tooling", "tags": ["none"] },
-    { "slug": "pipeline", "tags": [""] }
+  "tags": [
+    "network tools",
+    "web app"
   ]
 }

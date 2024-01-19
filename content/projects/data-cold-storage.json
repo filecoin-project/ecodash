@@ -1,53 +1,48 @@
 {
   "display": true,
-  "featured": false,
-  "sortNumbers": [{ "since": 2021 }],
-  "logo": { "icon": "data-cold-storage.png", "full": "data-cold-storage.png" },
+  "since": 2021,
+  "icon": "icon-data-cold-storage.png",
   "name": "Data Cold Storage",
-  "org": ["SXX Future Data Company"],
-  "description": {
-    "short": "Data disaster recovery and cold storage platform",
-    "long": "Data Cold Storage is a data disaster recovery and cold storage platform developed based on Web3/IPFS, serving scenarios such as government, institutions and large enterprises. Through Data Cold Storage, users can upload data with long-term preservation needs to Data Cold Storage IPFS, which becomes highly secure, low-cost and encryptable uplinked data by sealing the storage to Filecoin for cold storage. These deposited data can be seen through the official IPFS browser and can also be queried at Filecoin for data information."
-  },
-  "primaryCta": { "url": "//sxxfuture.com", "text": "Project Website" },
-  "links": [
+  "org": "SXX Future Data Company",
+  "description": "Data disaster recovery and cold storage platform",
+  "website": "//sxxfuture.com",
+  "social": [
     {
-      "label": "Website",
-      "links": [{ "url": "//sxxfuture.com", "text": "sxxfuture.com" }]
+      "github": "//github.com/sxxfuture-official"
+    }
+  ],
+  "taxonomy": [
+    {
+      "category": "finance",
+      "subcategories": []
     },
     {
-      "label": "Repo",
-      "links": [
-        {
-          "url": "//github.com/sxxfuture-official",
-          "text": "github.com/sxxfuture-official"
-        }
+      "category": "media-and-entertainment",
+      "subcategories": []
+    },
+    {
+      "category": "tooling-and-productivity",
+      "subcategories": []
+    },
+    {
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "enterprise-solutions"
       ]
     },
-    { "label": "Docs", "links": [{ "url": "", "text": "" }] }
-  ],
-  "keyInfo": [{ "label": "Using Filecoin since", "value": "2021" }],
-  "video": "",
-  "stats": [
-    { "label": "", "value": "" },
-    { "label": "", "value": "" },
-    { "label": "", "value": "" }
-  ],
-  "ctaCard": { "title": "", "description": "", "buttonText": "", "url": "" },
-  "taxonomies": [
-    { "slug": "project-category", "tags": ["storage-apps-clients"] },
     {
-      "slug": "storage-type",
-      "tags": [
-        "archival",
-        "consumer-storage",
-        "general-storage",
-        "verifiable-storage",
-        "video"
-      ]
-    },
-    { "slug": "software-type", "tags": ["hosted-service"] },
-    { "slug": "tooling", "tags": ["estuary"] },
-    { "slug": "pipeline", "tags": ["none"] }
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "storage apps",
+    "archival",
+    "consumer storage",
+    "general storage",
+    "verifiable storage",
+    "video",
+    "hosted service",
+    "estuary"
   ]
 }

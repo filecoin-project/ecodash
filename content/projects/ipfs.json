@@ -1,129 +1,41 @@
 {
-    "display": true,
-    "featured": false,
-    "sortNumbers":
-    [
-        {
-            "since": 2019
-        }
-    ],
-    "logo":
+  "display": true,
+  "since": 2019,
+  "icon": "icon-ipfs.png",
+  "name": "IPFS",
+  "org": "",
+  "description": "Peer-to-peer hypermedia protocol",
+  "website": "//ipfs.io",
+  "social": [],
+  "taxonomy": [
     {
-        "icon": "icon-ipfs.png",
-        "full": "icon-ipfs.png"
+      "category": "finance",
+      "subcategories": []
     },
-    "name": "IPFS",
-    "org": [""],
-    "description":
     {
-        "short": "Peer-to-peer hypermedia protocol",
-        "long": "IPFS is designed to preserve and grow humanity's knowledge by making the web upgradeable, resilient, and more open. All data in IPFS uses unique fingerprints, also known as content identifiers, which can be used and verified across any storage system or network."
+      "category": "media-and-entertainment",
+      "subcategories": []
     },
-    "primaryCta":
     {
-        "url": "//ipfs.io",
-        "text": "Project Website"
+      "category": "tooling-and-productivity",
+      "subcategories": []
     },
-    "links":
-    [
-        {
-            "label": "Website",
-            "links":
-            [
-                {
-                    "url": "//ipfs.io",
-                    "text": "ipfs.io"
-                }
-            ]
-        },
-        {
-            "label": "Repo",
-            "links":
-            [
-                {
-                    "url": "",
-                    "text": ""
-                }
-            ]
-        },
-        {
-            "label": "Docs",
-            "links":
-            [
-                {
-                    "url": "//docs.ipfs.io",
-                    "text": "docs.ipfs.io"
-                }
-            ]
-        }
-    ],
-    "keyInfo":
-    [
-        {
-            "label": "Using Filecoin since",
-            "value": 2019
-        }
-    ],
-    "video": "",
-    "stats":
-    [
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        },
-        {
-            "label": "",
-            "value": ""
-        }
-    ],
-    "ctaCard":
     {
-        "title": "",
-        "description": "",
-        "buttonText": "",
-        "url": ""
+      "category": "storage-and-cloud-services",
+      "subcategories": [
+        "data-storage-and-management"
+      ]
     },
-    "taxonomies":
-    [
-        {
-            "slug": "project-category",
-            "tags":
-            [
-                "collaborations"
-            ]
-        },
-        {
-            "slug": "storage-type",
-            "tags":
-            [
-                "general-storage"
-            ]
-        },
-        {
-            "slug": "software-type",
-            "tags":
-            [
-                "api",
-                "library-sdk"
-            ]
-        },
-        {
-            "slug": "tooling",
-            "tags":
-            [
-                "ipfs-http-client"
-            ]
-        },
-        {
-            "slug": "pipeline",
-            "tags":
-            [
-                ""
-            ]
-        }
-    ]
+    {
+      "category": "education-science-and-public-goods",
+      "subcategories": []
+    }
+  ],
+  "tags": [
+    "collaborations",
+    "general storage",
+    "api",
+    "library sdk",
+    "ipfs http client"
+  ]
 }
