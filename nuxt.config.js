@@ -39,7 +39,7 @@ export default {
       ? [
           {
             hid: 'plausible',
-            src: 'https://plausible.io/js/plausible.js',
+            src: 'https://plausible.io/js/plausible.outbound-links.js',
             'data-domain': 'filecoinecosystem.io',
             async: true,
             defer: true
