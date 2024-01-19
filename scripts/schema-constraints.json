@@ -7,7 +7,8 @@
     },
     "since": {
       "type": "integer",
-      "pattern": "^20[0-9]{2}$"
+      "minimum": 2010,
+      "maximum": 2099
     },
     "icon": {
       "type": "string",
