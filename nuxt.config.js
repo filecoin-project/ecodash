@@ -74,6 +74,7 @@ export default {
   modules: [
     '~/modules/zero',
     '~/modules/ecosystem-directory',
+    '~/modules/nuxt-module-plausible',
     // Doc: https://github.com/nuxt-community/style-resources-module/
     '@nuxtjs/style-resources',
     // Doc: https://github.com/agency-undone/nuxt-module-ipfs
@@ -104,6 +105,13 @@ export default {
     debug: process.env.NODE_ENV === 'development',
     disableInDevelopment: true,
     suppressErrorLogs: true
+  },
+  // ////////////////////////////////////////////////// [Module] @nuxt/plausible
+  // ---------------------------------------------------------------------------
+  plausible: {
+    include: true,
+    domain: 'filecoinecosystem.io',
+    autoOutboundTracking: true
   },
   // /////////////////////////////////// Plugins to load before mounting the App
   // ---------------------------------------------------------------------------
