@@ -1,7 +1,93 @@
 # Enforce unix newlines
-* text   eol=lf
+* text eol=lf
 
-*.png    binary
-*.jpg    binary
-*.jpeg   binary
-*.webp   binary
+# Set binary file types
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+*.png binary
+*.apng binary
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.webp binary
+*.heif binary
+*.avif binary
+*.tiff binary
+*.ico binary
+
+*.mp4 binary
+*.mpeg binary
+*.mpg binary
+*.avi binary
+*.mov binary
+*.wmv binary
+*.flv binary
+*.mkv binary
+*.mp3 binary
+*.wav binary
+*.aac binary
+*.flac binary
+*.ogg binary
+*.m4a binary
+*.m4v binary
+*.vob binary
+*.midi binary
+*.mid binary
+*.m4p binary
+*.m4b binary
+
+*.obj binary
+*.stl binary
+*.blend binary
+*.3ds binary
+*.max binary
+*.dwg binary
+*.dxf binary
+
+*.pdf binary
+*.doc binary
+*.docx binary
+*.ppt binary
+*.pptx binary
+*.xls binary
+*.xlsx binary
+*.keynote binary
+*.pages binary
+*.numbers binary
+
+*.psd binary
+*.ai binary
+*.eps binary
+*.swf binary
+*.qxd binary
+*.indd binary
+
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar binary
+*.gz binary
+*.bz2 binary
+
+*.xcodeproj binary
+*.sqlite binary
+*.db binary
+*.mdb binary
+*.accdb binary
+*.iso binary
+*.img binary
+*.vmdk binary
+*.vdi binary
+*.docker binary
+*.jar binary
+*.pyc binary
+*.msi binary
+*.exe binary
+*.dll binary
+*.so binary
+*.o binary
