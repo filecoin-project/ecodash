@@ -34,18 +34,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
-    ],
-    script: process.env.NODE_ENV === 'production'
-      ? [
-          {
-            hid: 'plausible',
-            src: 'https://plausible.io/js/plausible.outbound-links.js',
-            'data-domain': 'filecoinecosystem.io',
-            async: true,
-            defer: true
-          }
-        ]
-      : []
+    ]
+    // script: process.env.NODE_ENV === 'production'
+    //   ? [
+    //       {
+    //         hid: 'plausible',
+    //         src: 'https://plausible.io/js/plausible.outbound-links.js',
+    //         'data-domain': 'filecoinecosystem.io',
+    //         async: true,
+    //         defer: true
+    //       }
+    //     ]
+    //   : []
   },
   // ////////////////////////////////////////// Customize the progress-bar color
   // ---------------------------------------------------------------------------
@@ -111,8 +111,8 @@ export default {
   // /////////////////////////////////////////////////////// Router + Middleware
   // ---------------------------------------------------------------------------
   router: {
-    base: process.env.NODE_ENV === 'development' ? '/' : '/ipfs/hash/',
-    middleware: ['plausible']
+    base: process.env.NODE_ENV === 'development' ? '/' : '/ipfs/hash/'
+    // middleware: ['plausible']
     // extendRoutes (routes, resolve) {}
   },
   // /////////////////////////////////////////////////////// Build configuration
