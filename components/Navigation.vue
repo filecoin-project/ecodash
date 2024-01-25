@@ -1,7 +1,7 @@
 <template>
   <section
     id="header-navigation"
-    :class="[{ 'force-visible': forceVisible }, { 'show-background': showBackground }, { 'nav-open': navOpen }]">
+    :class="[{ 'force-visible': forceNavigationVisible }, { 'show-background': showBackground }, { 'nav-open': navOpen }]">
     <div class="grid-noGutter-middle">
 
       <div :class="['modal-background', { 'show-background': navOpen }]"></div>
@@ -179,6 +179,7 @@ export default {
     scrollPosition (newVal, oldVal) {
       const showBackground = this.showBackground
       const forceVisible = this.forceNavigationVisible
+      console.log(this.forceNavigationVisible)
       // const scrollSpeed = this.$GetScrollSpeed(newVal)
       if (newVal === 0 && showBackground) {
         this.showBackground = false

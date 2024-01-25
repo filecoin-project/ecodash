@@ -362,6 +362,7 @@ export default {
       -webkit-box-orient: vertical;
       @include small {
         -webkit-line-clamp: 4;
+        // max-height: unset !important;
       }
     }
     &.expanded {
