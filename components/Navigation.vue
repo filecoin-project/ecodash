@@ -451,7 +451,7 @@ export default {
   @include small {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: calc(200vh);
     top: 0;
     left: 0;
     z-index: 99;
