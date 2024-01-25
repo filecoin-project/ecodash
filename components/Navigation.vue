@@ -210,6 +210,7 @@ export default {
     window.addEventListener('resize', this.resize)
     window.addEventListener('scroll', this.scroll)
     this.updateScrollPosition()
+    checkScreenWidth(this)
   },
 
   beforeDestroy () {
