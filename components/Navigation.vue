@@ -1,7 +1,7 @@
 <template>
   <section
     id="header-navigation"
-    :class="headerNavigationClasses">
+    :class="[{ 'force-visible': forceVisible }, { 'show-background': showBackground }, { 'nav-open': navOpen }]">
     <div class="grid-noGutter-middle">
 
       <div :class="['modal-background', { 'show-background': navOpen }]"></div>
@@ -172,14 +172,6 @@ export default {
         }
       })
       return breadcrumbs
-    },
-    headerNavigationClasses () {
-      const showBackground = this.showBackground
-      const forceVisible = this.forceNavigationVisible
-      let compiled = ''
-      if (forceVisible) { compiled += 'force-visible ' }
-      if (showBackground) { compiled += 'show-background' }
-      return compiled
     }
   },
 
@@ -210,7 +202,6 @@ export default {
     window.addEventListener('resize', this.resize)
     window.addEventListener('scroll', this.scroll)
     this.updateScrollPosition()
-    checkScreenWidth(this)
   },
 
   beforeDestroy () {
@@ -269,6 +260,9 @@ export default {
   @include small {
     padding-top: toRem(20);
     height: toRem(92);
+    &.nav-open {
+      transform: translateY(0) !important;
+    }
   }
   &.force-visible {
     transform: translateY(0);
@@ -430,7 +424,7 @@ export default {
   margin-left: 2rem;
   transform: translateY(2px);
   @include small {
-    display: none;
+    display: none !important;
   }
 }
 
