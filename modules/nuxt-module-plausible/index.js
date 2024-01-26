@@ -18,22 +18,17 @@ const plugins = [
 ]
 
 // ///////////////////////////////////////////////////////////// registerPlugins
-const registerPlugins = (instance, next) => {
-  // eslint-disable-next-line promise/param-names
-  return new Promise((next) => {
-    plugins.forEach((plugin) => {
-      instance.addPlugin(plugin)
-    })
-    if (next) { return next() }
+const registerPlugins = (instance) => {
+  plugins.forEach((plugin) => {
+    instance.addPlugin(plugin)
+    console.log('📦 [Module] Plausible')
   })
 }
 
 // ///////////////////////////////////////////////////////////////////// Liftoff
 // -----------------------------------------------------------------------------
-export default async function () {
+export default function () {
   if (this.options.plausible.include) {
-    await registerPlugins(this, () => {
-      console.log('📦 [Module] Plausible')
-    })
+    registerPlugins(this)
   }
 }
