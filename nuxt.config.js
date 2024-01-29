@@ -1,4 +1,20 @@
 /* eslint require-await: "off" */
+// /////////////////////////////////////////////////////////// Variables & Setup
+// -----------------------------------------------------------------------------
+const env = process.env.SERVER_ENV
+
+const baseUrls = {
+  development: 'https://localhost',
+  production: 'https://filecoinecosystem.io'
+}
+
+const sitePort = 21000
+
+const plausible = {
+  include: true,
+  trackLocalhost: false, // true if testing locally
+  domain: 'filecoinecosystem.io'
+}
 
 export default {
   // //////////////////////////////////////////// Static Site Generation Options
@@ -8,16 +24,18 @@ export default {
   // ---------------------------------------------------------------------------
   // ---------------------------------------------------------- [Runtime] Public
   publicRuntimeConfig: {
+    siteUrl: env === 'development' ? `${baseUrls[env]}:${sitePort}` : baseUrls[env],
     countlyAppKey: process.env.COUNTLY_APP_KEY,
     countlySiteUrl: process.env.COUNTLY_SITE_URL,
-    nodeEnv: process.env.NODE_ENV
+    nodeEnv: process.env.NODE_ENV,
+    plausible: { ...plausible }
   },
   // --------------------------------------------------------- [Runtime] Private
   privateRuntimeConfig: {},
   // /////////////////////////////////////////////////////////// Server & Render
   // ---------------------------------------------------------------------------
   server: {
-    port: 21000,
+    port: sitePort,
     host: process.env.NODE_ENV !== 'development' ? '0.0.0.0' : 'localhost'
   },
   render: {
@@ -34,7 +52,18 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' }
-    ]
+    ],
+    script: process.env.NODE_ENV === 'production' || plausible.trackLocalhost
+      ? [
+          {
+            hid: 'plausible',
+            src: 'https://plausible.io/js/script.outbound-links.js',
+            'data-domain': 'filecoinecosystem.io',
+            async: true,
+            defer: true
+          }
+        ]
+      : []
   },
   // ////////////////////////////////////////// Customize the progress-bar color
   // ---------------------------------------------------------------------------
@@ -94,13 +123,6 @@ export default {
     debug: process.env.NODE_ENV === 'development',
     disableInDevelopment: true,
     suppressErrorLogs: true
-  },
-  // ////////////////////////////////////////////////// [Module] @nuxt/plausible
-  // ---------------------------------------------------------------------------
-  plausible: {
-    include: true,
-    domain: 'filecoinecosystem.io',
-    autoOutboundTracking: true
   },
   // /////////////////////////////////// Plugins to load before mounting the App
   // ---------------------------------------------------------------------------

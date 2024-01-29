@@ -28,7 +28,7 @@ const registerPlugins = (instance) => {
 // ///////////////////////////////////////////////////////////////////// Liftoff
 // -----------------------------------------------------------------------------
 export default function () {
-  if (this.options.plausible.include) {
+  if (this.options.publicRuntimeConfig.plausible.include) {
     registerPlugins(this)
   }
 }

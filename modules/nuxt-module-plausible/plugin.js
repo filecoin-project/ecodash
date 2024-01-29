@@ -3,11 +3,6 @@
  * 🔌 [Plugin | NuxtModulePlausible] Methods
  *
  */
-
-// ///////////////////////////////////////////////////////////////////// Imports
-// -----------------------------------------------------------------------------
-import Config from '@/nuxt.config'
-
 console.log('🔌 [Plugin | Plausible] Plausible')
 
 // ////////////////////////////////////////////////////////////////////// Export
@@ -16,7 +11,7 @@ export default ({ app }) => {
   // Do not fire Plausible if not in production mode
   // unless tracking localhost is explicitly enabled in the config
   if (process.env.NODE_ENV !== 'production') {
-    if (!Config.plausible.trackLocalhost) {
+    if (!app.$config.plausible.trackLocalhost) {
       return
     }
   }
@@ -37,7 +32,7 @@ export default ({ app }) => {
         (window.plausible.q = window.plausible.q || []).push(arguments)
       }
       window.plausible('pageview', {
-        url: `https://filecoinecosystem.io${to.fullPath}`
+        url: `${app.$config.siteUrl}${to.fullPath}`
       })
     }
   })
