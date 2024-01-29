@@ -42,7 +42,7 @@
           <span>{{ title }}</span>
         </p>
         <div :class="['description', { expanded }, { 'clip': !blockDescription }]">
-          <span>{{ description }}</span>
+          <span class="description-text">{{ description }}</span>
           <span v-if="tagString" class="tags">{{ tagString }}</span>
           <div class="socials">
             <a
@@ -329,6 +329,7 @@ export default {
     font-weight: 600;
     line-height: leading(30, 16);
     letter-spacing: 0.36px;
+    margin-bottom: 0.625rem;
     @include small {
       padding-left: toRem(52);
       font-size: 0.875rem;
@@ -350,19 +351,9 @@ export default {
     transition: max-height 250ms ease;
     overflow: hidden;
     @include small {
-      margin-top: 0.625rem;
       font-size: 0.75rem;
       line-height: leading(18, 12);
-      max-height: toRem(79);
-    }
-    &.clip {
-      display: -webkit-box;
-      -webkit-box-flex: 1;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      @include small {
-        -webkit-line-clamp: 4;
-      }
+      max-height: toRem(72);
     }
     &.expanded {
       max-height: toRem(200);
@@ -374,8 +365,19 @@ export default {
         opacity: 1;
       }
     }
-    span {
+    .description-text {
       display: block;
+    }
+    &.clip {
+      .description-text {
+        display: -webkit-box;
+        -webkit-box-flex: 1;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        @include small {
+          -webkit-line-clamp: 4;
+        }
+      }
     }
   }
   .button-row {
@@ -456,6 +458,7 @@ export default {
     }
   }
   .tags {
+    display: block;
     color: rgba(255, 255, 255, 0.70);
     font-size: toRem(13);
     font-style: italic;
