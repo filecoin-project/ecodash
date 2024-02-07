@@ -82,6 +82,7 @@
       "button": {
         "type": "a",
         "text": "Add your project via Github",
+        "text_medium": "Add project via Github",
         "href": "https://github.com/filecoin-project/ecodash#filecoin-ecosystem-directory",
         "target": "_blank"
       }
