@@ -6,13 +6,13 @@
 
       <div :class="['modal-background', { 'show-background': navOpen }]"></div>
 
-      <div class="col-2_lg-2_sm-4">
+      <div class="col-3_md-2_sm-4">
         <nuxt-link to="/" tabindex="0" class="logo-link focus-visible">
           <SiteLogo id="site-logo" />
         </nuxt-link>
       </div>
 
-      <div class="col-5_sm-1">
+      <div class="col-4_lg-5_md-5_sm-1">
         <div :class="['navigation', { 'modal-open': navOpen }]">
           <div class="nav-items">
             <Button
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-5_sm-7">
+      <div class="col-5_lg-4_md-5_sm-7">
         <div class="nav-toolbar">
           <FilterBar
             id="nav-filter-bar"
@@ -53,7 +53,7 @@
             type="cta"
             :tag="navCta.type"
             :to="navCta.href"
-            :text="navCta.text"
+            :text="medium ? navCta.text_medium : navCta.text"
             :target="navCta.target"
             class="nav-cta">
             <template #icon-before>
@@ -101,6 +101,15 @@ const checkScreenWidth = (instance) => {
   if (!window.matchMedia('(max-width: 53.125rem)').matches && instance.navOpen) {
     instance.toggleNav()
   }
+  if (!window.matchMedia('(max-width: 64rem)').matches) {
+    if (instance.medium) {
+      instance.medium = false
+    }
+  } else {
+    if (!instance.medium) {
+      instance.medium = true
+    }
+  }
 }
 
 // ====================================================================== Export
@@ -126,7 +135,8 @@ export default {
       scroll: false,
       scrollPosition: 0,
       showBackground: false,
-      forceNavigationVisible: true
+      forceNavigationVisible: true,
+      medium: false
     }
   },
 
@@ -293,18 +303,27 @@ export default {
 
 .logo-link {
   display: block;
+  transform: translateX(-1.5rem);
+  @include small {
+    transform: none;
+  }
 }
 
 #site-logo {
   display: block;
   position: relative;
-  width: 8rem;
+  width: 15.125rem;
+  height: 3.5rem;
   opacity: 1.0;
   z-index: 100;
   transition: all 0.3s ease;
-  @include small {
+  @include medium {
     height: 2rem;
     width: unset;
+  }
+  @include small {
+    width: 11rem;
+    height: 3rem;
   }
   &:hover {
     transform: scale(1.05);
@@ -362,10 +381,23 @@ export default {
     justify-content: center;
     justify-content: flex-start;
     align-items: flex-start;
-    ::v-deep .dropdown-selector {
+  }
+  ::v-deep .dropdown-selector {
+    @include medium {
+      .button-inner {
+        label {
+          font-size: 0.875rem;
+          margin-right: 0.25rem;
+        }
+      }
+    }
+    @include small {
       margin: toRem(12) 0;
       .button-inner {
         padding-left: 0.5rem;
+        label {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -409,9 +441,12 @@ export default {
   margin-left: -1rem;
   z-index: 100;
   @include large {
-    margin-left: 0;
+    // margin-left: -1rem;
+    margin-right: -2rem;
   }
+
   @include small {
+    margin: 0;
     align-items: center;
   }
 }

@@ -212,6 +212,12 @@ export default {
     font-weight: 400;
     line-height: 1;
     letter-spacing: 0.32px;
+    @include medium {
+      font-size: 0.875rem;
+    }
+    @include small {
+      font-size: 1rem;
+    }
   }
 }
 
