@@ -1,0 +1,55 @@
+{
+    "name": "@undone-labs/nuxt-module-plausible",
+    "version": "1.0.0",
+    "description": "Plausible Analytics module for nuxt.js 2",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/undone-labs/nuxt-module-plausible.git"
+    },
+    "keywords": [
+      "plausible",
+      "nuxt",
+      "nuxtjs",
+      "nuxt2",
+      "analytics"
+    ],
+    "author": {
+      "name": "Agency Undone",
+      "email": "hello@agencyundone.com"
+    },
+    "contributors": [
+      {
+        "name": "svvimming",
+        "url": "https://github.com/svvimming"
+      },
+      {
+        "name": "Orun Bhuiyan",
+        "url": "https://github.com/orvn"
+      }
+    ],
+    "license": "Apache-2.0",
+    "bugs": {
+      "url": "https://github.com/undone-labs/nuxt-module-plausible/issues"
+    },
+    "homepage": "https://github.com/undone-labs/nuxt-module-plausible#readme",
+    "scripts": {
+      "test": "eslint --ext .js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "@nuxtjs/eslint-config": "latest",
+      "@nuxtjs/module-test-utils": "latest",
+      "eslint": "latest"
+    },
+    "peerDependencies": {
+      "nuxt": "*"
+    },
+    "engines": {
+      "node": ">=16.14.0"
+    },
+    "publishConfig": {
+     "access": "public"
+    }
+  }
+  
