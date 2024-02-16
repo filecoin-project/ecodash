@@ -5,7 +5,7 @@
   },
   "og": {
     "site_name": "Filecoin Ecosystem",
-    "url": "https://ecosystem.filecoin.io",
+    "url": "https://filecoinecosystem.io",
     "type": "website",
     "image": "/images/open-graph.png"
   },
@@ -186,11 +186,7 @@
     },
     {
       "network": "Telegram",
-      "href": "https://t.me/filecoinio"
-    },
-    {
-      "network": "Discord",
-      "href": "https://discord.gg/ipfs"
+      "href": "https://t.me/filecoin"
     },
     {
       "network": "Github",
